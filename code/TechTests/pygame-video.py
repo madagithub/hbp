@@ -1,0 +1,32 @@
+import pygame
+from pygame.locals import *
+import cv2
+import numpy as np
+import sys
+
+camera = cv2.VideoCapture('grb_1.mpg')
+pygame.init()
+pygame.display.set_caption("OpenCV camera stream on Pygame")
+screen = pygame.display.set_mode([1280,720])
+
+smile = pygame.image.load('lose.png')
+
+try:
+	while True:
+
+		ret, frame = camera.read()
+
+		screen.fill([0,0,0])
+		frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+		frame = np.rot90(frame)
+		frame = pygame.surfarray.make_surface(frame)
+		screen.blit(frame, (0,0))
+		screen.blit(smile, (10,10))
+		pygame.display.update()
+
+		for event in pygame.event.get():
+			if event.type == KEYDOWN:
+				sys.exit(0)
+except KeyboardInterrupt:
+	pygame.quit()
+	cv2.destroyAllWindows()
