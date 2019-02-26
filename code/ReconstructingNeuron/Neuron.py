@@ -11,6 +11,7 @@ class Neuron:
 
 	def start(self):
 		pygame.init()
+		pygame.mouse.set_visible(False)
 		self.screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)
 
 		self.neuronVideo = VideoPlayer(self.screen, 'assets/videos/brainzoom.mov', 0, 0)
@@ -20,17 +21,19 @@ class Neuron:
 
 	def loop(self):
 		isGameRunning = True
+		clock = pygame.time.Clock()
 
 		while isGameRunning:
-
-			self.screen.fill([0,0,0])
-
-			self.playVideos();
-			pygame.display.flip()
 
 			for event in pygame.event.get():
 				if event.type == KEYDOWN:
 					isGameRunning = False
+
+			self.screen.fill([0,0,0])
+			self.playVideos();
+
+			pygame.display.flip()
+			clock.tick(60)
 
 		pygame.quit()
 		cv2.destroyAllWindows()
