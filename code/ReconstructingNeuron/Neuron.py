@@ -2,7 +2,8 @@ import pygame
 from pygame.locals import *
 import cv2
 
-from VideoPlayer import VideoPlayer
+from OpeningScene import OpeningScene
+from VideoScene import VideoScene
 
 class Neuron:
 	def __init__(self):
@@ -11,13 +12,17 @@ class Neuron:
 
 	def start(self):
 		pygame.init()
-		pygame.mouse.set_visible(False)
 		self.screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)
 
-		self.neuronVideo = VideoPlayer(self.screen, 'assets/videos/brainzoom.mov', 0, 0)
-		self.playingVideos.append(self.neuronVideo)
+		self.scene = OpeningScene(self, self.screen)
 
 		self.loop()
+
+	def transition(self, transitionId):
+		if transitionId == 'START':
+			self.scene = VideoScene(self, self.screen, 'assets/videos/brainzoom.mov', 'CHOOSE')
+		elif transitionId == 'CHOOSE':
+			self.scene = ChooseNeuronScene(self, self.screen)
 
 	def loop(self):
 		isGameRunning = True
@@ -26,20 +31,18 @@ class Neuron:
 		while isGameRunning:
 
 			for event in pygame.event.get():
+				self.scene.processEvent(event)
 				if event.type == KEYDOWN:
 					isGameRunning = False
 
 			self.screen.fill([0,0,0])
-			self.playVideos();
+			self.scene.draw()
 
 			pygame.display.flip()
 			clock.tick(60)
 
 		pygame.quit()
 		cv2.destroyAllWindows()
-
-	def playVideos(self):
-		self.playingVideos[:] = [video for video in self.playingVideos if video.draw()]
 
 
 if __name__ == '__main__':

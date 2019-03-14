@@ -1,7 +1,10 @@
 class Scene:
-	def __init__(self, screen):
+	def __init__(self, game, screen):
+		self.game = game
 		self.screen = screen
-		pass
+
+	def processEvent(self, event):
+		raise NotImplemented
 
 	def draw(self):
-		pass
+		raise NotImplemented
