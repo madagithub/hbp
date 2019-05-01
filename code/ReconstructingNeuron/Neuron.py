@@ -5,7 +5,8 @@ import time
 
 from OpeningScene import OpeningScene
 from VideoScene import VideoScene
-from ChooseNueronScene import ChooseNueronScene
+from ChooseNeuronScene import ChooseNeuronScene
+from DrawNeuronScene import DrawNeuronScene
 
 class Neuron:
 	def __init__(self):
