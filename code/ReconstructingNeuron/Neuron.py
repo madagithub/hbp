@@ -4,6 +4,8 @@ import cv2
 
 from OpeningScene import OpeningScene
 from VideoScene import VideoScene
+from ChooseNeuronScene import ChooseNeuronScene
+from DrawNeuronScene import DrawNeuronScene
 
 class Neuron:
 	def __init__(self):
@@ -12,7 +14,7 @@ class Neuron:
 
 	def start(self):
 		pygame.init()
-		self.screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)
+		self.screen = pygame.display.set_mode((1280, 800), pygame.FULLSCREEN)
 
 		self.scene = OpeningScene(self, self.screen)
 
