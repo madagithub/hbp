@@ -10,7 +10,7 @@ class OpeningScene(Scene):
 
 		self.headerText = self.font.render('Reconstructing Neuron', True, (255, 255, 255))
 
-		self.buttons.append(Button(screen, pygame.Rect(self.screen.get_width() / 2 - 300 / 2, self.screen.get_height() * 2 / 3, 300, 50), 'Start', font, self.onStartClick))
+		self.buttons.append(Button(screen, pygame.Rect(self.screen.get_width() / 2 - 300 / 2, self.screen.get_height() * 2 / 3, 300, 50), 'Start', self.font, self.onStartClick))
 
 	def onStartClick(self):
 		self.game.transition('START')		

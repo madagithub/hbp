@@ -27,7 +27,9 @@ class Neuron:
 		if transitionId == 'START':
 			self.scene = self.startVideoScene
 		elif transitionId == 'CHOOSE':
-			self.scene = ChooseNueronScene(self, self.screen)
+			self.scene = ChooseNeuronScene(self, self.screen)
+		elif transitionId == 'DRAW':
+			self.scene = DrawNeuronScene(self, self.screen)
 
 	def loop(self):
 		isGameRunning = True
@@ -44,7 +46,8 @@ class Neuron:
 
 			self.screen.fill([0,0,0])
 			self.scene.draw()
-			self.screen.blit(self.cursor, (pygame.mouse.get_pos()))
+			if self.scene.blitCursor:
+				self.screen.blit(self.cursor, (pygame.mouse.get_pos()))
 
 			pygame.display.flip()
 

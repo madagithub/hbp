@@ -10,6 +10,7 @@ class Scene:
 		self.game = game
 		self.screen = screen
 		self.font = pygame.font.SysFont(None, 48)
+		self.blitCursor = True
 
 		self.buttons = []
 		self.createStandardButtons()
@@ -26,5 +27,6 @@ class Scene:
 		for button in self.buttons:
 			button.draw()
 
-	def createStandradButtons(self):
-		self.buttons.append(Button(self.screen, pygame.Rect(self.screen.get_width() - LANGUAGE_BUTTONS_X_PADDING - LANGUAGE_BUTTONS_SIZE, self.screen.get_height() - LANGUAGE_BUTTONS_Y_PADDING - LANGUAGE_BUTTONS_SIZE, LANGUAGE_BUTTONS_SIZE, LANGUAGE_BUTTONS_SIZE), 'En', self.font, self.onLanguageClicked.bind(ENGLISH))
+	def createStandardButtons(self):
+		pass
+		#self.buttons.append(Button(self.screen, pygame.Rect(self.screen.get_width() - LANGUAGE_BUTTONS_X_PADDING - LANGUAGE_BUTTONS_SIZE, self.screen.get_height() - LANGUAGE_BUTTONS_Y_PADDING - LANGUAGE_BUTTONS_SIZE, LANGUAGE_BUTTONS_SIZE, LANGUAGE_BUTTONS_SIZE), 'En', self.font, self.onLanguageClicked.bind(ENGLISH))
