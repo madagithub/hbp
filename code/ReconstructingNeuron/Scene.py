@@ -12,6 +12,8 @@ class Scene:
 		self.font = pygame.font.SysFont(None, 48)
 		self.blitCursor = True
 
+		self.logo = pygame.image.load('assets/images/logo.png')
+
 		self.buttons = []
 		self.createStandardButtons()
 
@@ -24,6 +26,11 @@ class Scene:
 				button.onMouseUp(event.pos)
 
 	def draw(self):
+		self.screen.blit(self.logo, (23, 17))
+
+		# Draw bottom bar
+		self.screen.line(self.screen, [28, 28, 28], (999, 0), (999, 1920))
+
 		for button in self.buttons:
 			button.draw()
 
