@@ -5,8 +5,8 @@ from Scene import Scene
 from VideoPlayer import VideoPlayer
 
 class VideoScene(Scene):
-	def __init__(self, game, screen, filename, endScene):
-		super().__init__(game, screen)
+	def __init__(self, game, filename, endScene):
+		super().__init__(game)
 		self.endScene = endScene
 		self.blitCursor = False
 		self.video = VideoPlayer(self.screen, filename, 0, 0)

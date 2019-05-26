@@ -7,19 +7,24 @@ from OpeningScene import OpeningScene
 from VideoScene import VideoScene
 from ChooseNeuronScene import ChooseNeuronScene
 from DrawNeuronScene import DrawNeuronScene
+from Config import Config
+
+CONFIG_FILENAME = 'assets/config/config.json'
 
 class Neuron:
 	def __init__(self):
 		self.playingVideos = []
 
 	def start(self):
+		self.config = Config(CONFIG_FILENAME)
+
 		pygame.init()
 		pygame.mouse.set_visible(False)
 		self.screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)
 		self.cursor = pygame.image.load('assets/images/cursor.png').convert_alpha()
-		self.startVideoScene = VideoScene(self, self.screen, 'assets/videos/brainzoom-short.mov', 'CHOOSE')
+		self.startVideoScene = VideoScene(self, 'assets/videos/brainzoom-short.mov', 'CHOOSE')
 
-		self.scene = OpeningScene(self, self.screen)
+		self.scene = ChooseNeuronScene(self)#OpeningScene(self)
 
 		self.loop()
 
@@ -27,9 +32,9 @@ class Neuron:
 		if transitionId == 'START':
 			self.scene = self.startVideoScene
 		elif transitionId == 'CHOOSE':
-			self.scene = ChooseNeuronScene(self, self.screen)
+			self.scene = ChooseNeuronScene(self)
 		elif transitionId == 'DRAW':
-			self.scene = DrawNeuronScene(self, self.screen)
+			self.scene = DrawNeuronScene(self)
 
 	def loop(self):
 		isGameRunning = True
@@ -44,7 +49,7 @@ class Neuron:
 				if event.type == KEYDOWN:
 					isGameRunning = False
 
-			self.screen.fill([0,0,0])
+			self.screen.fill(self.scene.backgroundColor)
 			self.scene.draw()
 			if self.scene.blitCursor:
 				self.screen.blit(self.cursor, (pygame.mouse.get_pos()))

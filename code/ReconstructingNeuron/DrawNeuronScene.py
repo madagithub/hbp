@@ -63,8 +63,8 @@ PATH_POINTS = [
 ]
 
 class DrawNeuronScene(Scene):
-	def __init__(self, game, screen):
-		super().__init__(game, screen)
+	def __init__(self, game):
+		super().__init__(game)
 
 		self.prototypeNeuron = pygame.image.load('assets/images/pyramidal_neuron_small.png')
 		self.drawOnNeuron = pygame.image.load('assets/images/pyramidal_neuron_small.png')

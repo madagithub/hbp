@@ -1,21 +1,55 @@
 import pygame
 from pygame.locals import *
 
+from Button import Button
+
 LANGUAGE_BUTTONS_X_PADDING = 100
 LANGUAGE_BUTTONS_Y_PADDING = 100
 LANGUAGE_BUTTONS_SIZE = 100
 
+BACKGROUND_COLOR = [51, 51, 51]
+
+BOTTOM_BAR_Y = 999
+
 class Scene:
-	def __init__(self, game, screen):
+	def __init__(self, game):
 		self.game = game
-		self.screen = screen
-		self.font = pygame.font.SysFont(None, 48)
+		self.screen = game.screen
+		self.config = game.config
+		self.headerFont = pygame.font.Font('assets/fonts/Linotype - DIN Next LT Arabic Black.ttf', 72)
+		self.subHeaderFont = pygame.font.Font('assets/fonts/Monotype-DINNextLTPro-Bold.ttf', 40)
+		self.textFont = pygame.font.Font('assets/fonts/SimplerPro_V3-Regular.ttf', 40)
+		self.smallTextFont = pygame.font.Font('assets/fonts/SimplerPro_V3-Regular.ttf', 20)
+		self.buttonFont = pygame.font.Font('assets/fonts/SimplerPro_V3-Regular.ttf', 30)
 		self.blitCursor = True
+		self.backgroundColor = [0,0,0]
 
 		self.logo = pygame.image.load('assets/images/logo.png')
+		self.bottomBar = pygame.image.load('assets/images/bottom-bar.png')
 
 		self.buttons = []
 		self.createStandardButtons()
+
+		self.backgroundColor = BACKGROUND_COLOR
+
+		self.createBottomBarButtons()
+
+	def createBottomBarButtons(self):
+		homeNormal = pygame.image.load('assets/images/button-home-normal.png')
+		homeTapped = pygame.image.load('assets/images/button-home-tapped.png')
+		self.buttons.append(Button(self.screen, pygame.Rect(0, BOTTOM_BAR_Y, homeNormal.get_width(), homeNormal.get_height()), 
+			homeNormal, homeTapped, None, None, None, self.onHomeTapped))
+
+		languagesNum = len(self.config.getLanguages())
+		for i in range(languagesNum):
+			languageData = self.config.getLanguages()[i]
+			languageNormal = pygame.image.load('assets/images/language-button-normal.png')
+			languageTapped = pygame.image.load('assets/images/language-button-tapped.png')
+			self.buttons.append(Button(self.screen, pygame.Rect(self.screen.get_width() - (languagesNum - i) * languageNormal.get_width(), BOTTOM_BAR_Y, 
+				languageNormal.get_width(), languageNormal.get_height()), languageNormal, languageTapped, languageData['buttonText'], [255, 255, 255], languageData['buttonText'], partial(self.onLanguageTapped, i)))
+
+	def onHomeTapped(self):
+		pass
 
 	def processEvent(self, event):
 		if event.type == MOUSEBUTTONDOWN:
@@ -29,7 +63,7 @@ class Scene:
 		self.screen.blit(self.logo, (23, 17))
 
 		# Draw bottom bar
-		self.screen.line(self.screen, [28, 28, 28], (999, 0), (999, 1920))
+		self.screen.blit(self.bottomBar, (0, 999))
 
 		for button in self.buttons:
 			button.draw()

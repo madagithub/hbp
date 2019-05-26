@@ -3,21 +3,27 @@ from pygame.locals import *
 
 from Utilities import Utilities
 
-REGULAR_COLOR = [127, 127, 127]
-TAP_COLOR = [60, 60, 60]
-
 class Button:
-	def __init__(self, screen, rect, text, font, onClickCallback):
+	def __init__(self, screen, rect, image, tappedImage, text, color, font, onClickCallback):
 		self.screen = screen
 		self.rect = rect
-		self.text = text
-		self.font = font
+		self.image = image
+		self.tappedImage = tappedImage
+
+		if text is not None:
+			self.textBox = font.render(text, True, color)
+		else:
+			self.textBox = None
+
+		#self.selectedTextBox = self.font.render(text, True, selectedColor)
 		self.onClickCallback = onClickCallback
 		self.isMouseDownOnButton = False
 
 	def draw(self):
-		pygame.draw.rect(self.screen, TAP_COLOR if self.isMouseDownOnButton else REGULAR_COLOR, self.rect)
-		Utilities.drawTextOnCenter(self.screen, self.text, self.rect, self.font)
+		self.screen.blit(self.tappedImage if self.isMouseDownOnButton else self.image, (self.rect.left, self.rect.top))
+
+		if self.textBox is not None:
+			Utilities.drawTextOnCenter(self.screen, self.textBox, self.rect.center)
 
 	def onMouseDown(self, position):
 		self.isMouseDownOnButton = self.rect.collidepoint(position)

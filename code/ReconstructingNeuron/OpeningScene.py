@@ -6,20 +6,26 @@ from Button import Button
 
 from Utilities import Utilities
 
+START_BUTTON_TEXT_COLOR = [0, 0, 0]
+
 class OpeningScene(Scene):
-	def __init__(self, game, screen):
-		super().__init__(game, screen)
+	def __init__(self, game):
+		super().__init__(game)
 
-		self.headerText = self.font.render('Neuron Under Construction', True, (255, 255, 255))
-		self.subHeaderText = self.font.render('You are invited to reconstruct your own neuron', True, (255, 255, 255))
+		self.background = pygame.image.load('assets/images/background.png')
 
-		self.buttons.append(Button(screen, pygame.Rect(self.screen.get_width() / 2 - 300 / 2, self.screen.get_height() * 2 / 3, 300, 50), 'Start', self.font, self.onStartClick))
+		self.headerText = self.headerFont.render(self.config.getText("RN_OPENING_SCREEN_HEADER"), True, (255, 255, 255))
+		self.subHeaderText = self.subHeaderFont.render(self.config.getText("RN_OPENING_SCREEN_SUB_HEADER"), True, (255, 255, 255))
+
+		self.buttons.append(Button(self.screen, pygame.Rect(self.screen.get_width() // 2 - 245 // 2, 649, 245, 78), 
+			pygame.image.load('assets/images/button-empty.png'), pygame.image.load('assets/images/button-selected.png'), 
+			self.config.getText("RN_OPENING_SCREEN_BUTTON_TEXT"), START_BUTTON_TEXT_COLOR, self.buttonFont, self.onStartClick))
 
 	def onStartClick(self):
 		self.game.transition('START')		
 
 	def draw(self):
-		Utilities.drawTextOnCenter(self.screen, 'Neuron Under Construction', (self.screen.get_width() / 2, 353), self.font)
-		Utilities.drawTextOnCenter(self.screen, 'You are invited to reconstruct your own neuron', (self.screen.get_width() / 2, 469), self.font)
-		self.screen.blit(self.headerText, (self.screen.get_width() / 2 - self.headerText.get_width() / 2, 100))
+		self.screen.blit(self.background, (0, 0))
+		Utilities.drawTextOnCenter(self.screen, self.headerText, (self.screen.get_width() // 2, 411))
+		Utilities.drawTextOnCenter(self.screen, self.subHeaderText, (self.screen.get_width() // 2, 494))
 		super().draw()
