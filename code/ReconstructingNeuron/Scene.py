@@ -1,7 +1,11 @@
 import pygame
 from pygame.locals import *
 
+from functools import partial
+
 from Button import Button
+
+from pyfribidi import *
 
 LANGUAGE_BUTTONS_X_PADDING = 100
 LANGUAGE_BUTTONS_Y_PADDING = 100
@@ -16,11 +20,14 @@ class Scene:
 		self.game = game
 		self.screen = game.screen
 		self.config = game.config
-		self.headerFont = pygame.font.Font('assets/fonts/Linotype - DIN Next LT Arabic Black.ttf', 72)
-		self.subHeaderFont = pygame.font.Font('assets/fonts/Monotype-DINNextLTPro-Bold.ttf', 40)
-		self.textFont = pygame.font.Font('assets/fonts/SimplerPro_V3-Regular.ttf', 40)
-		self.smallTextFont = pygame.font.Font('assets/fonts/SimplerPro_V3-Regular.ttf', 20)
-		self.buttonFont = pygame.font.Font('assets/fonts/SimplerPro_V3-Regular.ttf', 30)
+
+		languageData = self.config.getLanguage()
+		self.headerFont = pygame.font.Font(languageData['fonts']['headerFont']['filename'], languageData['fonts']['headerFont']['size'])
+		self.subHeaderFont = pygame.font.Font(languageData['fonts']['subHeaderFont']['filename'], languageData['fonts']['subHeaderFont']['size'])
+		self.textFont = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])
+		self.smallTextFont = pygame.font.Font(languageData['fonts']['smallTextFont']['filename'], languageData['fonts']['smallTextFont']['size'])
+		self.buttonFont = self.textFont
+
 		self.blitCursor = True
 		self.backgroundColor = [0,0,0]
 
@@ -45,10 +52,15 @@ class Scene:
 			languageData = self.config.getLanguages()[i]
 			languageNormal = pygame.image.load('assets/images/language-button-normal.png')
 			languageTapped = pygame.image.load('assets/images/language-button-tapped.png')
+			font = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])
+			
 			self.buttons.append(Button(self.screen, pygame.Rect(self.screen.get_width() - (languagesNum - i) * languageNormal.get_width(), BOTTOM_BAR_Y, 
-				languageNormal.get_width(), languageNormal.get_height()), languageNormal, languageTapped, languageData['buttonText'], [255, 255, 255], languageData['buttonText'], partial(self.onLanguageTapped, i)))
+				languageNormal.get_width(), languageNormal.get_height()), languageNormal, languageTapped, log2vis(languageData['buttonText']), [255, 255, 255], font, partial(self.onLanguageTapped, i)))
 
 	def onHomeTapped(self):
+		pass
+
+	def onLanguageTapped(self, index):
 		pass
 
 	def processEvent(self, event):

@@ -1,9 +1,39 @@
 {
 	"defaultLanguage": "en",
 	"languages": [
-		{"prefix": "he", "buttonText": "עברית"},
-		{"prefix": "ar", "buttonText": "ةيبرع"},
-		{"prefix": "en", "buttonText": "English"}
+		{
+			"prefix": "he", 
+			"buttonText": "עברית", 
+			"fonts": 
+			{
+				"headerFont": {"filename": "assets/fonts/SimplerPro_V3-Black.ttf", "size": 72}, 
+				"subHeaderFont": {"filename": "assets/fonts/SimplerPro_V3-Bold.ttf", "size": 40}, 
+				"textFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 40},
+				"smallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 30}
+			}
+		},
+		{
+			"prefix": "ar", 
+			"buttonText": "عربية",
+			"fonts": 
+			{
+				"headerFont": {"filename": "assets/fonts/TheSansArabic-Black.ttf", "size": 72}, 
+				"subHeaderFont": {"filename": "assets/fonts/TheSansArabic-Bold.ttf", "size": 40}, 
+				"textFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 40}, 
+				"smallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 30}
+			}
+		},
+		{
+			"prefix": "en", 
+			"buttonText": "English",
+			"fonts": 
+			{
+				"headerFont": {"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf", "size": 72}, 
+				"subHeaderFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf", "size": 40}, 
+				"textFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 30}, 
+				"smallTextFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 20}
+			}
+		}
 	],
 
 	"texts": {
