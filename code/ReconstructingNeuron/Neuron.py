@@ -45,6 +45,9 @@ class Neuron:
 
 		self.loop()
 
+	def gotoHome(self):
+		self.scene = OpeningScene(self)
+
 	def transition(self, transitionId):
 		if transitionId == 'START':
 			self.scene = self.startVideoScene

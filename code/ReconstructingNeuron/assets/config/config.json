@@ -57,6 +57,40 @@
 			"RN_CHOOSE_NEURON_PYRAMIDAL_DESC": "Named after the pyramid shape of its body,\nthe most common cell type in the cerebral\ncortex. The cell increases the activity of the\ncells it communicates with (Excitatory cell).",
 			"RN_CHOOSE_NEURON_BASKET_DESC": "Surrounds like a basket the body of the cells it\ncommunicates with and decreases their activity.\n(Inhibitory cell).",
 			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "A small cell with short branches. Named\nafter the scientist who discovered it. The\ncell decreases the activity of the cells it\ncommunicates with (Inhibitory cell)."
+		},
+
+		"ar": {
+			"RN_OPENING_SCREEN_HEADER": "Neuron Under Construction",
+			"RN_OPENING_SCREEN_SUB_HEADER": "You are invited to reconstruct your own neuron",
+			"RN_OPENING_SCREEN_BUTTON_TEXT": "Start",
+
+			"RN_CHOOSE_NEURON_INSTRUCTION": "Select a neuron and reconstruct it as an active 3D model",
+			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "Select",
+
+			"RN_CHOOSE_NEURON_PYRAMIDAL_NAME": "Pyramidal Cell",
+			"RN_CHOOSE_NEURON_BASKET_NAME": "Basket Cell",
+			"RN_CHOOSE_NEURON_MARTINOTTI_NAME": "Martinotti Cell",
+
+			"RN_CHOOSE_NEURON_PYRAMIDAL_DESC": "Named after the pyramid shape of its body,\nthe most common cell type in the cerebral\ncortex. The cell increases the activity of the\ncells it communicates with (Excitatory cell).",
+			"RN_CHOOSE_NEURON_BASKET_DESC": "Surrounds like a basket the body of the cells it\ncommunicates with and decreases their activity.\n(Inhibitory cell).",
+			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "A small cell with short branches. Named\nafter the scientist who discovered it. The\ncell decreases the activity of the cells it\ncommunicates with (Inhibitory cell)."
+		},
+
+		"he": {
+			"RN_OPENING_SCREEN_HEADER": "כאן בונים נוירון",
+			"RN_OPENING_SCREEN_SUB_HEADER": "מוזמנים לבנות נוירון",
+			"RN_OPENING_SCREEN_BUTTON_TEXT": "התחל",
+
+			"RN_CHOOSE_NEURON_INSTRUCTION": "Select a neuron and reconstruct it as an active 3D model",
+			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "Select",
+
+			"RN_CHOOSE_NEURON_PYRAMIDAL_NAME": "Pyramidal Cell",
+			"RN_CHOOSE_NEURON_BASKET_NAME": "Basket Cell",
+			"RN_CHOOSE_NEURON_MARTINOTTI_NAME": "Martinotti Cell",
+
+			"RN_CHOOSE_NEURON_PYRAMIDAL_DESC": "Named after the pyramid shape of its body,\nthe most common cell type in the cerebral\ncortex. The cell increases the activity of the\ncells it communicates with (Excitatory cell).",
+			"RN_CHOOSE_NEURON_BASKET_DESC": "Surrounds like a basket the body of the cells it\ncommunicates with and decreases their activity.\n(Inhibitory cell).",
+			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "A small cell with short branches. Named\nafter the scientist who discovered it. The\ncell decreases the activity of the cells it\ncommunicates with (Inhibitory cell)."
 		}
 	}
 }

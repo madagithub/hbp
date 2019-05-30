@@ -26,7 +26,7 @@ class Config:
 
 	def changeLanguage(self, index):
 		self.languageIndex = index
-		self.languagePrefix = self.getLanguages()[self.languageIndex].languagePrefix
+		self.languagePrefix = self.getLanguages()[self.languageIndex]['prefix']
 
 	def getLanguage(self):
 		return self.config['languages'][self.languageIndex]

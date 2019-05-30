@@ -60,10 +60,10 @@ class Scene:
 				languageNormal.get_width(), languageNormal.get_height()), languageNormal, languageTapped, log2vis(languageData['buttonText']), LANGUAGE_TEXT_COLOR, LANGUAGE_SELECTED_TEXT_COLOR, font, partial(self.onLanguageTapped, i)))
 
 	def onHomeTapped(self):
-		pass
+		self.game.gotoHome()
 
 	def onLanguageTapped(self, index):
-		pass
+		self.config.changeLanguage(index)
 
 	def onMouseDown(self, pos):
 		for button in self.buttons:
