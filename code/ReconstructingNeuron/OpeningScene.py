@@ -19,7 +19,7 @@ class OpeningScene(Scene):
 
 		self.buttons.append(Button(self.screen, pygame.Rect(self.screen.get_width() // 2 - 245 // 2, 649, 245, 78), 
 			pygame.image.load('assets/images/button-empty.png'), pygame.image.load('assets/images/button-selected.png'), 
-			self.config.getText("RN_OPENING_SCREEN_BUTTON_TEXT"), START_BUTTON_TEXT_COLOR, self.buttonFont, self.onStartClick))
+			self.config.getText("RN_OPENING_SCREEN_BUTTON_TEXT"), START_BUTTON_TEXT_COLOR, START_BUTTON_TEXT_COLOR, self.buttonFont, self.onStartClick))
 
 	def onStartClick(self):
 		self.game.transition('START')		

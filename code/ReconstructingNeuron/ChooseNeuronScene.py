@@ -37,11 +37,11 @@ class ChooseNeuronScene(Scene):
 			normalImage = pygame.image.load('assets/images/' + neuronImageSet['normal'])
 			selectedImage = pygame.image.load('assets/images/' + neuronImageSet['selected'])
 			self.buttons.append(Button(self.screen, pygame.Rect(currImageButtonX, FIRST_NEURON_IMAGE_Y, normalImage.get_width(), normalImage.get_height()), 
-				normalImage, selectedImage, None, None, None, partial(self.onNeuronClick, i)))
+				normalImage, selectedImage, None, None, None, None, partial(self.onNeuronClick, i)))
 			normalButtonImage = pygame.image.load('assets/images/small-button-empty.png')
 			self.buttons.append(Button(self.screen, pygame.Rect(currSelectButtonX, FIRST_NEURON_SELECT_BUTTON_Y, normalButtonImage.get_width(), normalButtonImage.get_height()), 
 				normalButtonImage, pygame.image.load('assets/images/small-button-selected.png'), 
-				self.config.getText('RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT'), [0, 0, 0], self.buttonFont, partial(self.onNeuronClick, i)))
+				self.config.getText('RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT'), [0, 0, 0], [0, 0, 0], self.buttonFont, partial(self.onNeuronClick, i)))
 
 			self.neuronNames.append(self.subHeaderFont.render(self.config.getText(neuronImageSet['name-key']), True, (255, 255, 255)))
 

@@ -3,7 +3,7 @@
 	"languages": [
 		{
 			"prefix": "he", 
-			"buttonText": "עברית", 
+			"buttonText": "עברית",
 			"fonts": 
 			{
 				"headerFont": {"filename": "assets/fonts/SimplerPro_V3-Black.ttf", "size": 72}, 

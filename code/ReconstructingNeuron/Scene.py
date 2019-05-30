@@ -12,6 +12,8 @@ LANGUAGE_BUTTONS_Y_PADDING = 100
 LANGUAGE_BUTTONS_SIZE = 100
 
 BACKGROUND_COLOR = [51, 51, 51]
+LANGUAGE_TEXT_COLOR = [187, 187, 187]
+LANGUAGE_SELECTED_TEXT_COLOR = [249, 207, 71]
 
 BOTTOM_BAR_Y = 999
 
@@ -35,7 +37,6 @@ class Scene:
 		self.bottomBar = pygame.image.load('assets/images/bottom-bar.png')
 
 		self.buttons = []
-		self.createStandardButtons()
 
 		self.backgroundColor = BACKGROUND_COLOR
 
@@ -45,17 +46,18 @@ class Scene:
 		homeNormal = pygame.image.load('assets/images/button-home-normal.png')
 		homeTapped = pygame.image.load('assets/images/button-home-tapped.png')
 		self.buttons.append(Button(self.screen, pygame.Rect(0, BOTTOM_BAR_Y, homeNormal.get_width(), homeNormal.get_height()), 
-			homeNormal, homeTapped, None, None, None, self.onHomeTapped))
+			homeNormal, homeTapped, None, None, None, None, self.onHomeTapped))
 
 		languagesNum = len(self.config.getLanguages())
 		for i in range(languagesNum):
 			languageData = self.config.getLanguages()[i]
+
 			languageNormal = pygame.image.load('assets/images/language-button-normal.png')
 			languageTapped = pygame.image.load('assets/images/language-button-tapped.png')
 			font = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])
 			
 			self.buttons.append(Button(self.screen, pygame.Rect(self.screen.get_width() - (languagesNum - i) * languageNormal.get_width(), BOTTOM_BAR_Y, 
-				languageNormal.get_width(), languageNormal.get_height()), languageNormal, languageTapped, log2vis(languageData['buttonText']), [255, 255, 255], font, partial(self.onLanguageTapped, i)))
+				languageNormal.get_width(), languageNormal.get_height()), languageNormal, languageTapped, log2vis(languageData['buttonText']), LANGUAGE_TEXT_COLOR, LANGUAGE_SELECTED_TEXT_COLOR, font, partial(self.onLanguageTapped, i)))
 
 	def onHomeTapped(self):
 		pass
@@ -77,9 +79,7 @@ class Scene:
 		# Draw bottom bar
 		self.screen.blit(self.bottomBar, (0, 999))
 
+		# Draw current language image
+
 		for button in self.buttons:
 			button.draw()
-
-	def createStandardButtons(self):
-		pass
-		#self.buttons.append(Button(self.screen, pygame.Rect(self.screen.get_width() - LANGUAGE_BUTTONS_X_PADDING - LANGUAGE_BUTTONS_SIZE, self.screen.get_height() - LANGUAGE_BUTTONS_Y_PADDING - LANGUAGE_BUTTONS_SIZE, LANGUAGE_BUTTONS_SIZE, LANGUAGE_BUTTONS_SIZE), 'En', self.font, self.onLanguageClicked.bind(ENGLISH))
