@@ -1,9 +1,6 @@
 import json
 import pyfribidi
 
-import arabic_reshaper
-from bidi.algorithm import get_display
-
 class Config:
 
 	def __init__(self, filename):
@@ -28,6 +25,8 @@ class Config:
 	def getLanguage(self):
 		return self.config['languages'][self.languageIndex]
 
+	def isTouch(self):
+		return self.config['touch']
 
-
-
+	def getTouchDevice(self):
+		return self.config['touchDevice']

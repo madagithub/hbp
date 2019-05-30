@@ -65,13 +65,13 @@ class Scene:
 	def onLanguageTapped(self, index):
 		pass
 
-	def processEvent(self, event):
-		if event.type == MOUSEBUTTONDOWN:
-			for button in self.buttons:
-				button.onMouseDown(event.pos)
-		elif event.type == MOUSEBUTTONUP:
-			for button in self.buttons:
-				button.onMouseUp(event.pos)
+	def onMouseDown(self, pos):
+		for button in self.buttons:
+			button.onMouseDown(pos)
+
+	def onMouseUp(self, pos):
+		for button in self.buttons:
+			button.onMouseUp(pos)
 
 	def draw(self):
 		self.screen.blit(self.logo, (23, 17))

@@ -1,4 +1,6 @@
 {
+	"touch": true,
+	"touchDevice": "/dev/input/event8",
 	"defaultLanguage": "en",
 	"languages": [
 		{

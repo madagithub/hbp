@@ -16,7 +16,6 @@ class Button:
 		else:
 			self.textBox = None
 
-		#self.selectedTextBox = self.font.render(text, True, selectedColor)
 		self.onClickCallback = onClickCallback
 		self.isMouseDownOnButton = False
 
