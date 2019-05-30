@@ -1,10 +1,11 @@
 {
-	"touch": true,
+	"touch": false,
 	"touchDevice": "/dev/input/event8",
 	"defaultLanguage": "en",
 	"languages": [
 		{
-			"prefix": "he", 
+			"prefix": "he",
+			"rtl": true,
 			"buttonText": "עברית",
 			"fonts": 
 			{
@@ -16,6 +17,7 @@
 		},
 		{
 			"prefix": "ar", 
+			"rtl": true,
 			"buttonText": "عربية",
 			"fonts": 
 			{
@@ -27,6 +29,7 @@
 		},
 		{
 			"prefix": "en", 
+			"rtl": false,
 			"buttonText": "English",
 			"fonts": 
 			{
