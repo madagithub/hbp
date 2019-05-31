@@ -23,13 +23,6 @@ class Scene:
 		self.screen = game.screen
 		self.config = game.config
 
-		languageData = self.config.getLanguage()
-		self.headerFont = pygame.font.Font(languageData['fonts']['headerFont']['filename'], languageData['fonts']['headerFont']['size'])
-		self.subHeaderFont = pygame.font.Font(languageData['fonts']['subHeaderFont']['filename'], languageData['fonts']['subHeaderFont']['size'])
-		self.textFont = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])
-		self.smallTextFont = pygame.font.Font(languageData['fonts']['smallTextFont']['filename'], languageData['fonts']['smallTextFont']['size'])
-		self.buttonFont = self.textFont
-
 		self.blitCursor = True
 		self.backgroundColor = [0,0,0]
 
@@ -40,6 +33,7 @@ class Scene:
 
 		self.backgroundColor = BACKGROUND_COLOR
 
+		self.loadFonts()
 		self.createBottomBarButtons()
 
 	def createBottomBarButtons(self):
@@ -64,6 +58,19 @@ class Scene:
 
 	def onLanguageTapped(self, index):
 		self.config.changeLanguage(index)
+		self.loadFonts()
+		self.onLanguageChanged()
+
+	def loadFonts(self):
+		languageData = self.config.getLanguage()
+		self.headerFont = pygame.font.Font(languageData['fonts']['headerFont']['filename'], languageData['fonts']['headerFont']['size'])
+		self.subHeaderFont = pygame.font.Font(languageData['fonts']['subHeaderFont']['filename'], languageData['fonts']['subHeaderFont']['size'])
+		self.textFont = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])
+		self.smallTextFont = pygame.font.Font(languageData['fonts']['smallTextFont']['filename'], languageData['fonts']['smallTextFont']['size'])
+		self.buttonFont = self.textFont
+
+	def onLanguageChanged(self):
+		pass
 
 	def onMouseDown(self, pos):
 		for button in self.buttons:

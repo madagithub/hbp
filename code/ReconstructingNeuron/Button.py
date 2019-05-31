@@ -9,15 +9,20 @@ class Button:
 		self.rect = rect
 		self.image = image
 		self.tappedImage = tappedImage
+		self.color = color
+		self.selectedColor = selectedColor
 
-		if text is not None:
-			self.textBox = font.render(text, True, color)
-			self.selectedTextBox = font.render(text, True, selectedColor)
-		else:
-			self.textBox = None
+		self.createText(text, font)
 
 		self.onClickCallback = onClickCallback
 		self.isMouseDownOnButton = False
+
+	def createText(self, text, font):
+		if text is not None:
+			self.textBox = font.render(text, True, self.color)
+			self.selectedTextBox = font.render(text, True, self.selectedColor)
+		else:
+			self.textBox = None
 
 	def draw(self):
 		self.screen.blit(self.tappedImage if self.isMouseDownOnButton else self.image, (self.rect.left, self.rect.top))

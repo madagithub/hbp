@@ -24,7 +24,7 @@ class ChooseNeuronScene(Scene):
 	def __init__(self, game):
 		super().__init__(game)
 
-		self.headerText = self.textFont.render(self.config.getText("RN_CHOOSE_NEURON_INSTRUCTION"), True, (255, 255, 255))
+		self.createTexts()
 
 		self.neuronNames = []
 		self.neuronDescs = []
@@ -32,16 +32,20 @@ class ChooseNeuronScene(Scene):
 		currImageButtonX = FIRST_NEURON_IMAGE_X
 		currSelectButtonX = FIRST_NEURON_SELECT_BUTTON_X
 		self.neuronImages = []
-		for i in range(0, 3):
+		self.selectButtons = []
+		for i in range(0, len(NEURON_DATA)): #TODO: Move to config
 			neuronImageSet = NEURON_DATA[i]
 			normalImage = pygame.image.load('assets/images/' + neuronImageSet['normal'])
 			selectedImage = pygame.image.load('assets/images/' + neuronImageSet['selected'])
 			self.buttons.append(Button(self.screen, pygame.Rect(currImageButtonX, FIRST_NEURON_IMAGE_Y, normalImage.get_width(), normalImage.get_height()), 
 				normalImage, selectedImage, None, None, None, None, partial(self.onNeuronClick, i)))
 			normalButtonImage = pygame.image.load('assets/images/small-button-empty.png')
-			self.buttons.append(Button(self.screen, pygame.Rect(currSelectButtonX, FIRST_NEURON_SELECT_BUTTON_Y, normalButtonImage.get_width(), normalButtonImage.get_height()), 
+
+			selectButton = Button(self.screen, pygame.Rect(currSelectButtonX, FIRST_NEURON_SELECT_BUTTON_Y, normalButtonImage.get_width(), normalButtonImage.get_height()), 
 				normalButtonImage, pygame.image.load('assets/images/small-button-selected.png'), 
-				self.config.getText('RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT'), [0, 0, 0], [0, 0, 0], self.buttonFont, partial(self.onNeuronClick, i)))
+				self.config.getText('RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT'), [0, 0, 0], [0, 0, 0], self.buttonFont, partial(self.onNeuronClick, i))
+			self.buttons.append(selectButton)
+			self.selectButtons.append(selectButton)
 
 			self.neuronNames.append(self.subHeaderFont.render(self.config.getText(neuronImageSet['name-key']), True, (255, 255, 255)))
 
@@ -52,6 +56,15 @@ class ChooseNeuronScene(Scene):
 
 			currImageButtonX += NEURON_IMAGE_GAP
 			currSelectButtonX += NEURON_IMAGE_GAP
+
+	def onLanguageChanged(self):
+		self.createTexts()
+
+		for i in range(0, len(self.selectButtons)):
+			self.selectButtons[i].createText(self.config.getText('RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT'), self.buttonFont)
+
+	def createTexts(self):
+		self.headerText = self.textFont.render(self.config.getText("RN_CHOOSE_NEURON_INSTRUCTION"), True, (255, 255, 255))
 
 	def onNeuronClick(self, index):
 		self.game.setChosenNeuron(index)
