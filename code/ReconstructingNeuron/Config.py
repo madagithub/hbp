@@ -31,6 +31,9 @@ class Config:
 	def getLanguage(self):
 		return self.config['languages'][self.languageIndex]
 
+	def getDefaultLanguagePrefix(self):
+		return self.config['defaultLanguage']
+
 	def isTouch(self):
 		return self.config['touch']
 

@@ -58,6 +58,7 @@ class ChooseNeuronScene(Scene):
 			currSelectButtonX += NEURON_IMAGE_GAP
 
 	def onLanguageChanged(self):
+		super().onLanguageChanged()
 		self.createTexts()
 
 		for i in range(0, len(self.selectButtons)):

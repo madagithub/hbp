@@ -4,6 +4,7 @@ from pygame.locals import *
 from functools import partial
 
 from Button import Button
+from LanguageButton import LanguageButton
 
 from pyfribidi import *
 
@@ -30,6 +31,7 @@ class Scene:
 		self.bottomBar = pygame.image.load('assets/images/bottom-bar.png')
 
 		self.buttons = []
+		self.languageButtons = []
 
 		self.backgroundColor = BACKGROUND_COLOR
 
@@ -48,10 +50,17 @@ class Scene:
 
 			languageNormal = pygame.image.load('assets/images/language-button-normal.png')
 			languageTapped = pygame.image.load('assets/images/language-button-tapped.png')
+			languageSelected = pygame.image.load('assets/images/language-button-selected.png')
 			font = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])
 			
-			self.buttons.append(Button(self.screen, pygame.Rect(self.screen.get_width() - (languagesNum - i) * languageNormal.get_width(), BOTTOM_BAR_Y, 
-				languageNormal.get_width(), languageNormal.get_height()), languageNormal, languageTapped, log2vis(languageData['buttonText']), LANGUAGE_TEXT_COLOR, LANGUAGE_SELECTED_TEXT_COLOR, font, partial(self.onLanguageTapped, i)))
+			languageButton = LanguageButton(self.screen, pygame.Rect(self.screen.get_width() - (languagesNum - i) * languageNormal.get_width(), BOTTOM_BAR_Y, 
+				languageNormal.get_width(), languageNormal.get_height()), languageNormal, languageTapped, languageSelected, log2vis(languageData['buttonText']), 
+				LANGUAGE_TEXT_COLOR, LANGUAGE_SELECTED_TEXT_COLOR, font, partial(self.onLanguageTapped, i))
+			if languageData['prefix'] == self.config.getDefaultLanguagePrefix():
+				languageButton.visible = False
+
+			self.buttons.append(languageButton)
+			self.languageButtons.append(languageButton)
 
 	def onHomeTapped(self):
 		self.game.gotoHome()
@@ -70,7 +79,12 @@ class Scene:
 		self.buttonFont = self.textFont
 
 	def onLanguageChanged(self):
-		pass
+		languages = self.config.getLanguages()
+		for i in range(len(languages)):
+			if i == self.config.languageIndex:
+				self.languageButtons[i].visible = False
+			else:
+				self.languageButtons[i].visible = True
 
 	def onMouseDown(self, pos):
 		for button in self.buttons:

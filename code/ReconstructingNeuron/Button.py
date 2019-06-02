@@ -11,6 +11,7 @@ class Button:
 		self.tappedImage = tappedImage
 		self.color = color
 		self.selectedColor = selectedColor
+		self.visible = True
 
 		self.createText(text, font)
 
@@ -25,17 +26,20 @@ class Button:
 			self.textBox = None
 
 	def draw(self):
-		self.screen.blit(self.tappedImage if self.isMouseDownOnButton else self.image, (self.rect.left, self.rect.top))
+		if self.visible:
+			self.screen.blit(self.tappedImage if self.isMouseDownOnButton else self.image, (self.rect.left, self.rect.top))
 
-		if self.textBox is not None:
-			Utilities.drawTextOnCenter(self.screen, self.selectedTextBox if self.isMouseDownOnButton else self.textBox, self.rect.center)
+			if self.textBox is not None:
+				Utilities.drawTextOnCenter(self.screen, self.selectedTextBox if self.isMouseDownOnButton else self.textBox, self.rect.center)
 
 	def onMouseDown(self, position):
-		self.isMouseDownOnButton = self.rect.collidepoint(position)
+		if self.visible:
+			self.isMouseDownOnButton = self.rect.collidepoint(position)
 
 	def onMouseUp(self, position):
-		if self.rect.collidepoint(position) and self.isMouseDownOnButton:
-			self.onClickCallback()
+		if self.visible:
+			if self.rect.collidepoint(position) and self.isMouseDownOnButton:
+				self.onClickCallback()
 
-		self.isMouseDownOnButton = False
+			self.isMouseDownOnButton = False
 

@@ -25,6 +25,7 @@ class OpeningScene(Scene):
 		self.game.transition('START')
 
 	def onLanguageChanged(self):
+		super().onLanguageChanged()
 		self.createTexts()
 		self.startButton.createText(self.config.getText("RN_OPENING_SCREEN_BUTTON_TEXT"), self.buttonFont)
 

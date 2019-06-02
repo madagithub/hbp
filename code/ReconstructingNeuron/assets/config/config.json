@@ -60,9 +60,9 @@
 		},
 
 		"ar": {
-			"RN_OPENING_SCREEN_HEADER": "כאן בונים נוירון",
-			"RN_OPENING_SCREEN_SUB_HEADER": "מוזמנים לבנות נוירון",
-			"RN_OPENING_SCREEN_BUTTON_TEXT": "התחל",
+			"RN_OPENING_SCREEN_HEADER": "Neuron Under Construction",
+			"RN_OPENING_SCREEN_SUB_HEADER": "You are invited to reconstruct your own neuron",
+			"RN_OPENING_SCREEN_BUTTON_TEXT": "Start",
 
 			"RN_CHOOSE_NEURON_INSTRUCTION": "Select a neuron and reconstruct it as an active 3D model",
 			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "Select",
@@ -77,9 +77,9 @@
 		},
 
 		"he": {
-			"RN_OPENING_SCREEN_HEADER": "Neuron Under Construction",
-			"RN_OPENING_SCREEN_SUB_HEADER": "You are invited to reconstruct your own neuron",
-			"RN_OPENING_SCREEN_BUTTON_TEXT": "Start",
+			"RN_OPENING_SCREEN_HEADER": "כאן בונים נוירון",
+			"RN_OPENING_SCREEN_SUB_HEADER": "מוזמנים לבנות נוירון",
+			"RN_OPENING_SCREEN_BUTTON_TEXT": "התחל",
 
 			"RN_CHOOSE_NEURON_INSTRUCTION": "בחר נוירון",
 			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "בחר",
