@@ -14,7 +14,7 @@ FIRST_NEURON_SELECT_BUTTON_Y = 739
 FIRST_NEURON_TEXT_MIDDLE = 374
 NEURON_IMAGE_GAP = 584
 
-SMALL_TEXT_LINE_SIZE = 25
+SMALL_TEXT_LINE_SIZE = 26
 
 NEURON_DATA = [{'normal': 'select-pyramidal-neuron-normal.png', 'selected': 'select-pyramidal-neuron-selected.png', 'name-key': 'RN_CHOOSE_NEURON_PYRAMIDAL_NAME', 'desc-key': 'RN_CHOOSE_NEURON_PYRAMIDAL_DESC'}, 
 	{'normal': 'select-basket-neuron-normal.png', 'selected': 'select-basket-neuron-selected.png', 'name-key': 'RN_CHOOSE_NEURON_BASKET_NAME', 'desc-key': 'RN_CHOOSE_NEURON_BASKET_DESC'}, 
@@ -49,9 +49,7 @@ class ChooseNeuronScene(Scene):
 
 			self.neuronNames.append(self.subHeaderFont.render(self.config.getText(neuronImageSet['name-key']), True, (255, 255, 255)))
 
-			descTexts = []
-			for text in self.config.getTextList(neuronImageSet['desc-key']):
-				descTexts.append(self.smallTextFont.render(text, True, (255, 255, 255)))
+			descTexts = Utilities.renderTextList(self.config, self.smallTextFont, neuronImageSet['desc-key'])
 			self.neuronDescs.append(descTexts)
 
 			currImageButtonX += NEURON_IMAGE_GAP
@@ -68,18 +66,14 @@ class ChooseNeuronScene(Scene):
 		self.headerText = self.textFont.render(self.config.getText("RN_CHOOSE_NEURON_INSTRUCTION"), True, (255, 255, 255))
 
 	def onNeuronClick(self, index):
-		self.game.setChosenNeuron(index)
-		self.game.transition('DRAW')
+		self.game.transition('DRAW', 'martinotti')
 
-	def draw(self):
+	def draw(self, dt):
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 61))
 
 		for i in range(len(self.neuronNames)):
 			currX = FIRST_NEURON_TEXT_MIDDLE + NEURON_IMAGE_GAP * i
-			Utilities.drawTextOnCenterX(self.screen, self.neuronNames[i], (currX, 556))	
+			Utilities.drawTextOnCenterX(self.screen, self.neuronNames[i], (currX, 556))
+			Utilities.drawTextsOnCenterX(self.screen, self.neuronDescs[i], (currX, 620), SMALL_TEXT_LINE_SIZE)
 
-			for j in range(len(self.neuronDescs[i])):
-				descText = self.neuronDescs[i][j]
-				Utilities.drawTextOnCenterX(self.screen, descText, (currX, 620 + j * SMALL_TEXT_LINE_SIZE))
-
-		super().draw()
+		super().draw(dt)

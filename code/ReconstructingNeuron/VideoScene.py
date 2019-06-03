@@ -11,6 +11,6 @@ class VideoScene(Scene):
 		self.blitCursor = False
 		self.video = VideoPlayer(self.screen, filename, 0, 0)
 
-	def draw(self):
+	def draw(self, dt):
 		if not self.video.draw():
 			self.game.transition(self.endScene)

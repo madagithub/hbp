@@ -2,6 +2,7 @@
 	"touch": false,
 	"touchDevice": "/dev/input/event8",
 	"defaultLanguage": "en",
+
 	"languages": [
 		{
 			"prefix": "he",
@@ -56,7 +57,28 @@
 
 			"RN_CHOOSE_NEURON_PYRAMIDAL_DESC": "Named after the pyramid shape of its body,\nthe most common cell type in the cerebral\ncortex. The cell increases the activity of the\ncells it communicates with (Excitatory cell).",
 			"RN_CHOOSE_NEURON_BASKET_DESC": "Surrounds like a basket the body of the cells it\ncommunicates with and decreases their activity.\n(Inhibitory cell).",
-			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "A small cell with short branches. Named\nafter the scientist who discovered it. The\ncell decreases the activity of the cells it\ncommunicates with (Inhibitory cell)."
+			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "A small cell with short branches. Named\nafter the scientist who discovered it. The\ncell decreases the activity of the cells it\ncommunicates with (Inhibitory cell).",
+
+			"RN_DRAWING_SCREEN_NEURON_INSTRUCTION": "Follow the dotted line with your finger to reconstruct the neuron",
+
+			"RN_DRAWING_SCREEN_LIGHTNING_INSTRUCTION": "Great, you reconstructed a 3D model of the cell structure.\nPress on the lightning and activate the cell",
+			"RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION": "Reconstructing the cell structure:\nIn this stage you marked a real\nneuron in a biological brain slice.\nBased on your marking, the\ncomputer created a digital\nstructure of the neuron.",
+
+			"RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION": "Activating the cell:\nIn this stage you added electricity\nto the structure of the digital cell\nand activated it.",
+
+			"RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT": "Next",
+
+			"RN_SUMMARY_SCREEN_HEADER": "Congratulations!",
+			"RN_SUMMARY_SCREEN_SUB_HEADER": "You have reconstructed an active 3D model of a nerve cell",
+
+			"RN_SUMMARY_SCREEN_SUMMARY_HEADER": "Why do we need to model a cell?",
+			"RN_SUMMARY_SCREEN_SUMMARY_TEXT": "The brain is composed by cells. After modeling many cells, we can create a whole digital brain, and perform experiments\non it that cannot be done on humans. For instance, we can cause the digital brain to have the Alzheimer's disease, and\nthen we can discover what the brain activity is during the disease. Hopefully, a digital model of the brain will provide the\nbreakthrough to develop medication that will change the lives of many patients.",
+
+			"RN_SUMMARY_SCREEN_DRAWING_TEXT": "Brain cell tissue",
+			"RN_SUMMARY_SCREEN_MODELING_TEXT": "Reconstructing the cell structure",
+			"RN_SUMMARY_SCREEN_ELECTRIFY_TEXT": "Activating the cell",
+
+			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell"
 		},
 
 		"ar": {
@@ -73,7 +95,28 @@
 
 			"RN_CHOOSE_NEURON_PYRAMIDAL_DESC": "Named after the pyramid shape of its body,\nthe most common cell type in the cerebral\ncortex. The cell increases the activity of the\ncells it communicates with (Excitatory cell).",
 			"RN_CHOOSE_NEURON_BASKET_DESC": "Surrounds like a basket the body of the cells it\ncommunicates with and decreases their activity.\n(Inhibitory cell).",
-			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "A small cell with short branches. Named\nafter the scientist who discovered it. The\ncell decreases the activity of the cells it\ncommunicates with (Inhibitory cell)."
+			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "A small cell with short branches. Named\nafter the scientist who discovered it. The\ncell decreases the activity of the cells it\ncommunicates with (Inhibitory cell).",
+
+			"RN_DRAWING_SCREEN_NEURON_INSTRUCTION": "Follow the dotted line with your finger to reconstruct the neuron",
+
+			"RN_DRAWING_SCREEN_LIGHTNING_INSTRUCTION": "Great, you reconstructed a 3D model of the cell structure.\nPress on the lightning and activate the cell",
+			"RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION": "Reconstructing the cell structure:\nIn this stage you marked a real\nneuron in a biological brain slice.\nBased on your marking, the\ncomputer created a digital\nstructure of the neuron.",
+
+			"RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION": "Activating the cell:\nIn this stage you added electricity\nto the structure of the digital cell\nand activated it.",
+
+			"RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT": "Next",
+
+			"RN_SUMMARY_SCREEN_HEADER": "Congratulations!",
+			"RN_SUMMARY_SCREEN_SUB_HEADER": "You have reconstructed an active 3D model of a nerve cell",
+
+			"RN_SUMMARY_SCREEN_SUMMARY_HEADER": "Why do we need to model a cell?",
+			"RN_SUMMARY_SCREEN_SUMMARY_TEXT": "The brain is composed by cells. After modeling many cells, we can create a whole digital brain, and perform experiments\non it that cannot be done on humans. For instance, we can cause the digital brain to have the Alzheimer's disease, and\nthen we can discover what the brain activity is during the disease. Hopefully, a digital model of the brain will provide the\nbreakthrough to develop medication that will change the lives of many patients.",
+
+			"RN_SUMMARY_SCREEN_DRAWING_TEXT": "Brain cell tissue",
+			"RN_SUMMARY_SCREEN_MODELING_TEXT": "Reconstructing the cell structure",
+			"RN_SUMMARY_SCREEN_ELECTRIFY_TEXT": "Activating the cell",
+
+			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell"
 		},
 
 		"he": {
@@ -90,7 +133,73 @@
 
 			"RN_CHOOSE_NEURON_PYRAMIDAL_DESC": "פירמידיאלי",
 			"RN_CHOOSE_NEURON_BASKET_DESC": "כמו סל",
-			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "תא קטן עם ענפים קיקים.\nנקרא על שם מדען."
+			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "תא קטן עם ענפים קיקים.\nנקרא על שם מדען.",
+
+			"RN_DRAWING_SCREEN_NEURON_INSTRUCTION": "Follow the dotted line with your finger to reconstruct the neuron",
+
+			"RN_DRAWING_SCREEN_LIGHTNING_INSTRUCTION": "Great, you reconstructed a 3D model of the cell structure.\nPress on the lightning and activate the cell",
+			"RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION": "Reconstructing the cell structure:\nIn this stage you marked a real\nneuron in a biological brain slice.\nBased on your marking, the\ncomputer created a digital\nstructure of the neuron.",
+
+			"RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION": "Activating the cell:\nIn this stage you added electricity\nto the structure of the digital cell\nand activated it.",
+
+			"RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT": "Next",
+
+			"RN_SUMMARY_SCREEN_HEADER": "Congratulations!",
+			"RN_SUMMARY_SCREEN_SUB_HEADER": "You have reconstructed an active 3D model of a nerve cell",
+
+			"RN_SUMMARY_SCREEN_SUMMARY_HEADER": "Why do we need to model a cell?",
+			"RN_SUMMARY_SCREEN_SUMMARY_TEXT": "The brain is composed by cells. After modeling many cells, we can create a whole digital brain, and perform experiments\non it that cannot be done on humans. For instance, we can cause the digital brain to have the Alzheimer's disease, and\nthen we can discover what the brain activity is during the disease. Hopefully, a digital model of the brain will provide the\nbreakthrough to develop medication that will change the lives of many patients.",
+
+			"RN_SUMMARY_SCREEN_DRAWING_TEXT": "Brain cell tissue",
+			"RN_SUMMARY_SCREEN_MODELING_TEXT": "Reconstructing the cell structure",
+			"RN_SUMMARY_SCREEN_ELECTRIFY_TEXT": "Activating the cell",
+
+			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell"
 		}
+	},
+
+	"neuron-paths": {
+		"martinotti": [
+			[
+				{"x": 844, "y": 833},
+				{"x": 848, "y": 843},
+				{"x": 850, "y": 849},
+				{"x": 849, "y": 855},
+				{"x": 844, "y": 859},
+				{"x": 837, "y": 859},
+				{"x": 833, "y": 868},
+				{"x": 830, "y": 877},
+				{"x": 824, "y": 882},
+				{"x": 817, "y": 886},
+				{"x": 813, "y": 892},
+				{"x": 813, "y": 902},
+				{"x": 807, "y": 907},
+				{"x": 801, "y": 907},
+				{"x": 793, "y": 910},
+				{"x": 791, "y": 915},
+				{"x": 787, "y": 920},
+				{"x": 777, "y": 921},
+				{"x": 767, "y": 923},
+				{"x": 765, "y": 932},
+				{"x": 759, "y": 931},
+				{"x": 748, "y": 930},
+				{"x": 742, "y": 936},
+				{"x": 736, "y": 943},
+				{"x": 728, "y": 945},
+				{"x": 726, "y": 945},
+				{"x": 719, "y": 955},
+				{"x": 711, "y": 960},
+				{"x": 704, "y": 962},
+				{"x": 696, "y": 967},
+				{"x": 691, "y": 975},
+				{"x": 683, "y": 976},
+				{"x": 673, "y": 978},
+				{"x": 666, "y": 984},
+				{"x": 657, "y": 985},
+				{"x": 649, "y": 986},
+				{"x": 640, "y": 994},
+				{"x": 634, "y": 999}
+			]	
+		]
 	}
 }

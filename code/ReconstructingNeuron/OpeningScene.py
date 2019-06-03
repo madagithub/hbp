@@ -33,8 +33,8 @@ class OpeningScene(Scene):
 		self.headerText = self.headerFont.render(self.config.getText("RN_OPENING_SCREEN_HEADER"), True, (255, 255, 255))
 		self.subHeaderText = self.subHeaderFont.render(self.config.getText("RN_OPENING_SCREEN_SUB_HEADER"), True, (255, 255, 255))
 
-	def draw(self):
+	def draw(self, dt):
 		self.screen.blit(self.background, (0, 0))
 		Utilities.drawTextOnCenter(self.screen, self.headerText, (self.screen.get_width() // 2, 411))
 		Utilities.drawTextOnCenter(self.screen, self.subHeaderText, (self.screen.get_width() // 2, 494))
-		super().draw()
+		super().draw(dt)

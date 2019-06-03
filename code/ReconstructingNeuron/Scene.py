@@ -94,7 +94,10 @@ class Scene:
 		for button in self.buttons:
 			button.onMouseUp(pos)
 
-	def draw(self):
+	def onMouseMove(self, pos):
+		pass
+
+	def draw(self, dt):
 		self.screen.blit(self.logo, (23, 17))
 
 		# Draw bottom bar
