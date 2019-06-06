@@ -5,11 +5,12 @@ from common.Scene import Scene
 from common.VideoPlayer import VideoPlayer
 
 class VideoScene(Scene):
-	def __init__(self, game, filename, endScene):
+	def __init__(self, game, filename, endScene, soundFile=None):
 		super().__init__(game)
 		self.endScene = endScene
 		self.blitCursor = False
-		self.video = VideoPlayer(self.screen, filename, 0, 0)
+
+		self.video = VideoPlayer(self.screen, filename, 0, 0, loop=False, soundFile=soundFile)
 
 	def draw(self, dt):
 		if not self.video.draw():

@@ -1,5 +1,6 @@
 import pygame
 from pygame.locals import *
+
 import cv2
 import time
 
@@ -21,7 +22,7 @@ class Opening(Exhibit):
 
 	def transition(self, transitionId, data=None):
 		if transitionId == 'VIDEO':
-			self.scene = VideoScene(self, data, 'START')
+			self.scene = VideoScene(self, data['file'], 'START', data['soundFile'])
 		elif transitionId == 'START':
 			self.scene = OpeningScene(self)
 

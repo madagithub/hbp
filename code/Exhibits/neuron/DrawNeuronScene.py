@@ -85,6 +85,7 @@ class DrawNeuronScene(Scene):
 		self.neuronChosen = neuronChosen
 
 		self.drawOnNeuron = pygame.image.load('assets/images/reconstruct-martinotti.png')
+		self.videoMask = pygame.image.load('assets/images/video-mask.png')
 
 		self.drawingDone = False
 		self.resetCirclePos()
@@ -133,15 +134,13 @@ class DrawNeuronScene(Scene):
 			self.timer.tick(dt)
 
 		if self.state == DRAWING_STATE:
-			self.drawDrawingState()
+			self.drawDrawingState(dt)
 		elif self.state == MODEL_STATE:
-			self.draw3DModelState()
+			self.draw3DModelState(dt)
 		elif self.state == LIGHTNING_STATE:
-			self.drawLightningState()
+			self.drawLightningState(dt)
 
-		super().draw(dt)
-
-	def drawDrawingState(self):
+	def drawDrawingState(self, dt):
 		if self.drawing and self.lastUpTime is not None and (pygame.time.get_ticks() - self.lastUpTime) / 1000 > MAX_NON_DRAWING_TIME_UNTIL_RESET:
 			self.resetCirclePos()
 
@@ -156,19 +155,26 @@ class DrawNeuronScene(Scene):
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 115))
 		Utilities.drawTextOnCenterX(self.screen, self.instructionText, (self.screen.get_width() // 2, 820))
 
-	def draw3DModelState(self):
+		super().draw(dt)
+
+	def draw3DModelState(self, dt):
+		self.screen.blit(self.videoMask, (0, 0))
 		self.modelPlayer.draw()
 
 		self.screen.blit(self.modelTextBalloon, (1326, 399))
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
 		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1530, 429), 29)
 
-	def drawLightningState(self):
+		super().draw(dt)
+
+	def drawLightningState(self, dt):
 		self.lightningPlayer.draw()
 
 		self.screen.blit(self.lightningTextBalloon, (1327, 412))
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
 		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1530, 442), 29)
+
+		super().draw(dt)
 
 	def onMouseDown(self, pos):
 		super().onMouseDown(pos)

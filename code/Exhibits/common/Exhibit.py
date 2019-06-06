@@ -1,5 +1,6 @@
 import pygame
 from pygame.locals import *
+
 import cv2
 import time
 
@@ -20,6 +21,7 @@ class Exhibit:
 	def start(self):
 		self.config = Config(CONFIG_FILENAME)
 
+		pygame.mixer.pre_init(44100, -16, 1, 512)
 		pygame.init()
 		pygame.mouse.set_visible(False)
 
@@ -82,7 +84,7 @@ class Exhibit:
 				self.screen.blit(self.cursor, (pygame.mouse.get_pos()))
 
 			pygame.display.flip()
-			clock.tick(30)
+			clock.tick(25)
 
 		pygame.quit()
 		cv2.destroyAllWindows()

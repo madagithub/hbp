@@ -164,6 +164,7 @@
 	"openingVideos": [
 		{
 			"file": "assets/videos/opening/video 01 - interview.mp4",
+			"soundFile": "assets/videos/opening/video 01 - interview.ogg",
 			"image": "",
 			"x": 200,
 			"y": 100

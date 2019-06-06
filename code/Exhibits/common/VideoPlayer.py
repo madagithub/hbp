@@ -1,18 +1,32 @@
 import pygame
 from pygame.locals import *
+from pygame import mixer
+
 import cv2
 import numpy as np
 import time
 
 class VideoPlayer:
-	def __init__(self, screen, filename, x, y, loop=False):
+	def __init__(self, screen, filename, x, y, loop=False, soundFile=None):
 		self.screen = screen
 		self.video = cv2.VideoCapture(filename)
+
+		self.isAudioPlaying = True
+		if soundFile is not None:
+			print('load sound file:', soundFile)
+			mixer.music.load(soundFile)
+			self.isAudioPlaying = False
+
 		self.x = x
 		self.y = y
 		self.loop = loop
 
 	def draw(self):
+
+		if not self.isAudioPlaying:
+			print('playing!')
+			mixer.music.play()
+			self.isAudioPlaying = True
 
 		ret, frame = self.video.read()
 		if ret:

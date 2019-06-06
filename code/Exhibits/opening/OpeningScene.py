@@ -18,14 +18,15 @@ class OpeningScene(Scene):
 		for video in self.config.getOpeningVideos():
 			self.videoButton = Button(self.screen, pygame.Rect(video['x'], video['y'], 245, 78), 
 				pygame.image.load('assets/images/button-empty.png'), pygame.image.load('assets/images/button-selected.png'), 
-				"Video " + str(index), START_BUTTON_TEXT_COLOR, START_BUTTON_TEXT_COLOR, self.buttonFont, partial(self.onVideoClick, video['file']))
+				"Video " + str(index), START_BUTTON_TEXT_COLOR, START_BUTTON_TEXT_COLOR, self.buttonFont, 
+				partial(self.onVideoClick, video['file'], video.get('soundFile', None)))
 			index += 1
 			self.buttons.append(self.videoButton)
 
 		self.createTexts()
 
-	def onVideoClick(self, file):
-		self.game.transition('VIDEO', file)
+	def onVideoClick(self, file, soundFile):
+		self.game.transition('VIDEO', {'file': file, 'soundFile': soundFile})
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
