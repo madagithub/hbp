@@ -3,14 +3,8 @@ from pygame.locals import *
 import cv2
 import time
 
-from OpeningScene import OpeningScene
-from VideoScene import VideoScene
-from ChooseNeuronScene import ChooseNeuronScene
-from DrawNeuronScene import DrawNeuronScene
-from SummaryScene import SummaryScene
-from Config import Config
-
-from functools import partial
+from common.Config import Config
+from common.VideoScene import VideoScene
 
 import os 
 os.environ['SDL_VIDEO_CENTERED'] = '1'
@@ -19,7 +13,7 @@ CONFIG_FILENAME = 'assets/config/config.json'
 
 from ft5406 import Touchscreen, TS_PRESS, TS_RELEASE, TS_MOVE
 
-class Neuron:
+class Exhibit:
 	def __init__(self):
 		self.playingVideos = []
 
@@ -31,9 +25,6 @@ class Neuron:
 
 		self.screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)
 		self.cursor = pygame.image.load('assets/images/cursor.png').convert_alpha()
-		self.startVideoScene = VideoScene(self, 'assets/videos/brainzoom-short.mov', 'CHOOSE')
-
-		self.scene = DrawNeuronScene(self, 'martinotti') #OpeningScene(self)
 
 		if self.config.isTouch():
 			self.ts = Touchscreen(self.config.getTouchDevice())
@@ -45,20 +36,11 @@ class Neuron:
 
 			self.ts.run()
 
-		self.loop()
-
 	def gotoHome(self):
 		self.scene = OpeningScene(self)
 
 	def transition(self, transitionId, data=None):
-		if transitionId == 'START':
-			self.scene = self.startVideoScene
-		elif transitionId == 'CHOOSE':
-			self.scene = ChooseNeuronScene(self)
-		elif transitionId == 'DRAW':
-			self.scene = DrawNeuronScene(self, data)
-		elif transitionId == 'SUMMARY':
-			self.scene = SummaryScene(self, data)
+		pass
 
 	def onMouseDown(self, event, touch):
 		self.scene.onMouseDown((touch.x * 1920 / 4095, touch.y * 1080 / 4095))
@@ -95,6 +77,7 @@ class Neuron:
 			dt = currTime - lastTime
 			lastTime = currTime
 			self.scene.draw(dt / 1000)
+
 			if not self.config.isTouch() and self.scene.blitCursor:
 				self.screen.blit(self.cursor, (pygame.mouse.get_pos()))
 
@@ -106,7 +89,3 @@ class Neuron:
 
 		if self.config.isTouch():
 			self.ts.stop()
-
-
-if __name__ == '__main__':
-	Neuron().start()

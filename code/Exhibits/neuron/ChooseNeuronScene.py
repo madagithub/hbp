@@ -3,9 +3,9 @@ from pygame.locals import *
 
 from functools import partial
 
-from Scene import Scene
-from Button import Button
-from Utilities import Utilities
+from common.Scene import Scene
+from common.Button import Button
+from common.Utilities import Utilities
 
 FIRST_NEURON_IMAGE_X = 236
 FIRST_NEURON_IMAGE_Y = 236

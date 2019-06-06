@@ -3,11 +3,11 @@ from pygame.locals import *
 
 import math
 
-from Scene import Scene
-from Button import Button
-from Utilities import Utilities
-from Timer import Timer
-from VideoPlayer import VideoPlayer
+from common.Scene import Scene
+from common.Button import Button
+from common.Utilities import Utilities
+from common.Timer import Timer
+from common.VideoPlayer import VideoPlayer
 
 NEURON_BUTTON_WIDTH = 200
 NEURON_BUTTON_HEIGHT = 400

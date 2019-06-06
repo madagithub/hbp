@@ -1,7 +1,7 @@
 import pygame
 from pygame.locals import *
 
-from Utilities import Utilities
+from common.Utilities import Utilities
 
 class Button:
 	def __init__(self, screen, rect, image, tappedImage, text, color, selectedColor, font, onClickCallback):

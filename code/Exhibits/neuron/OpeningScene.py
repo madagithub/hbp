@@ -1,10 +1,10 @@
 import pygame
 from pygame.locals import *
 
-from Scene import Scene
-from Button import Button
+from common.Scene import Scene
+from common.Button import Button
 
-from Utilities import Utilities
+from common.Utilities import Utilities
 
 START_BUTTON_TEXT_COLOR = [0, 0, 0]
 

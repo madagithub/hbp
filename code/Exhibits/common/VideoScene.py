@@ -1,8 +1,8 @@
 import pygame
 from pygame.locals import *
 
-from Scene import Scene
-from VideoPlayer import VideoPlayer
+from common.Scene import Scene
+from common.VideoPlayer import VideoPlayer
 
 class VideoScene(Scene):
 	def __init__(self, game, filename, endScene):

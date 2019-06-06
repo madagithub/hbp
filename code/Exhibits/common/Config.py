@@ -39,3 +39,6 @@ class Config:
 
 	def getTouchDevice(self):
 		return self.config['touchDevice']
+
+	def getOpeningVideos(self):
+		return self.config['openingVideos']

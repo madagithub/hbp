@@ -3,8 +3,8 @@ from pygame.locals import *
 
 from functools import partial
 
-from Button import Button
-from LanguageButton import LanguageButton
+from common.Button import Button
+from common.LanguageButton import LanguageButton
 
 from pyfribidi import *
 

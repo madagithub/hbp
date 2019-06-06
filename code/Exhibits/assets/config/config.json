@@ -161,7 +161,40 @@
 		}
 	},
 
-	"neuron-paths": {
+	"openingVideos": [
+		{
+			"file": "assets/videos/opening/video 01 - interview.mp4",
+			"image": "",
+			"x": 200,
+			"y": 100
+		},
+		{
+			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
+			"image": "",
+			"x": 200,
+			"y": 300
+		},
+		{
+			"file": "assets/videos/opening/video 01 - interview.mp4",
+			"image": "",
+			"x": 200,
+			"y": 500
+		},
+		{
+			"file": "assets/videos/opening/video 01 - interview.mp4",
+			"image": "",
+			"x": 200,
+			"y": 500
+		},
+		{
+			"file": "assets/videos/opening/video 01 - interview.mp4",
+			"image": "",
+			"x": 200,
+			"y": 700
+		}
+	],
+
+	"neuronPaths": {
 		"martinotti": [
 			[
 				{"x": 844, "y": 833},
