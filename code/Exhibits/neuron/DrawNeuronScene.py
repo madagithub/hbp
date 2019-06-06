@@ -158,8 +158,8 @@ class DrawNeuronScene(Scene):
 		super().draw(dt)
 
 	def draw3DModelState(self, dt):
-		self.screen.blit(self.videoMask, (0, 0))
 		self.modelPlayer.draw()
+		self.screen.blit(self.videoMask, (0, 0))
 
 		self.screen.blit(self.modelTextBalloon, (1326, 399))
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
