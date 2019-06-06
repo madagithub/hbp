@@ -33,7 +33,7 @@ class Neuron:
 		self.cursor = pygame.image.load('assets/images/cursor.png').convert_alpha()
 		self.startVideoScene = VideoScene(self, 'assets/videos/brainzoom-short.mov', 'CHOOSE')
 
-		self.scene = OpeningScene(self)
+		self.scene = DrawNeuronScene(self, 'martinotti') #OpeningScene(self)
 
 		if self.config.isTouch():
 			self.ts = Touchscreen(self.config.getTouchDevice())
@@ -87,7 +87,8 @@ class Neuron:
 					if not self.config.isTouch():
 						self.scene.onMouseMove(event.pos)
 				elif event.type == KEYDOWN:
-					isGameRunning = False
+					if event.key == K_ESCAPE:
+						isGameRunning = False
 
 			self.screen.fill(self.scene.backgroundColor)
 			currTime = pygame.time.get_ticks()

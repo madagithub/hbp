@@ -13,7 +13,8 @@
 				"headerFont": {"filename": "assets/fonts/SimplerPro_V3-Black.ttf", "size": 72}, 
 				"subHeaderFont": {"filename": "assets/fonts/SimplerPro_V3-Bold.ttf", "size": 40}, 
 				"textFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 40},
-				"smallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 30}
+				"smallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 30},
+				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 26}
 			}
 		},
 		{
@@ -25,7 +26,8 @@
 				"headerFont": {"filename": "assets/fonts/TheSansArabic-Black.ttf", "size": 72}, 
 				"subHeaderFont": {"filename": "assets/fonts/TheSansArabic-Bold.ttf", "size": 40}, 
 				"textFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 40}, 
-				"smallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 30}
+				"smallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 30},
+				"extraSmallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 26}
 			}
 		},
 		{
@@ -36,8 +38,9 @@
 			{
 				"headerFont": {"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf", "size": 72}, 
 				"subHeaderFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf", "size": 40}, 
-				"textFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 30}, 
-				"smallTextFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 20}
+				"textFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 40}, 
+				"smallTextFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 30},
+				"extraSmallTextFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 26}
 			}
 		}
 	],

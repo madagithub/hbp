@@ -94,6 +94,9 @@ class DrawNeuronScene(Scene):
 		self.timer = None
 
 		self.createTexts()
+
+		self.modelTextBalloon = pygame.image.load('assets/images/text-box-small.png')
+		self.lightningTextBalloon = pygame.image.load('assets/images/text-box-large.png')
 		
 		self.modelPlayer = VideoPlayer(game.screen, 'assets/videos/neuron-blender-color.avi', self.screen.get_width() // 2 - 960 // 2, 200, True)
 		self.lightningPlayer = VideoPlayer(game.screen, 'assets/videos/MC_full.avi', self.screen.get_width() // 2 - 600 // 2, 0, True)
@@ -121,9 +124,9 @@ class DrawNeuronScene(Scene):
 			self.instructionText = self.textFont.render(self.config.getText("RN_DRAWING_SCREEN_NEURON_INSTRUCTION"), True, (255, 255, 255))
 		elif self.state == MODEL_STATE:
 			self.instructionTexts = Utilities.renderTextList(self.config, self.textFont, "RN_DRAWING_SCREEN_LIGHTNING_INSTRUCTION")
-			self.explanationTexts = Utilities.renderTextList(self.config, self.smallTextFont, "RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION")
+			self.explanationTexts = Utilities.renderTextList(self.config, self.extraSmallTextFont, "RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION")
 		elif self.state == LIGHTNING_STATE:
-			self.explanationTexts = Utilities.renderTextList(self.config, self.smallTextFont, "RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION")
+			self.explanationTexts = Utilities.renderTextList(self.config, self.extraSmallTextFont, "RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION")
 
 	def draw(self, dt):
 		if self.timer is not None:
@@ -156,14 +159,16 @@ class DrawNeuronScene(Scene):
 	def draw3DModelState(self):
 		self.modelPlayer.draw()
 
+		self.screen.blit(self.modelTextBalloon, (1326, 399))
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
-		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1349, 429), 29)
+		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1530, 429), 29)
 
 	def drawLightningState(self):
 		self.lightningPlayer.draw()
 
+		self.screen.blit(self.lightningTextBalloon, (1327, 412))
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
-		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1349, 442), 29)
+		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1530, 442), 29)
 
 	def onMouseDown(self, pos):
 		super().onMouseDown(pos)

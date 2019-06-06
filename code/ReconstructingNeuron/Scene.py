@@ -29,6 +29,7 @@ class Scene:
 
 		self.logo = pygame.image.load('assets/images/logo.png')
 		self.bottomBar = pygame.image.load('assets/images/bottom-bar.png')
+		self.bottomBarSeparator = pygame.image.load('assets/images/bottom-bar-separator.png')
 
 		self.buttons = []
 		self.languageButtons = []
@@ -76,6 +77,7 @@ class Scene:
 		self.subHeaderFont = pygame.font.Font(languageData['fonts']['subHeaderFont']['filename'], languageData['fonts']['subHeaderFont']['size'])
 		self.textFont = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])
 		self.smallTextFont = pygame.font.Font(languageData['fonts']['smallTextFont']['filename'], languageData['fonts']['smallTextFont']['size'])
+		self.extraSmallTextFont = pygame.font.Font(languageData['fonts']['extraSmallTextFont']['filename'], languageData['fonts']['extraSmallTextFont']['size'])
 		self.buttonFont = self.textFont
 
 	def onLanguageChanged(self):
@@ -107,3 +109,6 @@ class Scene:
 
 		for button in self.buttons:
 			button.draw()
+
+		# Draw bottom bar separator
+		self.screen.blit(self.bottomBarSeparator, (0, 999))
