@@ -81,7 +81,15 @@
 			"RN_SUMMARY_SCREEN_MODELING_TEXT": "Reconstructing the cell structure",
 			"RN_SUMMARY_SCREEN_ELECTRIFY_TEXT": "Activating the cell",
 
-			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell"
+			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell",
+
+			"DFAM_OPENING_SCREEN_HEADER": "Doctor for a moment",
+			"DFAM_OPENING_SCREEN_SUB_HEADER": "Here is your chance to be a doctor\nPress the button and meet your new patient",
+			"DFAM_OPENING_SCREEN_BUTTON_TEXT": "Start",
+
+			"DFAM_EXP_SCREEN_BUTTON_TEXT": "Continue",
+			"DFAM_EXP_SCREEN_HEADER_TEXT": "Your new patient describes a state of confusion and\nforgetfulness. Does he have Alzheimer’s disease?",
+			"DFAM_EXP_SCREEN_INFO_TEXT": "To diagnose him, you need to carry out a number of tests.\nIn Alzheimer’s the neurons in the brain die gradually, causing damage to\ncognitive abilities such as memory, orientation, thought processes, and more."
 		},
 
 		"ar": {
