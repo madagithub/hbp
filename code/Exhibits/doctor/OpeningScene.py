@@ -8,6 +8,7 @@ from common.Utilities import Utilities
 
 START_BUTTON_TEXT_COLOR = [0, 0, 0]
 
+#TODO: Unite with neuron opening screen
 class OpeningScene(Scene):
 	def __init__(self, game):
 		super().__init__(game)

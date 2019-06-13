@@ -14,7 +14,7 @@
 				"subHeaderFont": {"filename": "assets/fonts/SimplerPro_V3-Bold.ttf", "size": 40}, 
 				"textFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 40},
 				"smallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 30},
-				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 26}
+				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20}
 			}
 		},
 		{
@@ -27,7 +27,7 @@
 				"subHeaderFont": {"filename": "assets/fonts/TheSansArabic-Bold.ttf", "size": 40}, 
 				"textFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 40}, 
 				"smallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 30},
-				"extraSmallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 26}
+				"extraSmallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 20}
 			}
 		},
 		{
@@ -40,7 +40,7 @@
 				"subHeaderFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf", "size": 40}, 
 				"textFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 40}, 
 				"smallTextFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 30},
-				"extraSmallTextFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 26}
+				"extraSmallTextFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 20}
 			}
 		}
 	],
@@ -89,7 +89,34 @@
 
 			"DFAM_EXP_SCREEN_BUTTON_TEXT": "Continue",
 			"DFAM_EXP_SCREEN_HEADER_TEXT": "Your new patient describes a state of confusion and\nforgetfulness. Does he have Alzheimer’s disease?",
-			"DFAM_EXP_SCREEN_INFO_TEXT": "To diagnose him, you need to carry out a number of tests.\nIn Alzheimer’s the neurons in the brain die gradually, causing damage to\ncognitive abilities such as memory, orientation, thought processes, and more."
+			"DFAM_EXP_SCREEN_INFO_TEXT": "To diagnose him, you need to carry out a number of tests.\nIn Alzheimer’s the neurons in the brain die gradually, causing damage to\ncognitive abilities such as memory, orientation, thought processes, and more.",
+
+			"DFAM_CHOOSE_TEST_INSTRUCTION": "Select the test you wish to conduct on the patiant",
+			"DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT": "Run test",
+
+			"DFAM_COGNITIVE_TEST_NAME": "Cognitive tests",
+			"DFAM_COGNITIVE_TEST_DESC": "Cognitive tests are a list of tasks testing the\nperformance of various brain functions",
+			"DFAM_PET_TEST_NAME": "PET test",
+			"DFAM_PET_TEST_DESC": "A PET (Positron Emission Tomography) test is a\nscan of the brain measuring the concentration of\nparticular substances. For instance, a PET scan can\nsearch for beta-amyloid plaques, which are\ncommon only among Alzheimer’s patients.",
+			"DFAM_MRI_TEST_NAME": "MRI test",
+			"DFAM_MRI_TEST_DESC": "An MRI (Magnetic Resonance Imaging) test is\na scan of the brain using radio waves and a\nstrong magnetic field. The scan creates an\nimage of the brain and the state it is in.",
+
+			"DFAM_TEST_IN_PROGRESS_HEADER_MRI": "An MRI scan is taking place",
+			"DFAM_TEST_IN_PROGRESS_HEADER_PET": "A PET scan is taking place",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua.",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET": "L222 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua.",
+
+			"DFAM_TEST_RESULTS_HEADER_COGNITIVE": "Cognitive test results",
+			"DFAM_TEST_RESULTS_HEADER_PET": "PET test results",
+			"DFAM_TEST_RESULTS_HEADER_MRI": "MRI test results",
+
+			"DFAM_TEST_RESULTS_DESC_COGNITIVE": "Drawing a clock requires mental abilities that are damaged by Alzheimer’s, such as\nmanagement, understanding numbers, knowledge retrieval and more.",
+			"DFAM_TEST_RESULTS_DESC_PET": "Brains of Alzheimer’s patients show many plaques of beta-amyloid protein that are not found\nin the brains of healthy people. If we mark these plaques with radioactive materials and\nconduct a PET scan, we would expect to see many areas with high concentration (in red).",
+			"DFAM_TEST_RESULTS_DESC_MRI": "In Alzheimer disease, cells die throughout the brain and the\nbrain tissue becomes ‘thin’, containing less and less cells (and\nmore and more ‘black’ fissures in the brain).",
+
+			"DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT": "Run more tests",
+			"DFAM_TEST_RESULTS_HEALTHY_HEADER": "Healthy patient",
+			"DFAM_TEST_RESULTS_RESULTS_HEADER": "Test result"
 		},
 
 		"ar": {
