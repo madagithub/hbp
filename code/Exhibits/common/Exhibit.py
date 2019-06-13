@@ -84,7 +84,7 @@ class Exhibit:
 				self.screen.blit(self.cursor, (pygame.mouse.get_pos()))
 
 			pygame.display.flip()
-			clock.tick(25)
+			clock.tick(60)
 
 		pygame.quit()
 		cv2.destroyAllWindows()

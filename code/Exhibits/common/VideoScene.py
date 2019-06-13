@@ -13,5 +13,5 @@ class VideoScene(Scene):
 		self.video = VideoPlayer(self.screen, filename, 0, 0, loop=False, soundFile=soundFile)
 
 	def draw(self, dt):
-		if not self.video.draw():
+		if not self.video.draw(dt):
 			self.game.transition(self.endScene)

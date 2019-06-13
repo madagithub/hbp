@@ -116,7 +116,21 @@
 
 			"DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT": "Run more tests",
 			"DFAM_TEST_RESULTS_HEALTHY_HEADER": "Healthy patient",
-			"DFAM_TEST_RESULTS_RESULTS_HEADER": "Test result"
+			"DFAM_TEST_RESULTS_RESULTS_HEADER": "Test result",
+
+			"DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT": "See results",
+
+			"DFAM_DIAGNOSE_BUTTON_TEXT": "Diagnose",
+			"DFAM_DIAGNOSE_YES_BUTTON_TEXT": "Yes",
+			"DFAM_DIAGNOSE_NO_BUTTON_TEXT": "No",
+			"DFAM_DIAGNOSE_QUESTION_TEXT": "Does the patient have Alzheimer’s?",
+
+			"DFAM_EVALUATION_SCREEN_CORRECT_HEADER": "The diagnosis is correct",
+			"DFAM_EVALUATION_SCREEN_INCORRECT_HEADER": "The diagnosis is incorrect, please try again",
+			"DFAM_EVALUATION_SCREEN_HEALTHY_HEADER": "The patient does not have Alzheimer’s",
+			"DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER": "Our patient does have Alzheimer’s.",
+
+			"DFAM_EVALUATION_ANOTHER_PATIENT_TEXT": "Accept another patient"
 		},
 
 		"ar": {

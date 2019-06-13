@@ -11,6 +11,7 @@ from doctor.ExplanationScene import ExplanationScene
 from doctor.ChooseTestScene import ChooseTestScene
 from doctor.TestInProgressScene import TestInProgressScene
 from doctor.TestResultsScene import TestResultsScene
+from doctor.EvaluateScene import EvaluateScene
 
 class Doctor(Exhibit):
 	def __init__(self):
@@ -18,6 +19,8 @@ class Doctor(Exhibit):
 
 	def start(self):
 		super().start()
+
+		self.chooseTestScene = ChooseTestScene(self)
 		
 		#self.startVideoScene = VideoScene(self, 'assets/videos/brainzoom-short.mov', 'CHOOSE')
 		self.scene = ChooseTestScene(self)#OpeningScene(self)
@@ -27,15 +30,23 @@ class Doctor(Exhibit):
 	def gotoHome(self):
 		self.scene = OpeningScene(self)
 
+	def getChooseTestScene(self):
+		return self.chooseTestScene
+
 	def transition(self, transitionId, data=None):
 		if transitionId == 'EXPLANATION':
 			self.scene = ExplanationScene(self)
 		elif transitionId == 'CHOOSE':
-			self.scene = ChooseTestScene(self)
+			self.scene = self.chooseTestScene
 		elif transitionId == 'RUN_TEST':
 			self.scene = TestInProgressScene(self, data)
 		elif transitionId == 'TEST_RESULTS':
 			self.scene = TestResultsScene(self, data)
+		elif transitionId == 'EVALUATE':
+			self.scene = EvaluateScene(self, data)
+		elif transitionId == 'RESET':
+			self.chooseTestScene = ChooseTestScene(self)
+			self.scene = OpeningScene(self)
 
 		#self.scene = self.startVideoScene
 

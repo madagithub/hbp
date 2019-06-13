@@ -26,6 +26,7 @@ class TestResultsScene(Scene):
 	def __init__(self, game, test):
 		super().__init__(game)
 		self.test = test
+		self.game.getChooseTestScene().onTestDone(self.test)
 
 		self.testImage = pygame.image.load('assets/images/doctor/' + TEST_ID_TO_RESULT_IMAGES[self.test]['ill'] + '.png')
 		self.healthyImage = pygame.image.load('assets/images/doctor/' + TEST_ID_TO_RESULT_IMAGES[self.test]['healthy'] + '.png')
