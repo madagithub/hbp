@@ -23,7 +23,7 @@ class Doctor(Exhibit):
 		self.chooseTestScene = ChooseTestScene(self)
 		
 		#self.startVideoScene = VideoScene(self, 'assets/videos/brainzoom-short.mov', 'CHOOSE')
-		self.scene = ChooseTestScene(self)#OpeningScene(self)
+		self.scene = OpeningScene(self)
 
 		self.loop()
 

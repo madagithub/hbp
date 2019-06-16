@@ -12,8 +12,8 @@ class VideoPlayer:
 		self.video = cv2.VideoCapture(filename)
 		self.fps = self.video.get(cv2.CAP_PROP_FPS)
 		print("FPS: " + str(self.fps) + " ========")
+		#self.fps = 23
 		self.currTime = 0
-		self.fps = 23
 		self.singleFrameTime = 1 / self.fps
 
 		self.isAudioPlaying = True

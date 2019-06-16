@@ -2,6 +2,7 @@
 	"touch": false,
 	"touchDevice": "/dev/input/event8",
 	"defaultLanguage": "en",
+	"maxMapDotTapDistance": 30,
 
 	"languages": [
 		{
@@ -130,7 +131,11 @@
 			"DFAM_EVALUATION_SCREEN_HEALTHY_HEADER": "The patient does not have Alzheimer’s",
 			"DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER": "Our patient does have Alzheimer’s.",
 
-			"DFAM_EVALUATION_ANOTHER_PATIENT_TEXT": "Accept another patient"
+			"DFAM_EVALUATION_ANOTHER_PATIENT_TEXT": "Accept another patient",
+
+			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
+
+			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain"
 		},
 
 		"ar": {
@@ -213,13 +218,14 @@
 	"openingVideos": [
 		{
 			"file": "assets/videos/opening/video 01 - interview.mp4",
-			"soundFile": "assets/videos/opening/video 01 - interview.ogg",
+			"soundFile": "assets/videos/opening/a.ogg",
 			"image": "",
 			"x": 200,
 			"y": 100
 		},
 		{
 			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
+			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
 			"image": "",
 			"x": 200,
 			"y": 300
@@ -287,5 +293,162 @@
 				{"x": 634, "y": 999}
 			]	
 		]
+	},
+
+	"mapCountries": {
+		"spain": {
+			"nameKey": "OS_MAP_COUNTRY_SPAIN_NAME",
+			"institutions": [
+				{
+					"mapX": 320,
+					"mapY": 236,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				},
+
+				{
+					"mapX": 340,
+					"mapY": 252,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				},
+
+				{
+					"mapX": 316,
+					"mapY": 262,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				},
+
+				{
+					"mapX": 322,
+					"mapY": 349,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				},
+
+				{
+					"mapX": 340,
+					"mapY": 489,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				},
+
+				{
+					"mapX": 624,
+					"mapY": 190,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				},
+
+				{
+					"mapX": 636,
+					"mapY": 166,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				},
+
+				{
+					"mapX": 656,
+					"mapY": 151,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				},
+
+				{
+					"mapX": 650,
+					"mapY": 188,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				},
+
+				{
+					"mapX": 672,
+					"mapY": 171,
+					
+					"nameKey": "",
+					"cityKey": "",
+					"descriptionKey": "",
+					"video": "",
+					"image": "",
+
+					"nameY": 0,
+					"cityY": 0,
+					"descriptionY": 0
+				}
+			]
+		}	
 	}
 }

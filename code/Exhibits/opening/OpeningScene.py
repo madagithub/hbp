@@ -23,7 +23,15 @@ class OpeningScene(Scene):
 			index += 1
 			self.buttons.append(self.videoButton)
 
+		self.mapButton = Button(self.screen, pygame.Rect(500, 500, 245, 78), 
+				pygame.image.load('assets/images/button-empty.png'), pygame.image.load('assets/images/button-selected.png'), 
+				"Map", START_BUTTON_TEXT_COLOR, START_BUTTON_TEXT_COLOR, self.buttonFont, self.onMapClick)
+		self.buttons.append(self.mapButton)
+
 		self.createTexts()
+
+	def onMapClick(self):
+		self.game.transition('MAP')
 
 	def onVideoClick(self, file, soundFile):
 		self.game.transition('VIDEO', {'file': file, 'soundFile': soundFile})

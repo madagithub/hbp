@@ -8,6 +8,8 @@ from common.Exhibit import Exhibit
 from common.VideoScene import VideoScene
 
 from opening.OpeningScene import OpeningScene
+from opening.MapScene import MapScene
+from opening.CountryScene import CountryScene
 
 class Opening(Exhibit):
 	def __init__(self):
@@ -25,6 +27,10 @@ class Opening(Exhibit):
 			self.scene = VideoScene(self, data['file'], 'START', data['soundFile'])
 		elif transitionId == 'START':
 			self.scene = OpeningScene(self)
+		elif transitionId == 'MAP':
+			self.scene = MapScene(self)
+		elif transitionId == 'COUNTRY':
+			self.scene = CountryScene(self, data)
 
 if __name__ == '__main__':
 	Opening().start()

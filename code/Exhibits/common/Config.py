@@ -42,3 +42,12 @@ class Config:
 
 	def getOpeningVideos(self):
 		return self.config['openingVideos']
+
+	def getInstitutions(self, countryKey):
+		return self.config['mapCountries'][countryKey]['institutions']
+
+	def getMaxMapDotTapDistance(self):
+		return self.config['maxMapDotTapDistance']
+
+	def getCountryName(self, countryKey):
+		return self.getText(self.config['mapCountries'][countryKey]['nameKey'])
