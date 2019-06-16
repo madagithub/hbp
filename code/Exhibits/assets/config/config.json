@@ -135,7 +135,10 @@
 
 			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
 
-			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain"
+			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
+			"OS_MAP_P56_NAME": "Spain",
+			"OS_MAP_P56_CITY_NAME": "Spain",
+			"OS_MAP_P56_DESC": "Spain"
 		},
 
 		"ar": {
@@ -218,7 +221,7 @@
 	"openingVideos": [
 		{
 			"file": "assets/videos/opening/video 01 - interview.mp4",
-			"soundFile": "assets/videos/opening/a.ogg",
+			"soundFile": "assets/videos/opening/video 01 - interview.ogg",
 			"image": "",
 			"x": 200,
 			"y": 100
@@ -307,7 +310,7 @@
 					"cityKey": "",
 					"descriptionKey": "",
 					"video": "",
-					"image": "",
+					"image": "spain-test.png",
 
 					"nameY": 0,
 					"cityY": 0,

@@ -99,7 +99,7 @@ class DrawNeuronScene(Scene):
 		self.modelTextBalloon = pygame.image.load('assets/images/text-box-small.png')
 		self.lightningTextBalloon = pygame.image.load('assets/images/text-box-large.png')
 		
-		self.modelPlayer = VideoPlayer(game.screen, 'assets/videos/neuron-blender-color.avi', self.screen.get_width() // 2 - 960 // 2, 200, True)
+		self.modelPlayer = VideoPlayer(game.screen, 'assets/videos/neuron-blender-color.avi', self.screen.get_width() // 2 - 600 // 2, 240, True)
 		self.lightningPlayer = VideoPlayer(game.screen, 'assets/videos/MC_full.avi', self.screen.get_width() // 2 - 600 // 2, 0, True)
 
 		lightningButtonNormal = pygame.image.load('assets/images/button-electrify-normal.png')
@@ -158,7 +158,7 @@ class DrawNeuronScene(Scene):
 		super().draw(dt)
 
 	def draw3DModelState(self, dt):
-		self.modelPlayer.draw()
+		self.modelPlayer.draw(dt)
 		self.screen.blit(self.videoMask, (0, 0))
 
 		self.screen.blit(self.modelTextBalloon, (1326, 399))
@@ -168,7 +168,8 @@ class DrawNeuronScene(Scene):
 		super().draw(dt)
 
 	def drawLightningState(self, dt):
-		self.lightningPlayer.draw()
+		self.lightningPlayer.draw(dt)
+		self.screen.blit(self.videoMask, (0, 0))
 
 		self.screen.blit(self.lightningTextBalloon, (1327, 412))
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
