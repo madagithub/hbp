@@ -12,6 +12,7 @@ from doctor.ChooseTestScene import ChooseTestScene
 from doctor.TestInProgressScene import TestInProgressScene
 from doctor.TestResultsScene import TestResultsScene
 from doctor.EvaluateScene import EvaluateScene
+from doctor.LearnMoreScene import LearnMoreScene
 
 class Doctor(Exhibit):
 	def __init__(self):
@@ -44,6 +45,8 @@ class Doctor(Exhibit):
 			self.scene = TestResultsScene(self, data)
 		elif transitionId == 'EVALUATE':
 			self.scene = EvaluateScene(self, data)
+		elif transitionId == 'LEARN_MORE':
+			self.scene = LearnMoreScene(self, data)
 		elif transitionId == 'RESET':
 			self.chooseTestScene = ChooseTestScene(self)
 			self.scene = OpeningScene(self)

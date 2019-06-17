@@ -18,24 +18,20 @@ TEST_ID_TO_RESULT_IMAGES = {
 	'MRI': {'healthy': 'mri-healthy', 'ill': 'mri-ill'}	
 }
 
-#			"DFAM_TEST_RESULTS_HEALTHY_HEADER": "Healthy patient",
-#			"DFAM_TEST_RESULTS_RESULTS_HEADER": "Test result"
-
-#TODO: Unite with neuron opening screen
 class TestResultsScene(Scene):
-	def __init__(self, game, test):
+	def __init__(self, game, testProperties):
 		super().__init__(game)
-		self.test = test
+		self.test = testProperties['test']
 		self.game.getChooseTestScene().onTestDone(self.test)
 
-		self.testImage = pygame.image.load('assets/images/doctor/' + TEST_ID_TO_RESULT_IMAGES[self.test]['ill'] + '.png')
+		self.testImage = pygame.image.load('assets/images/doctor/' + TEST_ID_TO_RESULT_IMAGES[self.test]['healthy' if testProperties['isHealthy'] else 'ill'] + '.png')
 		self.healthyImage = pygame.image.load('assets/images/doctor/' + TEST_ID_TO_RESULT_IMAGES[self.test]['healthy'] + '.png')
 
 		self.testCaptionBackground = pygame.image.load('assets/images/doctor/test-caption-background.png')
 
 		self.moreTestsButton = Button(self.screen, pygame.Rect(self.screen.get_width() // 2 - 245 // 2, 869, 245, 78), 
 			pygame.image.load('assets/images/button-empty.png'), pygame.image.load('assets/images/button-selected.png'), 
-			self.config.getText("DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT"), [0,0,0], [0,0,0], self.buttonFont, self.onMoreTestsClick)
+			self.config.getText("DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT"), [0,0,0], [0,0,0], self.smallButtonTextFont, self.onMoreTestsClick)
 		self.buttons.append(self.moreTestsButton)
 
 		self.createTexts()
@@ -46,11 +42,13 @@ class TestResultsScene(Scene):
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
 		self.createTexts()
-		self.moreTestsButton.createText(self.config.getText("DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT"), self.buttonFont)
+		self.moreTestsButton.createText(self.config.getText("DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT"), self.smallButtonTextFont)
 
 	def createTexts(self):
 		self.headerText = self.subHeaderFont.render(self.config.getText(TEST_ID_TO_RESULT_KEYS[self.test]['header']), True, (255, 255, 255))
-		self.subHeaderTexts = Utilities.renderTextList(self.config, self.textFont, TEST_ID_TO_RESULT_KEYS[self.test]['subHeader'])
+		self.subHeaderTexts = Utilities.renderTextList(self.config, self.smallTextFont, TEST_ID_TO_RESULT_KEYS[self.test]['subHeader'])
+		self.testResultText = self.smallTextFont.render(self.config.getText('DFAM_TEST_RESULTS_RESULTS_HEADER'), True, (0, 0, 0))
+		self.healthyResultText = self.smallTextFont.render(self.config.getText('DFAM_TEST_RESULTS_HEALTHY_HEADER'), True, (0, 0, 0))
 
 	def draw(self, dt):
 		self.screen.blit(self.testImage, (531, 200))
@@ -59,4 +57,6 @@ class TestResultsScene(Scene):
 		self.screen.blit(self.testCaptionBackground, (1020, 576))
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 69))
 		Utilities.drawTextsOnCenterX(self.screen, self.subHeaderTexts, (self.screen.get_width() // 2, 692), 40)
+		Utilities.drawTextOnCenterX(self.screen, self.testResultText, (721, 585))
+		Utilities.drawTextOnCenterX(self.screen, self.healthyResultText, (1206, 585))
 		super().draw(dt)

@@ -15,7 +15,7 @@ class OpeningScene(Scene):
 
 		self.background = pygame.image.load('assets/images/background.png')
 
-		self.startButton = Button(self.screen, pygame.Rect(self.screen.get_width() // 2 - 245 // 2, 657, 245, 78), 
+		self.startButton = Button(self.screen, pygame.Rect(self.screen.get_width() // 2 - 245 // 2, 650, 245, 78), 
 			pygame.image.load('assets/images/button-empty.png'), pygame.image.load('assets/images/button-selected.png'), 
 			self.config.getText("DFAM_OPENING_SCREEN_BUTTON_TEXT"), START_BUTTON_TEXT_COLOR, START_BUTTON_TEXT_COLOR, self.buttonFont, self.onStartClick)
 		self.buttons.append(self.startButton)
@@ -36,6 +36,6 @@ class OpeningScene(Scene):
 
 	def draw(self, dt):
 		self.screen.blit(self.background, (0, 0))
-		Utilities.drawTextOnCenter(self.screen, self.headerText, (self.screen.get_width() // 2, 347))
-		Utilities.drawTextsOnCenterX(self.screen, self.subHeaderTexts, (self.screen.get_width() // 2, 472), 40)
+		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 367))
+		Utilities.drawTextsOnCenterX(self.screen, self.subHeaderTexts, (self.screen.get_width() // 2, 491), 40)
 		super().draw(dt)

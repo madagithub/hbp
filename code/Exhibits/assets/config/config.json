@@ -15,6 +15,7 @@
 				"subHeaderFont": {"filename": "assets/fonts/SimplerPro_V3-Bold.ttf", "size": 40}, 
 				"textFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 40},
 				"smallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 30},
+				"smallButtonTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 24},
 				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20}
 			}
 		},
@@ -28,6 +29,7 @@
 				"subHeaderFont": {"filename": "assets/fonts/TheSansArabic-Bold.ttf", "size": 40}, 
 				"textFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 40}, 
 				"smallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 30},
+				"smallButtonTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 24},
 				"extraSmallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 20}
 			}
 		},
@@ -39,9 +41,10 @@
 			{
 				"headerFont": {"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf", "size": 72}, 
 				"subHeaderFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf", "size": 40}, 
-				"textFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 40}, 
-				"smallTextFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 30},
-				"extraSmallTextFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Regular.ttf", "size": 20}
+				"textFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 40}, 
+				"smallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 30},
+				"smallButtonTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 24},
+				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20}
 			}
 		}
 	],
@@ -85,12 +88,12 @@
 			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell",
 
 			"DFAM_OPENING_SCREEN_HEADER": "Doctor for a moment",
-			"DFAM_OPENING_SCREEN_SUB_HEADER": "Here is your chance to be a doctor\nPress the button and meet your new patient",
+			"DFAM_OPENING_SCREEN_SUB_HEADER": "You have an opportunity to be a doctor\nPress the button and meet your new patient",
 			"DFAM_OPENING_SCREEN_BUTTON_TEXT": "Start",
 
 			"DFAM_EXP_SCREEN_BUTTON_TEXT": "Continue",
 			"DFAM_EXP_SCREEN_HEADER_TEXT": "Your new patient describes a state of confusion and\nforgetfulness. Does he have Alzheimer’s disease?",
-			"DFAM_EXP_SCREEN_INFO_TEXT": "To diagnose him, you need to carry out a number of tests.\nIn Alzheimer’s the neurons in the brain die gradually, causing damage to\ncognitive abilities such as memory, orientation, thought processes, and more.",
+			"DFAM_EXP_SCREEN_INFO_TEXT": "To diagnose him, you need to carry out a number of tests.\nIn Alzheimer’s the neurons in the brain die gradually, causing damage to\ncognitive abilities such as memory, orientation, and more.",
 
 			"DFAM_CHOOSE_TEST_INSTRUCTION": "Select the test you wish to conduct on the patiant",
 			"DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT": "Run test",
@@ -104,8 +107,8 @@
 
 			"DFAM_TEST_IN_PROGRESS_HEADER_MRI": "An MRI scan is taking place",
 			"DFAM_TEST_IN_PROGRESS_HEADER_PET": "A PET scan is taking place",
-			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua.",
-			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET": "L222 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua.",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI": "Follow the process on the patient model",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET": "Follow the process on the patient model",
 
 			"DFAM_TEST_RESULTS_HEADER_COGNITIVE": "Cognitive test results",
 			"DFAM_TEST_RESULTS_HEADER_PET": "PET test results",
@@ -132,6 +135,11 @@
 			"DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER": "Our patient does have Alzheimer’s.",
 
 			"DFAM_EVALUATION_ANOTHER_PATIENT_TEXT": "Accept another patient",
+			"DFAM_EVALUATION_LEARN_MORE_TEXT": "Learn more",
+
+			"DFAM_LEARN_MORE_BACK_BUTTON_TEXT": "Back",
+			"DFAM_LEARN_MORE_HEALTHY_DESC_TEXT": "The tests do not seem to indicate the patient\nhas Alzheimer’s.\nThe MRI test shows a normal brain. In Alzheimer’s,\ncells die throughout the brain so that the brain tissue\nbecomes thin, unlike the case of our patient.\n\nMany abilities related to drawing a clock, such as\nknowledge retrieval and management, are impaired in\nAlzheimer’s patients. However, our patient was able\nto draw a clock properly.\n\nThe PET scan indicating beta-amyloid plaques very\ncommon among Alzheimer’s patients (but not in healthy\nbrains) showed no red concentrations at all.\nMeaning, there are no beta-amyloid plaques in our\npatient’s brain, as opposed to what we would expect\nto find in an Alzheimer’s patient.",
+			"DFAM_LEARN_MORE_NOT_HEALTHY_DESC_TEXT": "The patient does have Alzheimer’s.\nThe MRI test showed that the brain tissue is very thin\nbecause of the extensive death of neuron cells that\ntakes place in Alzheimer’s disease.\n\nThe death of the cells damages various brain abilities\nsuch as management and knowledge retrieval.\nFor this reason the patient was unable to draw\na clock properly.\n\nThe PET scan marked plaques of beta-amyloid that\nare very common in Alzheimer’s patients (but not in\nhealthy brains), showing many red concentrations.\nThese areas show a high concentration of\nbeta-amyloid, typical of Alzheimer’s patients.",
 
 			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
 

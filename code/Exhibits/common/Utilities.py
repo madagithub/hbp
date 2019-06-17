@@ -9,13 +9,14 @@ class Utilities:
 
 	@staticmethod
 	def drawTextOnCenterX(screen, textBox, centerPoint):
-		screen.blit(textBox, (centerPoint[0] - textBox.get_width() // 2, centerPoint[1] + textBox.get_height() // 2))
+		screen.blit(textBox, (centerPoint[0] - textBox.get_width() // 2, centerPoint[1]))
 
 	@staticmethod
 	def drawTextsOnCenterX(screen, textBoxes, position, lineGap):
-			for i in range(len(textBoxes)):
-				textBox = textBoxes[i]
-				Utilities.drawTextOnCenterX(screen, textBox, (position[0], position[1] + i * lineGap))
+		print(len(textBoxes))
+		for i in range(len(textBoxes)):
+			textBox = textBoxes[i]
+			Utilities.drawTextOnCenterX(screen, textBox, (position[0], position[1] + i * lineGap))
 
 	@staticmethod
 	def renderTextList(config, font, key):

@@ -35,6 +35,6 @@ class ExplanationScene(Scene):
 
 	def draw(self, dt):
 		self.screen.blit(self.background, (0, 0))
-		Utilities.drawTextsOnCenterX(self.screen, self.headerTexts, (self.screen.get_width() // 2, 279), 63)
+		Utilities.drawTextsOnCenterX(self.screen, self.headerTexts, (self.screen.get_width() // 2, 321), 64)
 		Utilities.drawTextsOnCenterX(self.screen, self.infoTexts, (self.screen.get_width() // 2, 474), 45)
 		super().draw(dt)

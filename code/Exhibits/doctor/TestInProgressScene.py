@@ -14,16 +14,17 @@ TEST_ID_TO_KEYS = {
 }
 
 class TestInProgressScene(Scene):
-	def __init__(self, game, test):
+	def __init__(self, game, testProperties):
 		super().__init__(game)
-		self.test = test
+		self.testProperties = testProperties
+		self.test = testProperties['test']
 		self.timer = Timer(5.0, self.onTestDone)
 		self.progressBarAnimation = FrameAnimation('assets/images/doctor/loading/yellow fading_line', 18, 25)
 
 		self.createTexts()
 
 	def onTestDone(self):
-		self.game.transition('TEST_RESULTS', self.test)
+		self.game.transition('TEST_RESULTS', self.testProperties)
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
@@ -31,7 +32,7 @@ class TestInProgressScene(Scene):
 
 	def createTexts(self):
 		self.headerText = self.headerFont.render(self.config.getText(TEST_ID_TO_KEYS[self.test]['header']), True, (255, 255, 255))
-		self.subHeaderTexts = Utilities.renderTextList(self.config, self.textFont, TEST_ID_TO_KEYS[self.test]['subHeader'])
+		self.subHeaderTexts = Utilities.renderTextList(self.config, self.smallTextFont, TEST_ID_TO_KEYS[self.test]['subHeader'])
 
 	def draw(self, dt):
 		self.timer.tick(dt)
