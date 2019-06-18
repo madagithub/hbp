@@ -66,16 +66,18 @@ class CountryScene(Scene):
 
 	def selectIndex(self, index):
 		self.institutionIndex = index
+		self.loadInstitution()
 
 	def loadInstitution(self):
-		institution = self.institution[self.institutionIndex]
-		self.institutionHeader = Utilities.renderTextList(self.config, self.subHeaderFont, self.config.getText(institution['nameKey']), True, (255, 255, 255))
-		self.institutionCity = Utilities.renderTextList(self.config, self.subHeaderFont, self.config.getText(institution['cityKey']), True, (255, 255, 255))
-		self.institutionDesc = Utilities.renderTextList(self.config, self.subHeaderFont, self.config.getText(institution['descriptionKey']), True, (255, 255, 255))
+		institution = self.institutions[self.institutionIndex]
+		self.institutionHeader = Utilities.renderTextList(self.config, self.subHeaderFont, institution['nameKey'], (255, 255, 255))
+		self.institutionCity = Utilities.renderTextList(self.config, self.subHeaderFont, institution['cityKey'], (255, 255, 255))
+		self.institutionDesc = Utilities.renderTextList(self.config, self.subHeaderFont, institution['descriptionKey'], (255, 255, 255))
+		self.institutionImage = pygame.image.load('assets/images/opening/map/institutions/spain-test.png')
 
-		self.institutionHeaderY = 
-		self.institutionCityY =
-		self.institutionDescY = 
+		self.institutionHeaderY = 579
+		self.institutionCityY = 627
+		self.institutionDescY = 684
 
 	def draw(self, dt):
 		self.screen.blit(self.countryImage, self.countryImagePos)
@@ -92,8 +94,8 @@ class CountryScene(Scene):
 			Utilities.drawTextOnCenterX(self.screen, self.tapInstructions, (1098 + self.tapInstructions.get_width() // 2, 580))
 		else:
 			self.screen.blit(self.institutionImage, (1093, 219))
-			Utilities.drawTextsOnCenterX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY))
-			Utilities.drawTextsOnCenterX(self.screen, self.institutionCity, (1093 ,self.institutionCityY))
-			Utilities.drawTextsOnCenterX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY))
+			Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 30)
+			Utilities.drawTextsOnLeftX(self.screen, self.institutionCity, (1093 ,self.institutionCityY), 30)
+			Utilities.drawTextsOnLeftX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY), 30)
 
 		super().draw(dt)

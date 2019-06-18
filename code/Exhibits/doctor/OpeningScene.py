@@ -13,7 +13,7 @@ class OpeningScene(Scene):
 	def __init__(self, game):
 		super().__init__(game)
 
-		self.background = pygame.image.load('assets/images/background.png')
+		self.background = pygame.image.load('assets/images/doctor/background.png')
 
 		self.startButton = Button(self.screen, pygame.Rect(self.screen.get_width() // 2 - 245 // 2, 650, 245, 78), 
 			pygame.image.load('assets/images/button-empty.png'), pygame.image.load('assets/images/button-selected.png'), 
@@ -23,7 +23,7 @@ class OpeningScene(Scene):
 		self.createTexts()
 
 	def onStartClick(self):
-		self.game.transition('EXPLANATION')
+		self.game.transition('OPENING_VIDEO')
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
