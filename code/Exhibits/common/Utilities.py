@@ -19,10 +19,10 @@ class Utilities:
 			Utilities.drawTextOnCenterX(screen, textBox, (position[0], position[1] + i * lineGap))
 
 	@staticmethod
-	def renderTextList(config, font, key):
+	def renderTextList(config, font, key, color=(255, 255, 255)):
 		textBoxes = []
 		for text in config.getTextList(key):
-			textBoxes.append(font.render(text, True, (255, 255, 255)))
+			textBoxes.append(font.render(text, True, color))
 
 		return textBoxes
 

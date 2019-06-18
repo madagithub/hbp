@@ -33,10 +33,11 @@ class CountryScene(Scene):
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
 		self.createTexts()
+		self.loadInstitution()
 
 	def createTexts(self):
 		self.countryHeader = self.headerFont.render(self.config.getCountryName(self.countryKey), True, (249, 207, 71))
-		self.tapInstructions = self.smallTextFont.render(self.config.getText("RN_OPENING_SCREEN_SUB_HEADER"), True, (255, 255, 255))
+		self.tapInstructions = self.smallTextFont.render(self.config.getText("OS_MAP_SELECT_DOT_INSTRUCTIONS"), True, (255, 255, 255))
 
 	def onMouseDown(self, pos):
 		super().onMouseDown(pos)
@@ -66,6 +67,16 @@ class CountryScene(Scene):
 	def selectIndex(self, index):
 		self.institutionIndex = index
 
+	def loadInstitution(self):
+		institution = self.institution[self.institutionIndex]
+		self.institutionHeader = Utilities.renderTextList(self.config, self.subHeaderFont, self.config.getText(institution['nameKey']), True, (255, 255, 255))
+		self.institutionCity = Utilities.renderTextList(self.config, self.subHeaderFont, self.config.getText(institution['cityKey']), True, (255, 255, 255))
+		self.institutionDesc = Utilities.renderTextList(self.config, self.subHeaderFont, self.config.getText(institution['descriptionKey']), True, (255, 255, 255))
+
+		self.institutionHeaderY = 
+		self.institutionCityY =
+		self.institutionDescY = 
+
 	def draw(self, dt):
 		self.screen.blit(self.countryImage, self.countryImagePos)
 		for i in range(0, len(self.institutions)):
@@ -78,6 +89,11 @@ class CountryScene(Scene):
 
 		if self.institutionIndex is None:
 			Utilities.drawTextOnCenterX(self.screen, self.countryHeader, (1098 + self.countryHeader.get_width() // 2, 402))
-			Utilities.drawTextOnCenterX(self.screen, self.tapInstructions, (1098 + self.tapInstructions.get_width() // 2, 586))
+			Utilities.drawTextOnCenterX(self.screen, self.tapInstructions, (1098 + self.tapInstructions.get_width() // 2, 580))
+		else:
+			self.screen.blit(self.institutionImage, (1093, 219))
+			Utilities.drawTextsOnCenterX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY))
+			Utilities.drawTextsOnCenterX(self.screen, self.institutionCity, (1093 ,self.institutionCityY))
+			Utilities.drawTextsOnCenterX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY))
 
 		super().draw(dt)

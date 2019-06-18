@@ -144,9 +144,9 @@
 			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
 
 			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
-			"OS_MAP_P56_NAME": "Spain",
-			"OS_MAP_P56_CITY_NAME": "Spain",
-			"OS_MAP_P56_DESC": "Spain"
+			"OS_MAP_P56_NAME": "Universitat Pompeu Fabra",
+			"OS_MAP_P56_CITY_NAME": "Barcelona, Spain",
+			"OS_MAP_P56_DESC": "Universitat Pompeu Fabra (UPF) Center for Brain and\nCognition, PI: Gustavo Deco. UPF leads work package 4.4\n“Models of Brain Activity and Function”. UPF participates in\nwork package 4.5 “Linking Model Activity And Function To\nExperimental Data” and builds whole-brain network\nmodels for individuals that mimic pathologies including\nepilepsy."
 		},
 
 		"ar": {
@@ -314,15 +314,10 @@
 					"mapX": 320,
 					"mapY": 236,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"video": "",
-					"image": "spain-test.png",
-
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png"
 				},
 
 				{
@@ -332,9 +327,9 @@
 					"nameKey": "",
 					"cityKey": "",
 					"descriptionKey": "",
-					"video": "",
 					"image": "",
 
+					"video": "",
 					"nameY": 0,
 					"cityY": 0,
 					"descriptionY": 0
