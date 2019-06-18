@@ -9,11 +9,14 @@ import time
 class VideoPlayer:
 	def __init__(self, screen, filename, x, y, loop=False, soundFile=None):
 		self.screen = screen
+		self.x = x
+		self.y = y
+		self.loop = loop
+
 		self.video = cv2.VideoCapture(filename)
 		self.fps = self.video.get(cv2.CAP_PROP_FPS)
 		print("FPS: " + str(self.fps) + " ========")
 		#self.fps = 23
-		self.currTime = 0
 		self.singleFrameTime = 1 / self.fps
 
 		self.isAudioPlaying = True
@@ -22,10 +25,11 @@ class VideoPlayer:
 			mixer.music.load(soundFile)
 			self.isAudioPlaying = False
 
-		self.x = x
-		self.y = y
-		self.loop = loop
+		self.reset()
 
+	def reset(self):
+		self.currTime = 0
+		self.video.set(cv2.CAP_PROP_POS_FRAMES, 0)
 		ret, frame = self.video.read()
 		self.processFrame(frame)
 

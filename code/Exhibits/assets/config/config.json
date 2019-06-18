@@ -107,6 +107,7 @@
 
 			"DFAM_TEST_IN_PROGRESS_HEADER_MRI": "An MRI scan is taking place",
 			"DFAM_TEST_IN_PROGRESS_HEADER_PET": "A PET scan is taking place",
+			"DFAM_TEST_IN_PROGRESS_HEADER_COGNITIVE": "A cognitive scan is taking place",
 			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI": "Follow the process on the patient model",
 			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET": "Follow the process on the patient model",
 
@@ -145,7 +146,7 @@
 
 			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
 			"OS_MAP_P56_NAME": "Universitat Pompeu Fabra",
-			"OS_MAP_P56_CITY_NAME": "Barcelona, Spain",
+			"OS_MAP_P56_CITY": "Barcelona, Spain",
 			"OS_MAP_P56_DESC": "Universitat Pompeu Fabra (UPF) Center for Brain and\nCognition, PI: Gustavo Deco. UPF leads work package 4.4\n“Models of Brain Activity and Function”. UPF participates in\nwork package 4.5 “Linking Model Activity And Function To\nExperimental Data” and builds whole-brain network\nmodels for individuals that mimic pathologies including\nepilepsy."
 		},
 
@@ -324,10 +325,10 @@
 					"mapX": 340,
 					"mapY": 252,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"image": "",
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png",
 
 					"video": "",
 					"nameY": 0,
@@ -339,11 +340,10 @@
 					"mapX": 316,
 					"mapY": 262,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"video": "",
-					"image": "",
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png",
 
 					"nameY": 0,
 					"cityY": 0,
@@ -354,11 +354,10 @@
 					"mapX": 322,
 					"mapY": 349,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"video": "",
-					"image": "",
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png",
 
 					"nameY": 0,
 					"cityY": 0,
@@ -369,11 +368,10 @@
 					"mapX": 340,
 					"mapY": 489,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"video": "",
-					"image": "",
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png",
 
 					"nameY": 0,
 					"cityY": 0,
@@ -384,11 +382,10 @@
 					"mapX": 624,
 					"mapY": 190,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"video": "",
-					"image": "",
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png",
 
 					"nameY": 0,
 					"cityY": 0,
@@ -399,11 +396,10 @@
 					"mapX": 636,
 					"mapY": 166,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"video": "",
-					"image": "",
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png",
 
 					"nameY": 0,
 					"cityY": 0,
@@ -414,11 +410,10 @@
 					"mapX": 656,
 					"mapY": 151,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"video": "",
-					"image": "",
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png",
 
 					"nameY": 0,
 					"cityY": 0,
@@ -429,11 +424,10 @@
 					"mapX": 650,
 					"mapY": 188,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"video": "",
-					"image": "",
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png",
 
 					"nameY": 0,
 					"cityY": 0,
@@ -444,11 +438,10 @@
 					"mapX": 672,
 					"mapY": 171,
 					
-					"nameKey": "",
-					"cityKey": "",
-					"descriptionKey": "",
-					"video": "",
-					"image": "",
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "spain-test.png",
 
 					"nameY": 0,
 					"cityY": 0,

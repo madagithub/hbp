@@ -15,3 +15,6 @@ class VideoScene(Scene):
 	def draw(self, dt):
 		if not self.video.draw(dt):
 			self.game.transition(self.endScene)
+
+	def reset(self):
+		self.video.reset()

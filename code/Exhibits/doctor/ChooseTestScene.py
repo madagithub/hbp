@@ -25,7 +25,7 @@ TEST_ID_TO_INDEX = {
 	'MRI': 2
 }
 
-TEST_DATA = [{'normal': 'cognitive-test.png', 'selected': 'cognitive-test-selected.png', 'healthy': '', 'not-healthy': '', 'name-key': 'DFAM_COGNITIVE_TEST_NAME', 'desc-key': 'DFAM_COGNITIVE_TEST_DESC'}, 
+TEST_DATA = [{'normal': 'cognitive-test.png', 'selected': 'cognitive-test-selected.png', 'healthy': 'results-cognitive-healthy.png', 'not-healthy': 'results-cognitive-not-healthy.png', 'name-key': 'DFAM_COGNITIVE_TEST_NAME', 'desc-key': 'DFAM_COGNITIVE_TEST_DESC'}, 
 	{'normal': 'pet-test.png', 'selected': 'pet-test-selected.png', 'healthy': 'results-pet-healthy.png', 'not-healthy': 'results-pet-not-healthy.png', 'name-key': 'DFAM_PET_TEST_NAME', 'desc-key': 'DFAM_PET_TEST_DESC'}, 
 	{'normal': 'mri-test.png', 'selected': 'mri-test-selected.png', 'healthy': 'results-mri-healthy.png', 'not-healthy': 'results-mri-not-healthy.png', 'name-key': 'DFAM_MRI_TEST_NAME', 'desc-key': 'DFAM_MRI_TEST_DESC'}]
 

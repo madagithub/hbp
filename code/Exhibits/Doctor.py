@@ -23,7 +23,7 @@ class Doctor(Exhibit):
 
 		self.chooseTestScene = ChooseTestScene(self)
 		
-		#self.startVideoScene = VideoScene(self, 'assets/videos/brainzoom-short.mov', 'CHOOSE')
+		self.startVideoScene = VideoScene(self, 'assets/videos/doctor/patient-entering.mp4', 'EXPLANATION')
 		self.scene = OpeningScene(self)
 
 		self.loop()
@@ -37,6 +37,9 @@ class Doctor(Exhibit):
 	def transition(self, transitionId, data=None):
 		if transitionId == 'EXPLANATION':
 			self.scene = ExplanationScene(self)
+		elif transitionId == 'OPENING_VIDEO':
+			self.startVideoScene.reset()
+			self.scene = self.startVideoScene
 		elif transitionId == 'CHOOSE':
 			self.scene = self.chooseTestScene
 		elif transitionId == 'RUN_TEST':
