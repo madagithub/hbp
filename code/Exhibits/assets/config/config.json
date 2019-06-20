@@ -16,7 +16,7 @@
 				"textFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 40},
 				"smallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 30},
 				"smallButtonTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 24},
-				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20},
+				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20}
 			}
 		},
 		{
@@ -40,10 +40,13 @@
 			"fonts": 
 			{
 				"headerFont": {"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf", "size": 72}, 
-				"subHeaderFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf", "size": 40}, 
+				"subHeaderFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf", "size": 40},
+				"subSubHeaderFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf", "size": 36},
 				"textFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 40}, 
 				"smallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 30},
+				"smallerTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 26},
 				"smallButtonTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 24},
+				"almostExtraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 22},
 				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20}
 			}
 		}
@@ -143,6 +146,8 @@
 			"DFAM_LEARN_MORE_NOT_HEALTHY_DESC_TEXT": "The patient does have Alzheimer’s.\nThe MRI test showed that the brain tissue is very thin\nbecause of the extensive death of neuron cells that\ntakes place in Alzheimer’s disease.\n\nThe death of the cells damages various brain abilities\nsuch as management and knowledge retrieval.\nFor this reason the patient was unable to draw\na clock properly.\n\nThe PET scan marked plaques of beta-amyloid that\nare very common in Alzheimer’s patients (but not in\nhealthy brains), showing many red concentrations.\nThese areas show a high concentration of\nbeta-amyloid, typical of Alzheimer’s patients.",
 
 			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
+
+			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "Play video",
 
 			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
 			"OS_MAP_P56_NAME": "Universitat Pompeu Fabra",
