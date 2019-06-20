@@ -75,8 +75,11 @@ class Scene:
 		languageData = self.config.getLanguage()
 		self.headerFont = pygame.font.Font(languageData['fonts']['headerFont']['filename'], languageData['fonts']['headerFont']['size'])
 		self.subHeaderFont = pygame.font.Font(languageData['fonts']['subHeaderFont']['filename'], languageData['fonts']['subHeaderFont']['size'])
+		self.subSubHeaderFont = pygame.font.Font(languageData['fonts']['subSubHeaderFont']['filename'], languageData['fonts']['subSubHeaderFont']['size'])
 		self.textFont = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])
 		self.smallTextFont = pygame.font.Font(languageData['fonts']['smallTextFont']['filename'], languageData['fonts']['smallTextFont']['size'])
+		self.smallerTextFont = pygame.font.Font(languageData['fonts']['smallerTextFont']['filename'], languageData['fonts']['smallerTextFont']['size'])
+		self.almostExtraSmallTextFont = pygame.font.Font(languageData['fonts']['almostExtraSmallTextFont']['filename'], languageData['fonts']['almostExtraSmallTextFont']['size'])
 		self.extraSmallTextFont = pygame.font.Font(languageData['fonts']['extraSmallTextFont']['filename'], languageData['fonts']['extraSmallTextFont']['size'])
 		self.buttonFont = self.smallTextFont
 		self.smallButtonTextFont = pygame.font.Font(languageData['fonts']['smallButtonTextFont']['filename'], languageData['fonts']['smallButtonTextFont']['size'])

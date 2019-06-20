@@ -25,10 +25,49 @@ class CountryScene(Scene):
 		self.institutions = self.config.getInstitutions(self.countryKey)
 		self.institutionIndex = None
 
+		self.nextButton = Button(self.screen, pygame.Rect(1729, 373, 20, 26), 
+				pygame.image.load('assets/images/opening/map/right-arrow.png'), pygame.image.load('assets/images/opening/map/right-arrow-tapped.png'), 
+				None, None, None, None, self.onNextInstitutionClick)
+		self.nextButton.visible = False
+		self.buttons.append(self.nextButton)
+
+		self.prevButton = Button(self.screen, pygame.Rect(1041, 373, 20, 26), 
+				pygame.image.load('assets/images/opening/map/left-arrow.png'), pygame.image.load('assets/images/opening/map/left-arrow-tapped.png'), 
+				None, None, None, None, self.onPrevInstitutionClick)
+		self.prevButton.visible = False
+		self.buttons.append(self.prevButton)
+
+		self.closeVideoButton = Button(self.screen, pygame.Rect(1693, 147, 72, 72), 
+				pygame.image.load('assets/images/opening/map/close-button-normal.png'), pygame.image.load('assets/images/opening/map/close-button-tapped.png'), 
+				None, None, None, None, self.onCloseClick)
+		self.closeVideoButton.visible = False
+		self.buttons.append(self.closeVideoButton)	
+
+		self.playVideoButton = Button(self.screen, pygame.Rect(1022, 147, 224, 72), 
+				pygame.image.load('assets/images/opening/map/play-video-normal.png'), pygame.image.load('assets/images/opening/map/play-video-tapped.png'), 
+				None, None, None, None, self.onPlayVideoClick)
+		self.playVideoButton.visible = False
+		self.buttons.append(self.playVideoButton)
+		self.playVideoText = self.smallerTextFont.render(self.config.getText("OS_MAP_PLAY_VIDEO_BUTTON_TEXT"), True, (0, 0, 0))
+
 		self.createTexts()
 
 	def onCountryClick(self, countryKey):
 		self.map.transition('COUNTRY', countryKey)
+
+	def onNextInstitutionClick(self):
+		self.institutionIndex = (self.institutionIndex + 1) % len(self.institutions)
+		self.loadInstitution()
+
+	def onPrevInstitutionClick(self):
+		self.institutionIndex = (self.institutionIndex - 1) % len(self.institutions)
+		self.loadInstitution()
+
+	def onCloseClick(self):
+		pass
+
+	def onPlayVideoClick(self):
+		pass
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
@@ -70,16 +109,24 @@ class CountryScene(Scene):
 
 	def loadInstitution(self):
 		institution = self.institutions[self.institutionIndex]
-		self.institutionHeader = Utilities.renderTextList(self.config, self.subHeaderFont, institution['nameKey'], (255, 255, 255))
-		self.institutionCity = Utilities.renderTextList(self.config, self.subHeaderFont, institution['cityKey'], (255, 255, 255))
-		self.institutionDesc = Utilities.renderTextList(self.config, self.subHeaderFont, institution['descriptionKey'], (255, 255, 255))
+		self.institutionHeader = Utilities.renderTextList(self.config, self.subSubHeaderFont, institution['nameKey'], (255, 255, 255))
+		self.institutionCity = Utilities.renderTextList(self.config, self.smallerTextFont, institution['cityKey'], (138, 138, 138))
+		self.institutionDesc = Utilities.renderTextList(self.config, self.almostExtraSmallTextFont, institution['descriptionKey'], (255, 255, 255))
 		self.institutionImage = pygame.image.load('assets/images/opening/map/institutions/spain-test.png')
 
 		self.institutionHeaderY = 579
 		self.institutionCityY = 627
 		self.institutionDescY = 684
 
+		self.nextButton.visible = True
+		self.prevButton.visible = True
+
+		self.playVideoButton.visible = True
+		self.closeVideoButton.visible = True
+
 	def draw(self, dt):
+		super().draw(dt)
+
 		self.screen.blit(self.countryImage, self.countryImagePos)
 		for i in range(0, len(self.institutions)):
 			institution = self.institutions[i]
@@ -97,5 +144,4 @@ class CountryScene(Scene):
 			Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 30)
 			Utilities.drawTextsOnLeftX(self.screen, self.institutionCity, (1093 ,self.institutionCityY), 30)
 			Utilities.drawTextsOnLeftX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY), 30)
-
-		super().draw(dt)
+			Utilities.drawTextOnCenterX(self.screen, self.playVideoText, (1094 + 152 // 2, 147 + 25))
