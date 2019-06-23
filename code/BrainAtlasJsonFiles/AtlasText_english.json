@@ -16,14 +16,6 @@
     "value": "Brain Functions"
   },
   {
-    "key": "cortical",
-    "value": "Cortical"
-  },
-  {
-    "key": "subcortical",
-    "value": "Subcortical"
-  },
-  {
     "key": "visual_perception_title",
     "value": "Vision"
   },
@@ -89,7 +81,7 @@
   },
   {
     "key": "consolidation_of_new_memories_title",
-    "value": "Consolidation of new memories"
+    "value": "Consolidation of New Memories"
   },
   {
     "key": "consolidation_of_new_memories_body",
@@ -97,7 +89,7 @@
   },
   {
     "key": "working_memory_title",
-    "value": "Working memory"
+    "value": "Working Memory"
   },
   {
     "key": "working_memory_body",
@@ -113,7 +105,7 @@
   },
   {
     "key": "hunger_and_satiety_title",
-    "value": "Hunger and satiety"
+    "value": "Hunger and Satiety"
   },
   {
     "key": "hunger_and_satiety_body",
@@ -121,23 +113,15 @@
   },
   {
     "key": "circadian_clocks_title",
-    "value": "Circadian rhythm"
+    "value": "Circadian Rhythm"
   },
   {
     "key": "circadian_clocks_body",
     "value": "Our circadian clock is located in the Hypothalamus and helps us determine if it is day or night, even  without knowing if the sun is shining or not. The clock can be reset with sunlight – that is how we become accustomed to the new schedule set by the sun when we fly to another country."
   },
   {
-    "key": "hormone_regulation_title",
-    "value": "Hormone Regulation"
-  },
-  {
-    "key": "hormone_regulation_body",
-    "value": "Hormone Regulation Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-  },
-  {
     "key": "breath_and_heartbeat_regulation_title",
-    "value": "Breathing and heartbeat regulation"
+    "value": "Breathing and Heartbeat Regulation"
   },
   {
     "key": "breath_and_heartbeat_regulation_body",
@@ -145,7 +129,7 @@
   },
   {
     "key": "conscious_state_title",
-    "value": "Conscious state"
+    "value": "Conscious State"
   },
   {
     "key": "conscious_state_body",
@@ -209,7 +193,7 @@
   },
   {
     "key": "posterior_parietal_lobe_title",
-    "value": "Posterior Parietal Lobe"
+    "value": "Posterior Parietal Cortex"
   },
   {
     "key": "posterior_parietal_lobe_body",
@@ -328,20 +312,12 @@
     "value": "The Hypothalamus monitors some of the body’s basic behaviors. It regulates hunger and thirst, body temperature, and is responsible for the circadian rhythm. It is connected to many areas in the brain, activates the Pituitary Gland, and secretes hormones that affect processes that take place throughout the body."
   },
   {
-    "key": "pituitary_title",
-    "value": "Pituitary"
-  },
-  {
-    "key": "pituitary_body",
-    "value": "Pituitary Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-  },
-  {
     "key": "basal_ganglia_title",
-    "value": "Basal Ganglia"
+    "value": "Basal Nuclei"
   },
   {
     "key": "basal_ganglia_body",
-    "value": "Basal Ganglia Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+    "value": "The Basal nuclei play a central role in regulating movement. Irregular activity on their part may result in Parkinson’s disease. It was recently discovered that they also play a part in cognitive processes that are not related to motion. One of the structures in this cluster is the Nucleus Accumbens – which plays a role in the system that generates reinforcement learning."
   },
   {
     "key": "cerebellum_title",
@@ -358,13 +334,5 @@
   {
     "key": "brain_stem_body",
     "value": "This is essential for the basic functions of the body and brain. It monitors and regulates the activity of major processes such as blood pressure; pulse and breathing. It also plays a significant role in regulating sleep, wakefulness, and the state of consciousness. It controls the face and eye muscles and is responsible for areas related to facial reflexes. It also contains the area responsible for pain relief."
-  },
-  {
-    "key": "spinal_cord_title",
-    "value": "Spinal Cord"
-  },
-  {
-    "key": "spinal_cord_body",
-    "value": "Spinal Cord Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
   }
 ]}

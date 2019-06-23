@@ -1,0 +1,17 @@
+How to generate rotating neuron video?
+
+1. Install Blender
+2. Open empty project
+3. Delete auto-created box (Click + Delete)
+4. Load ply file of wanted neuron (File -> Import -> Stanford...)
+5. Sacele by 0.01 or so to get a decent size (Click model on tree, then box on properties window and change scale values)
+6. Numpad7 to go to top view
+7. Ctrl+Alt+Numpad0 to have camera match view
+9. Set color: Click model, then material box, click + on bottom (not right!), then click diffuse and set color to E706E6 hex
+10. Set lamp: Click lamp, go to lighting properties, and set energy to 3.0
+11. Set horizon color: Click model, then world properties and set horizon color to black
+12. Add animation: Choose start frame, click model, set y rotation to 0, and right click => insert single keyframe, do again for end frame with 360 y rotation (60), set end frame to 60, run animation and check
+13. Go to graph view (left bottom icon), then a to select all, and key => Interpolation Mode => Linear to have turning in constant speed
+14. Render: Go to render properties, change to 600 x 600 for big video, set translation of camera until it fits well, set to 100%, choose AVI Raw format, then click animation.
+15. Render again a small version for 276 x 276.
+
