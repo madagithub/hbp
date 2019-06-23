@@ -1,0 +1,370 @@
+{"items":[
+  {
+    "key": "text_anchor",
+    "value": "left"
+  },
+  {
+    "key": "display_language",
+    "value": "English"
+  },
+  {
+    "key": "brain_regions",
+    "value": "Brain Regions"
+  },
+  {
+    "key": "brain_functions",
+    "value": "Brain Functions"
+  },
+  {
+    "key": "cortical",
+    "value": "Cortical"
+  },
+  {
+    "key": "subcortical",
+    "value": "Subcortical"
+  },
+  {
+    "key": "visual_perception_title",
+    "value": "Vision"
+  },
+  {
+    "key": "visual_perception_body",
+    "value": "The first areas to receive information from the eyes process basic characteristics such as the orientation of the objects we see. More advanced areas process color and motion, and interpret exactly what we are seeing and how this information can be used."
+  },
+  {
+    "key": "auditory_perception_title",
+    "value": "Hearing"
+  },
+  {
+    "key": "auditory_perception_body",
+    "value": "When we process the sound waves that reach the brain from the ear we understand the sound’s basic characteristics such as frequency and strength. Moreover, we process also more advanced aspects such as location in the sphere in which we heard it, and its meaning: Is someone speaking to me? Is it music?"
+  },
+  {
+    "key": "somatosensory_perception_title",
+    "value": "Touch"
+  },
+  {
+    "key": "somatosensory_perception_body",
+    "value": "All our tactile receptors – vibration, pain, temperature sensing, and even self-sensing (knowing where my hands are without looking) – reach the brain from receptors spread throughout the body."
+  },
+  {
+    "key": "taste_perception_title",
+    "value": "Taste"
+  },
+  {
+    "key": "taste_perception_body",
+    "value": "Our tongue can differentiate between five tastes: sweet, salty, sour, bitter, and umami, as well as the extent of spiciness. The remaining perception of taste is determined by the sense of smell (which is why food doesn’t taste as good when your nose is stuffed). This information is transmitted to the brain which processes the taste’s meaning. Different areas of the brain are activated in response to pleasant or unpleasant tastes."
+  },
+  {
+    "key": "olfactory_perception_title",
+    "value": "Smell"
+  },
+  {
+    "key": "olfactory_perception_body",
+    "value": "The nose contains over one thousand (!) different types of receptors, discerning the different molecules that enter it. This information is transferred to the brain which generates the perception and significance of the smell. For example, different areas are activated in response to pleasant or unpleasant smells."
+  },
+  {
+    "key": "motion_title",
+    "value": "Movement"
+  },
+  {
+    "key": "motion_body",
+    "value": "When you raise your hand, it's the brain that sends a command to your hand to move. Every movement involves many areas of the brain in planning, precision, timing, and the ability to carry out the correct movement for each purpose, even without paying much attention to it."
+  },
+  {
+    "key": "language_title",
+    "value": "Language"
+  },
+  {
+    "key": "language_body",
+    "value": "Language is the primary way we communicate with each other. For most of us, the language areas lie mainly on the left side of the brain. Certain areas are responsible for language comprehension, and language production and understanding syntax."
+  },
+  {
+    "key": "emotions_title",
+    "value": "Emotions"
+  },
+  {
+    "key": "emotions_body",
+    "value": "We still don’t fully understand how emotions are reflected in the brain. However, quite a few areas in the brain have been found to be important for processing emotions. Studying these areas helps piece the puzzle together."
+  },
+  {
+    "key": "consolidation_of_new_memories_title",
+    "value": "Consolidation of new memories"
+  },
+  {
+    "key": "consolidation_of_new_memories_body",
+    "value": "We are constantly exposed to a lot of information, but we forget most of it quickly and retain only a small amount. The brain, especially the Hippocampus, decides whether each new item is important and should be retained in the memory, or whether it can be forgotten."
+  },
+  {
+    "key": "working_memory_title",
+    "value": "Working memory"
+  },
+  {
+    "key": "working_memory_body",
+    "value": "This used to be called ‘short term memory’. It contains all the memories we need to carry out the tasks we are currently engaged in, a little like a desk on which we are doing homework. Just like the desk, the working memory has limited space therefore it will only retain the information that is important right now."
+  },
+  {
+    "key": "orientation_title",
+    "value": "Orientation"
+  },
+  {
+    "key": "orientation_body",
+    "value": "Thanks to the brain we have a pretty good understanding of where we are, what is closer to us and what is more distant, and how to get from place to place. In the Hippocampus there are cells that code the location we are in at any given moment, and it’s possible that they help us orient ourselves."
+  },
+  {
+    "key": "hunger_and_satiety_title",
+    "value": "Hunger and satiety"
+  },
+  {
+    "key": "hunger_and_satiety_body",
+    "value": "The nuclei of hunger and satiety in the Hypothalamus receive information from the digestive system and from many areas in the brain about our current condition, and they decide whether to generate the feeling of hunger or the feeling of satiety."
+  },
+  {
+    "key": "circadian_clocks_title",
+    "value": "Circadian rhythm"
+  },
+  {
+    "key": "circadian_clocks_body",
+    "value": "Our circadian clock is located in the Hypothalamus and helps us determine if it is day or night, even  without knowing if the sun is shining or not. The clock can be reset with sunlight – that is how we become accustomed to the new schedule set by the sun when we fly to another country."
+  },
+  {
+    "key": "hormone_regulation_title",
+    "value": "Hormone Regulation"
+  },
+  {
+    "key": "hormone_regulation_body",
+    "value": "Hormone Regulation Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "key": "breath_and_heartbeat_regulation_title",
+    "value": "Breathing and heartbeat regulation"
+  },
+  {
+    "key": "breath_and_heartbeat_regulation_body",
+    "value": "Our heart and lungs don’t work randomly. They are regulated by the Brain Stem, which slows or speeds their actions as necessary. For instance, when we run we need a lot of oxygen so the brain raises our breathing and heart rate."
+  },
+  {
+    "key": "conscious_state_title",
+    "value": "Conscious state"
+  },
+  {
+    "key": "conscious_state_body",
+    "value": "Different areas in the brain work differently when we are awake and when we are sleeping, and a change in their activity can cause us to fall asleep or to wake up. In some cases of disorders of consciousness, such as a coma or vegetative state, these areas are damaged."
+  },
+  {
+    "key": "cortex_title",
+    "value": "The Cortex"
+  },
+  {
+    "key": "cortex_body",
+    "value": "Cortex Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "key": "frontal_lobe_title",
+    "value": "Frontal Lobe"
+  },
+  {
+    "key": "frontal_lobe_body",
+    "value": "Located at the front of the brain, this is the largest of the four lobes. The areas within it are responsible for many functions: the Motor Cortex is responsible for movement; Broca’s Area is responsible for language production; and the Prefrontal Cortex plays an important role in higher brain functions such as strategic thinking and decision making."
+  },
+  {
+    "key": "motor_cortex_title",
+    "value": "Primary Motor Cortex"
+  },
+  {
+    "key": "motor_cortex_body",
+    "value": "This area is responsible for movement. Commands that originate in the Primary Motor Cortex are sent to the Spinal Cord that transmits them to the muscles, which contract and relax accordingly. Different areas in the Primary Motor Cortex are responsible for different organs, from the feet to the face. The forefront of this area is responsible for complex tasks such as planning movement and movement sequences."
+  },
+  {
+    "key": "broca_area_title",
+    "value": "Broca's Area"
+  },
+  {
+    "key": "broca_area_body",
+    "value": "This is one of the two areas in the brain responsible for language. It is located usually on the left side of the brain and is important for syntax and speech production (patients with damage in this area will have difficulty talking, although they will understand what is said to them). Research also attributes non-language functions to this area, such as music and working memory."
+  },
+  {
+    "key": "prefrontal_cortex_title",
+    "value": "Prefrontal Cortex"
+  },
+  {
+    "key": "prefrontal_cortex_body",
+      "value": "One of the most important areas in the brain. It is mainly responsible for high functions such as decision making; planning and management; social behavior; and rational thinking. It is also involved in learning processes, memory, and attention. Researchers attribute intelligence, and our characteristics and personality to this area. Different diseases, such as schizophrenia and autism, are characterized with changes in this area."
+  },
+  {
+    "key": "parietal_lobe_title",
+    "value": "Parietal Lobe"
+  },
+  {
+    "key": "parietal_lobe_body",
+    "value": "This is a significant lobe in the cortex. It has a wide range of functions, from processing sensory information from the body in the Somatosensory Cortex to higher functions that take place in the Posterior Parietal Cortex."
+  },
+  {
+    "key": "somatosensory_cortex_title",
+    "value": "Somatosensory Cortex"
+  },
+  {
+    "key": "somatosensory_cortex_body",
+    "value": "This is responsible for processing touch as well as processing pain, vibrations, and temperature. This area receives information from receptors spread throughout the body and transmits information through the Spinal Cord and the Brain Stem."
+  },
+  {
+    "key": "posterior_parietal_lobe_title",
+    "value": "Posterior Parietal Lobe"
+  },
+  {
+    "key": "posterior_parietal_lobe_body",
+    "value": "This contains areas responsible for higher functions of the brain, such as coordinating between the sense of sight and the sense of touch, and synchronizing these senses with motor functions. It is involved in actions related to math and logic, and also in high level functions such as attention, working memory, notion of ‘self’ and of space."
+  },
+  {
+    "key": "occipital_lobe_title",
+    "value": "Occipital Lobe"
+  },
+  {
+    "key": "occipital_lobe_body",
+    "value": "Responsible for processing visual information. The primary area in which the information is first received, carry out basic characteristic processing such as location of the object we see and its orientation. The more advanced areas process aspects such as movement and color. The information is then transmitted to other lobes for further processing."
+  },
+  {
+    "key": "temporal_lobe_title",
+    "value": "Temporal Lobe"
+  },
+  {
+    "key": "temporal_lobe_body",
+    "value": "The Temporal Lobe is located at the sides of the brain, behind the temples. It plays a significant role in processing sensory information. Different areas within this lobe are responsible for processing information from the senses of sight, sound, and smell."
+  },
+  {
+    "key": "auditory_cortex_title",
+    "value": "Auditory Cortex"
+  },
+  {
+    "key": "auditory_cortex_body",
+    "value": "This is responsible for processing information of sound. It is divided into sub-sections: the primary area is the first in the cortex to receive the auditory information; It then transmits it to the secondary areas that are responsible for more complex hearing functions such as processing music."
+  },
+  {
+    "key": "wernicke_area_title",
+    "value": "Wernicke’s Area"
+  },
+  {
+    "key": "wernicke_area_body",
+    "value": "One of the two language areas in the brain. It is responsible for language comprehension, but not language production. Patients with damage in this area have a normal speech flow but cannot understand what they are saying. This area only exists on one side of the brain (usually on the left)."
+  },
+  {
+    "key": "median_and_inferior_temporal_lobe_title",
+    "value": "Medial and Inferior Temporal Lobe"
+  },
+  {
+    "key": "median_and_inferior_temporal_lobe_body",
+    "value": "This part contains the areas responsible for more complex processing of the visual information, such as face recognition, object recognition, and background recognition."
+  },
+  {
+    "key": "piriform_cortex_title",
+    "value": "Piriform Cortex"
+  },
+  {
+    "key": "piriform_cortex_body",
+    "value": "This is the area of the cortex responsible for processing information from the sense of smell. It receives information from the smell organs. In humans this area is very small relative to other parts of the brain, which may indicate that the sense of smell has a less important role in our lives compared to other species."
+  },
+  {
+    "key": "limbic_cortex_title",
+    "value": "Limbic Cortex"
+  },
+  {
+    "key": "limbic_cortex_body",
+    "value": "This relates to a wealth of processes related to behavior. It is important for social behavior; processing emotions; motivation; learning; and memory. The Limbic system has additional components that are not in the cortex, such as the Amygdala and the Hippocampus."
+  },
+  {
+    "key": "insula_title",
+    "value": "Insula"
+  },
+  {
+    "key": "insula_body",
+    "value": "This part of the cortex is folded deep within the brain and cannot be seen from outside. The insula is related to various emotions such as disgust, and emotional reactions to external stimuli. It is involved in tasks such as monitoring bodily activities but also higher brain processes."
+  },
+  {
+    "key": "gustatory_cortex_title",
+    "value": "Gustatory Cortex"
+  },
+  {
+    "key": "gustatory_cortex_body",
+    "value": "This area is responsible for processing information from the sense of taste. The information arrives from taste receptors placed in the mouth (mainly on the tongue), flows through the Brain Stem and the Thalamus, reaching the Gustatory Cortex. The Gustatory Cortex is composed of two parts, one in the insula, and the second at the bottom of the Frontal Lobe."
+  },
+  {
+    "key": "deep_nuclei_in_the_forebrain_title",
+    "value": "Deep Cerebellar Nuclei"
+  },
+  {
+    "key": "deep_nuclei_in_the_forebrain_body",
+    "value": "Deep Nuclei in the Forebrain Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "key": "hippocampus_title",
+    "value": "Hippocampus"
+  },
+  {
+    "key": "hippocampus_body",
+    "value": "Hippocampus means ‘sea horse’ in Latin, and some say that the shape of the Hippocampus resembles a sea horse. The Hippocampus plays an important role in generating, coding, and storing new memories, especially conscious memories of events and facts. The Hippocampus also plays a role in spatial memory and orientation."
+  },
+  {
+    "key": "amygdala_title",
+    "value": "Amygdala"
+  },
+  {
+    "key": "amygdala_body",
+    "value": "A small area in the depth of the brain that plays an important role in processing different aspects of emotion (most notably, fear). The Amygdala’s importance is twofold: it influences high psychological behaviors that stem from emotion; and it regulates basic bodily functions resulting from emotions (for instance, by raising blood pressure and heart rate)."
+  },
+  {
+    "key": "thalamus_title",
+    "value": "Thalamus"
+  },
+  {
+    "key": "thalamus_body",
+    "value": "This is the brain’s ‘relay station’. Most of the information that reaches the Cortex from the body and other places in the nervous system (such as information from the senses, apart from the sense of smell) first goes through the Thalamus. Very basic processing of information takes place here, after which it is transmitted to the Cortex."
+  },
+  {
+    "key": "hypothalamus_title",
+    "value": "Hypothalamus"
+  },
+  {
+    "key": "hypothalamus_body",
+    "value": "The Hypothalamus monitors some of the body’s basic behaviors. It regulates hunger and thirst, body temperature, and is responsible for the circadian rhythm. It is connected to many areas in the brain, activates the Pituitary Gland, and secretes hormones that affect processes that take place throughout the body."
+  },
+  {
+    "key": "pituitary_title",
+    "value": "Pituitary"
+  },
+  {
+    "key": "pituitary_body",
+    "value": "Pituitary Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "key": "basal_ganglia_title",
+    "value": "Basal Ganglia"
+  },
+  {
+    "key": "basal_ganglia_body",
+    "value": "Basal Ganglia Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "key": "cerebellum_title",
+    "value": "Cerebellum"
+  },
+  {
+    "key": "cerebellum_body",
+    "value": "One of the most mysterious and fascinating areas of the nervous system. Despite comprising only 15% of the brain’s size, it contains 60% of the neurons. It is notable for its motor roles such as coordination, balance, precision and timing. Studies have found that it is also related to higher functions such as memory, learning, decision making, and emotion."
+  },
+  {
+    "key": "brain_stem_title",
+    "value": "Brain Stem"
+  },
+  {
+    "key": "brain_stem_body",
+    "value": "This is essential for the basic functions of the body and brain. It monitors and regulates the activity of major processes such as blood pressure; pulse and breathing. It also plays a significant role in regulating sleep, wakefulness, and the state of consciousness. It controls the face and eye muscles and is responsible for areas related to facial reflexes. It also contains the area responsible for pain relief."
+  },
+  {
+    "key": "spinal_cord_title",
+    "value": "Spinal Cord"
+  },
+  {
+    "key": "spinal_cord_body",
+    "value": "Spinal Cord Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  }
+]}
