@@ -16,9 +16,9 @@ NEURON_IMAGE_GAP = 584
 
 SMALL_TEXT_LINE_SIZE = 26
 
-NEURON_DATA = [{'normal': 'select-pyramidal-neuron-normal.png', 'selected': 'select-pyramidal-neuron-selected.png', 'name-key': 'RN_CHOOSE_NEURON_PYRAMIDAL_NAME', 'desc-key': 'RN_CHOOSE_NEURON_PYRAMIDAL_DESC'}, 
-	{'normal': 'select-basket-neuron-normal.png', 'selected': 'select-basket-neuron-selected.png', 'name-key': 'RN_CHOOSE_NEURON_BASKET_NAME', 'desc-key': 'RN_CHOOSE_NEURON_BASKET_DESC'}, 
-	{'normal': 'select-martinotti-neuron-normal.png', 'selected': 'select-martinotti-neuron-selected.png', 'name-key': 'RN_CHOOSE_NEURON_MARTINOTTI_NAME', 'desc-key': 'RN_CHOOSE_NEURON_MARTINOTTI_DESC'}]
+NEURON_DATA = [{'id': 'pyramidal', 'normal': 'select-pyramidal-neuron-normal.png', 'selected': 'select-pyramidal-neuron-selected.png', 'name-key': 'RN_CHOOSE_NEURON_PYRAMIDAL_NAME', 'desc-key': 'RN_CHOOSE_NEURON_PYRAMIDAL_DESC'}, 
+	{'id': 'basket', 'normal': 'select-basket-neuron-normal.png', 'selected': 'select-basket-neuron-selected.png', 'name-key': 'RN_CHOOSE_NEURON_BASKET_NAME', 'desc-key': 'RN_CHOOSE_NEURON_BASKET_DESC'}, 
+	{'id': 'martinotti', 'normal': 'select-martinotti-neuron-normal.png', 'selected': 'select-martinotti-neuron-selected.png', 'name-key': 'RN_CHOOSE_NEURON_MARTINOTTI_NAME', 'desc-key': 'RN_CHOOSE_NEURON_MARTINOTTI_DESC'}]
 
 class ChooseNeuronScene(Scene):
 	def __init__(self, game):
@@ -33,6 +33,7 @@ class ChooseNeuronScene(Scene):
 		currSelectButtonX = FIRST_NEURON_SELECT_BUTTON_X
 		self.neuronImages = []
 		self.selectButtons = []
+		self.indexToId = []
 		for i in range(0, len(NEURON_DATA)): #TODO: Move to config
 			neuronImageSet = NEURON_DATA[i]
 			normalImage = pygame.image.load('assets/images/' + neuronImageSet['normal'])
@@ -52,6 +53,8 @@ class ChooseNeuronScene(Scene):
 			descTexts = Utilities.renderTextList(self.config, self.smallTextFont, neuronImageSet['desc-key'])
 			self.neuronDescs.append(descTexts)
 
+			self.indexToId[i] = neuronImageSet['id']
+
 			currImageButtonX += NEURON_IMAGE_GAP
 			currSelectButtonX += NEURON_IMAGE_GAP
 
@@ -66,7 +69,7 @@ class ChooseNeuronScene(Scene):
 		self.headerText = self.textFont.render(self.config.getText("RN_CHOOSE_NEURON_INSTRUCTION"), True, (255, 255, 255))
 
 	def onNeuronClick(self, index):
-		self.game.transition('DRAW', 'martinotti')
+		self.game.transition('DRAW', self.indexToId[i])
 
 	def draw(self, dt):
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 61))

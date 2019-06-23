@@ -99,8 +99,8 @@ class DrawNeuronScene(Scene):
 		self.modelTextBalloon = pygame.image.load('assets/images/text-box-small.png')
 		self.lightningTextBalloon = pygame.image.load('assets/images/text-box-large.png')
 		
-		self.modelPlayer = VideoPlayer(game.screen, 'assets/videos/neuron-blender-color.avi', self.screen.get_width() // 2 - 600 // 2, 240, True)
-		self.lightningPlayer = VideoPlayer(game.screen, 'assets/videos/MC_full.avi', self.screen.get_width() // 2 - 600 // 2, 0, True)
+		self.modelPlayer = VideoPlayer(game.screen, 'assets/videos/neuron/' + self.neuronChosen + '-big.avi', self.screen.get_width() // 2 - 600 // 2, 240, True)
+		self.lightningPlayer = VideoPlayer(game.screen, 'assets/videos/neuron/' + self.neuronChosen + '-electric-big.avi', self.screen.get_width() // 2 - 600 // 2, 0, True)
 
 		lightningButtonNormal = pygame.image.load('assets/images/button-electrify-normal.png')
 		lightningButtonTapped = pygame.image.load('assets/images/button-electrify-tapped.png')
