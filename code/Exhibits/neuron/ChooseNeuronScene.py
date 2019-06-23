@@ -53,7 +53,7 @@ class ChooseNeuronScene(Scene):
 			descTexts = Utilities.renderTextList(self.config, self.smallTextFont, neuronImageSet['desc-key'])
 			self.neuronDescs.append(descTexts)
 
-			self.indexToId[i] = neuronImageSet['id']
+			self.indexToId.append(neuronImageSet['id'])
 
 			currImageButtonX += NEURON_IMAGE_GAP
 			currSelectButtonX += NEURON_IMAGE_GAP
@@ -69,7 +69,7 @@ class ChooseNeuronScene(Scene):
 		self.headerText = self.textFont.render(self.config.getText("RN_CHOOSE_NEURON_INSTRUCTION"), True, (255, 255, 255))
 
 	def onNeuronClick(self, index):
-		self.game.transition('DRAW', self.indexToId[i])
+		self.game.transition('DRAW', self.indexToId[index])
 
 	def draw(self, dt):
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 61))
