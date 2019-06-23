@@ -145,6 +145,15 @@
 			"DFAM_LEARN_MORE_HEALTHY_DESC_TEXT": "The tests do not seem to indicate the patient\nhas Alzheimer’s.\nThe MRI test shows a normal brain. In Alzheimer’s,\ncells die throughout the brain so that the brain tissue\nbecomes thin, unlike the case of our patient.\n\nMany abilities related to drawing a clock, such as\nknowledge retrieval and management, are impaired in\nAlzheimer’s patients. However, our patient was able\nto draw a clock properly.\n\nThe PET scan indicating beta-amyloid plaques very\ncommon among Alzheimer’s patients (but not in healthy\nbrains) showed no red concentrations at all.\nMeaning, there are no beta-amyloid plaques in our\npatient’s brain, as opposed to what we would expect\nto find in an Alzheimer’s patient.",
 			"DFAM_LEARN_MORE_NOT_HEALTHY_DESC_TEXT": "The patient does have Alzheimer’s.\nThe MRI test showed that the brain tissue is very thin\nbecause of the extensive death of neuron cells that\ntakes place in Alzheimer’s disease.\n\nThe death of the cells damages various brain abilities\nsuch as management and knowledge retrieval.\nFor this reason the patient was unable to draw\na clock properly.\n\nThe PET scan marked plaques of beta-amyloid that\nare very common in Alzheimer’s patients (but not in\nhealthy brains), showing many red concentrations.\nThese areas show a high concentration of\nbeta-amyloid, typical of Alzheimer’s patients.",
 
+			"OS_HBP_TEXT": "About the\nHuman Brain Project",
+			"OS_WHAT_IS_THE_QUESTION_TEXT": "What's the question?!\nConversations of young\nresearchers",
+			"OS_CAJAL_TEXT": "Santiago Ramón y Cajal",
+			"OS_MAP_TEXT": "The Human Brain Project\nin Europe",
+			"OS_BRAIN_STRUCTURES_MAP_TEXT": "Brain structures\nLaboratory findings",
+			"OS_10_QUESTIONS_TEXT": "10 unanswered questions\nabout the human brain",
+			"OS_DANCING_NEURON_TEXT": "The Electrically\nDancing Neuron",
+			"OS_MTB_TEXT": "Credits",
+
 			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
 
 			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "Play video",
@@ -234,36 +243,82 @@
 
 	"openingVideos": [
 		{
+			"type": "ABOUT",
 			"file": "assets/videos/opening/video 01 - interview.mp4",
 			"soundFile": "assets/videos/opening/video 01 - interview.ogg",
-			"image": "",
-			"x": 200,
-			"y": 100
+			"image": "hbp",
+			"tappedImage": "hbp",
+			"x": 0,
+			"y": 0,
+			"textKey": "OS_HBP_TEXT"
 		},
 		{
+			"type": "VIDEO",
 			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
 			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
-			"image": "",
-			"x": 200,
-			"y": 300
+			"image": "what-is-the-question",
+			"tappedImage": "what-is-the-question",
+			"x": 480,
+			"y": 0,
+			"textKey": "OS_WHAT_IS_THE_QUESTION_TEXT"
 		},
 		{
-			"file": "assets/videos/opening/video 01 - interview.mp4",
-			"image": "",
-			"x": 200,
-			"y": 500
+			"type": "VIDEO",
+			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
+			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"image": "cajal",
+			"tappedImage": "cajal",
+			"x": 960,
+			"y": 0,
+			"textKey": "OS_CAJAL_TEXT"
 		},
 		{
-			"file": "assets/videos/opening/video 01 - interview.mp4",
-			"image": "",
-			"x": 200,
-			"y": 500
+			"type": "MAP",
+			"image": "map",
+			"tappedImage": "map",
+			"x": 1440,
+			"y": 0,
+			"textKey": "OS_MAP_TEXT"
 		},
 		{
-			"file": "assets/videos/opening/video 01 - interview.mp4",
-			"image": "",
-			"x": 200,
-			"y": 700
+			"type": "VIDEO",
+			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
+			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"image": "brain-structures",
+			"tappedImage": "brain-structures",
+			"x": 0,
+			"y": 500,
+			"textKey": "OS_BRAIN_STRUCTURES_MAP_TEXT"
+		},
+		{
+			"type": "VIDEO",
+			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
+			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"image": "10-questions",
+			"tappedImage": "10-questions",
+			"x": 480,
+			"y": 500,
+			"textKey": "OS_10_QUESTIONS_TEXT"
+		},
+		{
+			"type": "VIDEO",
+			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
+			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"image": "dancing-neuron",
+			"tappedImage": "dancing-neuron",
+			"x": 960,
+			"y": 500,
+			"textKey": "OS_DANCING_NEURON_TEXT"
+		},
+		{
+			"type": "CREDITS",
+			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
+			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"image": "mtb",
+			"tappedImage": "mtb",
+			"x": 1440,
+			"y": 500,
+			"textKey": "OS_MTB_TEXT"
 		}
 	],
 
