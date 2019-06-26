@@ -201,7 +201,16 @@
 			"OS_MAP_P97_DESC": "Our GIGA-Consciousness Unit is part of the \nGIGA research institute (University of Liège, Belgium).\nIn the framework of HBP, our multidisciplinary team \naims at studying human consciousness and its \npathological, pharmacological and physiological modifications, \nnotably using electrophysiology and neuroimaging tools, \nas well as investigating the ethical issues of such a research.",
 
 			"OS_MAP_P110_NAME": "Universiteit Gent",
-			"OS_MAP_P110_CITY": "Ghent, Belgium"
+			"OS_MAP_P110_CITY": "Ghent, Belgium",
+
+			"OS_MAP_COUNTRY_DENMARK_NAME": "Denmark",
+
+			"OS_MAP_P14_NAME": "Danmarks Tekniske Universitet",
+			"OS_MAP_P14_CITY": "Kongens Lyngby, Denmark",
+
+			"OS_MAP_P19_NAME": "Fonden Teknologirådet",
+			"OS_MAP_P19_CITY": "Hvidovre, Denmark",
+			"OS_MAP_P19_DESC": "The Danish Board of Technology Foundation\nis part of HBP’ ’Ethics and Society’ group, facilitating \ndialogue with publics, stakeholders and the HBP on social, \nethical, legal issues related to HBP research. \nThe Foundations’ mission is to ensure that society’s \ndevelopment is shaped by informed and forward-looking \ncooperation between citizens, experts, stakeholders, and \ndecision-makers."
 		},
 
 		"ar": {
@@ -408,6 +417,26 @@
 	},
 
 	"mapCountries": {
+		"denmark": {
+			"nameKey": "OS_MAP_COUNTRY_DENMARK_NAME",
+			"institutions": [
+				{
+					"mapX": 471,
+					"mapY": 369,
+					
+					"nameKey": "OS_MAP_P14_NAME",
+					"cityKey": "OS_MAP_P14_CITY"
+				},
+				{
+					"mapX": 451,
+					"mapY": 389,
+					
+					"nameKey": "OS_MAP_P19_NAME",
+					"cityKey": "OS_MAP_P19_CITY",
+					"descriptionKey": "OS_MAP_P19_DESC"
+				}
+			]
+		},
 		"belgium": {
 			"nameKey": "OS_MAP_COUNTRY_BELGIUM_NAME",
 			"institutions": [
