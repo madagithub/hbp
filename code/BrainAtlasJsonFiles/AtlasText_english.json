@@ -140,10 +140,6 @@
     "value": "The Cortex"
   },
   {
-    "key": "cortex_body",
-    "value": "Cortex Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-  },
-  {
     "key": "frontal_lobe_title",
     "value": "Frontal Lobe"
   },
@@ -274,10 +270,6 @@
   {
     "key": "deep_nuclei_in_the_forebrain_title",
     "value": "Deep Cerebellar Nuclei"
-  },
-  {
-    "key": "deep_nuclei_in_the_forebrain_body",
-    "value": "Deep Nuclei in the Forebrain Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
   },
   {
     "key": "hippocampus_title",
