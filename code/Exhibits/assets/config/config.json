@@ -210,7 +210,15 @@
 
 			"OS_MAP_P19_NAME": "Fonden Teknologirådet",
 			"OS_MAP_P19_CITY": "Hvidovre, Denmark",
-			"OS_MAP_P19_DESC": "The Danish Board of Technology Foundation\nis part of HBP’ ’Ethics and Society’ group, facilitating \ndialogue with publics, stakeholders and the HBP on social, \nethical, legal issues related to HBP research. \nThe Foundations’ mission is to ensure that society’s \ndevelopment is shaped by informed and forward-looking \ncooperation between citizens, experts, stakeholders, and \ndecision-makers."
+			"OS_MAP_P19_DESC": "The Danish Board of Technology Foundation\nis part of HBP’ ’Ethics and Society’ group, facilitating \ndialogue with publics, stakeholders and the HBP on social, \nethical, legal issues related to HBP research. \nThe Foundations’ mission is to ensure that society’s \ndevelopment is shaped by informed and forward-looking \ncooperation between citizens, experts, stakeholders, and \ndecision-makers.",
+
+			"OS_MAP_COUNTRY_HUNGARY_NAME": "Hungary",
+
+			"OS_MAP_P15_NAME": "Debreceni Egyetem",
+			"OS_MAP_P15_CITY": "Debrecen, Hungary",
+
+			"OS_MAP_P30_NAME": "Institute of Experimental Medicine, Hungarian Academy of Sciences",
+			"OS_MAP_P30_CITY": "Budapest, Hungary"
 		},
 
 		"ar": {
@@ -417,6 +425,25 @@
 	},
 
 	"mapCountries": {
+		"hungary": {
+			"nameKey": "OS_MAP_COUNTRY_HUNGARY_NAME",
+			"institutions": [
+				{
+					"mapX": 331,
+					"mapY": 141,
+					
+					"nameKey": "OS_MAP_P30_NAME",
+					"cityKey": "OS_MAP_P30_CITY"
+				},
+				{
+					"mapX": 579,
+					"mapY": 128,
+					
+					"nameKey": "OS_MAP_P15_NAME",
+					"cityKey": "OS_MAP_P15_CITY"
+				}
+			]
+		},
 		"denmark": {
 			"nameKey": "OS_MAP_COUNTRY_DENMARK_NAME",
 			"institutions": [
