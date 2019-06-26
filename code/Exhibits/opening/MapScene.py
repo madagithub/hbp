@@ -42,8 +42,8 @@ class MapScene(Scene):
 		self.background = pygame.image.load('assets/images/opening/map/map-background.png')
 
 		for countryData in COUNTRIES_DATA:
-			image = pygame.image.load('assets/images/opening/map/' + countryData['image'] + '.png').convert_alpha()
-			selectedImage = pygame.image.load('assets/images/opening/map/' + countryData['selectedImage'] + '.png').convert_alpha()
+			image = pygame.image.load('assets/images/opening/map/' + countryData['image'] + '.png')
+			selectedImage = pygame.image.load('assets/images/opening/map/' + countryData['selectedImage'] + '.png')
 
 			countryData['image'] = image
 			countryData['selectedImage'] = selectedImage
@@ -54,6 +54,7 @@ class MapScene(Scene):
 		self.createTexts()
 
 	def onCountryClick(self, countryKey):
+		print("TRANSITION: ", countryKey)
 		self.game.transition('COUNTRY', countryKey)
 
 	def onLanguageChanged(self):
@@ -83,12 +84,13 @@ class MapScene(Scene):
 
 	def onMouseUp(self, pos):
 		super().onMouseUp(pos)
-		self.selectedCountry = None
 
 		if self.selectedCountry is not None:
 			country = self.getCountryAtPos(pos)
 			if country == self.selectedCountry:
 				self.onCountryClick(country['key'])
+
+		self.selectedCountry = None
 
 	def draw(self, dt):
 		self.screen.blit(self.background, (6,0))

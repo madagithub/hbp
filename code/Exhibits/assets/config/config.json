@@ -161,7 +161,23 @@
 			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
 			"OS_MAP_P56_NAME": "Universitat Pompeu Fabra",
 			"OS_MAP_P56_CITY": "Barcelona, Spain",
-			"OS_MAP_P56_DESC": "Universitat Pompeu Fabra (UPF) Center for Brain and\nCognition, PI: Gustavo Deco. UPF leads work package 4.4\n“Models of Brain Activity and Function”. UPF participates in\nwork package 4.5 “Linking Model Activity And Function To\nExperimental Data” and builds whole-brain network\nmodels for individuals that mimic pathologies including\nepilepsy."
+			"OS_MAP_P56_DESC": "Universitat Pompeu Fabra (UPF) Center for Brain and\nCognition, PI: Gustavo Deco. UPF leads work package 4.4\n“Models of Brain Activity and Function”. UPF participates in\nwork package 4.5 “Linking Model Activity And Function To\nExperimental Data” and builds whole-brain network\nmodels for individuals that mimic pathologies including\nepilepsy.",
+
+			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
+
+			"OS_MAP_COUNTRY_NORWAY_NAME": "Norway",
+
+			"OS_MAP_P81_NAME": "Universitetet i Oslo",
+			"OS_MAP_P81_CITY": "Olslo, Norway",
+
+			"OS_MAP_P44_NAME": "Norges miljø- og biovitenskapelige universitet",
+			"OS_MAP_P44_CITY": "Ås, Norway",
+			"OS_MAP_P44_DESC": "The Computational Neuroscience Group at the Norwegian\nUniversity of Life Sciences (NMBU) develops simulation\ntechnology for brain-scale network simulations on supercomputers\nas well as methods and tools to compute brain signals such as EEG and\nMEG from simulations for direct comparison to experiments.",
+
+			"OS_MAP_COUNTRY_TURKEY_NAME": "Turkey",
+
+			"OS_MAP_P48_NAME": "Sabancı Üniversitesi",
+			"OS_MAP_P48_CITY": "Istanbul, Turkey"
 		},
 
 		"ar": {
@@ -368,6 +384,45 @@
 	},
 
 	"mapCountries": {
+		"turkey": {
+			"nameKey": "OS_MAP_COUNTRY_TURKEY_NAME",
+			"institutions": [
+				{
+					"mapX": 164,
+					"mapY": 61,
+					
+					"nameKey": "OS_MAP_P48_NAME",
+					"cityKey": "OS_MAP_P48_CITY"
+				}
+			]
+		},
+		"france": {
+			"nameKey": "OS_MAP_COUNTRY_FRANCE_NAME",
+			"institutions": [
+			]
+		},
+		"norway": {
+			"nameKey": "OS_MAP_COUNTRY_NORWAY_NAME",
+			"institutions": [
+				{
+					"mapX": 171,
+					"mapY": 630,
+					
+					"nameKey": "OS_MAP_P81_NAME",
+					"cityKey": "OS_MAP_P81_CITY"
+				},
+				{
+					"mapX": 183,
+					"mapY": 661,
+					
+					"nameKey": "OS_MAP_P44_NAME",
+					"cityKey": "OS_MAP_P44_CITY",
+					"descriptionKey": "OS_MAP_P44_DESC",
+					"imageCopyrightKey": "OS_MAP_P44_COPYRIGHT",
+					"image": "P44"
+				}
+			]
+		},
 		"spain": {
 			"nameKey": "OS_MAP_COUNTRY_SPAIN_NAME",
 			"institutions": [
