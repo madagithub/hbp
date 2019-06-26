@@ -177,7 +177,31 @@
 			"OS_MAP_COUNTRY_TURKEY_NAME": "Turkey",
 
 			"OS_MAP_P48_NAME": "Sabancı Üniversitesi",
-			"OS_MAP_P48_CITY": "Istanbul, Turkey"
+			"OS_MAP_P48_CITY": "Istanbul, Turkey",
+
+			"OS_MAP_COUNTRY_PORTUGAL_NAME": "Portugal",
+
+			"OS_MAP_P67_NAME": "Universidade do Minho",
+			"OS_MAP_P67_CITY": "Braga, Portugal",
+
+			"OS_MAP_P23_NAME": "Fundação D. Anna Sommer Champalimaud e Dr Carlos Montez Champalimaud",
+			"OS_MAP_P23_CITY": "Lisbon, Portugal",
+
+			"OS_MAP_COUNTRY_BELGIUM_NAME": "Belgium",
+
+			"OS_MAP_P80_NAME": "Universiteit Antwerpen",
+			"OS_MAP_P80_CITY": "Antwerp, Belgium",
+			"OS_MAP_P80_DESC": "At Antwerp University, we study cortical function combining\ntechnological, experimental and theoretical approaches,\nranging from arrays of microelectrodes to patch-clamp\nand from the micro- and nanotechnologies for to the\ncomputer simulation of neuron models.\nWe are involved in SP4 and lead Task 4.1.2 on Input-Output Transfer function.",
+
+			"OS_MAP_P111_NAME": "Katholieke Universiteit Leuven",
+			"OS_MAP_P111_CITY": "Leuven, Belgium",
+
+			"OS_MAP_P97_NAME": "Université de Liege",
+			"OS_MAP_P97_CITY": "Liège, Belgium",
+			"OS_MAP_P97_DESC": "Our GIGA-Consciousness Unit is part of the \nGIGA research institute (University of Liège, Belgium).\nIn the framework of HBP, our multidisciplinary team \naims at studying human consciousness and its \npathological, pharmacological and physiological modifications, \nnotably using electrophysiology and neuroimaging tools, \nas well as investigating the ethical issues of such a research.",
+
+			"OS_MAP_P110_NAME": "Universiteit Gent",
+			"OS_MAP_P110_CITY": "Ghent, Belgium"
 		},
 
 		"ar": {
@@ -384,6 +408,62 @@
 	},
 
 	"mapCountries": {
+		"belgium": {
+			"nameKey": "OS_MAP_COUNTRY_BELGIUM_NAME",
+			"institutions": [
+				{
+					"mapX": 100,
+					"mapY": 85,
+					
+					"nameKey": "OS_MAP_P110_NAME",
+					"cityKey": "OS_MAP_P110_CITY"
+				},
+				{
+					"mapX": 286,
+					"mapY": 60,
+					
+					"nameKey": "OS_MAP_P80_NAME",
+					"cityKey": "OS_MAP_P80_CITY",
+					"descriptionKey": "OS_MAP_P80_DESC",
+					"image": "P80"
+				},
+				{
+					"mapX": 373,
+					"mapY": 120,
+					
+					"nameKey": "OS_MAP_P111_NAME",
+					"cityKey": "OS_MAP_P111_CITY"
+				},
+				{
+					"mapX": 509,
+					"mapY": 145,
+					
+					"nameKey": "OS_MAP_P97_NAME",
+					"cityKey": "OS_MAP_P97_CITY",
+					"descriptionKey": "OS_MAP_P97_DESC",
+					"image": "P97"
+				}
+			]
+		},
+		"portugal": {
+			"nameKey": "OS_MAP_COUNTRY_PORTUGAL_NAME",
+			"institutions": [
+				{
+					"mapX": 128,
+					"mapY": 69,
+					
+					"nameKey": "OS_MAP_P67_NAME",
+					"cityKey": "OS_MAP_P67_CITY"
+				},
+				{
+					"mapX": 12,
+					"mapY": 466,
+					
+					"nameKey": "OS_MAP_P23_NAME",
+					"cityKey": "OS_MAP_P23_CITY"
+				}
+			]
+		},
 		"turkey": {
 			"nameKey": "OS_MAP_COUNTRY_TURKEY_NAME",
 			"institutions": [
@@ -418,7 +498,6 @@
 					"nameKey": "OS_MAP_P44_NAME",
 					"cityKey": "OS_MAP_P44_CITY",
 					"descriptionKey": "OS_MAP_P44_DESC",
-					"imageCopyrightKey": "OS_MAP_P44_COPYRIGHT",
 					"image": "P44"
 				}
 			]
