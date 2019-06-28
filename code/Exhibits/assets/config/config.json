@@ -158,6 +158,146 @@
 
 			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "Play video",
 
+			"OS_MAP_P1_NAME": "The Federal Institute of Technology in Lausanne",
+			"OS_MAP_P1_CITY": "Lausanne, Switzerland",
+
+			"OS_MAP_P2_NAME": "Aalto University Foundation",
+			"OS_MAP_P2_CITY": "Espoo, Finland",
+
+			"OS_MAP_P3_NAME": "University Hospital Leiden - Leiden University Medical Center",
+			"OS_MAP_P3_CITY": "Leiden, The Netherlands",
+
+			"OS_MAP_P4_NAME": "Athens University of Economics and Business",
+			"OS_MAP_P4_CITY": "Athens, Greece",
+			"OS_MAP_P4_DESC": "The Data Science group at the AUEB conducts\nresearch on and builds services for aligning,\ncleaning, integrating, and enriching clinical\ndata from participating hospitals so as to be\nimported to the Medical Informatics Platform\nof the HBP. The group also works on Big Data\nprocessing and Data Management for Machine\nLearning.",
+
+			"OS_MAP_P5_NAME": "National Supercomputing Center",
+			"OS_MAP_P5_CITY": "Barcelona, Spain",
+			"OS_MAP_P5_DESC": "BSC is the Spanish National facility for\nsupercomputing, specializes in High Performance\nComputing and hosts MareNostrum, one of the most\npowerful supercomputers in Europe. BSC contributes\ntowards the creation of the HPAC Platform,\nproviding supercomputing capacities for the\nNeuroscience Community and developing the FENIX\ninfrastructure for the benefit of HBP users.",
+
+			"OS_MAP_P6_NAME": "Bauhaus University, Weimar",
+			"OS_MAP_P6_CITY": "Weimar, Germany",
+
+			"OS_MAP_P7_NAME": "The University of Wuppertal (BUW)",
+			"OS_MAP_P7_CITY": "Wuppertal, Germany",
+			"OS_MAP_P7_DESC": "The High Performance Computing group at the BUW\nworks on the development and improvement of\nnumerical methods used in the simulation engines\nthat are developed in the HBP, such as the spiking\nneural network simulator NEST. Present\nachievements are the inclusion of gap junctions\nand rate models in the NEST simulator.",
+
+			"OS_MAP_P8_NAME": "The Bloomfield Science Museum Jerusalem (BSMJ)",
+			"OS_MAP_P8_CITY": "Jerusalem, Israel",
+			"OS_MAP_P8_DESC": "BSMJ is an informal cultural and educational\ninstitution, serving all sectors of society. It\ndevelops and creates interactive exhibitions\npresenting science and technology, and integrates\nthem into a range of activities. In HBP, BSMJ\npromotes ways to engage brain research to the\npublic such as developing an interactive traveling\nexhibition.",
+
+			"OS_MAP_P9_NAME": "Cardiff University",
+			"OS_MAP_P9_CITY": "Cardiff, United Kingdom",
+
+			"OS_MAP_P10_NAME": "The Scientific Research National Center",
+			"OS_MAP_P10_CITY": "Paris, France",
+
+			"OS_MAP_P11_NAME": "The Office of Atomic Energy and Alternative Energies",
+			"OS_MAP_P11_CITY": "Paris, France",
+
+			"OS_MAP_P12_NAME": "The National Research Council",
+			"OS_MAP_P12_CITY": "Palermo, Italy",
+			"OS_MAP_P12_DESC": "The Institute of Biophysics of the National\nResearch Council is located in Palermo (Italy). In\nHBP we are deeply involved in the development of a\ndetailed, data-driven, full scale 3D computational\nmodel of the rodent and human hippocampus, and in\nthe implementation and management of the European\nBrain Research Infrastructure.",
+
+			"OS_MAP_P13_NAME": "The Italian Supercomputing Centre",
+			"OS_MAP_P13_CITY": "Bologna, Italy",
+			"OS_MAP_P13_DESC": "The Italian supercomputing centre CINECA provides\nhigh performance computing and data services for\nthe Italian and the European research community.\nFor the Human Brain Project, it fosters the\nfederation of data and scalable compute services\nto address the analytics needs of the neuroscience\ncommunity.",
+
+			"OS_MAP_P14_NAME": "Technical University of Denmark",
+			"OS_MAP_P14_CITY": "Kongens Lyngby, Denmark",
+
+			"OS_MAP_P15_NAME": "University of Debrecen",
+			"OS_MAP_P15_CITY": "Debrecen, Hungary",
+
+			"OS_MAP_P16_NAME": "De Montfort University",
+			"OS_MAP_P16_CITY": "Leicester, United Kingdom",
+
+			"OS_MAP_P17_NAME": "École Normale Supérieure",
+			"OS_MAP_P17_CITY": "Paris, France",
+
+			"OS_MAP_P18_NAME": "The Swiss Federal Institute of Technology",
+			"OS_MAP_P18_CITY": "Zürich, Switzerland",
+			"OS_MAP_P18_DESC": "CSCS is an autonomous unit of the Swiss Federal\nInstitute of Technology in Zurich. CSCS provides\nscientists with the computing infrastructure and\nexpertise, from cutting-edge super-computers to a\nfull range of services related to HPC. ETHZ is\nco-leading in HBP the High-Performance Analytics\nand Computing Platform and coordinates the\n“Integration and operation” WP.",
+
+			"OS_MAP_P19_NAME": "The Danish Board of Technology Foundation",
+			"OS_MAP_P19_CITY": "Hvidovre, Denmark",
+			"OS_MAP_P19_DESC": "The Danish Board of Technology Foundation is part\nof HBP’s ’Ethics and Society’ group, facilitating\ndialogue with publics, stakeholders and the HBP on\nsocial, ethical, legal issues related to HBP\nresearch. The Foundations’ mission is to ensure\nthat society’s development is shaped by informed\nand forward-looking cooperation between citizens,\nexperts, stakeholders, and decision-makers.",
+
+			"OS_MAP_P20_NAME": "Forschungszentrum Jülich",
+			"OS_MAP_P20_CITY": "Jülich, Germany",
+			"OS_MAP_P20_DESC": "Forschungszentrum Jülich is a multi-disciplinary\nresearch institution and member of the Helmholtz\nAssociation. It contributes to the HBP with its\nInstitute of Neuroscience and Medicine and the\nJülich Supercomputing Centre. Neuroscientists and\ntechnical experts work together to build an\ninfrastructure that enables high-resolution brain\natlases, multi-scale simulation and data analysis\nworkflows.",
+
+			"OS_MAP_P21_NAME": "Fortiss GmbH",
+			"OS_MAP_P21_CITY": "Munich, Germany",
+
+			"OS_MAP_P22_NAME": "Fraunhofer-Gesellschaft for the Promotion of Applied Research",
+			"OS_MAP_P22_CITY": "Darmstadt, Germany",
+
+			"OS_MAP_P23_NAME": "Foundation Anna Sommer Champalimaud and Dr Carlos Montez Champalimaud",
+			"OS_MAP_P23_CITY": "Lisbon, Portugal",
+
+			"OS_MAP_P24_NAME": "Heinrich-Heine-University, Dusseldorf",
+			"OS_MAP_P24_CITY": "Düsseldorf, Germany",
+
+			"OS_MAP_P25_NAME": "University of Helsinki",
+			"OS_MAP_P25_CITY": "Helsinki, Finland",
+
+			"OS_MAP_P26_NAME": "Heidelberg Institute for Theoretical Studies (HITS)",
+			"OS_MAP_P26_CITY": "Heidelberg, Germany",
+			"OS_MAP_P26_DESC": "HITS is a private, non-profit research institute\ncarrying out basic multidisciplinary computational\nresearch in fields ranging from molecular biology\nto astrophysics. Rebecca Wade and her research\ngroup are developing multiscale molecular modeling\nand simulation tools in the HBP Brain Simulation\nPlatform, facilitating the design of new medicines\nfor brain diseases.",
+
+			"OS_MAP_P27_NAME": "University Hospital Vaudois",
+			"OS_MAP_P27_CITY": "Lausanne, Switzerland",
+
+			"OS_MAP_P28_NAME": "Imperial College of Science, Technology and Medicine",
+			"OS_MAP_P28_CITY": "London, United Kingdom",
+
+			"OS_MAP_P29_NAME": "Brain and Spinal Cord Institute",
+			"OS_MAP_P29_CITY": "Paris, France",
+
+			"OS_MAP_P30_NAME": "Institute of Experimental Medicine, Hungarian Academy of Sciences",
+			"OS_MAP_P30_CITY": "Budapest, Hungary",
+
+			"OS_MAP_P31_NAME": "Institute of Science and Technology Austria (IST)",
+			"OS_MAP_P31_CITY": "Klosterneuburg, Austria",
+			"OS_MAP_P31_DESC": "IST Austria located in Klosterneuburg is a young\ninternational institute dedicated to basic\nresearch including neuroscience. Prof. Shigemoto’s\ntask in HBP project is to provide quantitative\ndata on number and distribution of key ion\nchannels and neurotransmitter receptors in\ndistinct membrane compartments of major principle\nneurons in the brain.",
+
+			"OS_MAP_P32_NAME": "Jožef Stefan Institute",
+			"OS_MAP_P32_CITY": "Ljubljana, Slovenia",
+
+			"OS_MAP_P33_NAME": "National Institute of Research in Computer Science and Automation",
+			"OS_MAP_P33_CITY": "Sophia Antipolis, France",
+			"OS_MAP_P33_DESC": "Inria performs comprehensive analyses of brain\nfunctional organization based on exhaustive\nanalyses of brain imaging dataset. Inria also\ncontributes  an openly available brain imaging\ndataset that provides a reference to study the\nfunctional architecture of the brain, and\nopen-source software that make brain data analyses\neasy and reproducible.",
+
+			"OS_MAP_P34_NAME": "Pasteur Institute",
+			"OS_MAP_P34_CITY": "Paris, France",
+
+			"OS_MAP_P35_NAME": "Johann Wolfgang Goethe University Frankfurt-am-Main",
+			"OS_MAP_P35_CITY": "Frankfurt-am-Main, Germany",
+
+			"OS_MAP_P36_NAME": "Karlsruher Institute for Technology",
+			"OS_MAP_P36_CITY": "Karlsruhe, Germany",
+
+			"OS_MAP_P37_NAME": "Karolinska Institutet",
+			"OS_MAP_P37_CITY": "Stockholm, Sweden",
+
+			"OS_MAP_P38_NAME": "King's College London",
+			"OS_MAP_P38_CITY": "London, United Kingdom",
+
+			"OS_MAP_P39_NAME": "The Royal Institute of Technology",
+			"OS_MAP_P39_CITY": "Stockholm, Sweden",
+
+			"OS_MAP_P40_NAME": "European Non Linear Spectroscopy Laboratory",
+			"OS_MAP_P40_CITY": "Florence, Italy",
+
+			"OS_MAP_P41_NAME": "Linnaeus University",
+			"OS_MAP_P41_CITY": "Kalmar, Sweden",
+			"OS_MAP_P41_DESC": "At Linnaeus University Shamim Patel (ACA)\n(Department of External Relations) and Dr Kim\nHåkansson (Faculty of Health Life Sciences) both\nwork on the HBP as part of the Ethics Support\nteam. Shamim manages the Ethics Advisory Board and\nOther Ethics Services and Kim is the HBP Animal\nResearch Ethics Coordinator.",
+
+			"OS_MAP_P42_NAME": "The Medical University of Innsbruck",
+			"OS_MAP_P42_CITY": "Innsbruck, Austria",
+			"OS_MAP_P42_DESC": "The Medical University of Innsbruck was one of the\nfirst faculties of the University of Innsbruck,\nAustria, and played an important role throughout\nits 340-year history. As an HBP partner, it hosts\nthe interdisciplinary HBP Education Programme for\nearly-career researchers, supports trainings on\nHBP infrastructure and coordinates HBP outreach\nand engagement activities.",
+
 			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
 			"OS_MAP_P56_NAME": "Universitat Pompeu Fabra",
 			"OS_MAP_P56_CITY": "Barcelona, Spain",
