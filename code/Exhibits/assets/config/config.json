@@ -1,8 +1,17 @@
 {
-	"touch": false,
+	"touch": true,
 	"touchDevice": "/dev/input/event8",
+	"touchMaxX": 4096,
+	"touchMaxY": 4096,
 	"defaultLanguage": "en",
 	"maxMapDotTapDistance": 30,
+
+	"shouldOpenSerial": false,
+	"PETSerialCommands": ["D 1", "B -3200"],
+	"PETDoneSerialCommands": ["D 0", "B 4000"],
+	"MRISerialCommands": ["C 1", "A 5000"],
+	"PETRunTime": 14,
+	"MRIRunTime": 20,
 
 	"languages": [
 		{
@@ -20,7 +29,7 @@
 			}
 		},
 		{
-			"prefix": "ar", 
+			"prefix": "ar",
 			"rtl": true,
 			"buttonText": "عربية",
 			"fonts": 
@@ -550,8 +559,8 @@
 		},
 		{
 			"type": "VIDEO",
-			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
-			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"file": "assets/videos/opening/dancing-neuron.mp4",
+			"soundFile": "assets/videos/opening/dancing-neuron.ogg",
 			"image": "dancing-neuron",
 			"tappedImage": "dancing-neuron",
 			"x": 960,

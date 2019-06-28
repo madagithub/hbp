@@ -13,6 +13,8 @@ class OpeningScene(Scene):
 	def __init__(self, game):
 		super().__init__(game)
 
+		game.sendToSerialPort(self.config.getSerialPortCommand('PETDone'))
+
 		self.background = pygame.image.load('assets/images/doctor/background.png')
 
 		self.startButton = Button(self.screen, pygame.Rect(self.screen.get_width() // 2 - 245 // 2, 650, 245, 78), 

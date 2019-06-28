@@ -57,4 +57,7 @@ class Doctor(Exhibit):
 		#self.scene = self.startVideoScene
 
 if __name__ == '__main__':
-	Doctor().start()
+	try:
+		Doctor().start()
+	except Exception as e:
+		print(str(e))
