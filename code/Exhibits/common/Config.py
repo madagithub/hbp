@@ -51,3 +51,6 @@ class Config:
 
 	def getCountryName(self, countryKey):
 		return self.getText(self.config['mapCountries'][countryKey]['nameKey'])
+
+	def getScreenSize(self):
+		return (self.config['width'], self.config['height'])

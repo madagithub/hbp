@@ -25,7 +25,7 @@ class Exhibit:
 		pygame.init()
 		pygame.mouse.set_visible(False)
 
-		self.screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)
+		self.screen = pygame.display.set_mode(self.config.getScreenSize(), pygame.FULLSCREEN)
 		self.cursor = pygame.image.load('assets/images/cursor.png').convert_alpha()
 
 		if self.config.isTouch():
