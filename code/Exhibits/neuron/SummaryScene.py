@@ -17,9 +17,10 @@ class SummaryScene(Scene):
 
 		self.summaryTextBackground = pygame.image.load('assets/images/summary-text-background.png')
 
-		self.neuronImage = pygame.image.load('assets/images/reconstruct-martinotti-small.png')
-		self.modelPlayer = VideoPlayer(game.screen, 'assets/videos/neuron-blender-color.avi', 818, 203, True)
-		self.lightningPlayer = VideoPlayer(game.screen, 'assets/videos/MC_full.avi', 1434, 203, True)
+		self.neuronImage = pygame.image.load('assets/images/reconstruct-' + self.neuronChosen + '-small.png')
+		self.modelPlayer = VideoPlayer(game.screen, 'assets/videos/neuron/' + self.neuronChosen + '-small.avi', 818, 203, True)
+		self.lightningPlayer = VideoPlayer(game.screen, 'assets/videos/neuron/' + self.neuronChosen + '-electric-small.avi', 1434, 203, True)
+		self.videoMask = pygame.image.load('assets/images/neuron/small-video-mask.png')
 
 		self.anotherNeuronButton = Button(self.screen, pygame.Rect(771, 620, 386, 56), 
 			pygame.image.load('assets/images/button-long-normal.png'), pygame.image.load('assets/images/button-long-selected.png'), 
@@ -48,8 +49,11 @@ class SummaryScene(Scene):
 	def draw(self, dt):
 		self.screen.blit(self.summaryTextBackground, (0, 726))
 		self.screen.blit(self.neuronImage, (201, 203))
-		#self.modelPlayer.draw()
-		#self.lightningPlayer.draw()
+		self.modelPlayer.draw(dt)
+		self.lightningPlayer.draw(dt)
+		self.screen.blit(self.videoMask, (818 - 24 // 2, 203 - 24 // 2))
+		self.screen.blit(self.videoMask, (1434 - 24 // 2, 203 - 24 // 2))
+
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 60))
 		Utilities.drawTextOnCenterX(self.screen, self.subHeaderText, (self.screen.get_width() // 2, 113))
 		Utilities.drawTextOnCenterX(self.screen, self.summaryHeaderText, (self.screen.get_width() // 2, 749))
