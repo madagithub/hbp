@@ -40,6 +40,12 @@ class Config:
 	def getTouchDevice(self):
 		return self.config['touchDevice']
 
+	def getTouchScreenMaxX(self):
+		return self.config['touchMaxX']
+
+	def getTouchScreenMaxY(self):
+		return self.config['touchMaxY']
+
 	def getOpeningVideos(self):
 		return self.config['openingVideos']
 
@@ -54,3 +60,13 @@ class Config:
 
 	def getScreenSize(self):
 		return (self.config['width'], self.config['height'])
+
+	def shouldOpenSerial(self):
+		return self.config['shouldOpenSerial']
+
+	def getSerialPortCommand(self, command):
+		return bytes(self.config[command + 'SerialCommand'], 'utf-8')
+
+	def getTestRunTime(self, test):
+		return self.config[test + 'RunTime']
+
