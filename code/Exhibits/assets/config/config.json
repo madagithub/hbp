@@ -218,7 +218,58 @@
 			"OS_MAP_P15_CITY": "Debrecen, Hungary",
 
 			"OS_MAP_P30_NAME": "Institute of Experimental Medicine, Hungarian Academy of Sciences",
-			"OS_MAP_P30_CITY": "Budapest, Hungary"
+			"OS_MAP_P30_CITY": "Budapest, Hungary",
+
+			"OS_MAP_COUNTRY_AUSTRIA_NAME": "Austria",
+
+			"OS_MAP_P31_NAME": "Institute of Science and Technology Austria",
+			"OS_MAP_P31_CITY": "Klosterneuburg, Austria",
+			"OS_MAP_P31_DESC": "IST Austria located in Klosterneuburg is a young\ninternational institute dedicated to basic research \nincluding neuroscience. Prof. Shigemoto’s task in \nHBP project is to provide quantitative data on \nnumber and distribution of key ion channels and \nneurotransmitter receptors in distinct membrane \ncompartments of major principle neurons in the brain.",
+
+			"OS_MAP_P42_NAME": "Medizinische Universität Innsbruck",
+			"OS_MAP_P42_CITY": "Innsbruck, Austria",
+			"OS_MAP_P42_DESC": "The Medical University of Innsbruck was one of the\nfirst faculties of the University of Innsbruck, Austria, \nand played an important role throughout its 340-year history. \nAs an HBP partner, it hosts the interdisciplinary HBP Education \nProgramme for early-career researchers, supports trainings on \nHBP infrastructure and coordinates HBP outreach and \nengagement activities.",
+
+			"OS_MAP_P45_NAME": "Österreichische Studiengesellschaft für Kybernetik",
+			"OS_MAP_P45_CITY": "Vienna, Austria",
+
+			"OS_MAP_P55_NAME": "Technische Universität Graz",
+			"OS_MAP_P55_CITY": "Graz, Austria",
+
+			"OS_MAP_P121_NAME": "convelop cooperative knowledge design gmbh",
+			"OS_MAP_P121_CITY": "Graz, Austria",
+
+			"OS_MAP_COUNTRY_SLOVENIA_NAME": "Slovenia",
+
+			"OS_MAP_P32_NAME": "Institut Jožef Stefan",
+			"OS_MAP_P32_CITY": "Ljubljana, Slovenia",
+
+			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
+
+			"OS_MAP_P10_NAME": "Centre national de la recherche scientifique",
+			"OS_MAP_P10_CITY": "Paris, France",
+
+			"OS_MAP_P11_NAME": "Commissariat a l'Énergie Atomique et aux Énergies Alternatives",
+			"OS_MAP_P11_CITY": "Paris, France",
+
+			"OS_MAP_P17_NAME": "École normale supérieure",
+			"OS_MAP_P17_CITY": "Paris, France",
+
+			"OS_MAP_P29_NAME": "Institut du Cerveau et de la Moelle épinière",
+			"OS_MAP_P29_CITY": "Paris, France",
+
+			"OS_MAP_P105_NAME": "Université Pierre et Marie Curie - Paris 6",
+			"OS_MAP_P105_CITY": "Paris, France",
+
+			"OS_MAP_P34_NAME": "Institut Pasteur",
+			"OS_MAP_P34_CITY": "Paris, France",
+
+			"OS_MAP_P78_NAME": "Université d’Aix Marseille",
+			"OS_MAP_P78_CITY": "Marseille, France",
+			"OS_MAP_P78_DESC": "Institut de Neurosciences des Systèmes (INS) is a \nmultidisciplinary research institute focused on understanding \nthe complex dynamics of the brain. Within HBP, INS works on \ndemonstrating the predictive value of large-scale brain \nnetwork models, in particular for the individualized epileptic \nactivity and for the impaired connectivity, and on building \na multi-scale brain atlas.",
+
+			"OS_MAP_P79_NAME": "Université de Bordeaux",
+			"OS_MAP_P79_CITY": "Bordeaux, France"
 		},
 
 		"ar": {
@@ -425,6 +476,62 @@
 	},
 
 	"mapCountries": {
+		"slovenia": {
+			"nameKey": "OS_MAP_COUNTRY_SLOVENIA_NAME",
+			"institutions": [
+				{
+					"mapX": 227,
+					"mapY": 222,
+					
+					"nameKey": "OS_MAP_P32_NAME",
+					"cityKey": "OS_MAP_P32_CITY"
+				}
+			]
+		},
+		"austria": {
+			"nameKey": "OS_MAP_COUNTRY_AUSTRIA_NAME",
+			"institutions": [
+				{
+					"mapX": 213,
+					"mapY": 236,
+					
+					"nameKey": "OS_MAP_P42_NAME",
+					"cityKey": "OS_MAP_P42_CITY",
+					"descriptionKey": "OS_MAP_P42_DESC",
+					"image": "P42"
+				},
+				{
+					"mapX": 606,
+					"mapY": 268,
+					
+					"nameKey": "OS_MAP_P121_NAME",
+					"cityKey": "OS_MAP_P121_CITY"
+				},
+				{
+					"mapX": 619,
+					"mapY": 243,
+					
+					"nameKey": "OS_MAP_P55_NAME",
+					"cityKey": "OS_MAP_P55_CITY"
+				},
+				{
+					"mapX": 709,
+					"mapY": 103,
+					
+					"nameKey": "OS_MAP_P31_NAME",
+					"cityKey": "OS_MAP_P31_CITY",
+					"descriptionKey": "OS_MAP_P31_DESC",
+					"image": "P31"
+				},
+				{
+					"mapX": 714,
+					"mapY": 134,
+					
+					"nameKey": "OS_MAP_P45_NAME",
+					"cityKey": "OS_MAP_P45_CITY"
+				}
+			]
+		},
 		"hungary": {
 			"nameKey": "OS_MAP_COUNTRY_HUNGARY_NAME",
 			"institutions": [

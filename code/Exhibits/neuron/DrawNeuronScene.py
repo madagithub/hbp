@@ -84,7 +84,7 @@ class DrawNeuronScene(Scene):
 
 		self.neuronChosen = neuronChosen
 
-		self.drawOnNeuron = pygame.image.load('assets/images/reconstruct-martinotti.png')
+		self.drawOnNeuron = pygame.image.load('assets/images/neuron/' + self.neuronChosen + '-big.png')
 		self.videoMask = pygame.image.load('assets/images/video-mask.png')
 
 		self.drawingDone = False

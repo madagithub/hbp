@@ -50,7 +50,7 @@ class ChooseNeuronScene(Scene):
 
 			self.neuronNames.append(self.subHeaderFont.render(self.config.getText(neuronImageSet['name-key']), True, (255, 255, 255)))
 
-			descTexts = Utilities.renderTextList(self.config, self.smallTextFont, neuronImageSet['desc-key'])
+			descTexts = Utilities.renderTextList(self.config, self.extraSmallTextFont, neuronImageSet['desc-key'])
 			self.neuronDescs.append(descTexts)
 
 			self.indexToId.append(neuronImageSet['id'])
