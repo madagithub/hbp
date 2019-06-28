@@ -161,7 +161,115 @@
 			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
 			"OS_MAP_P56_NAME": "Universitat Pompeu Fabra",
 			"OS_MAP_P56_CITY": "Barcelona, Spain",
-			"OS_MAP_P56_DESC": "Universitat Pompeu Fabra (UPF) Center for Brain and\nCognition, PI: Gustavo Deco. UPF leads work package 4.4\n“Models of Brain Activity and Function”. UPF participates in\nwork package 4.5 “Linking Model Activity And Function To\nExperimental Data” and builds whole-brain network\nmodels for individuals that mimic pathologies including\nepilepsy."
+			"OS_MAP_P56_DESC": "Universitat Pompeu Fabra (UPF) Center for Brain and\nCognition, PI: Gustavo Deco. UPF leads work package 4.4\n“Models of Brain Activity and Function”. UPF participates in\nwork package 4.5 “Linking Model Activity And Function To\nExperimental Data” and builds whole-brain network\nmodels for individuals that mimic pathologies including\nepilepsy.",
+
+			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
+
+			"OS_MAP_COUNTRY_NORWAY_NAME": "Norway",
+
+			"OS_MAP_P81_NAME": "Universitetet i Oslo",
+			"OS_MAP_P81_CITY": "Olslo, Norway",
+
+			"OS_MAP_P44_NAME": "Norges miljø- og biovitenskapelige universitet",
+			"OS_MAP_P44_CITY": "Ås, Norway",
+			"OS_MAP_P44_DESC": "The Computational Neuroscience Group at the Norwegian\nUniversity of Life Sciences (NMBU) develops simulation\ntechnology for brain-scale network simulations on supercomputers\nas well as methods and tools to compute brain signals such as EEG and\nMEG from simulations for direct comparison to experiments.",
+
+			"OS_MAP_COUNTRY_TURKEY_NAME": "Turkey",
+
+			"OS_MAP_P48_NAME": "Sabancı Üniversitesi",
+			"OS_MAP_P48_CITY": "Istanbul, Turkey",
+
+			"OS_MAP_COUNTRY_PORTUGAL_NAME": "Portugal",
+
+			"OS_MAP_P67_NAME": "Universidade do Minho",
+			"OS_MAP_P67_CITY": "Braga, Portugal",
+
+			"OS_MAP_P23_NAME": "Fundação D. Anna Sommer Champalimaud e Dr Carlos Montez Champalimaud",
+			"OS_MAP_P23_CITY": "Lisbon, Portugal",
+
+			"OS_MAP_COUNTRY_BELGIUM_NAME": "Belgium",
+
+			"OS_MAP_P80_NAME": "Universiteit Antwerpen",
+			"OS_MAP_P80_CITY": "Antwerp, Belgium",
+			"OS_MAP_P80_DESC": "At Antwerp University, we study cortical function combining\ntechnological, experimental and theoretical approaches,\nranging from arrays of microelectrodes to patch-clamp\nand from the micro- and nanotechnologies for to the\ncomputer simulation of neuron models.\nWe are involved in SP4 and lead Task 4.1.2 on Input-Output Transfer function.",
+
+			"OS_MAP_P111_NAME": "Katholieke Universiteit Leuven",
+			"OS_MAP_P111_CITY": "Leuven, Belgium",
+
+			"OS_MAP_P97_NAME": "Université de Liege",
+			"OS_MAP_P97_CITY": "Liège, Belgium",
+			"OS_MAP_P97_DESC": "Our GIGA-Consciousness Unit is part of the \nGIGA research institute (University of Liège, Belgium).\nIn the framework of HBP, our multidisciplinary team \naims at studying human consciousness and its \npathological, pharmacological and physiological modifications, \nnotably using electrophysiology and neuroimaging tools, \nas well as investigating the ethical issues of such a research.",
+
+			"OS_MAP_P110_NAME": "Universiteit Gent",
+			"OS_MAP_P110_CITY": "Ghent, Belgium",
+
+			"OS_MAP_COUNTRY_DENMARK_NAME": "Denmark",
+
+			"OS_MAP_P14_NAME": "Danmarks Tekniske Universitet",
+			"OS_MAP_P14_CITY": "Kongens Lyngby, Denmark",
+
+			"OS_MAP_P19_NAME": "Fonden Teknologirådet",
+			"OS_MAP_P19_CITY": "Hvidovre, Denmark",
+			"OS_MAP_P19_DESC": "The Danish Board of Technology Foundation\nis part of HBP’ ’Ethics and Society’ group, facilitating \ndialogue with publics, stakeholders and the HBP on social, \nethical, legal issues related to HBP research. \nThe Foundations’ mission is to ensure that society’s \ndevelopment is shaped by informed and forward-looking \ncooperation between citizens, experts, stakeholders, and \ndecision-makers.",
+
+			"OS_MAP_COUNTRY_HUNGARY_NAME": "Hungary",
+
+			"OS_MAP_P15_NAME": "Debreceni Egyetem",
+			"OS_MAP_P15_CITY": "Debrecen, Hungary",
+
+			"OS_MAP_P30_NAME": "Institute of Experimental Medicine, Hungarian Academy of Sciences",
+			"OS_MAP_P30_CITY": "Budapest, Hungary",
+
+			"OS_MAP_COUNTRY_AUSTRIA_NAME": "Austria",
+
+			"OS_MAP_P31_NAME": "Institute of Science and Technology Austria",
+			"OS_MAP_P31_CITY": "Klosterneuburg, Austria",
+			"OS_MAP_P31_DESC": "IST Austria located in Klosterneuburg is a young\ninternational institute dedicated to basic research \nincluding neuroscience. Prof. Shigemoto’s task in \nHBP project is to provide quantitative data on \nnumber and distribution of key ion channels and \nneurotransmitter receptors in distinct membrane \ncompartments of major principle neurons in the brain.",
+
+			"OS_MAP_P42_NAME": "Medizinische Universität Innsbruck",
+			"OS_MAP_P42_CITY": "Innsbruck, Austria",
+			"OS_MAP_P42_DESC": "The Medical University of Innsbruck was one of the\nfirst faculties of the University of Innsbruck, Austria, \nand played an important role throughout its 340-year history. \nAs an HBP partner, it hosts the interdisciplinary HBP Education \nProgramme for early-career researchers, supports trainings on \nHBP infrastructure and coordinates HBP outreach and \nengagement activities.",
+
+			"OS_MAP_P45_NAME": "Österreichische Studiengesellschaft für Kybernetik",
+			"OS_MAP_P45_CITY": "Vienna, Austria",
+
+			"OS_MAP_P55_NAME": "Technische Universität Graz",
+			"OS_MAP_P55_CITY": "Graz, Austria",
+
+			"OS_MAP_P121_NAME": "convelop cooperative knowledge design gmbh",
+			"OS_MAP_P121_CITY": "Graz, Austria",
+
+			"OS_MAP_COUNTRY_SLOVENIA_NAME": "Slovenia",
+
+			"OS_MAP_P32_NAME": "Institut Jožef Stefan",
+			"OS_MAP_P32_CITY": "Ljubljana, Slovenia",
+
+			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
+
+			"OS_MAP_P10_NAME": "Centre national de la recherche scientifique",
+			"OS_MAP_P10_CITY": "Paris, France",
+
+			"OS_MAP_P11_NAME": "Commissariat a l'Énergie Atomique et aux Énergies Alternatives",
+			"OS_MAP_P11_CITY": "Paris, France",
+
+			"OS_MAP_P17_NAME": "École normale supérieure",
+			"OS_MAP_P17_CITY": "Paris, France",
+
+			"OS_MAP_P29_NAME": "Institut du Cerveau et de la Moelle épinière",
+			"OS_MAP_P29_CITY": "Paris, France",
+
+			"OS_MAP_P105_NAME": "Université Pierre et Marie Curie - Paris 6",
+			"OS_MAP_P105_CITY": "Paris, France",
+
+			"OS_MAP_P34_NAME": "Institut Pasteur",
+			"OS_MAP_P34_CITY": "Paris, France",
+
+			"OS_MAP_P78_NAME": "Université d’Aix Marseille",
+			"OS_MAP_P78_CITY": "Marseille, France",
+			"OS_MAP_P78_DESC": "Institut de Neurosciences des Systèmes (INS) is a \nmultidisciplinary research institute focused on understanding \nthe complex dynamics of the brain. Within HBP, INS works on \ndemonstrating the predictive value of large-scale brain \nnetwork models, in particular for the individualized epileptic \nactivity and for the impaired connectivity, and on building \na multi-scale brain atlas.",
+
+			"OS_MAP_P79_NAME": "Université de Bordeaux",
+			"OS_MAP_P79_CITY": "Bordeaux, France"
 		},
 
 		"ar": {
@@ -368,6 +476,195 @@
 	},
 
 	"mapCountries": {
+		"slovenia": {
+			"nameKey": "OS_MAP_COUNTRY_SLOVENIA_NAME",
+			"institutions": [
+				{
+					"mapX": 227,
+					"mapY": 222,
+					
+					"nameKey": "OS_MAP_P32_NAME",
+					"cityKey": "OS_MAP_P32_CITY"
+				}
+			]
+		},
+		"austria": {
+			"nameKey": "OS_MAP_COUNTRY_AUSTRIA_NAME",
+			"institutions": [
+				{
+					"mapX": 213,
+					"mapY": 236,
+					
+					"nameKey": "OS_MAP_P42_NAME",
+					"cityKey": "OS_MAP_P42_CITY",
+					"descriptionKey": "OS_MAP_P42_DESC",
+					"image": "P42"
+				},
+				{
+					"mapX": 606,
+					"mapY": 268,
+					
+					"nameKey": "OS_MAP_P121_NAME",
+					"cityKey": "OS_MAP_P121_CITY"
+				},
+				{
+					"mapX": 619,
+					"mapY": 243,
+					
+					"nameKey": "OS_MAP_P55_NAME",
+					"cityKey": "OS_MAP_P55_CITY"
+				},
+				{
+					"mapX": 709,
+					"mapY": 103,
+					
+					"nameKey": "OS_MAP_P31_NAME",
+					"cityKey": "OS_MAP_P31_CITY",
+					"descriptionKey": "OS_MAP_P31_DESC",
+					"image": "P31"
+				},
+				{
+					"mapX": 714,
+					"mapY": 134,
+					
+					"nameKey": "OS_MAP_P45_NAME",
+					"cityKey": "OS_MAP_P45_CITY"
+				}
+			]
+		},
+		"hungary": {
+			"nameKey": "OS_MAP_COUNTRY_HUNGARY_NAME",
+			"institutions": [
+				{
+					"mapX": 331,
+					"mapY": 141,
+					
+					"nameKey": "OS_MAP_P30_NAME",
+					"cityKey": "OS_MAP_P30_CITY"
+				},
+				{
+					"mapX": 579,
+					"mapY": 128,
+					
+					"nameKey": "OS_MAP_P15_NAME",
+					"cityKey": "OS_MAP_P15_CITY"
+				}
+			]
+		},
+		"denmark": {
+			"nameKey": "OS_MAP_COUNTRY_DENMARK_NAME",
+			"institutions": [
+				{
+					"mapX": 471,
+					"mapY": 369,
+					
+					"nameKey": "OS_MAP_P14_NAME",
+					"cityKey": "OS_MAP_P14_CITY"
+				},
+				{
+					"mapX": 451,
+					"mapY": 389,
+					
+					"nameKey": "OS_MAP_P19_NAME",
+					"cityKey": "OS_MAP_P19_CITY",
+					"descriptionKey": "OS_MAP_P19_DESC"
+				}
+			]
+		},
+		"belgium": {
+			"nameKey": "OS_MAP_COUNTRY_BELGIUM_NAME",
+			"institutions": [
+				{
+					"mapX": 100,
+					"mapY": 85,
+					
+					"nameKey": "OS_MAP_P110_NAME",
+					"cityKey": "OS_MAP_P110_CITY"
+				},
+				{
+					"mapX": 286,
+					"mapY": 60,
+					
+					"nameKey": "OS_MAP_P80_NAME",
+					"cityKey": "OS_MAP_P80_CITY",
+					"descriptionKey": "OS_MAP_P80_DESC",
+					"image": "P80"
+				},
+				{
+					"mapX": 373,
+					"mapY": 120,
+					
+					"nameKey": "OS_MAP_P111_NAME",
+					"cityKey": "OS_MAP_P111_CITY"
+				},
+				{
+					"mapX": 509,
+					"mapY": 145,
+					
+					"nameKey": "OS_MAP_P97_NAME",
+					"cityKey": "OS_MAP_P97_CITY",
+					"descriptionKey": "OS_MAP_P97_DESC",
+					"image": "P97"
+				}
+			]
+		},
+		"portugal": {
+			"nameKey": "OS_MAP_COUNTRY_PORTUGAL_NAME",
+			"institutions": [
+				{
+					"mapX": 128,
+					"mapY": 69,
+					
+					"nameKey": "OS_MAP_P67_NAME",
+					"cityKey": "OS_MAP_P67_CITY"
+				},
+				{
+					"mapX": 12,
+					"mapY": 466,
+					
+					"nameKey": "OS_MAP_P23_NAME",
+					"cityKey": "OS_MAP_P23_CITY"
+				}
+			]
+		},
+		"turkey": {
+			"nameKey": "OS_MAP_COUNTRY_TURKEY_NAME",
+			"institutions": [
+				{
+					"mapX": 164,
+					"mapY": 61,
+					
+					"nameKey": "OS_MAP_P48_NAME",
+					"cityKey": "OS_MAP_P48_CITY"
+				}
+			]
+		},
+		"france": {
+			"nameKey": "OS_MAP_COUNTRY_FRANCE_NAME",
+			"institutions": [
+			]
+		},
+		"norway": {
+			"nameKey": "OS_MAP_COUNTRY_NORWAY_NAME",
+			"institutions": [
+				{
+					"mapX": 171,
+					"mapY": 630,
+					
+					"nameKey": "OS_MAP_P81_NAME",
+					"cityKey": "OS_MAP_P81_CITY"
+				},
+				{
+					"mapX": 183,
+					"mapY": 661,
+					
+					"nameKey": "OS_MAP_P44_NAME",
+					"cityKey": "OS_MAP_P44_CITY",
+					"descriptionKey": "OS_MAP_P44_DESC",
+					"image": "P44"
+				}
+			]
+		},
 		"spain": {
 			"nameKey": "OS_MAP_COUNTRY_SPAIN_NAME",
 			"institutions": [

@@ -19,7 +19,7 @@ class Neuron(Exhibit):
 		super().start()
 		
 		self.startVideoScene = VideoScene(self, 'assets/videos/neuron/brainzoom-short.mov', 'CHOOSE')
-		self.scene = OpeningScene(self)
+		self.scene = ChooseNeuronScene(self)#OpeningScene(self)
 
 		self.loop()
 

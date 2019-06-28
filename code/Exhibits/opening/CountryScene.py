@@ -111,8 +111,12 @@ class CountryScene(Scene):
 		institution = self.institutions[self.institutionIndex]
 		self.institutionHeader = Utilities.renderTextList(self.config, self.subSubHeaderFont, institution['nameKey'], (255, 255, 255))
 		self.institutionCity = Utilities.renderTextList(self.config, self.smallerTextFont, institution['cityKey'], (138, 138, 138))
-		self.institutionDesc = Utilities.renderTextList(self.config, self.almostExtraSmallTextFont, institution['descriptionKey'], (255, 255, 255))
-		self.institutionImage = pygame.image.load('assets/images/opening/map/institutions/spain-test.png')
+
+		self.institutionDesc = None
+		if institution.get('descriptionKey', None) is not None:
+			self.institutionDesc = Utilities.renderTextList(self.config, self.almostExtraSmallTextFont, institution['descriptionKey'], (255, 255, 255))
+
+		self.institutionImage = pygame.image.load('assets/images/opening/map/institutions/' + institution.get('image', 'default') + '.png')
 
 		self.institutionHeaderY = 579
 		self.institutionCityY = 627
@@ -143,5 +147,8 @@ class CountryScene(Scene):
 			self.screen.blit(self.institutionImage, (1093, 219))
 			Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 30)
 			Utilities.drawTextsOnLeftX(self.screen, self.institutionCity, (1093 ,self.institutionCityY), 30)
-			Utilities.drawTextsOnLeftX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY), 30)
+
+			if self.institutionDesc is not None:
+				Utilities.drawTextsOnLeftX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY), 30)
+
 			Utilities.drawTextOnCenterX(self.screen, self.playVideoText, (1094 + 152 // 2, 147 + 25))
