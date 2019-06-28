@@ -22,7 +22,8 @@ class TestInProgressScene(Scene):
 		self.test = testProperties['test']
 
 		if self.test != 'COGNITIVE':
-			self.timer = Timer(5.0, self.onTestDone)
+			game.sendToSerialPort(self.config.getSerialPortCommand(self.test))
+			self.timer = Timer(game.config.getTestRunTime(self.test), self.onTestDone)
 			self.progressBarAnimation = FrameAnimation('assets/images/doctor/loading/loading_', 18, 25)
 		else:
 			self.cognitiveVideo = VideoPlayer(self.screen, 
