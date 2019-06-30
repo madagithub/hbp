@@ -22,9 +22,13 @@ class Opening(Exhibit):
 
 		self.loop()
 
+	def gotoHome(self):
+		self.scene = OpeningScene(self)
+
 	def transition(self, transitionId, data=None):
 		if transitionId == 'VIDEO':
 			self.scene = VideoScene(self, data['file'], 'START', data['soundFile'])
+			self.scene.playVideo()
 		elif transitionId == 'START':
 			self.scene = OpeningScene(self)
 		elif transitionId == 'MAP':

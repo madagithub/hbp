@@ -1,5 +1,5 @@
 {
-	"touch": true,
+	"touch": false,
 	"touchDevice": "/dev/input/event8",
 	"touchMaxX": 4096,
 	"touchMaxY": 4096,
@@ -307,118 +307,310 @@
 			"OS_MAP_P42_CITY": "Innsbruck, Austria",
 			"OS_MAP_P42_DESC": "The Medical University of Innsbruck was one of the\nfirst faculties of the University of Innsbruck,\nAustria, and played an important role throughout\nits 340-year history. As an HBP partner, it hosts\nthe interdisciplinary HBP Education Programme for\nearly-career researchers, supports trainings on\nHBP infrastructure and coordinates HBP outreach\nand engagement activities.",
 
-			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
-			"OS_MAP_P56_NAME": "Universitat Pompeu Fabra",
-			"OS_MAP_P56_CITY": "Barcelona, Spain",
-			"OS_MAP_P56_DESC": "Universitat Pompeu Fabra (UPF) Center for Brain and\nCognition, PI: Gustavo Deco. UPF leads work package 4.4\n“Models of Brain Activity and Function”. UPF participates in\nwork package 4.5 “Linking Model Activity And Function To\nExperimental Data” and builds whole-brain network\nmodels for individuals that mimic pathologies including\nepilepsy.",
+			"OS_MAP_P43_NAME": "National and Kapodistrian University of Athens",
+			"OS_MAP_P43_CITY": "Athens, Greece",
 
-			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
-
-			"OS_MAP_COUNTRY_NORWAY_NAME": "Norway",
-
-			"OS_MAP_P81_NAME": "Universitetet i Oslo",
-			"OS_MAP_P81_CITY": "Olslo, Norway",
-
-			"OS_MAP_P44_NAME": "Norges miljø- og biovitenskapelige universitet",
+			"OS_MAP_P44_NAME": "The Norwegian University of Life Sciences",
 			"OS_MAP_P44_CITY": "Ås, Norway",
-			"OS_MAP_P44_DESC": "The Computational Neuroscience Group at the Norwegian\nUniversity of Life Sciences (NMBU) develops simulation\ntechnology for brain-scale network simulations on supercomputers\nas well as methods and tools to compute brain signals such as EEG and\nMEG from simulations for direct comparison to experiments.",
+			"OS_MAP_P44_DESC": "The Computational Neuroscience Group at the\nNorwegian University of Life Sciences (NMBU)\ndevelops simulation technology for brain-scale\nnetwork simulations on supercomputers as well as\nmethods and tools to compute brain signals such as\nEEG and MEG from simulations for direct comparison\nto experiments.",
 
-			"OS_MAP_COUNTRY_TURKEY_NAME": "Turkey",
-
-			"OS_MAP_P48_NAME": "Sabancı Üniversitesi",
-			"OS_MAP_P48_CITY": "Istanbul, Turkey",
-
-			"OS_MAP_COUNTRY_PORTUGAL_NAME": "Portugal",
-
-			"OS_MAP_P67_NAME": "Universidade do Minho",
-			"OS_MAP_P67_CITY": "Braga, Portugal",
-
-			"OS_MAP_P23_NAME": "Fundação D. Anna Sommer Champalimaud e Dr Carlos Montez Champalimaud",
-			"OS_MAP_P23_CITY": "Lisbon, Portugal",
-
-			"OS_MAP_COUNTRY_BELGIUM_NAME": "Belgium",
-
-			"OS_MAP_P80_NAME": "Universiteit Antwerpen",
-			"OS_MAP_P80_CITY": "Antwerp, Belgium",
-			"OS_MAP_P80_DESC": "At Antwerp University, we study cortical function combining\ntechnological, experimental and theoretical approaches,\nranging from arrays of microelectrodes to patch-clamp\nand from the micro- and nanotechnologies for to the\ncomputer simulation of neuron models.\nWe are involved in SP4 and lead Task 4.1.2 on Input-Output Transfer function.",
-
-			"OS_MAP_P111_NAME": "Katholieke Universiteit Leuven",
-			"OS_MAP_P111_CITY": "Leuven, Belgium",
-
-			"OS_MAP_P97_NAME": "Université de Liege",
-			"OS_MAP_P97_CITY": "Liège, Belgium",
-			"OS_MAP_P97_DESC": "Our GIGA-Consciousness Unit is part of the \nGIGA research institute (University of Liège, Belgium).\nIn the framework of HBP, our multidisciplinary team \naims at studying human consciousness and its \npathological, pharmacological and physiological modifications, \nnotably using electrophysiology and neuroimaging tools, \nas well as investigating the ethical issues of such a research.",
-
-			"OS_MAP_P110_NAME": "Universiteit Gent",
-			"OS_MAP_P110_CITY": "Ghent, Belgium",
-
-			"OS_MAP_COUNTRY_DENMARK_NAME": "Denmark",
-
-			"OS_MAP_P14_NAME": "Danmarks Tekniske Universitet",
-			"OS_MAP_P14_CITY": "Kongens Lyngby, Denmark",
-
-			"OS_MAP_P19_NAME": "Fonden Teknologirådet",
-			"OS_MAP_P19_CITY": "Hvidovre, Denmark",
-			"OS_MAP_P19_DESC": "The Danish Board of Technology Foundation\nis part of HBP’ ’Ethics and Society’ group, facilitating \ndialogue with publics, stakeholders and the HBP on social, \nethical, legal issues related to HBP research. \nThe Foundations’ mission is to ensure that society’s \ndevelopment is shaped by informed and forward-looking \ncooperation between citizens, experts, stakeholders, and \ndecision-makers.",
-
-			"OS_MAP_COUNTRY_HUNGARY_NAME": "Hungary",
-
-			"OS_MAP_P15_NAME": "Debreceni Egyetem",
-			"OS_MAP_P15_CITY": "Debrecen, Hungary",
-
-			"OS_MAP_P30_NAME": "Institute of Experimental Medicine, Hungarian Academy of Sciences",
-			"OS_MAP_P30_CITY": "Budapest, Hungary",
-
-			"OS_MAP_COUNTRY_AUSTRIA_NAME": "Austria",
-
-			"OS_MAP_P31_NAME": "Institute of Science and Technology Austria",
-			"OS_MAP_P31_CITY": "Klosterneuburg, Austria",
-			"OS_MAP_P31_DESC": "IST Austria located in Klosterneuburg is a young\ninternational institute dedicated to basic research \nincluding neuroscience. Prof. Shigemoto’s task in \nHBP project is to provide quantitative data on \nnumber and distribution of key ion channels and \nneurotransmitter receptors in distinct membrane \ncompartments of major principle neurons in the brain.",
-
-			"OS_MAP_P42_NAME": "Medizinische Universität Innsbruck",
-			"OS_MAP_P42_CITY": "Innsbruck, Austria",
-			"OS_MAP_P42_DESC": "The Medical University of Innsbruck was one of the\nfirst faculties of the University of Innsbruck, Austria, \nand played an important role throughout its 340-year history. \nAs an HBP partner, it hosts the interdisciplinary HBP Education \nProgramme for early-career researchers, supports trainings on \nHBP infrastructure and coordinates HBP outreach and \nengagement activities.",
-
-			"OS_MAP_P45_NAME": "Österreichische Studiengesellschaft für Kybernetik",
+			"OS_MAP_P45_NAME": "Austrian Research Society for Cybernetics",
 			"OS_MAP_P45_CITY": "Vienna, Austria",
 
-			"OS_MAP_P55_NAME": "Technische Universität Graz",
+			"OS_MAP_P46_NAME": "Rheinisch-Westfälische Technical University of Aachen",
+			"OS_MAP_P46_CITY": "Aachen, Germany",
+
+			"OS_MAP_P47_NAME": "Ruprecht-Karls-University Heidelberg",
+			"OS_MAP_P47_CITY": "Heidelberg, Germany",
+			"OS_MAP_P47_DESC": "The UHEI group explores and implements novel\nconcepts for information processing in massively\nparallel, mixed-signal VLSI technologies. The\ngroup led the EU project BrainScaleS, one of the\nfoundations for the HBP and in that context\npioneered the use of wafer-scale integration for\nphysical neuromorphic systems, now continued in\nHBP.",
+
+			"OS_MAP_P48_NAME": "Sabancı University",
+			"OS_MAP_P48_CITY": "Istanbul, Turkey",
+
+			"OS_MAP_P49_NAME": "Sant'Anna School of Advanced Studies",
+			"OS_MAP_P49_CITY": "Pisa, Italy",
+
+			"OS_MAP_P50_NAME": "Center for Mathematics and Computer Science",
+			"OS_MAP_P50_CITY": "Amsterdam, The Netherlands",
+
+			"OS_MAP_P51_NAME": "The Catholic University Foundation",
+			"OS_MAP_P51_CITY": "Nijmegen, The Nethterlands",
+
+			"OS_MAP_P52_NAME": "The FZI Research Center for Information Technology in Karlsruhe",
+			"OS_MAP_P52_CITY": "Karlsruhe, Germany",
+			"OS_MAP_P52_DESC": "FZI is a non-profit institution for applied\nresearch in information technology and technology\ntransfer. FZI is researching neuro-robotics and\nclosed-loop experiments in the HBP with the goal\nto better understand the highly complex vision and\nmotion systems of humans.",
+
+			"OS_MAP_P53_NAME": "Technical University of Crete",
+			"OS_MAP_P53_CITY": "Crete, Greece",
+
+			"OS_MAP_P54_NAME": "The Technical University Dresden",
+			"OS_MAP_P54_CITY": "Dresden, Germany",
+			"OS_MAP_P54_DESC": "The TU Dresden is one of eleven German\nUniversities of Excellence. Within the HBP, the\nchair for Highly-Parallel VLSI Systems and\nNeuromorphic Circuits is responsible for the\ndesign and implementation of the SpiNNaker2\nneuromorphic system, aiming at real-time human\nbrain-size spiking neural network simulation on 10\nmillion ARM processors.",
+
+			"OS_MAP_P55_NAME": "Graz University of Technology",
 			"OS_MAP_P55_CITY": "Graz, Austria",
 
-			"OS_MAP_P121_NAME": "convelop cooperative knowledge design gmbh",
-			"OS_MAP_P121_CITY": "Graz, Austria",
+			"OS_MAP_P56_NAME": "The Technical University of Munich",
+			"OS_MAP_P56_CITY": "Munich, Germany",
+			"OS_MAP_P56_DESC": "The Technical University of Munich (TUM) is one of\nthe highest ranked universities in Europe, and the\nDepartment of Informatics one of the largest\ncomputer science departments in Germany, with a\nlong tradition of industry collaboration. In HBP,\nTUM leads development of the NeuroRobotics\nPlatform, compliant neurorobotics, and behavioral\narchitectures.",
 
-			"OS_MAP_COUNTRY_SLOVENIA_NAME": "Slovenia",
+			"OS_MAP_P57_NAME": "Tel Aviv University",
+			"OS_MAP_P57_CITY": "Tel Aviv, Israel",
+			"OS_MAP_P57_DESC": "Tel Aviv University (TAU) is a leading,\ncomprehensive academic institution that offers\nalmost all areas of science on one campus. In HBP\nTAU holds the vice chairmanship for medical\ninformatics and is responsible for the development\nof statistical methodology in the project,\nalongside its application in clinical research.",
 
-			"OS_MAP_P32_NAME": "Institut Jožef Stefan",
-			"OS_MAP_P32_CITY": "Ljubljana, Slovenia",
+			"OS_MAP_P59_NAME": "The Chancellor, Masters and Scholars of the University of Oxford",
+			"OS_MAP_P59_CITY": "Oxford, United Kingdom",
 
-			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
+			"OS_MAP_P60_NAME": "Hebrew University of Jerusalem",
+			"OS_MAP_P60_CITY": "Jerusalem, Israel",
+			"OS_MAP_P60_DESC": "Idan Segev’s team involved with the HBP is located\nat the new Edmond and Lily Safra Center for Brain\nSciences (ELSC), at the Hebrew University of\nJerusalem. ELSC encompasses a powerful computer\ncluster for large-scale simulations and the\nprestigious Ph.D. program in Neural Computation\n(100 multidisciplinary students).",
 
-			"OS_MAP_P10_NAME": "Centre national de la recherche scientifique",
-			"OS_MAP_P10_CITY": "Paris, France",
+			"OS_MAP_P61_NAME": "University of Aberdeen",
+			"OS_MAP_P61_CITY": "Aberdeen, United Kingdom",
 
-			"OS_MAP_P11_NAME": "Commissariat a l'Énergie Atomique et aux Énergies Alternatives",
-			"OS_MAP_P11_CITY": "Paris, France",
+			"OS_MAP_P62_NAME": "University of Edinburgh",
+			"OS_MAP_P62_CITY": "Edinburgh, United Kingdom",
 
-			"OS_MAP_P17_NAME": "École normale supérieure",
-			"OS_MAP_P17_CITY": "Paris, France",
+			"OS_MAP_P63_NAME": "University of Manchester",
+			"OS_MAP_P63_CITY": "Manchester, United Kingdom",
+			"OS_MAP_P63_DESC": "The University of Manchester, based in the world’s\nfirst industrial city, has been host to 25 Nobel\nLaureates and Alan Turing, seen the atom split,\nthe birth of the modern computer, and the\ndiscovery of graphene. Within the HBP it hosts\nSpiNNaker, the world’s largest neuromorphic\ncomputing platform.",
 
-			"OS_MAP_P29_NAME": "Institut du Cerveau et de la Moelle épinière",
-			"OS_MAP_P29_CITY": "Paris, France",
+			"OS_MAP_P64_NAME": "The Autonomous University of Madrid",
+			"OS_MAP_P64_CITY": "Madrid, Spain",
 
-			"OS_MAP_P105_NAME": "Université Pierre et Marie Curie - Paris 6",
+			"OS_MAP_P65_NAME": "Castilla-La Mancha university",
+			"OS_MAP_P65_CITY": "Ciudad Real, Spain",
+
+			"OS_MAP_P66_NAME": "Granada University",
+			"OS_MAP_P66_CITY": "Granada, Spain",
+			"OS_MAP_P66_DESC": "The Applied Computational Neuroscience lab led by\nProf. Eduardo Ros at Granada University builds\nmodels of neural systems as the cerebellum among\nothers. We aim to better understand the\ncomputational principles of these neural centers\nand how they are supported by biophysical\nsubstrate (properties of cells, network and\nadaptation mechanisms).",
+
+			"OS_MAP_P67_NAME": "Minho university",
+			"OS_MAP_P67_CITY": "Braga, Portugal",
+
+			"OS_MAP_P68_NAME": "The Technical University of Madrid",
+			"OS_MAP_P68_CITY": "Madrid, Spain",
+			"OS_MAP_P68_DESC": "Technical University of Madrid (UPM) is the\nlargest Spanish technological university. With two\nrecognitions as Campus of International\nExcellence, it is outstanding in its research\nactivity. Five research UPM groups are\nparticipating in the project working on the fields\nof Neuroscience, Data Analysis, High-Performance\nComputing and Innovation.",
+
+			"OS_MAP_P69_NAME": "The Universidad Rey Juan Carlos",
+			"OS_MAP_P69_CITY": "Madrid, Spain",
+			"OS_MAP_P69_DESC": "The role of the Universidad Rey Juan Carlos (URJC)\nin the HBP is, on one hand, to develop\nvisualization tools that allow neuroscientists to\ndo visual exploratory analysis of data, both\nmorphological or simulation. On the other hand,\nURJC is also responsible of the development of the\nremote visualization backend.",
+
+			"OS_MAP_P70_NAME": "The University of Pavia",
+			"OS_MAP_P70_CITY": "Pavia, Italy",
+
+			"OS_MAP_P71_NAME": "Universität Bern",
+			"OS_MAP_P71_CITY": "Bern, Switzerland",
+			"OS_MAP_P71_DESC": "In the Computational Neuroscience group at the\nUniversity of Bern we investigate the\nextraordinary learning capabilities of biological\nsystems. Building mathematical models and computer\nsimulations we explore how these processes could\nbe organized in the central nervous system, and\nhow the underlying computational principles can\nenhance the capabilities of biologically inspired\nartificial intelligence.",
+
+			"OS_MAP_P72_NAME": "Universität Bielefeld",
+			"OS_MAP_P72_CITY": "Bielefeld, Germany",
+			"OS_MAP_P72_DESC": "Bielefeld University develops a modular, scalable\nbenchmark framework which allows scientific end\nusers to select the best neuromorphic hardware\nsystem and a matching platform-agnostic network\narchitecture based on their specific requirements.\nWe are also contributing to graphical software\ntools and accompanying libraries aimed at domain\nexperts in neuro science.",
+
+			"OS_MAP_P73_NAME": "Aachen University Hospital",
+			"OS_MAP_P73_CITY": "Aachen, Germany",
+			"OS_MAP_P73_DESC": "Aachen University Hospital combines patient care,\nmedical education and translational research. It\nis currently involved in two tasks of HBP. In\ncollaboration with Jülich we intend to improve our\nunderstanding of receptor architecture. We also\ntry to implement a federated database to enable\nBig Data analyses of psychiatric disorders.",
+
+			"OS_MAP_P74_NAME": "University Hospital Hamburg-Eppendorf",
+			"OS_MAP_P74_CITY": "Hamburg, Germany",
+
+			"OS_MAP_P75_NAME": "University of Zurich",
+			"OS_MAP_P75_CITY": "Zürich, Switzerland",
+
+			"OS_MAP_P76_NAME": "University of Barcelona",
+			"OS_MAP_P76_CITY": "Barcelona, Spain",
+
+			"OS_MAP_P77_NAME": "Pompeu Fabra University",
+			"OS_MAP_P77_CITY": "Barcelona, Spain",
+			"OS_MAP_P77_DESC": "Universitat Pompeu Fabra (UPF) Center for Brain\nand Cognition, PI: Gustavo Deco. UPF leads work\npackage 4.4 “Models of Brain Activity and\nFunction”. UPF participates in work package 4.5\n“Linking Model Activity And  Function To\nExperimental Data” and builds whole-brain network\nmodels for individuals that mimic pathologies\nincluding epilepsy.",
+
+			"OS_MAP_P78_NAME": "University of Aix Marseille",
+			"OS_MAP_P78_CITY": "Marseille, France",
+			"OS_MAP_P78_DESC": "Institut de Neurosciences des Systèmes (INS) in\nthe University is a multidisciplinary research\ninstitute focused on understanding the complex\ndynamics of the brain. Within HBP, INS works on\ndemonstrating the predictive value of large-scale\nbrain network models, in particular for the\nindividualized epileptic activity and for the\nimpaired connectivity, and on building a\nmulti-scale brain atlas.",
+
+			"OS_MAP_P79_NAME": "University of Bordeaux",
+			"OS_MAP_P79_CITY": "Bordeaux, France",
+
+			"OS_MAP_P80_NAME": "Antwerp University",
+			"OS_MAP_P80_CITY": "Antwerp, Belgium",
+			"OS_MAP_P80_DESC": "At Antwerp University, we study cortical function\ncombining technological, experimental and\ntheoretical approaches, ranging from arrays of\nmicroelectrodes to patch-clamp and from the micro-\nand nanotechnologies for to the computer\nsimulation of neuron models. We lead in HBP the\ntask on Input-Output Transfer function.",
+
+			"OS_MAP_P81_NAME": "University of Oslo",
+			"OS_MAP_P81_CITY": "Oslo, Norway",
+
+			"OS_MAP_P82_NAME": "University College London",
+			"OS_MAP_P82_CITY": "London, United Kingdom",
+			"OS_MAP_P82_DESC": "University College London (UCL) is London’s\nleading multidisciplinary university and is the\ntop university in the United Kingdom for research\nstrength. UCL contribution to SP6 is to provide\ncorrelated electrophysiological and anatomical\ndata from hippocampal neurones for the generation\nof a data-driven model of the hippocampus.",
+
+			"OS_MAP_P83_NAME": "Uppsala University",
+			"OS_MAP_P83_CITY": "Uppsala, Sweden",
+			"OS_MAP_P83_DESC": "Uppsala University is part of the HBP through its\nNeuro-ethics and Philosophy Group in the Centre\nfor Research Ethics and Bioethics. This group, led\nby Professor Kathinka Evers –director of the\nSubproject “Ethics & Society”- carries out\nconceptual and philosophical analyses of\ntheoretical and practical issues raised by\nneuroscience, ICT and applications.",
+
+			"OS_MAP_P84_NAME": "The Weizmann Institute of Science",
+			"OS_MAP_P84_CITY": "Rehovot, Israel",
+			"OS_MAP_P84_DESC": "The Weizmann Institute of Science is one of the\nworld's top-ranking multidisciplinary research\ninstitutes that explore the natural and exact\nsciences. The Institute’s involvement in HBP is in\nmodeling visual system functional and circuit\nmodels, with applications to cognition and\nneuro-robotics; and in generating mathematical\nmodels of memory to better understand human\ncognition.",
+
+			"OS_MAP_P85_NAME": "Technische Universität Darmstadt",
+			"OS_MAP_P85_CITY": "Darmstadt, Germany",
+			"OS_MAP_P85_DESC": "The Laboratory for Parallel Programming belongs to\nthe Department of Computer Science at Technische\nUniversität Darmstadt in Germany. We are working\non methods that make data-intensive brain analyses\nrun faster and on algorithms that help better\nunderstand how individual neurons connect to each\nother.",
+
+			"OS_MAP_P86_NAME": "University of Geneva",
+			"OS_MAP_P86_CITY": "Geneva, Switzerland",
+
+			"OS_MAP_P87_NAME": "University of Glasgow",
+			"OS_MAP_P87_CITY": "Glasgow, United Kingdom",
+
+			"OS_MAP_P89_NAME": "University of Hamburg",
+			"OS_MAP_P89_CITY": "Hamburg, Germany",
+
+			"OS_MAP_P90_NAME": "Humboldt University of Berlin",
+			"OS_MAP_P90_CITY": "Berlin, Germany",
+
+			"OS_MAP_P91_NAME": "The Royal Netherlands Academy of Arts and Sciences",
+			"OS_MAP_P91_CITY": "Amsterdam, The Netherlands",
+
+			"OS_MAP_P92_NAME": "The National Institute of Nuclear Physics",
+			"OS_MAP_P92_CITY": "Rome, Italy",
+
+			"OS_MAP_P93_NAME": "August Pi i Sunyer Biomedical Research Institute",
+			"OS_MAP_P93_CITY": "Barcelona, Spain",
+
+			"OS_MAP_P94_NAME": "University of Milan",
+			"OS_MAP_P94_CITY": "Milan, Italy",
+			"OS_MAP_P94_DESC": "Dr. Massimini’s research group is located at the\nUniversity of Milan and focuses on the\nneurophysiological factors supporting complex\ninteractions within the human brain and their role\nfor the fading and recovery of consciousness\nacross brain states (sleep, anesthesia and brain\nlesions) through invasive and non-invasive\ntechniques across different spatial scales.",
+
+			"OS_MAP_P95_NAME": "Institute for Bioengineering of Catalonia",
+			"OS_MAP_P95_CITY": "Barcelona, Spain",
+
+			"OS_MAP_P96_NAME": "National Institute of Health",
+			"OS_MAP_P96_CITY": "Rome, Italy",
+
+			"OS_MAP_P97_NAME": "University of Liège",
+			"OS_MAP_P97_CITY": "Liège, Belgium",
+			"OS_MAP_P97_DESC": "Our GIGA-Consciousness Unit is part of the GIGA\nresearch institute (University of Liège, Belgium).\nIn the framework of HBP, our multidisciplinary\nteam aims at studying human consciousness and its\npathological, pharmacological and physiological\nmodifications, notably using electrophysiology and\nneuroimaging tools, as well as investigating the\nethical issues of such a research.",
+
+			"OS_MAP_P98_NAME": "The University of Amsterdam",
+			"OS_MAP_P98_CITY": "Amsterdam, The Netherlands",
+			"OS_MAP_P98_DESC": "The University of Amsterdam is included in\ninvestigating cognitive and system neuroscience\nphenomena in HBP, besides coordinating 5 teams of\nresearchers from 17 institutions around Europe.\nOur main focus is to study perception, memory,\nsleep, consciousness and develop methods for\nintegrating data from multiple scales into HBP ICT\nPlatforms.",
+
+			"OS_MAP_P99_NAME": "The German Center for Neurodegenerative Diseases",
+			"OS_MAP_P99_CITY": "Bonn, Germany",
+			"OS_MAP_P99_DESC": "The core objectives of the research are to\nunderstand causes and risk factors for\nneurodegenerative diseases & to develop new\ntherapeutic and preventive strategies by\ntranslating fundamental discoveries into clinical\nand public health applications. Within the HBP we\nare focusing on deciphering the heterogeneity of\nneurons by single-cell RNA-sequencing.",
+
+			"OS_MAP_P100_NAME": "University of Sheffield",
+			"OS_MAP_P100_CITY": "Sheffield, United Kingdom",
+
+			"OS_MAP_P101_NAME": "University of the West of England, UWE Bristol",
+			"OS_MAP_P101_CITY": "Bristol, United Kingdom",
+
+			"OS_MAP_P102_NAME": "University of Surrey",
+			"OS_MAP_P102_CITY": "Guildford, United Kingdom",
+
+			"OS_MAP_P103_NAME": "Tampere University",
+			"OS_MAP_P103_CITY": "Turku, Finland",
+
+			"OS_MAP_P104_NAME": "University of Leeds",
+			"OS_MAP_P104_CITY": "Leeds, United Kingdom",
+
+			"OS_MAP_P105_NAME": "Pierre and Marie Curie University",
 			"OS_MAP_P105_CITY": "Paris, France",
 
-			"OS_MAP_P34_NAME": "Institut Pasteur",
-			"OS_MAP_P34_CITY": "Paris, France",
+			"OS_MAP_P106_NAME": "University of Sussex",
+			"OS_MAP_P106_CITY": "Falmer, United Kingdom",
 
-			"OS_MAP_P78_NAME": "Université d’Aix Marseille",
-			"OS_MAP_P78_CITY": "Marseille, France",
-			"OS_MAP_P78_DESC": "Institut de Neurosciences des Systèmes (INS) is a \nmultidisciplinary research institute focused on understanding \nthe complex dynamics of the brain. Within HBP, INS works on \ndemonstrating the predictive value of large-scale brain \nnetwork models, in particular for the individualized epileptic \nactivity and for the impaired connectivity, and on building \na multi-scale brain atlas.",
+			"OS_MAP_P107_NAME": "Middlesex University",
+			"OS_MAP_P107_CITY": "Hendon, London, United Kingdom",
+			"OS_MAP_P107_DESC": "Middlesex University is in London, and HBP\nresearch at Middlesex focuses on Neuromorphic\nEmbodied Agents that Learn. Reusable software\ncomponents are developed in PyNN using spiking\nneurons in Nest and neuromorphic hardware. These\ncomponents are combined to implement agents in the\nNeurorobotics Platform, in other virtual\nenvironments or in robots.",
 
-			"OS_MAP_P79_NAME": "Université de Bordeaux",
-			"OS_MAP_P79_CITY": "Bordeaux, France"
+			"OS_MAP_P108_NAME": "University of Lyon",
+			"OS_MAP_P108_CITY": "Lyon, France",
+
+			"OS_MAP_P109_NAME": "Polytechnic of Turin (Politecnico di Torino)",
+			"OS_MAP_P109_CITY": "Turin, Italy",
+			"OS_MAP_P109_DESC": "For over 150 years, Politecnico di Torino has been\none of the most prestigious technical universities\nat national and international level. The\nEDA-group, being part of the HBP neuromorphic\nengineering team, is involved in the design of\noptimized algorithms for exploiting the innovative\nmany-core architecture of the SpiNNaker\nneuromorphic platform.",
+
+			"OS_MAP_P110_NAME": "University of Ghent",
+			"OS_MAP_P110_CITY": "Ghent, Belgium",
+
+			"OS_MAP_P111_NAME": "The Catholic University of Leuven",
+			"OS_MAP_P111_CITY": "Leuven, Belgium",
+
+			"OS_MAP_P112_NAME": "University of Basel",
+			"OS_MAP_P112_CITY": "Basel, Switzerland",
+
+			"OS_MAP_P113_NAME": "VU University Medical Center",
+			"OS_MAP_P113_CITY": "Amsterdam, The Netherlands",
+
+			"OS_MAP_P114_NAME": "Swiss Institute of Bioinformatics ISB Foundation",
+			"OS_MAP_P114_CITY": "Lausanne, Switzerland",
+
+			"OS_MAP_P115_NAME": "European Brain Research Institute RIta Levi-Montalcini Foundation",
+			"OS_MAP_P115_CITY": "Rome, Italy",
+
+			"OS_MAP_P116_NAME": "Scuola Normale Superiore",
+			"OS_MAP_P116_CITY": "Pisa, Italy",
+
+			"OS_MAP_P117_NAME": "University of Maastricht",
+			"OS_MAP_P117_CITY": "Maastricht, The Netherlands",
+
+			"OS_MAP_P118_NAME": "University of Hertfordshire",
+			"OS_MAP_P118_CITY": "Hatfield, United Kingdom",
+
+			"OS_MAP_P119_NAME": "University Hospital Bonn",
+			"OS_MAP_P119_CITY": "Bonn, Germany",
+
+			"OS_MAP_P120_NAME": "Biomedical Research Foundation, Academy of Athens",
+			"OS_MAP_P120_CITY": "Athens, Greece",
+
+			"OS_MAP_P121_NAME": "Convelop Cooperative Knowledge Design GmbH",
+			"OS_MAP_P121_CITY": "Graz, Austria",
+
+			"OS_MAP_P122_NAME": "Charité - University Medicine Berlin",
+			"OS_MAP_P122_CITY": "Berlin, Germany",
+			"OS_MAP_P122_DESC": "Charité Universitätsmedizin Berlin is Europe´s\nlargest University Hospital. More than half of the\nGerman Nobel laureates for medicine and physiology\noriginate from it. Charité’s Brain Simulation\nSection heads HBP’s project TheVirtualBrain (TVB).\nTVB is a simulation platform for simulating\npatient brains to test virtual therapies. TVB has\nseveral thousand users.",
+
+			"OS_MAP_P123_NAME": "European Molecular Biology Laboratory (EMBL)",
+			"OS_MAP_P123_CITY": "Heidelberg, Germany",
+			"OS_MAP_P123_DESC": "At EMBL in Heidelberg, the group of Anna Kreshuk\nspecializes in developing machine learning\nalgorithms and tools for automatic segmentation,\nclassification and analysis of biological images.\nWithin the Human Brain Project, her team develops\nspecial workflows for the ilastik image processing\ntoolkit with the goal of neuroimaging analysis at\nscale.",
+
+			"OS_MAP_P124_NAME": "Medical University Greifswald",
+			"OS_MAP_P124_CITY": "Greifswald, Germany",
+
+			"OS_MAP_P125_NAME": "Swiss Integrative Center for Human Health",
+			"OS_MAP_P125_CITY": "Fribourg, Switzerland",
+
+			"OS_MAP_P126_NAME": "University Grenoble Alpes",
+			"OS_MAP_P126_CITY": "Grenoble, France",
+
+			"OS_MAP_P127_NAME": "University Hospital Freiburg",
+			"OS_MAP_P127_CITY": "Freiburg, Germany",
+
+			"OS_MAP_P128_NAME": "\"Claudio Munari\" Center for Epilepsy Surgery",
+			"OS_MAP_P128_CITY": "Milan, Italy",
+
+			"OS_MAP_P129_NAME": "University Hospital Grenoble Alpes",
+			"OS_MAP_P129_CITY": "Grenoble, France",
+
+			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
+			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
+			"OS_MAP_COUNTRY_NORWAY_NAME": "Norway",
+			"OS_MAP_COUNTRY_TURKEY_NAME": "Turkey",
+			"OS_MAP_COUNTRY_PORTUGAL_NAME": "Portugal",
+			"OS_MAP_COUNTRY_BELGIUM_NAME": "Belgium",
+			"OS_MAP_COUNTRY_DENMARK_NAME": "Denmark",
+			"OS_MAP_COUNTRY_HUNGARY_NAME": "Hungary",
+			"OS_MAP_COUNTRY_AUSTRIA_NAME": "Austria",
+			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
+			"OS_MAP_COUNTRY_SWITZERLAND_NAME": "Switzerland",
+			"OS_MAP_COUNTRY_SLOVENIA_NAME": "Slovenia",
+			"OS_MAP_COUNTRY_SWEDEN_NAME": "Sweden",
+			"OS_MAP_COUNTRY_ITALY_NAME": "Italy",
+			"OS_MAP_COUNTRY_NETHERLANDS_NAME": "Netherlands",
+			"OS_MAP_COUNTRY_FINLAND_NAME": "Finalnd",
+			"OS_MAP_COUNTRY_GREECE_NAME": "Greece",
+			"OS_MAP_COUNTRY_GERMANY_NAME": "Germany",
+			"OS_MAP_COUNTRY_ISRAEL_NAME": "Israel",
+			"OS_MAP_COUNTRY_UK_NAME": "United Kingdom"
 		},
 
 		"ar": {
@@ -791,6 +983,748 @@
 		"france": {
 			"nameKey": "OS_MAP_COUNTRY_FRANCE_NAME",
 			"institutions": [
+				{
+					"mapX": 187,
+					"mapY": 386,
+					
+					"nameKey": "OS_MAP_P79_NAME",
+					"cityKey": "OS_MAP_P79_CITY"
+				},
+				{
+					"mapX": 283,
+					"mapY": 125,
+					
+					"nameKey": "OS_MAP_P17_NAME",
+					"cityKey": "OS_MAP_P17_CITY"
+				},
+				{
+					"mapX": 305,
+					"mapY": 112,
+					
+					"nameKey": "OS_MAP_P34_NAME",
+					"cityKey": "OS_MAP_P34_CITY"
+				},
+				{
+					"mapX": 329,
+					"mapY": 125,
+					
+					"nameKey": "OS_MAP_P29_NAME",
+					"cityKey": "OS_MAP_P29_CITY"
+				},
+				{
+					"mapX": 282,
+					"mapY": 151,
+					
+					"nameKey": "OS_MAP_P11_NAME",
+					"cityKey": "OS_MAP_P11_CITY"
+				},
+				{
+					"mapX": 305,
+					"mapY": 139,
+					
+					"nameKey": "OS_MAP_P105_NAME",
+					"cityKey": "OS_MAP_P105_CITY"
+				},
+				{
+					"mapX": 328,
+					"mapY": 151,
+					
+					"nameKey": "OS_MAP_P10_NAME",
+					"cityKey": "OS_MAP_P10_CITY"
+				},
+				{
+					"mapX": 389,
+					"mapY": 319,
+					
+					"nameKey": "OS_MAP_P108_NAME",
+					"cityKey": "OS_MAP_P108_CITY"
+				},
+				{
+					"mapX": 486,
+					"mapY": 442,
+					
+					"nameKey": "OS_MAP_P33_NAME",
+					"cityKey": "OS_MAP_P33_CITY",
+					"descriptionKey": "OS_MAP_P33_DESC",
+					"image": "P33"
+				},
+				{
+					"mapX": 402,
+					"mapY": 446,
+					
+					"nameKey": "OS_MAP_P78_NAME",
+					"cityKey": "OS_MAP_P78_CITY",
+					"descriptionKey": "OS_MAP_P78_DESC",
+					"image": "P78"
+				}
+			]
+		},
+		"sweden": {
+			"nameKey": "OS_MAP_COUNTRY_SWEDEN_NAME",
+			"institutions": [
+				{
+					"mapX": 139,
+					"mapY": 684,
+					
+					"nameKey": "OS_MAP_P41_NAME",
+					"cityKey": "OS_MAP_P41_CITY",
+					"descriptionKey": "OS_MAP_P41_DESC",
+					"image": "P41"
+				},
+				{
+					"mapX": 159,
+					"mapY": 498,
+					
+					"nameKey": "OS_MAP_P83_NAME",
+					"cityKey": "OS_MAP_P83_CITY",
+					"descriptionKey": "OS_MAP_P83_DESC",
+					"image": "P83"
+				},
+				{
+					"mapX": 171,
+					"mapY": 529,
+					
+					"nameKey": "OS_MAP_P39_NAME",
+					"cityKey": "OS_MAP_P39_CITY"
+				},
+				{
+					"mapX": 198,
+					"mapY": 531,
+					
+					"nameKey": "OS_MAP_P37_NAME",
+					"cityKey": "OS_MAP_P37_CITY"
+				}
+			]
+		},
+		"italy": {
+			"nameKey": "OS_MAP_COUNTRY_ITALY_NAME",
+			"institutions": [
+				{
+					"mapX": 41,
+					"mapY": 135,
+					
+					"nameKey": "OS_MAP_P109_NAME",
+					"cityKey": "OS_MAP_P109_CITY"
+				},
+				{
+					"mapX": 136,
+					"mapY": 138,
+					
+					"nameKey": "OS_MAP_P70_NAME",
+					"cityKey": "OS_MAP_P70_CITY"
+				},
+				{
+					"mapX": 142,
+					"mapY": 108,
+					
+					"nameKey": "OS_MAP_P94_NAME",
+					"cityKey": "OS_MAP_P94_CITY",
+					"descriptionKey": "OS_MAP_P94_DESC",
+					"image": "P94"
+				},
+				{
+					"mapX": 189,
+					"mapY": 202,
+					
+					"nameKey": "OS_MAP_P49_NAME",
+					"cityKey": "OS_MAP_P49_CITY"
+				},
+				{
+					"mapX": 202,
+					"mapY": 225,
+					
+					"nameKey": "OS_MAP_P116_NAME",
+					"cityKey": "OS_MAP_P116_CITY"
+				},
+				{
+					"mapX": 222,
+					"mapY": 177,
+					
+					"nameKey": "OS_MAP_P13_NAME",
+					"cityKey": "OS_MAP_P13_CITY",
+					"descriptionKey": "OS_MAP_P13_DESC",
+					"image": "P13"
+				},
+				{
+					"mapX": 232,
+					"mapY": 210,
+					
+					"nameKey": "OS_MAP_P40_NAME",
+					"cityKey": "OS_MAP_P40_CITY"
+				},
+				{
+					"mapX": 323,
+					"mapY": 370,
+					
+					"nameKey": "OS_MAP_P115_NAME",
+					"cityKey": "OS_MAP_P115_CITY"
+				},
+				{
+					"mapX": 347,
+					"mapY": 357,
+					
+					"nameKey": "OS_MAP_P92_NAME",
+					"cityKey": "OS_MAP_P92_CITY"
+				},
+				{
+					"mapX": 347,
+					"mapY": 382,
+					
+					"nameKey": "OS_MAP_P96_NAME",
+					"cityKey": "OS_MAP_P96_CITY"
+				},
+				{
+					"mapX": 352,
+					"mapY": 627,
+					
+					"nameKey": "OS_MAP_P12_NAME",
+					"cityKey": "OS_MAP_P12_CITY",
+					"descriptionKey": "OS_MAP_P12_DESC",
+					"image": "P12"
+				}
+			]
+		},
+		"netherlands": {
+			"nameKey": "OS_MAP_COUNTRY_NETHERLANDS_NAME",
+			"institutions": [
+				{
+					"mapX": 176,
+					"mapY": 303,
+					
+					"nameKey": "OS_MAP_P3_NAME",
+					"cityKey": "OS_MAP_P3_CITY"
+				},
+				{
+					"mapX": 218,
+					"mapY": 214,
+					
+					"nameKey": "OS_MAP_P91_NAME",
+					"cityKey": "OS_MAP_P91_CITY"
+				},
+				{
+					"mapX": 218,
+					"mapY": 239,
+					
+					"nameKey": "OS_MAP_P98_NAME",
+					"cityKey": "OS_MAP_P98_CITY",
+					"descriptionKey": "OS_MAP_P98_DESC",
+					"image": "P98"
+				},
+				{
+					"mapX": 240,
+					"mapY": 201,
+					
+					"nameKey": "OS_MAP_P50_NAME",
+					"cityKey": "OS_MAP_P50_CITY"
+				},
+				{
+					"mapX": 425,
+					"mapY": 395,
+					
+					"nameKey": "OS_MAP_P51_NAME",
+					"cityKey": "OS_MAP_P51_CITY"
+				},
+				{
+					"mapX": 374,
+					"mapY": 580,
+					
+					"nameKey": "OS_MAP_P117_NAME",
+					"cityKey": "OS_MAP_P117_CITY"
+				}
+			]
+		},
+		"switzerland": {
+			"nameKey": "OS_MAP_COUNTRY_SWITZERLAND_NAME",
+			"institutions": [
+				{
+					"mapX": 43,
+					"mapY": 386,
+					
+					"nameKey": "OS_MAP_P86_NAME",
+					"cityKey": "OS_MAP_P86_CITY"
+				},
+				{
+					"mapX": 108,
+					"mapY": 308,
+					
+					"nameKey": "OS_MAP_P1_NAME",
+					"cityKey": "OS_MAP_P1_CITY"
+				},
+				{
+					"mapX": 122,
+					"mapY": 286,
+					
+					"nameKey": "OS_MAP_P114_NAME",
+					"cityKey": "OS_MAP_P114_CITY"
+				},
+				{
+					"mapX": 133,
+					"mapY": 400,
+					
+					"nameKey": "OS_MAP_P27_NAME",
+					"cityKey": "OS_MAP_P27_CITY"
+				},
+				{
+					"mapX": 260,
+					"mapY": 174,
+					
+					"nameKey": "OS_MAP_P71_NAME",
+					"cityKey": "OS_MAP_P71_CITY",
+					"descriptionKey": "OS_MAP_P71_DESC",
+					"image": "P71"
+				},
+				{
+					"mapX": 283,
+					"mapY": 62,
+					
+					"nameKey": "OS_MAP_P112_NAME",
+					"cityKey": "OS_MAP_P112_CITY"
+				},
+				{
+					"mapX": 448,
+					"mapY": 113,
+					
+					"nameKey": "OS_MAP_P75_NAME",
+					"cityKey": "OS_MAP_P75_CITY"
+				},
+				{
+					"mapX": 468,
+					"mapY": 93,
+					
+					"nameKey": "OS_MAP_P18_NAME",
+					"cityKey": "OS_MAP_P18_CITY",
+					"descriptionKey": "OS_MAP_P18_DESC",
+					"image": "P18"
+				}
+			]
+		},
+		"finland": {
+			"nameKey": "OS_MAP_COUNTRY_FINLAND_NAME",
+			"institutions": [
+				{
+					"mapX": 101,
+					"mapY": 677,
+					
+					"nameKey": "OS_MAP_P103_NAME",
+					"cityKey": "OS_MAP_P103_CITY"
+				},
+				{
+					"mapX": 189,
+					"mapY": 700,
+					
+					"nameKey": "OS_MAP_P2_NAME",
+					"cityKey": "OS_MAP_P2_CITY"
+				},
+				{
+					"mapX": 221,
+					"mapY": 698,
+					
+					"nameKey": "OS_MAP_P25_NAME",
+					"cityKey": "OS_MAP_P25_CITY"
+				}
+			]
+		},
+		"greece": {
+			"nameKey": "OS_MAP_COUNTRY_GREECE_NAME",
+			"institutions": [
+				{
+					"mapX": 283,
+					"mapY": 369,
+					
+					"nameKey": "OS_MAP_P4_NAME",
+					"cityKey": "OS_MAP_P4_CITY",
+					"descriptionKey": "OS_MAP_P4_DESC",
+					"image": "P4"
+				},
+				{
+					"mapX": 297,
+					"mapY": 347,
+					
+					"nameKey": "OS_MAP_P120_NAME",
+					"cityKey": "OS_MAP_P120_CITY"
+				},
+				{
+					"mapX": 309,
+					"mapY": 370,
+					
+					"nameKey": "OS_MAP_P43_NAME",
+					"cityKey": "OS_MAP_P43_CITY"
+				},
+				{
+					"mapX": 345,
+					"mapY": 607,
+					
+					"nameKey": "OS_MAP_P53_NAME",
+					"cityKey": "OS_MAP_P53_CITY"
+				}
+			]
+		},
+		"germany": {
+			"nameKey": "OS_MAP_COUNTRY_GERMANY_NAME",
+			"institutions": [
+				{
+					"mapX": 18,
+					"mapY": 373,
+					
+					"nameKey": "OS_MAP_P73_NAME",
+					"cityKey": "OS_MAP_P73_CITY",
+					"descriptionKey": "OS_MAP_P73_DESC",
+					"image": "P73"
+				},
+				{
+					"mapX": 23,
+					"mapY": 346,
+					
+					"nameKey": "OS_MAP_P46_NAME",
+					"cityKey": "OS_MAP_P46_CITY"
+				},
+				{
+					"mapX": 54,
+					"mapY": 330,
+					
+					"nameKey": "OS_MAP_P20_NAME",
+					"cityKey": "OS_MAP_P20_CITY",
+					"descriptionKey": "OS_MAP_P20_DESC",
+					"image": "P20"
+				},
+				{
+					"mapX": 84,
+					"mapY": 318,
+					
+					"nameKey": "OS_MAP_P24_NAME",
+					"cityKey": "OS_MAP_P24_CITY"
+				},
+				{
+					"mapX": 85,
+					"mapY": 367,
+					
+					"nameKey": "OS_MAP_P99_NAME",
+					"cityKey": "OS_MAP_P99_CITY",
+					"descriptionKey": "OS_MAP_P99_DESC",
+					"image": "P99"
+				},
+				{
+					"mapX": 110,
+					"mapY": 368,
+					
+					"nameKey": "OS_MAP_P119_NAME",
+					"cityKey": "OS_MAP_P119_CITY"
+				},
+				{
+					"mapX": 119,
+					"mapY": 318,
+					
+					"nameKey": "OS_MAP_P7_NAME",
+					"cityKey": "OS_MAP_P7_CITY",
+					"descriptionKey": "OS_MAP_P7_DESC",
+					"image": "P7"
+				},
+				{
+					"mapX": 140,
+					"mapY": 254,
+					
+					"nameKey": "OS_MAP_P72_NAME",
+					"cityKey": "OS_MAP_P72_CITY",
+					"descriptionKey": "OS_MAP_P72_DESC",
+					"image": "P72"
+				},
+				{
+					"mapX": 260,
+					"mapY": 140,
+					
+					"nameKey": "OS_MAP_P74_NAME",
+					"cityKey": "OS_MAP_P74_CITY"
+				},
+				{
+					"mapX": 286,
+					"mapY": 145,
+					
+					"nameKey": "OS_MAP_P89_NAME",
+					"cityKey": "OS_MAP_P89_CITY"
+				},
+				{
+					"mapX": 451,
+					"mapY": 200,
+					
+					"nameKey": "OS_MAP_P90_NAME",
+					"cityKey": "OS_MAP_P90_CITY"
+				},
+				{
+					"mapX": 458,
+					"mapY": 225,
+					
+					"nameKey": "OS_MAP_P122_NAME",
+					"cityKey": "OS_MAP_P122_CITY",
+					"descriptionKey": "OS_MAP_P122_DESC",
+					"image": "P122"
+				},
+				{
+					"mapX": 484,
+					"mapY": 335,
+					
+					"nameKey": "OS_MAP_P54_NAME",
+					"cityKey": "OS_MAP_P54_CITY",
+					"descriptionKey": "OS_MAP_P54_DESC",
+					"image": "P54"
+				},
+				{
+					"mapX": 333,
+					"mapY": 343,
+					
+					"nameKey": "OS_MAP_P6_NAME",
+					"cityKey": "OS_MAP_P6_CITY"
+				},
+				{
+					"mapX": 358,
+					"mapY": 591,
+					
+					"nameKey": "OS_MAP_P56_NAME",
+					"cityKey": "OS_MAP_P56_CITY",
+					"descriptionKey": "OS_MAP_P56_DESC",
+					"image": "P56"
+				},
+				{
+					"mapX": 358,
+					"mapY": 618,
+					
+					"nameKey": "OS_MAP_P21_NAME",
+					"cityKey": "OS_MAP_P21_CITY"
+				},
+				{
+					"mapX": 192,
+					"mapY": 542,
+					
+					"nameKey": "OS_MAP_P52_NAME",
+					"cityKey": "OS_MAP_P52_CITY"
+				},
+				{
+					"mapX": 169,
+					"mapY": 529,
+					
+					"nameKey": "OS_MAP_P36_NAME",
+					"cityKey": "OS_MAP_P36_CITY",
+					"descriptionKey": "OS_MAP_P36_DESC",
+					"image": "P36"
+				},
+				{
+					"mapX": 185,
+					"mapY": 491,
+					
+					"nameKey": "OS_MAP_P26_NAME",
+					"cityKey": "OS_MAP_P26_CITY",
+					"descriptionKey": "OS_MAP_P26_DESC",
+					"image": "P26"
+				},
+				{
+					"mapX": 210,
+					"mapY": 491,
+					
+					"nameKey": "OS_MAP_P123_NAME",
+					"cityKey": "OS_MAP_P123_CITY",
+					"descriptionKey": "OS_MAP_P123_DESC",
+					"image": "P123"
+				},
+				{
+					"mapX": 198,
+					"mapY": 470,
+					
+					"nameKey": "OS_MAP_P47_NAME",
+					"cityKey": "OS_MAP_P47_CITY",
+					"descriptionKey": "OS_MAP_P47_DESC",
+					"image": "P47"
+				},
+				{
+					"mapX": 155,
+					"mapY": 440,
+					
+					"nameKey": "OS_MAP_P85_NAME",
+					"cityKey": "OS_MAP_P85_CITY",
+					"descriptionKey": "OS_MAP_P85_DESC",
+					"image": "P85"
+				},
+				{
+					"mapX": 179,
+					"mapY": 437,
+					
+					"nameKey": "OS_MAP_P22_NAME",
+					"cityKey": "OS_MAP_P22_CITY"
+				},
+				{
+					"mapX": 172,
+					"mapY": 408,
+					
+					"nameKey": "OS_MAP_P35_NAME",
+					"cityKey": "OS_MAP_P35_CITY"
+				}
+			]
+		},
+		"israel": {
+			"nameKey": "OS_MAP_COUNTRY_ISRAEL_NAME",
+			"institutions": [
+				{
+					"mapX": 82,
+					"mapY": 240,
+					
+					"nameKey": "OS_MAP_P84_NAME",
+					"cityKey": "OS_MAP_P84_CITY",
+					"descriptionKey": "OS_MAP_P84_DESC",
+					"image": "P84"
+				},
+				{
+					"mapX": 91,
+					"mapY": 210,
+					
+					"nameKey": "OS_MAP_P57_NAME",
+					"cityKey": "OS_MAP_P57_CITY",
+					"descriptionKey": "OS_MAP_P57_DESC",
+					"image": "P57"
+				},
+				{
+					"mapX": 123,
+					"mapY": 241,
+					
+					"nameKey": "OS_MAP_P60_NAME",
+					"cityKey": "OS_MAP_P60_CITY",
+					"descriptionKey": "OS_MAP_P60_DESC",
+					"image": "P60"
+				},
+				{
+					"mapX": 131,
+					"mapY": 265,
+					
+					"nameKey": "OS_MAP_P8_NAME",
+					"cityKey": "OS_MAP_P8_CITY",
+					"descriptionKey": "OS_MAP_P8_DESC",
+					"image": "P8"
+				}
+			]
+		},
+		"uk": {
+			"nameKey": "OS_MAP_COUNTRY_UK_NAME",
+			"institutions": [
+				{
+					"mapX": 169,
+					"mapY": 401,
+					
+					"nameKey": "OS_MAP_P87_NAME",
+					"cityKey": "OS_MAP_P87_CITY"
+				},
+				{
+					"mapX": 206,
+					"mapY": 400,
+					
+					"nameKey": "OS_MAP_P62_NAME",
+					"cityKey": "OS_MAP_P62_CITY"
+				},
+				{
+					"mapX": 246,
+					"mapY": 294,
+					
+					"nameKey": "OS_MAP_P61_NAME",
+					"cityKey": "OS_MAP_P61_CITY"
+				},
+				{
+					"mapX": 271,
+					"mapY": 567,
+					
+					"nameKey": "OS_MAP_P63_NAME",
+					"cityKey": "OS_MAP_P63_CITY"
+				},
+				{
+					"mapX": 297,
+					"mapY": 542,
+					
+					"nameKey": "OS_MAP_P104_NAME",
+					"cityKey": "OS_MAP_P104_CITY"
+				},
+				{
+					"mapX": 308,
+					"mapY": 572,
+					
+					"nameKey": "OS_MAP_P100_NAME",
+					"cityKey": "OS_MAP_P100_CITY"
+				},
+				{
+					"mapX": 308,
+					"mapY": 625,
+					
+					"nameKey": "OS_MAP_P16_NAME",
+					"cityKey": "OS_MAP_P16_CITY"
+				},
+				{
+					"mapX": 350,
+					"mapY": 650,
+					
+					"nameKey": "OS_MAP_P118_NAME",
+					"cityKey": "OS_MAP_P118_CITY"
+				},
+				{
+					"mapX": 362,
+					"mapY": 681,
+					
+					"nameKey": "OS_MAP_P82_NAME",
+					"cityKey": "OS_MAP_P82_CITY",
+					"descriptionKey": "OS_MAP_P82_DESC",
+					"image": "P82"
+				},
+				{
+					"mapX": 362,
+					"mapY": 706,
+					
+					"nameKey": "OS_MAP_P38_NAME",
+					"cityKey": "OS_MAP_P38_CITY"
+				},
+				{
+					"mapX": 375,
+					"mapY": 746,
+					
+					"nameKey": "OS_MAP_P106_NAME",
+					"cityKey": "OS_MAP_P106_CITY"
+				},
+				{
+					"mapX": 337,
+					"mapY": 705,
+					
+					"nameKey": "OS_MAP_P107_NAME",
+					"cityKey": "OS_MAP_P107_CITY",
+					"descriptionKey": "OS_MAP_P107_DESC",
+					"image": "P107"
+				},
+				{
+					"mapX": 336,
+					"mapY": 679,
+					
+					"nameKey": "OS_MAP_P28_NAME",
+					"cityKey": "OS_MAP_P28_CITY"
+				},
+				{
+					"mapX": 313,
+					"mapY": 716,
+					
+					"nameKey": "OS_MAP_P102_NAME",
+					"cityKey": "OS_MAP_P102_CITY"
+				},
+				{
+					"mapX": 303,
+					"mapY": 681,
+					
+					"nameKey": "OS_MAP_P59_NAME",
+					"cityKey": "OS_MAP_P59_CITY"
+				},
+				{
+					"mapX": 261,
+					"mapY": 713,
+					
+					"nameKey": "OS_MAP_P101_NAME",
+					"cityKey": "OS_MAP_P101_CITY"
+				},
+				{
+					"mapX": 219,
+					"mapY": 704,
+					
+					"nameKey": "OS_MAP_P9_NAME",
+					"cityKey": "OS_MAP_P9_CITY"
+				}
 			]
 		},
 		"norway": {
@@ -821,137 +1755,78 @@
 					"mapX": 320,
 					"mapY": 236,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png"
+					"nameKey": "OS_MAP_P69_NAME",
+					"cityKey": "OS_MAP_P69_CITY",
+					"descriptionKey": "OS_MAP_P69_DESC",
+					"image": "P69"
 				},
-
 				{
 					"mapX": 340,
 					"mapY": 252,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png",
-
-					"video": "",
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P64_NAME",
+					"cityKey": "OS_MAP_P64_CITY"
 				},
-
 				{
 					"mapX": 316,
 					"mapY": 262,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png",
-
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P68_NAME",
+					"cityKey": "OS_MAP_P68_CITY",
+					"descriptionKey": "OS_MAP_P68_DESC",
+					"image": "P68"
 				},
-
 				{
-					"mapX": 322,
+					"mapX": 321,
 					"mapY": 349,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png",
-
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P65_NAME",
+					"cityKey": "OS_MAP_P65_CITY"
 				},
-
 				{
 					"mapX": 340,
 					"mapY": 489,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png",
-
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P66_NAME",
+					"cityKey": "OS_MAP_P66_CITY",
+					"descriptionKey": "OS_MAP_P66_DESC"
 				},
-
 				{
 					"mapX": 624,
 					"mapY": 190,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png",
-
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P95_NAME",
+					"cityKey": "OS_MAP_P95_CITY"
 				},
-
 				{
 					"mapX": 636,
 					"mapY": 166,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png",
-
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P77_NAME",
+					"cityKey": "OS_MAP_P77_CITY",
+					"descriptionKey": "OS_MAP_P77_DESC",
+					"image": "P77"
 				},
-
 				{
 					"mapX": 656,
 					"mapY": 151,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png",
-
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P93_NAME",
+					"cityKey": "OS_MAP_P93_CITY"
 				},
-
 				{
 					"mapX": 650,
 					"mapY": 188,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png",
-
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P76_NAME",
+					"cityKey": "OS_MAP_P76_CITY"
 				},
-
 				{
 					"mapX": 672,
 					"mapY": 171,
 					
-					"nameKey": "OS_MAP_P56_NAME",
-					"cityKey": "OS_MAP_P56_CITY",
-					"descriptionKey": "OS_MAP_P56_DESC",
-					"image": "spain-test.png",
-
-					"nameY": 0,
-					"cityY": 0,
-					"descriptionY": 0
+					"nameKey": "OS_MAP_P5_NAME",
+					"cityKey": "OS_MAP_P5_CITY"
 				}
 			]
 		}	
