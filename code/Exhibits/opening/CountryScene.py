@@ -37,18 +37,12 @@ class CountryScene(Scene):
 		self.prevButton.visible = False
 		self.buttons.append(self.prevButton)
 
-		self.closeVideoButton = Button(self.screen, pygame.Rect(1693, 147, 72, 72), 
-				pygame.image.load('assets/images/opening/map/close-button-normal.png'), pygame.image.load('assets/images/opening/map/close-button-tapped.png'), 
-				None, None, None, None, self.onCloseClick)
-		self.closeVideoButton.visible = False
-		self.buttons.append(self.closeVideoButton)	
-
-		self.playVideoButton = Button(self.screen, pygame.Rect(1022, 147, 224, 72), 
-				pygame.image.load('assets/images/opening/map/play-video-normal.png'), pygame.image.load('assets/images/opening/map/play-video-tapped.png'), 
-				None, None, None, None, self.onPlayVideoClick)
-		self.playVideoButton.visible = False
-		self.buttons.append(self.playVideoButton)
-		self.playVideoText = self.smallerTextFont.render(self.config.getText("OS_MAP_PLAY_VIDEO_BUTTON_TEXT"), True, (0, 0, 0))
+#		self.playVideoButton = Button(self.screen, pygame.Rect(1022, 147, 224, 72), 
+#				pygame.image.load('assets/images/opening/map/play-video-normal.png'), pygame.image.load('assets/images/opening/map/play-video-tapped.png'), 
+#				None, None, None, None, self.onPlayVideoClick)
+#		self.playVideoButton.visible = False
+#		self.buttons.append(self.playVideoButton)
+#		self.playVideoText = self.smallerTextFont.render(self.config.getText("OS_MAP_PLAY_VIDEO_BUTTON_TEXT"), True, (0, 0, 0))
 
 		self.createTexts()
 
@@ -118,14 +112,14 @@ class CountryScene(Scene):
 
 		self.institutionImage = pygame.image.load('assets/images/opening/map/institutions/' + institution.get('image', 'default') + '.png')
 
-		self.institutionHeaderY = 579
-		self.institutionCityY = 627
-		self.institutionDescY = 684
+		self.institutionHeaderY = 517
+		self.institutionCityY = 565
+		self.institutionDescY = 622
 
 		self.nextButton.visible = True
 		self.prevButton.visible = True
 
-		self.playVideoButton.visible = True
+		#self.playVideoButton.visible = True
 		self.closeVideoButton.visible = True
 
 	def draw(self, dt):
@@ -144,11 +138,9 @@ class CountryScene(Scene):
 			Utilities.drawTextOnCenterX(self.screen, self.countryHeader, (1098 + self.countryHeader.get_width() // 2, 402))
 			Utilities.drawTextOnCenterX(self.screen, self.tapInstructions, (1098 + self.tapInstructions.get_width() // 2, 580))
 		else:
-			self.screen.blit(self.institutionImage, (1093, 219))
+			self.screen.blit(self.institutionImage, (1093, 157))
 			Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 30)
 			Utilities.drawTextsOnLeftX(self.screen, self.institutionCity, (1093 ,self.institutionCityY), 30)
 
 			if self.institutionDesc is not None:
 				Utilities.drawTextsOnLeftX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY), 30)
-
-			Utilities.drawTextOnCenterX(self.screen, self.playVideoText, (1094 + 152 // 2, 147 + 25))
