@@ -61,8 +61,27 @@ class Config:
 	def shouldOpenSerial(self):
 		return self.config['shouldOpenSerial']
 
-	def getSerialPortCommand(self, command):
-		return bytes(self.config[command + 'SerialCommand'], 'utf-8')
+	def getSerialPortCommandsByTime(self, command):
+		resultMap = {}
+		sourceMap = self.config[command + 'SerialCommands']
+		for key in sourceMap:
+			resultMap[key] = list(map(lambda command: bytes(command, 'utf-8'), sourceMap[key]))
+		return resultMap
 
 	def getTestRunTime(self, test):
 		return self.config[test + 'RunTime']
+
+	def getInitSerialPortCommands(self):
+		return list(map(lambda command: bytes(command, 'utf-8'), self.config['initSerialCommands']))
+
+	def getPETDoneSerialPortCommands(self):
+		return list(map(lambda command: bytes(command, 'utf-8'), self.config['PETDoneSerialCommands']))
+
+	def getAnimationPaths(self, neuron):
+		return self.config['neuronPaths'][neuron]['animationPaths']
+
+	def getDrawingPaths(self, neuron):
+		return self.config['neuronPaths'][neuron]['tracePaths']
+
+	def getSelectedPathsNumber(self, neuron):
+		return self.config['neuronPaths'][neuron]['select']

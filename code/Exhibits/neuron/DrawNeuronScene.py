@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 
 import math
+import random
 
 from common.Scene import Scene
 from common.Button import Button
@@ -13,57 +14,17 @@ NEURON_BUTTON_WIDTH = 200
 NEURON_BUTTON_HEIGHT = 400
 NEURON_BUTTON_PADDING = 50
 
-START_CIRCLE_POS = (165, 420)
 CIRCLE_RADIUS = 10
 
 MAX_DISTANCE_FROM_PATH = 30
 
 TRACE_LINE_WIDTH = 3
 
+ANIMATION_PATH_COLOR = (0,0,128)
 TRACE_PATH_COLOR = (255,0,0)
 DONE_PATH_COLOR = (0,180,0)
 
 MAX_NON_DRAWING_TIME_UNTIL_RESET = 1.0
-
-PATH_POINTS = [
-	START_CIRCLE_POS,
-	(167, 370),
-	(167, 360),
-	(167, 350),
-	(167, 340),
-	(167, 330),
-	(167, 320),
-	(167, 310),
-	(157, 300),
-	(147, 290),
-	(137, 280),
-	(127, 270),
-	(117, 260),
-	(107, 250),
-	(97, 250),
-	(87, 250)
-]
-
-PATH_POINTS = [
-	START_CIRCLE_POS,
-	(161, 415),
-	(156, 410),
-	(153, 405),
-	(147, 398),
-	(142, 393),
-	(140, 387),
-	(140, 379),
-	(135, 375),
-	(131, 370),
-	(129, 365),
-	(119, 355),
-	(115, 351),
-	(111, 347),
-	(104, 341),
-	(100, 336),
-	(98, 330),
-	(95, 325)
-]
 
 NEURON_TO_NAME_KEY = {
 	'martinotti': "RN_CHOOSE_NEURON_MARTINOTTI_NAME",
@@ -77,12 +38,25 @@ DRAWING_STATE = 'drawing'
 MODEL_STATE = '3d-model'
 LIGHTNING_STATE = 'lightning'
 
+OFFSET_X_FIX = 5
+OFFSET_Y_FIX = 7
+
 class DrawNeuronScene(Scene):
 	def __init__(self, game, neuronChosen):
 		super().__init__(game)
 		self.state = DRAWING_STATE
 
 		self.neuronChosen = neuronChosen
+
+		print(self.neuronChosen)
+		self.animationPaths = self.config.getAnimationPaths(self.neuronChosen)
+		self.drawingPaths = self.config.getDrawingPaths(self.neuronChosen)
+		random.shuffle(self.drawingPaths)
+		self.selectedPaths = self.drawingPaths[:self.config.getSelectedPathsNumber(self.neuronChosen)]
+		self.animationPaths += self.drawingPaths[(self.config.getSelectedPathsNumber(self.neuronChosen) + 1):]
+		self.animationIndex = 0
+		self.animationTime = 0
+		self.selectedPathIndex = 0
 
 		self.drawOnNeuron = pygame.image.load('assets/images/neuron/' + self.neuronChosen + '-big.png')
 		self.videoMask = pygame.image.load('assets/images/video-mask.png')
@@ -119,6 +93,9 @@ class DrawNeuronScene(Scene):
 		super().onLanguageChanged()
 		self.createTexts()
 
+	def getCurrPath(self):
+		return self.selectedPaths[self.selectedPathIndex]
+
 	def createTexts(self):
 		if self.state == DRAWING_STATE:
 			self.headerText = self.subHeaderFont.render(self.config.getText(NEURON_TO_NAME_KEY[self.neuronChosen]), True, (255, 255, 255))
@@ -154,6 +131,10 @@ class DrawNeuronScene(Scene):
 
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 115))
 		Utilities.drawTextOnCenterX(self.screen, self.instructionText, (self.screen.get_width() // 2, 820))
+
+		self.animationTime += dt
+		self.animationIndex = int(self.animationTime / 0.1)
+		self.drawAnimationPaths()
 
 		super().draw(dt)
 
@@ -203,7 +184,7 @@ class DrawNeuronScene(Scene):
 				self.circlePos = newCirclePos
 				self.currPointIndexReached = pointIndex
 
-				if self.currPointIndexReached == len(PATH_POINTS) - 1:
+				if self.currPointIndexReached == len(self.getCurrPath()) - 1:
 					self.onDrawingDone()
 
 	def onDrawingDone(self):
@@ -217,21 +198,29 @@ class DrawNeuronScene(Scene):
 		self.state = MODEL_STATE
 		self.createTexts()
 		self.lightningButton.visible = True
+		self.modelPlayer.play()
 
 	def onMoveToLightningState(self):
+		self.modelPlayer.stop()
 		self.state = LIGHTNING_STATE
 		self.createTexts()
 		self.lightningButton.visible = False
 		self.nextButton.visible = True
+		self.lightningPlayer.play()
 
 	def onNextClick(self):
 		self.game.transition('SUMMARY', self.neuronChosen)
 
 	def drawCurrPath(self):
-		for index in range(1, self.currPointIndexReached if not self.drawingDone else len(PATH_POINTS)):
-			p1 = PATH_POINTS[index - 1]
-			p2 = PATH_POINTS[index]
-			pygame.draw.line(self.screen, TRACE_PATH_COLOR if not self.drawingDone else DONE_PATH_COLOR, self.localNeuronPointToGlobalPoint(p1), self.localNeuronPointToGlobalPoint(p2), TRACE_LINE_WIDTH)
+		for index in range(1, self.currPointIndexReached if not self.drawingDone else len(self.getCurrPath())):
+			p1 = self.getCurrPath()[index - 1]
+			p2 = self.getCurrPath()[index]
+			pygame.draw.line(self.screen, TRACE_PATH_COLOR if not self.drawingDone else DONE_PATH_COLOR, self.localNeuronPointToGlobalPoint((p1['x'] + OFFSET_X_FIX, p1['y'] + OFFSET_Y_FIX)), self.localNeuronPointToGlobalPoint((p2['x'] + OFFSET_X_FIX, p2['y'] + OFFSET_Y_FIX)), TRACE_LINE_WIDTH)
+
+	def drawAnimationPaths(self):
+		for path in self.animationPaths:
+			for i in range(1, min(len(path), self.animationIndex)):
+				pygame.draw.line(self.screen, ANIMATION_PATH_COLOR, self.localNeuronPointToGlobalPoint((path[i-1]['x'] + OFFSET_X_FIX, path[i-1]['y'] + OFFSET_Y_FIX)), self.localNeuronPointToGlobalPoint((path[i]['x'] + OFFSET_X_FIX, path[i]['y'] + OFFSET_Y_FIX)), TRACE_LINE_WIDTH)
 
 	def localNeuronPointToGlobalPoint(self, p):
 		return (p[0] + self.drawImagePos[0], p[1] + self.drawImagePos[1])
@@ -240,8 +229,8 @@ class DrawNeuronScene(Scene):
 		minDist = self.screen.get_width()
 		minIndex = 0
 		index = 0
-		for p in PATH_POINTS:
-			dist = math.hypot(p[0] - pos[0], p[1] - pos[1])
+		for p in self.getCurrPath():
+			dist = math.hypot(p['x'] - pos[0], p['y'] - pos[1])
 			if dist < minDist:
 				minDist = dist
 				minIndex = index
@@ -257,5 +246,5 @@ class DrawNeuronScene(Scene):
 
 	def resetCirclePos(self):
 		self.drawing = False
-		self.circlePos = START_CIRCLE_POS
+		self.circlePos = (self.getCurrPath()[0]['x'] + OFFSET_X_FIX, self.getCurrPath()[0]['y'] + OFFSET_Y_FIX)
 		self.currPointIndexReached = 0

@@ -31,8 +31,10 @@ class VideoPlayer:
 		self.reset()
 
 	def reset(self):
-		self.videoStopped = True
-		self.framesQueue = Queue(maxsize = 128)
+		self.currFrame = None
+		self.videoStopped = False
+		self.canFinish = False
+		self.framesQueue = Queue(maxsize = 30)
 		self.currTime = 0
 		self.video.set(cv2.CAP_PROP_POS_FRAMES, 0)
 	
@@ -46,17 +48,19 @@ class VideoPlayer:
 		self.currTime += dt
 
 		if self.currTime < self.singleFrameTime:
-			self.blitFrame(self.currFrame)
-			return True
+			if self.currFrame is not None:
+				self.blitFrame(self.currFrame)
+			return False
 		else:
 			self.currTime -= self.singleFrameTime
 			
 			if self.framesQueue.qsize() > 0:
-				frame = self.framesQueue.get()
-				self.blitFrame(frame)
+				self.currFrame = self.framesQueue.get()
+				self.blitFrame(self.currFrame)
+			elif self.canFinish:
 				return True
-			else:
-				return False
+			
+			return False
 
 	def play(self):
 		# Start a separate thread to read and process frames into a buffer, for performance
@@ -82,9 +86,9 @@ class VideoPlayer:
 					if self.loop:
 						self.video.set(cv2.CAP_PROP_POS_FRAMES, 0)
 					else:
-						return
- 
-				self.framesQueue.put(self.processFrame(frame))
+						self.canFinish = True
+				else:
+					self.framesQueue.put(self.processFrame(frame))
 
 	def processFrame(self, frame):
 		frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)

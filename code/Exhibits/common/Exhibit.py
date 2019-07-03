@@ -23,7 +23,8 @@ class Exhibit:
 		self.config = Config(CONFIG_FILENAME)
 
 		self.serialPort = None
-		self.openSerialPort()			
+		self.openSerialPort()
+		time.sleep(3)	
 
 		self.touchScreenBounds = (self.config.getTouchScreenMaxX(), self.config.getTouchScreenMaxY())
 
@@ -55,8 +56,9 @@ class Exhibit:
 					self.serialPort = None
 
 	# Try to send to serial, and if an error occurs, open serial port again for X retries
-	def sendToSerialPort(self, command):
-		print("Attempting sending " + str(command) + "...")
+	def sendToSerialPort(self, originalCommand):
+		print("Attempting sending " + str(originalCommand) + "...")
+		command = originalCommand + b'\n'
 		commandSent = False
 
 		if self.config.shouldOpenSerial():
@@ -124,7 +126,7 @@ class Exhibit:
 
 		while isGameRunning:
 
-			try:
+			#ry:
 				for event in pygame.event.get():
 					if event.type == MOUSEBUTTONDOWN:
 						if not self.config.isTouch():
@@ -150,8 +152,8 @@ class Exhibit:
 
 				pygame.display.flip()
 				clock.tick(60)
-			except Exception as e:
-				print(str(e))
+			#except Exception as e:
+			#	print(str(e))
 
 		pygame.quit()
 		cv2.destroyAllWindows()
