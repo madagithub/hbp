@@ -10,21 +10,27 @@ from common.Utilities import Utilities
 from common.Timer import Timer
 from common.VideoPlayer import VideoPlayer
 
+from queue import Queue
+
 NEURON_BUTTON_WIDTH = 200
 NEURON_BUTTON_HEIGHT = 400
 NEURON_BUTTON_PADDING = 50
 
 CIRCLE_RADIUS = 10
+CIRCLE_DOT_RADIUS = 2
 
 MAX_DISTANCE_FROM_PATH = 30
 
 TRACE_LINE_WIDTH = 3
 
-ANIMATION_PATH_COLOR = (0,0,128)
-TRACE_PATH_COLOR = (255,0,0)
-DONE_PATH_COLOR = (0,180,0)
+ANIMATION_PATH_COLOR = (56,143,254)
+ANIMATION_TRACE_COLOR = (255,121,36)
+TRACE_PATH_COLOR = (26,54,163)
+DONE_PATH_COLOR = (231,6,230)
 
 MAX_NON_DRAWING_TIME_UNTIL_RESET = 1.0
+
+DOTTED_SEGMENT_SIZE = 2
 
 NEURON_TO_NAME_KEY = {
 	'martinotti': "RN_CHOOSE_NEURON_MARTINOTTI_NAME",
@@ -39,7 +45,7 @@ MODEL_STATE = '3d-model'
 LIGHTNING_STATE = 'lightning'
 
 OFFSET_X_FIX = 5
-OFFSET_Y_FIX = 7
+OFFSET_Y_FIX = 5
 
 class DrawNeuronScene(Scene):
 	def __init__(self, game, neuronChosen):
@@ -48,15 +54,34 @@ class DrawNeuronScene(Scene):
 
 		self.neuronChosen = neuronChosen
 
-		print(self.neuronChosen)
 		self.animationPaths = self.config.getAnimationPaths(self.neuronChosen)
-		self.drawingPaths = self.config.getDrawingPaths(self.neuronChosen)
+		self.drawingPaths = self.getDrawingPaths([], self.animationPaths, False)
 		random.shuffle(self.drawingPaths)
 		self.selectedPaths = self.drawingPaths[:self.config.getSelectedPathsNumber(self.neuronChosen)]
-		self.animationPaths += self.drawingPaths[(self.config.getSelectedPathsNumber(self.neuronChosen) + 1):]
+
+		q = Queue()
+
+		for path in self.animationPaths:
+			q.put(path)
+
+		while not q.empty():
+			currPath = q.get()
+			isSelected = False
+			for selectedPath in self.selectedPaths:
+				if set(self.pathToList(currPath['path'])).issubset(set(self.pathToList(selectedPath))):
+					isSelected = True
+			currPath['type'] = 'regular' if not isSelected else 'dotted'
+			subPaths = currPath.get('nextPaths', [])
+			for path in subPaths:
+				q.put(path)
+		
 		self.animationIndex = 0
-		self.animationTime = 0
+		self.animationTime = None
 		self.selectedPathIndex = 0
+
+		for path in self.animationPaths:
+			path['done'] = False
+			path['startAnimationIndex'] = 0
 
 		self.drawOnNeuron = pygame.image.load('assets/images/neuron/' + self.neuronChosen + '-big.png')
 		self.videoMask = pygame.image.load('assets/images/video-mask.png')
@@ -89,6 +114,39 @@ class DrawNeuronScene(Scene):
 		self.nextButton.visible = False
 		self.buttons.append(self.nextButton)
 
+	def pathToList(self, path):
+		resultList = []
+		for p in path:
+			resultList.append(p['x'])
+			resultList.append(p['y'])
+		return resultList
+
+	def getDrawingPaths(self, currPath, subPaths, justOne):
+		drawingPaths = []
+
+		dottedSubPaths = list(filter(lambda path: path['type'] == 'dotted', subPaths))
+		nonDottedSubPaths = list(filter(lambda path: path['type'] == 'regular', subPaths))
+
+		dottedPathsToCheck = []
+		if justOne and len(dottedSubPaths) > 0:
+			random.shuffle(dottedSubPaths)
+			dottedPathsToCheck.append(dottedSubPaths[0])
+		else:
+			dottedPathsToCheck = dottedSubPaths
+
+		for subPath in dottedPathsToCheck:
+			if subPath.get('nextPaths', None) is None:
+				drawingPaths.append(currPath + subPath['path'])
+			else:
+				drawingPaths += self.getDrawingPaths(currPath + subPath['path'], subPath.get('nextPaths'), True)
+
+		for subPath in nonDottedSubPaths:
+			if subPath.get('nextPaths', None) is not None:
+				drawingPaths += self.getDrawingPaths([], subPath['nextPaths'], True)
+
+		return drawingPaths
+
+
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
 		self.createTexts()
@@ -118,23 +176,26 @@ class DrawNeuronScene(Scene):
 			self.drawLightningState(dt)
 
 	def drawDrawingState(self, dt):
-		if self.drawing and self.lastUpTime is not None and (pygame.time.get_ticks() - self.lastUpTime) / 1000 > MAX_NON_DRAWING_TIME_UNTIL_RESET:
-			self.resetCirclePos()
-
 		self.screen.blit(self.drawOnNeuron, self.drawImagePos)
-
-		self.drawCurrPath()
-
-		if not self.drawingDone:
-			globalCirclePos = self.localNeuronPointToGlobalPoint(self.circlePos)
-			pygame.draw.circle(self.screen, (255,0,0), globalCirclePos, CIRCLE_RADIUS)
 
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 115))
 		Utilities.drawTextOnCenterX(self.screen, self.instructionText, (self.screen.get_width() // 2, 820))
 
+		if (self.animationTime is None):
+			self.animationTime = 0
+
 		self.animationTime += dt
-		self.animationIndex = int(self.animationTime / 0.1)
+		self.animationIndex = int(self.animationTime / 0.05)
 		self.drawAnimationPaths()
+
+		self.drawCurrPaths()
+
+		if not self.drawingDone:
+			if self.drawing and self.lastUpTime is not None and (pygame.time.get_ticks() - self.lastUpTime) / 1000 > MAX_NON_DRAWING_TIME_UNTIL_RESET:
+				self.resetCirclePos()
+
+			globalCirclePos = self.localNeuronPointToGlobalPoint(self.circlePos)
+			pygame.draw.circle(self.screen, (255,0,0), globalCirclePos, CIRCLE_RADIUS)
 
 		super().draw(dt)
 
@@ -174,24 +235,27 @@ class DrawNeuronScene(Scene):
 	def onMouseMove(self, pos):
 		super().onMouseMove(pos)
 
-		if self.drawing and self.lastUpTime is None:
-			newCirclePos = (pos[0] - int(self.screen.get_width() / 2 - self.drawOnNeuron.get_width() / 2), int(pos[1] - NEURON_IMAGE_Y))
+		if not self.drawingDone:
+			if self.drawing and self.lastUpTime is None:
+				newCirclePos = (pos[0] - int(self.screen.get_width() / 2 - self.drawOnNeuron.get_width() / 2), int(pos[1] - NEURON_IMAGE_Y))
 
-			(distanceFromPath, pointIndex) = self.getDistanceFromPath(newCirclePos)
-			if distanceFromPath >= MAX_DISTANCE_FROM_PATH:
-				self.resetCirclePos()
-			else:
-				self.circlePos = newCirclePos
-				self.currPointIndexReached = pointIndex
+				(distanceFromPath, pointIndex) = self.getDistanceFromPath(newCirclePos)
+				if distanceFromPath >= MAX_DISTANCE_FROM_PATH:
+					self.resetCirclePos()
+				else:
+					self.circlePos = newCirclePos
+					self.currPointIndexReached = pointIndex
 
-				if self.currPointIndexReached == len(self.getCurrPath()) - 1:
-					self.onDrawingDone()
+					if self.currPointIndexReached == len(self.getCurrPath()) - 1:
+						self.onDrawingDone()
 
 	def onDrawingDone(self):
-		#TODO: Move to next drawing...
-
-		self.drawingDone = True
-		self.timer = Timer(2.0, self.onMoveToModelState)
+		self.selectedPathIndex += 1
+		if self.selectedPathIndex >= len(self.selectedPaths):
+			self.drawingDone = True
+			self.timer = Timer(2.0, self.onMoveToModelState)
+		else:
+			self.resetCirclePos()
 
 	def onMoveToModelState(self):
 		self.timer = None
@@ -211,16 +275,53 @@ class DrawNeuronScene(Scene):
 	def onNextClick(self):
 		self.game.transition('SUMMARY', self.neuronChosen)
 
-	def drawCurrPath(self):
-		for index in range(1, self.currPointIndexReached if not self.drawingDone else len(self.getCurrPath())):
-			p1 = self.getCurrPath()[index - 1]
-			p2 = self.getCurrPath()[index]
-			pygame.draw.line(self.screen, TRACE_PATH_COLOR if not self.drawingDone else DONE_PATH_COLOR, self.localNeuronPointToGlobalPoint((p1['x'] + OFFSET_X_FIX, p1['y'] + OFFSET_Y_FIX)), self.localNeuronPointToGlobalPoint((p2['x'] + OFFSET_X_FIX, p2['y'] + OFFSET_Y_FIX)), TRACE_LINE_WIDTH)
+	def drawCurrPaths(self):
+		for i in range(min(len(self.selectedPaths), self.selectedPathIndex + 1)):
+			path = self.selectedPaths[i]
+
+			for index in range(1, self.currPointIndexReached if i == self.selectedPathIndex else len(path)):
+				p1 = path[index - 1]
+				p2 = path[index]
+				pygame.draw.line(self.screen, TRACE_PATH_COLOR if i == self.selectedPathIndex else DONE_PATH_COLOR, self.localNeuronPointToGlobalPoint((p1['x'] + OFFSET_X_FIX, p1['y'] + OFFSET_Y_FIX)), self.localNeuronPointToGlobalPoint((p2['x'] + OFFSET_X_FIX, p2['y'] + OFFSET_Y_FIX)), TRACE_LINE_WIDTH)
 
 	def drawAnimationPaths(self):
+		removePaths = []
+		newPaths = []
+
 		for path in self.animationPaths:
-			for i in range(1, min(len(path), self.animationIndex)):
-				pygame.draw.line(self.screen, ANIMATION_PATH_COLOR, self.localNeuronPointToGlobalPoint((path[i-1]['x'] + OFFSET_X_FIX, path[i-1]['y'] + OFFSET_Y_FIX)), self.localNeuronPointToGlobalPoint((path[i]['x'] + OFFSET_X_FIX, path[i]['y'] + OFFSET_Y_FIX)), TRACE_LINE_WIDTH)
+			pathDefinition = path['path']
+
+			isDrawing = True
+			if path['type'] == 'dotted':
+				dottedCounter = DOTTED_SEGMENT_SIZE
+
+			for i in range(1, min(len(pathDefinition), self.animationIndex - path['startAnimationIndex'])):
+				if isDrawing:
+					if path['type'] == 'dotted':
+						pygame.draw.circle(self.screen, ANIMATION_TRACE_COLOR, self.localNeuronPointToGlobalPoint((pathDefinition[i]['x'] + OFFSET_X_FIX, pathDefinition[i]['y'] + OFFSET_Y_FIX)), CIRCLE_DOT_RADIUS)
+						isDrawing = False
+					else:
+						pygame.draw.line(self.screen, ANIMATION_PATH_COLOR if path['type'] == 'regular' else ANIMATION_TRACE_COLOR, self.localNeuronPointToGlobalPoint((pathDefinition[i-1]['x'] + OFFSET_X_FIX, pathDefinition[i-1]['y'] + OFFSET_Y_FIX)), self.localNeuronPointToGlobalPoint((pathDefinition[i]['x'] + OFFSET_X_FIX, pathDefinition[i]['y'] + OFFSET_Y_FIX)), TRACE_LINE_WIDTH)
+
+				if path['type'] == 'dotted':
+					dottedCounter -= 1
+					if dottedCounter == 0:
+						isDrawing = not isDrawing
+						dottedCounter = DOTTED_SEGMENT_SIZE
+
+			if not path['done'] and self.animationIndex >= len(pathDefinition) + path['startAnimationIndex']:
+				path['done'] = True
+				for newPath in path.get('nextPaths', []):
+					newPath['done'] = False
+					newPath['startAnimationIndex'] = len(pathDefinition) + path['startAnimationIndex']
+					newPaths.append(newPath)
+
+		for path in removePaths:
+			self.animationPaths.remove(path)
+
+		for path in newPaths:
+			self.animationPaths.append(path)
+
 
 	def localNeuronPointToGlobalPoint(self, p):
 		return (p[0] + self.drawImagePos[0], p[1] + self.drawImagePos[1])
