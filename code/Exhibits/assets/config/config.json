@@ -658,24 +658,537 @@
 			"RN_SUMMARY_SCREEN_MODELING_TEXT": "Reconstructing the cell structure",
 			"RN_SUMMARY_SCREEN_ELECTRIFY_TEXT": "Activating the cell",
 
-			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell"
+			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell",
+
+			"DFAM_OPENING_SCREEN_HEADER": "Doctor for a moment",
+			"DFAM_OPENING_SCREEN_SUB_HEADER": "You have an opportunity to be a doctor\nPress the button and meet your new patient",
+			"DFAM_OPENING_SCREEN_BUTTON_TEXT": "Start",
+
+			"DFAM_EXP_SCREEN_BUTTON_TEXT": "Continue",
+			"DFAM_EXP_SCREEN_HEADER_TEXT": "Your new patient describes a state of confusion and\nforgetfulness. Does he have Alzheimer’s disease?",
+			"DFAM_EXP_SCREEN_INFO_TEXT": "To diagnose him, you need to carry out a number of tests.\nIn Alzheimer’s the neurons in the brain die gradually, causing damage to\ncognitive abilities such as memory, orientation, and more.",
+
+			"DFAM_CHOOSE_TEST_INSTRUCTION": "Select the test you wish to conduct on the patiant",
+			"DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT": "Run test",
+
+			"DFAM_COGNITIVE_TEST_NAME": "Cognitive tests",
+			"DFAM_COGNITIVE_TEST_DESC": "Cognitive tests are a list of tasks testing the\nperformance of various brain functions",
+			"DFAM_PET_TEST_NAME": "PET test",
+			"DFAM_PET_TEST_DESC": "A PET (Positron Emission Tomography) test is a\nscan of the brain measuring the concentration of\nparticular substances. For instance, a PET scan can\nsearch for beta-amyloid plaques, which are\ncommon only among Alzheimer’s patients.",
+			"DFAM_MRI_TEST_NAME": "MRI test",
+			"DFAM_MRI_TEST_DESC": "An MRI (Magnetic Resonance Imaging) test is\na scan of the brain using radio waves and a\nstrong magnetic field. The scan creates an\nimage of the brain and the state it is in.",
+
+			"DFAM_TEST_IN_PROGRESS_HEADER_MRI": "An MRI scan is taking place",
+			"DFAM_TEST_IN_PROGRESS_HEADER_PET": "A PET scan is taking place",
+			"DFAM_TEST_IN_PROGRESS_HEADER_COGNITIVE": "A cognitive scan is taking place",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI": "Follow the process on the patient model",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET": "Follow the process on the patient model",
+
+			"DFAM_TEST_RESULTS_HEADER_COGNITIVE": "Cognitive test results",
+			"DFAM_TEST_RESULTS_HEADER_PET": "PET test results",
+			"DFAM_TEST_RESULTS_HEADER_MRI": "MRI test results",
+
+			"DFAM_TEST_RESULTS_DESC_COGNITIVE": "Drawing a clock requires mental abilities that are damaged by Alzheimer’s, such as\nmanagement, understanding numbers, knowledge retrieval and more.",
+			"DFAM_TEST_RESULTS_DESC_PET": "Brains of Alzheimer’s patients show many plaques of beta-amyloid protein that are not found\nin the brains of healthy people. If we mark these plaques with radioactive materials and\nconduct a PET scan, we would expect to see many areas with high concentration (in red).",
+			"DFAM_TEST_RESULTS_DESC_MRI": "In Alzheimer disease, cells die throughout the brain and the\nbrain tissue becomes ‘thin’, containing less and less cells (and\nmore and more ‘black’ fissures in the brain).",
+
+			"DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT": "Run more tests",
+			"DFAM_TEST_RESULTS_HEALTHY_HEADER": "Healthy patient",
+			"DFAM_TEST_RESULTS_RESULTS_HEADER": "Test result",
+
+			"DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT": "See results",
+
+			"DFAM_DIAGNOSE_BUTTON_TEXT": "Diagnose",
+			"DFAM_DIAGNOSE_YES_BUTTON_TEXT": "Yes",
+			"DFAM_DIAGNOSE_NO_BUTTON_TEXT": "No",
+			"DFAM_DIAGNOSE_QUESTION_TEXT": "Does the patient have Alzheimer’s?",
+
+			"DFAM_EVALUATION_SCREEN_CORRECT_HEADER": "The diagnosis is correct",
+			"DFAM_EVALUATION_SCREEN_INCORRECT_HEADER": "The diagnosis is incorrect, please try again",
+			"DFAM_EVALUATION_SCREEN_HEALTHY_HEADER": "The patient does not have Alzheimer’s",
+			"DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER": "Our patient does have Alzheimer’s.",
+
+			"DFAM_EVALUATION_ANOTHER_PATIENT_TEXT": "Accept another patient",
+			"DFAM_EVALUATION_LEARN_MORE_TEXT": "Learn more",
+
+			"DFAM_LEARN_MORE_BACK_BUTTON_TEXT": "Back",
+			"DFAM_LEARN_MORE_HEALTHY_DESC_TEXT": "The tests do not seem to indicate the patient\nhas Alzheimer’s.\nThe MRI test shows a normal brain. In Alzheimer’s,\ncells die throughout the brain so that the brain tissue\nbecomes thin, unlike the case of our patient.\n\nMany abilities related to drawing a clock, such as\nknowledge retrieval and management, are impaired in\nAlzheimer’s patients. However, our patient was able\nto draw a clock properly.\n\nThe PET scan indicating beta-amyloid plaques very\ncommon among Alzheimer’s patients (but not in healthy\nbrains) showed no red concentrations at all.\nMeaning, there are no beta-amyloid plaques in our\npatient’s brain, as opposed to what we would expect\nto find in an Alzheimer’s patient.",
+			"DFAM_LEARN_MORE_NOT_HEALTHY_DESC_TEXT": "The patient does have Alzheimer’s.\nThe MRI test showed that the brain tissue is very thin\nbecause of the extensive death of neuron cells that\ntakes place in Alzheimer’s disease.\n\nThe death of the cells damages various brain abilities\nsuch as management and knowledge retrieval.\nFor this reason the patient was unable to draw\na clock properly.\n\nThe PET scan marked plaques of beta-amyloid that\nare very common in Alzheimer’s patients (but not in\nhealthy brains), showing many red concentrations.\nThese areas show a high concentration of\nbeta-amyloid, typical of Alzheimer’s patients.",
+
+			"OS_HBP_TEXT": "About the\nHuman Brain Project",
+			"OS_WHAT_IS_THE_QUESTION_TEXT": "What's the question?!\nConversations of young\nresearchers",
+			"OS_CAJAL_TEXT": "Santiago Ramón y Cajal",
+			"OS_MAP_TEXT": "The Human Brain Project\nin Europe",
+			"OS_BRAIN_STRUCTURES_MAP_TEXT": "Brain structures\nLaboratory findings",
+			"OS_10_QUESTIONS_TEXT": "10 unanswered questions\nabout the human brain",
+			"OS_DANCING_NEURON_TEXT": "The Electrically\nDancing Neuron",
+			"OS_MTB_TEXT": "Credits",
+
+			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
+
+			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "Play video",
+
+			"OS_MAP_P1_NAME": "The Federal Institute of Technology in Lausanne",
+			"OS_MAP_P1_CITY": "Lausanne, Switzerland",
+
+			"OS_MAP_P2_NAME": "Aalto University Foundation",
+			"OS_MAP_P2_CITY": "Espoo, Finland",
+
+			"OS_MAP_P3_NAME": "University Hospital Leiden - Leiden University Medical Center",
+			"OS_MAP_P3_CITY": "Leiden, The Netherlands",
+
+			"OS_MAP_P4_NAME": "Athens University of Economics and Business",
+			"OS_MAP_P4_CITY": "Athens, Greece",
+			"OS_MAP_P4_DESC": "The Data Science group at the AUEB conducts\nresearch on and builds services for aligning,\ncleaning, integrating, and enriching clinical\ndata from participating hospitals so as to be\nimported to the Medical Informatics Platform\nof the HBP. The group also works on Big Data\nprocessing and Data Management for Machine\nLearning.",
+
+			"OS_MAP_P5_NAME": "National Supercomputing Center",
+			"OS_MAP_P5_CITY": "Barcelona, Spain",
+			"OS_MAP_P5_DESC": "BSC is the Spanish National facility for\nsupercomputing, specializes in High Performance\nComputing and hosts MareNostrum, one of the most\npowerful supercomputers in Europe. BSC contributes\ntowards the creation of the HPAC Platform,\nproviding supercomputing capacities for the\nNeuroscience Community and developing the FENIX\ninfrastructure for the benefit of HBP users.",
+
+			"OS_MAP_P6_NAME": "Bauhaus University, Weimar",
+			"OS_MAP_P6_CITY": "Weimar, Germany",
+
+			"OS_MAP_P7_NAME": "The University of Wuppertal (BUW)",
+			"OS_MAP_P7_CITY": "Wuppertal, Germany",
+			"OS_MAP_P7_DESC": "The High Performance Computing group at the BUW\nworks on the development and improvement of\nnumerical methods used in the simulation engines\nthat are developed in the HBP, such as the spiking\nneural network simulator NEST. Present\nachievements are the inclusion of gap junctions\nand rate models in the NEST simulator.",
+
+			"OS_MAP_P8_NAME": "The Bloomfield Science Museum Jerusalem (BSMJ)",
+			"OS_MAP_P8_CITY": "Jerusalem, Israel",
+			"OS_MAP_P8_DESC": "BSMJ is an informal cultural and educational\ninstitution, serving all sectors of society. It\ndevelops and creates interactive exhibitions\npresenting science and technology, and integrates\nthem into a range of activities. In HBP, BSMJ\npromotes ways to engage brain research to the\npublic such as developing an interactive traveling\nexhibition.",
+
+			"OS_MAP_P9_NAME": "Cardiff University",
+			"OS_MAP_P9_CITY": "Cardiff, United Kingdom",
+
+			"OS_MAP_P10_NAME": "The Scientific Research National Center",
+			"OS_MAP_P10_CITY": "Paris, France",
+
+			"OS_MAP_P11_NAME": "The Office of Atomic Energy and Alternative Energies",
+			"OS_MAP_P11_CITY": "Paris, France",
+
+			"OS_MAP_P12_NAME": "The National Research Council",
+			"OS_MAP_P12_CITY": "Palermo, Italy",
+			"OS_MAP_P12_DESC": "The Institute of Biophysics of the National\nResearch Council is located in Palermo (Italy). In\nHBP we are deeply involved in the development of a\ndetailed, data-driven, full scale 3D computational\nmodel of the rodent and human hippocampus, and in\nthe implementation and management of the European\nBrain Research Infrastructure.",
+
+			"OS_MAP_P13_NAME": "The Italian Supercomputing Centre",
+			"OS_MAP_P13_CITY": "Bologna, Italy",
+			"OS_MAP_P13_DESC": "The Italian supercomputing centre CINECA provides\nhigh performance computing and data services for\nthe Italian and the European research community.\nFor the Human Brain Project, it fosters the\nfederation of data and scalable compute services\nto address the analytics needs of the neuroscience\ncommunity.",
+
+			"OS_MAP_P14_NAME": "Technical University of Denmark",
+			"OS_MAP_P14_CITY": "Kongens Lyngby, Denmark",
+
+			"OS_MAP_P15_NAME": "University of Debrecen",
+			"OS_MAP_P15_CITY": "Debrecen, Hungary",
+
+			"OS_MAP_P16_NAME": "De Montfort University",
+			"OS_MAP_P16_CITY": "Leicester, United Kingdom",
+
+			"OS_MAP_P17_NAME": "École Normale Supérieure",
+			"OS_MAP_P17_CITY": "Paris, France",
+
+			"OS_MAP_P18_NAME": "The Swiss Federal Institute of Technology",
+			"OS_MAP_P18_CITY": "Zürich, Switzerland",
+			"OS_MAP_P18_DESC": "CSCS is an autonomous unit of the Swiss Federal\nInstitute of Technology in Zurich. CSCS provides\nscientists with the computing infrastructure and\nexpertise, from cutting-edge super-computers to a\nfull range of services related to HPC. ETHZ is\nco-leading in HBP the High-Performance Analytics\nand Computing Platform and coordinates the\n“Integration and operation” WP.",
+
+			"OS_MAP_P19_NAME": "The Danish Board of Technology Foundation",
+			"OS_MAP_P19_CITY": "Hvidovre, Denmark",
+			"OS_MAP_P19_DESC": "The Danish Board of Technology Foundation is part\nof HBP’s ’Ethics and Society’ group, facilitating\ndialogue with publics, stakeholders and the HBP on\nsocial, ethical, legal issues related to HBP\nresearch. The Foundations’ mission is to ensure\nthat society’s development is shaped by informed\nand forward-looking cooperation between citizens,\nexperts, stakeholders, and decision-makers.",
+
+			"OS_MAP_P20_NAME": "Forschungszentrum Jülich",
+			"OS_MAP_P20_CITY": "Jülich, Germany",
+			"OS_MAP_P20_DESC": "Forschungszentrum Jülich is a multi-disciplinary\nresearch institution and member of the Helmholtz\nAssociation. It contributes to the HBP with its\nInstitute of Neuroscience and Medicine and the\nJülich Supercomputing Centre. Neuroscientists and\ntechnical experts work together to build an\ninfrastructure that enables high-resolution brain\natlases, multi-scale simulation and data analysis\nworkflows.",
+
+			"OS_MAP_P21_NAME": "Fortiss GmbH",
+			"OS_MAP_P21_CITY": "Munich, Germany",
+
+			"OS_MAP_P22_NAME": "Fraunhofer-Gesellschaft for the Promotion of Applied Research",
+			"OS_MAP_P22_CITY": "Darmstadt, Germany",
+
+			"OS_MAP_P23_NAME": "Foundation Anna Sommer Champalimaud and Dr Carlos Montez Champalimaud",
+			"OS_MAP_P23_CITY": "Lisbon, Portugal",
+
+			"OS_MAP_P24_NAME": "Heinrich-Heine-University, Dusseldorf",
+			"OS_MAP_P24_CITY": "Düsseldorf, Germany",
+
+			"OS_MAP_P25_NAME": "University of Helsinki",
+			"OS_MAP_P25_CITY": "Helsinki, Finland",
+
+			"OS_MAP_P26_NAME": "Heidelberg Institute for Theoretical Studies (HITS)",
+			"OS_MAP_P26_CITY": "Heidelberg, Germany",
+			"OS_MAP_P26_DESC": "HITS is a private, non-profit research institute\ncarrying out basic multidisciplinary computational\nresearch in fields ranging from molecular biology\nto astrophysics. Rebecca Wade and her research\ngroup are developing multiscale molecular modeling\nand simulation tools in the HBP Brain Simulation\nPlatform, facilitating the design of new medicines\nfor brain diseases.",
+
+			"OS_MAP_P27_NAME": "University Hospital Vaudois",
+			"OS_MAP_P27_CITY": "Lausanne, Switzerland",
+
+			"OS_MAP_P28_NAME": "Imperial College of Science, Technology and Medicine",
+			"OS_MAP_P28_CITY": "London, United Kingdom",
+
+			"OS_MAP_P29_NAME": "Brain and Spinal Cord Institute",
+			"OS_MAP_P29_CITY": "Paris, France",
+
+			"OS_MAP_P30_NAME": "Institute of Experimental Medicine, Hungarian Academy of Sciences",
+			"OS_MAP_P30_CITY": "Budapest, Hungary",
+
+			"OS_MAP_P31_NAME": "Institute of Science and Technology Austria (IST)",
+			"OS_MAP_P31_CITY": "Klosterneuburg, Austria",
+			"OS_MAP_P31_DESC": "IST Austria located in Klosterneuburg is a young\ninternational institute dedicated to basic\nresearch including neuroscience. Prof. Shigemoto’s\ntask in HBP project is to provide quantitative\ndata on number and distribution of key ion\nchannels and neurotransmitter receptors in\ndistinct membrane compartments of major principle\nneurons in the brain.",
+
+			"OS_MAP_P32_NAME": "Jožef Stefan Institute",
+			"OS_MAP_P32_CITY": "Ljubljana, Slovenia",
+
+			"OS_MAP_P33_NAME": "National Institute of Research in Computer Science and Automation",
+			"OS_MAP_P33_CITY": "Sophia Antipolis, France",
+			"OS_MAP_P33_DESC": "Inria performs comprehensive analyses of brain\nfunctional organization based on exhaustive\nanalyses of brain imaging dataset. Inria also\ncontributes  an openly available brain imaging\ndataset that provides a reference to study the\nfunctional architecture of the brain, and\nopen-source software that make brain data analyses\neasy and reproducible.",
+
+			"OS_MAP_P34_NAME": "Pasteur Institute",
+			"OS_MAP_P34_CITY": "Paris, France",
+
+			"OS_MAP_P35_NAME": "Johann Wolfgang Goethe University Frankfurt-am-Main",
+			"OS_MAP_P35_CITY": "Frankfurt-am-Main, Germany",
+
+			"OS_MAP_P36_NAME": "Karlsruher Institute for Technology",
+			"OS_MAP_P36_CITY": "Karlsruhe, Germany",
+
+			"OS_MAP_P37_NAME": "Karolinska Institutet",
+			"OS_MAP_P37_CITY": "Stockholm, Sweden",
+
+			"OS_MAP_P38_NAME": "King's College London",
+			"OS_MAP_P38_CITY": "London, United Kingdom",
+
+			"OS_MAP_P39_NAME": "The Royal Institute of Technology",
+			"OS_MAP_P39_CITY": "Stockholm, Sweden",
+
+			"OS_MAP_P40_NAME": "European Non Linear Spectroscopy Laboratory",
+			"OS_MAP_P40_CITY": "Florence, Italy",
+
+			"OS_MAP_P41_NAME": "Linnaeus University",
+			"OS_MAP_P41_CITY": "Kalmar, Sweden",
+			"OS_MAP_P41_DESC": "At Linnaeus University Shamim Patel (ACA)\n(Department of External Relations) and Dr Kim\nHåkansson (Faculty of Health Life Sciences) both\nwork on the HBP as part of the Ethics Support\nteam. Shamim manages the Ethics Advisory Board and\nOther Ethics Services and Kim is the HBP Animal\nResearch Ethics Coordinator.",
+
+			"OS_MAP_P42_NAME": "The Medical University of Innsbruck",
+			"OS_MAP_P42_CITY": "Innsbruck, Austria",
+			"OS_MAP_P42_DESC": "The Medical University of Innsbruck was one of the\nfirst faculties of the University of Innsbruck,\nAustria, and played an important role throughout\nits 340-year history. As an HBP partner, it hosts\nthe interdisciplinary HBP Education Programme for\nearly-career researchers, supports trainings on\nHBP infrastructure and coordinates HBP outreach\nand engagement activities.",
+
+			"OS_MAP_P43_NAME": "National and Kapodistrian University of Athens",
+			"OS_MAP_P43_CITY": "Athens, Greece",
+
+			"OS_MAP_P44_NAME": "The Norwegian University of Life Sciences",
+			"OS_MAP_P44_CITY": "Ås, Norway",
+			"OS_MAP_P44_DESC": "The Computational Neuroscience Group at the\nNorwegian University of Life Sciences (NMBU)\ndevelops simulation technology for brain-scale\nnetwork simulations on supercomputers as well as\nmethods and tools to compute brain signals such as\nEEG and MEG from simulations for direct comparison\nto experiments.",
+
+			"OS_MAP_P45_NAME": "Austrian Research Society for Cybernetics",
+			"OS_MAP_P45_CITY": "Vienna, Austria",
+
+			"OS_MAP_P46_NAME": "Rheinisch-Westfälische Technical University of Aachen",
+			"OS_MAP_P46_CITY": "Aachen, Germany",
+
+			"OS_MAP_P47_NAME": "Ruprecht-Karls-University Heidelberg",
+			"OS_MAP_P47_CITY": "Heidelberg, Germany",
+			"OS_MAP_P47_DESC": "The UHEI group explores and implements novel\nconcepts for information processing in massively\nparallel, mixed-signal VLSI technologies. The\ngroup led the EU project BrainScaleS, one of the\nfoundations for the HBP and in that context\npioneered the use of wafer-scale integration for\nphysical neuromorphic systems, now continued in\nHBP.",
+
+			"OS_MAP_P48_NAME": "Sabancı University",
+			"OS_MAP_P48_CITY": "Istanbul, Turkey",
+
+			"OS_MAP_P49_NAME": "Sant'Anna School of Advanced Studies",
+			"OS_MAP_P49_CITY": "Pisa, Italy",
+
+			"OS_MAP_P50_NAME": "Center for Mathematics and Computer Science",
+			"OS_MAP_P50_CITY": "Amsterdam, The Netherlands",
+
+			"OS_MAP_P51_NAME": "The Catholic University Foundation",
+			"OS_MAP_P51_CITY": "Nijmegen, The Nethterlands",
+
+			"OS_MAP_P52_NAME": "The FZI Research Center for Information Technology in Karlsruhe",
+			"OS_MAP_P52_CITY": "Karlsruhe, Germany",
+			"OS_MAP_P52_DESC": "FZI is a non-profit institution for applied\nresearch in information technology and technology\ntransfer. FZI is researching neuro-robotics and\nclosed-loop experiments in the HBP with the goal\nto better understand the highly complex vision and\nmotion systems of humans.",
+
+			"OS_MAP_P53_NAME": "Technical University of Crete",
+			"OS_MAP_P53_CITY": "Crete, Greece",
+
+			"OS_MAP_P54_NAME": "The Technical University Dresden",
+			"OS_MAP_P54_CITY": "Dresden, Germany",
+			"OS_MAP_P54_DESC": "The TU Dresden is one of eleven German\nUniversities of Excellence. Within the HBP, the\nchair for Highly-Parallel VLSI Systems and\nNeuromorphic Circuits is responsible for the\ndesign and implementation of the SpiNNaker2\nneuromorphic system, aiming at real-time human\nbrain-size spiking neural network simulation on 10\nmillion ARM processors.",
+
+			"OS_MAP_P55_NAME": "Graz University of Technology",
+			"OS_MAP_P55_CITY": "Graz, Austria",
+
+			"OS_MAP_P56_NAME": "The Technical University of Munich",
+			"OS_MAP_P56_CITY": "Munich, Germany",
+			"OS_MAP_P56_DESC": "The Technical University of Munich (TUM) is one of\nthe highest ranked universities in Europe, and the\nDepartment of Informatics one of the largest\ncomputer science departments in Germany, with a\nlong tradition of industry collaboration. In HBP,\nTUM leads development of the NeuroRobotics\nPlatform, compliant neurorobotics, and behavioral\narchitectures.",
+
+			"OS_MAP_P57_NAME": "Tel Aviv University",
+			"OS_MAP_P57_CITY": "Tel Aviv, Israel",
+			"OS_MAP_P57_DESC": "Tel Aviv University (TAU) is a leading,\ncomprehensive academic institution that offers\nalmost all areas of science on one campus. In HBP\nTAU holds the vice chairmanship for medical\ninformatics and is responsible for the development\nof statistical methodology in the project,\nalongside its application in clinical research.",
+
+			"OS_MAP_P59_NAME": "The Chancellor, Masters and Scholars of the University of Oxford",
+			"OS_MAP_P59_CITY": "Oxford, United Kingdom",
+
+			"OS_MAP_P60_NAME": "Hebrew University of Jerusalem",
+			"OS_MAP_P60_CITY": "Jerusalem, Israel",
+			"OS_MAP_P60_DESC": "Idan Segev’s team involved with the HBP is located\nat the new Edmond and Lily Safra Center for Brain\nSciences (ELSC), at the Hebrew University of\nJerusalem. ELSC encompasses a powerful computer\ncluster for large-scale simulations and the\nprestigious Ph.D. program in Neural Computation\n(100 multidisciplinary students).",
+
+			"OS_MAP_P61_NAME": "University of Aberdeen",
+			"OS_MAP_P61_CITY": "Aberdeen, United Kingdom",
+
+			"OS_MAP_P62_NAME": "University of Edinburgh",
+			"OS_MAP_P62_CITY": "Edinburgh, United Kingdom",
+
+			"OS_MAP_P63_NAME": "University of Manchester",
+			"OS_MAP_P63_CITY": "Manchester, United Kingdom",
+			"OS_MAP_P63_DESC": "The University of Manchester, based in the world’s\nfirst industrial city, has been host to 25 Nobel\nLaureates and Alan Turing, seen the atom split,\nthe birth of the modern computer, and the\ndiscovery of graphene. Within the HBP it hosts\nSpiNNaker, the world’s largest neuromorphic\ncomputing platform.",
+
+			"OS_MAP_P64_NAME": "The Autonomous University of Madrid",
+			"OS_MAP_P64_CITY": "Madrid, Spain",
+
+			"OS_MAP_P65_NAME": "Castilla-La Mancha university",
+			"OS_MAP_P65_CITY": "Ciudad Real, Spain",
+
+			"OS_MAP_P66_NAME": "Granada University",
+			"OS_MAP_P66_CITY": "Granada, Spain",
+			"OS_MAP_P66_DESC": "The Applied Computational Neuroscience lab led by\nProf. Eduardo Ros at Granada University builds\nmodels of neural systems as the cerebellum among\nothers. We aim to better understand the\ncomputational principles of these neural centers\nand how they are supported by biophysical\nsubstrate (properties of cells, network and\nadaptation mechanisms).",
+
+			"OS_MAP_P67_NAME": "Minho university",
+			"OS_MAP_P67_CITY": "Braga, Portugal",
+
+			"OS_MAP_P68_NAME": "The Technical University of Madrid",
+			"OS_MAP_P68_CITY": "Madrid, Spain",
+			"OS_MAP_P68_DESC": "Technical University of Madrid (UPM) is the\nlargest Spanish technological university. With two\nrecognitions as Campus of International\nExcellence, it is outstanding in its research\nactivity. Five research UPM groups are\nparticipating in the project working on the fields\nof Neuroscience, Data Analysis, High-Performance\nComputing and Innovation.",
+
+			"OS_MAP_P69_NAME": "The Universidad Rey Juan Carlos",
+			"OS_MAP_P69_CITY": "Madrid, Spain",
+			"OS_MAP_P69_DESC": "The role of the Universidad Rey Juan Carlos (URJC)\nin the HBP is, on one hand, to develop\nvisualization tools that allow neuroscientists to\ndo visual exploratory analysis of data, both\nmorphological or simulation. On the other hand,\nURJC is also responsible of the development of the\nremote visualization backend.",
+
+			"OS_MAP_P70_NAME": "The University of Pavia",
+			"OS_MAP_P70_CITY": "Pavia, Italy",
+
+			"OS_MAP_P71_NAME": "Universität Bern",
+			"OS_MAP_P71_CITY": "Bern, Switzerland",
+			"OS_MAP_P71_DESC": "In the Computational Neuroscience group at the\nUniversity of Bern we investigate the\nextraordinary learning capabilities of biological\nsystems. Building mathematical models and computer\nsimulations we explore how these processes could\nbe organized in the central nervous system, and\nhow the underlying computational principles can\nenhance the capabilities of biologically inspired\nartificial intelligence.",
+
+			"OS_MAP_P72_NAME": "Universität Bielefeld",
+			"OS_MAP_P72_CITY": "Bielefeld, Germany",
+			"OS_MAP_P72_DESC": "Bielefeld University develops a modular, scalable\nbenchmark framework which allows scientific end\nusers to select the best neuromorphic hardware\nsystem and a matching platform-agnostic network\narchitecture based on their specific requirements.\nWe are also contributing to graphical software\ntools and accompanying libraries aimed at domain\nexperts in neuro science.",
+
+			"OS_MAP_P73_NAME": "Aachen University Hospital",
+			"OS_MAP_P73_CITY": "Aachen, Germany",
+			"OS_MAP_P73_DESC": "Aachen University Hospital combines patient care,\nmedical education and translational research. It\nis currently involved in two tasks of HBP. In\ncollaboration with Jülich we intend to improve our\nunderstanding of receptor architecture. We also\ntry to implement a federated database to enable\nBig Data analyses of psychiatric disorders.",
+
+			"OS_MAP_P74_NAME": "University Hospital Hamburg-Eppendorf",
+			"OS_MAP_P74_CITY": "Hamburg, Germany",
+
+			"OS_MAP_P75_NAME": "University of Zurich",
+			"OS_MAP_P75_CITY": "Zürich, Switzerland",
+
+			"OS_MAP_P76_NAME": "University of Barcelona",
+			"OS_MAP_P76_CITY": "Barcelona, Spain",
+
+			"OS_MAP_P77_NAME": "Pompeu Fabra University",
+			"OS_MAP_P77_CITY": "Barcelona, Spain",
+			"OS_MAP_P77_DESC": "Universitat Pompeu Fabra (UPF) Center for Brain\nand Cognition, PI: Gustavo Deco. UPF leads work\npackage 4.4 “Models of Brain Activity and\nFunction”. UPF participates in work package 4.5\n“Linking Model Activity And  Function To\nExperimental Data” and builds whole-brain network\nmodels for individuals that mimic pathologies\nincluding epilepsy.",
+
+			"OS_MAP_P78_NAME": "University of Aix Marseille",
+			"OS_MAP_P78_CITY": "Marseille, France",
+			"OS_MAP_P78_DESC": "Institut de Neurosciences des Systèmes (INS) in\nthe University is a multidisciplinary research\ninstitute focused on understanding the complex\ndynamics of the brain. Within HBP, INS works on\ndemonstrating the predictive value of large-scale\nbrain network models, in particular for the\nindividualized epileptic activity and for the\nimpaired connectivity, and on building a\nmulti-scale brain atlas.",
+
+			"OS_MAP_P79_NAME": "University of Bordeaux",
+			"OS_MAP_P79_CITY": "Bordeaux, France",
+
+			"OS_MAP_P80_NAME": "Antwerp University",
+			"OS_MAP_P80_CITY": "Antwerp, Belgium",
+			"OS_MAP_P80_DESC": "At Antwerp University, we study cortical function\ncombining technological, experimental and\ntheoretical approaches, ranging from arrays of\nmicroelectrodes to patch-clamp and from the micro-\nand nanotechnologies for to the computer\nsimulation of neuron models. We lead in HBP the\ntask on Input-Output Transfer function.",
+
+			"OS_MAP_P81_NAME": "University of Oslo",
+			"OS_MAP_P81_CITY": "Oslo, Norway",
+
+			"OS_MAP_P82_NAME": "University College London",
+			"OS_MAP_P82_CITY": "London, United Kingdom",
+			"OS_MAP_P82_DESC": "University College London (UCL) is London’s\nleading multidisciplinary university and is the\ntop university in the United Kingdom for research\nstrength. UCL contribution to SP6 is to provide\ncorrelated electrophysiological and anatomical\ndata from hippocampal neurones for the generation\nof a data-driven model of the hippocampus.",
+
+			"OS_MAP_P83_NAME": "Uppsala University",
+			"OS_MAP_P83_CITY": "Uppsala, Sweden",
+			"OS_MAP_P83_DESC": "Uppsala University is part of the HBP through its\nNeuro-ethics and Philosophy Group in the Centre\nfor Research Ethics and Bioethics. This group, led\nby Professor Kathinka Evers –director of the\nSubproject “Ethics & Society”- carries out\nconceptual and philosophical analyses of\ntheoretical and practical issues raised by\nneuroscience, ICT and applications.",
+
+			"OS_MAP_P84_NAME": "The Weizmann Institute of Science",
+			"OS_MAP_P84_CITY": "Rehovot, Israel",
+			"OS_MAP_P84_DESC": "The Weizmann Institute of Science is one of the\nworld's top-ranking multidisciplinary research\ninstitutes that explore the natural and exact\nsciences. The Institute’s involvement in HBP is in\nmodeling visual system functional and circuit\nmodels, with applications to cognition and\nneuro-robotics; and in generating mathematical\nmodels of memory to better understand human\ncognition.",
+
+			"OS_MAP_P85_NAME": "Technische Universität Darmstadt",
+			"OS_MAP_P85_CITY": "Darmstadt, Germany",
+			"OS_MAP_P85_DESC": "The Laboratory for Parallel Programming belongs to\nthe Department of Computer Science at Technische\nUniversität Darmstadt in Germany. We are working\non methods that make data-intensive brain analyses\nrun faster and on algorithms that help better\nunderstand how individual neurons connect to each\nother.",
+
+			"OS_MAP_P86_NAME": "University of Geneva",
+			"OS_MAP_P86_CITY": "Geneva, Switzerland",
+
+			"OS_MAP_P87_NAME": "University of Glasgow",
+			"OS_MAP_P87_CITY": "Glasgow, United Kingdom",
+
+			"OS_MAP_P89_NAME": "University of Hamburg",
+			"OS_MAP_P89_CITY": "Hamburg, Germany",
+
+			"OS_MAP_P90_NAME": "Humboldt University of Berlin",
+			"OS_MAP_P90_CITY": "Berlin, Germany",
+
+			"OS_MAP_P91_NAME": "The Royal Netherlands Academy of Arts and Sciences",
+			"OS_MAP_P91_CITY": "Amsterdam, The Netherlands",
+
+			"OS_MAP_P92_NAME": "The National Institute of Nuclear Physics",
+			"OS_MAP_P92_CITY": "Rome, Italy",
+
+			"OS_MAP_P93_NAME": "August Pi i Sunyer Biomedical Research Institute",
+			"OS_MAP_P93_CITY": "Barcelona, Spain",
+
+			"OS_MAP_P94_NAME": "University of Milan",
+			"OS_MAP_P94_CITY": "Milan, Italy",
+			"OS_MAP_P94_DESC": "Dr. Massimini’s research group is located at the\nUniversity of Milan and focuses on the\nneurophysiological factors supporting complex\ninteractions within the human brain and their role\nfor the fading and recovery of consciousness\nacross brain states (sleep, anesthesia and brain\nlesions) through invasive and non-invasive\ntechniques across different spatial scales.",
+
+			"OS_MAP_P95_NAME": "Institute for Bioengineering of Catalonia",
+			"OS_MAP_P95_CITY": "Barcelona, Spain",
+
+			"OS_MAP_P96_NAME": "National Institute of Health",
+			"OS_MAP_P96_CITY": "Rome, Italy",
+
+			"OS_MAP_P97_NAME": "University of Liège",
+			"OS_MAP_P97_CITY": "Liège, Belgium",
+			"OS_MAP_P97_DESC": "Our GIGA-Consciousness Unit is part of the GIGA\nresearch institute (University of Liège, Belgium).\nIn the framework of HBP, our multidisciplinary\nteam aims at studying human consciousness and its\npathological, pharmacological and physiological\nmodifications, notably using electrophysiology and\nneuroimaging tools, as well as investigating the\nethical issues of such a research.",
+
+			"OS_MAP_P98_NAME": "The University of Amsterdam",
+			"OS_MAP_P98_CITY": "Amsterdam, The Netherlands",
+			"OS_MAP_P98_DESC": "The University of Amsterdam is included in\ninvestigating cognitive and system neuroscience\nphenomena in HBP, besides coordinating 5 teams of\nresearchers from 17 institutions around Europe.\nOur main focus is to study perception, memory,\nsleep, consciousness and develop methods for\nintegrating data from multiple scales into HBP ICT\nPlatforms.",
+
+			"OS_MAP_P99_NAME": "The German Center for Neurodegenerative Diseases",
+			"OS_MAP_P99_CITY": "Bonn, Germany",
+			"OS_MAP_P99_DESC": "The core objectives of the research are to\nunderstand causes and risk factors for\nneurodegenerative diseases & to develop new\ntherapeutic and preventive strategies by\ntranslating fundamental discoveries into clinical\nand public health applications. Within the HBP we\nare focusing on deciphering the heterogeneity of\nneurons by single-cell RNA-sequencing.",
+
+			"OS_MAP_P100_NAME": "University of Sheffield",
+			"OS_MAP_P100_CITY": "Sheffield, United Kingdom",
+
+			"OS_MAP_P101_NAME": "University of the West of England, UWE Bristol",
+			"OS_MAP_P101_CITY": "Bristol, United Kingdom",
+
+			"OS_MAP_P102_NAME": "University of Surrey",
+			"OS_MAP_P102_CITY": "Guildford, United Kingdom",
+
+			"OS_MAP_P103_NAME": "Tampere University",
+			"OS_MAP_P103_CITY": "Turku, Finland",
+
+			"OS_MAP_P104_NAME": "University of Leeds",
+			"OS_MAP_P104_CITY": "Leeds, United Kingdom",
+
+			"OS_MAP_P105_NAME": "Pierre and Marie Curie University",
+			"OS_MAP_P105_CITY": "Paris, France",
+
+			"OS_MAP_P106_NAME": "University of Sussex",
+			"OS_MAP_P106_CITY": "Falmer, United Kingdom",
+
+			"OS_MAP_P107_NAME": "Middlesex University",
+			"OS_MAP_P107_CITY": "Hendon, London, United Kingdom",
+			"OS_MAP_P107_DESC": "Middlesex University is in London, and HBP\nresearch at Middlesex focuses on Neuromorphic\nEmbodied Agents that Learn. Reusable software\ncomponents are developed in PyNN using spiking\nneurons in Nest and neuromorphic hardware. These\ncomponents are combined to implement agents in the\nNeurorobotics Platform, in other virtual\nenvironments or in robots.",
+
+			"OS_MAP_P108_NAME": "University of Lyon",
+			"OS_MAP_P108_CITY": "Lyon, France",
+
+			"OS_MAP_P109_NAME": "Polytechnic of Turin (Politecnico di Torino)",
+			"OS_MAP_P109_CITY": "Turin, Italy",
+			"OS_MAP_P109_DESC": "For over 150 years, Politecnico di Torino has been\none of the most prestigious technical universities\nat national and international level. The\nEDA-group, being part of the HBP neuromorphic\nengineering team, is involved in the design of\noptimized algorithms for exploiting the innovative\nmany-core architecture of the SpiNNaker\nneuromorphic platform.",
+
+			"OS_MAP_P110_NAME": "University of Ghent",
+			"OS_MAP_P110_CITY": "Ghent, Belgium",
+
+			"OS_MAP_P111_NAME": "The Catholic University of Leuven",
+			"OS_MAP_P111_CITY": "Leuven, Belgium",
+
+			"OS_MAP_P112_NAME": "University of Basel",
+			"OS_MAP_P112_CITY": "Basel, Switzerland",
+
+			"OS_MAP_P113_NAME": "VU University Medical Center",
+			"OS_MAP_P113_CITY": "Amsterdam, The Netherlands",
+
+			"OS_MAP_P114_NAME": "Swiss Institute of Bioinformatics ISB Foundation",
+			"OS_MAP_P114_CITY": "Lausanne, Switzerland",
+
+			"OS_MAP_P115_NAME": "European Brain Research Institute RIta Levi-Montalcini Foundation",
+			"OS_MAP_P115_CITY": "Rome, Italy",
+
+			"OS_MAP_P116_NAME": "Scuola Normale Superiore",
+			"OS_MAP_P116_CITY": "Pisa, Italy",
+
+			"OS_MAP_P117_NAME": "University of Maastricht",
+			"OS_MAP_P117_CITY": "Maastricht, The Netherlands",
+
+			"OS_MAP_P118_NAME": "University of Hertfordshire",
+			"OS_MAP_P118_CITY": "Hatfield, United Kingdom",
+
+			"OS_MAP_P119_NAME": "University Hospital Bonn",
+			"OS_MAP_P119_CITY": "Bonn, Germany",
+
+			"OS_MAP_P120_NAME": "Biomedical Research Foundation, Academy of Athens",
+			"OS_MAP_P120_CITY": "Athens, Greece",
+
+			"OS_MAP_P121_NAME": "Convelop Cooperative Knowledge Design GmbH",
+			"OS_MAP_P121_CITY": "Graz, Austria",
+
+			"OS_MAP_P122_NAME": "Charité - University Medicine Berlin",
+			"OS_MAP_P122_CITY": "Berlin, Germany",
+			"OS_MAP_P122_DESC": "Charité Universitätsmedizin Berlin is Europe´s\nlargest University Hospital. More than half of the\nGerman Nobel laureates for medicine and physiology\noriginate from it. Charité’s Brain Simulation\nSection heads HBP’s project TheVirtualBrain (TVB).\nTVB is a simulation platform for simulating\npatient brains to test virtual therapies. TVB has\nseveral thousand users.",
+
+			"OS_7MAP_P123_NAME": "European Molecular Biology Laboratory (EMBL)",
+			"OS_MAP_P123_CITY": "Heidelberg, Germany",
+			"OS_MAP_P123_DESC": "At EMBL in Heidelberg, the group of Anna Kreshuk\nspecializes in developing machine learning\nalgorithms and tools for automatic segmentation,\nclassification and analysis of biological images.\nWithin the Human Brain Project, her team develops\nspecial workflows for the ilastik image processing\ntoolkit with the goal of neuroimaging analysis at\nscale.",
+
+			"OS_MAP_P124_NAME": "Medical University Greifswald",
+			"OS_MAP_P124_CITY": "Greifswald, Germany",
+
+			"OS_MAP_P125_NAME": "Swiss Integrative Center for Human Health",
+			"OS_MAP_P125_CITY": "Fribourg, Switzerland",
+
+			"OS_MAP_P126_NAME": "University Grenoble Alpes",
+			"OS_MAP_P126_CITY": "Grenoble, France",
+
+			"OS_MAP_P127_NAME": "University Hospital Freiburg",
+			"OS_MAP_P127_CITY": "Freiburg, Germany",
+
+			"OS_MAP_P128_NAME": "\"Claudio Munari\" Center for Epilepsy Surgery",
+			"OS_MAP_P128_CITY": "Milan, Italy",
+
+			"OS_MAP_P129_NAME": "University Hospital Grenoble Alpes",
+			"OS_MAP_P129_CITY": "Grenoble, France",
+
+			"OS_MAP_COUNTRY_SPAIN_NAME": "Spain",
+			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
+			"OS_MAP_COUNTRY_NORWAY_NAME": "Norway",
+			"OS_MAP_COUNTRY_TURKEY_NAME": "Turkey",
+			"OS_MAP_COUNTRY_PORTUGAL_NAME": "Portugal",
+			"OS_MAP_COUNTRY_BELGIUM_NAME": "Belgium",
+			"OS_MAP_COUNTRY_DENMARK_NAME": "Denmark",
+			"OS_MAP_COUNTRY_HUNGARY_NAME": "Hungary",
+			"OS_MAP_COUNTRY_AUSTRIA_NAME": "Austria",
+			"OS_MAP_COUNTRY_FRANCE_NAME": "France",
+			"OS_MAP_COUNTRY_SWITZERLAND_NAME": "Switzerland",
+			"OS_MAP_COUNTRY_SLOVENIA_NAME": "Slovenia",
+			"OS_MAP_COUNTRY_SWEDEN_NAME": "Sweden",
+			"OS_MAP_COUNTRY_ITALY_NAME": "Italy",
+			"OS_MAP_COUNTRY_NETHERLANDS_NAME": "Netherlands",
+			"OS_MAP_COUNTRY_FINLAND_NAME": "Finalnd",
+			"OS_MAP_COUNTRY_GREECE_NAME": "Greece",
+			"OS_MAP_COUNTRY_GERMANY_NAME": "Germany",
+			"OS_MAP_COUNTRY_ISRAEL_NAME": "Israel",
+			"OS_MAP_COUNTRY_UK_NAME": "United Kingdom"
 		},
 
 		"he": {
-			"RN_OPENING_SCREEN_HEADER": "כאן בונים נוירון",
-			"RN_OPENING_SCREEN_SUB_HEADER": "מוזמנים לבנות נוירון",
-			"RN_OPENING_SCREEN_BUTTON_TEXT": "התחל",
+			"RN_OPENING_SCREEN_HEADER": "Neuron Under Construction",
+			"RN_OPENING_SCREEN_SUB_HEADER": "You are invited to reconstruct your own neuron",
+			"RN_OPENING_SCREEN_BUTTON_TEXT": "Start",
 
-			"RN_CHOOSE_NEURON_INSTRUCTION": "בחר נוירון",
-			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "בחר",
+			"RN_CHOOSE_NEURON_INSTRUCTION": "Select a neuron and reconstruct it as an active 3D model",
+			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "Select",
 
 			"RN_CHOOSE_NEURON_PYRAMIDAL_NAME": "Pyramidal Cell",
 			"RN_CHOOSE_NEURON_BASKET_NAME": "Basket Cell",
 			"RN_CHOOSE_NEURON_MARTINOTTI_NAME": "Martinotti Cell",
 
-			"RN_CHOOSE_NEURON_PYRAMIDAL_DESC": "פירמידיאלי",
-			"RN_CHOOSE_NEURON_BASKET_DESC": "כמו סל",
-			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "תא קטן עם ענפים קיקים.\nנקרא על שם מדען.",
+			"RN_CHOOSE_NEURON_PYRAMIDAL_DESC": "Named after the pyramid shape of its body,\nthe most common cell type in the cerebral\ncortex. The cell increases the activity of the\ncells it communicates with (Excitatory cell).",
+			"RN_CHOOSE_NEURON_BASKET_DESC": "Surrounds like a basket the body of the cells it\ncommunicates with and decreases their activity.\n(Inhibitory cell).",
+			"RN_CHOOSE_NEURON_MARTINOTTI_DESC": "A small cell with short branches. Named\nafter the scientist who discovered it. The\ncell decreases the activity of the cells it\ncommunicates with (Inhibitory cell).",
 
 			"RN_DRAWING_SCREEN_NEURON_INSTRUCTION": "Follow the dotted line with your finger to reconstruct the neuron",
 
@@ -696,7 +1209,520 @@
 			"RN_SUMMARY_SCREEN_MODELING_TEXT": "Reconstructing the cell structure",
 			"RN_SUMMARY_SCREEN_ELECTRIFY_TEXT": "Activating the cell",
 
-			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell"
+			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell",
+
+			"DFAM_OPENING_SCREEN_HEADER": "Doctor for a moment",
+			"DFAM_OPENING_SCREEN_SUB_HEADER": "You have an opportunity to be a doctor\nPress the button and meet your new patient",
+			"DFAM_OPENING_SCREEN_BUTTON_TEXT": "Start",
+
+			"DFAM_EXP_SCREEN_BUTTON_TEXT": "Continue",
+			"DFAM_EXP_SCREEN_HEADER_TEXT": "Your new patient describes a state of confusion and\nforgetfulness. Does he have Alzheimer’s disease?",
+			"DFAM_EXP_SCREEN_INFO_TEXT": "To diagnose him, you need to carry out a number of tests.\nIn Alzheimer’s the neurons in the brain die gradually, causing damage to\ncognitive abilities such as memory, orientation, and more.",
+
+			"DFAM_CHOOSE_TEST_INSTRUCTION": "Select the test you wish to conduct on the patiant",
+			"DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT": "Run test",
+
+			"DFAM_COGNITIVE_TEST_NAME": "Cognitive tests",
+			"DFAM_COGNITIVE_TEST_DESC": "Cognitive tests are a list of tasks testing the\nperformance of various brain functions",
+			"DFAM_PET_TEST_NAME": "PET test",
+			"DFAM_PET_TEST_DESC": "A PET (Positron Emission Tomography) test is a\nscan of the brain measuring the concentration of\nparticular substances. For instance, a PET scan can\nsearch for beta-amyloid plaques, which are\ncommon only among Alzheimer’s patients.",
+			"DFAM_MRI_TEST_NAME": "MRI test",
+			"DFAM_MRI_TEST_DESC": "An MRI (Magnetic Resonance Imaging) test is\na scan of the brain using radio waves and a\nstrong magnetic field. The scan creates an\nimage of the brain and the state it is in.",
+
+			"DFAM_TEST_IN_PROGRESS_HEADER_MRI": "An MRI scan is taking place",
+			"DFAM_TEST_IN_PROGRESS_HEADER_PET": "A PET scan is taking place",
+			"DFAM_TEST_IN_PROGRESS_HEADER_COGNITIVE": "A cognitive scan is taking place",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI": "Follow the process on the patient model",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET": "Follow the process on the patient model",
+
+			"DFAM_TEST_RESULTS_HEADER_COGNITIVE": "Cognitive test results",
+			"DFAM_TEST_RESULTS_HEADER_PET": "PET test results",
+			"DFAM_TEST_RESULTS_HEADER_MRI": "MRI test results",
+
+			"DFAM_TEST_RESULTS_DESC_COGNITIVE": "Drawing a clock requires mental abilities that are damaged by Alzheimer’s, such as\nmanagement, understanding numbers, knowledge retrieval and more.",
+			"DFAM_TEST_RESULTS_DESC_PET": "Brains of Alzheimer’s patients show many plaques of beta-amyloid protein that are not found\nin the brains of healthy people. If we mark these plaques with radioactive materials and\nconduct a PET scan, we would expect to see many areas with high concentration (in red).",
+			"DFAM_TEST_RESULTS_DESC_MRI": "In Alzheimer disease, cells die throughout the brain and the\nbrain tissue becomes ‘thin’, containing less and less cells (and\nmore and more ‘black’ fissures in the brain).",
+
+			"DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT": "Run more tests",
+			"DFAM_TEST_RESULTS_HEALTHY_HEADER": "Healthy patient",
+			"DFAM_TEST_RESULTS_RESULTS_HEADER": "Test result",
+
+			"DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT": "See results",
+
+			"DFAM_DIAGNOSE_BUTTON_TEXT": "Diagnose",
+			"DFAM_DIAGNOSE_YES_BUTTON_TEXT": "Yes",
+			"DFAM_DIAGNOSE_NO_BUTTON_TEXT": "No",
+			"DFAM_DIAGNOSE_QUESTION_TEXT": "Does the patient have Alzheimer’s?",
+
+			"DFAM_EVALUATION_SCREEN_CORRECT_HEADER": "The diagnosis is correct",
+			"DFAM_EVALUATION_SCREEN_INCORRECT_HEADER": "The diagnosis is incorrect, please try again",
+			"DFAM_EVALUATION_SCREEN_HEALTHY_HEADER": "The patient does not have Alzheimer’s",
+			"DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER": "Our patient does have Alzheimer’s.",
+
+			"DFAM_EVALUATION_ANOTHER_PATIENT_TEXT": "Accept another patient",
+			"DFAM_EVALUATION_LEARN_MORE_TEXT": "Learn more",
+
+			"DFAM_LEARN_MORE_BACK_BUTTON_TEXT": "Back",
+			"DFAM_LEARN_MORE_HEALTHY_DESC_TEXT": "The tests do not seem to indicate the patient\nhas Alzheimer’s.\nThe MRI test shows a normal brain. In Alzheimer’s,\ncells die throughout the brain so that the brain tissue\nbecomes thin, unlike the case of our patient.\n\nMany abilities related to drawing a clock, such as\nknowledge retrieval and management, are impaired in\nAlzheimer’s patients. However, our patient was able\nto draw a clock properly.\n\nThe PET scan indicating beta-amyloid plaques very\ncommon among Alzheimer’s patients (but not in healthy\nbrains) showed no red concentrations at all.\nMeaning, there are no beta-amyloid plaques in our\npatient’s brain, as opposed to what we would expect\nto find in an Alzheimer’s patient.",
+			"DFAM_LEARN_MORE_NOT_HEALTHY_DESC_TEXT": "The patient does have Alzheimer’s.\nThe MRI test showed that the brain tissue is very thin\nbecause of the extensive death of neuron cells that\ntakes place in Alzheimer’s disease.\n\nThe death of the cells damages various brain abilities\nsuch as management and knowledge retrieval.\nFor this reason the patient was unable to draw\na clock properly.\n\nThe PET scan marked plaques of beta-amyloid that\nare very common in Alzheimer’s patients (but not in\nhealthy brains), showing many red concentrations.\nThese areas show a high concentration of\nbeta-amyloid, typical of Alzheimer’s patients.",
+
+			"OS_HBP_TEXT": "About the\nHuman Brain Project",
+			"OS_WHAT_IS_THE_QUESTION_TEXT": "What's the question?!\nConversations of young\nresearchers",
+			"OS_CAJAL_TEXT": "Santiago Ramón y Cajal",
+			"OS_MAP_TEXT": "The Human Brain Project\nin Europe",
+			"OS_BRAIN_STRUCTURES_MAP_TEXT": "Brain structures\nLaboratory findings",
+			"OS_10_QUESTIONS_TEXT": "10 unanswered questions\nabout the human brain",
+			"OS_DANCING_NEURON_TEXT": "The Electrically\nDancing Neuron",
+			"OS_MTB_TEXT": "Credits",
+
+			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
+
+			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "Play video",
+
+			"OS_MAP_P1_NAME": "המכון הפדרלי השוויצרי לטכנולוגיה לוזאן",
+			"OS_MAP_P1_CITY": "לוזאן, שוויץ",
+
+			"OS_MAP_P2_NAME": "קרן אוניברסיטת אלטו",
+			"OS_MAP_P2_CITY": "אספו, פינלנד",
+
+			"OS_MAP_P3_NAME": "בית החולים האוניברסיטאי ליידן",
+			"OS_MAP_P3_CITY": "ליידן, הולנד",
+
+			"OS_MAP_P4_NAME": "אוניברסיטת אתונה לכלכלה ועסקים",
+			"OS_MAP_P4_CITY": "אתונה, יוון",
+			"OS_MAP_P4_DESC": "קבוצת מדעי הנתונים באוניברסיטת אתונה\nלכלכלה ועסקים עוסקת במחקר ובפיתוח שירותים\nלהתאמה, טִיּוּב, הטמעה והעשׁרה של נתונים\nרפואיים מבתי החולים המשתתפים כדי שאפשר יהיה\nלייבא נתונים אלה אל פלטפורמת האינפוֹרמטיקה\nהרפואית של הפרויקט. כמו כן הקבוצה עוסקת\nבעיבוד נתוני עָתֵק (Big Data)\nובניהול מידע לשימוש בלמידת מכוֹנה.",
+
+			"OS_MAP_P5_NAME": "המרכז הלאומי למחשבי-על",
+			"OS_MAP_P5_CITY": "ברצלונה, ספרד",
+			"OS_MAP_P5_DESC": "המרכז משמש כרשות הלאומית הספרדית למחשבי-על.\nהוא מתמחה במחשבים עם יכולות ביצוע\nגבוהות מאוד ובו מפותח \"מיירנוסטרום\",\nאחד ממחשבי העל העוצמתיים ביותר באירופה.\nהמרכז תורם רבות ל'פרויקט המוח האנושי' באמצעות\nיצירה ופיתוח של תשתיות מחשבי העל\nעבור קהילת חוקרי המוח.",
+
+			"OS_MAP_P6_NAME": "אוניברסיטת באוהאוס, ויימר",
+			"OS_MAP_P6_CITY": "ויימר, גרמניה",
+
+			"OS_MAP_P7_NAME": "אוניברסיטת ווּפֶּרטָאל",
+			"OS_MAP_P7_CITY": "וופרטאל, גרמניה",
+			"OS_MAP_P7_DESC": "קבוצת המִחשוב עתיר-הביצועים באוניברסיטת ווּפֶּרטָאל\nעוסקת בפיתוח ושיפור השיטות המספּריות\nבמנועי ההדמיה אשר נבנים במסגרת\nפרויקט המוח האנושי (HBP) כגון NEST – מנגנון\nלהדמיית פעימוֹת (פּוּלְסִים) ברשת העצבים.\nההישגים הנוכחיים הם הכללה של צמתים\nבּין-תאיים ומוֹדלים בסימולטור NEST.",
+
+			"OS_MAP_P8_NAME": "מוזיאון המדע ע\"ש בלומפילד ירושלים",
+			"OS_MAP_P8_CITY": "ירושלים, ישראל",
+			"OS_MAP_P8_DESC": "המוזיאון הוא מוסד תרבותי וחינוכי בלתי-פורמלי\nהמשׁרת את כל פלחי האוכלוסייה.\nצוות המוזיאון מְפַתֵּחַ ויוצר מיצגים\nאינטראקטיביים בתחומי המדע והטכנולוגיה,\nוּמְשַׁלֵּב אותם בקשת רחבה של פעילויות.\nבמסגרת פרויקט המוח האנושי המוזיאון\nמְפתח דרכים לעודד את התעניינות הציבור\nומעורבותו בתחום חֵקֶר המוח כגון תערוכה\nאינטראקטיבית נודדת.",
+
+			"OS_MAP_P9_NAME": "אוניברסיטת קרדיף",
+			"OS_MAP_P9_CITY": "קרדיף, בריטניה",
+
+			"OS_MAP_P10_NAME": "המרכז הלאומי למחקר מדעי",
+			"OS_MAP_P10_CITY": "פריז, צרפת",
+
+			"OS_MAP_P11_NAME": "משרד האנרגיה האטומית והאנרגיות החלופיות",
+			"OS_MAP_P11_CITY": "פריז, צרפת",
+
+			"OS_MAP_P12_NAME": "המועצה הלאומית למחקר",
+			"OS_MAP_P12_CITY": "פלרמו, איטליה",
+			"OS_MAP_P12_DESC": "המכון לביופיזיקה של המועצה הלאומית\nלמחקר באיטליה שוֹכֵן בפאלרמו שבאיטליה.\nבמסגרת פרויקט המוח האנושי יש לנו\nמעורבוּת עמוקה בפיתוח מודל ממוחשב, \nמפורט ומבוסס-נתונים, בגודל טבעי ובתלת-ממד,\nשל ההיפוֹקמפוֹס במוח האדם ובמוח מכרסמים,\nוכן ביישׂום התשתית האירופית לחֵקֶר\nהמוח (EBRA) וניהולהּ.",
+
+			"OS_MAP_P13_NAME": "המרכז למִחְשׁוּב-על",
+			"OS_MAP_P13_CITY": "בולוניה, איטליה",
+			"OS_MAP_P13_DESC": "המרכז למִחשוב-על CINECA שבאיטליה מְסַפֵּק שירותי\nנתונים ומחשוב עתירי-ביצועים לקהילת\nהמחקר האיטלקית והאירופית. במסגרת פרויקט\nהמוח האנושי הוא מְפַתֵּחַ איחוד נתונים\nושירותי מחשוב הניתנים להתאמה\nכדי לענות על צורכי האנליטיקאים של\nקהילת מדעי המוח.",
+
+			"OS_MAP_P14_NAME": "האוניברסיטה הטכנית של דנמרק",
+			"OS_MAP_P14_CITY": "קונגס לינגבי, דנמרק",
+
+			"OS_MAP_P15_NAME": "אוניברסיטת דברסן",
+			"OS_MAP_P15_CITY": "דברסן, הונגריה",
+
+			"OS_MAP_P16_NAME": "אוניברסיטת דה מונטפור",
+			"OS_MAP_P16_CITY": "לסטר, בריטניה",
+
+			"OS_MAP_P17_NAME": "בית הספר ללימודים מתקדמים",
+			"OS_MAP_P17_CITY": "פריז, צרפת",
+
+			"OS_MAP_P18_NAME": "המכון השווייצרי הפדרלי לטכנולוגיה",
+			"OS_MAP_P18_CITY": "ציריך, שווייץ",
+			"OS_MAP_P18_DESC": "CSCS היא יחידה אוטונומית של המכון השווייצרי\nהפדרלי לטכנולוגיה בציריך. יחידה זו מציעה\nלמדענים תשתית ויֶדַע למחשוב – ממחשבי-העל\nהמתקדמים ביותר ועד שירותים מכל הסוגים\nהנדרשים למחשוב עתיר-ביצועים. בפרויקט המוח\nהאנושי המכון הוא אחד ממובילי הפלטפורמה\nלמחשוב ולאנליטיקה עתירי-ביצועים.\nכמו כן הוא מְתָאֵם את יחידת\nהעבודה \"הטמעה ותפעול\".",
+
+			"OS_MAP_P19_NAME": "קרן מועצת הטכנולוגיה הדֶּנית",
+			"OS_MAP_P19_CITY": "הווידורה, דנמרק",
+			"OS_MAP_P19_DESC": "קרן מועצת הטכנולוגיה הדֶּנית משתייכת לקבוצת\n\"אֶתִיקָה וחֶבְרָה\" של פרויקט המוח האנושי,\nומקדמת את השׂיח בקֶרֶב הציבור, בעלי העניין\nוהשותפים לפרויקט על סוגיות חברתיוֹת,\nאתיוֹת ומשפטיוֹת הנוגעות למחקרי הפרויקט.\nהקרן שואפת להבטיח שהחברה האנושית תתפתח על\nבסיס שיתוף פעולה מושׂכל, עם ראייה לטווח ארוך,\nבין אזרחים, מומחים, בעלי עניין ומקבלי החלטות.",
+
+			"OS_MAP_P20_NAME": "מרכז המחקר יוּליך",
+			"OS_MAP_P20_CITY": "יוליך, גרמניה",
+			"OS_MAP_P20_DESC": "מרכז המחקר יוּליך הוא מכון רב-תחומי המשתייך\nלהתאגדות הֶלמהוֹלץ. המרכז תורם לפרויקט המוח\nהאנושי באמצעות המכון שלו לרפואה ומדעי המוח,\nובאמצעות מרכז יוּליך למחשוּב-על.\nמדעני מוח ומומחים טכניים בונים יחד תשתית\nלאטלסֵי מוח ברזולוציה גבוהה, הדמיה בקני מידה רבִּים\nותהליך עבודה של ניתוח נתונים.",
+
+			"OS_MAP_P21_NAME": "פורטיס GmbH",
+			"OS_MAP_P21_CITY": "מינכן, גרמניה",
+
+			"OS_MAP_P22_NAME": "פראוהופר-גשלשאפט לקידום מחקר יישומי",
+			"OS_MAP_P22_CITY": "דרמשטט, גרמניה",
+
+			"OS_MAP_P23_NAME": "קרן אנה סומר צ'מפאלימוד וד\"ר קרלוס מונטז שמפאלימוס",
+			"OS_MAP_P23_CITY": "ליסבון, פורטוגל",
+
+			"OS_MAP_P24_NAME": "אוניברסיטת היינריך היינה, דיסילדורף",
+			"OS_MAP_P24_CITY": "דיסילדורף, גרמניה",
+
+			"OS_MAP_P25_NAME": "אוניברסיטת הלסינקי",
+			"OS_MAP_P25_CITY": "הלסינקי, פינלנד",
+
+			"OS_MAP_P26_NAME": "מכון היידלברג למחקר תיאורטי",
+			"OS_MAP_P26_CITY": "היידלברג, גרמניה",
+			"OS_MAP_P26_DESC": "מכון היידלברג למחקר תיאורטי הוא מכון פרטי ללא\nמטרת רווח הַמְּבַצֵּעַ מחקרים חישוביים בסיסיים במגוון\nרחב של תחומים, מביולוגיה מולקולרית עד אסטרופיזיקה.\nרבּקה ווייד וצוות המחקר שלה מפתחים כלֵי הדמיה\nומידוּל מולקולריים בקני מידה רבּים במסגרת פלטפורמת\nההדמיה המוחית של פרויקט המוח האנושי,\nכדי לקדם פיתוח תרופות חדשות למחלות מוח.",
+
+			"OS_MAP_P27_NAME": "בית החולים האוניברסיטאי וודואה",
+			"OS_MAP_P27_CITY": "לוזאן, שוייץ",
+
+			"OS_MAP_P28_NAME": "אימפריאל קולג' למדע, טכנולוגיה ורפואה",
+			"OS_MAP_P28_CITY": "לונדון, בריטניה",
+
+			"OS_MAP_P29_NAME": "המכון למוח ולחוט השידרה",
+			"OS_MAP_P29_CITY": "פריז, צרפת",
+
+			"OS_MAP_P30_NAME": "המכון לרפואה ניסויית, האקדמיה ההונגרית למדעים",
+			"OS_MAP_P30_CITY": "בודפסט, הונגריה",
+
+			"OS_MAP_P31_NAME": "המכון למדע וטכנולוגיה של אוסטריה",
+			"OS_MAP_P31_CITY": "קלוסטרנויבורג, אוסטריה",
+			"OS_MAP_P31_DESC": "המכון למדע וטכנולוגיה של אוסטריה בקלוסטרנויבורג\nהוא מכון בינלאומי שנוסד לאחרונה ומוקדש למחקר\nבסיסי, בין השאר במדעי המוח.\nהמשימה של פרופ' שׁיגֶמוֹטוֹ בפרויקט המוח האנושי\nהיא לְסַפֵּק נתונים כמותיים על מספרם ופיזורם של תעלות\nיוֹניוֹת חשובות ושל קולטני מוליכים עצביים\nבנוירונים העיקריים במוח.",
+
+			"OS_MAP_P32_NAME": "מכון ג'וזף סטפן",
+			"OS_MAP_P32_CITY": "לובליאנה, סלובניה",
+
+			"OS_MAP_P33_NAME": "המכון הלאומי למחקר במדעי המחשב ואוטומציה",
+			"OS_MAP_P33_CITY": "סופיה אנטיפוליס, צרפת",
+			"OS_MAP_P33_DESC": "במכון מתבצעים מחקרים בהם מנתחים מידע\nהמגיע מהדמיות מוח כדי להבין את מבנה\nהמוח ותפקודו. המכון מספק מאגרי מידע הכוללים\nנתונים מהדמיות מוח הזמינים לכל קהילת החוקרים,\nוכן תוכנה בקוד פתוח המאפשרת לנתח את\nהמידע בקלות ובנוחות.",
+
+			"OS_MAP_P34_NAME": "מכון פסטר",
+			"OS_MAP_P34_CITY": "פריז, צרפת",
+
+			"OS_MAP_P35_NAME": "יוהאן וולפגנג גתה אוניברסיטת פרנקפורט",
+			"OS_MAP_P35_CITY": "פרנקפורט, גרמניה",
+
+			"OS_MAP_P36_NAME": "המכון הטכנולוגי של קרלסרוהה",
+			"OS_MAP_P36_CITY": "קרלסרוהה, גרמניה",
+
+			"OS_MAP_P37_NAME": "מכון קרולינסקה",
+			"OS_MAP_P37_CITY": "סטוקהולם, שבדיה",
+
+			"OS_MAP_P38_NAME": "קינגס קולג', לונדון",
+			"OS_MAP_P38_CITY": "לונדון, בריטניה",
+
+			"OS_MAP_P39_NAME": "המכון המלכותי לטכנולוגיה",
+			"OS_MAP_P39_CITY": "סטוקהולם, שבדיה",
+
+			"OS_MAP_P40_NAME": "המעבדה האירופית לספקטרוסקופיה לא לניארית",
+			"OS_MAP_P40_CITY": "פירנצה, איטליה",
+
+			"OS_MAP_P41_NAME": "אוניברסיטת לינאוּס",
+			"OS_MAP_P41_CITY": "קלמאר, שבדיה",
+			"OS_MAP_P41_DESC": "מִבֵּין חברי הסגל של אוניברסיטת לינאוּס צורפו\nלפרויקט המוח האנושי רו\"ח שאמים פּאטל (המחלקה לקשרי חוץ)\nוד\"ר קים הוקנסון (הפקולטה למדעי החיים ובריאות),\nכחלק מצוות התמיכה האתית.\nשאמים מנהלת את ועדת הייעוץ לענייני אתיקה\nושירותי אתיקה נוספים, וקים אחראית על תיאום\nתחום האתיקה של הניסויים בבעלי חיים במסגרת הפרויקט.",
+
+			"OS_MAP_P42_NAME": "האוניברסיטה הרפואית של אינסברוּק",
+			"OS_MAP_P42_CITY": "אינסברוק, אוסטריה",
+			"OS_MAP_P42_DESC": "האוניברסיטה הרפואית של אינסברוק שבאוסטריה\nנוסדה כאחת הפקולטות הראשונות של האוניברסיטה,\nוממלאת בה תפקיד חשוב מאז היווסדה לפני 340 שנה.\nכשותפה בפרויקט המוח האנושי האוניברסיטה מארחת את\nתוכנית החינוך הרב-תחומית לחוקרים בראשית דרכם,\nתומכת בהכשרות המתבצעות באמצעות תשתיות\nהפרויקט ומתאמת פעילויות הקשורות בפרויקט לקידום\nהשתתפות הציבור ומעורבותו.",
+
+			"OS_MAP_P43_NAME": "האוניברסיטה הלאומית והקאפודיסטית של אתונה",
+			"OS_MAP_P43_CITY": "אתונה, יוון",
+
+			"OS_MAP_P44_NAME": "האוניברסיטה הנורבגית למדעי החיים",
+			"OS_MAP_P44_CITY": "ווס, נורבגיה",
+			"OS_MAP_P44_DESC": "קבוצת מדעי המוח החישוביים באוניברסיטת נורבגיה\nלמדעי החיים (NMBU) מפתחת טכנולוגיות להדמיה\nשל רשתות עצביות בסדר גודל הקיים במוח באמצעות\nמחשבי-על, וכן שיטות וכלים לעיבוד ממוחשב של\nאותות מוחיים כגון EEG ו-MEG, על בסיס\nהדמיוֹת, לצורך השוואה ישירה לניסויים.",
+
+			"OS_MAP_P45_NAME": "החברה האוסטרית לחקר הקיברנטיקה",
+			"OS_MAP_P45_CITY": "וינה, אוסטריה",
+
+			"OS_MAP_P46_NAME": "האוניברסיטה הטכנית רייניש-ווסטפאליש של אאכן",
+			"OS_MAP_P46_CITY": "אאכן, גרמניה",
+
+			"OS_MAP_P47_NAME": "אוניברסיטת רוּפרכט-קרל היידלברג",
+			"OS_MAP_P47_CITY": "היידלברג, גרמניה",
+			"OS_MAP_P47_DESC": "קבוצת UHEI חוקרת ומיישׂמת רעיונות חדשניים לעיבוד\nמידע בטכנולוגיות VLSI עם חישוב מַקְבִּילִי מסיבי וסיגנל מעורב.\nהקבוצה הובילה את פרויקט BrainScaleS של האיחוד האירופי,\nאחד מעמודי התווך של פרויקט המוח האנושי,\nובמסגרתו עמדה בחוד החנית של הטכנולוגיה לשילוב\nמערכות נוֹירוֹ-מוֹרפיוֹת פיזיקליוֹת זעירות, טכנולוגיה שפיתוחה\nנמשך כעת בפרויקט המוח האנושי.",
+
+			"OS_MAP_P48_NAME": "אוניברסיטת סאבאנסי",
+			"OS_MAP_P48_CITY": "איסטנבול, טורקיה",
+
+			"OS_MAP_P49_NAME": "בית הספר סנטה אנה ללימודים מתקדמים",
+			"OS_MAP_P49_CITY": "פיזה, איטליה",
+
+			"OS_MAP_P50_NAME": "המרכז למתמטיקה ולמדעי המחשב",
+			"OS_MAP_P50_CITY": "אמסטרדם, הולנד",
+
+			"OS_MAP_P51_NAME": "הקרן האוניברסיטאית הקתולית",
+			"OS_MAP_P51_CITY": "ניימיכן, הוטלנד",
+
+			"OS_MAP_P52_NAME": "מֶרְכָּז המחקר FZI לטכנולוגיית מידע בקרלסרוּהֶה",
+			"OS_MAP_P52_CITY": "קרלסרוּהֶה, גרמניה",
+			"OS_MAP_P52_DESC": "מרכז המחקר FZI לטכנולוגיית מידע בקרלסרוּהֶה, גרמניה,\nהוא מוסד ללא מטרת רווח העוסק במחקר יישׂומי\nשל טכנולוגיית מידע והעברת טכנולוגיה מהאקדמיה לתעשייה.\nבמסגרת פרויקט המוח האנושי נערכים במכון מחקרים\nבתחומי הנוֹירוֹ-רובוטיקה וניסויים בלולאה סגורה,\nבשאיפה להבין טוב יותר את מנגנוני הראייה\nוהתנועה המורכבים להפליא של האדם.",
+
+			"OS_MAP_P53_NAME": "האוניברסיטה הטכנית של כרתים",
+			"OS_MAP_P53_CITY": "כרתים, יוון",
+
+			"OS_MAP_P54_NAME": "האוניברסיטה הטכנית של דרֶזדן",
+			"OS_MAP_P54_CITY": "דרזדן, גרמניה",
+			"OS_MAP_P54_DESC": "האוניברסיטה הטכנית של דרֶזדן היא אחת מ-11 האוניברסיטאו\nהמצטיינות בגרמניה. במסגרת פרויקט המוח האנושי ראש הצוות\nלמערכות VLSI מַקְבִּילִיוֹת ומעגלים נוירו-מורפיים\nאחראי על תכנון ויישׂום המערכת הנוירו-מורפית SpiNNaker2,\nשנועדה לְדַמּוֹת דחפים ברשת העצבים במוח האנושי\nבזמן ובקנה מידה נאמנים למציאוּת, תוך\nשימוש בעשׂרה מיליון מעבּדי ARM.",
+
+			"OS_MAP_P55_NAME": "אוניברסיטת גרץ לטכנולוגיה",
+			"OS_MAP_P55_CITY": "גרץ, גרמניה",
+
+			"OS_MAP_P56_NAME": "האוניברסיטה הטכנית של מינכן",
+			"OS_MAP_P56_CITY": "מינכן, גרמניה",
+			"OS_MAP_P56_DESC": "האוניברסיטה הטכנית של מינכן מדורגת כאחת\nהאוניברסיטאות הטובות באירופה. מחלקת האינפורמטיקה\nשלה היא אחת הגדולות בין מחלקות מדעי המחשב בגרמניה,\nויש לה מסורת ממושכת של שיתופי פעולה עם תעשיית המחשבים.\nבמסגרת פרויקט המוח האנושי האוניברסיטה מובילה את\nפיתוח פלטפורמת הנוירו-רובוטיקה ואת תחומי הנוירו-רובוטיקה\nההַתְאָמָתִית והארכיטקטורה ההתנהגותית.",
+
+			"OS_MAP_P57_NAME": "אוניברסיטת תל אביב",
+			"OS_MAP_P57_CITY": "תל אביב, ישראל",
+			"OS_MAP_P57_DESC": "אוניברסיטת תל אביב היא מוסד אקדמי מוביל ומקיף,\nהמציע כמעט את כל תחומי המדע בקמפוס אחד.\nנציגת אוניברסיטת תל אביב מכהנת ב-HBP כסגנית\nיו\"ר ביחידה לאינפורמטיקה רפואית ואחראית על פיתוח\nהמתודולוגיה הסטטיסטית בפרויקט, לצד היישום\nשלה במחקר קליני.",
+
+			"OS_MAP_P59_NAME": "אוניברסיטת אוקספורד",
+			"OS_MAP_P59_CITY": "אוקספורד, אנגליה",
+
+			"OS_MAP_P60_NAME": "האוניברסיטה העברית בירושלים",
+			"OS_MAP_P60_CITY": "ירושלים, ישראל",
+			"OS_MAP_P60_DESC": "הצוות של עידן שגב המעורב ב- HBP  ממוקם במרכז למדעי\nהמוח ע\"ש אדמונד ולילי ספרא, באוניברסיטה העברית בירושלים.\nבמרכז פועלים מחשבים רבי עוצמה עבור סימולציות בקנה\nמידה גדול, והוא כולל מסלול דוקטורט יוקרתי בתוכנית\nלחישוביות עיצבית (100 סטודנטים מרקעים רב תחומיים).",
+
+			"OS_MAP_P61_NAME": "אוניברסיטת אברדין",
+			"OS_MAP_P61_CITY": "אברדין, בריטניה",
+
+			"OS_MAP_P62_NAME": "אוניברסיטת אדינבורו",
+			"OS_MAP_P62_CITY": "אדינבורו, בריטניה",
+
+			"OS_MAP_P63_NAME": "אוניברסיטת מנצ'סטר",
+			"OS_MAP_P63_CITY": "מנצ'סטר, בריטניה",
+			"OS_MAP_P63_DESC": "אוניברסיטת מנצ'סטר ממוקמת בעיר התעשייתית הראשונה\nבעולם. בין היתר עבדו בה אלן טיורינג ו- 25 חתני\nפרס נובל, התבצע בה ביקוע האטום, נולד המחשב\nהמודרני הראשון והתגלה הגרפין. במסגרת\n'פרויקט המוח האנושי' מפותחת באוניברסיטה \"ספיניקר\",\nהפלטפורמה החישובית הנוירומורפית הגדולה בעולם,\nשבנויה בהשראת פעילות המוח.",
+
+			"OS_MAP_P64_NAME": "האוניברסיטה האוטונומית של מדריד",
+			"OS_MAP_P64_CITY": "מדריד, ספרד",
+
+			"OS_MAP_P65_NAME": "אוניברסיטת קסטיליה - לה מנשה",
+			"OS_MAP_P65_CITY": "סיודאד ריאל, ספרד",
+
+			"OS_MAP_P66_NAME": "אוניברסיטת גרנאדה",
+			"OS_MAP_P66_CITY": "גרנאדה, ספרד",
+			"OS_MAP_P66_DESC": "המעבדה למדעי מוח חישוביים יישׂומיים בראשות\nפרופ' אדוארדו רוֹס באוניברסיטת גרנאדה מפתחת\nמודלים של מערכות עצבים שוֹנוֹת כגון המוח הקטן.\nאנו שואפים להבין טוב יותר את העקרונות\nהחישוביים של מרכזי עצבים אלה, ואת\nהאופן שבּו הבסיס הביופיזי (תכונות תאים,\nמנגנוני הסתגלות ורשתות) תומך בהם.",
+
+			"OS_MAP_P67_NAME": "אוניברסיטת מינהו",
+			"OS_MAP_P67_CITY": "בראגה, פורטוגל",
+
+			"OS_MAP_P68_NAME": "האוניברסיטה הטכנית של מדריד",
+			"OS_MAP_P68_CITY": "מדריד, ספרד",
+			"OS_MAP_P68_DESC": "האוניברסיטה הטכנית של מדריד (UPM) היא האוניברסיטה\nהטכנולוגית הגדולה ביותר בספרד. קיבלה\nפעמיים הכרה כקמפוס מצטיין בינלאומי, ומתבלטת\nבעשייתה המחקרית. חמישה צוותים מהאוניברסיטה המשתתפים\nבפרויקט עוסקים בתחומי מדעי המוח;\nניתוח נתונים; חדשנוּת ומִחשוב עתיר-ביצועים.",
+
+			"OS_MAP_P69_NAME": "אוניברסיטת המלך חואן קרלוס",
+			"OS_MAP_P69_CITY": "מדריד, ספרד",
+			"OS_MAP_P69_DESC": "תפקידה של אוניברסיטת המלך חואן קרלוס\nבפרויקט המוח האנושי הוא לְפַתֵּחַ כלֵי ויזואליזציה\nהמאפשרים למדעני מוח לבצע ניתוח חֵקֶר חזותי של\nנתונים, הן מורפולוגיים הן בהדמיה,\nוכן לפתח כלים לוויזואליזציה מרחוק.",
+
+			"OS_MAP_P70_NAME": "אוניברסיטת פביה",
+			"OS_MAP_P70_CITY": "פביה, איטליה",
+
+			"OS_MAP_P71_NAME": "אוניברסיטת ברן",
+			"OS_MAP_P71_CITY": "ברן, שווייץ",
+			"OS_MAP_P71_DESC": "הקבוצה לחישוביות עצבית באוניברסיטת ברן\nחוקרת את יכולות הלמידה יוצאות הדופן של\nמערכות ביולוגיות. בקבוצה בונים מודלים מתמטיים\nויוצרים סימולציות ממוחשבות כדי לחקור כיצד\nהתהליכים הללו מתקיימים במערכת העצבים,\nושואבים השראה מתהליכי החישוב שבמוח\nכדי לפתח בינה מלאכותית.",
+
+			"OS_MAP_P72_NAME": "אוניברסיטת בילפילד",
+			"OS_MAP_P72_CITY": "בילפילד, גרמניה",
+			"OS_MAP_P72_DESC": "אוניברסיטת בילפילד מפתחת שיטה מודולרית\nהמאפשרת למדענים שיוצרים מודלים של\nהמוח לבחור את החומרה הנוירומורפית ואת\nסוג הרשתות המתאימים לצרכיהם. האוניברסיטה\nמספקת תוכנות גרפיקה וספריות תואמות\nעבור חוקרי המוח",
+
+			"OS_MAP_P73_NAME": "בית החולים האוניברסיטאי באָאכן",
+			"OS_MAP_P73_CITY": "אאכן, גרמניה",
+			"OS_MAP_P73_DESC": "בית החולים האוניברסיטאי באָאכן, גרמניה,\nמשלֵּב טיפול בחולים עם לימודי רפואה ומחקר תרגוּמי.\nנכון לעכשיו, בית החולים משתתף בשתיים ממשׂימות\nהפרויקט. בשיתוף עם מרכז יוּליך אנו מתעתדים\nלְפַתֵּחַ הבנה משופרת לגבי אדריכלות קוֹלטנים.\nכמו כן אנו שואפים להכניס לפעולה בסיס נתונים\nמאוחד שיאפשר ניתוח נתוני עָתֵק (Big Data)\nבתחום ההפרעות הפסיכיאטריות.",
+
+			"OS_MAP_P74_NAME": "בית החולים האוניברסיטאי המבורג-אפנדורף",
+			"OS_MAP_P74_CITY": "המבורג, גרמניה",
+
+			"OS_MAP_P75_NAME": "אוניברסיטת ציריך",
+			"OS_MAP_P75_CITY": "ציריך, שווייץ",
+
+			"OS_MAP_P76_NAME": "אוניברסיטת ברצלונה",
+			"OS_MAP_P76_CITY": "ברצלונה, ספרד",
+
+			"OS_MAP_P77_NAME": "אוניברסיטת פּומפּאו פאבּרה",
+			"OS_MAP_P77_CITY": "ברצלונה, ספרד",
+			"OS_MAP_P77_DESC": "המרכז למוח ולקוגניציה של אוניברסיטת פּומפּאו\nפאבּרה, בניהול פרופ' גוסטאבו דֶּקוֹ, עומד בראש יחידת\nהעבודה \"מוֹדלים של פעילוּת המוח ותפקודו\".\nכמו כן המרכז משתתף ביחידה \"קישור פעילוּת\nמוֹדלים ותפקודם לנתוני ניסויים\", וּמְפַתֵּחַ מודלים\nשל רשתות הֶקְשֵׁרִים בכל המוח אצל יחידים,\nבמטרה לחקוֹת מחלות כגון מחלת הנפילה (אפילפסיה).",
+
+			"OS_MAP_P78_NAME": "אוניברסיטת אקס-מרסיי",
+			"OS_MAP_P78_CITY": "מרסיי, צרפת",
+			"OS_MAP_P78_DESC": "המכון למדעי מוח מערכתיים (INS) באוניברסיטה\nהוא מכון מחקר רב-תחומי המתמקד בהבנת\nהדינמיקה המורכבת של המוח. במסגרת פרויקט\nהמוח האנושי מטרתו להדגים את ערכּם של\nמודלים בקנה מידה גדול של רשתות עצביות במוח\nככלי לחיזוי, בפרט כשמדובר בפעילות אפילפטית\nאינדבידואלית ובחיבּוּריוּת לקויה; כמו כן הוא\nמְפַתֵּחַ אטלס מוח בקני מידה רבּים.",
+
+			"OS_MAP_P79_NAME": "אוניברסיטת בורדו",
+			"OS_MAP_P79_CITY": "בורדו, צרפת",
+
+			"OS_MAP_P80_NAME": "אוניברסיטת אנטוורפן",
+			"OS_MAP_P80_CITY": "אנטוורפן, בלגיה",
+			"OS_MAP_P80_DESC": "באוניברסיטת אנטוורפן אנו חוקרים את תפקוד\nקליפת המוח בגישה משולבת – טכנולוגית,\nניסויית ותיאורטית – תוך שימוש במגוון כלים,\nממערכים של מיקרוֹ-אלקטרודות עד מערכות המבוססות\nעל שיטות קיבוע מֶתַח בתא שלם (patch-clamp), וממיקרו\nונאנו-טכנולוגיות עד הדמיוֹת מחשב של מודלֵי נוירונים.\nבפרויקט המוח האנושי מובילים משימה העוסקת\nבפונקציית תִּמְסֹרֶת קֶלֶט-פֶּלֶט.",
+
+			"OS_MAP_P81_NAME": "אוניברסיטת אוסלו",
+			"OS_MAP_P81_CITY": "אוסלו, נורבגיה",
+
+			"OS_MAP_P82_NAME": "אוניברסיטת קולג' לונדון",
+			"OS_MAP_P82_CITY": "לונדון, בריטניה",
+			"OS_MAP_P82_DESC": "האוניברסיטה היא מוסד המחקר הרב תחומי\nהמוביל בלונדון בפרט ובבריטניה בכלל.\nבמסגרת 'פרויקט המוח האנושי', חוקרים באוניברסיטה\nמחפשים קשרים בין הפעילות החשמלית של התאים\nבהיפוקמפוס שבמוח למידע אנטומי על המבנה\nשלהם, זאת במטרה ליצור מודל ממוחשב\nמבוסס מידע של ההיפוקמפוס.",
+
+			"OS_MAP_P83_NAME": "אוניברסיטת אופּסלָה",
+			"OS_MAP_P83_CITY": "אופסלה, שבדיה",
+			"OS_MAP_P83_DESC": "אוניברסיטת אופּסלָה מעורבת בפרויקט המוח האנושי\nבאמצעות קבוצת הנוֹירוֹ-אתיקה והפילוסופיה של\nהמרכז לאתיקה וביוֹ-אתיקה במחקר. קבוצה זו,\nבראשות פרופ' קתינקה אֶוורס, מנהלת פרויקט\nהַמִּשְׁנֶה \"אתיקה וחברה\", עוסקת בניתוח רעיוני ופילוסופי של סוגיות\nתיאורטיות ומעשׂיות המתעוררות בתחומי מדעי המוח,\nטכנולוגיות המידע והתקשורת, ויישׂומיהן.",
+
+			"OS_MAP_P84_NAME": "מכון ויצמן למדע",
+			"OS_MAP_P84_CITY": "רחובות, ישראל",
+			"OS_MAP_P84_DESC": "מכון ויצמן למדע נחשב לאחד ממוסדות המחקר\nהרב-תחומיים הטובים בעולם, ועוסק במדעי\nהטבע ובמדעים מדויקים. מעורבותו בפרויקט המוח\nהאנושי מתבטאת בפיתוח מודלים תפקודיים ומעגליים\nשל מערכת הראייה, בדגש על יישׂומים בתחומי הקוגניציה\nוהנוירו-רובוטיקה, וכן ביצירת מודלים מתמטיים של זיכרון\nבמטרה להבין טוב יותר את הקוגניציה האנושית.",
+
+			"OS_MAP_P85_NAME": "האוניברסיטה הטכנית דארמשטאדט",
+			"OS_MAP_P85_CITY": "דארמשטאדט, גרמניה",
+			"OS_MAP_P85_DESC": "המעבדה לתכנוּת מַקְבִּילִי היא חלק מהמחלקה למדעי\nהמחשב באוניברסיטה הטכנית דארמשטאדט שבגרמניה.\nאנו מפתחים שיטות לזירוז אנליזות מוח עתירות-נתונים\nוכן אלגוריתמים במטרה לשפר את הבנתנו לגבי\nחיבורים של נוירונים יחידים זה לזה.",
+
+			"OS_MAP_P86_NAME": "אוניברסיטת ג'נבה",
+			"OS_MAP_P86_CITY": "ג'נבה, שווייץ",
+
+			"OS_MAP_P87_NAME": "אוניברסיטת גלאזגו",
+			"OS_MAP_P87_CITY": "גלאזגו, בריטניה",
+
+			"OS_MAP_P89_NAME": "אוניברסיטת המבורג",
+			"OS_MAP_P89_CITY": "המבורג, גרמניה",
+
+			"OS_MAP_P90_NAME": "אוניברסיטת הומבולדט בברלין",
+			"OS_MAP_P90_CITY": "ברלין, גרמניה",
+
+			"OS_MAP_P91_NAME": "האקדמיה המלכותית של הולנד לאמנויות ולמדעים",
+			"OS_MAP_P91_CITY": "אמסטרדם, הולנד",
+
+			"OS_MAP_P92_NAME": "המכון הלאומי לפיסיקה גרעינית",
+			"OS_MAP_P92_CITY": "רומא, איטליה",
+
+			"OS_MAP_P93_NAME": "מכון אוגוסט פייס ונייר למחקר ביו – רפואי",
+			"OS_MAP_P93_CITY": "ברצלונה, ספרד",
+
+			"OS_MAP_P94_NAME": "אוניברסיטת מילאנו",
+			"OS_MAP_P94_CITY": "מילאנו, איטליה",
+			"OS_MAP_P94_DESC": "קבוצת המחקר של ד\"ר מאסימיני פועלת באוניברסיטת\nמילאנו ומתמקדת בגורמים נוירו-פיזיולוגיים התומכים\nבאינטראקציות מורכבוֹת במוח האנושי, ובתפקיד\nשהם ממלאים בדעיכה והתעוררות של ההכרה במגוון\nמצבים מוחיים (שֵׁנָה, הרדמה ופגיעוֹת מוֹחיוֹת).\nהמחקר נעשה בטכניקות פולשניות ובלתי פולשניות\nובקני מידה מרחביים שונים.",
+
+			"OS_MAP_P95_NAME": "המכון הקטלוני לביו-הנדסה",
+			"OS_MAP_P95_CITY": "ברצלונה, ספרד",
+
+			"OS_MAP_P96_NAME": "המכון הלאומי לבריאות",
+			"OS_MAP_P96_CITY": "רומא, איטליה",
+
+			"OS_MAP_P97_NAME": "אוניברסיטת לייז'",
+			"OS_MAP_P97_CITY": "לייז', בלגיה",
+			"OS_MAP_P97_DESC": "יחידת התוֹדעה של GIGA היא חלק ממכון המחקר GIGA שבאוניברסיטת לייז'\nבבלגיה. מטרת הצוות הרב-תחומי שלנו במסגרת פרויקט\nהמוח האנושי היא לחקור את התוֹדעה האנושית\nואת הַאוֹפָנִים שבהם היא מושפעת מגורמים פּתולוגיים,\nתרופתיים ופיזיולוגיים, זאת בעיקר באמצעות כלים\nאלקטרופיזיולוגיים והדמיה מוחית; וכן לעסוק בסוגיות\nהאתיוֹת העולות ממחקר כזה.",
+
+			"OS_MAP_P98_NAME": "אוניברסיטת אמסטרדם",
+			"OS_MAP_P98_CITY": "אמסטרדם, הולנד",
+			"OS_MAP_P98_DESC": "במסגרת פרויקט המוח האנושי אוניברסיטת אמסטרדם\nמשתתפת בחֵקֶר תופעות מוחיות קוגניטיביוֹת ומערכתיוֹת,\nומרכזת חמישה צוותי מחקר מ-17 מוסדות\nברחבי אירופה. מטרותינו העיקריות הן לחקור\nאת נושאי התפישׂה; הזיכרון; השינה והתוֹדעה,\nולפתח שיטות להטמעת נתונים מקני מידה\nשונים בפלטפורמות טכנולוגיית המידע והתקשורת\nשל הפרויקט.",
+
+			"OS_MAP_P99_NAME": "המֶרכז הגרמני למחלות מוח ניווּניוֹת",
+			"OS_MAP_P99_CITY": "בון, גרמניה",
+			"OS_MAP_P99_DESC": "מטרות הלִבּה של המחקר הן להבין את הגורמים\nומקדמי הסיכון למחלות עצבים ניווניות, ולפתח\nאסטרטגיות טיפוליוֹת ומניעתיוֹת חדשות על-ידי\nתרגום תגליות יסוד ליישׂומים קליניים ויישׂומים\nבתחום בריאות הציבור. במסגרת פרויקט המוח האנושי אנו\nמתמקדים בפענוח הטרוֹגניוּת של נוירונים\nבאמצעות ריצוף רנ\"א של תא יחיד.",
+
+			"OS_MAP_P100_NAME": "אוניברסיטת שפילד",
+			"OS_MAP_P100_CITY": "שפילד, בריטניה",
+
+			"OS_MAP_P101_NAME": "אוניברסיטת מערב אנגליה",
+			"OS_MAP_P101_CITY": "בריסטול, בריטניה",
+
+			"OS_MAP_P102_NAME": "אוניברסיטת סורי",
+			"OS_MAP_P102_CITY": "גוילפורד, בריטניה",
+
+			"OS_MAP_P103_NAME": "אוניברסיטת טמפרה",
+			"OS_MAP_P103_CITY": "טורקו, פינלנד",
+
+			"OS_MAP_P104_NAME": "אוניברסיטת לידס",
+			"OS_MAP_P104_CITY": "לידס, בריטניה",
+
+			"OS_MAP_P105_NAME": "אוניברסיטת פייר ומארי קירי",
+			"OS_MAP_P105_CITY": "פריז, צרפת",
+
+			"OS_MAP_P106_NAME": "אוניברסיטת סאסקס",
+			"OS_MAP_P106_CITY": "פאלמר, בריטניה",
+
+			"OS_MAP_P107_NAME": "אוניברסיטת מידלסקס",
+			"OS_MAP_P107_CITY": "הנדון, לונדון, בריטניה",
+			"OS_MAP_P107_DESC": "אוניברסיטת מידלסקס נמצאת בלונדון, והמחקר\nהנערך בה במסגרת פרויקט המוח האנושי\nמתמקד במתווכים מוכללים נוֹירוֹ-מורפיים\nעם יכולת למידה. הצוות מְפַתֵּחַ מרכּיבי\nתוכנה רב-פעמיים בשפת PyNN באמצעות דחפים עצביים\nבמדַמֶה Nest ובחוֹמרוֹת נוירו-מורפיות.\nשילוב של מרכיבים אלה מאפשר יישׂום\nשל מתווכים בפלטפורמת הנוירורובוטיקה\nבסביבות וירטוּאליוֹת אחרות, או ברובוטים.",
+
+			"OS_MAP_P108_NAME": "אוניברסיטת ליון",
+			"OS_MAP_P108_CITY": "ליון, צרפת",
+
+			"OS_MAP_P109_NAME": "האוניברסיטה הפוליטכנית של טורינו",
+			"OS_MAP_P109_CITY": "טורינו, איטליה",
+			"OS_MAP_P109_DESC": "פוליטכניקו דה טורינו היא אחת האוניברסיטאות\nהטכנולוגיות היוקרתיות ביותר באיטליה ובעולם\nכבר למעלה מ-150 שנה. באוניברסיטה לוקח\nחלק ב\"פרויקט המוח האנושי\" צוות ההנדסה\nהנוירומורפית שמעורב בתכנות אלגוריתמים לשימוש\nבפלטפורמת ה\"ספיניקר\" החדשנית של הפרויקט.",
+
+			"OS_MAP_P110_NAME": "אוניברסיטת גנט",
+			"OS_MAP_P110_CITY": "גנט, בלגיה",
+
+			"OS_MAP_P111_NAME": "האוניברסיטה הקתולית של לאובן",
+			"OS_MAP_P111_CITY": "לאובן, בלגיה",
+
+			"OS_MAP_P112_NAME": "אוניברסיטת באזל",
+			"OS_MAP_P112_CITY": "באזל, שווייץ",
+
+			"OS_MAP_P113_NAME": "המרכז הרפואי אוניברסיטת VU",
+			"OS_MAP_P113_CITY": "אמסטרדם, הולנד",
+
+			"OS_MAP_P114_NAME": "המכון השוויצרי לביואינפורמטיקה",
+			"OS_MAP_P114_CITY": "לוזאן, שווייץ",
+
+			"OS_MAP_P115_NAME": "המכון האירופאי לחקר המוח, קרן ריטה לוי-מונצאלצ'יני ",
+			"OS_MAP_P115_CITY": "רומא, איטליה",
+
+			"OS_MAP_P116_NAME": "בית הספר ללימודים גבוהים",
+			"OS_MAP_P116_CITY": "פיזה, איטליה",
+
+			"OS_MAP_P117_NAME": "אוניברסיטת מאסטריכט",
+			"OS_MAP_P117_CITY": "מאסטריכט, הולנד",
+
+			"OS_MAP_P118_NAME": "אוניברסיטת הרטפורדשייר",
+			"OS_MAP_P118_CITY": "הטפילד, בריטניה",
+
+			"OS_MAP_P119_NAME": "בית החולים האוניברסיטאי בון",
+			"OS_MAP_P119_CITY": "בון, גרמינה",
+
+			"OS_MAP_P120_NAME": "הקרן למחקר ביו-רפואי, האקדמיה של אתונה",
+			"OS_MAP_P120_CITY": "אתונה, יוון",
+
+			"OS_MAP_P121_NAME": "קואופרטיב קונבלופ לעיצוב הידע",
+			"OS_MAP_P121_CITY": "גראץ, אוסטריה",
+
+			"OS_MAP_P122_NAME": "בית הספר לרפואה שאריטֶה ברלין",
+			"OS_MAP_P122_CITY": "ברלין, גרמניה",
+			"OS_MAP_P122_DESC": "בית הספר לרפואה שאריטֶה שבברלין הוא בית\nהספר הגדול ביותר לרפואה באירופה.\nיותר ממחצית מזוֹכי פרסי נובל לרפואה ולפיזיולוגיה\nבגרמניה למדו בו. מחלקת ההדמיה המוחית של שאריטֶה\nעומדת בראש פרויקט TheVirtualBrain (TVB) של פרויקט\nהמוח האנושי. TVB היא פלטפורמה להדמיה של\nמוח מטופל במטרה לבדוק טיפולים וירטואליים.\nמשתמשיה מוֹנִים כמה אֲלָפִים.",
+
+			"OS_7MAP_P123_NAME": "המעבדה האירופית לביולוגיה מולקולרית",
+			"OS_MAP_P123_CITY": "היידלברג, גרמניה",
+			"OS_MAP_P123_DESC": "במעבדה האירופית לביולוגיה מולקולרית מתמחה\nהצוות של אנה קְרֶשׁוּק בפיתוח אלגוריתמים ללמידת\nמכונה וכלים לפילוח, קִטְלוּג וניתוח אוטומטיים\nשל דימויים ביולוגיים. במסגרת פרויקט המוח האנושי\nהצוות מְפַתֵּחַ תהליכי עבודה מיוחדים\nעבור \"ארגז הכלים\" של ilastik לעיבוד תמונה,\nבמטרה להגיע לניתוח דימוּת מוחי בגודל טבעי.",
+
+			"OS_MAP_P124_NAME": "האוניברסיטה הרפואית גרייפסוואלד",
+			"OS_MAP_P124_CITY": "גרייפסוואלד, גרמניה",
+
+			"OS_MAP_P125_NAME": "המרכז האינטגרטיבי השוויצרי לבריאות האדם",
+			"OS_MAP_P125_CITY": "פרייבורג, שווייץ",
+
+			"OS_MAP_P126_NAME": "אוניברסיטת גרנובל",
+			"OS_MAP_P126_CITY": "גרנובל, צרפת",
+
+			"OS_MAP_P127_NAME": "בית החולים האוניברסיטאי פרייבורג",
+			"OS_MAP_P127_CITY": "פרייבורג, גרמניה",
+
+			"OS_MAP_P128_NAME": "מרכז קלאודיו מונארי לכרורגיית אפילפסיה",
+			"OS_MAP_P128_CITY": "מילאנו, איטליה",
+
+			"OS_MAP_P129_NAME": "בית החולים האוניברסיטאי",
+			"OS_MAP_P129_CITY": "גרנובל, צרפת",
+
+			"OS_MAP_COUNTRY_SPAIN_NAME": "ספרד",
+			"OS_MAP_COUNTRY_FRANCE_NAME": "צרפת",
+			"OS_MAP_COUNTRY_NORWAY_NAME": "נורווגיה",
+			"OS_MAP_COUNTRY_TURKEY_NAME": "טורקיה",
+			"OS_MAP_COUNTRY_PORTUGAL_NAME": "פורטוגל",
+			"OS_MAP_COUNTRY_BELGIUM_NAME": "בלגיה",
+			"OS_MAP_COUNTRY_DENMARK_NAME": "דנמרק",
+			"OS_MAP_COUNTRY_HUNGARY_NAME": "הונגריה",
+			"OS_MAP_COUNTRY_AUSTRIA_NAME": "אוסטריה",
+			"OS_MAP_COUNTRY_FRANCE_NAME": "צרפת",
+			"OS_MAP_COUNTRY_SWITZERLAND_NAME": "שוייץ",
+			"OS_MAP_COUNTRY_SLOVENIA_NAME": "סלובניה",
+			"OS_MAP_COUNTRY_SWEDEN_NAME": "שוודיה",
+			"OS_MAP_COUNTRY_ITALY_NAME": "איטליה",
+			"OS_MAP_COUNTRY_NETHERLANDS_NAME": "הולנד",
+			"OS_MAP_COUNTRY_FINLAND_NAME": "פינלנד",
+			"OS_MAP_COUNTRY_GREECE_NAME": "יוון",
+			"OS_MAP_COUNTRY_GERMANY_NAME": "גרמניה",
+			"OS_MAP_COUNTRY_ISRAEL_NAME": "ישראל",
+			"OS_MAP_COUNTRY_UK_NAME": "בריטניה"
 		}
 	},
 
