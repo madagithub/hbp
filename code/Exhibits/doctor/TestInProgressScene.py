@@ -22,13 +22,14 @@ class TestInProgressScene(Scene):
 		self.test = testProperties['test']
 
 		if self.test != 'COGNITIVE':
-			game.sendToSerialPort(self.config.getSerialPortCommand(self.test))
-			self.timer = Timer(game.config.getTestRunTime(self.test), self.onTestDone)
+			self.serialCommands = self.config.getSerialPortCommandsByTime(self.test)
+			self.timer = Timer(self.game.config.getTestRunTime(self.test), self.onTestDone)
 			self.progressBarAnimation = FrameAnimation('assets/images/doctor/loading/loading_', 18, 25)
 		else:
 			self.cognitiveVideo = VideoPlayer(self.screen, 
 				'assets/videos/doctor/cognitive-test-healthy.mp4' if self.testProperties['isHealthy'] else 'assets/videos/doctor/cognitive-test-not-healthy.mp4', 
-				386, 207, loop=False)
+				1920 // 2 - 756 // 2, 1080 // 2 - 424 // 2, loop=False)
+			self.cognitiveVideo.play()
 
 		self.createTexts()
 
@@ -49,10 +50,21 @@ class TestInProgressScene(Scene):
 
 		if self.test != 'COGNITIVE':
 			self.timer.tick(dt)
+
+			removeKeys = []
+			for key in self.serialCommands:
+				if self.timer.getSeconds() > float(key):
+					for command in self.serialCommands[key]:
+						self.game.sendToSerialPort(command)
+					removeKeys.append(key)
+
+			for key in removeKeys:
+				del self.serialCommands[key]
+
 			self.screen.blit(self.progressBarAnimation.getFrame(dt), (892, 572))
 			Utilities.drawTextsOnCenterX(self.screen, self.subHeaderTexts, (self.screen.get_width() // 2, 419), 40)
 		else:
-			if not self.cognitiveVideo.draw(dt):
+			if self.cognitiveVideo.draw(dt):
 				self.onTestDone()
 
 		super().draw(dt)

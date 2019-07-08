@@ -1,6 +1,8 @@
 import pygame
 from pygame.locals import *
 
+import time
+
 from common.Scene import Scene
 from common.Button import Button
 
@@ -13,7 +15,9 @@ class OpeningScene(Scene):
 	def __init__(self, game):
 		super().__init__(game)
 
-		game.sendToSerialPort(self.config.getSerialPortCommand('PETDone'))
+		for command in self.config.getPETDoneSerialPortCommands():
+			game.sendToSerialPort(command)
+			time.sleep(0.02)
 
 		self.background = pygame.image.load('assets/images/doctor/background.png')
 

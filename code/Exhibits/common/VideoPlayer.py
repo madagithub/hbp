@@ -6,6 +6,9 @@ import cv2
 import numpy as np
 import time
 
+from queue import Queue
+from threading import Thread
+
 class VideoPlayer:
 	def __init__(self, screen, filename, x, y, loop=False, soundFile=None):
 		self.screen = screen
@@ -17,54 +20,81 @@ class VideoPlayer:
 		self.fps = self.video.get(cv2.CAP_PROP_FPS)
 		print("Loading video: " + filename)
 		print("FPS: " + str(self.fps) + " ========")
-		#self.fps = 23
 		self.singleFrameTime = 1 / self.fps
 
-		self.isAudioPlaying = True
+		self.shouldPlayAudio = False
 		if soundFile is not None:
 			print('load sound file:', soundFile)
 			mixer.music.load(soundFile)
-			self.isAudioPlaying = False
+			self.shouldPlayAudio = True
 
 		self.reset()
 
 	def reset(self):
+		self.currFrame = None
+		self.videoStopped = False
+		self.canFinish = False
+		self.framesQueue = Queue(maxsize = 30)
 		self.currTime = 0
 		self.video.set(cv2.CAP_PROP_POS_FRAMES, 0)
-		ret, frame = self.video.read()
-		self.processFrame(frame)
+	
+	def stop(self):
+		self.videoStopped = True
 
 	def draw(self, dt):
+		if self.videoStopped:
+			return True
+
 		self.currTime += dt
 
-		if not self.isAudioPlaying:
-			print('playing!')
-			mixer.music.play()
-			self.isAudioPlaying = True
-
 		if self.currTime < self.singleFrameTime:
-			self.blitFrame(self.currFrame)
-			return True
+			if self.currFrame is not None:
+				self.blitFrame(self.currFrame)
+			return False
 		else:
 			self.currTime -= self.singleFrameTime
-			ret, frame = self.video.read()
-			if ret:
-				self.processFrame(frame)
-				self.blitFrame(frame)
-			else:
-				if self.loop:
-					self.video.set(cv2.CAP_PROP_POS_FRAMES, 0)
-					ret, frame = self.video.read()
-					self.processFrame(frame)
-					self.blitFrame(frame)
+			
+			if self.framesQueue.qsize() > 0:
+				self.currFrame = self.framesQueue.get()
+				self.blitFrame(self.currFrame)
+			elif self.canFinish:
+				return True
+			
+			return False
 
-			return ret
+	def play(self):
+		# Start a separate thread to read and process frames into a buffer, for performance
+		self.readFramesThread = Thread(target=self.readFrames, args=())
+		self.readFramesThread.daemon = True
+
+		self.videoStopped = False
+		self.readFramesThread.start()
+
+		if self.shouldPlayAudio:
+			mixer.music.play()
+
+	def readFrames(self):
+		while True:
+
+			if self.videoStopped:
+				return
+ 
+			if not self.framesQueue.full():
+				(grabbed, frame) = self.video.read()
+ 
+				if not grabbed:
+					if self.loop:
+						self.video.set(cv2.CAP_PROP_POS_FRAMES, 0)
+					else:
+						self.canFinish = True
+				else:
+					self.framesQueue.put(self.processFrame(frame))
 
 	def processFrame(self, frame):
 		frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 		frame = np.fliplr(frame)
 		frame = np.rot90(frame)
-		self.currFrame = pygame.surfarray.make_surface(frame)
+		return pygame.surfarray.make_surface(frame)
 
 	def blitFrame(self, frame):
-		self.screen.blit(self.currFrame, (self.x, self.y))
+		self.screen.blit(frame, (self.x, self.y))

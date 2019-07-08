@@ -29,6 +29,9 @@ class SummaryScene(Scene):
 
 		self.createTexts()
 
+		self.modelPlayer.play()
+		#self.lightningPlayer.play()
+
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
 		self.createTexts()

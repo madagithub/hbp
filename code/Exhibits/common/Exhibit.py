@@ -23,7 +23,8 @@ class Exhibit:
 		self.config = Config(CONFIG_FILENAME)
 
 		self.serialPort = None
-		self.openSerialPort()			
+		self.openSerialPort()
+		time.sleep(3)	
 
 		self.touchScreenBounds = (self.config.getTouchScreenMaxX(), self.config.getTouchScreenMaxY())
 
@@ -55,8 +56,9 @@ class Exhibit:
 					self.serialPort = None
 
 	# Try to send to serial, and if an error occurs, open serial port again for X retries
-	def sendToSerialPort(self, command):
-		print("Attempting sending " + str(command) + "...")
+	def sendToSerialPort(self, originalCommand):
+		print("Attempting sending " + str(originalCommand) + "...")
+		command = originalCommand + b'\n'
 		commandSent = False
 
 		if self.config.shouldOpenSerial():
@@ -98,13 +100,24 @@ class Exhibit:
 
 	def onMouseDown(self, event, touch):
 		print("Down event!", touch.x, touch.y)
-		self.scene.onMouseDown((int(touch.x * 1920 / self.touchScreenBounds[0]), int(touch.y * 1080 / self.touchScreenBounds[1])))
+		try:
+			self.scene.onMouseDown((int(touch.x * 1920 / self.touchScreenBounds[0]), int(touch.y * 1080 / self.touchScreenBounds[1])))
+		except Exception as e:
+			print(str(e))
 
 	def onMouseUp(self, event, touch):
-		self.scene.onMouseUp((int(touch.x * 1920 / self.touchScreenBounds[0]), int(touch.y * 1080 / self.touchScreenBounds[1])))
+		print("Up event!", touch.x, touch.y)
+		try:
+			self.scene.onMouseUp((int(touch.x * 1920 / self.touchScreenBounds[0]), int(touch.y * 1080 / self.touchScreenBounds[1])))
+		except Exception as e:
+			print(str(e))
 
 	def onMouseMove(self, event, touch):
-		self.scene.onMouseMove((int(touch.x * 1920 / self.touchScreenBounds[0]), int(touch.y * 1080 / self.touchScreenBounds[1])))
+		print("Move event!", touch.x, touch.y)
+		try:
+			self.scene.onMouseMove((int(touch.x * 1920 / self.touchScreenBounds[0]), int(touch.y * 1080 / self.touchScreenBounds[1])))
+		except Exception as e:
+			print(str(e))
 
 	def loop(self):
 		isGameRunning = True
@@ -113,31 +126,34 @@ class Exhibit:
 
 		while isGameRunning:
 
-			for event in pygame.event.get():
-				if event.type == MOUSEBUTTONDOWN:
-					if not self.config.isTouch():
-						self.scene.onMouseDown(event.pos)
-				elif event.type == MOUSEBUTTONUP:
-					if not self.config.isTouch():
-						self.scene.onMouseUp(event.pos)
-				elif event.type == MOUSEMOTION:
-					if not self.config.isTouch():
-						self.scene.onMouseMove(event.pos)
-				elif event.type == KEYDOWN:
-					if event.key == K_ESCAPE:
-						isGameRunning = False
+			#ry:
+				for event in pygame.event.get():
+					if event.type == MOUSEBUTTONDOWN:
+						if not self.config.isTouch():
+							self.scene.onMouseDown(event.pos)
+					elif event.type == MOUSEBUTTONUP:
+						if not self.config.isTouch():
+							self.scene.onMouseUp(event.pos)
+					elif event.type == MOUSEMOTION:
+						if not self.config.isTouch():
+							self.scene.onMouseMove(event.pos)
+					elif event.type == KEYDOWN:
+						if event.key == K_ESCAPE:
+							isGameRunning = False
 
-			self.screen.fill(self.scene.backgroundColor)
-			currTime = pygame.time.get_ticks()
-			dt = currTime - lastTime
-			lastTime = currTime
-			self.scene.draw(dt / 1000)
+				self.screen.fill(self.scene.backgroundColor)
+				currTime = pygame.time.get_ticks()
+				dt = currTime - lastTime
+				lastTime = currTime
+				self.scene.draw(dt / 1000)
 
-			if not self.config.isTouch() and self.scene.blitCursor:
-				self.screen.blit(self.cursor, (pygame.mouse.get_pos()))
+				if not self.config.isTouch() and self.scene.blitCursor:
+					self.screen.blit(self.cursor, (pygame.mouse.get_pos()))
 
-			pygame.display.flip()
-			clock.tick(60)
+				pygame.display.flip()
+				clock.tick(60)
+			#except Exception as e:
+			#	print(str(e))
 
 		pygame.quit()
 		cv2.destroyAllWindows()

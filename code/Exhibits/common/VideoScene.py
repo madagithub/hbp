@@ -11,9 +11,10 @@ class VideoScene(Scene):
 		self.blitCursor = False
 
 		self.video = VideoPlayer(self.screen, filename, 0, 0, loop=False, soundFile=soundFile)
+		self.video.play()
 
 	def draw(self, dt):
-		if not self.video.draw(dt):
+		if self.video.draw(dt):
 			self.game.transition(self.endScene)
 
 	def reset(self):

@@ -21,9 +21,12 @@ class Doctor(Exhibit):
 	def start(self):
 		super().start()
 
+		for command in self.config.getInitSerialPortCommands():
+			self.sendToSerialPort(command)
+			time.sleep(1)
+
 		self.chooseTestScene = ChooseTestScene(self)
 		
-		self.startVideoScene = VideoScene(self, 'assets/videos/doctor/patient-entering.mp4', 'EXPLANATION')
 		self.scene = OpeningScene(self)
 
 		self.loop()
@@ -38,8 +41,7 @@ class Doctor(Exhibit):
 		if transitionId == 'EXPLANATION':
 			self.scene = ExplanationScene(self)
 		elif transitionId == 'OPENING_VIDEO':
-			self.startVideoScene.reset()
-			self.scene = self.startVideoScene
+			self.scene = VideoScene(self, 'assets/videos/doctor/patient-entering.mp4', 'EXPLANATION')
 		elif transitionId == 'CHOOSE':
 			self.scene = self.chooseTestScene
 		elif transitionId == 'RUN_TEST':
