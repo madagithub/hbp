@@ -27,7 +27,7 @@ class Doctor(Exhibit):
 
 		self.chooseTestScene = ChooseTestScene(self)
 		
-		self.scene = OpeningScene(self)
+		self.scene = self.chooseTestScene# OpeningScene(self)
 
 		self.loop()
 
