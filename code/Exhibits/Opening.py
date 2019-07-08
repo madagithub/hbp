@@ -27,7 +27,7 @@ class Opening(Exhibit):
 
 	def transition(self, transitionId, data=None):
 		if transitionId == 'VIDEO':
-			self.scene = VideoScene(self, data['file'], 'START', data['soundFile'])
+			self.scene = VideoScene(self, data['file'], 'START', data['soundFile'], data.get('hasBack', False))
 		elif transitionId == 'START':
 			self.scene = OpeningScene(self)
 		elif transitionId == 'MAP':

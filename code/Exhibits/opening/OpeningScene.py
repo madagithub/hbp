@@ -24,7 +24,7 @@ class OpeningScene(Scene):
 
 			callbackFunc = None
 			if video['type'] == 'VIDEO':
-				callbackFunc = partial(self.onVideoClick, video['file'], video.get('soundFile', None))
+				callbackFunc = partial(self.onVideoClick, video['file'], video.get('soundFile', None), True)
 			elif video['type'] == 'MAP':
 				callbackFunc = self.onMapClick
 			elif video['type'] == 'ABOUT':
@@ -61,8 +61,8 @@ class OpeningScene(Scene):
 	def onCreditsClick(self):
 		pass
 
-	def onVideoClick(self, file, soundFile):
-		self.game.transition('VIDEO', {'file': file, 'soundFile': soundFile})
+	def onVideoClick(self, file, soundFile, hasBack):
+		self.game.transition('VIDEO', {'file': file, 'soundFile': soundFile, 'hasBack': hasBack})
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()

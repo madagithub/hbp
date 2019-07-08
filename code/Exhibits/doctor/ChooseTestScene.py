@@ -145,7 +145,7 @@ class ChooseTestScene(Scene):
 		self.game.transition('EVALUATE', {'condition': self.isHealthy, 'diagnosys': isHealthy})
 
 	def draw(self, dt):
-		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 85))
+		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 49))
 
 		for i in range(len(self.neuronNames)):
 			currX = FIRST_TEST_TEXT_MIDDLE + TEST_IMAGE_GAP * i

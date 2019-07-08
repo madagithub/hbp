@@ -74,6 +74,7 @@ class Scene:
 	def loadFonts(self):
 		languageData = self.config.getLanguage()
 		self.headerFont = pygame.font.Font(languageData['fonts']['headerFont']['filename'], languageData['fonts']['headerFont']['size'])
+		self.smallScreenHeaderFont = pygame.font.Font(languageData['fonts']['smallScreenHeaderFont']['filename'], languageData['fonts']['smallScreenHeaderFont']['size'])
 		self.subHeaderFont = pygame.font.Font(languageData['fonts']['subHeaderFont']['filename'], languageData['fonts']['subHeaderFont']['size'])
 		self.subSubHeaderFont = pygame.font.Font(languageData['fonts']['subSubHeaderFont']['filename'], languageData['fonts']['subSubHeaderFont']['size'])
 		self.textFont = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])

@@ -118,7 +118,7 @@ class CountryScene(Scene):
 			self.institutionDescY = 622
 
 			self.nextButton.visible = True
-			self.prevButton.visible = True
+			self.prevButton.visible = True	
 
 	def draw(self, dt):
 		super().draw(dt)
@@ -137,8 +137,16 @@ class CountryScene(Scene):
 			Utilities.drawTextOnCenterX(self.screen, self.tapInstructions, (1098 + self.tapInstructions.get_width() // 2, 580))
 		else:
 			self.screen.blit(self.institutionImage, (1093, 157))
-			Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 30)
-			Utilities.drawTextsOnLeftX(self.screen, self.institutionCity, (1093 ,self.institutionCityY), 30)
+
+			if self.config.isRtl():
+				Utilities.drawTextsOnRightX(self.screen, self.institutionHeader, (1693 ,self.institutionHeaderY), 30)
+				Utilities.drawTextsOnRightX(self.screen, self.institutionCity, (1693 ,self.institutionCityY), 30)
+			else:
+				Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 30)
+				Utilities.drawTextsOnLeftX(self.screen, self.institutionCity, (1093 ,self.institutionCityY), 30)
 
 			if self.institutionDesc is not None:
-				Utilities.drawTextsOnLeftX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY), 30)
+				if self.config.isRtl():
+					Utilities.drawTextsOnRightX(self.screen, self.institutionDesc, (1693 ,self.institutionDescY), 30)
+				else:
+					Utilities.drawTextsOnLeftX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY), 30)
