@@ -74,8 +74,10 @@ class Scene:
 	def loadFonts(self):
 		languageData = self.config.getLanguage()
 		self.headerFont = pygame.font.Font(languageData['fonts']['headerFont']['filename'], languageData['fonts']['headerFont']['size'])
+		self.smallScreenHeaderFont = pygame.font.Font(languageData['fonts']['smallScreenHeaderFont']['filename'], languageData['fonts']['smallScreenHeaderFont']['size'])
 		self.subHeaderFont = pygame.font.Font(languageData['fonts']['subHeaderFont']['filename'], languageData['fonts']['subHeaderFont']['size'])
 		self.subSubHeaderFont = pygame.font.Font(languageData['fonts']['subSubHeaderFont']['filename'], languageData['fonts']['subSubHeaderFont']['size'])
+		self.smallScreenSubSubHeaderFont = pygame.font.Font(languageData['fonts']['smallScreenSubSubHeaderFont']['filename'], languageData['fonts']['smallScreenSubSubHeaderFont']['size'])
 		self.textFont = pygame.font.Font(languageData['fonts']['textFont']['filename'], languageData['fonts']['textFont']['size'])
 		self.smallTextFont = pygame.font.Font(languageData['fonts']['smallTextFont']['filename'], languageData['fonts']['smallTextFont']['size'])
 		self.smallerTextFont = pygame.font.Font(languageData['fonts']['smallerTextFont']['filename'], languageData['fonts']['smallerTextFont']['size'])
@@ -93,6 +95,7 @@ class Scene:
 				self.languageButtons[i].visible = True
 
 	def onMouseDown(self, pos):
+		print("Scene mouse down!", pos)
 		for button in self.buttons:
 			button.onMouseDown(pos)
 

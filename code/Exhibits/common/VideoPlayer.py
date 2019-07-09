@@ -17,7 +17,7 @@ class VideoPlayer:
 		self.loop = loop
 
 		self.video = cv2.VideoCapture(filename)
-		self.fps = self.video.get(cv2.CAP_PROP_FPS)
+		self.fps = 23#self.video.get(cv2.CAP_PROP_FPS)
 		print("Loading video: " + filename)
 		print("FPS: " + str(self.fps) + " ========")
 		self.singleFrameTime = 1 / self.fps
@@ -80,6 +80,7 @@ class VideoPlayer:
 				return
  
 			if not self.framesQueue.full():
+				time.sleep(0.01)
 				(grabbed, frame) = self.video.read()
  
 				if not grabbed:
