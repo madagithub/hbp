@@ -9,14 +9,14 @@ from common.Scene import Scene
 from common.Button import Button
 from common.Utilities import Utilities
 
-FIRST_TEST_IMAGE_X = 240
-FIRST_TEST_IMAGE_Y = 179
-FIRST_TEST_SELECT_BUTTON_X = 309
-FIRST_TEST_SELECT_BUTTON_Y = 787
-FIRST_TEST_TEXT_MIDDLE = 398
-TEST_IMAGE_GAP = 565
+FIRST_TEST_IMAGE_X = 140
+FIRST_TEST_IMAGE_Y = 136
+FIRST_TEST_SELECT_BUTTON_X = 154
+FIRST_TEST_SELECT_BUTTON_Y = 534
+FIRST_TEST_TEXT_MIDDLE = 244
+TEST_IMAGE_GAP = 444
 
-SMALL_TEXT_LINE_SIZE = 26
+SMALL_TEXT_LINE_SIZE = 21
 
 INDEX_TO_TEST_ID = ['COGNITIVE', 'PET', 'MRI']
 TEST_ID_TO_INDEX = {
@@ -74,7 +74,7 @@ class ChooseTestScene(Scene):
 
 		normalImage = pygame.image.load('assets/images/doctor/diagnose-button-normal.png')
 		selectedImage = pygame.image.load('assets/images/doctor/diagnose-button-selected.png')
-		self.diagnoseButton = Button(self.screen, pygame.Rect(847, 891, 232, 64), 
+		self.diagnoseButton = Button(self.screen, pygame.Rect(self.screen.get_width() - 232 // 2, 601, 232, 64), 
 			normalImage, selectedImage, self.config.getText('DFAM_DIAGNOSE_BUTTON_TEXT'), [255, 255, 255], [255, 255, 255], self.buttonFont, self.onDiagnose)
 		self.buttons.append(self.diagnoseButton)
 		self.diagnoseButton.visible = False
@@ -104,7 +104,7 @@ class ChooseTestScene(Scene):
 			self.selectButtons[i].createText(self.config.getText('DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT'), self.smallButtonTextFont)
 
 	def createTexts(self):
-		self.headerText = self.textFont.render(self.config.getText('DFAM_CHOOSE_TEST_INSTRUCTION'), True, (255, 255, 255))
+		self.headerText = self.smallScreenSubSubHeaderFont.render(self.config.getText('DFAM_CHOOSE_TEST_INSTRUCTION'), True, (255, 255, 255))
 		self.diagnoseQuestionText = self.subHeaderFont.render(self.config.getText('DFAM_DIAGNOSE_QUESTION_TEXT'), True, [255, 207, 0])
 
 	def onTestClick(self, index):
@@ -145,7 +145,7 @@ class ChooseTestScene(Scene):
 		self.game.transition('EVALUATE', {'condition': self.isHealthy, 'diagnosys': isHealthy})
 
 	def draw(self, dt):
-		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 85))
+		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 49))
 
 		for i in range(len(self.neuronNames)):
 			currX = FIRST_TEST_TEXT_MIDDLE + TEST_IMAGE_GAP * i

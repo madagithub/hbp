@@ -102,25 +102,23 @@ class CountryScene(Scene):
 		self.loadInstitution()
 
 	def loadInstitution(self):
-		institution = self.institutions[self.institutionIndex]
-		self.institutionHeader = Utilities.renderTextList(self.config, self.subSubHeaderFont, institution['nameKey'], (255, 255, 255))
-		self.institutionCity = Utilities.renderTextList(self.config, self.smallerTextFont, institution['cityKey'], (138, 138, 138))
+		if self.institutionIndex is not None:
+			institution = self.institutions[self.institutionIndex]
+			self.institutionHeader = Utilities.renderTextList(self.config, self.subSubHeaderFont, institution['nameKey'], (255, 255, 255))
+			self.institutionCity = Utilities.renderTextList(self.config, self.smallerTextFont, institution['cityKey'], (138, 138, 138))
 
-		self.institutionDesc = None
-		if institution.get('descriptionKey', None) is not None:
-			self.institutionDesc = Utilities.renderTextList(self.config, self.almostExtraSmallTextFont, institution['descriptionKey'], (255, 255, 255))
+			self.institutionDesc = None
+			if institution.get('descriptionKey', None) is not None:
+				self.institutionDesc = Utilities.renderTextList(self.config, self.almostExtraSmallTextFont, institution['descriptionKey'], (255, 255, 255))
 
-		self.institutionImage = pygame.image.load('assets/images/opening/map/institutions/' + institution.get('image', 'default') + '.png')
+			self.institutionImage = pygame.image.load('assets/images/opening/map/institutions/' + institution.get('image', 'default') + '.png')
 
-		self.institutionHeaderY = 517
-		self.institutionCityY = 565
-		self.institutionDescY = 622
+			self.institutionHeaderY = 517
+			self.institutionCityY = 565
+			self.institutionDescY = 622
 
-		self.nextButton.visible = True
-		self.prevButton.visible = True
-
-		#self.playVideoButton.visible = True
-		self.closeVideoButton.visible = True
+			self.nextButton.visible = True
+			self.prevButton.visible = True	
 
 	def draw(self, dt):
 		super().draw(dt)
@@ -139,8 +137,16 @@ class CountryScene(Scene):
 			Utilities.drawTextOnCenterX(self.screen, self.tapInstructions, (1098 + self.tapInstructions.get_width() // 2, 580))
 		else:
 			self.screen.blit(self.institutionImage, (1093, 157))
-			Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 30)
-			Utilities.drawTextsOnLeftX(self.screen, self.institutionCity, (1093 ,self.institutionCityY), 30)
+
+			if self.config.isRtl():
+				Utilities.drawTextsOnRightX(self.screen, self.institutionHeader, (1693 ,self.institutionHeaderY), 30)
+				Utilities.drawTextsOnRightX(self.screen, self.institutionCity, (1693 ,self.institutionCityY), 30)
+			else:
+				Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 30)
+				Utilities.drawTextsOnLeftX(self.screen, self.institutionCity, (1093 ,self.institutionCityY), 30)
 
 			if self.institutionDesc is not None:
-				Utilities.drawTextsOnLeftX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY), 30)
+				if self.config.isRtl():
+					Utilities.drawTextsOnRightX(self.screen, self.institutionDesc, (1693 ,self.institutionDescY), 30)
+				else:
+					Utilities.drawTextsOnLeftX(self.screen, self.institutionDesc, (1093 ,self.institutionDescY), 30)

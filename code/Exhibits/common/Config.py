@@ -24,6 +24,9 @@ class Config:
 	def getLanguages(self):
 		return self.config['languages']
 
+	def isRtl(self):
+		return self.getLanguage()['rtl']
+
 	def changeLanguage(self, index):
 		self.languageIndex = index
 		self.languagePrefix = self.getLanguages()[self.languageIndex]['prefix']
