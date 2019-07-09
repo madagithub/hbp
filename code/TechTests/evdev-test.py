@@ -13,7 +13,7 @@ coordinatesChanged = 0
 isUp = False
 isDown = False
 
-for event in device.read_one():
+for event in device.read_loop():
 	if event.type == ecodes.SYN_REPORT:
 		if isUp:
 			print('UP:', str(currX), '-', str(currY))

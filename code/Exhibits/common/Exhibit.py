@@ -5,8 +5,13 @@ import cv2
 import time
 import serial
 
+import evdev
+from evdev import InputDevice, categorize, ecodes
+
 from common.Config import Config
 from common.VideoScene import VideoScene
+
+from threading import Thread
 
 import os 
 os.environ['SDL_VIDEO_CENTERED'] = '1'
@@ -24,7 +29,7 @@ class Exhibit:
 
 		self.serialPort = None
 		self.openSerialPort()
-		time.sleep(3)	
+		time.sleep(3)
 
 		self.touchScreenBounds = (self.config.getTouchScreenMaxX(), self.config.getTouchScreenMaxY())
 
@@ -32,19 +37,63 @@ class Exhibit:
 		pygame.init()
 		pygame.mouse.set_visible(False)
 
-		self.screen = pygame.display.set_mode(self.config.getScreenSize(), pygame.FULLSCREEN)
+		infoObject = pygame.display.Info()
+		self.screenSize = (infoObject.current_w, infoObject.current_h)
+
+		self.screen = pygame.display.set_mode(self.screenSize, pygame.FULLSCREEN)
 		self.cursor = pygame.image.load('assets/images/cursor.png').convert_alpha()
 
 		if self.config.isTouch():
-			print("Loading touch screen...")
-			self.ts = Touchscreen(self.config.getTouchDevice())
+			self.setupTouchScreen()
 
-			for touch in self.ts.touches:
-			    touch.on_press = self.onMouseDown
-			    touch.on_release = self.onMouseUp
-			    touch.on_move = self.onMouseMove
+	def setupTouchScreen(self):
+		self.device = evdev.InputDevice(self.config.getTouchDevice())
+		self.readTouchThread = Thread(target=self.readTouch, args=())
+		self.readTouchThread.daemon = True
+		self.readTouchThread.start()
 
-			self.ts.run()
+	def readTouch(self):
+		print('THREAD UP!!!!')
+
+		currX = 0
+		currY = 0
+
+		coordinatesChanged = 0
+
+		isUp = False
+		isDown = False
+
+		# TODO: Change to read_one and alow thread to exit when marked
+		for event in self.device.read_loop():
+			if event.type == ecodes.SYN_REPORT:
+				if isUp:
+					self.onMouseUp(currX, currY)
+					print('UP:', str(currX), '-', str(currY))
+				elif isDown:
+					self.onMouseDown(currX, currY)
+					print('DOWN: ', str(currX), '-', str(currY))
+				else:
+					self.onMouseMove(currX, currY)
+					print('MOVE: ', str(currX), '-', str(currY))
+
+				isUp = False
+				isDown = False
+
+			if event.type == ecodes.EV_KEY:
+				keyEvent = categorize(event)
+				pass
+				if keyEvent.keycode[0] == 'BTN_LEFT':
+					if keyEvent.keystate == keyEvent.key_up:
+						isUp = True
+					elif keyEvent.keystate == keyEvent.key_down:
+						isDown = True
+			elif event.type == ecodes.EV_ABS:
+				absEvent = categorize(event)
+
+				if absEvent.event.code == 0:
+					currX = absEvent.event.value
+				elif absEvent.event.code == 1:
+					currY = absEvent.event.value
 
 	def openSerialPort(self):
 		if self.config.shouldOpenSerial():
@@ -98,24 +147,24 @@ class Exhibit:
 	def transition(self, transitionId, data=None):
 		pass
 
-	def onMouseDown(self, event, touch):
-		print("Down event!", touch.x, touch.y)
+	def onMouseDown(self, touchX, touchY):
+		print("Down event!", touchX, touchY)
 		try:
-			self.scene.onMouseDown((int(touch.x * 1920 / self.touchScreenBounds[0]), int(touch.y * 1080 / self.touchScreenBounds[1])))
+			self.scene.onMouseDown((int(touchX * self.screenSize[0] / self.touchScreenBounds[0]), int(touchY * self.screenSize[1] / self.touchScreenBounds[1])))
 		except Exception as e:
 			print(str(e))
 
-	def onMouseUp(self, event, touch):
-		print("Up event!", touch.x, touch.y)
+	def onMouseUp(self, touchX, touchY):
+		print("Up event!", touchX, touchY)
 		try:
-			self.scene.onMouseUp((int(touch.x * 1920 / self.touchScreenBounds[0]), int(touch.y * 1080 / self.touchScreenBounds[1])))
+			self.scene.onMouseUp((int(touchX * self.screenSize[0] / self.touchScreenBounds[0]), int(touchY * self.screenSize[1] / self.touchScreenBounds[1])))
 		except Exception as e:
 			print(str(e))
 
-	def onMouseMove(self, event, touch):
-		print("Move event!", touch.x, touch.y)
+	def onMouseMove(self, touchX, touchY):
+		print("Move event!", touchX, touchY)
 		try:
-			self.scene.onMouseMove((int(touch.x * 1920 / self.touchScreenBounds[0]), int(touch.y * 1080 / self.touchScreenBounds[1])))
+			self.scene.onMouseMove((int(touchX * self.screenSize[0] / self.touchScreenBounds[0]), int(touchY * self.screenSize[1] / self.touchScreenBounds[1])))
 		except Exception as e:
 			print(str(e))
 
@@ -159,4 +208,4 @@ class Exhibit:
 		cv2.destroyAllWindows()
 
 		if self.config.isTouch():
-			self.ts.stop()
+			pass

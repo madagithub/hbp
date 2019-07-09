@@ -1,11 +1,8 @@
 {
-	"width": 1366,
-	"height": 768,
-
-	"touch": false,
-	"touchDevice": "/dev/input/event3",
-	"touchMaxX": 4096,
-	"touchMaxY": 4096,
+	"touch": true,
+	"touchDevice": "/dev/input/event8",
+	"touchMaxX": 4095,
+	"touchMaxY": 4095,
 	"defaultLanguage": "en",
 	"maxMapDotTapDistance": 30,
 
@@ -22,7 +19,7 @@
 		"40": ["C 0"]
 	},
 	"PETDoneSerialCommands": ["D 0", "B 4000 600"],
-	"initSerialCommands": ["D 0", "A 10000 1000", "B -4000 1000", "C 1"],
+	"initSerialCommands": ["D 0", "A 10000 1500", "B 4000 1500", "C 1"],
 	"PETRunTime": 16,
 	"MRIRunTime": 42,
 

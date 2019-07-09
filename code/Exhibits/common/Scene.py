@@ -93,6 +93,7 @@ class Scene:
 				self.languageButtons[i].visible = True
 
 	def onMouseDown(self, pos):
+		print("Scene mouse down!", pos)
 		for button in self.buttons:
 			button.onMouseDown(pos)
 

@@ -38,6 +38,8 @@ class Button:
 
 	def onMouseUp(self, position):
 		if self.visible:
+			print("RECT:", self.rect)
+			print("POS:", position)
 			if self.rect.collidepoint(position) and self.isMouseDownOnButton:
 				self.onClickCallback()
 
