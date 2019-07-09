@@ -6,6 +6,7 @@ from common.Button import Button
 
 from common.Utilities import Utilities
 from common.VideoPlayer import VideoPlayer
+from common.FrameAnimation import FrameAnimation
 
 START_BUTTON_TEXT_COLOR = [0, 0, 0]
 
@@ -18,8 +19,8 @@ class SummaryScene(Scene):
 		self.summaryTextBackground = pygame.image.load('assets/images/summary-text-background.png')
 
 		self.neuronImage = pygame.image.load('assets/images/reconstruct-' + self.neuronChosen + '-small.png')
-		self.modelPlayer = VideoPlayer(game.screen, 'assets/videos/neuron/' + self.neuronChosen + '-small.avi', 818, 203, True)
-		self.lightningPlayer = VideoPlayer(game.screen, 'assets/videos/neuron/' + self.neuronChosen + '-electric-small.avi', 1434, 203, True)
+		self.spinningAnimationSmall = FrameAnimation('assets/videos/neuron/animations/' + self.neuronChosen + '-small/animation-', 60, 24)
+		self.electricAnimationSmall = FrameAnimation('assets/videos/neuron/animations/' + self.neuronChosen + '-electric-small/animation-', 77, 24)
 		self.videoMask = pygame.image.load('assets/images/neuron/small-video-mask.png')
 
 		self.anotherNeuronButton = Button(self.screen, pygame.Rect(771, 620, 386, 56), 
@@ -28,9 +29,6 @@ class SummaryScene(Scene):
 		self.buttons.append(self.anotherNeuronButton)
 
 		self.createTexts()
-
-		self.modelPlayer.play()
-		#self.lightningPlayer.play()
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
@@ -52,10 +50,10 @@ class SummaryScene(Scene):
 	def draw(self, dt):
 		self.screen.blit(self.summaryTextBackground, (0, 726))
 		self.screen.blit(self.neuronImage, (201, 203))
-		self.modelPlayer.draw(dt)
-		self.lightningPlayer.draw(dt)
-		self.screen.blit(self.videoMask, (818 - 24 // 2, 203 - 24 // 2))
-		self.screen.blit(self.videoMask, (1434 - 24 // 2, 203 - 24 // 2))
+		self.screen.blit(self.spinningAnimationSmall.getFrame(dt), (818, 203))
+		self.screen.blit(self.electricAnimationSmall.getFrame(dt), (1434, 103))
+		self.screen.blit(self.videoMask, (818 - 24 // 2, 0 - 24 // 2))
+		self.screen.blit(self.videoMask, (1434 - 24 // 2, 3 - 24 // 2))
 
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 60))
 		Utilities.drawTextOnCenterX(self.screen, self.subHeaderText, (self.screen.get_width() // 2, 113))

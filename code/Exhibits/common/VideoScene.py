@@ -23,6 +23,7 @@ class VideoScene(Scene):
 		self.video.play()
 
 	def onBack(self):
+		self.video.stop()
 		self.game.transition(self.endScene)
 
 	def onMouseDown(self, pos):

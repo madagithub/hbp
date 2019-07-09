@@ -25,7 +25,6 @@ class Scene:
 		self.config = game.config
 
 		self.blitCursor = True
-		self.backgroundColor = [0,0,0]
 
 		self.logo = pygame.image.load('assets/images/logo.png')
 		self.bottomBar = pygame.image.load('assets/images/bottom-bar.png')

@@ -5,8 +5,11 @@ import cv2
 import time
 import serial
 
-import evdev
-from evdev import InputDevice, categorize, ecodes
+import platform
+
+if platform.system() == 'Linux':
+	import evdev
+	from evdev import InputDevice, categorize, ecodes
 
 from common.Config import Config
 from common.VideoScene import VideoScene
@@ -43,7 +46,7 @@ class Exhibit:
 		self.screen = pygame.display.set_mode(self.screenSize, pygame.FULLSCREEN)
 		self.cursor = pygame.image.load('assets/images/cursor.png').convert_alpha()
 
-		if self.config.isTouch():
+		if self.config.isTouch() and platform.system() == 'Linux':
 			self.setupTouchScreen()
 
 	def setupTouchScreen(self):
