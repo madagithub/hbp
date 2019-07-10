@@ -43,6 +43,8 @@ class VideoPlayer:
 
 	def draw(self, dt):
 		if self.videoStopped:
+			if self.shouldPlayAudio:
+				mixer.music.stop()
 			return True
 
 		self.currTime += dt
@@ -58,7 +60,7 @@ class VideoPlayer:
 				self.currFrame = self.framesQueue.get()
 				self.blitFrame(self.currFrame)
 			elif self.canFinish:
-				return True
+				self.videoStopped = True
 			
 			return False
 
@@ -95,7 +97,7 @@ class VideoPlayer:
 		frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 		frame = np.fliplr(frame)
 		frame = np.rot90(frame)
-		return pygame.surfarray.make_surface(frame)
+		return pygame.surfarray.make_surface(frame).convert()
 
 	def blitFrame(self, frame):
 		self.screen.blit(frame, (self.x, self.y))

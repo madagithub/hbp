@@ -9,6 +9,7 @@ from common.Button import Button
 from common.Utilities import Utilities
 from common.Timer import Timer
 from common.VideoPlayer import VideoPlayer
+from common.FrameAnimation import FrameAnimation
 
 from queue import Queue
 
@@ -54,6 +55,9 @@ class DrawNeuronScene(Scene):
 
 		self.neuronChosen = neuronChosen
 
+		self.spinningAnimation = FrameAnimation('assets/videos/neuron/animations/' + self.neuronChosen + '-big/animation-', 60, 24)
+		self.electricAnimation = FrameAnimation('assets/videos/neuron/animations/' + self.neuronChosen + '-electric-big/animation-', 46, 48)
+
 		self.animationPaths = self.config.getAnimationPaths(self.neuronChosen)
 		self.drawingPaths = self.getDrawingPaths([], self.animationPaths, False)
 		random.shuffle(self.drawingPaths)
@@ -97,9 +101,7 @@ class DrawNeuronScene(Scene):
 
 		self.modelTextBalloon = pygame.image.load('assets/images/text-box-small.png')
 		self.lightningTextBalloon = pygame.image.load('assets/images/text-box-large.png')
-		
-		self.modelPlayer = VideoPlayer(game.screen, 'assets/videos/neuron/' + self.neuronChosen + '-big.avi', self.screen.get_width() // 2 - 600 // 2, 240, True)
-		self.lightningPlayer = VideoPlayer(game.screen, 'assets/videos/neuron/' + self.neuronChosen + '-electric-big.avi', self.screen.get_width() // 2 - 600 // 2, 0, True)
+	
 
 		lightningButtonNormal = pygame.image.load('assets/images/button-electrify-normal.png')
 		lightningButtonTapped = pygame.image.load('assets/images/button-electrify-tapped.png')
@@ -200,7 +202,7 @@ class DrawNeuronScene(Scene):
 		super().draw(dt)
 
 	def draw3DModelState(self, dt):
-		self.modelPlayer.draw(dt)
+		self.screen.blit(self.spinningAnimation.getFrame(dt), (self.screen.get_width() // 2 - 600 // 2, 240))
 		self.screen.blit(self.videoMask, (0, 0))
 
 		self.screen.blit(self.modelTextBalloon, (1326, 399))
@@ -210,7 +212,7 @@ class DrawNeuronScene(Scene):
 		super().draw(dt)
 
 	def drawLightningState(self, dt):
-		self.lightningPlayer.draw(dt)
+		self.screen.blit(self.electricAnimation.getFrame(dt), (self.screen.get_width() // 2 - 600 // 2, 0))
 		self.screen.blit(self.videoMask, (0, 0))
 
 		self.screen.blit(self.lightningTextBalloon, (1327, 412))
@@ -262,15 +264,12 @@ class DrawNeuronScene(Scene):
 		self.state = MODEL_STATE
 		self.createTexts()
 		self.lightningButton.visible = True
-		self.modelPlayer.play()
 
 	def onMoveToLightningState(self):
-		self.modelPlayer.stop()
 		self.state = LIGHTNING_STATE
 		self.createTexts()
 		self.lightningButton.visible = False
 		self.nextButton.visible = True
-		self.lightningPlayer.play()
 
 	def onNextClick(self):
 		self.game.transition('SUMMARY', self.neuronChosen)

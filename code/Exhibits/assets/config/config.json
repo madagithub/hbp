@@ -1,5 +1,5 @@
 {
-	"touch": true,
+	"touch": false,
 	"touchDevice": "/dev/input/event8",
 	"touchMaxX": 4095,
 	"touchMaxY": 4095,
@@ -40,7 +40,8 @@
 				"smallerTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 26},
 				"smallButtonTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 24},
 				"almostExtraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 22},
-				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20}
+				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20},
+				"smallScreenExtraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 16}
 			}
 		},
 		{
@@ -59,7 +60,8 @@
 				"smallerTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 26},
 				"smallButtonTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 24},
 				"almostExtraSmallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 22},
-				"extraSmallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 20}
+				"extraSmallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 20},
+				"smallScreenExtraSmallTextFont": {"filename": "assets/fonts/TheSansArabic-Light.ttf", "size": 16}
 			}
 		},
 		{
@@ -78,7 +80,8 @@
 				"smallerTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 26},
 				"smallButtonTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 24},
 				"almostExtraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 22},
-				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20}
+				"extraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 20},
+				"smallScreenExtraSmallTextFont": {"filename": "assets/fonts/SimplerPro_V3-Regular.ttf", "size": 16}
 			}
 		}
 	],
@@ -638,10 +641,10 @@
 		"ar": {
 			"RN_OPENING_SCREEN_HEADER": "خلايا عصبية قيد الإنشاء",
 			"RN_OPENING_SCREEN_SUB_HEADER": "أنتم مدعوون لبناء الخلية العصبية الخاصة بكم",
-			"RN_OPENING_SCREEN_BUTTON_TEXT": "Start",
+			"RN_OPENING_SCREEN_BUTTON_TEXT": "ابدأوا",
 
 			"RN_CHOOSE_NEURON_INSTRUCTION": "اختاروا الخلية العصبية وقوموا ببنائها كنموذج ثلاثي الأبعاد فعّال",
-			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "Select",
+			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "اختاروا",
 
 			"RN_CHOOSE_NEURON_PYRAMIDAL_NAME": "خلية هرمية (Pyramidal Cell)",
 			"RN_CHOOSE_NEURON_BASKET_NAME": "خلية السلة (Basket Cell)",
@@ -658,7 +661,7 @@
 
 			"RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION": "تنشيط الخلية:\nفي هذه المرحلة، أدخلتم الكهرباء\nالى مبنى الخلية، مما يجعل النموذج\nالرقمي فعالًا.",
 
-			"RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT": "Next",
+			"RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT": "التالي",
 
 			"RN_SUMMARY_SCREEN_HEADER": "كل الاحترام!",
 			"RN_SUMMARY_SCREEN_SUB_HEADER": "لقد بنيتم نموذجًا ثلاثي الأبعاد فعّال لخلية عصبية، عصبون!",
@@ -670,7 +673,7 @@
 			"RN_SUMMARY_SCREEN_MODELING_TEXT": "مرحلة إعادة بناء الخلية",
 			"RN_SUMMARY_SCREEN_ELECTRIFY_TEXT": "تنشيط الخلية",
 
-			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell",
+			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "أبنوا خلية أخرى",
 
 			"DFAM_OPENING_SCREEN_HEADER": "طبيب للحظة",
 			"DFAM_OPENING_SCREEN_SUB_HEADER": "لديكم الفرصة لأن تصبحوا أطباء\nاضغطوا على الزّر وتعرفوا على مريضكم الجديد",
@@ -680,40 +683,40 @@
 			"DFAM_EXP_SCREEN_HEADER_TEXT": "يصف المريض حالة من الارتباك والنسيان.\nهل لديه مرض الزهايمر؟",
 			"DFAM_EXP_SCREEN_INFO_TEXT": "يجب عليكم إجراء العديد من الاختبارات لتشخيص حالته.\nفي مرض الزهايمر، تموت الخلايا العصبية في الدماغ تدريجيًا، وتُسّبب الضرر في\nالقدرات الإدراكية مثل الذاكرة والتوجه المكاني وعمليات التفكير وما إلى ذلك.",
 
-			"DFAM_CHOOSE_TEST_INSTRUCTION": "Select the test you wish to conduct on the patiant",
-			"DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT": "Run test",
+			"DFAM_CHOOSE_TEST_INSTRUCTION": "حددوا الاختبار الذي تريدون القيام به للمريض",
+			"DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT": "قوموا باجراء تجربة",
 
-			"DFAM_COGNITIVE_TEST_NAME": "Cognitive tests",
+			"DFAM_COGNITIVE_TEST_NAME": "الاختبار المعرفي",
 			"DFAM_COGNITIVE_TEST_DESC": "الاختبارات المعرفية هي سلسلة من المهام الّتي\nتأتي للتحقق من صحة قدرات الدماغ المختلفة.",
-			"DFAM_PET_TEST_NAME": "PET test",
+			"DFAM_PET_TEST_NAME": "اختبار ال PET",
 			"DFAM_PET_TEST_DESC": "اختبار PET (Positron Emission Tomography)\nالتصوير المقطعي بالإصدار البوزيتروني- هو\nمسح للدماغ والبحث عن مادة معينة بداخله. على سبيل\nالمثال، يمكن البحث في مسح PET على\nمجموعات بيتا أميلويد، الشائعة جدًا\nفقط عند مرضى الزهايمر.",
-			"DFAM_MRI_TEST_NAME": "MRI test",
+			"DFAM_MRI_TEST_NAME": "اختبار ال MRI",
 			"DFAM_MRI_TEST_DESC": "اختبار التصوير بالرنين المغناطيسي (MRI) (Magnetic Resonance Imaging)\nهو مسح للدماغ باستخدام الإشعاع اللاسلكي\nومجال مغناطيسي قوي. ينتج المسح صورة توضح\nكيف يبدو الدماغ وما يحدث فيه.",
 
 			"DFAM_TEST_IN_PROGRESS_HEADER_MRI": "يتم إجراء اختبار ال MRI (التصوير بالرنين المغناطيسي)",
 			"DFAM_TEST_IN_PROGRESS_HEADER_PET": "يتم إجراء اختبار PET",
 			"DFAM_TEST_IN_PROGRESS_HEADER_COGNITIVE": "يتم إجراء الاختبار المعرفي",
-			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI": "Follow the process on the patient model",
-			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET": "Follow the process on the patient model",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI": "اتبعوا عملية الاختبار على نموذج المريض",
+			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET": "اتبعوا عملية الاختبار على نموذج المريض",
 
-			"DFAM_TEST_RESULTS_HEADER_COGNITIVE": "Cognitive test results",
-			"DFAM_TEST_RESULTS_HEADER_PET": "PET test results",
-			"DFAM_TEST_RESULTS_HEADER_MRI": "MRI test results",
+			"DFAM_TEST_RESULTS_HEADER_COGNITIVE": "نتيجة الاختبار المعرفي",
+			"DFAM_TEST_RESULTS_HEADER_PET": "نتيجة اختبار PET",
+			"DFAM_TEST_RESULTS_HEADER_MRI": "نتيجة فحص التصوير بالرنين المغناطيسي (MRI)",
 
 			"DFAM_TEST_RESULTS_DESC_COGNITIVE": "يتطلب رسم ساعة قدرات دماغية الّتي تتضرر في مرض الزهايمر\nمثل الإدارة والفهم العددي واسترجاع المعرفة والمزيد.",
 			"DFAM_TEST_RESULTS_DESC_PET": "في أدمغة مرضى الزهايمر، هناك العديد من مجموعات بروتين بيتا\nاميلويد، والّتي لا توجد في أدمغة الأشخاص الأصحاء. إذا وضعنا\nعلامة على هذه المجموعات باستخدام المواد المشّعة وأجرينا مسح PET،\nفسنرى العديد من المناطق الّتي تكون فيها تركيزات هذه المجموعات عالية (باللون الأحمر).",
 			"DFAM_TEST_RESULTS_DESC_MRI": "في خلايا مرض الزهايمر تموت خلايا الدماغ في\nجميع أنحاءه، لذلك تصبح أنسجة الدماغ أرق وأرق مع خلايا\nأقّل وأقّل (وأكثر فتحات \"سوداء\" في الدماغ).",
 
-			"DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT": "Run more tests",
-			"DFAM_TEST_RESULTS_HEALTHY_HEADER": "Healthy patient",
-			"DFAM_TEST_RESULTS_RESULTS_HEADER": "Test result",
+			"DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT": "قوموا باجراء تجربة أخرى",
+			"DFAM_TEST_RESULTS_HEALTHY_HEADER": "مُعالج سليم",
+			"DFAM_TEST_RESULTS_RESULTS_HEADER": "نتيجة الاختبار",
 
-			"DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT": "See results",
+			"DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT": "انظروا النتيجة",
 
 			"DFAM_DIAGNOSE_BUTTON_TEXT": "أعطوا تشخيصًا",
-			"DFAM_DIAGNOSE_YES_BUTTON_TEXT": "Yes",
-			"DFAM_DIAGNOSE_NO_BUTTON_TEXT": "No",
-			"DFAM_DIAGNOSE_QUESTION_TEXT": "Does the patient have Alzheimer’s?",
+			"DFAM_DIAGNOSE_YES_BUTTON_TEXT": "نعم",
+			"DFAM_DIAGNOSE_NO_BUTTON_TEXT": "لا",
+			"DFAM_DIAGNOSE_QUESTION_TEXT": "هل يعاني المريض من مرض الزهايمر؟",
 
 			"DFAM_EVALUATION_SCREEN_CORRECT_HEADER": "التشخيص صحيح",
 			"DFAM_EVALUATION_SCREEN_INCORRECT_HEADER": "التشخيص غير صحيح، حاولوا مرة أخرى",
@@ -721,24 +724,24 @@
 			"DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER": "المريض لديه مرض الزهايمر",
 
 			"DFAM_EVALUATION_ANOTHER_PATIENT_TEXT": "أدخلوا المريض التالي",
-			"DFAM_EVALUATION_LEARN_MORE_TEXT": "Learn more",
+			"DFAM_EVALUATION_LEARN_MORE_TEXT": "لمزيد من المعلومات",
 
-			"DFAM_LEARN_MORE_BACK_BUTTON_TEXT": "Back",
+			"DFAM_LEARN_MORE_BACK_BUTTON_TEXT": "عودة",
 			"DFAM_LEARN_MORE_HEALTHY_DESC_TEXT": "وفقًا للاختبارات، لا يبدو أن المريض مصاب بمرض الزهايمر.\n\nفي اختبار التصوير بالرنين المغناطيسي(MRI)، يبدو دماغه طبيعياً.\nفي الزهايمر خلايا في جميع أنحاء الدماغ تموت،\nوبالتالي فإن أنسجة الدماغ قليلة للغاية، على عكس المريض.\n\nهناك العديد من القدرات المرتبطة برسم الساعة،\nمثل استرجاع المعرفة والمهارات الإدارية ، تتضرر عند مرضى\nالزهايمر، لكن مع ذلك، نجح المريض في رسم الساعة بشكل جميل.\n\nلم يُظهر مسح PET الذي وضع علامة على مجموعات بيتا أميلويد \nالشائعة جدًا في أدمغة مرضى الزهايمر (ولكن ليس في أدمغة الأصحاء)\nأيّ مناطق حمراء على الإطلاق، مما يعني أن دماغ المريض لا يحتوي على\nتركيزات عالية من بيتا أميلويد، على عكس ما لوحظ في مرضى الزهايمر.",
 			"DFAM_LEARN_MORE_NOT_HEALTHY_DESC_TEXT": "مريضنا لديه بالفعل مرض الزهايمر.\n\nأظهر التصوير بالرنين المغناطيسي (MRI) أن أنسجة الدماغ\nرقيقة للغاية، والسبب في ذلك هو موت الخلايا العصبية\nعلى نطاق واسع الذي يحدث في مرض الزهايمر.\n\n`لأن الخلايا تموت، فإن قدرات الدماغ المختلفة تتضرر،\nمثل قدرات الإدارة واسترجاع المعرفة. لهذا السبب\nلم ينجح المريض في رسم ساعة بشكل صحيح.\n\nمسح ال- PET الذي وضع علامة على مجموعات بيتا اميلويد\nالّتي هي شائعة جدًا في أدمغة مرضى الزهايمر (ولكن ليس في الأصحاء)،\nأظهر العديد من المناطق الحمراء. تحتوي هذه المناطق على نسبة عالية\nمن الأميلويد بيتا، كما هو معتاد بالنسبة لمرضى الزهايمر.",
 
-			"OS_HBP_TEXT": "About the\nHuman Brain Project",
-			"OS_WHAT_IS_THE_QUESTION_TEXT": "What's the question?!\nConversations of young\nresearchers",
-			"OS_CAJAL_TEXT": "Santiago Ramón y Cajal",
-			"OS_MAP_TEXT": "The Human Brain Project\nin Europe",
-			"OS_BRAIN_STRUCTURES_MAP_TEXT": "Brain structures\nLaboratory findings",
-			"OS_10_QUESTIONS_TEXT": "10 unanswered questions\nabout the human brain",
-			"OS_DANCING_NEURON_TEXT": "The Electrically\nDancing Neuron",
-			"OS_MTB_TEXT": "Credits",
+			"OS_HBP_TEXT": "حول مشروع\nالدماغ البشري",
+			"OS_WHAT_IS_THE_QUESTION_TEXT": "ما هو السؤال؟\nالباحثون الشباب\nيتحدثون",
+			"OS_CAJAL_TEXT": "سانتياغو رامون\nأي كاجال",
+			"OS_MAP_TEXT": " مشروع الدماغ البشري\nفي أوروبا",
+			"OS_BRAIN_STRUCTURES_MAP_TEXT": "مباني في الدماغ\nنتائج من المختبر",
+			"OS_10_QUESTIONS_TEXT": "10 أسئلة لم تحل\nحول الدماغ البشري",
+			"OS_DANCING_NEURON_TEXT": "العصبون الكهربائي\nالراقص",
+			"OS_MTB_TEXT": "ائتمانات",
 
-			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
+			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "حددوا نقطة على الخريطة لمزيد من المعلومات",
 
-			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "Play video",
+			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "شغلوا الفلم",
 
 			"OS_MAP_P1_NAME": "المعهد الفيدرالي السويسري للتكنولوجيا لوزان",
 			"OS_MAP_P1_CITY": "لوزان، سويسرا",
@@ -1190,10 +1193,10 @@
 		"he": {
 			"RN_OPENING_SCREEN_HEADER": "כאן בונים נוירון",
 			"RN_OPENING_SCREEN_SUB_HEADER": "אתם מוזמנים לבנות נוירון משלכם",
-			"RN_OPENING_SCREEN_BUTTON_TEXT": "Start",
+			"RN_OPENING_SCREEN_BUTTON_TEXT": "התחילו",
 
 			"RN_CHOOSE_NEURON_INSTRUCTION": "בחרו נוירון ובנו אותו כמודל תלת ממדי פעיל",
-			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "Select",
+			"RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT": "בחרו",
 
 			"RN_CHOOSE_NEURON_PYRAMIDAL_NAME": "תא פירמידלי (Pyramidal Cell)",
 			"RN_CHOOSE_NEURON_BASKET_NAME": "תא סל (Basket Cell)",
@@ -1210,7 +1213,7 @@
 
 			"RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION": "הפעלת התא:\nבשלב זה הכנסתם חשמל אל מבנה\nהתא ובכך הפכתם את המודל\nהדיגיטלי לפעיל.",
 
-			"RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT": "Next",
+			"RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT": "הבא",
 
 			"RN_SUMMARY_SCREEN_HEADER": "כל הכבוד!",
 			"RN_SUMMARY_SCREEN_SUB_HEADER": "בניתם מודל תלת ממדי פעיל של תא עצב, נוירון",
@@ -1222,7 +1225,7 @@
 			"RN_SUMMARY_SCREEN_MODELING_TEXT": "שחזור מבנה התא",
 			"RN_SUMMARY_SCREEN_ELECTRIFY_TEXT": "הפעלת התא",
 
-			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "Reconstruct another cell",
+			"RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT": "בנו תא נוסף",
 
 			"DFAM_OPENING_SCREEN_HEADER": "דוקטור לרגע",
 			"DFAM_OPENING_SCREEN_SUB_HEADER": "יש לכם הזדמנות להיות רופאים\nלחצו על הכפתור, והכירו את המטופל החדש שלכם",
@@ -1232,14 +1235,14 @@
 			"DFAM_EXP_SCREEN_HEADER_TEXT": "המטופל שלכם מתאר מצב של בלבול ושכחה.\nהאם יש לו אלצהיימר?",
 			"DFAM_EXP_SCREEN_INFO_TEXT": "עליכם לבצע מספר בדיקות על מנת לאבחן את מצבו.\nבמחלת אלצהיימר תאי עצב במוח מתים בהדרגה,\nוגורמים לפגיעה ביכולות קוגניטיביות כמו זיכרון,\nהתמצאות במרחב ועוד.",
 
-			"DFAM_CHOOSE_TEST_INSTRUCTION": "Select the test you wish to conduct on the patiant",
-			"DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT": "Run test",
+			"DFAM_CHOOSE_TEST_INSTRUCTION": "בחרו את הבדיקה שברצונכם לבצע במטופל",
+			"DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT": "בצעו בדיקה",
 
-			"DFAM_COGNITIVE_TEST_NAME": "Cognitive tests",
+			"DFAM_COGNITIVE_TEST_NAME": "בדיקה קוגניטיבית",
 			"DFAM_COGNITIVE_TEST_DESC": "בדיקות קוגניטיביות הן שורה של משימות הבאות לבדוק\nאת תקינות יכולות המוח השונות.",
-			"DFAM_PET_TEST_NAME": "PET test",
+			"DFAM_PET_TEST_NAME": "בדיקת PET",
 			"DFAM_PET_TEST_DESC": "בדיקת PET (Positron Emission Tomography)\nהיא סריקה של המוח המאתרת חומר מסוים,\nכדוגמת בטא עמילואיד הנפוץ אצל\nחולי אלצהיימר.",
-			"DFAM_MRI_TEST_NAME": "MRI test",
+			"DFAM_MRI_TEST_NAME": "בדיקת MRI",
 			"DFAM_MRI_TEST_DESC": "בבדיקת MRI (Magnetic Resonance Imaging)\nסורקים את המוח בעזרת קרינת רדיו\nושדה מגנטי חזק ומייצרים הדמיה\nשל מבנה המוח.",
 
 			"DFAM_TEST_IN_PROGRESS_HEADER_MRI": "מתבצעת בדיקת MRI",
@@ -1248,24 +1251,24 @@
 			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI": "עקבו בדגם אחר התנהלות הבדיקה",
 			"DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET": "עקבו בדגם אחר התנהלות הבדיקה",
 
-			"DFAM_TEST_RESULTS_HEADER_COGNITIVE": "Cognitive test results",
-			"DFAM_TEST_RESULTS_HEADER_PET": "PET test results",
-			"DFAM_TEST_RESULTS_HEADER_MRI": "MRI test results",
+			"DFAM_TEST_RESULTS_HEADER_COGNITIVE": "תוצאת הבדיקה הקוגניטיבית",
+			"DFAM_TEST_RESULTS_HEADER_PET": "תוצאת בדיקת PET",
+			"DFAM_TEST_RESULTS_HEADER_MRI": "תוצאת בדיקת MRI",
 
 			"DFAM_TEST_RESULTS_DESC_COGNITIVE": "ציור שעון מצריך יכולות מוחיות שנפגעות באלצהיימר\nכמו ניהול, הבנה מספרית, שליפת ידע ועוד.",
 			"DFAM_TEST_RESULTS_DESC_PET": "במוחם של חולי אלצהיימר מופיעים הרבה מאוד צברים\nשל החלבון בטא עמילואיד, אשר לא נמצאים במוחם של אנשים בריאים.\nאם נסמן את הצברים האלה בעזרת חומר רדיואקטיבי ונבצע סריקת PET,\nנצפה לראות הרבה אזורים שבהם ריכוז הצברים גבוה (בצהוב ואדום).",
 			"DFAM_TEST_RESULTS_DESC_MRI": "במחלת אלצהיימר תאים בכל רחבי המוח מתים,\nולכן רקמת המוח הופכת לדלילה ו\"רזה\" עם פחות\nופחות תאים (ויותר חריצים \"שחורים\" בתוך המוח).",
 
-			"DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT": "Run more tests",
-			"DFAM_TEST_RESULTS_HEALTHY_HEADER": "Healthy patient",
-			"DFAM_TEST_RESULTS_RESULTS_HEADER": "Test result",
+			"DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT": "בצעו בדיקות נוספות",
+			"DFAM_TEST_RESULTS_HEALTHY_HEADER": "מטופל בריא",
+			"DFAM_TEST_RESULTS_RESULTS_HEADER": "תוצאת הבדיקה",
 
-			"DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT": "See results",
+			"DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT": "צפו בתוצאות",
 
 			"DFAM_DIAGNOSE_BUTTON_TEXT": "תנו אבחנה",
 			"DFAM_DIAGNOSE_YES_BUTTON_TEXT": "כן",
 			"DFAM_DIAGNOSE_NO_BUTTON_TEXT": "לא",
-			"DFAM_DIAGNOSE_QUESTION_TEXT": "Does the patient have Alzheimer’s?",
+			"DFAM_DIAGNOSE_QUESTION_TEXT": "האם המטופל סובל מאלצהיימר?",
 
 			"DFAM_EVALUATION_SCREEN_CORRECT_HEADER": "האבחנה נכונה",
 			"DFAM_EVALUATION_SCREEN_INCORRECT_HEADER": "האבחנה אינה נכונה, נסו שוב",
@@ -1273,24 +1276,24 @@
 			"DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER": "למטופל יש אלצהיימר",
 
 			"DFAM_EVALUATION_ANOTHER_PATIENT_TEXT": "קבלו את המטופל הבא",
-			"DFAM_EVALUATION_LEARN_MORE_TEXT": "Learn more",
+			"DFAM_EVALUATION_LEARN_MORE_TEXT": "מידע נוסף",
 
-			"DFAM_LEARN_MORE_BACK_BUTTON_TEXT": "Back",
+			"DFAM_LEARN_MORE_BACK_BUTTON_TEXT": "אחורה",
 			"DFAM_LEARN_MORE_HEALTHY_DESC_TEXT": "לפי הבדיקות לא נראה שלחולה יש אלצהיימר.\n\nבבדיקת ה-MRI המוח נראה תקין. באלצהיימר תאים בכל רחבי המוח מתים,\nולכן רקמת המוח מאוד דלילה, שלא כמו אצל החולה.\n\nיכולות רבות שקשורות בציור שעון, כמו שליפת ידע ויכולות ניהול,\nנפגעות אצל חולי אלצהיימר,\nאך עם זאת החולה הצליח לצייר שעון תקין.\n\nסריקת ה-PET שסימנה את צברי הבטא עמילואיד הנפוצים מאוד\nבמוחם של חולי אלצהיימר (אך לא במוחם של בריאים),\nלא הראתה אזורים אדומים כלל, כלומר במוחו של החולה אין\nריכוזים גבוהים של בטא עמילואיד, בניגוד למה שנצפה מחולה אלצהיימר.",
 			"DFAM_LEARN_MORE_NOT_HEALTHY_DESC_TEXT": "לחולה שלנו אכן יש אלצהיימר.\nבבדיקת ה-MRI היה אפשר לראות כי רקמת המוח מאוד דלילה,\nהסיבה לכך היא מוות בהיקף נרחב של תאי העצב המתרחש במחלת אלצהיימר.\n\nבגלל מוות התאים, יכולות שונות של המוח נפגעות,\nכמו יכולות ניהול ושליפת ידע.\nמסיבה זו החולה לא הצליח לצייר שעון תקין.\n\nסריקת ה-PET שסימנה את צברי הבטא עמילואיד הנפוצים מאוד\nבמוחם של חולי אלצהיימר (אך לא במוחם של בריאים),\nהראתה אזורים אדומים וצהובים רבים.\nבאזורים אלו יש ריכוז גבוה של בטא עמילואיד.",
 
-			"OS_HBP_TEXT": "About the\nHuman Brain Project",
-			"OS_WHAT_IS_THE_QUESTION_TEXT": "What's the question?!\nConversations of young\nresearchers",
-			"OS_CAJAL_TEXT": "Santiago Ramón y Cajal",
-			"OS_MAP_TEXT": "The Human Brain Project\nin Europe",
-			"OS_BRAIN_STRUCTURES_MAP_TEXT": "Brain structures\nLaboratory findings",
-			"OS_10_QUESTIONS_TEXT": "10 unanswered questions\nabout the human brain",
-			"OS_DANCING_NEURON_TEXT": "The Electrically\nDancing Neuron",
-			"OS_MTB_TEXT": "Credits",
+			"OS_HBP_TEXT": "אודות פרויקט\nהמוח האנושי",
+			"OS_WHAT_IS_THE_QUESTION_TEXT": "מה השאלה?\nחוקרים צעירים\nמשוחחים",
+			"OS_CAJAL_TEXT": "סנטיאגו רמון אי קחאל",
+			"OS_MAP_TEXT": "פרויקט המוח האנושי\nבאירופה",
+			"OS_BRAIN_STRUCTURES_MAP_TEXT": "מבנים במוח\nממצאים מהמעבדה",
+			"OS_10_QUESTIONS_TEXT": "10 שאלות לא פתורות\nעל המוח האנושי",
+			"OS_DANCING_NEURON_TEXT": "הנוירון החשמלי\nהמרקד",
+			"OS_MTB_TEXT": "קרדיטים",
 
-			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "Select any dot on the map to learn more",
+			"OS_MAP_SELECT_DOT_INSTRUCTIONS": "בחרו נקודה על המפה למידע נוסף",
 
-			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "Play video",
+			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "נגנו סרט",
 
 			"OS_MAP_P1_NAME": "המכון הפדרלי השוויצרי לטכנולוגיה לוזאן",
 			"OS_MAP_P1_CITY": "לוזאן, שוויץ",

@@ -1,0 +1,1 @@
+/Applications/VLC.app/Contents/MacOS/VLC './neuron/martinotti-big.avi' –-video-filter=scene –-vout=dummy –-scene-ratio=1 vlc://quit	
