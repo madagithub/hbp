@@ -28,7 +28,7 @@ class TestInProgressScene(Scene):
 		else:
 			self.cognitiveVideo = VideoPlayer(self.screen, 
 				'assets/videos/doctor/cognitive-test-healthy.mp4' if self.testProperties['isHealthy'] else 'assets/videos/doctor/cognitive-test-not-healthy.mp4', 
-				1920 // 2 - 756 // 2, 1080 // 2 - 424 // 2, loop=False)
+				self.screen.get_width() // 2 - 756 // 2, self.screen.get_height() // 2 - 424 // 2, loop=False)
 			self.cognitiveVideo.play()
 
 		self.createTexts()
@@ -41,12 +41,12 @@ class TestInProgressScene(Scene):
 		self.createTexts()
 
 	def createTexts(self):
-		self.headerText = self.headerFont.render(self.config.getText(TEST_ID_TO_KEYS[self.test]['header']), True, (255, 255, 255))
+		self.headerText = self.subHeaderFont.render(self.config.getText(TEST_ID_TO_KEYS[self.test]['header']), True, (255, 207, 0))
 		if self.test != 'COGNITIVE':
-			self.subHeaderTexts = Utilities.renderTextList(self.config, self.smallTextFont, TEST_ID_TO_KEYS[self.test]['subHeader'])
+			self.subHeaderTexts = Utilities.renderTextList(self.config, self.smallButtonTextFont, TEST_ID_TO_KEYS[self.test]['subHeader'])
 
 	def draw(self, dt):
-		Utilities.drawTextOnCenter(self.screen, self.headerText, (self.screen.get_width() // 2, 320 if self.test != 'COGNITIVE' else 58))
+		Utilities.drawTextOnCenter(self.screen, self.headerText, (self.screen.get_width() // 2, 221 if self.test != 'COGNITIVE' else 52))
 
 		if self.test != 'COGNITIVE':
 			self.timer.tick(dt)
@@ -61,8 +61,8 @@ class TestInProgressScene(Scene):
 			for key in removeKeys:
 				del self.serialCommands[key]
 
-			self.screen.blit(self.progressBarAnimation.getFrame(dt), (892, 572))
-			Utilities.drawTextsOnCenterX(self.screen, self.subHeaderTexts, (self.screen.get_width() // 2, 419), 40)
+			self.screen.blit(self.progressBarAnimation.getFrame(dt), (637, 424))
+			Utilities.drawTextsOnCenterX(self.screen, self.subHeaderTexts, (self.screen.get_width() // 2, 292), 36)
 		else:
 			if self.cognitiveVideo.draw(dt):
 				self.onTestDone()

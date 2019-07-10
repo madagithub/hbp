@@ -19,14 +19,18 @@ class EvaluateScene(Scene):
 
 		self.evaluationImage = pygame.image.load('assets/images/doctor/' + ('correct' if self.isCorrect else 'incorrect') + '.png')
 
-		self.anotherPatientButton = Button(self.screen, pygame.Rect(915, 629, 386, 56), 
-			pygame.image.load('assets/images/button-long-normal.png'), pygame.image.load('assets/images/button-long-selected.png'), 
-			self.config.getText("DFAM_EVALUATION_ANOTHER_PATIENT_TEXT"), START_BUTTON_TEXT_COLOR, START_BUTTON_TEXT_COLOR, self.smallButtonTextFont, self.onAnotherPatient)
+		image = pygame.image.load('assets/images/button-long-normal.png')
+		selectedImage = pygame.image.load('assets/images/button-long-selected.png')
+		self.anotherPatientButton = Button(self.screen, pygame.Rect(657, 506, image.get_width(), image.get_height()), 
+			image, selectedImage,
+			self.config.getText("DFAM_EVALUATION_ANOTHER_PATIENT_TEXT"), START_BUTTON_TEXT_COLOR, START_BUTTON_TEXT_COLOR, self.extraSmallTextFont, self.onAnotherPatient)
 		self.buttons.append(self.anotherPatientButton)
 
-		self.learnMoreButton = Button(self.screen, pygame.Rect(656, 629, 179, 56), 
-			pygame.image.load('assets/images/doctor/learn-more-button-normal.png'), pygame.image.load('assets/images/doctor/learn-more-button-selected.png'), 
-			self.config.getText("DFAM_EVALUATION_LEARN_MORE_TEXT"), START_BUTTON_TEXT_COLOR, [255,255,255], self.smallButtonTextFont, self.onLearnMore)
+		image = pygame.image.load('assets/images/doctor/learn-more-button-normal.png')
+		selectedImage = pygame.image.load('assets/images/doctor/learn-more-button-selected.png')
+		self.learnMoreButton = Button(self.screen, pygame.Rect(419, 506, image.get_width(), image.get_height()), 
+			image, selectedImage, 
+			self.config.getText("DFAM_EVALUATION_LEARN_MORE_TEXT"), START_BUTTON_TEXT_COLOR, [255,255,255], self.extraSmallTextFont, self.onLearnMore)
 		self.buttons.append(self.learnMoreButton)
 
 		self.createTexts()
@@ -40,14 +44,15 @@ class EvaluateScene(Scene):
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
 		self.createTexts()
-		self.anotherPatientButton.createText(self.config.getText("DFAM_EVALUATION_ANOTHER_PATIENT_TEXT"), self.smallButtonTextFont)
+		self.anotherPatientButton.createText(self.config.getText("DFAM_EVALUATION_ANOTHER_PATIENT_TEXT"), self.extraSmallTextFont)
+		self.learnMoreButton.createText(self.config.getText("DFAM_EVALUATION_LEARN_MORE_TEXT"), self.extraSmallTextFont)
 
 	def createTexts(self):
-		self.headerText = self.subHeaderFont.render(self.config.getText('DFAM_EVALUATION_SCREEN_CORRECT_HEADER' if self.isCorrect else 'DFAM_EVALUATION_SCREEN_INCORRECT_HEADER'), True, [249, 207, 71])
-		self.subHeaderText = self.textFont.render(self.config.getText('DFAM_EVALUATION_SCREEN_HEALTHY_HEADER' if self.isHealthy else 'DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER'), True, [255, 255, 255])
+		self.headerText = self.smallScreenHeaderFont.render(self.config.getText('DFAM_EVALUATION_SCREEN_CORRECT_HEADER' if self.isCorrect else 'DFAM_EVALUATION_SCREEN_INCORRECT_HEADER'), True, [249, 207, 71])
+		self.subHeaderText = self.smallScreenSubSubHeaderFont.render(self.config.getText('DFAM_EVALUATION_SCREEN_HEALTHY_HEADER' if self.isHealthy else 'DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER'), True, [255, 255, 255])
 
 	def draw(self, dt):
-		self.screen.blit(self.evaluationImage, (self.screen.get_width() // 2 - self.evaluationImage.get_width() // 2, 229))
-		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 467))
-		Utilities.drawTextOnCenterX(self.screen, self.subHeaderText, (self.screen.get_width() // 2, 551))
+		self.screen.blit(self.evaluationImage, (self.screen.get_width() // 2 - self.evaluationImage.get_width() // 2, 181))
+		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 343))
+		Utilities.drawTextOnCenterX(self.screen, self.subHeaderText, (self.screen.get_width() // 2, 425))
 		super().draw(dt)
