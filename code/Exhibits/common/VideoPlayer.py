@@ -40,11 +40,10 @@ class VideoPlayer:
 	
 	def stop(self):
 		self.videoStopped = True
+		mixer.music.stop()
 
 	def draw(self, dt):
 		if self.videoStopped:
-			if self.shouldPlayAudio:
-				mixer.music.stop()
 			return True
 
 		self.currTime += dt
@@ -60,7 +59,7 @@ class VideoPlayer:
 				self.currFrame = self.framesQueue.get()
 				self.blitFrame(self.currFrame)
 			elif self.canFinish:
-				self.videoStopped = True
+				self.stop()
 			
 			return False
 

@@ -1744,9 +1744,13 @@
 
 	"openingVideos": [
 		{
-			"type": "ABOUT",
-			"file": "assets/videos/opening/video 01 - interview.mp4",
-			"soundFile": "assets/videos/opening/video 01 - interview.ogg",
+			"type": "VIDEO",
+			"file": {
+				"en": "assets/videos/opening/en-hbp.mp4",
+				"he": "assets/videos/opening/he-hbp.mp4",
+				"ar": "assets/videos/opening/ar-hbp.mp4"
+			},
+			"soundFile": "assets/videos/opening/en-hbp.ogg",
 			"image": "hbp",
 			"tappedImage": "hbp",
 			"x": 0,
@@ -1755,8 +1759,12 @@
 		},
 		{
 			"type": "VIDEO",
-			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
-			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"file": {
+				"en": "assets/videos/opening/en-whats-the-question.mp4",
+				"he": "assets/videos/opening/he-whats-the-question.mp4",
+				"ar": "assets/videos/opening/ar-whats-the-question.mp4"
+			},
+			"soundFile": "assets/videos/opening/en-whats-the-question.ogg",
 			"image": "what-is-the-question",
 			"tappedImage": "what-is-the-question",
 			"x": 480,
@@ -1765,8 +1773,11 @@
 		},
 		{
 			"type": "VIDEO",
-			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
-			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"file": {
+				"en": "assets/videos/opening/en-cajal.mov",
+				"he": "assets/videos/opening/he-cajal.mp4",
+				"ar": "assets/videos/opening/ar-cajal.mp4"
+			},
 			"image": "cajal",
 			"tappedImage": "cajal",
 			"x": 960,
@@ -1783,8 +1794,12 @@
 		},
 		{
 			"type": "VIDEO",
-			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
-			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"file": {
+				"en": "assets/videos/opening/en-brain-structures.mp4",
+				"he": "assets/videos/opening/he-brain-structures.mp4",
+				"ar": "assets/videos/opening/ar-brain-structures.mp4"
+			},
+			"soundFile": "assets/videos/opening/en-brain-structures.ogg",
 			"image": "brain-structures",
 			"tappedImage": "brain-structures",
 			"x": 0,
@@ -1793,8 +1808,11 @@
 		},
 		{
 			"type": "VIDEO",
-			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
-			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
+			"file": {
+				"en": "assets/videos/opening/en-10 Unanswered Questions About the Human Brain.mp4",
+				"he": "assets/videos/opening/he-10 Unanswered Questions About the Human Brain.mp4",
+				"ar": "assets/videos/opening/ar-10 Unanswered Questions About the Human Brain.mp4"
+			},
 			"image": "10-questions",
 			"tappedImage": "10-questions",
 			"x": 480,
@@ -1803,8 +1821,12 @@
 		},
 		{
 			"type": "VIDEO",
-			"file": "assets/videos/opening/dancing-neuron.mp4",
-			"soundFile": "assets/videos/opening/dancing-neuron.ogg",
+			"file": {
+				"en": "assets/videos/opening/en-dancing-neuron.mov",
+				"he": "assets/videos/opening/he-dancing-neuron.mp4",
+				"ar": "assets/videos/opening/ar-dancing-neuron.mp4"
+			},
+			"soundFile": "assets/videos/opening/en-dancing-neuron.ogg",
 			"image": "dancing-neuron",
 			"tappedImage": "dancing-neuron",
 			"x": 960,
@@ -1813,8 +1835,6 @@
 		},
 		{
 			"type": "CREDITS",
-			"file": "assets/videos/opening/video 02 - sorry for the question.mp4",
-			"soundFile": "assets/videos/opening/video 02 - sorry for the question.ogg",
 			"image": "mtb",
 			"tappedImage": "mtb",
 			"x": 1440,

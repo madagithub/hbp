@@ -62,7 +62,7 @@ class OpeningScene(Scene):
 		pass
 
 	def onVideoClick(self, file, soundFile, hasBack):
-		self.game.transition('VIDEO', {'file': file, 'soundFile': soundFile, 'hasBack': hasBack})
+		self.game.transition('VIDEO', {'file': file[self.config.languagePrefix], 'soundFile': soundFile, 'hasBack': hasBack})
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
