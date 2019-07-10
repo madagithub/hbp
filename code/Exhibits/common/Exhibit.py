@@ -65,24 +65,21 @@ class Exhibit:
 
 		# TODO: Change to read_one and alow thread to exit when marked
 		for event in self.device.read_loop():
+			print(categorize(event))
 			if event.type == ecodes.SYN_REPORT:
 				if isUp:
 					self.onMouseUp(currX, currY)
-					print('UP:', str(currX), '-', str(currY))
 				elif isDown:
 					self.onMouseDown(currX, currY)
-					print('DOWN: ', str(currX), '-', str(currY))
 				else:
 					self.onMouseMove(currX, currY)
-					print('MOVE: ', str(currX), '-', str(currY))
 
 				isUp = False
 				isDown = False
 
 			if event.type == ecodes.EV_KEY:
 				keyEvent = categorize(event)
-				pass
-				if keyEvent.keycode[0] == 'BTN_LEFT':
+				if keyEvent.keycode[0] == 'BTN_LEFT' or keyEvent.keycode == 'BTN_TOUCH':
 					if keyEvent.keystate == keyEvent.key_up:
 						isUp = True
 					elif keyEvent.keystate == keyEvent.key_down:
