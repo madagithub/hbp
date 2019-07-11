@@ -186,6 +186,8 @@ class DrawNeuronScene(Scene):
 		elif self.state == LIGHTNING_STATE:
 			self.drawLightningState(dt)
 
+		super().draw(dt)
+
 	def drawDrawingState(self, dt):
 		self.screen.blit(self.drawOnNeuron, self.drawImagePos)
 
@@ -209,8 +211,6 @@ class DrawNeuronScene(Scene):
 
 			self.screen.blit(self.circleImage, (globalCirclePos[0] - self.circleImage.get_width() // 2, globalCirclePos[1] - self.circleImage.get_height() // 2))
 
-		super().draw(dt)
-
 	def draw3DModelState(self, dt):
 		self.screen.blit(self.spinningAnimation.getFrame(dt), (self.screen.get_width() // 2 - 600 // 2, 240))
 		self.screen.blit(self.videoMask, (0, 0))
@@ -219,8 +219,6 @@ class DrawNeuronScene(Scene):
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
 		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1530, 429), 29)
 
-		super().draw(dt)
-
 	def drawLightningState(self, dt):
 		self.screen.blit(self.electricAnimation.getFrame(dt), (self.screen.get_width() // 2 - 600 // 2, 0))
 		self.screen.blit(self.videoMask, (0, 0))
@@ -228,8 +226,6 @@ class DrawNeuronScene(Scene):
 		self.screen.blit(self.lightningTextBalloon, (1327, 412))
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
 		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1530, 442), 29)
-
-		super().draw(dt)
 
 	def onMouseDown(self, pos):
 		super().onMouseDown(pos)

@@ -57,7 +57,7 @@ class Scene:
 			languageButton = LanguageButton(self.screen, pygame.Rect(self.screen.get_width() - (languagesNum - i) * languageNormal.get_width(), self.screen.get_height() - BOTTOM_BAR_Y_OFFSET, 
 				languageNormal.get_width(), languageNormal.get_height()), languageNormal, languageTapped, languageSelected, log2vis(languageData['buttonText']), 
 				LANGUAGE_TEXT_COLOR, LANGUAGE_SELECTED_TEXT_COLOR, font, partial(self.onLanguageTapped, i))
-			if languageData['prefix'] == self.config.getDefaultLanguagePrefix():
+			if languageData['prefix'] == self.config.languagePrefix:
 				languageButton.visible = False
 
 			self.buttons.append(languageButton)
