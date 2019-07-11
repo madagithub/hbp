@@ -36,7 +36,7 @@ DOTTED_SEGMENT_SIZE = 2
 NEURON_TO_NAME_KEY = {
 	'martinotti': "RN_CHOOSE_NEURON_MARTINOTTI_NAME",
 	'basket': "RN_CHOOSE_NEURON_BASKET_NAME",
-	'pyramidal': "RN_CHOOSE_NEURON_BASKET_NAME"
+	'pyramidal': "RN_CHOOSE_NEURON_PYRAMIDAL_NAME"
 }
 
 NEURON_IMAGE_Y = 196
@@ -51,15 +51,44 @@ OFFSET_Y_FIX = 5
 class DrawNeuronScene(Scene):
 	def __init__(self, game, neuronChosen):
 		super().__init__(game)
-		self.state = DRAWING_STATE
 
 		self.neuronChosen = neuronChosen
 
 		self.spinningAnimation = FrameAnimation('assets/videos/neuron/animations/' + self.neuronChosen + '-big/animation-', 60, 24)
 		self.electricAnimation = FrameAnimation('assets/videos/neuron/animations/' + self.neuronChosen + '-electric-big/animation-', 46, 48)
 
-		self.animationPaths = self.config.getAnimationPaths(self.neuronChosen)
+		self.originalAnimationPaths = self.config.getAnimationPaths(self.neuronChosen)
+		self.animationPaths = self.originalAnimationPaths.copy()
 		self.drawingPaths = self.getDrawingPaths([], self.animationPaths, False)
+
+		self.circleImage = pygame.image.load('assets/images/neuron/draw-handle.png').convert_alpha()
+
+		self.drawOnNeuron = pygame.image.load('assets/images/neuron/' + self.neuronChosen + '-big.png')
+		self.videoMask = pygame.image.load('assets/images/video-mask.png')
+
+		self.modelTextBalloon = pygame.image.load('assets/images/text-box-small.png')
+		self.lightningTextBalloon = pygame.image.load('assets/images/text-box-large.png')
+
+		lightningButtonNormal = pygame.image.load('assets/images/button-electrify-normal.png')
+		lightningButtonTapped = pygame.image.load('assets/images/button-electrify-tapped.png')
+		
+		self.lightningButton = Button(self.screen, pygame.Rect(920, 871, lightningButtonNormal.get_width(), lightningButtonNormal.get_height()), 
+			lightningButtonNormal, lightningButtonTapped, None, None, None, None, self.onMoveToLightningState)
+		self.buttons.append(self.lightningButton)
+
+		self.nextButton = Button(self.screen, pygame.Rect(868, 872, 179, 56), 
+			pygame.image.load('assets/images/button-small-normal.png'), pygame.image.load('assets/images/button-small-selected.png'), 
+			self.config.getText("RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT"), [0,0,0], [0,0,0], self.buttonFont, self.onNextClick)
+		self.buttons.append(self.nextButton)
+
+	def reset(self):
+		self.state = DRAWING_STATE
+
+		self.nextButton.visible = False
+		self.lightningButton.visible = False
+
+		self.animationPaths = self.originalAnimationPaths.copy()
+
 		random.shuffle(self.drawingPaths)
 		self.selectedPaths = self.drawingPaths[:self.config.getSelectedPathsNumber(self.neuronChosen)]
 
@@ -78,7 +107,7 @@ class DrawNeuronScene(Scene):
 			subPaths = currPath.get('nextPaths', [])
 			for path in subPaths:
 				q.put(path)
-		
+
 		self.animationIndex = 0
 		self.animationTime = None
 		self.selectedPathIndex = 0
@@ -86,9 +115,6 @@ class DrawNeuronScene(Scene):
 		for path in self.animationPaths:
 			path['done'] = False
 			path['startAnimationIndex'] = 0
-
-		self.drawOnNeuron = pygame.image.load('assets/images/neuron/' + self.neuronChosen + '-big.png')
-		self.videoMask = pygame.image.load('assets/images/video-mask.png')
 
 		self.drawingDone = False
 		self.resetCirclePos()
@@ -98,23 +124,6 @@ class DrawNeuronScene(Scene):
 		self.timer = None
 
 		self.createTexts()
-
-		self.modelTextBalloon = pygame.image.load('assets/images/text-box-small.png')
-		self.lightningTextBalloon = pygame.image.load('assets/images/text-box-large.png')
-	
-
-		lightningButtonNormal = pygame.image.load('assets/images/button-electrify-normal.png')
-		lightningButtonTapped = pygame.image.load('assets/images/button-electrify-tapped.png')
-		self.lightningButton = Button(self.screen, pygame.Rect(920, 871, lightningButtonNormal.get_width(), lightningButtonNormal.get_height()), 
-			lightningButtonNormal, lightningButtonTapped, None, None, None, None, self.onMoveToLightningState)
-		self.lightningButton.visible = False
-		self.buttons.append(self.lightningButton)
-
-		self.nextButton = Button(self.screen, pygame.Rect(868, 872, 179, 56), 
-			pygame.image.load('assets/images/button-small-normal.png'), pygame.image.load('assets/images/button-small-selected.png'), 
-			self.config.getText("RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT"), [0,0,0], [0,0,0], self.buttonFont, self.onNextClick)
-		self.nextButton.visible = False
-		self.buttons.append(self.nextButton)
 
 	def pathToList(self, path):
 		resultList = []
@@ -197,7 +206,8 @@ class DrawNeuronScene(Scene):
 				self.resetCirclePos()
 
 			globalCirclePos = self.localNeuronPointToGlobalPoint(self.circlePos)
-			pygame.draw.circle(self.screen, (255,0,0), globalCirclePos, CIRCLE_RADIUS)
+
+			self.screen.blit(self.circleImage, (globalCirclePos[0] - self.circleImage.get_width() // 2, globalCirclePos[1] - self.circleImage.get_height() // 2))
 
 		super().draw(dt)
 

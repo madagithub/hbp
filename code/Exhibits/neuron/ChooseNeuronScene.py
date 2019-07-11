@@ -24,8 +24,6 @@ class ChooseNeuronScene(Scene):
 	def __init__(self, game):
 		super().__init__(game)
 
-		self.createTexts()
-
 		self.neuronNames = []
 		self.neuronDescs = []
 
@@ -58,6 +56,8 @@ class ChooseNeuronScene(Scene):
 			currImageButtonX += NEURON_IMAGE_GAP
 			currSelectButtonX += NEURON_IMAGE_GAP
 
+		self.createTexts()
+
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
 		self.createTexts()
@@ -67,6 +67,13 @@ class ChooseNeuronScene(Scene):
 
 	def createTexts(self):
 		self.headerText = self.textFont.render(self.config.getText("RN_CHOOSE_NEURON_INSTRUCTION"), True, (255, 255, 255))
+
+		for i in range(0, len(NEURON_DATA)):
+			neuronImageSet = NEURON_DATA[i]
+
+			self.selectButtons[i].createText(self.config.getText('RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT'), self.buttonFont)
+			self.neuronNames[i] = self.subHeaderFont.render(self.config.getText(neuronImageSet['name-key']), True, (255, 255, 255))
+			self.neuronDescs[i] = Utilities.renderTextList(self.config, self.extraSmallTextFont, neuronImageSet['desc-key'])
 
 	def onNeuronClick(self, index):
 		self.game.transition('DRAW', self.indexToId[index])

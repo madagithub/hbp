@@ -18,8 +18,12 @@ class Neuron(Exhibit):
 	def start(self):
 		super().start()
 		
-		self.startVideoScene = VideoScene(self, 'assets/videos/neuron/brainzoom-short.mov', 'CHOOSE')
 		self.scene = OpeningScene(self)
+
+		self.drawingScenes = {}
+		self.drawingScenes['martinotti'] = DrawNeuronScene(self, 'martinotti')
+		self.drawingScenes['basket'] = DrawNeuronScene(self, 'basket')
+		self.drawingScenes['pyramidal'] = DrawNeuronScene(self, 'pyramidal')
 
 		self.loop()
 
@@ -28,11 +32,12 @@ class Neuron(Exhibit):
 
 	def transition(self, transitionId, data=None):
 		if transitionId == 'START':
-			self.scene = self.startVideoScene
+			self.scene = VideoScene(self, 'assets/videos/neuron/brainzoom-short.mov', 'CHOOSE')
 		elif transitionId == 'CHOOSE':
 			self.scene = ChooseNeuronScene(self)
 		elif transitionId == 'DRAW':
-			self.scene = DrawNeuronScene(self, data)
+			self.scene = self.drawingScenes[data]
+			self.scene.reset()
 		elif transitionId == 'SUMMARY':
 			self.scene = SummaryScene(self, data)
 

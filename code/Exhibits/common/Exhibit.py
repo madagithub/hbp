@@ -41,7 +41,7 @@ class Exhibit:
 		pygame.mouse.set_visible(False)
 
 		infoObject = pygame.display.Info()
-		self.screenSize = (1366, 768) #(infoObject.current_w, infoObject.current_h)
+		self.screenSize = (infoObject.current_w, infoObject.current_h)
 
 		self.screen = pygame.display.set_mode(self.screenSize, pygame.FULLSCREEN)
 		self.cursor = pygame.image.load('assets/images/cursor.png').convert_alpha()

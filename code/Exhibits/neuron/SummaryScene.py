@@ -41,11 +41,13 @@ class SummaryScene(Scene):
 		self.headerText = self.subHeaderFont.render(self.config.getText("RN_SUMMARY_SCREEN_HEADER"), True, (249, 207, 71))
 		self.subHeaderText = self.textFont.render(self.config.getText("RN_SUMMARY_SCREEN_SUB_HEADER"), True, (255, 255, 255))
 		self.summaryHeaderText = self.textFont.render(self.config.getText("RN_SUMMARY_SCREEN_SUMMARY_HEADER"), True, (255, 255, 255))
-		self.summaryTexts = Utilities.renderTextList(self.config, self.smallTextFont, "RN_SUMMARY_SCREEN_SUMMARY_TEXT")
+		self.summaryTexts = Utilities.renderTextList(self.config, self.almostExtraSmallTextFont, "RN_SUMMARY_SCREEN_SUMMARY_TEXT")
 
 		self.drawingHeaderText = self.subHeaderFont.render(self.config.getText("RN_SUMMARY_SCREEN_DRAWING_TEXT"), True, [255, 255, 255])
 		self.modelingHeaderText = self.subHeaderFont.render(self.config.getText("RN_SUMMARY_SCREEN_MODELING_TEXT"), True, [255, 255, 255])
 		self.activateHeaderText = self.subHeaderFont.render(self.config.getText("RN_SUMMARY_SCREEN_ELECTRIFY_TEXT"), True, [255, 255, 255])
+
+		self.anotherNeuronButton.createText(self.config.getText("RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT"), self.buttonFont)
 
 	def draw(self, dt):
 		self.screen.blit(self.summaryTextBackground, (0, 726))
