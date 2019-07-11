@@ -15,6 +15,8 @@ class OpeningScene(Scene):
 	def __init__(self, game):
 		super().__init__(game)
 
+		self.backgroundColor = (0,0,0)
+
 		self.videosTexts = []
 		self.videos = self.config.getOpeningVideos()
 		index = 0
@@ -27,8 +29,6 @@ class OpeningScene(Scene):
 				callbackFunc = partial(self.onVideoClick, video['file'], video.get('soundFile', None), True)
 			elif video['type'] == 'MAP':
 				callbackFunc = self.onMapClick
-			elif video['type'] == 'ABOUT':
-				callbackFunc = self.onAboutClick
 			elif video['type'] == 'CREDITS':
 				callbackFunc = self.onCreditsClick
 
@@ -55,11 +55,8 @@ class OpeningScene(Scene):
 	def onMapClick(self):
 		self.game.transition('MAP')
 
-	def onAboutClick(self):
-		pass
-
 	def onCreditsClick(self):
-		pass
+		self.game.transition('CREDITS')
 
 	def onVideoClick(self, file, soundFile, hasBack):
 		self.game.transition('VIDEO', {'file': file[self.config.languagePrefix], 'soundFile': soundFile, 'hasBack': hasBack})
@@ -69,7 +66,10 @@ class OpeningScene(Scene):
 		self.createTexts()
 
 	def createTexts(self):
-		pass
+		for i in range(len(self.videos)):
+			video = self.videos[i]
+			textBoxes = Utilities.renderTextList(self.config, self.subHeaderFont, video['textKey'], (0, 0, 0))
+			self.videosTexts[i] = textBoxes
 
 	def draw(self, dt):
 		self.textsTimer.tick(dt)

@@ -17,14 +17,14 @@ COUNTRIES_DATA = [
 	{'key': 'turkey', 'image-name': 'turkey-map-normal', 'selectedImage-name': 'turkey-map-selected', 'x': 1144, 'y': 675, 'nameImage': 'turkey-name', 'nameX': 1276, 'nameY': 736},
 	{'key': 'greece', 'image-name': 'greece-map-normal', 'selectedImage-name': 'greece-map-selected', 'x': 1029, 'y': 683, 'nameImage': 'greece-name', 'nameX': 1030, 'nameY': 729},
 	{'key': 'italy', 'image-name': 'italy-map-normal', 'selectedImage-name': 'italy-map-selected', 'x': 780, 'y': 556, 'nameImage': 'italy-name', 'nameX': 808, 'nameY': 598},
-	{'key': 'slovenia', 'image-name': 'slovenia-map-normal', 'selectedImage-name': 'slovenia-map-selected', 'x': 907, 'y': 664, 'nameImage': 'slovenia-name', 'nameX': 907, 'nameY': 574},
+	{'key': 'slovenia', 'image-name': 'slovenia-map-normal', 'selectedImage-name': 'slovenia-map-selected', 'x': 907, 'y': 564, 'nameImage': 'slovenia-name', 'nameX': 907, 'nameY': 574},
 	{'key': 'hungary', 'image-name': 'hungary-map-normal', 'selectedImage-name': 'hungary-map-selected', 'x': 959, 'y': 519, 'nameImage': 'hungary-name', 'nameX': 963, 'nameY': 543},
 	{'key': 'austria', 'image-name': 'austria-map-normal', 'selectedImage-name': 'austria-map-selected', 'x': 831, 'y': 508, 'nameImage': 'austria-name', 'nameX': 873, 'nameY': 528},
 	{'key': 'switzerland', 'image-name': 'switzerland-map-normal', 'selectedImage-name': 'switzerland-map-selected', 'x': 764, 'y': 538, 'nameImage': 'switzerland-name', 'nameX': 772, 'nameY': 554},
 	{'key': 'france', 'image-name': 'france-map-normal', 'selectedImage-name': 'france-map-selected', 'x': 578, 'y': 456, 'nameImage': 'france-name', 'nameX': 663, 'nameY': 523},
 	{'key': 'germany', 'image-name': 'germany-map-normal', 'selectedImage-name': 'germany-map-selected', 'x': 760, 'y': 350, 'nameImage': 'germany-name', 'nameX': 799, 'nameY': 434},
 	{'key': 'belgium', 'image-name': 'belgium-map-normal', 'selectedImage-name': 'belgium-map-selected', 'x': 710, 'y': 447, 'nameImage': 'belgium-name', 'nameX': 716, 'nameY': 449},
-	{'key': 'netherlands', 'image-name': 'netherlands-map-normal', 'selectedImage-name': 'netherlands-map-selected', 'x': 717, 'y': 594, 'nameImage': 'netherlands-name', 'nameX': 734, 'nameY': 407},
+	{'key': 'netherlands', 'image-name': 'netherlands-map-normal', 'selectedImage-name': 'netherlands-map-selected', 'x': 717, 'y': 394, 'nameImage': 'netherlands-name', 'nameX': 734, 'nameY': 407},
 	{'key': 'uk', 'image-name': 'uk-map-normal', 'selectedImage-name': 'uk-map-selected', 'x': 522, 'y': 175, 'nameImage': 'uk-name', 'nameX': 591, 'nameY': 403},
 	{'key': 'denmark', 'image-name': 'denmark-map-normal', 'selectedImage-name': 'denmark-map-selected', 'x': 797, 'y': 271, 'nameImage': 'denmark-name', 'nameX': 803, 'nameY': 318},
 	{'key': 'sweden', 'image-name': 'sweden-map-normal', 'selectedImage-name': 'sweden-map-selected', 'x': 848, 'y': 0, 'nameImage': 'sweden-name', 'nameX': 860, 'nameY': 221},
@@ -62,7 +62,10 @@ class MapScene(Scene):
 		self.createTexts()
 
 	def createTexts(self):
-		pass
+		for i in range(len(COUNTRIES_DATA)):
+			countryData = COUNTRIES_DATA[i]
+			self.titles[i]['image'] = pygame.image.load('assets/images/opening/map/' + countryData['nameImage'] + '-' + self.config.languagePrefix + '.png')
+			self.titles[i]['position'] = (countryData['nameX'] + ((-self.titles[i]['image'].get_width() + 20) if self.config.isRtl() else 0), countryData['nameY'])
 
 	def getCountryAtPos(self, pos):
 		for country in COUNTRIES_DATA:

@@ -6,9 +6,10 @@ from common.VideoPlayer import VideoPlayer
 from common.Button import Button
 
 class VideoScene(Scene):
-	def __init__(self, game, filename, endScene, soundFile=None, hasBack=False):
+	def __init__(self, game, filename, endScene, soundFile=None, hasBack=False, endSceneData=None):
 		super().__init__(game)
 		self.endScene = endScene
+		self.endSceneData = endSceneData
 		self.blitCursor = False
 
 		self.hasBack = hasBack
@@ -24,7 +25,10 @@ class VideoScene(Scene):
 
 	def onBack(self):
 		self.video.stop()
-		self.game.transition(self.endScene)
+		if self.endSceneData is not None:
+			self.game.transition(self.endScene, self.endSceneData)
+		else:
+			self.game.transition(self.endScene)
 
 	def onMouseDown(self, pos):
 		if self.hasBack:
@@ -36,7 +40,10 @@ class VideoScene(Scene):
 
 	def draw(self, dt):
 		if self.video.draw(dt):
-			self.game.transition(self.endScene)
+			if self.endSceneData is not None:
+				self.game.transition(self.endScene, self.endSceneData)
+			else:
+				self.game.transition(self.endScene)
 
 		if self.hasBack:
 			self.backButton.draw()

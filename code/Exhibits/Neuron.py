@@ -36,8 +36,8 @@ class Neuron(Exhibit):
 		elif transitionId == 'CHOOSE':
 			self.scene = ChooseNeuronScene(self)
 		elif transitionId == 'DRAW':
+			self.drawingScenes[data].reset()
 			self.scene = self.drawingScenes[data]
-			self.scene.reset()
 		elif transitionId == 'SUMMARY':
 			self.scene = SummaryScene(self, data)
 

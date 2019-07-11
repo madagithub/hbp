@@ -25,24 +25,25 @@ class CountryScene(Scene):
 		self.institutions = self.config.getInstitutions(self.countryKey)
 		self.institutionIndex = None
 
-		self.nextButton = Button(self.screen, pygame.Rect(1729, 373, 20, 26), 
+		self.nextButton = Button(self.screen, pygame.Rect(1729, 314, 40, 26), 
 				pygame.image.load('assets/images/opening/map/right-arrow.png'), pygame.image.load('assets/images/opening/map/right-arrow-tapped.png'), 
-				None, None, None, None, self.onNextInstitutionClick)
+				None, None, None, None, self.onNextInstitutionClick, 4.0)
 		self.nextButton.visible = False
 		self.buttons.append(self.nextButton)
 
-		self.prevButton = Button(self.screen, pygame.Rect(1041, 373, 20, 26), 
+		self.prevButton = Button(self.screen, pygame.Rect(1041, 314, 20, 26), 
 				pygame.image.load('assets/images/opening/map/left-arrow.png'), pygame.image.load('assets/images/opening/map/left-arrow-tapped.png'), 
-				None, None, None, None, self.onPrevInstitutionClick)
+				None, None, None, None, self.onPrevInstitutionClick, 4.0)
 		self.prevButton.visible = False
 		self.buttons.append(self.prevButton)
 
-#		self.playVideoButton = Button(self.screen, pygame.Rect(1022, 147, 224, 72), 
-#				pygame.image.load('assets/images/opening/map/play-video-normal.png'), pygame.image.load('assets/images/opening/map/play-video-tapped.png'), 
-#				None, None, None, None, self.onPlayVideoClick)
-#		self.playVideoButton.visible = False
-#		self.buttons.append(self.playVideoButton)
-#		self.playVideoText = self.smallerTextFont.render(self.config.getText("OS_MAP_PLAY_VIDEO_BUTTON_TEXT"), True, (0, 0, 0))
+		image = pygame.image.load('assets/images/opening/map/play-video-normal.png')
+		selectedImage = pygame.image.load('assets/images/opening/map/play-video-tapped.png')
+		self.playVideoButton = Button(self.screen, pygame.Rect(1300, 914, image.get_width(), selectedImage.get_height()), 
+				image, selectedImage, 
+				self.config.getText("OS_MAP_PLAY_VIDEO_BUTTON_TEXT"), (0, 0, 0), (255, 255, 255), self.buttonFont, self.onPlayVideoClick)
+		self.playVideoButton.visible = False
+		self.buttons.append(self.playVideoButton)
 
 		self.createTexts()
 
@@ -61,7 +62,8 @@ class CountryScene(Scene):
 		pass
 
 	def onPlayVideoClick(self):
-		pass
+		baseFile = 'assets/videos/opening/map/' + self.institutions[self.institutionIndex]['video'] + '-' + self.config.languagePrefix
+		self.game.transition('INST_VIDEO', {'countryData': self.countryKey ,'file': baseFile + '.mp4', 'soundFile': baseFile + '.ogg'})
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
@@ -71,6 +73,7 @@ class CountryScene(Scene):
 	def createTexts(self):
 		self.countryHeader = self.headerFont.render(self.config.getCountryName(self.countryKey), True, (249, 207, 71))
 		self.tapInstructions = self.smallTextFont.render(self.config.getText("OS_MAP_SELECT_DOT_INSTRUCTIONS"), True, (255, 255, 255))
+		self.playVideoButton.createText(self.config.getText("OS_MAP_PLAY_VIDEO_BUTTON_TEXT"), self.buttonFont)
 
 	def onMouseDown(self, pos):
 		super().onMouseDown(pos)
@@ -114,11 +117,16 @@ class CountryScene(Scene):
 			self.institutionImage = pygame.image.load('assets/images/opening/map/institutions/' + institution.get('image', 'default') + '.png')
 
 			self.institutionHeaderY = 517
-			self.institutionCityY = 565
-			self.institutionDescY = 622
+			self.institutionCityY = institution['cityY'] if institution.get('cityY', None) is not None else 565
+			self.institutionDescY = institution['descY'] if institution.get('cityY', None) is not None else 622
 
 			self.nextButton.visible = True
 			self.prevButton.visible = True	
+
+			self.playVideoButton.visible = institution.get('video', None) is not None
+
+	def onHomeTapped(self):
+		self.game.transition('MAP')
 
 	def draw(self, dt):
 		super().draw(dt)
@@ -139,10 +147,10 @@ class CountryScene(Scene):
 			self.screen.blit(self.institutionImage, (1093, 157))
 
 			if self.config.isRtl():
-				Utilities.drawTextsOnRightX(self.screen, self.institutionHeader, (1693 ,self.institutionHeaderY), 30)
+				Utilities.drawTextsOnRightX(self.screen, self.institutionHeader, (1693 ,self.institutionHeaderY), 40)
 				Utilities.drawTextsOnRightX(self.screen, self.institutionCity, (1693 ,self.institutionCityY), 30)
 			else:
-				Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 30)
+				Utilities.drawTextsOnLeftX(self.screen, self.institutionHeader, (1093 ,self.institutionHeaderY), 40)
 				Utilities.drawTextsOnLeftX(self.screen, self.institutionCity, (1093 ,self.institutionCityY), 30)
 
 			if self.institutionDesc is not None:

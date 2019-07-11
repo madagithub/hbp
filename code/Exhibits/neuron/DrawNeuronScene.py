@@ -84,6 +84,9 @@ class DrawNeuronScene(Scene):
 	def reset(self):
 		self.state = DRAWING_STATE
 
+		self.loadFonts()
+		self.onLanguageChanged()
+
 		self.nextButton.visible = False
 		self.lightningButton.visible = False
 

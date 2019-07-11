@@ -30,6 +30,7 @@
 			"buttonText": "עברית",
 			"fonts": 
 			{
+				"bigHeaderFont": {"filename": "assets/fonts/SimplerPro_V3-Black.ttf", "size": 144},
 				"headerFont": {"filename": "assets/fonts/SimplerPro_V3-Black.ttf", "size": 72},
 				"smallScreenHeaderFont": {"filename": "assets/fonts/SimplerPro_V3-Black.ttf", "size": 48},
 				"subHeaderFont": {"filename": "assets/fonts/SimplerPro_V3-Bold.ttf", "size": 40},
@@ -50,6 +51,7 @@
 			"buttonText": "عربية",
 			"fonts": 
 			{
+				"bigHeaderFont": {"filename": "assets/fonts/TheSansArabic-Black.ttf", "size": 144},
 				"headerFont": {"filename": "assets/fonts/TheSansArabic-Black.ttf", "size": 72}, 
 				"smallScreenHeaderFont": {"filename": "assets/fonts/TheSansArabic-Black.ttf", "size": 48}, 
 				"subHeaderFont": {"filename": "assets/fonts/TheSansArabic-Bold.ttf", "size": 40}, 
@@ -70,6 +72,7 @@
 			"buttonText": "English",
 			"fonts": 
 			{
+				"bigHeaderFont": {"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf", "size": 144},
 				"headerFont": {"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf", "size": 72},
 				"smallScreenHeaderFont": {"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf", "size": 48},
 				"subHeaderFont": {"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf", "size": 40},
@@ -192,13 +195,13 @@
 
 			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "Play video",
 
-			"OS_MAP_P1_NAME": "The Federal Institute of Technology in Lausanne",
+			"OS_MAP_P1_NAME": "The Federal Institute of Technology\nin Lausanne",
 			"OS_MAP_P1_CITY": "Lausanne, Switzerland",
 
 			"OS_MAP_P2_NAME": "Aalto University Foundation",
 			"OS_MAP_P2_CITY": "Espoo, Finland",
 
-			"OS_MAP_P3_NAME": "University Hospital Leiden - Leiden University Medical Center",
+			"OS_MAP_P3_NAME": "University Hospital Leiden -\nLeiden University Medical Center",
 			"OS_MAP_P3_CITY": "Leiden, The Netherlands",
 
 			"OS_MAP_P4_NAME": "Athens University of Economics and Business",
@@ -226,7 +229,7 @@
 			"OS_MAP_P10_NAME": "The Scientific Research National Center",
 			"OS_MAP_P10_CITY": "Paris, France",
 
-			"OS_MAP_P11_NAME": "The Office of Atomic Energy and Alternative Energies",
+			"OS_MAP_P11_NAME": "The Office of Atomic Energy and\nAlternative Energies",
 			"OS_MAP_P11_CITY": "Paris, France",
 
 			"OS_MAP_P12_NAME": "The National Research Council",
@@ -264,10 +267,10 @@
 			"OS_MAP_P21_NAME": "Fortiss GmbH",
 			"OS_MAP_P21_CITY": "Munich, Germany",
 
-			"OS_MAP_P22_NAME": "Fraunhofer-Gesellschaft for the Promotion of Applied Research",
+			"OS_MAP_P22_NAME": "Fraunhofer-Gesellschaft for the\nPromotion of Applied Research",
 			"OS_MAP_P22_CITY": "Darmstadt, Germany",
 
-			"OS_MAP_P23_NAME": "Foundation Anna Sommer Champalimaud and Dr Carlos Montez Champalimaud",
+			"OS_MAP_P23_NAME": "Foundation Anna Sommer Champalimaud\nand Dr Carlos Montez Champalimaud",
 			"OS_MAP_P23_CITY": "Lisbon, Portugal",
 
 			"OS_MAP_P24_NAME": "Heinrich-Heine-University, Dusseldorf",
@@ -289,7 +292,7 @@
 			"OS_MAP_P29_NAME": "Brain and Spinal Cord Institute",
 			"OS_MAP_P29_CITY": "Paris, France",
 
-			"OS_MAP_P30_NAME": "Institute of Experimental Medicine, Hungarian Academy of Sciences",
+			"OS_MAP_P30_NAME": "Institute of Experimental Medicine,\nHungarian Academy of Sciences",
 			"OS_MAP_P30_CITY": "Budapest, Hungary",
 
 			"OS_MAP_P31_NAME": "Institute of Science and Technology Austria (IST)",
@@ -299,14 +302,14 @@
 			"OS_MAP_P32_NAME": "Jožef Stefan Institute",
 			"OS_MAP_P32_CITY": "Ljubljana, Slovenia",
 
-			"OS_MAP_P33_NAME": "National Institute of Research in Computer Science and Automation",
+			"OS_MAP_P33_NAME": "National Institute of Research\nin Computer Science and Automation",
 			"OS_MAP_P33_CITY": "Sophia Antipolis, France",
 			"OS_MAP_P33_DESC": "Inria performs comprehensive analyses of brain\nfunctional organization based on exhaustive\nanalyses of brain imaging dataset. Inria also\ncontributes  an openly available brain imaging\ndataset that provides a reference to study the\nfunctional architecture of the brain, and\nopen-source software that make brain data analyses\neasy and reproducible.",
 
 			"OS_MAP_P34_NAME": "Pasteur Institute",
 			"OS_MAP_P34_CITY": "Paris, France",
 
-			"OS_MAP_P35_NAME": "Johann Wolfgang Goethe University Frankfurt-am-Main",
+			"OS_MAP_P35_NAME": "Johann Wolfgang Goethe University\nFrankfurt-am-Main",
 			"OS_MAP_P35_CITY": "Frankfurt-am-Main, Germany",
 
 			"OS_MAP_P36_NAME": "Karlsruher Institute for Technology",
@@ -343,7 +346,7 @@
 			"OS_MAP_P45_NAME": "Austrian Research Society for Cybernetics",
 			"OS_MAP_P45_CITY": "Vienna, Austria",
 
-			"OS_MAP_P46_NAME": "Rheinisch-Westfälische Technical University of Aachen",
+			"OS_MAP_P46_NAME": "Rheinisch-Westfälische\nTechnical University of Aachen",
 			"OS_MAP_P46_CITY": "Aachen, Germany",
 
 			"OS_MAP_P47_NAME": "Ruprecht-Karls-University Heidelberg",
@@ -362,7 +365,7 @@
 			"OS_MAP_P51_NAME": "The Catholic University Foundation",
 			"OS_MAP_P51_CITY": "Nijmegen, The Nethterlands",
 
-			"OS_MAP_P52_NAME": "The FZI Research Center for Information Technology in Karlsruhe",
+			"OS_MAP_P52_NAME": "The FZI Research Center for\nInformation Technology in Karlsruhe",
 			"OS_MAP_P52_CITY": "Karlsruhe, Germany",
 			"OS_MAP_P52_DESC": "FZI is a non-profit institution for applied\nresearch in information technology and technology\ntransfer. FZI is researching neuro-robotics and\nclosed-loop experiments in the HBP with the goal\nto better understand the highly complex vision and\nmotion systems of humans.",
 
@@ -492,7 +495,7 @@
 			"OS_MAP_P90_NAME": "Humboldt University of Berlin",
 			"OS_MAP_P90_CITY": "Berlin, Germany",
 
-			"OS_MAP_P91_NAME": "The Royal Netherlands Academy of Arts and Sciences",
+			"OS_MAP_P91_NAME": "The Royal Netherlands Academy\nof Arts and Sciences",
 			"OS_MAP_P91_CITY": "Amsterdam, The Netherlands",
 
 			"OS_MAP_P92_NAME": "The National Institute of Nuclear Physics",
@@ -519,7 +522,7 @@
 			"OS_MAP_P98_CITY": "Amsterdam, The Netherlands",
 			"OS_MAP_P98_DESC": "The University of Amsterdam is included in\ninvestigating cognitive and system neuroscience\nphenomena in HBP, besides coordinating 5 teams of\nresearchers from 17 institutions around Europe.\nOur main focus is to study perception, memory,\nsleep, consciousness and develop methods for\nintegrating data from multiple scales into HBP ICT\nPlatforms.",
 
-			"OS_MAP_P99_NAME": "The German Center for Neurodegenerative Diseases",
+			"OS_MAP_P99_NAME": "The German Center for\nNeurodegenerative Diseases",
 			"OS_MAP_P99_CITY": "Bonn, Germany",
 			"OS_MAP_P99_DESC": "The core objectives of the research are to\nunderstand causes and risk factors for\nneurodegenerative diseases & to develop new\ntherapeutic and preventive strategies by\ntranslating fundamental discoveries into clinical\nand public health applications. Within the HBP we\nare focusing on deciphering the heterogeneity of\nneurons by single-cell RNA-sequencing.",
 
@@ -570,7 +573,7 @@
 			"OS_MAP_P114_NAME": "Swiss Institute of Bioinformatics ISB Foundation",
 			"OS_MAP_P114_CITY": "Lausanne, Switzerland",
 
-			"OS_MAP_P115_NAME": "European Brain Research Institute RIta Levi-Montalcini Foundation",
+			"OS_MAP_P115_NAME": "European Brain Research Institute\nRita Levi-Montalcini Foundation",
 			"OS_MAP_P115_CITY": "Rome, Italy",
 
 			"OS_MAP_P116_NAME": "Scuola Normale Superiore",
@@ -595,7 +598,7 @@
 			"OS_MAP_P122_CITY": "Berlin, Germany",
 			"OS_MAP_P122_DESC": "Charité Universitätsmedizin Berlin is Europe´s\nlargest University Hospital. More than half of the\nGerman Nobel laureates for medicine and physiology\noriginate from it. Charité’s Brain Simulation\nSection heads HBP’s project TheVirtualBrain (TVB).\nTVB is a simulation platform for simulating\npatient brains to test virtual therapies. TVB has\nseveral thousand users.",
 
-			"OS_7MAP_P123_NAME": "European Molecular Biology Laboratory (EMBL)",
+			"OS_MAP_P123_NAME": "European Molecular Biology Laboratory (EMBL)",
 			"OS_MAP_P123_CITY": "Heidelberg, Germany",
 			"OS_MAP_P123_DESC": "At EMBL in Heidelberg, the group of Anna Kreshuk\nspecializes in developing machine learning\nalgorithms and tools for automatic segmentation,\nclassification and analysis of biological images.\nWithin the Human Brain Project, her team develops\nspecial workflows for the ilastik image processing\ntoolkit with the goal of neuroimaging analysis at\nscale.",
 
@@ -744,13 +747,13 @@
 
 			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "شغلوا الفلم",
 
-			"OS_MAP_P1_NAME": "المعهد الفيدرالي السويسري للتكنولوجيا لوزان",
+			"OS_MAP_P1_NAME": "المعهد الفيدرالي السويسري\nللتكنولوجيا لوزان",
 			"OS_MAP_P1_CITY": "لوزان، سويسرا",
 
 			"OS_MAP_P2_NAME": "مؤسسة جامعة ألتو",
 			"OS_MAP_P2_CITY": "إسبو، فنلندا",
 
-			"OS_MAP_P3_NAME": "مستشفى ليدن الجامعي",
+			"OS_MAP_P3_NAME": "مستشفى ليدن\nالجامعي",
 			"OS_MAP_P3_CITY": "لايدن، هولندا",
 
 			"OS_MAP_P4_NAME": "جامعة أثينا للاقتصاد والأعمال",
@@ -778,7 +781,7 @@
 			"OS_MAP_P10_NAME": "المركز الوطني للبحث العلمي",
 			"OS_MAP_P10_CITY": "باريس، فرنسا",
 
-			"OS_MAP_P11_NAME": "وزارة الطاقة الذرية والطاقة البديلة",
+			"OS_MAP_P11_NAME": "وزارة الطاقة الذرية\nوالطاقة البديلة",
 			"OS_MAP_P11_CITY": "باريس، فرنسا",
 
 			"OS_MAP_P12_NAME": "المجلس الوطني للبحوث",
@@ -816,10 +819,10 @@
 			"OS_MAP_P21_NAME": "فورتيس GmbH",
 			"OS_MAP_P21_CITY": "ميونيخ، ألمانيا",
 
-			"OS_MAP_P22_NAME": "فراوهوفر- غشلشافت لتعزيز البحوث التطبيقية",
+			"OS_MAP_P22_NAME": "فراوهوفر- غشلشافت لتعزيز\nالبحوث التطبيقية",
 			"OS_MAP_P22_CITY": "دارمشتات، ألمانيا",
 
-			"OS_MAP_P23_NAME": "مؤسسة آنا سومر شامبالمود والدكتور كارلوس مونتز شامباليمود",
+			"OS_MAP_P23_NAME": "مؤسسة آنا سومر شامبالمود والدكتور\nكارلوس مونتز شامباليمود",
 			"OS_MAP_P23_CITY": "لشبونة، البرتغال",
 
 			"OS_MAP_P24_NAME": "جامعة هاينريش هاين ، دوسلدورف",
@@ -841,7 +844,7 @@
 			"OS_MAP_P29_NAME": "معهد الدماغ والعمود الفقري",
 			"OS_MAP_P29_CITY": "باريس، فرنسا",
 
-			"OS_MAP_P30_NAME": "معهد الطب التجريبي، الأكاديمية المجرية للعلوم",
+			"OS_MAP_P30_NAME": "معهد الطب التجريبي،\nالأكاديمية المجرية للعلوم",
 			"OS_MAP_P30_CITY": "بودابست، المجر",
 
 			"OS_MAP_P31_NAME": "معهد العلوم والتكنولوجيا في النمسا",
@@ -851,14 +854,14 @@
 			"OS_MAP_P32_NAME": "معهد جوزيف ستيفن",
 			"OS_MAP_P32_CITY": "ليوبليانا، سلوفينيا",
 
-			"OS_MAP_P33_NAME": "المعهد الوطني للبحوث في علوم الحاسب الآلي والأتمتة",
+			"OS_MAP_P33_NAME": "المعهد الوطني للبحوث في علوم\nالحاسب الآلي والأتمتة",
 			"OS_MAP_P33_CITY": "صوفيا انتيبوليس، فرنسا",
 			"OS_MAP_P33_DESC": "تقام في المعهد دراسات يتم فيها تحليل بيانات\nمن محاكاة الدماغ لفهم بنية ووظيفة الدماغ.\nيوفر المعهد قواعد بيانات تتضمن بيانات\nمن عمليات محاكاة الدماغ المتاحة لكل مجتمع الباحثين،\nوكذلك برنامج مفتوح المصدر الذي يتيح تحليل\nالبيانات بسهولة وبراحة.",
 
 			"OS_MAP_P34_NAME": "معهد باستور",
 			"OS_MAP_P34_CITY": "باريس، فرنسا",
 
-			"OS_MAP_P35_NAME": "يوهان فولفغانغ غوته جامعة فرانكفورت",
+			"OS_MAP_P35_NAME": "يوهان فولفغانغ غوته\nجامعة فرانكفورت",
 			"OS_MAP_P35_CITY": "فرانكفورت، ألمانيا",
 
 			"OS_MAP_P36_NAME": "معهد كارلسروه للتكنولوجيا",
@@ -895,7 +898,7 @@
 			"OS_MAP_P45_NAME": "الجمعية البحثية النمساوية لعلم التحكم الآلي",
 			"OS_MAP_P45_CITY": "فيينا، النمسا",
 
-			"OS_MAP_P46_NAME": "جامعة آخن راينش فيستفالش التقنية",
+			"OS_MAP_P46_NAME": "جامعة آخن راينش\nفيستفالش التقنية",
 			"OS_MAP_P46_CITY": "آخن، ألمانيا",
 
 			"OS_MAP_P47_NAME": "جامعة روبرت كارل هايدلبرغ",
@@ -914,7 +917,7 @@
 			"OS_MAP_P51_NAME": "مؤسسة الجامعة الكاثوليكية",
 			"OS_MAP_P51_CITY": "نيميغن، هوتلاند",
 
-			"OS_MAP_P52_NAME": "مركز FZI لتكنولوجيا المعلومات في كارلسروه",
+			"OS_MAP_P52_NAME": "مركز FZI لتكنولوجيا المعلومات\nفي كارلسروه",
 			"OS_MAP_P52_CITY": "كارلسروه، ألمانيا",
 			"OS_MAP_P52_DESC": "مركز بحوث FZI تكنولوجيا المعلومات في كارلسروه،\nألمانيا، هو منظمة غير ربحية تعمل في مجال البحوث\nالتطبيقية في تكنولوجيا المعلومات ونقل التكنولوجيا\nمن الأوساط الأكاديمية إلى الصناعة. في إطار مشروع\nالدماغ البشري، يجري المعهد أبحاثًا في مجالات\nالروبوتات العصبية وتجارب الحلقة المغلقة،\nفي محاولة لفهم نظام الرؤية والحركة المعقدة\nبشكلٍ أفضل.",
 
@@ -1044,7 +1047,7 @@
 			"OS_MAP_P90_NAME": "جامعة هومبولت في برلين",
 			"OS_MAP_P90_CITY": "برلين ، ألمانيا",
 
-			"OS_MAP_P91_NAME": "الأكاديمية الملكية الهولندية للفنون والعلوم",
+			"OS_MAP_P91_NAME": "الأكاديمية الملكية الهولندية\nللفنون والعلوم",
 			"OS_MAP_P91_CITY": "أمستردام، هولندا",
 
 			"OS_MAP_P92_NAME": "المعهد الوطني للفيزياء النووية",
@@ -1071,7 +1074,7 @@
 			"OS_MAP_P98_CITY": "أمستردام، هولندا",
 			"OS_MAP_P98_DESC": "كجزء من مشروع الدماغ البشري، تشارك جامعة أمستردام\nفي دراسة ظواهر الدماغ الإدراكية والمعرفية\nوتنسق خمسة فرق بحثية من 17 مؤسسة في\nجميع أنحاء أوروبا. أهدافنا الرئيسية\nهي التحقيق في قضايا الإدراك؛ الذاكرة. النوم،\nوالمعرفة، وتطوير طرق لاستيعاب البيانات من\nمختلف المقاييس على منصات تكنولوجيا\nالمعلومات والاتصالات الخاصة بالمشروع.",
 
-			"OS_MAP_P99_NAME": "المركز الألماني للأمراض العصبية",
+			"OS_MAP_P99_NAME": "المركز الألماني\nللأمراض العصبية",
 			"OS_MAP_P99_CITY": "بُون، ألمانيا",
 			"OS_MAP_P99_DESC": "الأهداف الرئيسية للدراسة هي فهم العوامل وعوامل الخطر\nللأمراض التنكسية العصبية، وتطوير استراتيجيات علاجية\nووقائية جديدة من خلال ترجمة الاكتشافات الأساسية\nإلى تطبيقات الصحة العامة السريرية والتطبيقية.كجزء\nمن مشروع الدماغ البشري، نركز على فك تجانس الخلايا\nالعصبية بواسطة تسلسل الحمض النووي الريبي أحادي الخلية.",
 
@@ -1122,7 +1125,7 @@
 			"OS_MAP_P114_NAME": "المعهد السويسري للمعلوماتية الحيوية",
 			"OS_MAP_P114_CITY": "لوزان، سويسرا",
 
-			"OS_MAP_P115_NAME": "المعهد الأوروبي لأبحاث الدماغ، مؤسسة ريتا ليفي مونتكالتسيني",
+			"OS_MAP_P115_NAME": "المعهد الأوروبي لأبحاث الدماغ،\nمؤسسة ريتا ليفي مونتكالتسيني",
 			"OS_MAP_P115_CITY": "روما، إيطاليا",
 
 			"OS_MAP_P116_NAME": "كلية التعليم العالي",
@@ -1147,7 +1150,7 @@
 			"OS_MAP_P122_CITY": "برلين، ألمانيا",
 			"OS_MAP_P122_DESC": "تعد كلية الطب شاريت في برلين أكبر\nكلية طب في أوروبا. تعلم فيها أكثر من نصف\nالفائزين بجائزة نوبل في الطب وعلم وظائف\nالأعضاء في ألمانيا. يترأس قسم التصوير الذهني\nفي شاريت مشروع TheVirtualBrain (TVB) لمشروع الدماغ\nالبشري. TVB هي عبارة عن منصة لتصور دماغ المريض\nلاختبار العلاجات الافتراضية. يستخدمها الآلاف.",
 
-			"OS_7MAP_P123_NAME": "المختبر الأوروبي للبيولوجيا الجزيئية",
+			"OS_MAP_P123_NAME": "المختبر الأوروبي للبيولوجيا الجزيئية",
 			"OS_MAP_P123_CITY": "هايدلبرغ، ألمانيا",
 			"OS_MAP_P123_DESC": "في المختبر الأوروبي للبيولوجيا الجزيئية،\nيتخصص فريق آنه كرشوك في تطوير خوارزميات\nوأدوات التعلم الآلي لتقسيم الصور البيولوجية\nوفهرستها وتحليلها تلقائيًا. كجزء من مشروع\nلدماغ البشري، يطور الفريق عمليات عمل خاصة\nلـ \"'صندوق الأدوات\" من ILastik لمعالجة الصور من أجل تحقيق\nتحليل تصوير دماغي بالحجم الطبيعي.",
 
@@ -1296,13 +1299,13 @@
 
 			"OS_MAP_PLAY_VIDEO_BUTTON_TEXT": "נגנו סרט",
 
-			"OS_MAP_P1_NAME": "המכון הפדרלי השוויצרי לטכנולוגיה לוזאן",
+			"OS_MAP_P1_NAME": "המכון הפדרלי השוויצרי\nלטכנולוגיה לוזאן",
 			"OS_MAP_P1_CITY": "לוזאן, שוויץ",
 
 			"OS_MAP_P2_NAME": "קרן אוניברסיטת אלטו",
 			"OS_MAP_P2_CITY": "אספו, פינלנד",
 
-			"OS_MAP_P3_NAME": "בית החולים האוניברסיטאי ליידן",
+			"OS_MAP_P3_NAME": "בית החולים האוניברסיטאי\nליידן",
 			"OS_MAP_P3_CITY": "ליידן, הולנד",
 
 			"OS_MAP_P4_NAME": "אוניברסיטת אתונה לכלכלה ועסקים",
@@ -1330,7 +1333,7 @@
 			"OS_MAP_P10_NAME": "המרכז הלאומי למחקר מדעי",
 			"OS_MAP_P10_CITY": "פריז, צרפת",
 
-			"OS_MAP_P11_NAME": "משרד האנרגיה האטומית והאנרגיות החלופיות",
+			"OS_MAP_P11_NAME": "משרד האנרגיה האטומית\nוהאנרגיות החלופיות",
 			"OS_MAP_P11_CITY": "פריז, צרפת",
 
 			"OS_MAP_P12_NAME": "המועצה הלאומית למחקר",
@@ -1368,10 +1371,10 @@
 			"OS_MAP_P21_NAME": "פורטיס GmbH",
 			"OS_MAP_P21_CITY": "מינכן, גרמניה",
 
-			"OS_MAP_P22_NAME": "פראוהופר-גשלשאפט לקידום מחקר יישומי",
+			"OS_MAP_P22_NAME": "פראוהופר-גשלשאפט\nלקידום מחקר יישומי",
 			"OS_MAP_P22_CITY": "דרמשטט, גרמניה",
 
-			"OS_MAP_P23_NAME": "קרן אנה סומר צ'מפאלימוד וד\"ר קרלוס מונטז שמפאלימוס",
+			"OS_MAP_P23_NAME": "קרן אנה סומר צ'מפאלימוד\nוד\"ר קרלוס מונטז שמפאלימוס",
 			"OS_MAP_P23_CITY": "ליסבון, פורטוגל",
 
 			"OS_MAP_P24_NAME": "אוניברסיטת היינריך היינה, דיסילדורף",
@@ -1393,7 +1396,7 @@
 			"OS_MAP_P29_NAME": "המכון למוח ולחוט השידרה",
 			"OS_MAP_P29_CITY": "פריז, צרפת",
 
-			"OS_MAP_P30_NAME": "המכון לרפואה ניסויית, האקדמיה ההונגרית למדעים",
+			"OS_MAP_P30_NAME": "המכון לרפואה ניסויית,\nהאקדמיה ההונגרית למדעים",
 			"OS_MAP_P30_CITY": "בודפסט, הונגריה",
 
 			"OS_MAP_P31_NAME": "המכון למדע וטכנולוגיה של אוסטריה",
@@ -1403,14 +1406,14 @@
 			"OS_MAP_P32_NAME": "מכון ג'וזף סטפן",
 			"OS_MAP_P32_CITY": "לובליאנה, סלובניה",
 
-			"OS_MAP_P33_NAME": "המכון הלאומי למחקר במדעי המחשב ואוטומציה",
+			"OS_MAP_P33_NAME": "המכון הלאומי למחקר\nבמדעי המחשב ואוטומציה",
 			"OS_MAP_P33_CITY": "סופיה אנטיפוליס, צרפת",
 			"OS_MAP_P33_DESC": "במכון מתבצעים מחקרים בהם מנתחים מידע\nהמגיע מהדמיות מוח כדי להבין את מבנה\nהמוח ותפקודו. המכון מספק מאגרי מידע הכוללים\nנתונים מהדמיות מוח הזמינים לכל קהילת החוקרים,\nוכן תוכנה בקוד פתוח המאפשרת לנתח את\nהמידע בקלות ובנוחות.",
 
 			"OS_MAP_P34_NAME": "מכון פסטר",
 			"OS_MAP_P34_CITY": "פריז, צרפת",
 
-			"OS_MAP_P35_NAME": "יוהאן וולפגנג גתה אוניברסיטת פרנקפורט",
+			"OS_MAP_P35_NAME": "יוהאן וולפגנג גתה\nאוניברסיטת פרנקפורט",
 			"OS_MAP_P35_CITY": "פרנקפורט, גרמניה",
 
 			"OS_MAP_P36_NAME": "המכון הטכנולוגי של קרלסרוהה",
@@ -1447,7 +1450,7 @@
 			"OS_MAP_P45_NAME": "החברה האוסטרית לחקר הקיברנטיקה",
 			"OS_MAP_P45_CITY": "וינה, אוסטריה",
 
-			"OS_MAP_P46_NAME": "האוניברסיטה הטכנית רייניש-ווסטפאליש של אאכן",
+			"OS_MAP_P46_NAME": "האוניברסיטה הטכנית רייניש-ווסטפאליש\nשל אאכן",
 			"OS_MAP_P46_CITY": "אאכן, גרמניה",
 
 			"OS_MAP_P47_NAME": "אוניברסיטת רוּפרכט-קרל היידלברג",
@@ -1466,7 +1469,7 @@
 			"OS_MAP_P51_NAME": "הקרן האוניברסיטאית הקתולית",
 			"OS_MAP_P51_CITY": "ניימיכן, הוטלנד",
 
-			"OS_MAP_P52_NAME": "מֶרְכָּז המחקר FZI לטכנולוגיית מידע בקרלסרוּהֶה",
+			"OS_MAP_P52_NAME": "מֶרְכָּז המחקר FZI\nלטכנולוגיית מידע בקרלסרוּהֶה",
 			"OS_MAP_P52_CITY": "קרלסרוּהֶה, גרמניה",
 			"OS_MAP_P52_DESC": "מרכז המחקר FZI לטכנולוגיית מידע בקרלסרוּהֶה, גרמניה,\nהוא מוסד ללא מטרת רווח העוסק במחקר יישׂומי\nשל טכנולוגיית מידע והעברת טכנולוגיה מהאקדמיה לתעשייה.\nבמסגרת פרויקט המוח האנושי נערכים במכון מחקרים\nבתחומי הנוֹירוֹ-רובוטיקה וניסויים בלולאה סגורה,\nבשאיפה להבין טוב יותר את מנגנוני הראייה\nוהתנועה המורכבים להפליא של האדם.",
 
@@ -1596,7 +1599,7 @@
 			"OS_MAP_P90_NAME": "אוניברסיטת הומבולדט בברלין",
 			"OS_MAP_P90_CITY": "ברלין, גרמניה",
 
-			"OS_MAP_P91_NAME": "האקדמיה המלכותית של הולנד לאמנויות ולמדעים",
+			"OS_MAP_P91_NAME": "האקדמיה המלכותית\nשל הולנד לאמנויות ולמדעים",
 			"OS_MAP_P91_CITY": "אמסטרדם, הולנד",
 
 			"OS_MAP_P92_NAME": "המכון הלאומי לפיסיקה גרעינית",
@@ -1623,7 +1626,7 @@
 			"OS_MAP_P98_CITY": "אמסטרדם, הולנד",
 			"OS_MAP_P98_DESC": "במסגרת פרויקט המוח האנושי אוניברסיטת אמסטרדם\nמשתתפת בחֵקֶר תופעות מוחיות קוגניטיביוֹת ומערכתיוֹת,\nומרכזת חמישה צוותי מחקר מ-17 מוסדות\nברחבי אירופה. מטרותינו העיקריות הן לחקור\nאת נושאי התפישׂה; הזיכרון; השינה והתוֹדעה,\nולפתח שיטות להטמעת נתונים מקני מידה\nשונים בפלטפורמות טכנולוגיית המידע והתקשורת\nשל הפרויקט.",
 
-			"OS_MAP_P99_NAME": "המֶרכז הגרמני למחלות מוח ניווּניוֹת",
+			"OS_MAP_P99_NAME": "המֶרכז הגרמני\nלמחלות מוח ניווּניוֹת",
 			"OS_MAP_P99_CITY": "בון, גרמניה",
 			"OS_MAP_P99_DESC": "מטרות הלִבּה של המחקר הן להבין את הגורמים\nומקדמי הסיכון למחלות עצבים ניווניות, ולפתח\nאסטרטגיות טיפוליוֹת ומניעתיוֹת חדשות על-ידי\nתרגום תגליות יסוד ליישׂומים קליניים ויישׂומים\nבתחום בריאות הציבור. במסגרת פרויקט המוח האנושי אנו\nמתמקדים בפענוח הטרוֹגניוּת של נוירונים\nבאמצעות ריצוף רנ\"א של תא יחיד.",
 
@@ -1674,7 +1677,7 @@
 			"OS_MAP_P114_NAME": "המכון השוויצרי לביואינפורמטיקה",
 			"OS_MAP_P114_CITY": "לוזאן, שווייץ",
 
-			"OS_MAP_P115_NAME": "המכון האירופאי לחקר המוח, קרן ריטה לוי-מונצאלצ'יני ",
+			"OS_MAP_P115_NAME": "המכון האירופאי לחקר המוח,\nקרן ריטה לוי-מונצאלצ'יני ",
 			"OS_MAP_P115_CITY": "רומא, איטליה",
 
 			"OS_MAP_P116_NAME": "בית הספר ללימודים גבוהים",
@@ -1699,7 +1702,7 @@
 			"OS_MAP_P122_CITY": "ברלין, גרמניה",
 			"OS_MAP_P122_DESC": "בית הספר לרפואה שאריטֶה שבברלין הוא בית\nהספר הגדול ביותר לרפואה באירופה.\nיותר ממחצית מזוֹכי פרסי נובל לרפואה ולפיזיולוגיה\nבגרמניה למדו בו. מחלקת ההדמיה המוחית של שאריטֶה\nעומדת בראש פרויקט TheVirtualBrain (TVB) של פרויקט\nהמוח האנושי. TVB היא פלטפורמה להדמיה של\nמוח מטופל במטרה לבדוק טיפולים וירטואליים.\nמשתמשיה מוֹנִים כמה אֲלָפִים.",
 
-			"OS_7MAP_P123_NAME": "המעבדה האירופית לביולוגיה מולקולרית",
+			"OS_MAP_P123_NAME": "המעבדה האירופית לביולוגיה מולקולרית",
 			"OS_MAP_P123_CITY": "היידלברג, גרמניה",
 			"OS_MAP_P123_DESC": "במעבדה האירופית לביולוגיה מולקולרית מתמחה\nהצוות של אנה קְרֶשׁוּק בפיתוח אלגוריתמים ללמידת\nמכונה וכלים לפילוח, קִטְלוּג וניתוח אוטומטיים\nשל דימויים ביולוגיים. במסגרת פרויקט המוח האנושי\nהצוות מְפַתֵּחַ תהליכי עבודה מיוחדים\nעבור \"ארגז הכלים\" של ilastik לעיבוד תמונה,\nבמטרה להגיע לניתוח דימוּת מוחי בגודל טבעי.",
 
@@ -1776,7 +1779,7 @@
 		{
 			"type": "VIDEO",
 			"file": {
-				"en": "assets/videos/opening/en-cajal.mov",
+				"en": "assets/videos/opening/en-cajal.mp4",
 				"he": "assets/videos/opening/he-cajal.mp4",
 				"ar": "assets/videos/opening/ar-cajal.mp4"
 			},
@@ -1824,7 +1827,7 @@
 		{
 			"type": "VIDEO",
 			"file": {
-				"en": "assets/videos/opening/en-dancing-neuron.mov",
+				"en": "assets/videos/opening/en-dancing-neuron.mp4",
 				"he": "assets/videos/opening/he-dancing-neuron.mp4",
 				"ar": "assets/videos/opening/ar-dancing-neuron.mp4"
 			},
@@ -4361,7 +4364,10 @@
 					"mapY": 141,
 					
 					"nameKey": "OS_MAP_P30_NAME",
-					"cityKey": "OS_MAP_P30_CITY"
+					"cityKey": "OS_MAP_P30_CITY",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 579,
@@ -4444,7 +4450,10 @@
 					"mapY": 466,
 					
 					"nameKey": "OS_MAP_P23_NAME",
-					"cityKey": "OS_MAP_P23_CITY"
+					"cityKey": "OS_MAP_P23_CITY",
+
+					"cityY": 618,
+					"descY": 675
 				}
 			]
 		},
@@ -4496,7 +4505,12 @@
 					"mapY": 151,
 					
 					"nameKey": "OS_MAP_P11_NAME",
-					"cityKey": "OS_MAP_P11_CITY"
+					"cityKey": "OS_MAP_P11_CITY",
+
+					"video": "P11",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 305,
@@ -4526,7 +4540,10 @@
 					"nameKey": "OS_MAP_P33_NAME",
 					"cityKey": "OS_MAP_P33_CITY",
 					"descriptionKey": "OS_MAP_P33_DESC",
-					"image": "P33"
+					"image": "P33",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 402,
@@ -4548,8 +4565,7 @@
 					
 					"nameKey": "OS_MAP_P41_NAME",
 					"cityKey": "OS_MAP_P41_CITY",
-					"descriptionKey": "OS_MAP_P41_DESC",
-					"image": "P41"
+					"descriptionKey": "OS_MAP_P41_DESC"
 				},
 				{
 					"mapX": 159,
@@ -4558,7 +4574,9 @@
 					"nameKey": "OS_MAP_P83_NAME",
 					"cityKey": "OS_MAP_P83_CITY",
 					"descriptionKey": "OS_MAP_P83_DESC",
-					"image": "P83"
+					"image": "P83",
+
+					"video": "P83"
 				},
 				{
 					"mapX": 171,
@@ -4637,7 +4655,10 @@
 					"mapY": 370,
 					
 					"nameKey": "OS_MAP_P115_NAME",
-					"cityKey": "OS_MAP_P115_CITY"
+					"cityKey": "OS_MAP_P115_CITY",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 347,
@@ -4659,8 +4680,7 @@
 					
 					"nameKey": "OS_MAP_P12_NAME",
 					"cityKey": "OS_MAP_P12_CITY",
-					"descriptionKey": "OS_MAP_P12_DESC",
-					"image": "P12"
+					"descriptionKey": "OS_MAP_P12_DESC"
 				}
 			]
 		},
@@ -4669,21 +4689,27 @@
 			"institutions": [
 				{
 					"mapX": 176,
-					"mapY": 303,
+					"mapY": 271,
 					
 					"nameKey": "OS_MAP_P3_NAME",
-					"cityKey": "OS_MAP_P3_CITY"
+					"cityKey": "OS_MAP_P3_CITY",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 218,
-					"mapY": 214,
+					"mapY": 182,
 					
 					"nameKey": "OS_MAP_P91_NAME",
-					"cityKey": "OS_MAP_P91_CITY"
+					"cityKey": "OS_MAP_P91_CITY",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 218,
-					"mapY": 239,
+					"mapY": 207,
 					
 					"nameKey": "OS_MAP_P98_NAME",
 					"cityKey": "OS_MAP_P98_CITY",
@@ -4692,21 +4718,28 @@
 				},
 				{
 					"mapX": 240,
-					"mapY": 201,
+					"mapY": 169,
 					
 					"nameKey": "OS_MAP_P50_NAME",
 					"cityKey": "OS_MAP_P50_CITY"
 				},
 				{
+					"mapX": 240,
+					"mapY": 195,
+					
+					"nameKey": "OS_MAP_P113_NAME",
+					"cityKey": "OS_MAP_P113_CITY"
+				},
+				{
 					"mapX": 425,
-					"mapY": 395,
+					"mapY": 363,
 					
 					"nameKey": "OS_MAP_P51_NAME",
 					"cityKey": "OS_MAP_P51_CITY"
 				},
 				{
 					"mapX": 374,
-					"mapY": 580,
+					"mapY": 548,
 					
 					"nameKey": "OS_MAP_P117_NAME",
 					"cityKey": "OS_MAP_P117_CITY"
@@ -4728,7 +4761,12 @@
 					"mapY": 308,
 					
 					"nameKey": "OS_MAP_P1_NAME",
-					"cityKey": "OS_MAP_P1_CITY"
+					"cityKey": "OS_MAP_P1_CITY",
+
+					"video": "P1",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 122,
@@ -4739,10 +4777,12 @@
 				},
 				{
 					"mapX": 133,
-					"mapY": 400,
+					"mapY": 310,
 					
 					"nameKey": "OS_MAP_P27_NAME",
-					"cityKey": "OS_MAP_P27_CITY"
+					"cityKey": "OS_MAP_P27_CITY",
+
+					"video": "P27"
 				},
 				{
 					"mapX": 260,
@@ -4856,7 +4896,10 @@
 					"mapY": 346,
 					
 					"nameKey": "OS_MAP_P46_NAME",
-					"cityKey": "OS_MAP_P46_CITY"
+					"cityKey": "OS_MAP_P46_CITY",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 54,
@@ -4881,7 +4924,10 @@
 					"nameKey": "OS_MAP_P99_NAME",
 					"cityKey": "OS_MAP_P99_CITY",
 					"descriptionKey": "OS_MAP_P99_DESC",
-					"image": "P99"
+					"image": "P99",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 110,
@@ -4975,7 +5021,10 @@
 					"mapY": 542,
 					
 					"nameKey": "OS_MAP_P52_NAME",
-					"cityKey": "OS_MAP_P52_CITY"
+					"cityKey": "OS_MAP_P52_CITY",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 169,
@@ -5027,14 +5076,20 @@
 					"mapY": 437,
 					
 					"nameKey": "OS_MAP_P22_NAME",
-					"cityKey": "OS_MAP_P22_CITY"
+					"cityKey": "OS_MAP_P22_CITY",
+
+					"cityY": 618,
+					"descY": 675
 				},
 				{
 					"mapX": 172,
 					"mapY": 408,
 					
 					"nameKey": "OS_MAP_P35_NAME",
-					"cityKey": "OS_MAP_P35_CITY"
+					"cityKey": "OS_MAP_P35_CITY",
+
+					"cityY": 618,
+					"descY": 675
 				}
 			]
 		},
@@ -5042,8 +5097,8 @@
 			"nameKey": "OS_MAP_COUNTRY_ISRAEL_NAME",
 			"institutions": [
 				{
-					"mapX": 82,
-					"mapY": 240,
+					"mapX": 60,
+					"mapY": 209,
 					
 					"nameKey": "OS_MAP_P84_NAME",
 					"cityKey": "OS_MAP_P84_CITY",
@@ -5051,17 +5106,19 @@
 					"image": "P84"
 				},
 				{
-					"mapX": 91,
-					"mapY": 210,
+					"mapX": 69,
+					"mapY": 179,
 					
 					"nameKey": "OS_MAP_P57_NAME",
 					"cityKey": "OS_MAP_P57_CITY",
 					"descriptionKey": "OS_MAP_P57_DESC",
-					"image": "P57"
+					"image": "P57",
+
+					"video": "P57"
 				},
 				{
-					"mapX": 123,
-					"mapY": 241,
+					"mapX": 101,
+					"mapY": 210,
 					
 					"nameKey": "OS_MAP_P60_NAME",
 					"cityKey": "OS_MAP_P60_CITY",
@@ -5069,13 +5126,12 @@
 					"image": "P60"
 				},
 				{
-					"mapX": 131,
-					"mapY": 265,
+					"mapX": 109,
+					"mapY": 234,
 					
 					"nameKey": "OS_MAP_P8_NAME",
 					"cityKey": "OS_MAP_P8_CITY",
-					"descriptionKey": "OS_MAP_P8_DESC",
-					"image": "P8"
+					"descriptionKey": "OS_MAP_P8_DESC"
 				}
 			]
 		},
@@ -5108,7 +5164,9 @@
 					"mapY": 567,
 					
 					"nameKey": "OS_MAP_P63_NAME",
-					"cityKey": "OS_MAP_P63_CITY"
+					"cityKey": "OS_MAP_P63_CITY",
+
+					"video": "P63"
 				},
 				{
 					"mapX": 297,
@@ -5224,7 +5282,9 @@
 					"nameKey": "OS_MAP_P44_NAME",
 					"cityKey": "OS_MAP_P44_CITY",
 					"descriptionKey": "OS_MAP_P44_DESC",
-					"image": "P44"
+					"image": "P44",
+
+					"video": "P44"
 				}
 			]
 		},
@@ -5254,7 +5314,9 @@
 					"nameKey": "OS_MAP_P68_NAME",
 					"cityKey": "OS_MAP_P68_CITY",
 					"descriptionKey": "OS_MAP_P68_DESC",
-					"image": "P68"
+					"image": "P68",
+
+					"video": "P68"
 				},
 				{
 					"mapX": 321,
@@ -5292,7 +5354,9 @@
 					"mapY": 151,
 					
 					"nameKey": "OS_MAP_P93_NAME",
-					"cityKey": "OS_MAP_P93_CITY"
+					"cityKey": "OS_MAP_P93_CITY",
+
+					"video": "P93"
 				},
 				{
 					"mapX": 650,
