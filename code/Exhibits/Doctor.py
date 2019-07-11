@@ -56,7 +56,5 @@ class Doctor(Exhibit):
 			self.chooseTestScene = ChooseTestScene(self)
 			self.scene = OpeningScene(self)
 
-		#self.scene = self.startVideoScene
-
 if __name__ == '__main__':
 	Doctor().start()

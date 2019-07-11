@@ -311,6 +311,7 @@
 
 			"OS_MAP_P36_NAME": "Karlsruher Institute for Technology",
 			"OS_MAP_P36_CITY": "Karlsruhe, Germany",
+			"OS_MAP_P36_DESC": "With 9,000 employees and a budget of 800 million euros,\nthe KIT has become one of the world's largest research\nand teaching institutions with the potential to occupy a leading\nposition worldwide in selected research areas.\nhe KIT's role in the HBP is providing and developing\nthe project's computing infrastructure.",
 
 			"OS_MAP_P37_NAME": "Karolinska Institutet",
 			"OS_MAP_P37_CITY": "Stockholm, Sweden",
@@ -689,9 +690,9 @@
 			"DFAM_COGNITIVE_TEST_NAME": "الاختبار المعرفي",
 			"DFAM_COGNITIVE_TEST_DESC": "الاختبارات المعرفية هي سلسلة من المهام الّتي\nتأتي للتحقق من صحة قدرات الدماغ المختلفة.",
 			"DFAM_PET_TEST_NAME": "اختبار ال PET",
-			"DFAM_PET_TEST_DESC": "اختبار PET (Positron Emission Tomography)\nالتصوير المقطعي بالإصدار البوزيتروني- هو\nمسح للدماغ والبحث عن مادة معينة بداخله. على سبيل\nالمثال، يمكن البحث في مسح PET على\nمجموعات بيتا أميلويد، الشائعة جدًا\nفقط عند مرضى الزهايمر.",
+			"DFAM_PET_TEST_DESC": "اختبار PET (Positron Emission Tomography)\nالتصوير المقطعي بالإصدار البوزيتروني- هو مسح للدماغ\nوالبحث عن مادة معينة بداخله. على سبيل المثال، يمكن\nالبحث في مسح PET على مجموعات بيتا\nأميلويد، الشائعة جدًا فقط عند مرضى الزهايمر.",
 			"DFAM_MRI_TEST_NAME": "اختبار ال MRI",
-			"DFAM_MRI_TEST_DESC": "اختبار التصوير بالرنين المغناطيسي (MRI) (Magnetic Resonance Imaging)\nهو مسح للدماغ باستخدام الإشعاع اللاسلكي\nومجال مغناطيسي قوي. ينتج المسح صورة توضح\nكيف يبدو الدماغ وما يحدث فيه.",
+			"DFAM_MRI_TEST_DESC": "اختبار التصوير بالرنين المغناطيسي\n(MRI) (Magnetic Resonance Imaging) هو مسح للدماغ\nباستخدام الإشعاع اللاسلكي ومجال\nمغناطيسي قوي. ينتج المسح صورة توضح\nكيف يبدو الدماغ وما يحدث فيه.",
 
 			"DFAM_TEST_IN_PROGRESS_HEADER_MRI": "يتم إجراء اختبار ال MRI (التصوير بالرنين المغناطيسي)",
 			"DFAM_TEST_IN_PROGRESS_HEADER_PET": "يتم إجراء اختبار PET",
@@ -1414,6 +1415,7 @@
 
 			"OS_MAP_P36_NAME": "המכון הטכנולוגי של קרלסרוהה",
 			"OS_MAP_P36_CITY": "קרלסרוהה, גרמניה",
+			"OS_MAP_P36_DESC": "המכון הטכנולוגי של קרלסרוהה, הכולל 9,000 עובדים ובעל תקציב של\n800 מיליון אירו, הפך לאחד ממוסדות המחקר וההוראה הגדולים בעולם,\nומתעתד להיות אחד המובילים בעולם במספר תחומי מחקר.\nכחלק מ'פרויקט המוח האנושי', המכון מספק ומפתח את התשתית\nהחישובית של הפרויקט.",
 
 			"OS_MAP_P37_NAME": "מכון קרולינסקה",
 			"OS_MAP_P37_CITY": "סטוקהולם, שבדיה",

@@ -36,8 +36,6 @@ class ChooseTestScene(Scene):
 
 		self.generateTestResults()
 
-		self.createTexts()
-
 		self.neuronNames = []
 		self.neuronDescs = []
 		self.imageButtons = []
@@ -91,6 +89,8 @@ class ChooseTestScene(Scene):
 		self.buttons.append(self.diagnoseNoButton)
 		self.diagnoseNoButton.visible = False
 
+		self.createTexts()
+
 	def generateTestResults(self):
 		self.isHealthy = True if random.random() > 0.5 else False
 
@@ -104,6 +104,18 @@ class ChooseTestScene(Scene):
 	def createTexts(self):
 		self.headerText = self.smallScreenSubSubHeaderFont.render(self.config.getText('DFAM_CHOOSE_TEST_INSTRUCTION'), True, (255, 255, 255))
 		self.diagnoseQuestionText = self.smallScreenSubSubHeaderFont.render(self.config.getText('DFAM_DIAGNOSE_QUESTION_TEXT'), True, [255, 207, 0])
+
+		for i in range(0, len(TEST_DATA)):
+			neuronImageSet = TEST_DATA[i]
+			selectButton = self.selectButtons[i]
+			selectButton.createText(self.config.getText('DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT' if self.testsDone[i] else 'DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT'), self.extraSmallTextFont)
+
+			self.neuronNames[i] = self.smallButtonTextFont.render(self.config.getText(neuronImageSet['name-key']), True, (255, 255, 255))
+			self.neuronDescs[i] = Utilities.renderTextList(self.config, self.smallScreenExtraSmallTextFont, neuronImageSet['desc-key'])
+
+		self.diagnoseButton.createText(self.config.getText('DFAM_DIAGNOSE_BUTTON_TEXT'), self.smallButtonTextFont)
+		self.diagnoseYesButton.createText(self.config.getText('DFAM_DIAGNOSE_YES_BUTTON_TEXT'), self.smallButtonTextFont)
+		self.diagnoseNoButton.createText(self.config.getText('DFAM_DIAGNOSE_NO_BUTTON_TEXT'), self.smallButtonTextFont)
 
 	def onTestClick(self, index):
 		if self.testsDone[index]:

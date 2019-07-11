@@ -5,7 +5,7 @@ class FrameAnimation:
 	def __init__(self, filePrefix, framesNum, fps):
 		self.frames = []
 		for i in range(framesNum):
-			self.frames.append(pygame.image.load(filePrefix + str(i + 1) + '.png').convert())
+			self.frames.append(pygame.image.load(filePrefix + str(i + 1) + '.png').convert_alpha())
 
 		self.timeUntilNextFrame = 1 / fps
 		self.currTime = 0

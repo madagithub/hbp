@@ -47,14 +47,14 @@ class TestResultsScene(Scene):
 	def createTexts(self):
 		self.headerText = self.subHeaderFont.render(self.config.getText(TEST_ID_TO_RESULT_KEYS[self.test]['header']), True, (255, 255, 255))
 		self.subHeaderTexts = Utilities.renderTextList(self.config, self.extraSmallTextFont, TEST_ID_TO_RESULT_KEYS[self.test]['subHeader'])
-		self.testResultText = self.smallTextFont.render(self.config.getText('DFAM_TEST_RESULTS_RESULTS_HEADER'), True, (0, 0, 0))
-		self.healthyResultText = self.smallTextFont.render(self.config.getText('DFAM_TEST_RESULTS_HEALTHY_HEADER'), True, (0, 0, 0))
+		self.testResultText = self.extraSmallTextFont.render(self.config.getText('DFAM_TEST_RESULTS_RESULTS_HEADER'), True, (0, 0, 0))
+		self.healthyResultText = self.extraSmallTextFont.render(self.config.getText('DFAM_TEST_RESULTS_HEALTHY_HEADER'), True, (0, 0, 0))
 
 	def draw(self, dt):
-		self.screen.blit(self.testImage, (357 if self.test == 'COGNITIVE' else 201, 130))
-		self.screen.blit(self.healthyImage, (724 if self.test == 'COGNITIVE' else 722, 130))
+		self.screen.blit(self.testImage, (201 if self.test == 'COGNITIVE' else 357, 130))
+		self.screen.blit(self.healthyImage, (722 if self.test == 'COGNITIVE' else 724, 130))
 		Utilities.drawTextOnCenterX(self.screen, self.headerText, (self.screen.get_width() // 2, 44))
 		Utilities.drawTextsOnCenterX(self.screen, self.subHeaderTexts, (self.screen.get_width() // 2, 482), 28)
-		Utilities.drawTextOnCenterX(self.screen, self.testResultText, (591 if self.test == 'COGNITIVE' else 721, 570 if self.test == 'COGNITIVE' else 585))
-		Utilities.drawTextOnCenterX(self.screen, self.healthyResultText, (1308 if self.test == 'COGNITIVE' else 1206, 570 if self.test == 'COGNITIVE' else 585))
+		Utilities.drawTextOnCenterX(self.screen, self.testResultText, (418 if self.test == 'COGNITIVE' else 494, 419))
+		Utilities.drawTextOnCenterX(self.screen, self.healthyResultText, (940 if self.test == 'COGNITIVE' else 862, 419))
 		super().draw(dt)
