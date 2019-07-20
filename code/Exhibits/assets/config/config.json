@@ -661,7 +661,7 @@
 			"RN_DRAWING_SCREEN_NEURON_INSTRUCTION": "قوموا بالتأشير بالإصبع على الخط المتقطع لبناء الخلية العصبية",
 
 			"RN_DRAWING_SCREEN_LIGHTNING_INSTRUCTION": "رائع، لقد قمتم بإنشاء نموذج ثلاثي الأبعاد للخلية..\nاضغطوا على البرق وشغّلوا الخلايا العصبية",
-			"RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION": "مرحلة إعادة بناء الخلية:\nفي هذه المرحلة قمتم بالإشارة الى خلية حقيقية في\nأنسجة الدماغ البيولوجية. استنادًا\nإلى إشارتكم، أنشأ الحاسوب بنية\nرقمية لخلية عصبية..",
+			"RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION": "مرحلة إعادة بناء الخلية:\nفي هذه المرحلة قمتم بالإشارة الى خلية\nحقيقية في أنسجة الدماغ البيولوجية.\nاستنادًا إلى إشارتكم، أنشأ الحاسوب\nبنية رقمية لخلية عصبية..",
 
 			"RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION": "تنشيط الخلية:\nفي هذه المرحلة، أدخلتم الكهرباء\nالى مبنى الخلية، مما يجعل النموذج\nالرقمي فعالًا.",
 
@@ -1783,6 +1783,7 @@
 				"he": "assets/videos/opening/he-cajal.mp4",
 				"ar": "assets/videos/opening/ar-cajal.mp4"
 			},
+			"soundFile": "assets/videos/opening/en-cajal.ogg",
 			"image": "cajal",
 			"tappedImage": "cajal",
 			"x": 960,
@@ -1852,7 +1853,7 @@
 		"basket": {
 			"animationPaths": [
 				{
-					"type": "regluar",
+					"type": "regular",
 					"path": [
 						{"x": 306, "y": 258},
 						{"x": 305, "y": 264},

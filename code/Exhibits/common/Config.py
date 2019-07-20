@@ -37,6 +37,12 @@ class Config:
 	def getDefaultLanguagePrefix(self):
 		return self.config['defaultLanguage']
 
+	def getScreenWidth(self):
+		return self.config.get('screenWidth', None)
+
+	def getScreenHeight(self):
+		return self.config.get('screenHeight', None)
+
 	def isTouch(self):
 		return self.config['touch']
 

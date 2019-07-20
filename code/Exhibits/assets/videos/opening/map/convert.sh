@@ -14,9 +14,9 @@ ffmpeg -i 'P93-en.mp4' -vn 'P93-en.ogg'
 ffmpeg -i 'P93-he.mp4' -vn 'P93-he.ogg'
 ffmpeg -i 'P93-ar.mp4' -vn 'P93-ar.ogg'
 
-ffmpeg -i 'P69-en.mp4' -vn 'P69-en.ogg'
-ffmpeg -i 'P69-he.mp4' -vn 'P69-he.ogg'
-ffmpeg -i 'P69-ar.mp4' -vn 'P69-ar.ogg'
+ffmpeg -i 'P68-en.mp4' -vn 'P68-en.ogg'
+ffmpeg -i 'P68-he.mp4' -vn 'P68-he.ogg'
+ffmpeg -i 'P68-ar.mp4' -vn 'P68-ar.ogg'
 
 ffmpeg -i 'P57-en.mp4' -vn 'P57-en.ogg'
 ffmpeg -i 'P57-he.mp4' -vn 'P57-he.ogg'

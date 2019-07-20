@@ -43,6 +43,9 @@ class Exhibit:
 		infoObject = pygame.display.Info()
 		self.screenSize = (infoObject.current_w, infoObject.current_h)
 
+		if self.config.getScreenWidth() is not None and self.config.getScreenHeight() is not None:
+			self.screenSize = (self.config.getScreenWidth(), self.config.getScreenHeight())			
+
 		self.screen = pygame.display.set_mode(self.screenSize, pygame.FULLSCREEN)
 		self.cursor = pygame.image.load('assets/images/cursor.png').convert_alpha()
 
@@ -175,7 +178,7 @@ class Exhibit:
 
 		while isGameRunning:
 
-			#ry:
+			#try:
 				for event in pygame.event.get():
 					if event.type == MOUSEBUTTONDOWN:
 						if not self.config.isTouch():

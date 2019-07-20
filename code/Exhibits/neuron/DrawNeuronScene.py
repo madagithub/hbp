@@ -66,8 +66,8 @@ class DrawNeuronScene(Scene):
 		self.drawOnNeuron = pygame.image.load('assets/images/neuron/' + self.neuronChosen + '-big.png')
 		self.videoMask = pygame.image.load('assets/images/video-mask.png')
 
-		self.modelTextBalloon = pygame.image.load('assets/images/text-box-small.png')
-		self.lightningTextBalloon = pygame.image.load('assets/images/text-box-large.png')
+		self.modelTextBalloon = pygame.image.load('assets/images/text-box-large.png')
+		self.lightningTextBalloon = pygame.image.load('assets/images/text-box-small.png')
 
 		lightningButtonNormal = pygame.image.load('assets/images/button-electrify-normal.png')
 		lightningButtonTapped = pygame.image.load('assets/images/button-electrify-tapped.png')
@@ -177,6 +177,7 @@ class DrawNeuronScene(Scene):
 			self.explanationTexts = Utilities.renderTextList(self.config, self.extraSmallTextFont, "RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION")
 		elif self.state == LIGHTNING_STATE:
 			self.explanationTexts = Utilities.renderTextList(self.config, self.extraSmallTextFont, "RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION")
+			self.nextButton.createText(self.config.getText("RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT"), self.buttonFont)
 
 	def draw(self, dt):
 		if self.timer is not None:
@@ -218,17 +219,25 @@ class DrawNeuronScene(Scene):
 		self.screen.blit(self.spinningAnimation.getFrame(dt), (self.screen.get_width() // 2 - 600 // 2, 240))
 		self.screen.blit(self.videoMask, (0, 0))
 
-		self.screen.blit(self.modelTextBalloon, (1326, 399))
+		self.screen.blit(self.modelTextBalloon, (1314, 399))
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
-		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1530, 429), 29)
+
+		if self.config.isRtl():
+			Utilities.drawTextsOnRightX(self.screen, self.explanationTexts, (1692, 429), 29)
+		else:
+			Utilities.drawTextsOnLeftX(self.screen, self.explanationTexts, (1349, 429), 29)
 
 	def drawLightningState(self, dt):
 		self.screen.blit(self.electricAnimation.getFrame(dt), (self.screen.get_width() // 2 - 600 // 2, 0))
 		self.screen.blit(self.videoMask, (0, 0))
 
-		self.screen.blit(self.lightningTextBalloon, (1327, 412))
+		self.screen.blit(self.lightningTextBalloon, (1314, 412))
 		Utilities.drawTextsOnCenterX(self.screen, self.instructionTexts, (self.screen.get_width() // 2, 61), 40)
-		Utilities.drawTextsOnCenterX(self.screen, self.explanationTexts, (1530, 442), 29)
+
+		if self.config.isRtl():
+			Utilities.drawTextsOnRightX(self.screen, self.explanationTexts, (1692, 442), 29)
+		else:
+			Utilities.drawTextsOnLeftX(self.screen, self.explanationTexts, (1349, 442), 29)		
 
 	def onMouseDown(self, pos):
 		super().onMouseDown(pos)

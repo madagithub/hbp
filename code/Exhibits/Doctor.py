@@ -17,6 +17,7 @@ from doctor.LearnMoreScene import LearnMoreScene
 class Doctor(Exhibit):
 	def __init__(self):
 		super().__init__()
+		self.isHealthy = True
 
 	def start(self):
 		super().start()
@@ -25,13 +26,13 @@ class Doctor(Exhibit):
 			self.sendToSerialPort(command)
 			time.sleep(1)
 
-		self.chooseTestScene = ChooseTestScene(self)
-		
+		self.chooseTestScene = ChooseTestScene(self, self.isHealthy)
 		self.scene = OpeningScene(self)
 
 		self.loop()
 
 	def gotoHome(self):
+		self.chooseTestScene = ChooseTestScene(self, self.isHealthy)
 		self.scene = OpeningScene(self)
 
 	def getChooseTestScene(self):
@@ -53,7 +54,8 @@ class Doctor(Exhibit):
 		elif transitionId == 'LEARN_MORE':
 			self.scene = LearnMoreScene(self, data)
 		elif transitionId == 'RESET':
-			self.chooseTestScene = ChooseTestScene(self)
+			self.isHealthy = not self.isHealthy
+			self.chooseTestScene = ChooseTestScene(self, self.isHealthy)
 			self.scene = OpeningScene(self)
 
 if __name__ == '__main__':

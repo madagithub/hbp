@@ -29,12 +29,12 @@ TEST_DATA = [{'normal': 'cognitive-test.png', 'selected': 'cognitive-test-select
 
 #TODO: Unite with choose neuron scene
 class ChooseTestScene(Scene):
-	def __init__(self, game):
+	def __init__(self, game, isHealthy):
 		super().__init__(game)
 
-		self.diagnoseQuestionOn = False
+		self.isHealthy = isHealthy
 
-		self.generateTestResults()
+		self.diagnoseQuestionOn = False
 
 		self.neuronNames = []
 		self.neuronDescs = []
@@ -91,9 +91,6 @@ class ChooseTestScene(Scene):
 
 		self.createTexts()
 
-	def generateTestResults(self):
-		self.isHealthy = True if random.random() > 0.5 else False
-
 	def onLanguageChanged(self):
 		super().onLanguageChanged()
 		self.createTexts()
@@ -140,7 +137,7 @@ class ChooseTestScene(Scene):
 		imageButton.image = pygame.image.load('assets/images/doctor/' + TEST_DATA[testIndex][conditionKey])
 		imageButton.tappedImage = pygame.image.load('assets/images/doctor/' + TEST_DATA[testIndex][conditionKey])
 
-		self.diagnoseButton.visible = True
+		self.diagnoseButton.visible = not self.diagnoseQuestionOn
 
 	def onDiagnose(self):
 		self.diagnoseQuestionOn = True
@@ -150,6 +147,7 @@ class ChooseTestScene(Scene):
 
 		for button in self.selectButtons:
 			button.rect.y -= 121
+			button.updateTapRect()
 
 	def onDiagnoseResult(self, isHealthy):
 		self.game.transition('EVALUATE', {'condition': self.isHealthy, 'diagnosys': isHealthy})

@@ -17,8 +17,12 @@ class Button:
 
 		self.onClickCallback = onClickCallback
 		self.isMouseDownOnButton = False
+		self.sensitivityFactor = sensitivityFactor
 
-		self.tapRect = Rect(self.rect.center[0] - self.rect.width * sensitivityFactor // 2, self.rect.center[1] - self.rect.height * sensitivityFactor // 2, self.rect.width * sensitivityFactor, self.rect.height * sensitivityFactor)
+		self.updateTapRect()
+
+	def updateTapRect(self):
+		self.tapRect = Rect(self.rect.center[0] - self.rect.width * self.sensitivityFactor // 2, self.rect.center[1] - self.rect.height * self.sensitivityFactor // 2, self.rect.width * self.sensitivityFactor, self.rect.height * self.sensitivityFactor)
 
 	def createText(self, text, font):
 		if text is not None:

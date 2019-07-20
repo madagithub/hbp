@@ -1,0 +1,1473 @@
+Key,en,ar,he
+RN_OPENING_SCREEN_HEADER,Neuron Under Construction,خلايا عصبية قيد الإنشاء,כאן בונים נוירון
+RN_OPENING_SCREEN_SUB_HEADER,You are invited to reconstruct your own neuron,أنتم مدعوون لبناء الخلية العصبية الخاصة بكم,אתם מוזמנים לבנות נוירון משלכם
+RN_OPENING_SCREEN_BUTTON_TEXT,Start,ابدأوا,התחילו
+RN_CHOOSE_NEURON_INSTRUCTION,Select a neuron and reconstruct it as an active 3D model,اختاروا الخلية العصبية وقوموا ببنائها كنموذج ثلاثي الأبعاد فعّال,בחרו נוירון ובנו אותו כמודל תלת ממדי פעיל
+RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT,Select,اختاروا,בחרו
+RN_CHOOSE_NEURON_PYRAMIDAL_NAME,Pyramidal Cell,خلية هرمية (Pyramidal Cell),תא פירמידלי (Pyramidal Cell)
+RN_CHOOSE_NEURON_BASKET_NAME,Basket Cell,خلية السلة (Basket Cell),תא סל (Basket Cell)
+RN_CHOOSE_NEURON_MARTINOTTI_NAME,Martinotti Cell,خلية مارتينوتي (Martinotti Cell),תא מארטינוטי (Martinotti Cell)
+RN_CHOOSE_NEURON_PYRAMIDAL_DESC,"Named after the pyramid shape of its body,
+the most common cell type in the cerebral
+cortex. The cell increases the activity of the
+cells it communicates with (Excitatory cell).","الخلية، الّتي جسمها يشبه الهرم،
+هي الأكثر شيوعًا في قشرة الدماغ،
+وتزيد من نشاط الخلايا الّتي تتواصل
+معها (خلية مُحفزة)","התא, שגופו בצורת פירמידה, הוא הנפוץ
+ביותר בקליפת המוח, ומגביר את
+פעילותם של התאים איתם הוא
+מתקשר (תא מעורר)."
+RN_CHOOSE_NEURON_BASKET_DESC,"Surrounds like a basket the body of the cells it
+communicates with and decreases their activity.
+(Inhibitory cell).","الخلية تحيط على شكل سلة أجسام
+الخلايا الّتي تتواصل معها وتُقّلل من
+نشاطها (خلية مثبطة). ","התא מקיף בצורת סל את גופי
+התאים איתם הוא מתקשר ומקטין את
+פעילותם (תא מעכב)."
+RN_CHOOSE_NEURON_MARTINOTTI_DESC,"A small cell with short branches. Named
+after the scientist who discovered it. The
+cell decreases the activity of the cells it
+communicates with (Inhibitory cell).","خلية صغيرة ذات امتدادات قصيرة
+تحمل اسم العالم الذي اكتشفها، وتُقلل
+من نشاط الخلايا الّتي تتواصل
+معها (خلية مثبطة).","תא קטן בעל שלוחות קצרות הקרוי
+על שם המדען שגילה אותו,
+ומקטין את פעילותם של התאים איתם
+הוא מתקשר (תא מעכב)."
+RN_DRAWING_SCREEN_NEURON_INSTRUCTION,Follow the dotted line with your finger to reconstruct the neuron,قوموا بالتأشير بالإصبع على الخط المتقطع لبناء الخلية العصبية,סמנו עם האצבע את הקו המקווקו כדי לבנות את הנוירון
+RN_DRAWING_SCREEN_LIGHTNING_INSTRUCTION,"Great, you reconstructed a 3D model of the cell structure.
+Press on the lightning and activate the cell","رائع، لقد قمتم بإنشاء نموذج ثلاثي الأبعاد للخلية..
+اضغطوا على البرق وشغّلوا الخلايا العصبية","נהדר, יצרתם מודל תלת ממדי של התא.
+לחצו על הברק והפעילו את הנוירון"
+RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION,"Reconstructing the cell structure:
+In this stage you marked a real
+neuron in a biological brain slice.
+Based on your marking, the
+computer created a digital
+structure of the neuron.","مرحلة إعادة بناء الخلية:
+في هذه المرحلة قمتم بالإشارة الى خلية
+حقيقية في أنسجة الدماغ البيولوجية.
+استنادًا إلى إشارتكم، أنشأ الحاسوب
+بنية رقمية لخلية عصبية..","שחזור מבנה התא:
+בשלב זה סימנתם תא אמיתי
+ברקמת מוח ביולוגית.
+על בסיס הסימון שלכם, המחשב יצר
+מבנה דיגיטלי של תא עצב."
+RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION,"Activating the cell:
+In this stage you added electricity
+to the structure of the digital cell
+and activated it.","تنشيط الخلية:
+في هذه المرحلة، أدخلتم الكهرباء
+الى مبنى الخلية، مما يجعل النموذج
+الرقمي فعالًا.","הפעלת התא:
+בשלב זה הכנסתם חשמל אל מבנה
+התא ובכך הפכתם את המודל
+הדיגיטלי לפעיל."
+RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT,Next,التالي,הבא
+RN_SUMMARY_SCREEN_HEADER,Congratulations!,كل الاحترام!,כל הכבוד!
+RN_SUMMARY_SCREEN_SUB_HEADER,You have reconstructed an active 3D model of a nerve cell,لقد بنيتم نموذجًا ثلاثي الأبعاد فعّال لخلية عصبية، عصبون!,"בניתם מודל תלת ממדי פעיל של תא עצב, נוירון"
+RN_SUMMARY_SCREEN_SUMMARY_HEADER,Why do we need to model a cell?,لماذا نحتاج الى نمذجة الخلية؟,בשביל מה יש לבנות מודל של תא?
+RN_SUMMARY_SCREEN_SUMMARY_TEXT,"The brain is composed by cells. After modeling many cells, we can create a whole digital brain, and perform experiments
+on it that cannot be done on humans. For instance, we can cause the digital brain to have the Alzheimer's disease, and
+then we can discover what the brain activity is during the disease. Hopefully, a digital model of the brain will provide the
+breakthrough to develop medication that will change the lives of many patients.","يتكون الدماغ من الخلايا. بعد بناء النماذج لأنواع مختلفة من الخلايا، يمكن إنشاء نموذج محوسب
+للدماغ بأكمله. على هذا الدماغ، يمكن إجراء تجارب لا يمكن إجراؤها على أناس حقيقيين. على سبيل المثال، يمكننا أن نتسبب في
+إصابة الدماغ الرقمي بمرض الزهايمر، ومن ثم يمكننا اكتشاف نشاط الدماغ أثناء المرض. قد يوفر
+نموذج رقمي للدماغ إبتكار لتطوير الأدوية الّتي من شأنها أن تغير حياة الكثير من المرضى...:","המוח מורכב מתאים. לאחר שבונים מודלים של תאים רבים, אנו יכולים ליצור מוח דיגיטלי
+שלם ועליו ניתן לעשות ניסויים שאי אפשר לעשות על בני אדם. למשל, אפשר לגרום למוח הדיגיטלי 'לחלות' במחלת אלצהיימר,
+ולבדוק מה מתרחש בתוך המוח תוך כדי המחלה. יתכן שמודל דיגיטלי של המוח יספק
+פריצת דרך לפיתוח תרופות שישנו את חייהם של חולים רבים.."
+RN_SUMMARY_SCREEN_DRAWING_TEXT,Brain cell tissue,الخلية في أنسجة الدماغ,התא ברקמת המוח
+RN_SUMMARY_SCREEN_MODELING_TEXT,Reconstructing the cell structure,مرحلة إعادة بناء الخلية,שחזור מבנה התא
+RN_SUMMARY_SCREEN_ELECTRIFY_TEXT,Activating the cell,تنشيط الخلية,הפעלת התא
+RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT,Reconstruct another cell,أبنوا خلية أخرى,בנו תא נוסף
+DFAM_OPENING_SCREEN_HEADER,Doctor for a moment,طبيب للحظة,דוקטור לרגע
+DFAM_OPENING_SCREEN_SUB_HEADER,"You have an opportunity to be a doctor
+Tap the button and meet your new patient","لديكم الفرصة لأن تصبحوا أطباء
+اضغطوا على الزّر وتعرفوا على مريضكم الجديد","יש לכם הזדמנות להיות רופאים
+לחצו על הכפתור, והכירו את המטופל החדש שלכם"
+DFAM_OPENING_SCREEN_BUTTON_TEXT,Start,إبدأوا,התחילו
+DFAM_EXP_SCREEN_BUTTON_TEXT,Continue,إستمروا,המשיכו
+DFAM_EXP_SCREEN_HEADER_TEXT,"Your new patient describes a state of confusion and
+forgetfulness. Does she have Alzheimer’s disease?","يصف المريض حالة من الارتباك والنسيان.
+هل لديه مرض الزهايمر؟","המטופל שלכם מתאר מצב של בלבול ושכחה.
+האם יש לו אלצהיימר?"
+DFAM_EXP_SCREEN_INFO_TEXT,"To diagnose him, you need to carry out a number of tests.
+In Alzheimer’s the neurons in the brain die gradually, causing damage to
+cognitive abilities such as memory, orientation, and more.","يجب عليكم إجراء العديد من الاختبارات لتشخيص حالته.
+في مرض الزهايمر، تموت الخلايا العصبية في الدماغ تدريجيًا، وتُسّبب الضرر في
+القدرات الإدراكية مثل الذاكرة والتوجه المكاني وعمليات التفكير وما إلى ذلك.","עליכם לבצע מספר בדיקות על מנת לאבחן את מצבו.
+במחלת אלצהיימר תאי עצב במוח מתים בהדרגה,
+וגורמים לפגיעה ביכולות קוגניטיביות כמו זיכרון,
+התמצאות במרחב ועוד."
+DFAM_CHOOSE_TEST_INSTRUCTION,Select the test you wish to conduct on the patiant,حددوا الاختبار الذي تريدون القيام به للمريض,בחרו את הבדיקה שברצונכם לבצע במטופל
+DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT,Run test,قوموا باجراء تجربة,בצעו בדיקה
+DFAM_COGNITIVE_TEST_NAME,Cognitive tests,الاختبار المعرفي,בדיקה קוגניטיבית
+DFAM_COGNITIVE_TEST_DESC,"Cognitive tests are a list of tasks testing the
+performance of various brain functions","الاختبارات المعرفية هي سلسلة من المهام الّتي
+تأتي للتحقق من صحة قدرات الدماغ المختلفة.","בדיקות קוגניטיביות הן שורה של משימות הבאות לבדוק
+את תקינות יכולות המוח השונות."
+DFAM_PET_TEST_NAME,PET test,اختبار ال PET,בדיקת PET
+DFAM_PET_TEST_DESC,"A PET (Positron Emission Tomography) test is a
+scan of the brain measuring the concentration of
+particular substances. For instance, a PET scan can
+search for beta-amyloid plaques, which are
+common only among Alzheimer’s patients.","اختبار PET (Positron Emission Tomography)
+التصوير المقطعي بالإصدار البوزيتروني- هو مسح للدماغ
+والبحث عن مادة معينة بداخله. على سبيل المثال، يمكن
+البحث في مسح PET على مجموعات بيتا
+أميلويد، الشائعة جدًا فقط عند مرضى الزهايمر.","בדיקת PET (Positron Emission Tomography)
+היא סריקה של המוח המאתרת חומר מסוים,
+כדוגמת בטא עמילואיד הנפוץ אצל
+חולי אלצהיימר."
+DFAM_MRI_TEST_NAME,MRI test,اختبار ال MRI,בדיקת MRI
+DFAM_MRI_TEST_DESC,"An MRI (Magnetic Resonance Imaging) test is
+a scan of the brain using radio waves and a
+strong magnetic field. The scan creates an
+image of the brain and the state it is in.","اختبار التصوير بالرنين المغناطيسي
+(MRI) (Magnetic Resonance Imaging) هو مسح للدماغ
+باستخدام الإشعاع اللاسلكي ومجال
+مغناطيسي قوي. ينتج المسح صورة توضح
+كيف يبدو الدماغ وما يحدث فيه.","בבדיקת MRI (Magnetic Resonance Imaging)
+סורקים את המוח בעזרת קרינת רדיו
+ושדה מגנטי חזק ומייצרים הדמיה
+של מבנה המוח."
+DFAM_TEST_IN_PROGRESS_HEADER_MRI,An MRI scan is taking place,يتم إجراء اختبار ال MRI (التصوير بالرنين المغناطيسي),מתבצעת בדיקת MRI
+DFAM_TEST_IN_PROGRESS_HEADER_PET,A PET scan is taking place,يتم إجراء اختبار PET,מתבצעת בדיקת PET
+DFAM_TEST_IN_PROGRESS_HEADER_COGNITIVE,A cognitive test is taking place,يتم إجراء الاختبار المعرفي,מתבצעת בדיקה קוגניטיבית
+DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI,Follow the process on the patient model,اتبعوا عملية الاختبار على نموذج المريض,עקבו בדגם אחר התנהלות הבדיקה
+DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET,Follow the process on the patient model,اتبعوا عملية الاختبار على نموذج المريض,עקבו בדגם אחר התנהלות הבדיקה
+DFAM_TEST_RESULTS_HEADER_COGNITIVE,Cognitive test results,نتيجة الاختبار المعرفي,תוצאת הבדיקה הקוגניטיבית
+DFAM_TEST_RESULTS_HEADER_PET,PET test results,نتيجة اختبار PET,תוצאת בדיקת PET
+DFAM_TEST_RESULTS_HEADER_MRI,MRI test results,نتيجة فحص التصوير بالرنين المغناطيسي (MRI),תוצאת בדיקת MRI
+DFAM_TEST_RESULTS_DESC_COGNITIVE,"Drawing a clock requires mental abilities that are damaged by Alzheimer’s, such as
+management, understanding numbers, knowledge retrieval and more.","يتطلب رسم ساعة قدرات دماغية الّتي تتضرر في مرض الزهايمر
+مثل الإدارة والفهم العددي واسترجاع المعرفة والمزيد.","ציור שעון מצריך יכולות מוחיות שנפגעות באלצהיימר
+כמו ניהול, הבנה מספרית, שליפת ידע ועוד."
+DFAM_TEST_RESULTS_DESC_PET,"Brains of Alzheimer’s patients show many plaques of beta-amyloid protein that are not found
+in the brains of healthy people. If we mark these plaques with radioactive materials and
+conduct a PET scan, we would expect to see many areas with high concentration (in red and yellow).","في أدمغة مرضى الزهايمر، هناك العديد من مجموعات بروتين بيتا
+اميلويد، والّتي لا توجد في أدمغة الأشخاص الأصحاء. إذا وضعنا
+علامة على هذه المجموعات باستخدام المواد المشّعة وأجرينا مسح PET،
+فسنرى العديد من المناطق الّتي تكون فيها تركيزات هذه المجموعات عالية (باللون الأحمر).","במוחם של חולי אלצהיימר מופיעים הרבה מאוד צברים
+של החלבון בטא עמילואיד, אשר לא נמצאים במוחם של אנשים בריאים.
+אם נסמן את הצברים האלה בעזרת חומר רדיואקטיבי ונבצע סריקת PET,
+נצפה לראות הרבה אזורים שבהם ריכוז הצברים גבוה (בצהוב ואדום)."
+DFAM_TEST_RESULTS_DESC_MRI,"In Alzheimer disease, cells die throughout the brain and the
+brain tissue becomes ‘thin’, containing less and less cells (and
+more and more ‘black’ fissures in the brain).","في خلايا مرض الزهايمر تموت خلايا الدماغ في
+جميع أنحاءه، لذلك تصبح أنسجة الدماغ أرق وأرق مع خلايا
+أقّل وأقّل (وأكثر فتحات ""سوداء"" في الدماغ).","במחלת אלצהיימר תאים בכל רחבי המוח מתים,
+ולכן רקמת המוח הופכת לדלילה ו""רזה"" עם פחות
+ופחות תאים (ויותר חריצים ""שחורים"" בתוך המוח)."
+DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT,Run more tests,قوموا باجراء تجربة أخرى,בצעו בדיקות נוספות
+DFAM_TEST_RESULTS_HEALTHY_HEADER,Healthy patient,مُعالج سليم,מטופל בריא
+DFAM_TEST_RESULTS_RESULTS_HEADER,Test result,نتيجة الاختبار,תוצאת הבדיקה
+DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT,See results,انظروا النتيجة,צפו בתוצאות
+DFAM_DIAGNOSE_BUTTON_TEXT,Diagnose,أعطوا تشخيصًا,תנו אבחנה
+DFAM_DIAGNOSE_YES_BUTTON_TEXT,Yes,نعم,כן
+DFAM_DIAGNOSE_NO_BUTTON_TEXT,No,لا,לא
+DFAM_DIAGNOSE_QUESTION_TEXT,Does the patient have Alzheimer’s?,هل يعاني المريض من مرض الزهايمر؟,האם המטופל סובל מאלצהיימר?
+DFAM_EVALUATION_SCREEN_CORRECT_HEADER,The diagnosis is correct,التشخيص صحيح,האבחנה נכונה
+DFAM_EVALUATION_SCREEN_INCORRECT_HEADER,"The diagnosis is incorrect, please try again",التشخيص غير صحيح، حاولوا مرة أخرى,"האבחנה אינה נכונה, נסו שוב"
+DFAM_EVALUATION_SCREEN_HEALTHY_HEADER,The patient does not have Alzheimer’s,لا يعاني المريض من مرض الزهايمر,למטופל אין אלצהיימר
+DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER,The patient has Alzheimer’s,المريض لديه مرض الزهايمر,למטופל יש אלצהיימר
+DFAM_EVALUATION_ANOTHER_PATIENT_TEXT,Accept the next patient,أدخلوا المريض التالي,קבלו את המטופל הבא
+DFAM_EVALUATION_LEARN_MORE_TEXT,Learn more,لمزيد من المعلومات,מידע נוסף
+DFAM_LEARN_MORE_BACK_BUTTON_TEXT,Back,عودة,אחורה
+DFAM_LEARN_MORE_HEALTHY_DESC_TEXT,"The tests do not seem to indicate the patient
+has Alzheimer’s.
+The MRI scan shows a normal brain. In Alzheimer’s,
+cells die throughout the brain so that the brain tissue
+becomes thin, unlike the case of our patient.
+
+Many abilities related to drawing a clock, such as
+knowledge retrieval and management, are impaired in
+Alzheimer’s patients. However, our patient was able
+to draw a clock properly.
+
+The PET scan indicating beta-amyloid plaques very
+common among Alzheimer’s patients (but not in healthy
+brains) showed no red concentrations at all.
+Meaning, there are no beta-amyloid plaques in our
+patient’s brain, as opposed to what we would expect
+to find in an Alzheimer’s patient.","وفقًا للاختبارات، لا يبدو أن المريض مصاب بمرض الزهايمر.
+
+في اختبار التصوير بالرنين المغناطيسي(MRI)، يبدو دماغه طبيعياً.
+في الزهايمر خلايا في جميع أنحاء الدماغ تموت،
+وبالتالي فإن أنسجة الدماغ قليلة للغاية، على عكس المريض.
+
+هناك العديد من القدرات المرتبطة برسم الساعة،
+مثل استرجاع المعرفة والمهارات الإدارية ، تتضرر عند مرضى
+الزهايمر، لكن مع ذلك، نجح المريض في رسم الساعة بشكل جميل.
+
+لم يُظهر مسح PET الذي وضع علامة على مجموعات بيتا أميلويد 
+الشائعة جدًا في أدمغة مرضى الزهايمر (ولكن ليس في أدمغة الأصحاء)
+أيّ مناطق حمراء على الإطلاق، مما يعني أن دماغ المريض لا يحتوي على
+تركيزات عالية من بيتا أميلويد، على عكس ما لوحظ في مرضى الزهايمر.","לפי הבדיקות לא נראה שלחולה יש אלצהיימר.
+
+בבדיקת ה-MRI המוח נראה תקין. באלצהיימר תאים בכל רחבי המוח מתים,
+ולכן רקמת המוח מאוד דלילה, שלא כמו אצל החולה.
+
+יכולות רבות שקשורות בציור שעון, כמו שליפת ידע ויכולות ניהול,
+נפגעות אצל חולי אלצהיימר,
+אך עם זאת החולה הצליח לצייר שעון תקין.
+
+סריקת ה-PET שסימנה את צברי הבטא עמילואיד הנפוצים מאוד
+במוחם של חולי אלצהיימר (אך לא במוחם של בריאים),
+לא הראתה אזורים אדומים כלל, כלומר במוחו של החולה אין
+ריכוזים גבוהים של בטא עמילואיד, בניגוד למה שנצפה מחולה אלצהיימר."
+DFAM_LEARN_MORE_NOT_HEALTHY_DESC_TEXT,"Our patient does have Alzheimer’s.
+The MRI scan showed that the brain tissue is very thin
+because of the extensive death of neuron cells that
+takes place in Alzheimer’s disease.
+
+The death of the cells damages various brain abilities
+such as management and knowledge retrieval. 
+For this reason the patient was unable to draw
+a clock properly.
+
+The PET scan marked plaques of beta-amyloid that
+are very common in Alzheimer’s patients (but not in
+healthy brains), showing many red and yellow concentrations.
+These areas show a high concentration of
+beta-amyloid.","مريضنا لديه بالفعل مرض الزهايمر.
+
+أظهر التصوير بالرنين المغناطيسي (MRI) أن أنسجة الدماغ
+رقيقة للغاية، والسبب في ذلك هو موت الخلايا العصبية
+على نطاق واسع الذي يحدث في مرض الزهايمر.
+
+`لأن الخلايا تموت، فإن قدرات الدماغ المختلفة تتضرر،
+مثل قدرات الإدارة واسترجاع المعرفة. لهذا السبب
+لم ينجح المريض في رسم ساعة بشكل صحيح.
+
+مسح ال- PET الذي وضع علامة على مجموعات بيتا اميلويد
+الّتي هي شائعة جدًا في أدمغة مرضى الزهايمر (ولكن ليس في الأصحاء)،
+أظهر العديد من المناطق الحمراء. تحتوي هذه المناطق على نسبة عالية
+من الأميلويد بيتا، كما هو معتاد بالنسبة لمرضى الزهايمر.","לחולה שלנו אכן יש אלצהיימר.
+בבדיקת ה-MRI היה אפשר לראות כי רקמת המוח מאוד דלילה,
+הסיבה לכך היא מוות בהיקף נרחב של תאי העצב המתרחש במחלת אלצהיימר.
+
+בגלל מוות התאים, יכולות שונות של המוח נפגעות,
+כמו יכולות ניהול ושליפת ידע.
+מסיבה זו החולה לא הצליח לצייר שעון תקין.
+
+סריקת ה-PET שסימנה את צברי הבטא עמילואיד הנפוצים מאוד
+במוחם של חולי אלצהיימר (אך לא במוחם של בריאים),
+הראתה אזורים אדומים וצהובים רבים.
+באזורים אלו יש ריכוז גבוה של בטא עמילואיד."
+OS_HBP_TEXT,"About the
+Human Brain Project","حول مشروع
+الدماغ البشري","אודות פרויקט
+המוח האנושי"
+OS_WHAT_IS_THE_QUESTION_TEXT,"What's the question?!
+Conversations of young
+researchers","ما هو السؤال؟
+الباحثون الشباب
+يتحدثون","מה השאלה?
+חוקרים צעירים
+משוחחים"
+OS_CAJAL_TEXT,Santiago Ramón y Cajal,"سانتياغو رامون
+أي كاجال",סנטיאגו רמון אי קחאל
+OS_MAP_TEXT,"The Human Brain Project
+in Europe"," مشروع الدماغ البشري
+في أوروبا","פרויקט המוח האנושי
+באירופה"
+OS_BRAIN_STRUCTURES_MAP_TEXT,"Brain structures
+Laboratory findings","مباني في الدماغ
+نتائج من المختبر","מבנים במוח
+ממצאים מהמעבדה"
+OS_10_QUESTIONS_TEXT,"10 unanswered questions
+about the human brain","10 أسئلة لم تحل
+حول الدماغ البشري","10 שאלות לא פתורות
+על המוח האנושי"
+OS_DANCING_NEURON_TEXT,"The Electrically
+Dancing Neuron","العصبون الكهربائي
+الراقص","הנוירון החשמלי
+המרקד"
+OS_MTB_TEXT,Credits,ائتمانات,קרדיטים
+OS_MAP_SELECT_DOT_INSTRUCTIONS,Select any dot on the map to learn more,حددوا نقطة على الخريطة لمزيد من المعلومات,בחרו נקודה על המפה למידע נוסף
+OS_MAP_PLAY_VIDEO_BUTTON_TEXT,Play video,شغلوا الفلم,נגנו סרט
+OS_MAP_P1_NAME,"The Federal Institute of Technology
+in Lausanne","المعهد الفيدرالي السويسري
+للتكنولوجيا لوزان","המכון הפדרלי השוויצרי
+לטכנולוגיה לוזאן"
+OS_MAP_P1_CITY,"Lausanne, Switzerland",لوزان، سويسرا,"לוזאן, שוויץ"
+OS_MAP_P2_NAME,Aalto University Foundation,مؤسسة جامعة ألتو,קרן אוניברסיטת אלטו
+OS_MAP_P2_CITY,"Espoo, Finland",إسبو، فنلندا,"אספו, פינלנד"
+OS_MAP_P3_NAME,"University Hospital Leiden -
+Leiden University Medical Center","مستشفى ليدن
+الجامعي","בית החולים האוניברסיטאי
+ליידן"
+OS_MAP_P3_CITY,"Leiden, The Netherlands",لايدن، هولندا,"ליידן, הולנד"
+OS_MAP_P4_NAME,Athens University of Economics and Business,جامعة أثينا للاقتصاد والأعمال,אוניברסיטת אתונה לכלכלה ועסקים
+OS_MAP_P4_CITY,"Athens, Greece",أثينا، يونان,"אתונה, יוון"
+OS_MAP_P4_DESC,"The Data Science group at the AUEB conducts
+research on and builds services for aligning,
+cleaning, integrating, and enriching clinical
+data from participating hospitals so as to be
+imported to the Medical Informatics Platform
+of the HBP. The group also works on Big Data
+processing and Data Management for Machine
+Learning.","تعمل مجموعة علوم البيانات بجامعة أثينا
+للاقتصاد والأعمال في بحث وتطوير خدمات
+لملائمة، تحسين ودمج وإثراء البيانات
+الطبية في المستشفيات المشاركة لكي يكون بالإمكان
+استيراد هذه البيانات إلى منصة المعلومات
+الطبية للمشروع. بالإضافة إلى ذلك، تتعامل
+المجموعة مع معالجة البيانات الضخمة (Big Data)
+وإدارة البيانات لاستخدامها في التعلم الآلي.","קבוצת מדעי הנתונים באוניברסיטת אתונה
+לכלכלה ועסקים עוסקת במחקר ובפיתוח שירותים
+להתאמה, טִיּוּב, הטמעה והעשׁרה של נתונים
+רפואיים מבתי החולים המשתתפים כדי שאפשר יהיה
+לייבא נתונים אלה אל פלטפורמת האינפוֹרמטיקה
+הרפואית של הפרויקט. כמו כן הקבוצה עוסקת
+בעיבוד נתוני עָתֵק (Big Data)
+ובניהול מידע לשימוש בלמידת מכוֹנה."
+OS_MAP_P5_NAME,National Supercomputing Center,المركز الوطني للحوسبة الفائقة,המרכז הלאומי למחשבי-על
+OS_MAP_P5_CITY,"Barcelona, Spain",برشلونة، اسبانيا,"ברצלונה, ספרד"
+OS_MAP_P5_DESC,"BSC is the Spanish National facility for
+supercomputing, specializes in High Performance
+Computing and hosts MareNostrum, one of the most
+powerful supercomputers in Europe. BSC contributes
+towards the creation of the HPAC Platform,
+providing supercomputing capacities for the
+Neuroscience Community and developing the FENIX
+infrastructure for the benefit of HBP users.","يُعد المركز بمثابة السلطة الوطنية الإسبانية
+لأجهزة الكمبيوتر العملاقة. إنه متخصص في
+أجهزة الكمبيوتر الّتي تتمتع بقدرات أداء
+عالية جدًا ويتم فيه تطوير ""مارينوستروم- MareNostrum""،
+أحد أقوى أجهزة الكمبيوتر العملاقة في أوروبا.
+يساهم المركز بشكل كبير في ""مشروع الدماغ البشري""
+من خلال إنشاء وتطوير بنية تحتية فائقة
+الحوسبة لمجتمع باحثي الدماغ.","המרכז משמש כרשות הלאומית הספרדית למחשבי-על.
+הוא מתמחה במחשבים עם יכולות ביצוע
+גבוהות מאוד ובו מפותח ""מיירנוסטרום"",
+אחד ממחשבי העל העוצמתיים ביותר באירופה.
+המרכז תורם רבות ל'פרויקט המוח האנושי' באמצעות
+יצירה ופיתוח של תשתיות מחשבי העל
+עבור קהילת חוקרי המוח."
+OS_MAP_P6_NAME,"Bauhaus University, Weimar",جامعة باوهاوس، فايمار,"אוניברסיטת באוהאוס, ויימר"
+OS_MAP_P6_CITY,"Weimar, Germany",فايمار، ألمانيا,"ויימר, גרמניה"
+OS_MAP_P7_NAME,The University of Wuppertal (BUW),جامعة فوبرتال,אוניברסיטת ווּפֶּרטָאל
+OS_MAP_P7_CITY,"Wuppertal, Germany",فوبرتال، ألمانيا,"וופרטאל, גרמניה"
+OS_MAP_P7_DESC,"The High Performance Computing group at the BUW
+works on the development and improvement of
+numerical methods used in the simulation engines
+that are developed in the HBP, such as the spiking
+neural network simulator NEST. Present
+achievements are the inclusion of gap junctions
+and rate models in the NEST simulator.","تقوم مجموعة الحوسبة عالية الأداء في جامعة فوبرتال
+بتطوير وتحسين الطرق العددية في محركات التصوير
+الّتي يتم بنائها ضمن مشروع الدماغ البشري (HBP) مثل NEST-  آلية
+لمحاكاة نبضات الجهاز العصبي. الانجازات الحالية
+هي دمج ما بين الموصل الخلوي والنماذج على
+جهاز المحاكاة NEST.","קבוצת המִחשוב עתיר-הביצועים באוניברסיטת ווּפֶּרטָאל
+עוסקת בפיתוח ושיפור השיטות המספּריות
+במנועי ההדמיה אשר נבנים במסגרת
+פרויקט המוח האנושי (HBP) כגון NEST – מנגנון
+להדמיית פעימוֹת (פּוּלְסִים) ברשת העצבים.
+ההישגים הנוכחיים הם הכללה של צמתים
+בּין-תאיים ומוֹדלים בסימולטור NEST."
+OS_MAP_P8_NAME,The Bloomfield Science Museum Jerusalem (BSMJ),متحف العلوم على اسم بلومفيلد في القدس,"מוזיאון המדע ע""ש בלומפילד ירושלים"
+OS_MAP_P8_CITY,"Jerusalem, Israel",القدس، اسرائيل,"ירושלים, ישראל"
+OS_MAP_P8_DESC,"BSMJ is an informal cultural and educational
+institution, serving all sectors of society. It
+develops and creates interactive exhibitions
+presenting science and technology, and integrates
+them into a range of activities. In HBP, BSMJ
+promotes ways to engage brain research to the
+public such as developing an interactive traveling
+exhibition.","المتحف هو مؤسسة ثقافية وتعليمية غير رسمية تخدم
+جميع الشرائح السكانية. يقوم موظفي المتحف بتطوير
+وإنشاء معارض تفاعلية في مجالات العلوم
+والتكنولوجيا ودمجها في مجموعة واسعة من الأنشطة. كجزء
+من مشروع الدماغ البشري، يطور المتحف طرقًا لتشجيع اهتمام
+الجمهور ومشاركته في مجالات أبحاث الدماغ
+مثل معرض تفاعلي متنقل.","המוזיאון הוא מוסד תרבותי וחינוכי בלתי-פורמלי
+המשׁרת את כל פלחי האוכלוסייה.
+צוות המוזיאון מְפַתֵּחַ ויוצר מיצגים
+אינטראקטיביים בתחומי המדע והטכנולוגיה,
+וּמְשַׁלֵּב אותם בקשת רחבה של פעילויות.
+במסגרת פרויקט המוח האנושי המוזיאון
+מְפתח דרכים לעודד את התעניינות הציבור
+ומעורבותו בתחום חֵקֶר המוח כגון תערוכה
+אינטראקטיבית נודדת."
+OS_MAP_P9_NAME,Cardiff University,جامعة كارديف,אוניברסיטת קרדיף
+OS_MAP_P9_CITY,"Cardiff, United Kingdom",كارديف، المملكة المتحدة,"קרדיף, בריטניה"
+OS_MAP_P10_NAME,The Scientific Research National Center,المركز الوطني للبحث العلمي,המרכז הלאומי למחקר מדעי
+OS_MAP_P10_CITY,"Paris, France",باريس، فرنسا,"פריז, צרפת"
+OS_MAP_P11_NAME,"The Office of Atomic Energy and
+Alternative Energies","وزارة الطاقة الذرية
+والطاقة البديلة","משרד האנרגיה האטומית
+והאנרגיות החלופיות"
+OS_MAP_P11_CITY,"Paris, France",باريس، فرنسا,"פריז, צרפת"
+OS_MAP_P12_NAME,The National Research Council,المجلس الوطني للبحوث,המועצה הלאומית למחקר
+OS_MAP_P12_CITY,"Palermo, Italy", باليرمو، ايطاليا,"פלרמו, איטליה"
+OS_MAP_P12_DESC,"The Institute of Biophysics of the National
+Research Council is located in Palermo (Italy). In
+HBP we are deeply involved in the development of a
+detailed, data-driven, full scale 3D computational
+model of the rodent and human hippocampus, and in
+the implementation and management of the European
+Brain Research Infrastructure.","يقع معهد الفيزياء الحيوية التابع للمجلس الوطني
+للبحوث في مدينة باليرمو، ايطاليا. ضمن مشروع
+الدماغ البشري، نعمل بشكل قوي على تطوير نموذج
+مُحوسب، مُفصل وقائم على البيانات، بحجم طبيعي وثلاثي
+الأبعاد للحصين في الدماغ البشري ودماغ القوارض
+وكذلك في تطبيق وإدارة المبادئ الأوروبية
+لأبحاث الدماغ (EBRA).","המכון לביופיזיקה של המועצה הלאומית
+למחקר באיטליה שוֹכֵן בפאלרמו שבאיטליה.
+במסגרת פרויקט המוח האנושי יש לנו
+מעורבוּת עמוקה בפיתוח מודל ממוחשב, 
+מפורט ומבוסס-נתונים, בגודל טבעי ובתלת-ממד,
+של ההיפוֹקמפוֹס במוח האדם ובמוח מכרסמים,
+וכן ביישׂום התשתית האירופית לחֵקֶר
+המוח (EBRA) וניהולהּ."
+OS_MAP_P13_NAME,The Italian Supercomputing Centre,مركز ايطاليا للحوسبة الفائقة,המרכז למִחְשׁוּב-על
+OS_MAP_P13_CITY,"Bologna, Italy",بولونيا، ايطاليا,"בולוניה, איטליה"
+OS_MAP_P13_DESC,"The Italian supercomputing centre CINECA provides
+high performance computing and data services for
+the Italian and the European research community.
+For the Human Brain Project, it fosters the
+federation of data and scalable compute services
+to address the analytics needs of the neuroscience
+community.","يوفر مركز الحوسبة الفائقة CINECA في إيطاليا
+خدمات بيانات وحوسبة عالية الأداء لمجتمع البحوث
+الإيطالية والأوروبية. كجزء من مشروع الدماغ
+البشري، يعمل على تطوير دمج لخدمات البيانات
+والحوسبة الّتي يمكن تكييفها لتلبية احتياجات
+المحللين في مجتمع علم الأعصاب.","המרכז למִחשוב-על CINECA שבאיטליה מְסַפֵּק שירותי
+נתונים ומחשוב עתירי-ביצועים לקהילת
+המחקר האיטלקית והאירופית. במסגרת פרויקט
+המוח האנושי הוא מְפַתֵּחַ איחוד נתונים
+ושירותי מחשוב הניתנים להתאמה
+כדי לענות על צורכי האנליטיקאים של
+קהילת מדעי המוח."
+OS_MAP_P14_NAME,Technical University of Denmark,الجامعة التقنية في الدنمارك,האוניברסיטה הטכנית של דנמרק
+OS_MAP_P14_CITY,"Kongens Lyngby, Denmark",كونيجس لينغبي، الدنمارك,"קונגס לינגבי, דנמרק"
+OS_MAP_P15_NAME,University of Debrecen,جامعة ديبريسين,אוניברסיטת דברסן
+OS_MAP_P15_CITY,"Debrecen, Hungary",ديبريسين، المجر,"דברסן, הונגריה"
+OS_MAP_P16_NAME,De Montfort University,جامعة دي مونتفورت,אוניברסיטת דה מונטפור
+OS_MAP_P16_CITY,"Leicester, United Kingdom",ليستر، المملكة المتحدة,"לסטר, בריטניה"
+OS_MAP_P17_NAME,École Normale Supérieure,كلية الدراسات المتقدمة,בית הספר ללימודים מתקדמים
+OS_MAP_P17_CITY,"Paris, France",باريس، فرنسا,"פריז, צרפת"
+OS_MAP_P18_NAME,The Swiss Federal Institute of Technology,المعهد الفيدرالي السويسري للتكنولوجيا,המכון השווייצרי הפדרלי לטכנולוגיה
+OS_MAP_P18_CITY,"Zürich, Switzerland",زيورخ، سويسرا,"ציריך, שווייץ"
+OS_MAP_P18_DESC,"CSCS is an autonomous unit of the Swiss Federal
+Institute of Technology in Zurich. CSCS provides
+scientists with the computing infrastructure and
+expertise, from cutting-edge super-computers to a
+full range of services related to HPC. ETHZ is
+co-leading in HBP the High-Performance Analytics
+and Computing Platform and coordinates the
+“Integration and operation” WP.","CSCS هي وحدة مستقلة في المعهد الفيدرالي
+السويسري للتكنولوجيا في زيوريخ. توفر هذه
+الوحدة للعلماء بنية أساسية ومعرفة بالحوسبة - بدءًا
+من أجهزة الكمبيوتر الفائقة الأكثر تقدمًا
+إلى الخدمات من جميع الأنواع المطلوبة للحوسبة
+الفائقة. في مشروع الدماغ البشري، يُعّد المعهد
+أحد رواد منصة الحوسبة والتحليل عالية الأداء.
+كما ينسق وحدة العمل ""الاستيعاب والتشغيل"".","CSCS היא יחידה אוטונומית של המכון השווייצרי
+הפדרלי לטכנולוגיה בציריך. יחידה זו מציעה
+למדענים תשתית ויֶדַע למחשוב – ממחשבי-העל
+המתקדמים ביותר ועד שירותים מכל הסוגים
+הנדרשים למחשוב עתיר-ביצועים. בפרויקט המוח
+האנושי המכון הוא אחד ממובילי הפלטפורמה
+למחשוב ולאנליטיקה עתירי-ביצועים.
+כמו כן הוא מְתָאֵם את יחידת
+העבודה ""הטמעה ותפעול""."
+OS_MAP_P19_NAME,The Danish Board of Technology Foundation,مؤسسة المجلس الدنماركي للتكنولوجيا,קרן מועצת הטכנולוגיה הדֶּנית
+OS_MAP_P19_CITY,"Hvidovre, Denmark",هفيدفري، دنمارك,"הווידורה, דנמרק"
+OS_MAP_P19_DESC,"The Danish Board of Technology Foundation is part
+of HBP’s ’Ethics and Society’ group, facilitating
+dialogue with publics, stakeholders and the HBP on
+social, ethical, legal issues related to HBP
+research. The Foundations’ mission is to ensure
+that society’s development is shaped by informed
+and forward-looking cooperation between citizens,
+experts, stakeholders, and decision-makers.","تنتمي مؤسسة المجلس الدنماركي للتكنولوجيا
+إلى مجموعة ""الأخلاق والمجتمع"" لمشروع الدماغ
+البشري وتشجع الحوار بين الجمهور وأصحاب الشأن
+والشركاء في المشروع حول القضايا الإجتماعية والأخلاقية
+والقانونية المتعلقة بأبحاث المشروع. تسعى المؤسسة
+جاهدة لضمان تطور المجتمع البشري على أساس التعاون
+الذكي، مع رؤية طويلة المدى، بين المواطنين
+والخبراء وأصحاب المصلحة وصناع القرار.","קרן מועצת הטכנולוגיה הדֶּנית משתייכת לקבוצת
+""אֶתִיקָה וחֶבְרָה"" של פרויקט המוח האנושי,
+ומקדמת את השׂיח בקֶרֶב הציבור, בעלי העניין
+והשותפים לפרויקט על סוגיות חברתיוֹת,
+אתיוֹת ומשפטיוֹת הנוגעות למחקרי הפרויקט.
+הקרן שואפת להבטיח שהחברה האנושית תתפתח על
+בסיס שיתוף פעולה מושׂכל, עם ראייה לטווח ארוך,
+בין אזרחים, מומחים, בעלי עניין ומקבלי החלטות."
+OS_MAP_P20_NAME,Forschungszentrum Jülich,مركز الابحاث-يوليش,מרכז המחקר יוּליך
+OS_MAP_P20_CITY,"Jülich, Germany",يوليش، ألمانيا,"יוליך, גרמניה"
+OS_MAP_P20_DESC,"Forschungszentrum Jülich is a multi-disciplinary
+research institution and member of the Helmholtz
+Association. It contributes to the HBP with its
+Institute of Neuroscience and Medicine and the
+Jülich Supercomputing Centre. Neuroscientists and
+technical experts work together to build an
+infrastructure that enables high-resolution brain
+atlases, multi-scale simulation and data analysis
+workflows.","مركز يوليش للأبحاث هو معهد متعدد التخصصات تابع
+لجمعية هيلمهولتز. يساهم المركز في مشروع
+الدماغ البشري من خلال معهد الطب والأعصاب
+ومن خلال مركز يوليش للحوسبة الفائقة. يبني علماء
+الدماغ والخبراء الفنيون بنية أساسية لأطالس الدماغ
+بدقة عالية والتصوير متعدد النطاقات وسير
+العمل في تحليل البيانات.","מרכז המחקר יוּליך הוא מכון רב-תחומי המשתייך
+להתאגדות הֶלמהוֹלץ. המרכז תורם לפרויקט המוח
+האנושי באמצעות המכון שלו לרפואה ומדעי המוח,
+ובאמצעות מרכז יוּליך למחשוּב-על.
+מדעני מוח ומומחים טכניים בונים יחד תשתית
+לאטלסֵי מוח ברזולוציה גבוהה, הדמיה בקני מידה רבִּים
+ותהליך עבודה של ניתוח נתונים."
+OS_MAP_P21_NAME,Fortiss GmbH,فورتيس GmbH,פורטיס GmbH
+OS_MAP_P21_CITY,"Munich, Germany",ميونيخ، ألمانيا,"מינכן, גרמניה"
+OS_MAP_P22_NAME,"Fraunhofer-Gesellschaft for the
+Promotion of Applied Research","فراوهوفر- غشلشافت لتعزيز
+البحوث التطبيقية","פראוהופר-גשלשאפט
+לקידום מחקר יישומי"
+OS_MAP_P22_CITY,"Darmstadt, Germany",دارمشتات، ألمانيا,"דרמשטט, גרמניה"
+OS_MAP_P23_NAME,"Foundation Anna Sommer Champalimaud
+and Dr Carlos Montez Champalimaud","مؤسسة آنا سومر شامبالمود والدكتور
+كارلوس مونتز شامباليمود","קרן אנה סומר צ'מפאלימוד
+וד""ר קרלוס מונטז שמפאלימוס"
+OS_MAP_P23_CITY,"Lisbon, Portugal",لشبونة، البرتغال,"ליסבון, פורטוגל"
+OS_MAP_P24_NAME,"Heinrich-Heine-University, Dusseldorf",جامعة هاينريش هاين ، دوسلدورف,"אוניברסיטת היינריך היינה, דיסילדורף"
+OS_MAP_P24_CITY,"Düsseldorf, Germany",دوسلدورف، ألمانيا,"דיסילדורף, גרמניה"
+OS_MAP_P25_NAME,University of Helsinki,جامعة هلسنكي,אוניברסיטת הלסינקי
+OS_MAP_P25_CITY,"Helsinki, Finland",هلسنكي، فنلندا,"הלסינקי, פינלנד"
+OS_MAP_P26_NAME,Heidelberg Institute for Theoretical Studies (HITS),معهد هايدلبرغ للبحوث النظرية,מכון היידלברג למחקר תיאורטי
+OS_MAP_P26_CITY,"Heidelberg, Germany",هايدلبرغ، ألمانيا,"היידלברג, גרמניה"
+OS_MAP_P26_DESC,"HITS is a private, non-profit research institute
+carrying out basic multidisciplinary computational
+research in fields ranging from molecular biology
+to astrophysics. Rebecca Wade and her research
+group are developing multiscale molecular modeling
+and simulation tools in the HBP Brain Simulation
+Platform, facilitating the design of new medicines
+for brain diseases.","معهد هايدلبرغ للبحوث النظرية هو معهد غير
+ربحي خاص يقوم بإجراء دراسات حسابية أساسية في
+مجموعة واسعة من المجالات، من البيولوجيا الجزيئية
+إلى الفيزياء الفلكية. تقوم ريبيكا وويد وفريقها بتطوير
+أدوات محاكاة والمحاكاة الجزيئية متعددة المقاييس
+ضمن منصة محاكاة الدماغ لمشروع الدماغ البشري
+لتعزيز تطوير عقاقير جديدة لأمراض الدماغ.","מכון היידלברג למחקר תיאורטי הוא מכון פרטי ללא
+מטרת רווח הַמְּבַצֵּעַ מחקרים חישוביים בסיסיים במגוון
+רחב של תחומים, מביולוגיה מולקולרית עד אסטרופיזיקה.
+רבּקה ווייד וצוות המחקר שלה מפתחים כלֵי הדמיה
+ומידוּל מולקולריים בקני מידה רבּים במסגרת פלטפורמת
+ההדמיה המוחית של פרויקט המוח האנושי,
+כדי לקדם פיתוח תרופות חדשות למחלות מוח."
+OS_MAP_P27_NAME,University Hospital Vaudois,مستشفى الجامعة فودوا,בית החולים האוניברסיטאי וודואה
+OS_MAP_P27_CITY,"Lausanne, Switzerland",لوزان، سويسرا,"לוזאן, שוייץ"
+OS_MAP_P28_NAME,"Imperial College of Science, Technology and Medicine",الكلية الامبراطورية للعلوم والتكنولوجيا والطب,"אימפריאל קולג' למדע, טכנולוגיה ורפואה"
+OS_MAP_P28_CITY,"London, United Kingdom",لندن، المملكة المتحدة,"לונדון, בריטניה"
+OS_MAP_P29_NAME,Brain and Spinal Cord Institute,معهد الدماغ والعمود الفقري,המכון למוח ולחוט השידרה
+OS_MAP_P29_CITY,"Paris, France",باريس، فرنسا,"פריז, צרפת"
+OS_MAP_P30_NAME,"Institute of Experimental Medicine,
+Hungarian Academy of Sciences","معهد الطب التجريبي،
+الأكاديمية المجرية للعلوم","המכון לרפואה ניסויית,
+האקדמיה ההונגרית למדעים"
+OS_MAP_P30_CITY,"Budapest, Hungary",بودابست، المجر,"בודפסט, הונגריה"
+OS_MAP_P31_NAME,Institute of Science and Technology Austria (IST),معهد العلوم والتكنولوجيا في النمسا,המכון למדע וטכנולוגיה של אוסטריה
+OS_MAP_P31_CITY,"Klosterneuburg, Austria",كلوسيترنيوبرغ، نمسا,"קלוסטרנויבורג, אוסטריה"
+OS_MAP_P31_DESC,"IST Austria located in Klosterneuburg is a young
+international institute dedicated to basic
+research including neuroscience. Prof. Shigemoto’s
+task in HBP project is to provide quantitative
+data on number and distribution of key ion
+channels and neurotransmitter receptors in
+distinct membrane compartments of major principle
+neurons in the brain.","معهد العلوم والتكنولوجيا في النمسا في كلوسيترنيوبرغ
+هو معهد دولي أنشأ حديثًا ومخصص للبحث الأساسي،
+بما في ذلك علم الدماغ. تتمثل مهمة البروفيسور
+شيجاموتو في مشروع الدماغ البشري في توفير بيانات كمية
+عن عدد وتوزيع القنوات الأيونية الهامة ومستقبلات الناقلات
+العصبية في الخلايا العصبية الرئيسية للدماغ.","המכון למדע וטכנולוגיה של אוסטריה בקלוסטרנויבורג
+הוא מכון בינלאומי שנוסד לאחרונה ומוקדש למחקר
+בסיסי, בין השאר במדעי המוח.
+המשימה של פרופ' שׁיגֶמוֹטוֹ בפרויקט המוח האנושי
+היא לְסַפֵּק נתונים כמותיים על מספרם ופיזורם של תעלות
+יוֹניוֹת חשובות ושל קולטני מוליכים עצביים
+בנוירונים העיקריים במוח."
+OS_MAP_P32_NAME,Jožef Stefan Institute,معهد جوزيف ستيفن,מכון ג'וזף סטפן
+OS_MAP_P32_CITY,"Ljubljana, Slovenia",ليوبليانا، سلوفينيا,"לובליאנה, סלובניה"
+OS_MAP_P33_NAME,"National Institute of Research
+in Computer Science and Automation","المعهد الوطني للبحوث في علوم
+الحاسب الآلي والأتمتة","המכון הלאומי למחקר
+במדעי המחשב ואוטומציה"
+OS_MAP_P33_CITY,"Sophia Antipolis, France",صوفيا انتيبوليس، فرنسا,"סופיה אנטיפוליס, צרפת"
+OS_MAP_P33_DESC,"Inria performs comprehensive analyses of brain
+functional organization based on exhaustive
+analyses of brain imaging dataset. Inria also
+contributes  an openly available brain imaging
+dataset that provides a reference to study the
+functional architecture of the brain, and
+open-source software that make brain data analyses
+easy and reproducible.","تقام في المعهد دراسات يتم فيها تحليل بيانات
+من محاكاة الدماغ لفهم بنية ووظيفة الدماغ.
+يوفر المعهد قواعد بيانات تتضمن بيانات
+من عمليات محاكاة الدماغ المتاحة لكل مجتمع الباحثين،
+وكذلك برنامج مفتوح المصدر الذي يتيح تحليل
+البيانات بسهولة وبراحة.","במכון מתבצעים מחקרים בהם מנתחים מידע
+המגיע מהדמיות מוח כדי להבין את מבנה
+המוח ותפקודו. המכון מספק מאגרי מידע הכוללים
+נתונים מהדמיות מוח הזמינים לכל קהילת החוקרים,
+וכן תוכנה בקוד פתוח המאפשרת לנתח את
+המידע בקלות ובנוחות."
+OS_MAP_P34_NAME,Pasteur Institute,معهد باستور,מכון פסטר
+OS_MAP_P34_CITY,"Paris, France",باريس، فرنسا,"פריז, צרפת"
+OS_MAP_P35_NAME,"Johann Wolfgang Goethe University
+Frankfurt-am-Main","يوهان فولفغانغ غوته
+جامعة فرانكفورت","יוהאן וולפגנג גתה
+אוניברסיטת פרנקפורט"
+OS_MAP_P35_CITY,"Frankfurt-am-Main, Germany",فرانكفورت، ألمانيا,"פרנקפורט, גרמניה"
+OS_MAP_P36_NAME,Karlsruher Institute for Technology,معهد كارلسروه للتكنولوجيا,המכון הטכנולוגי של קרלסרוהה
+OS_MAP_P36_CITY,"Karlsruhe, Germany",كارلسروه، ألمانيا,"קרלסרוהה, גרמניה"
+OS_MAP_P36_DESC,"With 9,000 employees and a budget of 800 million euros,
+the KIT has become one of the world's largest research
+and teaching institutions with the potential to occupy a leading
+position worldwide in selected research areas.
+he KIT's role in the HBP is providing and developing
+the project's computing infrastructure.","أصبح معهد كارلسروه للتكنولوجيا، الذي يضم 9000 موظ
+وميزانية قدرها 800 مليون يورو، واحد من أكبر
+مؤسسات البحث والتدريس في العالم، ومن المقرر
+أن يصبح أحد أكبر معاهد البحوث في العالم. كجزء
+من ""مشروع الدماغ البشري""، يقوم المعهد بتزويد وتطوير
+البنية التحتية الحاسوبية للمشروع.","המכון הטכנולוגי של קרלסרוהה, הכולל 9,000 עובדים ובעל תקציב של
+800 מיליון אירו, הפך לאחד ממוסדות המחקר וההוראה הגדולים בעולם,
+ומתעתד להיות אחד המובילים בעולם במספר תחומי מחקר.
+כחלק מ'פרויקט המוח האנושי', המכון מספק ומפתח את התשתית
+החישובית של הפרויקט."
+OS_MAP_P37_NAME,Karolinska Institutet,معهد كارولينسكا,מכון קרולינסקה
+OS_MAP_P37_CITY,"Stockholm, Sweden",ستوكهولم، السويد,"סטוקהולם, שבדיה"
+OS_MAP_P38_NAME,King's College London,كلية كينغس،  لندن,"קינגס קולג', לונדון"
+OS_MAP_P38_CITY,"London, United Kingdom",لندن، المملكة المتحدة,"לונדון, בריטניה"
+OS_MAP_P39_NAME,The Royal Institute of Technology,المعهد الملكي للتكنولوجيا,המכון המלכותי לטכנולוגיה
+OS_MAP_P39_CITY,"Stockholm, Sweden",ستوكهولم، السويد,"סטוקהולם, שבדיה"
+OS_MAP_P40_NAME,European Non Linear Spectroscopy Laboratory,المختبر الأوروبي للتحليل الطيفي غير الخطي,המעבדה האירופית לספקטרוסקופיה לא לניארית
+OS_MAP_P40_CITY,"Florence, Italy",فلورنسا، ايطاليا,"פירנצה, איטליה"
+OS_MAP_P41_NAME,Linnaeus University,جامعة لينيوس,אוניברסיטת לינאוּס
+OS_MAP_P41_CITY,"Kalmar, Sweden",كلمار، سويد,"קלמאר, שבדיה"
+OS_MAP_P41_DESC,"At Linnaeus University Shamim Patel (ACA)
+(Department of External Relations) and Dr Kim
+Håkansson (Faculty of Health Life Sciences) both
+work on the HBP as part of the Ethics Support
+team. Shamim manages the Ethics Advisory Board and
+Other Ethics Services and Kim is the HBP Animal
+Research Ethics Coordinator.","من بين أعضاء هيئة التدريس في جامعة لينيوس
+تم ضم المحاسبة شاميم فاتيل الى مشروع الدماغ
+البشري (قسم العلاقات الخارجية) والدكتور كيم
+هوكنسون (كلية علوم الحياة والصحة)، كجزء
+من فريق الدعم الأخلاقي. تدير شاميم اللجنة
+الاستشارية للأخلاقيات والخدمات الأخلاقية الأخرى
+في حين يتولى كيم مسؤولية تنسيق مجال أخلاقيات
+التجارب على الحيوانات كجزء من المشروع.","מִבֵּין חברי הסגל של אוניברסיטת לינאוּס צורפו
+לפרויקט המוח האנושי רו""ח שאמים פּאטל (המחלקה לקשרי חוץ)
+וד""ר קים הוקנסון (הפקולטה למדעי החיים ובריאות),
+כחלק מצוות התמיכה האתית.
+שאמים מנהלת את ועדת הייעוץ לענייני אתיקה
+ושירותי אתיקה נוספים, וקים אחראית על תיאום
+תחום האתיקה של הניסויים בבעלי חיים במסגרת הפרויקט."
+OS_MAP_P42_NAME,The Medical University of Innsbruck,جامعة إنسبروك الطبية,האוניברסיטה הרפואית של אינסברוּק
+OS_MAP_P42_CITY,"Innsbruck, Austria",إنسبروك، نمسا,"אינסברוק, אוסטריה"
+OS_MAP_P42_DESC,"The Medical University of Innsbruck was one of the
+first faculties of the University of Innsbruck,
+Austria, and played an important role throughout
+its 340-year history. As an HBP partner, it hosts
+the interdisciplinary HBP Education Programme for
+early-career researchers, supports trainings on
+HBP infrastructure and coordinates HBP outreach
+and engagement activities.","تأسست جامعة إنسبروك الطبية، في النمسا، كواحدة
+من أولى كليات الجامعة وقد لعبت دورًا مهمًا
+منذ تأسيسها قبل 340 عامًا. كشريكة في مشروع الدماغ
+البشري، تستضيف الجامعة برنامج التعليم متعدد التخصصات
+للباحثين الأوائل وتدعم التدريب الذي يتم
+من خلال البنية التحتية للمشروع وتنسق
+الأنشطة المتعلقة بالمشروع لتعزيز مشاركة
+الجمهور واندماجه بالمشروع.","האוניברסיטה הרפואית של אינסברוק שבאוסטריה
+נוסדה כאחת הפקולטות הראשונות של האוניברסיטה,
+וממלאת בה תפקיד חשוב מאז היווסדה לפני 340 שנה.
+כשותפה בפרויקט המוח האנושי האוניברסיטה מארחת את
+תוכנית החינוך הרב-תחומית לחוקרים בראשית דרכם,
+תומכת בהכשרות המתבצעות באמצעות תשתיות
+הפרויקט ומתאמת פעילויות הקשורות בפרויקט לקידום
+השתתפות הציבור ומעורבותו."
+OS_MAP_P43_NAME,National and Kapodistrian University of Athens,جامعة كابوديستريان الوطنية بأثينا,האוניברסיטה הלאומית והקאפודיסטית של אתונה
+OS_MAP_P43_CITY,"Athens, Greece",أثينا، اليونان,"אתונה, יוון"
+OS_MAP_P44_NAME,The Norwegian University of Life Sciences,الجامعة النرويجية لعلوم الحياة,האוניברסיטה הנורבגית למדעי החיים
+OS_MAP_P44_CITY,"Ås, Norway",ويس، نرويج,"ווס, נורבגיה"
+OS_MAP_P44_DESC,"The Computational Neuroscience Group at the
+Norwegian University of Life Sciences (NMBU)
+develops simulation technology for brain-scale
+network simulations on supercomputers as well as
+methods and tools to compute brain signals such as
+EEG and MEG from simulations for direct comparison
+to experiments.","تقوم مجموعة علوم الدماغ المحوسبة في الجامعة
+النرويجية لعلوم الحياة (NMBU) بتطوير تقنيات لمحاكاة
+الشبكات العصبية على نطاق الدماغ باستخدام أجهزة
+الكمبيوتر الفائقة، بالإضافة الى أساليب وأدوات للمعالجة
+المحوسبة لإشارات الدماغ مثل التخطيط الكهربائي للدماغ-EEG
+وتخطيط الدماغ المغناطيسي- MEG، استنادًا إلى المحاكاة،
+للمقارنة المباشرة بين التجارب.","קבוצת מדעי המוח החישוביים באוניברסיטת נורבגיה
+למדעי החיים (NMBU) מפתחת טכנולוגיות להדמיה
+של רשתות עצביות בסדר גודל הקיים במוח באמצעות
+מחשבי-על, וכן שיטות וכלים לעיבוד ממוחשב של
+אותות מוחיים כגון EEG ו-MEG, על בסיס
+הדמיוֹת, לצורך השוואה ישירה לניסויים."
+OS_MAP_P45_NAME,Austrian Research Society for Cybernetics,الجمعية البحثية النمساوية لعلم التحكم الآلي,החברה האוסטרית לחקר הקיברנטיקה
+OS_MAP_P45_CITY,"Vienna, Austria",فيينا، النمسا,"וינה, אוסטריה"
+OS_MAP_P46_NAME,"Rheinisch-Westfälische
+Technical University of Aachen","جامعة آخن راينش
+فيستفالش التقنية","האוניברסיטה הטכנית רייניש-ווסטפאליש
+של אאכן"
+OS_MAP_P46_CITY,"Aachen, Germany",آخن، ألمانيا,"אאכן, גרמניה"
+OS_MAP_P47_NAME,Ruprecht-Karls-University Heidelberg,جامعة روبرت كارل هايدلبرغ,אוניברסיטת רוּפרכט-קרל היידלברג
+OS_MAP_P47_CITY,"Heidelberg, Germany",هايدلبرغ، ألمانيا,"היידלברג, גרמניה"
+OS_MAP_P47_DESC,"The UHEI group explores and implements novel
+concepts for information processing in massively
+parallel, mixed-signal VLSI technologies. The
+group led the EU project BrainScaleS, one of the
+foundations for the HBP and in that context
+pioneered the use of wafer-scale integration for
+physical neuromorphic systems, now continued in
+HBP.","تبحث مجموعة UHEI وتنفذ أفكارًا مبتكرة لمعالجة
+المعلومات باستخدام تقنية الـ VLSI مع حساب موازٍ
+ضخم وإشارة مختلطة. قادت المجموعة مشروع الـ BrainScaleS
+التابع للاتحاد الأوروبي وهو أحد أعمدة مشروع
+الدماغ البشري حيث إستخدمت قمة التكنولوجيا لدمج
+أنظمة عصبية-فيزيائية دقيقة وهي تقنية قيد
+التطوير حاليًا في مشروع الدماغ البشري.","קבוצת UHEI חוקרת ומיישׂמת רעיונות חדשניים לעיבוד
+מידע בטכנולוגיות VLSI עם חישוב מַקְבִּילִי מסיבי וסיגנל מעורב.
+הקבוצה הובילה את פרויקט BrainScaleS של האיחוד האירופי,
+אחד מעמודי התווך של פרויקט המוח האנושי,
+ובמסגרתו עמדה בחוד החנית של הטכנולוגיה לשילוב
+מערכות נוֹירוֹ-מוֹרפיוֹת פיזיקליוֹת זעירות, טכנולוגיה שפיתוחה
+נמשך כעת בפרויקט המוח האנושי."
+OS_MAP_P48_NAME,Sabancı University,جامعة سابانسي,אוניברסיטת סאבאנסי
+OS_MAP_P48_CITY,"Istanbul, Turkey",اسطنبول، تركيا,"איסטנבול, טורקיה"
+OS_MAP_P49_NAME,Sant'Anna School of Advanced Studies,مدرسة سانتا آنا للدراسات المتقدمة,בית הספר סנטה אנה ללימודים מתקדמים
+OS_MAP_P49_CITY,"Pisa, Italy",بيزا، إيطاليا,"פיזה, איטליה"
+OS_MAP_P50_NAME,Center for Mathematics and Computer Science,مركز الرياضيات وعلوم الحاسوب,המרכז למתמטיקה ולמדעי המחשב
+OS_MAP_P50_CITY,"Amsterdam, The Netherlands",أمستردام، هولندا,"אמסטרדם, הולנד"
+OS_MAP_P51_NAME,The Catholic University Foundation,مؤسسة الجامعة الكاثوليكية,הקרן האוניברסיטאית הקתולית
+OS_MAP_P51_CITY,"Nijmegen, The Nethterlands",نيميغن، هوتلاند,"ניימיכן, הוטלנד"
+OS_MAP_P52_NAME,"The FZI Research Center for
+Information Technology in Karlsruhe","مركز FZI لتكنولوجيا المعلومات
+في كارلسروه","מֶרְכָּז המחקר FZI
+לטכנולוגיית מידע בקרלסרוּהֶה"
+OS_MAP_P52_CITY,"Karlsruhe, Germany",كارلسروه، ألمانيا,"קרלסרוּהֶה, גרמניה"
+OS_MAP_P52_DESC,"FZI is a non-profit institution for applied
+research in information technology and technology
+transfer. FZI is researching neuro-robotics and
+closed-loop experiments in the HBP with the goal
+to better understand the highly complex vision and
+motion systems of humans.","مركز بحوث FZI تكنولوجيا المعلومات في كارلسروه،
+ألمانيا، هو منظمة غير ربحية تعمل في مجال البحوث
+التطبيقية في تكنولوجيا المعلومات ونقل التكنولوجيا
+من الأوساط الأكاديمية إلى الصناعة. في إطار مشروع
+الدماغ البشري، يجري المعهد أبحاثًا في مجالات
+الروبوتات العصبية وتجارب الحلقة المغلقة،
+في محاولة لفهم نظام الرؤية والحركة المعقدة
+بشكلٍ أفضل.","מרכז המחקר FZI לטכנולוגיית מידע בקרלסרוּהֶה, גרמניה,
+הוא מוסד ללא מטרת רווח העוסק במחקר יישׂומי
+של טכנולוגיית מידע והעברת טכנולוגיה מהאקדמיה לתעשייה.
+במסגרת פרויקט המוח האנושי נערכים במכון מחקרים
+בתחומי הנוֹירוֹ-רובוטיקה וניסויים בלולאה סגורה,
+בשאיפה להבין טוב יותר את מנגנוני הראייה
+והתנועה המורכבים להפליא של האדם."
+OS_MAP_P53_NAME,Technical University of Crete,جامعة كريت التقنية,האוניברסיטה הטכנית של כרתים
+OS_MAP_P53_CITY,"Crete, Greece",كريت، اليونان,"כרתים, יוון"
+OS_MAP_P54_NAME,The Technical University Dresden,جامعة دريسدن التكنولوجية,האוניברסיטה הטכנית של דרזֶדן
+OS_MAP_P54_CITY,"Dresden, Germany",دريسدن، ألمانيا,"דרזדן, גרמניה"
+OS_MAP_P54_DESC,"The TU Dresden is one of eleven German
+Universities of Excellence. Within the HBP, the
+chair for Highly-Parallel VLSI Systems and
+Neuromorphic Circuits is responsible for the
+design and implementation of the SpiNNaker2
+neuromorphic system, aiming at real-time human
+brain-size spiking neural network simulation on 10
+million ARM processors.","الجامعة التقنية في دريسدن هي واحدة من أفضل 11 جامعة
+في ألمانيا. كجزء من مشروع الدماغ البشري،
+يتولى رئيس فريق أنظمة VLSI المتوازية
+والدوائر المورفولوجية العصبية مسؤولية تصميم
+وتطبيق النظام العصبي الحيوي SpiNNaker 2،
+المصمم لمحاكاة النبضات في شبكة عصب الدماغ
+البشري في وقت واحد ومقاييس تطابق الواقع،
+عن طريق استخدام عشرة ملايين معالجي ARM.","האוניברסיטה הטכנית של דרֶזדן היא אחת מ-11 האוניברסיטאות
+המצטיינות בגרמניה. במסגרת פרויקט המוח האנושי ראש הצוות
+למערכות VLSI מַקְבִּילִיוֹת ומעגלים נוירו-מורפיים
+אחראי על תכנון ויישׂום המערכת הנוירו-מורפית SpiNNaker2,
+שנועדה לְדַמּוֹת דחפים ברשת העצבים במוח האנושי
+בזמן ובקנה מידה נאמנים למציאוּת, תוך
+שימוש בעשׂרה מיליון מעבּדי ARM."
+OS_MAP_P55_NAME,Graz University of Technology,جامعة غراتس للتكنولوجيا,אוניברסיטת גרץ לטכנולוגיה
+OS_MAP_P55_CITY,"Graz, Austria",غراتس، ألمانيا,"גרץ, גרמניה"
+OS_MAP_P56_NAME,The Technical University of Munich,جامعة ميونخ التقنية,האוניברסיטה הטכנית של מינכן
+OS_MAP_P56_CITY,"Munich, Germany",ميونخ، ألمانيا,"מינכן, גרמניה"
+OS_MAP_P56_DESC,"The Technical University of Munich (TUM) is one of
+the highest ranked universities in Europe, and the
+Department of Informatics one of the largest
+computer science departments in Germany, with a
+long tradition of industry collaboration. In HBP,
+TUM leads development of the NeuroRobotics
+Platform, compliant neurorobotics, and behavioral
+architectures.","تم تصنيف جامعة ميونخ التقنية كواحدة من أفضل
+الجامعات في أوروبا. يُعّد قسم المعلوماتية الخاص بها
+أحد أكبر الأقسام من بين أقسام علوم الكمبيوتر في
+ألمانيا ولديها تقاليد عريقة في التعاون مع صناعة الكمبيوتر.
+كجزء من مشروع الدماغ البشري، تقود الجامعة تطوير منصة
+الروبوتات العصبية ومجالات الروبوتات العصبية السلوكية
+والهندسة المعمارية السلوكية.","האוניברסיטה הטכנית של מינכן מדורגת כאחת
+האוניברסיטאות הטובות באירופה. מחלקת האינפורמטיקה
+שלה היא אחת הגדולות בין מחלקות מדעי המחשב בגרמניה,
+ויש לה מסורת ממושכת של שיתופי פעולה עם תעשיית המחשבים.
+במסגרת פרויקט המוח האנושי האוניברסיטה מובילה את
+פיתוח פלטפורמת הנוירו-רובוטיקה ואת תחומי הנוירו-רובוטיקה
+ההַתְאָמָתִית והארכיטקטורה ההתנהגותית."
+OS_MAP_P57_NAME,Tel Aviv University,جامعة تل ابيب,אוניברסיטת תל אביב
+OS_MAP_P57_CITY,"Tel Aviv, Israel",تل ابيب، اسرائيل,"תל אביב, ישראל"
+OS_MAP_P57_DESC,"Tel Aviv University (TAU) is a leading,
+comprehensive academic institution that offers
+almost all areas of science on one campus. In HBP
+TAU holds the vice chairmanship for medical
+informatics and is responsible for the development
+of statistical methodology in the project,
+alongside its application in clinical research.","جامعة تل أبيب هي مؤسسة أكاديمية رائدة وشاملة
+تدرس جميع مجالات العلوم تقريبًا في حرم اكاديمي واحد.
+تترأس ممثلة جامعة تل أبيب في HBP  منصب نائبة
+رئيس وحدة المعلوماتية الطبية وهي مسؤولة عن تطوير
+المنهجية الإحصائية في المشروع، الى جانب تطبيقها
+في البحث السريري.","אוניברסיטת תל אביב היא מוסד אקדמי מוביל ומקיף,
+המציע כמעט את כל תחומי המדע בקמפוס אחד.
+נציגת אוניברסיטת תל אביב מכהנת ב-HBP כסגנית
+יו""ר ביחידה לאינפורמטיקה רפואית ואחראית על פיתוח
+המתודולוגיה הסטטיסטית בפרויקט, לצד היישום
+שלה במחקר קליני."
+OS_MAP_P59_NAME,"The Chancellor, Masters and Scholars of the University of Oxford",جامعة أكسفورد,אוניברסיטת אוקספורד
+OS_MAP_P59_CITY,"Oxford, United Kingdom",أكسفورد، إنجلترا,"אוקספורד, אנגליה"
+OS_MAP_P60_NAME,Hebrew University of Jerusalem,الجامعة العبرية في القدس,האוניברסיטה העברית בירושלים
+OS_MAP_P60_CITY,"Jerusalem, Israel",القدس، اسرائيل,"ירושלים, ישראל"
+OS_MAP_P60_DESC,"Idan Segev’s team involved with the HBP is located
+at the new Edmond and Lily Safra Center for Brain
+Sciences (ELSC), at the Hebrew University of
+Jerusalem. ELSC encompasses a powerful computer
+cluster for large-scale simulations and the
+prestigious Ph.D. program in Neural Computation
+(100 multidisciplinary students).","يعمل فريق عيدان سيغيف المسؤول عن الـ- HBP  في مركز علوم
+الدماغ على اسم إدموند وليلي صفرا، في الجامعة العبرية
+في القدس. يحتوي المركز على أجهزة كمبيوتر قوية لإجراء
+عمليات محاكاة واسعة النطاق، ويتضمن مسارا متميزاً للقب
+الثالث الاكاديمي (دكتوراه) في برنامج
+الحوسبة العصبية (100 طالب أكاديمي من خلفيات
+متعددة التخصصات).","הצוות של עידן שגב המעורב ב- HBP  ממוקם במרכז למדעי
+המוח ע""ש אדמונד ולילי ספרא, באוניברסיטה העברית בירושלים.
+במרכז פועלים מחשבים רבי עוצמה עבור סימולציות בקנה
+מידה גדול, והוא כולל מסלול דוקטורט יוקרתי בתוכנית
+לחישוביות עיצבית (100 סטודנטים מרקעים רב תחומיים)."
+OS_MAP_P61_NAME,University of Aberdeen,جامعة أبردين,אוניברסיטת אברדין
+OS_MAP_P61_CITY,"Aberdeen, United Kingdom",أبردين، المملكة المتحدة,"אברדין, בריטניה"
+OS_MAP_P62_NAME,University of Edinburgh,جامعة ادنبره,אוניברסיטת אדינבורו
+OS_MAP_P62_CITY,"Edinburgh, United Kingdom",ادنبره، المملكة المتحدة,"אדינבורו, בריטניה"
+OS_MAP_P63_NAME,University of Manchester,جامعة مانشستر,אוניברסיטת מנצ'סטר
+OS_MAP_P63_CITY,"Manchester, United Kingdom",مانشستر، المملكة المتحدة,"מנצ'סטר, בריטניה"
+OS_MAP_P63_DESC,"The University of Manchester, based in the world’s
+first industrial city, has been host to 25 Nobel
+Laureates and Alan Turing, seen the atom split,
+the birth of the modern computer, and the
+discovery of graphene. Within the HBP it hosts
+SpiNNaker, the world’s largest neuromorphic
+computing platform.","تقع جامعة مانشستر في أول مدينة صناعية في العالم.
+من بين الأشخاص الذين عملوا فيها كان آلان
+تيورينغ و 25 من الحائزين على جائزة نوبل، حيث
+تم فيها إجراء الانشطار الذري، وولد أول كمبيوتر حديث
+واكتشف الغرافين. في نطاق ""مشروع الدماغ البشري"" يتم تطوير
+في الجامعة ""سبيناكر- SpiNNaker""، أكبر منصة حوسبة عصبية
+في العالم، مستوحاة من نشاط الدماغ.","אוניברסיטת מנצ'סטר ממוקמת בעיר התעשייתית הראשונה
+בעולם. בין היתר עבדו בה אלן טיורינג ו- 25 חתני
+פרס נובל, התבצע בה ביקוע האטום, נולד המחשב
+המודרני הראשון והתגלה הגרפין. במסגרת
+'פרויקט המוח האנושי' מפותחת באוניברסיטה ""ספיניקר"",
+הפלטפורמה החישובית הנוירומורפית הגדולה בעולם,
+שבנויה בהשראת פעילות המוח."
+OS_MAP_P64_NAME,The Autonomous University of Madrid,جامعة مدريد المستقلة,האוניברסיטה האוטונומית של מדריד
+OS_MAP_P64_CITY,"Madrid, Spain",مدريد، اسبانيا,"מדריד, ספרד"
+OS_MAP_P65_NAME,Castilla-La Mancha university,جامعة كاستيلا لا مانشا,אוניברסיטת קסטיליה - לה מנשה
+OS_MAP_P65_CITY,"Ciudad Real, Spain",سويداد ريال، اسبانيا,"סיודאד ריאל, ספרד"
+OS_MAP_P66_NAME,Granada University,جامعة غرناطة,אוניברסיטת גרנאדה
+OS_MAP_P66_CITY,"Granada, Spain",غرناطة، اسبانيا,"גרנאדה, ספרד"
+OS_MAP_P66_DESC,"The Applied Computational Neuroscience lab led by
+Prof. Eduardo Ros at Granada University builds
+models of neural systems as the cerebellum among
+others. We aim to better understand the
+computational principles of these neural centers
+and how they are supported by biophysical
+substrate (properties of cells, network and
+adaptation mechanisms).","يقوم مختبر علوم الكمبيوتر التطبيقي، برئاسة
+البروفيسور إدواردو روس في جامعة غرناطة،
+بتطوير نماذج من مختلف المنظومات العصبية مثل
+المخيخ. نهدف إلى تحسين فهم المبادئ الحسابية
+لمراكز الأعصاب هذه والطريقة الّتي يدعمها الأساس
+الفيزيائي الحيّوي (خصائص الخلايا، وآليات
+التكيف والشبكات).","המעבדה למדעי מוח חישוביים יישׂומיים בראשות
+פרופ' אדוארדו רוֹס באוניברסיטת גרנאדה מפתחת
+מודלים של מערכות עצבים שוֹנוֹת כגון המוח הקטן.
+אנו שואפים להבין טוב יותר את העקרונות
+החישוביים של מרכזי עצבים אלה, ואת
+האופן שבּו הבסיס הביופיזי (תכונות תאים,
+מנגנוני הסתגלות ורשתות) תומך בהם."
+OS_MAP_P67_NAME,Minho university,جامعة مينهو,אוניברסיטת מינהו
+OS_MAP_P67_CITY,"Braga, Portugal",براغا، البرتغال,"בראגה, פורטוגל"
+OS_MAP_P68_NAME,The Technical University of Madrid,الجامعة التكنولوجية في مدريد,האוניברסיטה הטכנית של מדריד
+OS_MAP_P68_CITY,"Madrid, Spain",مدريد، اسبانيا,"מדריד, ספרד"
+OS_MAP_P68_DESC,"Technical University of Madrid (UPM) is the
+largest Spanish technological university. With two
+recognitions as Campus of International
+Excellence, it is outstanding in its research
+activity. Five research UPM groups are
+participating in the project working on the fields
+of Neuroscience, Data Analysis, High-Performance
+Computing and Innovation.","الجامعة التكنولوجية في مدريد (UPM) هي أكبر
+جامعة تكنولوجية في إسبانيا. حصلت مرتين على
+التقدير كحرم جامعي دولي متميز وتبرز
+في أبحاثها. تشارك خمسة فرق من الجامعة
+المشاركة في المشروع في مجالات علم الأعصاب؛
+تحليل البيانات؛ الابتكار والحوسبة عالية الأداء.","האוניברסיטה הטכנית של מדריד (UPM) היא האוניברסיטה
+הטכנולוגית הגדולה ביותר בספרד. קיבלה
+פעמיים הכרה כקמפוס מצטיין בינלאומי, ומתבלטת
+בעשייתה המחקרית. חמישה צוותים מהאוניברסיטה המשתתפים
+בפרויקט עוסקים בתחומי מדעי המוח;
+ניתוח נתונים; חדשנוּת ומִחשוב עתיר-ביצועים."
+OS_MAP_P69_NAME,The Universidad Rey Juan Carlos,جامعة الملك خوان كارلوس,אוניברסיטת המלך חואן קרלוס
+OS_MAP_P69_CITY,"Madrid, Spain",مدريد، اسبانيا,"מדריד, ספרד"
+OS_MAP_P69_DESC,"The role of the Universidad Rey Juan Carlos (URJC)
+in the HBP is, on one hand, to develop
+visualization tools that allow neuroscientists to
+do visual exploratory analysis of data, both
+morphological or simulation. On the other hand,
+URJC is also responsible of the development of the
+remote visualization backend.","يتمثل دور جامعة الملك خوان كارلوس في مشروع
+الدماغ البشري في تطوير أدوات التصور الّتي تسمح
+لعلماء الأعصاب بإجراء تحليل مرئي للبيانات، سواء
+المورفولوجية أو المحاكاة، وكذلك تطوير
+أدوات التصور عن بُعد.","תפקידה של אוניברסיטת המלך חואן קרלוס
+בפרויקט המוח האנושי הוא לְפַתֵּחַ כלֵי ויזואליזציה
+המאפשרים למדעני מוח לבצע ניתוח חֵקֶר חזותי של
+נתונים, הן מורפולוגיים הן בהדמיה,
+וכן לפתח כלים לוויזואליזציה מרחוק."
+OS_MAP_P70_NAME,The University of Pavia,جامعة بافيا,אוניברסיטת פביה
+OS_MAP_P70_CITY,"Pavia, Italy",بافيا، إيطاليا,"פביה, איטליה"
+OS_MAP_P71_NAME,Universität Bern,جامعة بيرن,אוניברסיטת ברן
+OS_MAP_P71_CITY,"Bern, Switzerland",بيرن، سويسرا,"ברן, שווייץ"
+OS_MAP_P71_DESC,"In the Computational Neuroscience group at the
+University of Bern we investigate the
+extraordinary learning capabilities of biological
+systems. Building mathematical models and computer
+simulations we explore how these processes could
+be organized in the central nervous system, and
+how the underlying computational principles can
+enhance the capabilities of biologically inspired
+artificial intelligence.","تبحث مجموعة الحوسبة العصبية في جامعة برن قدرات
+التعلم الاستثنائية للمنظومات البيولوجية. يبنون في
+المجموعة نماذجًا رياضية ويخلقون محاكاة
+محوسبة لبحث كيفية حدوث هذه العمليات في الجهاز
+العصبي، ويستلهمون من العمليات الحسابية في
+الدماغ لتطوير الذكاء الاصطناعي.","הקבוצה לחישוביות עצבית באוניברסיטת ברן
+חוקרת את יכולות הלמידה יוצאות הדופן של
+מערכות ביולוגיות. בקבוצה בונים מודלים מתמטיים
+ויוצרים סימולציות ממוחשבות כדי לחקור כיצד
+התהליכים הללו מתקיימים במערכת העצבים,
+ושואבים השראה מתהליכי החישוב שבמוח
+כדי לפתח בינה מלאכותית."
+OS_MAP_P72_NAME,Universität Bielefeld,جامعة بيلفيلد,אוניברסיטת בילפילד
+OS_MAP_P72_CITY,"Bielefeld, Germany",بيلفيلد ، ألمانيا,"בילפילד, גרמניה"
+OS_MAP_P72_DESC,"Bielefeld University develops a modular, scalable
+benchmark framework which allows scientific end
+users to select the best neuromorphic hardware
+system and a matching platform-agnostic network
+architecture based on their specific requirements.
+We are also contributing to graphical software
+tools and accompanying libraries aimed at domain
+experts in neuro science.","تعمل جامعة بيليفيلد على تطوير معيار مرجعي قابل
+للقياس يسمح للعلماء الذين يصممون نماذج الدماغ
+بإختيار الأجهزة العصبية الشكل ونوع الشبكات
+الّتي تناسب إحتياجاتهم. توفر الجامعة برامج
+الجرافيكه ""الرسومات"" والمكتبات المقابلة
+لباحثي الدماغ.","אוניברסיטת בילפילד מפתחת שיטה מודולרית
+המאפשרת למדענים שיוצרים מודלים של
+המוח לבחור את החומרה הנוירומורפית ואת
+סוג הרשתות המתאימים לצרכיהם. האוניברסיטה
+מספקת תוכנות גרפיקה וספריות תואמות
+עבור חוקרי המוח"
+OS_MAP_P73_NAME,Aachen University Hospital,مستشفى جامعة آخن,בית החולים האוניברסיטאי באָאכן
+OS_MAP_P73_CITY,"Aachen, Germany",آخن، ألمانيا,"אאכן, גרמניה"
+OS_MAP_P73_DESC,"Aachen University Hospital combines patient care,
+medical education and translational research. It
+is currently involved in two tasks of HBP. In
+collaboration with Jülich we intend to improve our
+understanding of receptor architecture. We also
+try to implement a federated database to enable
+Big Data analyses of psychiatric disorders.","يجمع المستشفى الجامعي في آخن بألمانيا بين
+المرضى والدراسات الطبية وأبحاث الترجمة. حاليًا،
+يشارك المستشفى في اثنين من مهمات المشروع. بالتعاون
+مع مركز يوليش، نعتزم تطوير فهم أفضل للهندسة
+التصميمية للمُستقبلات. بالإضافة إلى ذلك، نهدف إلى
+تقديم قاعدة بيانات موحدة من شأنها أن تمكن من تحليل
+البيانات الضخمة (Big Data) في مجال الاضطرابات
+النفسية.","בית החולים האוניברסיטאי באָאכן, גרמניה,
+משלֵּב טיפול בחולים עם לימודי רפואה ומחקר תרגוּמי.
+נכון לעכשיו, בית החולים משתתף בשתיים ממשׂימות
+הפרויקט. בשיתוף עם מרכז יוּליך אנו מתעתדים
+לְפַתֵּחַ הבנה משופרת לגבי אדריכלות קוֹלטנים.
+כמו כן אנו שואפים להכניס לפעולה בסיס נתונים
+מאוחד שיאפשר ניתוח נתוני עָתֵק (Big Data)
+בתחום ההפרעות הפסיכיאטריות."
+OS_MAP_P74_NAME,University Hospital Hamburg-Eppendorf,مستشفى جامعة هامبورغ - إيبندورف,בית החולים האוניברסיטאי המבורג-אפנדורף
+OS_MAP_P74_CITY,"Hamburg, Germany",هامبورغ، ألمانيا,"המבורג, גרמניה"
+OS_MAP_P75_NAME,University of Zurich,جامعة زيورخ,אוניברסיטת ציריך
+OS_MAP_P75_CITY,"Zürich, Switzerland",زيوريخ، سويسرا,"ציריך, שווייץ"
+OS_MAP_P76_NAME,University of Barcelona,جامعة برشلونة,אוניברסיטת ברצלונה
+OS_MAP_P76_CITY,"Barcelona, Spain",برشلونة، اسبانيا,"ברצלונה, ספרד"
+OS_MAP_P77_NAME,Pompeu Fabra University,جامعة بومبيو فابرا,אוניברסיטת פּומפּאו פאבּרה
+OS_MAP_P77_CITY,"Barcelona, Spain",برشلونة، اسبانيا,"ברצלונה, ספרד"
+OS_MAP_P77_DESC,"Universitat Pompeu Fabra (UPF) Center for Brain
+and Cognition, PI: Gustavo Deco. UPF leads work
+package 4.4 “Models of Brain Activity and
+Function”. UPF participates in work package 4.5
+“Linking Model Activity And  Function To
+Experimental Data” and builds whole-brain network
+models for individuals that mimic pathologies
+including epilepsy.","يرأس مركز الدماغ والإدراك في جامعة بومبيو
+فابرا، تحت إشراف البروفيسور غوستافو ديكو،
+وحدة العمل "" نماذج نشاط الدماغ ووظيفته"".
+يشارك المركز أيضًا في وحدة ""ربط نشاط النماذج وأدائهم
+بالبيانات التجريبية"" ويطور نماذج للشبكات العصبية
+في الدماغ بأكمله عند الأفراد، من أجل
+تشخيص أمراض مثل الصرع.","המרכז למוח ולקוגניציה של אוניברסיטת פּומפּאו
+פאבּרה, בניהול פרופ' גוסטאבו דֶּקוֹ, עומד בראש יחידת
+העבודה ""מוֹדלים של פעילוּת המוח ותפקודו"".
+כמו כן המרכז משתתף ביחידה ""קישור פעילוּת
+מוֹדלים ותפקודם לנתוני ניסויים"", וּמְפַתֵּחַ מודלים
+של רשתות הֶקְשֵׁרִים בכל המוח אצל יחידים,
+במטרה לחקוֹת מחלות כגון מחלת הנפילה (אפילפסיה)."
+OS_MAP_P78_NAME,University of Aix Marseille,جامعة اكس-مارسيليا,אוניברסיטת אקס-מרסיי
+OS_MAP_P78_CITY,"Marseille, France",مارسيليا، فرنسا,"מרסיי, צרפת"
+OS_MAP_P78_DESC,"Institut de Neurosciences des Systèmes (INS) in
+the University is a multidisciplinary research
+institute focused on understanding the complex
+dynamics of the brain. Within HBP, INS works on
+demonstrating the predictive value of large-scale
+brain network models, in particular for the
+individualized epileptic activity and for the
+impaired connectivity, and on building a
+multi-scale brain atlas.","معهد علوم الدماغ النظامية (INS) في الجامعة
+هو معهد أبحاث متعدد التخصصات يركز على فهم
+الديناميات المعقدة للدماغ. الغرض من مشروع
+الدماغ البشري هو إظهار قيمة النماذج واسعة
+النطاق للشبكات العصبية في الدماغ كأداة تنبؤية،
+خاصةً عندما يتعلق الأمر بنشاط الصرع الفردي والعلاقات
+الشخصية الضعيفة؛ كما أنه يطور أطلس الدماغ على
+العديد من المقاييس.","המכון למדעי מוח מערכתיים (INS) באוניברסיטה
+הוא מכון מחקר רב-תחומי המתמקד בהבנת
+הדינמיקה המורכבת של המוח. במסגרת פרויקט
+המוח האנושי מטרתו להדגים את ערכּם של
+מודלים בקנה מידה גדול של רשתות עצביות במוח
+ככלי לחיזוי, בפרט כשמדובר בפעילות אפילפטית
+אינדבידואלית ובחיבּוּריוּת לקויה; כמו כן הוא
+מְפַתֵּחַ אטלס מוח בקני מידה רבּים."
+OS_MAP_P79_NAME,University of Bordeaux,جامعة بوردو,אוניברסיטת בורדו
+OS_MAP_P79_CITY,"Bordeaux, France",بوردو، فرنسا,"בורדו, צרפת"
+OS_MAP_P80_NAME,Antwerp University,جامعة أنتويرب,אוניברסיטת אנטוורפן
+OS_MAP_P80_CITY,"Antwerp, Belgium",أنتويرب، بلجيكا,"אנטוורפן, בלגיה"
+OS_MAP_P80_DESC,"At Antwerp University, we study cortical function
+combining technological, experimental and
+theoretical approaches, ranging from arrays of
+microelectrodes to patch-clamp and from the micro-
+and nanotechnologies for to the computer
+simulation of neuron models. We lead in HBP the
+task on Input-Output Transfer function.","في جامعة أنتويرب، ندرس الوظيفة القشرية في
+منهج متكامل - التكنولوجي والتجريبي والنظري - باستخدام
+مجموعة متنوعة من الأدوات، من صفائف الإلكترود
+الجزئي إلى الأنظمة القائمة على تقنيات تثبيت المشبك، ومن
+التقنيات الدقيقة والنانوية إلى المحاكاة الحاسوبية
+لنماذج الخلايا العصبية. في مشروع الدماغ البشري،
+يتم تنفيذ مهمة تتناول وظيفة نقل إستقبال- إخراج.","באוניברסיטת אנטוורפן אנו חוקרים את תפקוד
+קליפת המוח בגישה משולבת – טכנולוגית,
+ניסויית ותיאורטית – תוך שימוש במגוון כלים,
+ממערכים של מיקרוֹ-אלקטרודות עד מערכות המבוססות
+על שיטות קיבוע מֶתַח בתא שלם (patch-clamp), וממיקרו
+ונאנו-טכנולוגיות עד הדמיוֹת מחשב של מודלֵי נוירונים.
+בפרויקט המוח האנושי מובילים משימה העוסקת
+בפונקציית תִּמְסֹרֶת קֶלֶט-פֶּלֶט."
+OS_MAP_P81_NAME,University of Oslo,جامعة أوسلو,אוניברסיטת אוסלו
+OS_MAP_P81_CITY,"Oslo, Norway",أوسلو، النرويج,"אוסלו, נורבגיה"
+OS_MAP_P82_NAME,University College London,كلية لندن الجامعية,אוניברסיטת קולג' לונדון
+OS_MAP_P82_CITY,"London, United Kingdom",لندن، المملكة المتحدة,"לונדון, בריטניה"
+OS_MAP_P82_DESC,"University College London (UCL) is London’s
+leading multidisciplinary university and is the
+top university in the United Kingdom for research
+strength. UCL contribution to SP6 is to provide
+correlated electrophysiological and anatomical
+data from hippocampal neurones for the generation
+of a data-driven model of the hippocampus.","كلية لندن الجامعية (UCL) هي معهد أبحاث
+متعدد التخصصات الرائد في لندن على وجه
+الخصوص وفي المملكة المتحدة بشكلٍ عام.
+كـجزء من ""مشروع الدماغ البشري""، يبحث الباحثون
+في الجامعة عن الروابط بين النشاط الكهربائي
+للخلايا في الحصين ""الهيبوكامبوس"" في الدماغ وبين
+المعلومات التشريحية حول بنيتها،
+وذلك من أجل إنشاء نموذج كمبيوتر يعتمد
+على المعلومات من الحصين.","האוניברסיטה היא מוסד המחקר הרב תחומי
+המוביל בלונדון בפרט ובבריטניה בכלל.
+במסגרת 'פרויקט המוח האנושי', חוקרים באוניברסיטה
+מחפשים קשרים בין הפעילות החשמלית של התאים
+בהיפוקמפוס שבמוח למידע אנטומי על המבנה
+שלהם, זאת במטרה ליצור מודל ממוחשב
+מבוסס מידע של ההיפוקמפוס."
+OS_MAP_P83_NAME,Uppsala University,جامعة اوبسلا,אוניברסיטת אופּסלָה
+OS_MAP_P83_CITY,"Uppsala, Sweden",اوبسلا، سويد,"אופסלה, שבדיה"
+OS_MAP_P83_DESC,"Uppsala University is part of the HBP through its
+Neuro-ethics and Philosophy Group in the Centre
+for Research Ethics and Bioethics. This group, led
+by Professor Kathinka Evers –director of the
+Subproject “Ethics & Society”- carries out
+conceptual and philosophical analyses of
+theoretical and practical issues raised by
+neuroscience, ICT and applications.","تشارك جامعة أوبسلا في مشروع العقل البشري من
+خلال مجموعة أخلاقيات وفلسفة مركز أخلاقيات
+البيولوجيا وأخلاقيات البيولوجيا في مجال
+البحوث. هذه المجموعة، الّتي يرأسها البروفيسور
+كاتينكا إيفرز، مديرة مشروع ثانوي ""الأخلاقيات والمجتمع""،
+تتناول التحليل النظري والفلسفي للقضايا النظرية
+والعملية الناشئة في مجالات علم الأعصاب وتكنولوجيا
+المعلومات والاتصالات وتطبيقاتها.","אוניברסיטת אופּסלָה מעורבת בפרויקט המוח האנושי
+באמצעות קבוצת הנוֹירוֹ-אתיקה והפילוסופיה של
+המרכז לאתיקה וביוֹ-אתיקה במחקר. קבוצה זו,
+בראשות פרופ' קתינקה אֶוורס, מנהלת פרויקט
+הַמִּשְׁנֶה ""אתיקה וחברה"", עוסקת בניתוח רעיוני ופילוסופי של סוגיות
+תיאורטיות ומעשׂיות המתעוררות בתחומי מדעי המוח,
+טכנולוגיות המידע והתקשורת, ויישׂומיהן."
+OS_MAP_P84_NAME,The Weizmann Institute of Science,معهد وايزمان للعلوم,מכון ויצמן למדע
+OS_MAP_P84_CITY,"Rehovot, Israel",رحوفوت، اسرائيل,"רחובות, ישראל"
+OS_MAP_P84_DESC,"The Weizmann Institute of Science is one of the
+world's top-ranking multidisciplinary research
+institutes that explore the natural and exact
+sciences. The Institute’s involvement in HBP is in
+modeling visual system functional and circuit
+models, with applications to cognition and
+neuro-robotics; and in generating mathematical
+models of memory to better understand human
+cognition.","يُعتبر معهد وايزمان للعلوم واحداً من أفضل المؤسسات
+البحثية متعددة التخصصات في العالم، وهو متخصص في
+العلوم الطبيعية والعلوم الدقيقة. تنعكس مشاركته
+في مشروع الدماغ البشري في تطوير نماذج وظيفية ودائرية
+للنظام البصري، مع التركيز على التطبيقات في الروبوتات
+المعرفية والروبوتية العصبية، وكذلك إنشاء نماذج رياضية
+للذاكرة من أجل فهم أفضل للإدراك البشري.","מכון ויצמן למדע נחשב לאחד ממוסדות המחקר
+הרב-תחומיים הטובים בעולם, ועוסק במדעי
+הטבע ובמדעים מדויקים. מעורבותו בפרויקט המוח
+האנושי מתבטאת בפיתוח מודלים תפקודיים ומעגליים
+של מערכת הראייה, בדגש על יישׂומים בתחומי הקוגניציה
+והנוירו-רובוטיקה, וכן ביצירת מודלים מתמטיים של זיכרון
+במטרה להבין טוב יותר את הקוגניציה האנושית."
+OS_MAP_P85_NAME,Technische Universität Darmstadt,الجامعة التقنية دارمشتادت,האוניברסיטה הטכנית דארמשטאדט
+OS_MAP_P85_CITY,"Darmstadt, Germany",دارمشتادت، ألمانيا,"דארמשטאדט, גרמניה"
+OS_MAP_P85_DESC,"The Laboratory for Parallel Programming belongs to
+the Department of Computer Science at Technische
+Universität Darmstadt in Germany. We are working
+on methods that make data-intensive brain analyses
+run faster and on algorithms that help better
+understand how individual neurons connect to each
+other.","مختبر برمجة موازية هو جزء من قسم علوم الكمبيوتر
+في الجامعة التقنية في دارمشتات، في ألمانيا.
+نحن نعمل على تطوير طرق لتسريع تحليلات خوارزمية
+مكثفة للبيانات لتحسين فهمنا للعلاقات بين
+الخلايا العصبية الفردية.","המעבדה לתכנוּת מַקְבִּילִי היא חלק מהמחלקה למדעי
+המחשב באוניברסיטה הטכנית דארמשטאדט שבגרמניה.
+אנו מפתחים שיטות לזירוז אנליזות מוח עתירות-נתונים
+וכן אלגוריתמים במטרה לשפר את הבנתנו לגבי
+חיבורים של נוירונים יחידים זה לזה."
+OS_MAP_P86_NAME,University of Geneva,جامعة جنيف,אוניברסיטת ג'נבה
+OS_MAP_P86_CITY,"Geneva, Switzerland",جنيف، سويسرا,"ג'נבה, שווייץ"
+OS_MAP_P87_NAME,University of Glasgow,جامعة غلاسكو,אוניברסיטת גלאזגו
+OS_MAP_P87_CITY,"Glasgow, United Kingdom",غلاسكو، المملكة المتحدة,"גלאזגו, בריטניה"
+OS_MAP_P89_NAME,University of Hamburg,جامعة هامبورغ,אוניברסיטת המבורג
+OS_MAP_P89_CITY,"Hamburg, Germany",هامبورغ، ألمانيا,"המבורג, גרמניה"
+OS_MAP_P90_NAME,Humboldt University of Berlin,جامعة هومبولت في برلين,אוניברסיטת הומבולדט בברלין
+OS_MAP_P90_CITY,"Berlin, Germany",برلين ، ألمانيا,"ברלין, גרמניה"
+OS_MAP_P91_NAME,"The Royal Netherlands Academy
+of Arts and Sciences","الأكاديمية الملكية الهولندية
+للفنون والعلوم","האקדמיה המלכותית
+של הולנד לאמנויות ולמדעים"
+OS_MAP_P91_CITY,"Amsterdam, The Netherlands",أمستردام، هولندا,"אמסטרדם, הולנד"
+OS_MAP_P92_NAME,The National Institute of Nuclear Physics,المعهد الوطني للفيزياء النووية,המכון הלאומי לפיסיקה גרעינית
+OS_MAP_P92_CITY,"Rome, Italy",روما، إيطاليا,"רומא, איטליה"
+OS_MAP_P93_NAME,August Pi i Sunyer Biomedical Research Institute,معهد أغسطس بيس ونير للأبحاث الطبية الحيوية,מכון אוגוסט פייס ונייר למחקר ביו – רפואי
+OS_MAP_P93_CITY,"Barcelona, Spain",برشلونة، اسبانيا,"ברצלונה, ספרד"
+OS_MAP_P94_NAME,University of Milan,جامعة ميلانو,אוניברסיטת מילאנו
+OS_MAP_P94_CITY,"Milan, Italy",ميلانو، ايطاليا,"מילאנו, איטליה"
+OS_MAP_P94_DESC,"Dr. Massimini’s research group is located at the
+University of Milan and focuses on the
+neurophysiological factors supporting complex
+interactions within the human brain and their role
+for the fading and recovery of consciousness
+across brain states (sleep, anesthesia and brain
+lesions) through invasive and non-invasive
+techniques across different spatial scales.","تعمل المجموعة البحثية للدكتور ماسيميني في جامعة
+ميلانو وتركز على العوامل الفيزيولوجية
+العصبية الّتي تدعم التفاعلات المعقدة في
+الدماغ البشري والدور الذي تلعبه في
+تدهور وصحة الوعي في مجموعة متنوعة من حالات
+الدماغ (النوم والتخدير وإصابات دماغية). وقد تم إجراء
+البحث باستخدام تقنيات غازية وغير غازية
+وبمقاييس مكانية مختلفة.","קבוצת המחקר של ד""ר מאסימיני פועלת באוניברסיטת
+מילאנו ומתמקדת בגורמים נוירו-פיזיולוגיים התומכים
+באינטראקציות מורכבוֹת במוח האנושי, ובתפקיד
+שהם ממלאים בדעיכה והתעוררות של ההכרה במגוון
+מצבים מוחיים (שֵׁנָה, הרדמה ופגיעוֹת מוֹחיוֹת).
+המחקר נעשה בטכניקות פולשניות ובלתי פולשניות
+ובקני מידה מרחביים שונים."
+OS_MAP_P95_NAME,Institute for Bioengineering of Catalonia,المعهد الكاتالاني للهندسة الحيوية,המכון הקטלוני לביו-הנדסה
+OS_MAP_P95_CITY,"Barcelona, Spain",برشلونة، اسبانيا,"ברצלונה, ספרד"
+OS_MAP_P96_NAME,National Institute of Health,المعهد الوطني للصحة,המכון הלאומי לבריאות
+OS_MAP_P96_CITY,"Rome, Italy",روما، إيطاليا,"רומא, איטליה"
+OS_MAP_P97_NAME,University of Liège,جامعة لياج,אוניברסיטת לייז'
+OS_MAP_P97_CITY,"Liège, Belgium",لياج، بلجيكا,"לייז', בלגיה"
+OS_MAP_P97_DESC,"Our GIGA-Consciousness Unit is part of the GIGA
+research institute (University of Liège, Belgium).
+In the framework of HBP, our multidisciplinary
+team aims at studying human consciousness and its
+pathological, pharmacological and physiological
+modifications, notably using electrophysiology and
+neuroimaging tools, as well as investigating the
+ethical issues of such a research.","وحدة المعرفة GIGA هي جزء من معهد GIGA للبحوث في
+جامعة لييج في بلجيكا. هدف فريقنا متعدد
+التخصصات في مشروع الدماغ البشري هو استكشاف
+المعرفة الإنسانية والأوجه الّتي تتأثر
+بها العوامل المرضية والطبية والفسيولوجية
+وذلك أساسًا من خلال أدوات التصوير الالكترو- فيزيولوجي
+والمحاكاة الدماغية؛ والتعامل كذلك بالقضايا الأخلاقية
+الناشئة عن هذا البحث.","יחידת התוֹדעה של GIGA היא חלק ממכון המחקר GIGA שבאוניברסיטת לייז'
+בבלגיה. מטרת הצוות הרב-תחומי שלנו במסגרת פרויקט
+המוח האנושי היא לחקור את התוֹדעה האנושית
+ואת הַאוֹפָנִים שבהם היא מושפעת מגורמים פּתולוגיים,
+תרופתיים ופיזיולוגיים, זאת בעיקר באמצעות כלים
+אלקטרופיזיולוגיים והדמיה מוחית; וכן לעסוק בסוגיות
+האתיוֹת העולות ממחקר כזה."
+OS_MAP_P98_NAME,The University of Amsterdam,جامعة أمستردام,אוניברסיטת אמסטרדם
+OS_MAP_P98_CITY,"Amsterdam, The Netherlands",أمستردام، هولندا,"אמסטרדם, הולנד"
+OS_MAP_P98_DESC,"The University of Amsterdam is included in
+investigating cognitive and system neuroscience
+phenomena in HBP, besides coordinating 5 teams of
+researchers from 17 institutions around Europe.
+Our main focus is to study perception, memory,
+sleep, consciousness and develop methods for
+integrating data from multiple scales into HBP ICT
+Platforms.","كجزء من مشروع الدماغ البشري، تشارك جامعة أمستردام
+في دراسة ظواهر الدماغ الإدراكية والمعرفية
+وتنسق خمسة فرق بحثية من 17 مؤسسة في
+جميع أنحاء أوروبا. أهدافنا الرئيسية
+هي التحقيق في قضايا الإدراك؛ الذاكرة. النوم،
+والمعرفة، وتطوير طرق لاستيعاب البيانات من
+مختلف المقاييس على منصات تكنولوجيا
+المعلومات والاتصالات الخاصة بالمشروع.","במסגרת פרויקט המוח האנושי אוניברסיטת אמסטרדם
+משתתפת בחֵקֶר תופעות מוחיות קוגניטיביוֹת ומערכתיוֹת,
+ומרכזת חמישה צוותי מחקר מ-17 מוסדות
+ברחבי אירופה. מטרותינו העיקריות הן לחקור
+את נושאי התפישׂה; הזיכרון; השינה והתוֹדעה,
+ולפתח שיטות להטמעת נתונים מקני מידה
+שונים בפלטפורמות טכנולוגיית המידע והתקשורת
+של הפרויקט."
+OS_MAP_P99_NAME,"The German Center for
+Neurodegenerative Diseases","المركز الألماني
+للأمراض العصبية","המֶרכז הגרמני
+למחלות מוח ניווּניוֹת"
+OS_MAP_P99_CITY,"Bonn, Germany",بُون، ألمانيا,"בון, גרמניה"
+OS_MAP_P99_DESC,"The core objectives of the research are to
+understand causes and risk factors for
+neurodegenerative diseases & to develop new
+therapeutic and preventive strategies by
+translating fundamental discoveries into clinical
+and public health applications. Within the HBP we
+are focusing on deciphering the heterogeneity of
+neurons by single-cell RNA-sequencing.","الأهداف الرئيسية للدراسة هي فهم العوامل وعوامل الخطر
+للأمراض التنكسية العصبية، وتطوير استراتيجيات علاجية
+ووقائية جديدة من خلال ترجمة الاكتشافات الأساسية
+إلى تطبيقات الصحة العامة السريرية والتطبيقية.كجزء
+من مشروع الدماغ البشري، نركز على فك تجانس الخلايا
+العصبية بواسطة تسلسل الحمض النووي الريبي أحادي الخلية.","מטרות הלִבּה של המחקר הן להבין את הגורמים
+ומקדמי הסיכון למחלות עצבים ניווניות, ולפתח
+אסטרטגיות טיפוליוֹת ומניעתיוֹת חדשות על-ידי
+תרגום תגליות יסוד ליישׂומים קליניים ויישׂומים
+בתחום בריאות הציבור. במסגרת פרויקט המוח האנושי אנו
+מתמקדים בפענוח הטרוֹגניוּת של נוירונים
+באמצעות ריצוף רנ""א של תא יחיד."
+OS_MAP_P100_NAME,University of Sheffield,جامعة شيفيلد,אוניברסיטת שפילד
+OS_MAP_P100_CITY,"Sheffield, United Kingdom",شيفيلد، المملكة المتحدة,"שפילד, בריטניה"
+OS_MAP_P101_NAME,"University of the West of England, UWE Bristol",جامعة غرب إنجلترا,אוניברסיטת מערב אנגליה
+OS_MAP_P101_CITY,"Bristol, United Kingdom",بريستول، المملكة المتحدة,"בריסטול, בריטניה"
+OS_MAP_P102_NAME,University of Surrey,جامعة سوري,אוניברסיטת סורי
+OS_MAP_P102_CITY,"Guildford, United Kingdom",جيلفورد، المملكة المتحدة,"גוילפורד, בריטניה"
+OS_MAP_P103_NAME,Tampere University,جامعة تامبيري,אוניברסיטת טמפרה
+OS_MAP_P103_CITY,"Turku, Finland",توركو، فنلندا,"טורקו, פינלנד"
+OS_MAP_P104_NAME,University of Leeds,جامعة ليدز,אוניברסיטת לידס
+OS_MAP_P104_CITY,"Leeds, United Kingdom",ليدز، المملكة المتحدة,"לידס, בריטניה"
+OS_MAP_P105_NAME,Pierre and Marie Curie University,جامعة بيير وماري كوري,אוניברסיטת פייר ומארי קירי
+OS_MAP_P105_CITY,"Paris, France",باريس، فرنسا,"פריז, צרפת"
+OS_MAP_P106_NAME,University of Sussex,جامعة ساسكس,אוניברסיטת סאסקס
+OS_MAP_P106_CITY,"Falmer, United Kingdom",فلمر، المملكة المتحدة,"פאלמר, בריטניה"
+OS_MAP_P107_NAME,Middlesex University,جامعة ميدلسكس,אוניברסיטת מידלסקס
+OS_MAP_P107_CITY,"Hendon, London, United Kingdom",هندون، لندن، المملكة المتحدة,"הנדון, לונדון, בריטניה"
+OS_MAP_P107_DESC,"Middlesex University is in London, and HBP
+research at Middlesex focuses on Neuromorphic
+Embodied Agents that Learn. Reusable software
+components are developed in PyNN using spiking
+neurons in Nest and neuromorphic hardware. These
+components are combined to implement agents in the
+Neurorobotics Platform, in other virtual
+environments or in robots.","جامعة ميدلسكس في لندن، تركز أبحاثها في مشروع
+الدماغ البشري على الوسطاء العصبيين، المورفولوجيين
+ذوي القدرة على التعلم. يقوم الفريق بتطوير
+مكونات البرامج متعددة الأغراض بلغة PyNN عن طريق
+استخدام النبضات العصبية بمحاكاة Nest والخلايا العصبية المورفولوجية.
+مزيج من هذه المكونات يتيح تطبيق الوسطاء على
+منصة العصبية الحيوية في البيئات الإفتراضية
+الأخرى، أو في الروبوتات.","אוניברסיטת מידלסקס נמצאת בלונדון, והמחקר
+הנערך בה במסגרת פרויקט המוח האנושי
+מתמקד במתווכים מוכללים נוֹירוֹ-מורפיים
+עם יכולת למידה. הצוות מְפַתֵּחַ מרכּיבי
+תוכנה רב-פעמיים בשפת PyNN באמצעות דחפים עצביים
+במדַמֶה Nest ובחוֹמרוֹת נוירו-מורפיות.
+שילוב של מרכיבים אלה מאפשר יישׂום
+של מתווכים בפלטפורמת הנוירורובוטיקה
+בסביבות וירטוּאליוֹת אחרות, או ברובוטים."
+OS_MAP_P108_NAME,University of Lyon,جامعة ليون,אוניברסיטת ליון
+OS_MAP_P108_CITY,"Lyon, France",ليون، فرنسا,"ליון, צרפת"
+OS_MAP_P109_NAME,Polytechnic of Turin (Politecnico di Torino),جامعة البوليتكنيك في تورينو,האוניברסיטה הפוליטכנית של טורינו
+OS_MAP_P109_CITY,"Turin, Italy",تورينو ، إيطاليا,"טורינו, איטליה"
+OS_MAP_P109_DESC,"For over 150 years, Politecnico di Torino has been
+one of the most prestigious technical universities
+at national and international level. The
+EDA-group, being part of the HBP neuromorphic
+engineering team, is involved in the design of
+optimized algorithms for exploiting the innovative
+many-core architecture of the SpiNNaker
+neuromorphic platform.","جامعة البوليتكنيكو في تورينو (جامعة العلولم التطبيقية) هي
+واحدة من الجامعات التكنولوجية المرموقة في
+ايطاليا والعالم منذ أكثر من 150 سنة.
+تشارك الجامعة في ""مشروع الدماغ البشري""، بواسطة
+فريق هندسة عصبية الشكل الذي يشارك في خوارزميات
+البرمجة لاستخدام منصة الـ ""سبينكار"" المبتكرة
+للمشروع.","פוליטכניקו דה טורינו היא אחת האוניברסיטאות
+הטכנולוגיות היוקרתיות ביותר באיטליה ובעולם
+כבר למעלה מ-150 שנה. באוניברסיטה לוקח
+חלק ב""פרויקט המוח האנושי"" צוות ההנדסה
+הנוירומורפית שמעורב בתכנות אלגוריתמים לשימוש
+בפלטפורמת ה""ספיניקר"" החדשנית של הפרויקט."
+OS_MAP_P110_NAME,University of Ghent,جامعة غنت,אוניברסיטת גנט
+OS_MAP_P110_CITY,"Ghent, Belgium",غنت، بلجيكا,"גנט, בלגיה"
+OS_MAP_P111_NAME,The Catholic University of Leuven,الجامعة الكاثوليكية لوفان,האוניברסיטה הקתולית של לאובן
+OS_MAP_P111_CITY,"Leuven, Belgium",لوفان، بلجيكا,"לאובן, בלגיה"
+OS_MAP_P112_NAME,University of Basel,جامعة بازل,אוניברסיטת באזל
+OS_MAP_P112_CITY,"Basel, Switzerland",بازل، سويسرا,"באזל, שווייץ"
+OS_MAP_P113_NAME,VU University Medical Center,المركز الطبي لجامعة VU,המרכז הרפואי אוניברסיטת VU
+OS_MAP_P113_CITY,"Amsterdam, The Netherlands",أمستردام، هولندا,"אמסטרדם, הולנד"
+OS_MAP_P114_NAME,Swiss Institute of Bioinformatics ISB Foundation,المعهد السويسري للمعلوماتية الحيوية,המכון השוויצרי לביואינפורמטיקה
+OS_MAP_P114_CITY,"Lausanne, Switzerland",لوزان، سويسرا,"לוזאן, שווייץ"
+OS_MAP_P115_NAME,"European Brain Research Institute
+Rita Levi-Montalcini Foundation","المعهد الأوروبي لأبحاث الدماغ،
+مؤسسة ريتا ليفي مونتكالتسيني","המכון האירופאי לחקר המוח,
+קרן ריטה לוי-מונצאלצ'יני "
+OS_MAP_P115_CITY,"Rome, Italy",روما، إيطاليا,"רומא, איטליה"
+OS_MAP_P116_NAME,Scuola Normale Superiore,كلية التعليم العالي,בית הספר ללימודים גבוהים
+OS_MAP_P116_CITY,"Pisa, Italy",بيزا، إيطاليا,"פיזה, איטליה"
+OS_MAP_P117_NAME,University of Maastricht,جامعة ماستريخت,אוניברסיטת מאסטריכט
+OS_MAP_P117_CITY,"Maastricht, The Netherlands",ماستريخت، هولندا,"מאסטריכט, הולנד"
+OS_MAP_P118_NAME,University of Hertfordshire,جامعة هيرتفوردشاير,אוניברסיטת הרטפורדשייר
+OS_MAP_P118_CITY,"Hatfield, United Kingdom",هاتفيلد، المملكة المتحدة,"הטפילד, בריטניה"
+OS_MAP_P119_NAME,University Hospital Bonn,مستشفى الجامعة بون,בית החולים האוניברסיטאי בון
+OS_MAP_P119_CITY,"Bonn, Germany",بون، ألمانيا,"בון, גרמינה"
+OS_MAP_P120_NAME,"Biomedical Research Foundation, Academy of Athens",مؤسسة البحوث الطبية الحيوية، أكاديمية أثينا,"הקרן למחקר ביו-רפואי, האקדמיה של אתונה"
+OS_MAP_P120_CITY,"Athens, Greece",أثينا، اليونان,"אתונה, יוון"
+OS_MAP_P121_NAME,Convelop Cooperative Knowledge Design GmbH,كونبلوف التعاونية لتصميم المعرفة,קואופרטיב קונבלופ לעיצוב הידע
+OS_MAP_P121_CITY,"Graz, Austria",غراتس، النمسا,"גראץ, אוסטריה"
+OS_MAP_P122_NAME,Charité - University Medicine Berlin,كلية الطب شاريتي برلين,בית הספר לרפואה שאריטֶה ברלין
+OS_MAP_P122_CITY,"Berlin, Germany",برلين، ألمانيا,"ברלין, גרמניה"
+OS_MAP_P122_DESC,"Charité Universitätsmedizin Berlin is Europe´s
+largest University Hospital. More than half of the
+German Nobel laureates for medicine and physiology
+originate from it. Charité’s Brain Simulation
+Section heads HBP’s project TheVirtualBrain (TVB).
+TVB is a simulation platform for simulating
+patient brains to test virtual therapies. TVB has
+several thousand users.","تعد كلية الطب شاريت في برلين أكبر
+كلية طب في أوروبا. تعلم فيها أكثر من نصف
+الفائزين بجائزة نوبل في الطب وعلم وظائف
+الأعضاء في ألمانيا. يترأس قسم التصوير الذهني
+في شاريت مشروع TheVirtualBrain (TVB) لمشروع الدماغ
+البشري. TVB هي عبارة عن منصة لتصور دماغ المريض
+لاختبار العلاجات الافتراضية. يستخدمها الآلاف.","בית הספר לרפואה שאריטֶה שבברלין הוא בית
+הספר הגדול ביותר לרפואה באירופה.
+יותר ממחצית מזוֹכי פרסי נובל לרפואה ולפיזיולוגיה
+בגרמניה למדו בו. מחלקת ההדמיה המוחית של שאריטֶה
+עומדת בראש פרויקט TheVirtualBrain (TVB) של פרויקט
+המוח האנושי. TVB היא פלטפורמה להדמיה של
+מוח מטופל במטרה לבדוק טיפולים וירטואליים.
+משתמשיה מוֹנִים כמה אֲלָפִים."
+OS_MAP_P123_NAME,European Molecular Biology Laboratory (EMBL),المختبر الأوروبي للبيولوجيا الجزيئية,המעבדה האירופית לביולוגיה מולקולרית
+OS_MAP_P123_CITY,"Heidelberg, Germany",هايدلبرغ، ألمانيا,"היידלברג, גרמניה"
+OS_MAP_P123_DESC,"At EMBL in Heidelberg, the group of Anna Kreshuk
+specializes in developing machine learning
+algorithms and tools for automatic segmentation,
+classification and analysis of biological images.
+Within the Human Brain Project, her team develops
+special workflows for the ilastik image processing
+toolkit with the goal of neuroimaging analysis at
+scale.","في المختبر الأوروبي للبيولوجيا الجزيئية،
+يتخصص فريق آنه كرشوك في تطوير خوارزميات
+وأدوات التعلم الآلي لتقسيم الصور البيولوجية
+وفهرستها وتحليلها تلقائيًا. كجزء من مشروع
+لدماغ البشري، يطور الفريق عمليات عمل خاصة
+لـ ""'صندوق الأدوات"" من ILastik لمعالجة الصور من أجل تحقيق
+تحليل تصوير دماغي بالحجم الطبيعي.","במעבדה האירופית לביולוגיה מולקולרית מתמחה
+הצוות של אנה קְרֶשׁוּק בפיתוח אלגוריתמים ללמידת
+מכונה וכלים לפילוח, קִטְלוּג וניתוח אוטומטיים
+של דימויים ביולוגיים. במסגרת פרויקט המוח האנושי
+הצוות מְפַתֵּחַ תהליכי עבודה מיוחדים
+עבור ""ארגז הכלים"" של ilastik לעיבוד תמונה,
+במטרה להגיע לניתוח דימוּת מוחי בגודל טבעי."
+OS_MAP_P124_NAME,Medical University Greifswald,جامعة جرايفسفالد الطبية,האוניברסיטה הרפואית גרייפסוואלד
+OS_MAP_P124_CITY,"Greifswald, Germany",غرايفسفالد، ألمانيا,"גרייפסוואלד, גרמניה"
+OS_MAP_P125_NAME,Swiss Integrative Center for Human Health,المركز السويسري التكاملي لصحة الإنسان,המרכז האינטגרטיבי השוויצרי לבריאות האדם
+OS_MAP_P125_CITY,"Fribourg, Switzerland",فرايبورغ، سويسرا,"פרייבורג, שווייץ"
+OS_MAP_P126_NAME,University Grenoble Alpes,جامعة غرونوبل,אוניברסיטת גרנובל
+OS_MAP_P126_CITY,"Grenoble, France",غرونوبل، فرنسا,"גרנובל, צרפת"
+OS_MAP_P127_NAME,University Hospital Freiburg,المستشفى الجامعي فرايبورغ,בית החולים האוניברסיטאי פרייבורג
+OS_MAP_P127_CITY,"Freiburg, Germany",فرايبورغ، ألمانيا,"פרייבורג, גרמניה"
+OS_MAP_P128_NAME,"""Claudio Munari"" Center for Epilepsy Surgery","مركز ""كلاوديو موناري"" لجراحة الصرع",מרכז קלאודיו מונארי לכרורגיית אפילפסיה
+OS_MAP_P128_CITY,"Milan, Italy",ميلان، إيطاليا,"מילאנו, איטליה"
+OS_MAP_P129_NAME,University Hospital Grenoble Alpes,مستشفى الجامعة,בית החולים האוניברסיטאי
+OS_MAP_P129_CITY,"Grenoble, France",غرونوبل، فرنسا,"גרנובל, צרפת"
+OS_MAP_COUNTRY_SPAIN_NAME,Spain,Spain,ספרד
+OS_MAP_COUNTRY_FRANCE_NAME,France,France,צרפת
+OS_MAP_COUNTRY_NORWAY_NAME,Norway,Norway,נורווגיה
+OS_MAP_COUNTRY_TURKEY_NAME,Turkey,Turkey,טורקיה
+OS_MAP_COUNTRY_PORTUGAL_NAME,Portugal,Portugal,פורטוגל
+OS_MAP_COUNTRY_BELGIUM_NAME,Belgium,Belgium,בלגיה
+OS_MAP_COUNTRY_DENMARK_NAME,Denmark,Denmark,דנמרק
+OS_MAP_COUNTRY_HUNGARY_NAME,Hungary,Hungary,הונגריה
+OS_MAP_COUNTRY_AUSTRIA_NAME,Austria,Austria,אוסטריה
+OS_MAP_COUNTRY_SWITZERLAND_NAME,Switzerland,Switzerland,שוייץ
+OS_MAP_COUNTRY_SLOVENIA_NAME,Slovenia,Slovenia,סלובניה
+OS_MAP_COUNTRY_SWEDEN_NAME,Sweden,Sweden,שוודיה
+OS_MAP_COUNTRY_ITALY_NAME,Italy,Italy,איטליה
+OS_MAP_COUNTRY_NETHERLANDS_NAME,Netherlands,Netherlands,הולנד
+OS_MAP_COUNTRY_FINLAND_NAME,Finalnd,Finalnd,פינלנד
+OS_MAP_COUNTRY_GREECE_NAME,Greece,Greece,יוון
+OS_MAP_COUNTRY_GERMANY_NAME,Germany,Germany,גרמניה
+OS_MAP_COUNTRY_ISRAEL_NAME,Israel,Israel,ישראל
+OS_MAP_COUNTRY_UK_NAME,United Kingdom,United Kingdom,בריטניה
