@@ -125,7 +125,7 @@ class Exhibit:
 					if event.key == K_ESCAPE:
 						isGameRunning = False
 
-			if self.config.isTouch():
+			if self.config.isTouch() and platform.system() == 'Linux':
 				event = self.touchScreen.readUpDownEvent()
 				while event is not None:
 					if event['type'] == TouchScreen.DOWN_EVENT:
