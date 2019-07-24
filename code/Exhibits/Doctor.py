@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 import cv2
 import time
+import sys
 
 from common.Exhibit import Exhibit
 from common.VideoScene import VideoScene
@@ -14,13 +15,16 @@ from doctor.TestResultsScene import TestResultsScene
 from doctor.EvaluateScene import EvaluateScene
 from doctor.LearnMoreScene import LearnMoreScene
 
+EXTRA_CONFIG_FILENAME = 'assets/config/config-doctor.json'
+EXTRA_CONFIG_MOUSE_FILENAME = 'assets/config/config-doctor-mouse.json'
+
 class Doctor(Exhibit):
 	def __init__(self):
 		super().__init__()
 		self.isHealthy = True
 
-	def start(self):
-		super().start()
+	def start(self, extraConfigFilename):
+		super().start(extraConfigFilename)
 
 		for command in self.config.getInitSerialPortCommands():
 			self.sendToSerialPort(command)
@@ -59,4 +63,4 @@ class Doctor(Exhibit):
 			self.scene = OpeningScene(self)
 
 if __name__ == '__main__':
-	Doctor().start()
+	Doctor().start(EXTRA_CONFIG_MOUSE_FILENAME if len(sys.argv) == 2 and sys.argv[1] == '--mouse' else EXTRA_CONFIG_FILENAME)

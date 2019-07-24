@@ -1,0 +1,6 @@
+{
+	"touch": true,
+
+	"touchMaxX": 32767,
+	"touchMaxY": 32767
+}

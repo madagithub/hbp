@@ -3,9 +3,16 @@ import pyfribidi
 
 class Config:
 
-	def __init__(self, filename):
+	def __init__(self, filename, extraFilename=None):
 		with open(filename) as file:
 			self.config = json.load(file)
+
+		if extraFilename is not None:
+			with open(extraFilename) as file:
+				overrideConfig = json.load(file)
+
+			self.config.update(overrideConfig)
+
 		self.languagePrefix = self.config['defaultLanguage']
 		self.languageIndex = next(index for index in range(len(self.config['languages'])) if self.config['languages'][index]['prefix'] == self.languagePrefix)
 
@@ -46,8 +53,11 @@ class Config:
 	def isTouch(self):
 		return self.config['touch']
 
-	def getTouchDevice(self):
-		return self.config['touchDevice']
+	def setTouch(self, value):
+		self.config['touch'] = value
+
+	def getTouchDeviceName(self):
+		return self.config['touchDevicePartialName']
 
 	def getTouchScreenMaxX(self):
 		return self.config['touchMaxX']

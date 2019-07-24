@@ -54,7 +54,6 @@ class MapScene(Scene):
 		self.createTexts()
 
 	def onCountryClick(self, countryKey):
-		print("TRANSITION: ", countryKey)
 		self.game.transition('COUNTRY', countryKey)
 
 	def onLanguageChanged(self):

@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 import cv2
 import time
+import sys
 
 from common.Exhibit import Exhibit
 from common.VideoScene import VideoScene
@@ -11,12 +12,14 @@ from neuron.ChooseNeuronScene import ChooseNeuronScene
 from neuron.DrawNeuronScene import DrawNeuronScene
 from neuron.SummaryScene import SummaryScene
 
+EXTRA_CONFIG_FILENAME = 'assets/config/config-neuron.json'
+
 class Neuron(Exhibit):
 	def __init__(self):
 		super().__init__()
 
-	def start(self):
-		super().start()
+	def start(self, extraConfigFilename):
+		super().start(extraConfigFilename)
 		
 		self.scene = OpeningScene(self)
 
@@ -42,4 +45,4 @@ class Neuron(Exhibit):
 			self.scene = SummaryScene(self, data)
 
 if __name__ == '__main__':
-	Neuron().start()
+	Neuron().start(None if len(sys.argv) == 2 and sys.argv[1] == '--mouse' else EXTRA_CONFIG_FILENAME)
