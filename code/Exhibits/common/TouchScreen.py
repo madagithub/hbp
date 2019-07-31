@@ -10,9 +10,10 @@ class TouchScreen:
 	DOWN_EVENT = 'down'
 	UP_EVENT = 'up'
 
-	def __init__(self, name, bounds):
+	def __init__(self, name, bounds, resolution):
 		self.touchPartialName = name
 		self.touchScreenBounds = bounds
+		self.screenResolution = resolution
 		self.touchPos = None
 		self.eventQueue = Queue()
 		self.device = None
@@ -64,7 +65,7 @@ class TouchScreen:
 			# TODO: Change to read_one and alow thread to exit when marked
 			for event in self.device.read_loop():
 				if event.type == ecodes.SYN_REPORT:
-					pos = (int(currX * 1920 / self.touchScreenBounds[0]), int(currY * 1080 / self.touchScreenBounds[1]))
+					pos = (int(currX * self.screenResolution[0] / self.touchScreenBounds[0]), int(currY * self.screenResolution[1] / self.touchScreenBounds[1]))
 					if isUp:
 						print("TOUCH UP: ", pos)
 						self.eventQueue.put({'type': self.UP_EVENT, 'pos': pos})
