@@ -67,10 +67,8 @@ class TouchScreen:
 				if event.type == ecodes.SYN_REPORT:
 					pos = (int(currX * self.screenResolution[0] / self.touchScreenBounds[0]), int(currY * self.screenResolution[1] / self.touchScreenBounds[1]))
 					if isUp:
-						print("TOUCH UP: ", pos)
 						self.eventQueue.put({'type': self.UP_EVENT, 'pos': pos})
 					elif isDown:
-						print("TOUCH DOWN: ", pos)
 						self.eventQueue.put({'type': self.DOWN_EVENT, 'pos': pos})
 					else:
 						self.touchPos = pos
