@@ -56,7 +56,7 @@ class Config:
 	def setTouch(self, value):
 		self.config['touch'] = value
 
-	def getTouchDeviceName(self):
+	def getTouchDevicePartialName(self):
 		return self.config['touchDevicePartialName']
 
 	def getTouchScreenMaxX(self):

@@ -13,6 +13,7 @@ if platform.system() == 'Linux':
 
 from common.Config import Config
 from common.VideoScene import VideoScene
+from common.TouchScreen import TouchScreen
 
 from threading import Thread
 
@@ -130,7 +131,7 @@ class Exhibit:
 				while event is not None:
 					if event['type'] == TouchScreen.DOWN_EVENT:
 						self.scene.onMouseDown(event['pos'])
-					elif event['type'] == Touchscreen.UP_EVENT:
+					elif event['type'] == TouchScreen.UP_EVENT:
 						self.scene.onMouseUp(event['pos'])
 					event = self.touchScreen.readUpDownEvent()
 
