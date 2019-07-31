@@ -47,7 +47,7 @@ class Exhibit:
 		self.cursor = pygame.image.load('assets/images/cursor.png').convert_alpha()
 
 		if self.config.isTouch() and platform.system() == 'Linux':
-			self.touchScreen = TouchScreen(self.config.getTouchDevicePartialName(), (self.config.getTouchScreenMaxX(), self.config.getTouchScreenMaxY()). screenSize)
+			self.touchScreen = TouchScreen(self.config.getTouchDevicePartialName(), (self.config.getTouchScreenMaxX(), self.config.getTouchScreenMaxY()), screenSize)
 
 			if not self.touchScreen.setup():
 				self.config.setTouch(False)
