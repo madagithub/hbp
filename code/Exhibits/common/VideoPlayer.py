@@ -9,15 +9,38 @@ import time
 from queue import Queue
 from threading import Thread
 
+QUEUE_MAX_SIZE = 25
+
 class VideoPlayer:
-	def __init__(self, screen, filename, x, y, loop=False, soundFile=None):
+	@staticmethod
+	def preloadInitialFrames(filename):
+		frames = []
+		video = cv2.VideoCapture(filename)
+		video.set(cv2.CAP_PROP_POS_FRAMES, 0)
+
+		for i in range(QUEUE_MAX_SIZE):
+			(grabbed, frame) = video.read()
+			frames.append(VideoPlayer.processFrame(frame))
+
+		video.release()
+		return frames
+
+	@staticmethod
+	def processFrame(frame):
+		frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+		frame = np.fliplr(frame)
+		frame = np.rot90(frame)
+		return pygame.surfarray.make_surface(frame)
+
+	def __init__(self, screen, filename, x, y, loop=False, soundFile=None, initialFrames=None, fps=None):
 		self.screen = screen
 		self.x = x
 		self.y = y
 		self.loop = loop
+		self.initialFrames = initialFrames
 
 		self.video = cv2.VideoCapture(filename)
-		self.fps = 23 #self.video.get(cv2.CAP_PROP_FPS)
+		self.fps = fps if fps is not None else self.video.get(cv2.CAP_PROP_FPS)
 		print("Loading video: " + filename)
 		print("FPS: " + str(self.fps) + " ========")
 		self.singleFrameTime = 1 / self.fps
@@ -34,13 +57,23 @@ class VideoPlayer:
 		self.currFrame = None
 		self.videoStopped = False
 		self.canFinish = False
-		self.framesQueue = Queue(maxsize = 200)
+		self.framesQueue = Queue(maxsize = QUEUE_MAX_SIZE)
 		self.currTime = 0
 		self.video.set(cv2.CAP_PROP_POS_FRAMES, 0)
+
+		if self.initialFrames is not None:
+			for frame in self.initialFrames:
+				self.framesQueue.put(frame)
+			self.video.set(cv2.CAP_PROP_POS_FRAMES, len(self.initialFrames))
+		else:
+			for i in range(QUEUE_MAX_SIZE):
+				(grabbed, frame) = self.video.read()
+				self.framesQueue.put(VideoPlayer.processFrame(frame))
 	
 	def stop(self):
 		self.videoStopped = True
 		mixer.music.stop()
+		self.video.release()
 
 	def draw(self, dt):
 		if self.videoStopped:
@@ -53,10 +86,13 @@ class VideoPlayer:
 				self.blitFrame(self.currFrame)
 			return False
 		else:
-			self.currTime -= self.singleFrameTime
-			
+			frames = 0
+			while self.currTime >= self.singleFrameTime:
+				self.currTime -= self.singleFrameTime
+				frames += 1
 			if self.framesQueue.qsize() > 0:
-				self.currFrame = self.framesQueue.get()
+				for i in range(frames):
+					self.currFrame = self.framesQueue.get()
 				self.blitFrame(self.currFrame)
 			elif self.canFinish:
 				self.stop()
@@ -79,9 +115,8 @@ class VideoPlayer:
 
 			if self.videoStopped:
 				return
- 
+
 			if not self.framesQueue.full():
-				time.sleep(0.01)
 				(grabbed, frame) = self.video.read()
  
 				if not grabbed:
@@ -91,12 +126,8 @@ class VideoPlayer:
 						self.canFinish = True
 				else:
 					self.framesQueue.put(self.processFrame(frame))
-
-	def processFrame(self, frame):
-		frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-		frame = np.fliplr(frame)
-		frame = np.rot90(frame)
-		return pygame.surfarray.make_surface(frame).convert()
+			else:
+				time.sleep(self.singleFrameTime / 2)
 
 	def blitFrame(self, frame):
 		self.screen.blit(frame, (self.x, self.y))

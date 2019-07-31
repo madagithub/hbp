@@ -7,6 +7,7 @@ import sys
 
 from common.Exhibit import Exhibit
 from common.VideoScene import VideoScene
+from common.VideoPlayer import VideoPlayer
 
 from opening.OpeningScene import OpeningScene
 from opening.MapScene import MapScene
@@ -22,16 +23,27 @@ class Opening(Exhibit):
 	def start(self, extraConfigFilename):
 		super().start(extraConfigFilename)
 
+		self.preloadVideos()
+
 		self.scene = OpeningScene(self)
 
 		self.loop()
+
+	def preloadVideos(self):
+		self.initialVideoFrames = {}
+
+		for video in self.config.getOpeningVideos():
+			if video['type'] == 'VIDEO':
+				for language in self.config.getLanguages():
+					filename = video['file'][language['prefix']]
+					self.initialVideoFrames[filename] = VideoPlayer.preloadInitialFrames(filename)
 
 	def gotoHome(self):
 		self.scene = OpeningScene(self)
 
 	def transition(self, transitionId, data=None):
 		if transitionId == 'VIDEO':
-			self.scene = VideoScene(self, data['file'], 'START', data['soundFile'], data.get('hasBack', False))
+			self.scene = VideoScene(self, data['file'], 'START', data['soundFile'], data.get('hasBack', False), initialFrames=self.initialVideoFrames[data['file']], fps=data['fps'])
 		elif transitionId == 'INST_VIDEO':
 			self.scene = VideoScene(self, data['file'], 'COUNTRY', data['soundFile'], True, data['countryData'])
 		elif transitionId == 'START':

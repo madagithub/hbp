@@ -26,7 +26,7 @@ class OpeningScene(Scene):
 
 			callbackFunc = None
 			if video['type'] == 'VIDEO':
-				callbackFunc = partial(self.onVideoClick, video['file'], video.get('soundFile', None), True)
+				callbackFunc = partial(self.onVideoClick, video['file'], video.get('soundFile', None), True, video.get('fps', None))
 			elif video['type'] == 'MAP':
 				callbackFunc = self.onMapClick
 			elif video['type'] == 'CREDITS':
@@ -58,8 +58,9 @@ class OpeningScene(Scene):
 	def onCreditsClick(self):
 		self.game.transition('CREDITS')
 
-	def onVideoClick(self, file, soundFile, hasBack):
-		self.game.transition('VIDEO', {'file': file[self.config.languagePrefix], 'soundFile': soundFile, 'hasBack': hasBack})
+	def onVideoClick(self, file, soundFile, hasBack, fps):
+		self.game.transition('VIDEO', {'file': file[self.config.languagePrefix], 
+			'soundFile': None if soundFile is None else soundFile.get(self.config.languagePrefix, None), 'hasBack': hasBack, 'fps': None if fps is None else fps.get(self.config.languagePrefix, None)})
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()

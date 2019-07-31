@@ -6,7 +6,7 @@ from common.VideoPlayer import VideoPlayer
 from common.Button import Button
 
 class VideoScene(Scene):
-	def __init__(self, game, filename, endScene, soundFile=None, hasBack=False, endSceneData=None):
+	def __init__(self, game, filename, endScene, soundFile=None, hasBack=False, endSceneData=None, initialFrames=None, fps=None):
 		super().__init__(game)
 		self.endScene = endScene
 		self.endSceneData = endSceneData
@@ -20,7 +20,7 @@ class VideoScene(Scene):
 				image, tappedImage, None, None, None, None,
 				self.onBack)
 
-		self.video = VideoPlayer(self.screen, filename, 0, 0, loop=False, soundFile=soundFile)
+		self.video = VideoPlayer(self.screen, filename, 0, 0, loop=False, soundFile=soundFile, initialFrames=initialFrames, fps=fps)
 		self.video.play()
 
 	def onBack(self):

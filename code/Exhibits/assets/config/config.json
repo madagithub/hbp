@@ -1758,7 +1758,11 @@
 				"he": "assets/videos/opening/he-hbp.mp4",
 				"ar": "assets/videos/opening/ar-hbp.mp4"
 			},
-			"soundFile": "assets/videos/opening/en-hbp.ogg",
+			"soundFile": {
+				"en": "assets/videos/opening/en-hbp.ogg",
+				"he": "assets/videos/opening/en-hbp.ogg",
+				"ar": "assets/videos/opening/en-hbp.ogg"
+			},
 			"image": "hbp",
 			"tappedImage": "hbp",
 			"x": 0,
@@ -1772,7 +1776,16 @@
 				"he": "assets/videos/opening/he-whats-the-question.mp4",
 				"ar": "assets/videos/opening/ar-whats-the-question.mp4"
 			},
-			"soundFile": "assets/videos/opening/en-whats-the-question.ogg",
+			"soundFile": {
+				"en": "assets/videos/opening/en-whats-the-question.ogg",
+				"he": "assets/videos/opening/he-whats-the-question.ogg",
+				"ar": "assets/videos/opening/ar-whats-the-question.ogg"
+			},
+			"fps": {
+				"en": 23,
+				"ar": 23,
+				"he": 23
+			},
 			"image": "what-is-the-question",
 			"tappedImage": "what-is-the-question",
 			"x": 480,
@@ -1786,7 +1799,11 @@
 				"he": "assets/videos/opening/he-cajal.mp4",
 				"ar": "assets/videos/opening/ar-cajal.mp4"
 			},
-			"soundFile": "assets/videos/opening/en-cajal.ogg",
+			"soundFile": {
+				"en": "assets/videos/opening/en-cajal.ogg",
+				"he": "assets/videos/opening/en-cajal.ogg",
+				"ar": "assets/videos/opening/en-cajal.ogg"
+			},
 			"image": "cajal",
 			"tappedImage": "cajal",
 			"x": 960,
@@ -1808,7 +1825,11 @@
 				"he": "assets/videos/opening/he-brain-structures.mp4",
 				"ar": "assets/videos/opening/ar-brain-structures.mp4"
 			},
-			"soundFile": "assets/videos/opening/en-brain-structures.ogg",
+			"soundFile": {
+				"en": "assets/videos/opening/en-brain-structures.ogg",
+				"he": "assets/videos/opening/en-brain-structures.ogg",
+				"ar": "assets/videos/opening/en-brain-structures.ogg"
+			},
 			"image": "brain-structures",
 			"tappedImage": "brain-structures",
 			"x": 0,
@@ -1835,7 +1856,16 @@
 				"he": "assets/videos/opening/he-dancing-neuron.mp4",
 				"ar": "assets/videos/opening/ar-dancing-neuron.mp4"
 			},
-			"soundFile": "assets/videos/opening/en-dancing-neuron.ogg",
+			"soundFile": {
+				"en": "assets/videos/opening/en-dancing-neuron.ogg",
+				"he": "assets/videos/opening/en-dancing-neuron.ogg",
+				"ar": "assets/videos/opening/en-dancing-neuron.ogg"
+			},
+			"fps": {
+				"en": 23,
+				"he": 23,
+				"ar": 23
+			},
 			"image": "dancing-neuron",
 			"tappedImage": "dancing-neuron",
 			"x": 960,
