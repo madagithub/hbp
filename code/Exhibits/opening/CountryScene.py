@@ -63,7 +63,7 @@ class CountryScene(Scene):
 
 	def onPlayVideoClick(self):
 		baseFile = 'assets/videos/opening/map/' + self.institutions[self.institutionIndex]['video'] + '-' + self.config.languagePrefix
-		self.game.transition('INST_VIDEO', {'countryData': self.countryKey ,'file': baseFile + '.mp4', 'soundFile': baseFile + '.ogg'})
+		self.game.transition('INST_VIDEO', {'countryData': self.countryKey ,'file': baseFile + '.mp4', 'soundFile': baseFile + '.ogg', 'fps': self.institutions[self.institutionIndex]['fps']})
 
 	def onLanguageChanged(self):
 		super().onLanguageChanged()

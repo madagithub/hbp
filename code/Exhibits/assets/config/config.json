@@ -1843,6 +1843,11 @@
 				"he": "assets/videos/opening/he-10 Unanswered Questions About the Human Brain.mp4",
 				"ar": "assets/videos/opening/ar-10 Unanswered Questions About the Human Brain.mp4"
 			},
+			"soundFile": {
+				"en": "assets/videos/opening/en-10 Unanswered Questions About the Human Brain.ogg",
+				"he": "assets/videos/opening/en-10 Unanswered Questions About the Human Brain.ogg",
+				"ar": "assets/videos/opening/en-10 Unanswered Questions About the Human Brain.ogg"	
+			},
 			"image": "10-questions",
 			"tappedImage": "10-questions",
 			"x": 480,
@@ -4542,6 +4547,7 @@
 					"cityKey": "OS_MAP_P11_CITY",
 
 					"video": "P11",
+					"fps": 23,
 
 					"cityY": 618,
 					"descY": 675
@@ -4610,7 +4616,8 @@
 					"descriptionKey": "OS_MAP_P83_DESC",
 					"image": "P83",
 
-					"video": "P83"
+					"video": "P83",
+					"fps": 23
 				},
 				{
 					"mapX": 171,
@@ -4798,6 +4805,7 @@
 					"cityKey": "OS_MAP_P1_CITY",
 
 					"video": "P1",
+					"fps": 23,
 
 					"cityY": 618,
 					"descY": 675
@@ -4816,7 +4824,8 @@
 					"nameKey": "OS_MAP_P27_NAME",
 					"cityKey": "OS_MAP_P27_CITY",
 
-					"video": "P27"
+					"video": "P27",
+					"fps": 23
 				},
 				{
 					"mapX": 260,
@@ -5148,7 +5157,8 @@
 					"descriptionKey": "OS_MAP_P57_DESC",
 					"image": "P57",
 
-					"video": "P57"
+					"video": "P57",
+					"fps": 23
 				},
 				{
 					"mapX": 101,
@@ -5201,7 +5211,8 @@
 					"nameKey": "OS_MAP_P63_NAME",
 					"cityKey": "OS_MAP_P63_CITY",
 
-					"video": "P63"
+					"video": "P63",
+					"fps": 23
 				},
 				{
 					"mapX": 297,
@@ -5319,7 +5330,8 @@
 					"descriptionKey": "OS_MAP_P44_DESC",
 					"image": "P44",
 
-					"video": "P44"
+					"video": "P44",
+					"fps": 23
 				}
 			]
 		},
@@ -5351,7 +5363,8 @@
 					"descriptionKey": "OS_MAP_P68_DESC",
 					"image": "P68",
 
-					"video": "P68"
+					"video": "P68",
+					"fps": 23
 				},
 				{
 					"mapX": 321,
@@ -5391,7 +5404,8 @@
 					"nameKey": "OS_MAP_P93_NAME",
 					"cityKey": "OS_MAP_P93_CITY",
 
-					"video": "P93"
+					"video": "P93",
+					"fps": 23
 				},
 				{
 					"mapX": 650,

@@ -38,6 +38,13 @@ class Opening(Exhibit):
 					filename = video['file'][language['prefix']]
 					self.initialVideoFrames[filename] = VideoPlayer.preloadInitialFrames(filename)
 
+		print(self.config.getInstitutionVideoFilenames())
+		for videoFilename in self.config.getInstitutionVideoFilenames():
+			for language in self.config.getLanguages():
+				filename = 'assets/videos/opening/map/' + videoFilename + '-' + language['prefix'] + '.mp4'
+				print(filename)
+				self.initialVideoFrames[filename] = VideoPlayer.preloadInitialFrames(filename)
+
 	def gotoHome(self):
 		self.scene = OpeningScene(self)
 
@@ -45,7 +52,7 @@ class Opening(Exhibit):
 		if transitionId == 'VIDEO':
 			self.scene = VideoScene(self, data['file'], 'START', data['soundFile'], data.get('hasBack', False), initialFrames=self.initialVideoFrames[data['file']], fps=data['fps'])
 		elif transitionId == 'INST_VIDEO':
-			self.scene = VideoScene(self, data['file'], 'COUNTRY', data['soundFile'], True, data['countryData'])
+			self.scene = VideoScene(self, data['file'], 'COUNTRY', data['soundFile'], True, data['countryData'], initialFrames=self.initialVideoFrames[data['file']], fps=data['fps'])
 		elif transitionId == 'START':
 			self.scene = OpeningScene(self)
 		elif transitionId == 'MAP':

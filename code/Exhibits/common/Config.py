@@ -71,6 +71,17 @@ class Config:
 	def getInstitutions(self, countryKey):
 		return self.config['mapCountries'][countryKey]['institutions']
 
+	def getInstitutionVideoFilenames(self):
+		videoFilenames = []
+		countriesMap = self.config['mapCountries']
+		for countryKey in countriesMap.keys():
+			institutions = countriesMap[countryKey]['institutions']
+			for institution in institutions:
+				if institution.get('video', None) is not None:
+					videoFilenames.append(institution['video'])
+
+		return videoFilenames
+
 	def getMaxMapDotTapDistance(self):
 		return self.config['maxMapDotTapDistance']
 
