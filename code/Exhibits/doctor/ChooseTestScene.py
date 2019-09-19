@@ -1,8 +1,6 @@
 import pygame
 from pygame.locals import *
 
-import random
-
 from functools import partial
 
 from common.Scene import Scene
@@ -16,16 +14,16 @@ FIRST_TEST_SELECT_BUTTON_Y = 534
 FIRST_TEST_TEXT_MIDDLE = 244
 TEST_IMAGE_GAP = 444
 
-INDEX_TO_TEST_ID = ['COGNITIVE', 'PET', 'MRI']
+INDEX_TO_TEST_ID = ['COGNITIVE', 'MRI', 'PET']
 TEST_ID_TO_INDEX = {
 	'COGNITIVE': 0,
-	'PET': 1,
-	'MRI': 2
+	'MRI': 1,
+	'PET': 2,
 }
 
 TEST_DATA = [{'normal': 'cognitive-test.png', 'selected': 'cognitive-test-selected.png', 'healthy': 'results-cognitive-healthy.png', 'not-healthy': 'results-cognitive-not-healthy.png', 'name-key': 'DFAM_COGNITIVE_TEST_NAME', 'desc-key': 'DFAM_COGNITIVE_TEST_DESC'}, 
-	{'normal': 'pet-test.png', 'selected': 'pet-test-selected.png', 'healthy': 'results-pet-healthy.png', 'not-healthy': 'results-pet-not-healthy.png', 'name-key': 'DFAM_PET_TEST_NAME', 'desc-key': 'DFAM_PET_TEST_DESC'}, 
-	{'normal': 'mri-test.png', 'selected': 'mri-test-selected.png', 'healthy': 'results-mri-healthy.png', 'not-healthy': 'results-mri-not-healthy.png', 'name-key': 'DFAM_MRI_TEST_NAME', 'desc-key': 'DFAM_MRI_TEST_DESC'}]
+	{'normal': 'mri-test.png', 'selected': 'mri-test-selected.png', 'healthy': 'results-mri-healthy.png', 'not-healthy': 'results-mri-not-healthy.png', 'name-key': 'DFAM_MRI_TEST_NAME', 'desc-key': 'DFAM_MRI_TEST_DESC'},
+	{'normal': 'pet-test.png', 'selected': 'pet-test-selected.png', 'healthy': 'results-pet-healthy.png', 'not-healthy': 'results-pet-not-healthy.png', 'name-key': 'DFAM_PET_TEST_NAME', 'desc-key': 'DFAM_PET_TEST_DESC'}]
 
 #TODO: Unite with choose neuron scene
 class ChooseTestScene(Scene):

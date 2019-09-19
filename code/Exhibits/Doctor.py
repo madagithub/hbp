@@ -21,7 +21,7 @@ EXTRA_CONFIG_MOUSE_FILENAME = 'assets/config/config-doctor-mouse.json'
 class Doctor(Exhibit):
 	def __init__(self):
 		super().__init__()
-		self.isHealthy = True
+		self.isHealthy = False
 
 	def start(self, extraConfigFilename):
 		super().start(extraConfigFilename)
@@ -48,6 +48,7 @@ class Doctor(Exhibit):
 		elif transitionId == 'OPENING_VIDEO':
 			self.scene = VideoScene(self, 'assets/videos/doctor/patient-entering.mp4', 'EXPLANATION')
 		elif transitionId == 'CHOOSE':
+			self.chooseTestScene.onLanguageTapped(self.config.languageIndex)
 			self.scene = self.chooseTestScene
 		elif transitionId == 'RUN_TEST':
 			self.scene = TestInProgressScene(self, data)
