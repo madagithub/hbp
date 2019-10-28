@@ -8,6 +8,7 @@ import sys
 from common.Exhibit import Exhibit
 from common.VideoScene import VideoScene
 from common.VideoPlayer import VideoPlayer
+from common.Log import Log
 
 from opening.OpeningScene import OpeningScene
 from opening.MapScene import MapScene
@@ -15,17 +16,25 @@ from opening.CountryScene import CountryScene
 from opening.CreditsScene import CreditsScene
 
 EXTRA_CONFIG_FILENAME = 'assets/config/config-opening.json'
+LOG_FILE_PATH = 'opening.log'
 
 class Opening(Exhibit):
 	def __init__(self):
+		Log.init(LOG_FILE_PATH)
+		Log.info('INIT')
+
 		super().__init__()
 
 	def start(self, extraConfigFilename):
 		super().start(extraConfigFilename)
 
+		Log.info('PRELOAD_START')
 		self.preloadVideos()
+		Log.info('PRELOAD_DONE')
 
 		self.scene = OpeningScene(self)
+
+		Log.info('START')
 
 		self.loop()
 
@@ -36,14 +45,16 @@ class Opening(Exhibit):
 			if video['type'] == 'VIDEO':
 				for language in self.config.getLanguages():
 					filename = video['file'][language['prefix']]
+					Log.info('PRELOADING_VIDEO_START,' + filename)
 					self.initialVideoFrames[filename] = VideoPlayer.preloadInitialFrames(filename)
+					Log.info('PRELOADING_VIDEO_DONE,' + filename)
 
-		print(self.config.getInstitutionVideoFilenames())
 		for videoFilename in self.config.getInstitutionVideoFilenames():
 			for language in self.config.getLanguages():
 				filename = 'assets/videos/opening/map/' + videoFilename + '-' + language['prefix'] + '.mp4'
-				print(filename)
+				Log.info('PRELOADING_VIDEO_START,' + filename)
 				self.initialVideoFrames[filename] = VideoPlayer.preloadInitialFrames(filename)
+				Log.info('PRELOADING_VIDEO_DONE,' + filename)
 
 	def gotoHome(self):
 		self.scene = OpeningScene(self)

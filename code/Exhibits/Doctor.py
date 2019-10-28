@@ -3,9 +3,12 @@ from pygame.locals import *
 import cv2
 import time
 import sys
+import glob
 
 from common.Exhibit import Exhibit
 from common.VideoScene import VideoScene
+from common.Log import Log
+from common.VideoPlayer import VideoPlayer
 
 from doctor.OpeningScene import OpeningScene
 from doctor.ExplanationScene import ExplanationScene
@@ -17,9 +20,13 @@ from doctor.LearnMoreScene import LearnMoreScene
 
 EXTRA_CONFIG_FILENAME = 'assets/config/config-doctor.json'
 EXTRA_CONFIG_MOUSE_FILENAME = 'assets/config/config-doctor-mouse.json'
+LOG_FILE_PATH = 'doctor.log'
 
 class Doctor(Exhibit):
 	def __init__(self):
+		Log.init(LOG_FILE_PATH)
+		Log.info('INIT')
+
 		super().__init__()
 		self.isHealthy = False
 
@@ -30,10 +37,24 @@ class Doctor(Exhibit):
 			self.sendToSerialPort(command)
 			time.sleep(1)
 
+		Log.info('PRELOAD_START')
+		self.preloadVideos()
+		Log.info('PRELOAD_DONE')
+
 		self.chooseTestScene = ChooseTestScene(self, self.isHealthy)
 		self.scene = OpeningScene(self)
 
 		self.loop()
+
+	def preloadVideos(self):
+		self.initialVideoFrames = {}
+
+		videoFilenames = [f for f in glob.glob('assets/videos/doctor/*.mp4', recursive=False)]
+
+		for filename in videoFilenames:
+			Log.info('PRELOADING_VIDEO_START,' + filename)
+			self.initialVideoFrames[filename] = VideoPlayer.preloadInitialFrames(filename)
+			Log.info('PRELOADING_VIDEO_DONE,' + filename)
 
 	def gotoHome(self):
 		self.chooseTestScene = ChooseTestScene(self, self.isHealthy)
@@ -46,7 +67,8 @@ class Doctor(Exhibit):
 		if transitionId == 'EXPLANATION':
 			self.scene = ExplanationScene(self)
 		elif transitionId == 'OPENING_VIDEO':
-			self.scene = VideoScene(self, 'assets/videos/doctor/patient-entering.mp4', 'EXPLANATION')
+			videoFilename = 'assets/videos/doctor/patient-entering.mp4'
+			self.scene = VideoScene(self, videoFilename, 'EXPLANATION', initialFrames=self.initialVideoFrames[videoFilename])
 		elif transitionId == 'CHOOSE':
 			self.chooseTestScene.onLanguageTapped(self.config.languageIndex)
 			self.scene = self.chooseTestScene

@@ -4,6 +4,7 @@ from pygame.locals import *
 from common.Scene import Scene
 from common.VideoPlayer import VideoPlayer
 from common.Button import Button
+from common.Log import Log
 
 class VideoScene(Scene):
 	def __init__(self, game, filename, endScene, soundFile=None, hasBack=False, endSceneData=None, initialFrames=None, fps=None):
@@ -20,11 +21,13 @@ class VideoScene(Scene):
 				image, tappedImage, None, None, None, None,
 				self.onBack)
 
+		Log.info('PLAY_START,' + filename)
 		self.video = VideoPlayer(self.screen, filename, 0, 0, loop=False, soundFile=soundFile, initialFrames=initialFrames, fps=fps)
 		self.video.play()
 
 	def onBack(self):
 		self.video.stop()
+		Log.info('PLAY_STOPPED')
 		if self.endSceneData is not None:
 			self.game.transition(self.endScene, self.endSceneData)
 		else:
@@ -40,6 +43,7 @@ class VideoScene(Scene):
 
 	def draw(self, dt):
 		if self.video.draw(dt):
+			Log.info('PLAY_DONE')
 			if self.endSceneData is not None:
 				self.game.transition(self.endScene, self.endSceneData)
 			else:

@@ -9,6 +9,8 @@ import time
 from queue import Queue
 from threading import Thread
 
+from common.Log import Log
+
 QUEUE_MAX_SIZE = 25
 
 class VideoPlayer:
@@ -41,13 +43,10 @@ class VideoPlayer:
 
 		self.video = cv2.VideoCapture(filename)
 		self.fps = fps if fps is not None else self.video.get(cv2.CAP_PROP_FPS)
-		print("Loading video: " + filename)
-		print("FPS: " + str(self.fps) + " ========")
 		self.singleFrameTime = 1 / self.fps
 
 		self.shouldPlayAudio = False
 		if soundFile is not None:
-			print('load sound file:', soundFile)
 			mixer.music.load(soundFile)
 			self.shouldPlayAudio = True
 
@@ -92,7 +91,8 @@ class VideoPlayer:
 				frames += 1
 			if self.framesQueue.qsize() > 0:
 				for i in range(frames):
-					self.currFrame = self.framesQueue.get()
+					if self.framesQueue.qsize() > 0:
+						self.currFrame = self.framesQueue.get()
 				self.blitFrame(self.currFrame)
 			elif self.canFinish:
 				self.stop()
@@ -113,7 +113,7 @@ class VideoPlayer:
 	def readFrames(self):
 		while True:
 
-			if self.videoStopped:
+			if self.canFinish:
 				return
 
 			if not self.framesQueue.full():

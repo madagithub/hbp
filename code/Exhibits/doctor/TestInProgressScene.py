@@ -26,9 +26,10 @@ class TestInProgressScene(Scene):
 			self.timer = Timer(self.game.config.getTestRunTime(self.test), self.onTestDone)
 			self.progressBarAnimation = FrameAnimation('assets/images/doctor/loading/loading_', 18, 25)
 		else:
+			videoFilename = 'assets/videos/doctor/cognitive-test-healthy.mp4' if self.testProperties['isHealthy'] else 'assets/videos/doctor/cognitive-test-not-healthy.mp4'
 			self.cognitiveVideo = VideoPlayer(self.screen, 
-				'assets/videos/doctor/cognitive-test-healthy.mp4' if self.testProperties['isHealthy'] else 'assets/videos/doctor/cognitive-test-not-healthy.mp4', 
-				self.screen.get_width() // 2 - 756 // 2, self.screen.get_height() // 2 - 424 // 2, loop=False)
+				videoFilename, 
+				self.screen.get_width() // 2 - 756 // 2, self.screen.get_height() // 2 - 424 // 2, initialFrames=game.initialVideoFrames[videoFilename], loop=False)
 			self.cognitiveVideo.play()
 
 		self.createTexts()
