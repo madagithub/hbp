@@ -1,0 +1,332 @@
+{
+	"items": [
+		{
+			"key": "text_anchor",
+			"value": "left"
+		},
+		{
+			"key": "display_language",
+			"value": "Polski"
+		},
+		{
+			"key": "brain_regions",
+			"value": "Pasek z ośrodkami mózgu"
+		},
+		{
+			"key": "brain_functions",
+			"value": "Pasek funkcji"
+		},
+		{
+			"key": "visual_perception_title",
+			"value": "Wzrok"
+		},
+		{
+			"key": "visual_perception_body",
+			"value": "Ośrodki odbierające informacje z oczu jako pierwsze przetwarzają podstawowe dane o właściwościach widzianych obiektów. Bardziej zaawansowane ośrodki przetwarzają informacje o kolorze i ruchu oraz interpretują, co dokładnie widzimy i jak możemy wykorzystać tę informację."
+		},
+		{
+			"key": "auditory_perception_title",
+			"value": "Słuch"
+		},
+		{
+			"key": "auditory_perception_body",
+			"value": "Gdy przetwarzamy informacje zawarte w falach dźwiękowych docierających do mózgu z uszu, identyfikujemy podstawowe ich cechy, takie jak częstotliwość i natężenie. Potem przetwarzamy bardziej zaawansowane aspekty, takie jak źródło i sens: Czy ktoś do mnie mówi? Czy to muzyka?"
+		},
+		{
+			"key": "somatosensory_perception_title",
+			"value": "Dotyk"
+		},
+		{
+			"key": "somatosensory_perception_body",
+			"value": "Wszystkie wrażenia dotykowe – wibracja, ból, temperatura, a nawet „samoczucie” (umiejętność określenia położenia ręki bez patrzenia na nią) – docierają do mózgu z receptorów rozsianych po całym ciele."
+		},
+		{
+			"key": "taste_perception_title",
+			"value": "Smak"
+		},
+		{
+			"key": "taste_perception_body",
+			"value": "Nasz język rozróżnia pięć smaków (słodki, słony, kwaśny, gorzki i umami, czyli smak kwasu glutaminowego) oraz poziom pikantności. O reszcie wrażeń smakowych decyduje zmysł węchu (to dlatego nie jesteśmy w stanie docenić pełni smaku, gdy mamy zatkany nos). Informacje te przekazywane są do mózgu, który nadaje sens danemu smakowi. Różne smaki aktywują różne ośrodki w mózgu, zależnie od tego, czy są przyjemne, czy nieprzyjemne."
+		},
+		{
+			"key": "olfactory_perception_title",
+			"value": "Węch"
+		},
+		{
+			"key": "olfactory_perception_body",
+			"value": "Znajdujące się w nosie receptory dzielą się na ponad tysiąc (!) rodzajów, rozpoznających różne cząsteczki, które się do niego dostają. Informacje te przekazywane są do mózgu, który rozpoznaje zapach i nadaje mu sens. Różne zapachy uaktywniają różne ośrodki w mózgu, zależnie od tego, czy są przyjemne, czy nieprzyjemne."
+		},
+		{
+			"key": "motion_title",
+			"value": "Ruch"
+		},
+		{
+			"key": "motion_body",
+			"value": "Gdy podnosimy rękę, to właśnie mózg wysyła jej polecenie, by wykonała ruch. Każdy ruch angażuje wiele ośrodków w mózgu w procesach takich jak planowanie, precyzja, synchronizacja i dostosowanie ruchu do określonego celu. Procesy te nie wymagają nawet od nas szczególnej uwagi."
+		},
+		{
+			"key": "language_title",
+			"value": "Mowa"
+		},
+		{
+			"key": "language_body",
+			"value": "Mowa jest dla nas podstawowym sposobem komunikowania się. U większości ludzi ośrodki mowy znajdują się głównie po lewej stronie mózgu. Określone obszary mózgu odpowiadają za rozumienie mowy, artykulację i interpretację składni."
+		},
+		{
+			"key": "emotions_title",
+			"value": "Emocje"
+		},
+		{
+			"key": "emotions_body",
+			"value": "Wciąż jeszcze do końca nie wiemy, co dzieje się w mózgu, gdy odczuwamy określone emocje. Zidentyfikowano jednak sporo ośrodków mózgowych, które odpowiadają za ich przetwarzanie. Studiując te obszary, powoli zbliżamy się do rozwiązania zagadki."
+		},
+		{
+			"key": "consolidation_of_new_memories_title",
+			"value": "Utrwalanie nowych wspomnień"
+		},
+		{
+			"key": "consolidation_of_new_memories_body",
+			"value": "Nieustannie dociera do nas mnóstwo informacji, z których większość szybko zapominamy, zachowując tylko niewielką ich część. Mózg, a szczególnie hipokamp, decyduje o tym, która nowa informacja jest ważna i powinna zostać zachowana w pamięci, a która może być zapomniana."
+		},
+		{
+			"key": "working_memory_title",
+			"value": "Pamięć robocza"
+		},
+		{
+			"key": "working_memory_body",
+			"value": "Kiedyś nazywano ją „pamięcią krótkotrwałą”. Zawiera wszelkie informacje, jakich potrzebujemy, by wykonać aktualnie absorbujące nas zadania. Można porównać ją do biurka, przy którym odrabiamy lekcje. Podobnie jak nasze biurko, pamięć robocza ma ograniczoną przestrzeń i może przechowywać wyłączne informacje potrzebne nam w danej chwili. "
+		},
+		{
+			"key": "orientation_title",
+			"value": "Orientacja"
+		},
+		{
+			"key": "orientation_body",
+			"value": "Dzięki mózgowi całkiem nieźle orientujemy się w tym, gdzie aktualnie jesteśmy, co jest bliżej nas, a co dalej, a także jak dotrzeć z punktu A do punktu B. W hipokampie znajdują się komórki, które kodują naszą aktualną pozycję, co prawdopodobnie pomaga nam orientować się w przestrzeni."
+		},
+		{
+			"key": "hunger_and_satiety_title",
+			"value": "Głód i sytość"
+		},
+		{
+			"key": "hunger_and_satiety_body",
+			"value": "Jądra głodu i sytości w hipokampie odbierają z układu pokarmowego i wielu ośrodków w mózgu informacje na temat naszego aktualnego stanu i decydują o tym, czy generować uczucie głodu, czy sytości."
+		},
+		{
+			"key": "circadian_clocks_title",
+			"value": "Rytm okołodobowy"
+		},
+		{
+			"key": "circadian_clocks_body",
+			"value": "Nasz zegar biologiczny ulokowany jest w podwzgórzu i pomaga nam ustalić, czy jest dzień, czy noc, nawet bez sprawdzania, czy wzeszło słońce. Zegar ten reguluje się za pomocą światła słonecznego – to właśnie w ten sposób przestawiamy się na nowy, wyznaczany przez słońce rytm, gdy podróżujemy do innych krajów."
+		},
+		{
+			"key": "breath_and_heartbeat_regulation_title",
+			"value": "Regulacja oddechu i tętna"
+		},
+		{
+			"key": "breath_and_heartbeat_regulation_body",
+			"value": "Nasze serce i płuca nie pracują w sposób przypadkowy. Ich funkcjonowanie reguluje pień mózgu, który w miarę potrzeby spowalnia je lub przyspiesza. Na przykład gdy biegniemy, potrzebujemy dużo tlenu, więc mózg zwiększa tempo oddechu i bicia serca."
+		},
+		{
+			"key": "conscious_state_title",
+			"value": "Stan świadomości"
+		},
+		{
+			"key": "conscious_state_body",
+			"value": "Różne ośrodki w mózgu pracują inaczej, gdy czuwamy, a inaczej, gdy śpimy. Zmiany w ich aktywności powodują, że zasypiamy lub budzimy się. W przypadku niektórych zaburzeń świadomości, takich jak śpiączka czy stan wegetatywny, dochodzi do uszkodzenia tych ośrodków."
+		},
+		{
+			"key": "cortex_title",
+			"value": "Kora"
+		},
+		{
+			"key": "frontal_lobe_title",
+			"value": "Płat czołowy"
+		},
+		{
+			"key": "frontal_lobe_body",
+			"value": "Znajdujący się w przedniej części mózgu płat czołowy jest największym spośród czterech płatów. Ośrodki w nim zlokalizowane odpowiadają za wiele funkcji: kora ruchowa odpowiada za ruch, ośrodek Broki odpowiada za mowę, zaś kora przedczołowa jest ważna dla wyższych funkcji mózgu, takich jak myślenie strategiczne i podejmowanie decyzji."
+		},
+		{
+			"key": "motor_cortex_title",
+			"value": "Pierwotna kora ruchowa"
+		},
+		{
+			"key": "motor_cortex_body",
+			"value": "Ośrodek ten odpowiada za ruch. Polecenia powstające w pierwotnej korze ruchowej wysyłane są do rdzenia kręgowego, który przekazuje je dalej do mięśni, powodując ich napinanie się i rozluźnianie."
+		},
+		{
+			"key": "broca_area_title",
+			"value": "Ośrodek Broki"
+		},
+		{
+			"key": "broca_area_body",
+			"value": "To jeden z dwóch ośrodków w mózgu odpowiedzialnych za mowę. Zwykle znajduje się po lewej stronie mózgu i wpływa na składnię i artykulację (uszkodzenie tego ośrodka powoduje problemy z mówieniem, nie wpływając jednak na rozumienie innych). Badania przypisują również temu ośrodkowi funkcje inne niż językowe, takie jak przetwarzanie muzyki czy pamięć robocza."
+		},
+		{
+			"key": "prefrontal_cortex_title",
+			"value": "Kora przedczołowa"
+		},
+		{
+			"key": "prefrontal_cortex_body",
+			"value": "Jeden z najważniejszych ośrodków w mózgu. Odpowiada głównie za wyższe funkcje, takie jak podejmowanie decyzji, planowanie i zarządzanie, zachowania społeczne i racjonalne myślenie. Uczestniczy również w procesach uczenia się, zapamiętywania i skupiania uwagi. Badacze uważają, że odpowiada on za naszą inteligencję, charakter i osobowość. Różne choroby, w tym schizofrenię i autyzm, cechują zmiany w tym właśnie ośrodku."
+		},
+		{
+			"key": "parietal_lobe_title",
+			"value": "Płat ciemieniowy"
+		},
+		{
+			"key": "parietal_lobe_body",
+			"value": "Ważny płat kory mózgowej. Pełni szereg funkcji, od przetwarzania danych zmysłowych przesyłanych do kory somatosensorycznej po wyższe funkcje zachodzące w tylnej korze ciemieniowej."
+		},
+		{
+			"key": "somatosensory_cortex_title",
+			"value": "Kora somatosensoryczna"
+		},
+		{
+			"key": "somatosensory_cortex_body",
+			"value": "Odpowiada za przetwarzanie sygnałów dotykowych, a także bólu, wibracji i temperatury. Ośrodek ten odbiera informacje z receptorów rozsianych po całym ciele i przesyła je za pośrednictwem rdzenia kręgowego i pnia mózgu."
+		},
+		{
+			"key": "posterior_parietal_lobe_title",
+			"value": "Kora ciemieniowa tylna"
+		},
+		{
+			"key": "posterior_parietal_lobe_body",
+			"value": "Zawiera ośrodki odpowiedzialne za wyższe funkcje mózgu, takie jak koordynacja wzroku i dotyku oraz synchronizacja tych zmysłów z funkcjami motorycznymi. Uczestniczy w czynnościach związanych z matematyką i logiką, a także wyższych funkcjach, takich jak uwaga, pamięć robocza, pojęcia „jaźni” i przestrzeni."
+		},
+		{
+			"key": "occipital_lobe_title",
+			"value": "Płat potyliczny"
+		},
+		{
+			"key": "occipital_lobe_body",
+			"value": "Odpowiada za przetwarzanie informacji wzrokowych. Pierwotny ośrodek, do którego informacje trafiają w pierwszej kolejności i który dokonuje wstępnego przetwarzania właściwości widzianego obiektu, takich jak lokalizacja i orientacja. Bardziej zaawansowane ośrodki przetwarzają cechy takie jak ruch czy kolor. Informacje te przekazywane są następnie do dalszego przetwarzania w innych płatach."
+		},
+		{
+			"key": "temporal_lobe_title",
+			"value": "Płat skroniowy"
+		},
+		{
+			"key": "temporal_lobe_body",
+			"value": "Płat skroniowy znajduje się w bocznej części mózgu, za skrońmi. Odgrywa znaczącą rolę w przetwarzaniu informacji zmysłowych. Różne ośrodki w obrębie tego płatu odpowiadają za przetwarzanie informacji ze zmysłów wzroku, słuchu i węchu."
+		},
+		{
+			"key": "auditory_cortex_title",
+			"value": "Kora słuchowa"
+		},
+		{
+			"key": "auditory_cortex_body",
+			"value": "Odpowiedzialna jest za przetwarzanie danych słuchowych. Dzieli się na dwie części: ośrodek pierwotny jest obszarem, do którego najpierw trafiają informacje słuchowe i który przesyła je dalej do wtórnych ośrodków, odpowiadających za bardziej złożone funkcje słuchu, takie jak przetwarzanie muzyki."
+		},
+		{
+			"key": "wernicke_area_title",
+			"value": "Ośrodek Wernickego"
+		},
+		{
+			"key": "wernicke_area_body",
+			"value": "Jeden z dwóch ośrodków mowy w mózgu. Odpowiada za rozumienie mowy, lecz nie za jej artykulację. Pacjenci z uszkodzonym ośrodkiem Wernickego mogą normalnie mówić, lecz nie rozumieją, co mówią. Ośrodek ten występuje tylko po jednej stronie mózgu (zwykle po lewej)."
+		},
+		{
+			"key": "median_and_inferior_temporal_lobe_title",
+			"value": "Płat skroniowy przyśrodkowy i dolny"
+		},
+		{
+			"key": "median_and_inferior_temporal_lobe_body",
+			"value": "Ta część mózgu zawiera ośrodki odpowiedzialne za bardziej złożone przetwarzanie informacji wzrokowych, np. rozpoznawanie twarzy, przedmiotów i teł."
+		},
+		{
+			"key": "piriform_cortex_title",
+			"value": "Kora gruszkowata"
+		},
+		{
+			"key": "piriform_cortex_body",
+			"value": "Ta część kory mózgowej odpowiada za przetwarzanie informacji pochodzących ze zmysłu powonienia. Odbiera dane z organów węchowych. U ludzi ośrodek ten jest bardzo mały w porównaniu z innymi częściami mózgu, co może sugerować, że węch jest dla nas mniej ważny niż dla innych gatunków."
+		},
+		{
+			"key": "limbic_cortex_title",
+			"value": "Kora limbiczna"
+		},
+		{
+			"key": "limbic_cortex_body",
+			"value": "Steruje licznymi procesami behawioralnymi, między innymi zachowaniami społecznymi, przetwarzaniem emocji, motywacją, uczeniem się i zapamiętywaniem. Układ limbiczny składa się z jeszcze innych elementów, znajdujących się poza korą mózgową, takich jak ciało migdałowate i hipokamp."
+		},
+		{
+			"key": "insula_title",
+			"value": "Wyspa"
+		},
+		{
+			"key": "insula_body",
+			"value": "Ta część kory zaszyta jest głęboko w mózgu i nie widać jej z zewnątrz. Wyspa odpowiada za rozmaite uczucia, np. wstręt, oraz reakcje emocjonalne na bodźce zewnętrzne. Uczestniczy między innymi w monitorowaniu czynności organizmu, a także w wyższych procesach mózgowych."
+		},
+		{
+			"key": "gustatory_cortex_title",
+			"value": "Kora smakowa"
+		},
+		{
+			"key": "gustatory_cortex_body",
+			"value": "Ośrodek ten odpowiada za przetwarzanie informacji pochodzących ze zmysłu smaku. Informacje te napływają z receptorów smakowych znajdujących się w jamie ustnej (głównie na języku), przechodzą przez pień mózgu i wzgórze, na koniec trafiając do kory smakowej. Kora smakowa składa się z dwóch części: jedna jest zlokalizowana w wyspie, druga zaś u dołu płatu czołowego."
+		},
+		{
+			"key": "deep_nuclei_in_the_forebrain_title",
+			"value": "Jądra głębokie móżdżku"
+		},
+		{
+			"key": "hippocampus_title",
+			"value": "Hipokamp"
+		},
+		{
+			"key": "hippocampus_body",
+			"value": "Łacińskie słowo „hippocampus” oznacza konika morskiego, którego ta część mózgu przypomina kształtem. Hipokamp odgrywa ważną rolę w generowaniu, kodowaniu i przechowywaniu nowych wspomnień, w szczególności świadomych wspomnień wydarzeń i faktów. Hipokamp odgrywa również rolę w pamięci przestrzennej i orientacji."
+		},
+		{
+			"key": "amygdala_title",
+			"value": "Ciało migdałowate"
+		},
+		{
+			"key": "amygdala_body",
+			"value": "Niewielki ośrodek w głębi mózgu, który odgrywa ważną rolę w przetwarzaniu różnego rodzaju uczuć (szczególnie strachu). Ciało migdałowate ma dwojakie znaczenie: wpływa na wyższe czynności psychiczne powodowane emocjami oraz reguluje reakcje organizmu na emocje (np. podnosząc ciśnienie krwi i tętno)."
+		},
+		{
+			"key": "thalamus_title",
+			"value": "Wzgórze"
+		},
+		{
+			"key": "thalamus_body",
+			"value": "To „stacja przekaźnikowa” mózgu. Większość informacji, jakie docierają do kory mózgowej z ciała i innych miejsc w układzie nerwowym (np. informacje zmysłowe, poza zapachowymi), przechodzi najpierw przez wzgórze. Odbywa się tu wstępne przetwarzanie tych informacji przed przekazaniem ich do kory mózgowej."
+		},
+		{
+			"key": "hypothalamus_title",
+			"value": "Podwzgórze"
+		},
+		{
+			"key": "hypothalamus_body",
+			"value": "Podwzgórze nadzoruje niektóre spośród podstawowych czynności ciała. Reguluje głód i pragnienie oraz temperaturę ciała. Odpowiada też za rytm okołodobowy. Ma powiązania z licznymi ośrodkami w mózgu, aktywuje przysadkę mózgową oraz wydziela hormony wpływające na procesy zachodzące w całym organizmie."
+		},
+		{
+			"key": "basal_ganglia_title",
+			"value": "Jądra podstawne"
+		},
+		{
+			"key": "basal_ganglia_body",
+			"value": "Jądra podstawne odgrywają kluczową rolę w regulowaniu ruchu. Nieprawidłowości w ich działaniu mogą skutkować chorobą Parkinsona. Niedawno odkryto też, że biorą udział w procesach poznawczych niezwiązanych z ruchem. Jedną ze struktur w tym zgrupowaniu jest jądro półleżące, które odgrywa pewną rolę w układzie odpowiedzialnym za tzw. reinforcement learning (uczenie się przez wzmacnianie)."
+		},
+		{
+			"key": "cerebellum_title",
+			"value": "Móżdżek"
+		},
+		{
+			"key": "cerebellum_body",
+			"value": "Jeden z najbardziej tajemniczych i fascynujących ośrodków układu nerwowego. Pomimo że stanowi tylko 15% objętości mózgu, zawiera 60% neuronów. Na uwagę zasługują jego funkcje ruchowe, takie jak koordynacja, równowaga, precyzja i synchronizacja. Badania pokazują, że ma również udział w wyższych funkcjach, takich jak pamięć, uczenie się, podejmowanie decyzji i emocje."
+		},
+		{
+			"key": "brain_stem_title",
+			"value": "Pień mózgu"
+		},
+		{
+			"key": "brain_stem_body",
+			"value": "Ma zasadnicze znaczenie dla podstawowych funkcji organizmu i mózgu. Nadzoruje i reguluje działanie najważniejszych procesów, takich jak ciśnienie krwi, tętno i oddychanie. Odgrywa również znaczącą rolę w regulowaniu snu, czuwania oraz stanu świadomości. Steruje mięśniami twarzy i odpowiada za ośrodki związane z odruchami ustno-twarzowymi. Zawiera również ośrodek odpowiedzialny za łagodzenie bólu."
+		}
+	]
+}
