@@ -6,6 +6,7 @@ from functools import partial
 from common.Scene import Scene
 from common.Button import Button
 from common.Utilities import Utilities
+from common.Log import Log
 
 FIRST_TEST_IMAGE_X = 140
 FIRST_TEST_IMAGE_Y = 136
@@ -119,6 +120,8 @@ class ChooseTestScene(Scene):
 			self.game.transition('RUN_TEST', {'test': INDEX_TO_TEST_ID[index], 'isHealthy': self.isHealthy})
 
 	def onTestDone(self, test):
+		self.clearResetTimer()
+
 		testIndex = TEST_ID_TO_INDEX[test]
 		self.testsDone[testIndex] = True
 
@@ -138,6 +141,9 @@ class ChooseTestScene(Scene):
 		self.diagnoseButton.visible = not self.diagnoseQuestionOn
 
 	def onDiagnose(self):
+		Log.info('DIAGNOSE')
+		self.clearResetTimer()
+		
 		self.diagnoseQuestionOn = True
 		self.diagnoseButton.visible = False
 		self.diagnoseYesButton.visible = True

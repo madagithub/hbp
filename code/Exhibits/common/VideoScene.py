@@ -21,7 +21,7 @@ class VideoScene(Scene):
 				image, tappedImage, None, None, None, None,
 				self.onBack)
 
-		Log.info('PLAY_START,' + filename)
+		Log.info('PLAY_START', filename)
 		self.video = VideoPlayer(self.screen, filename, 0, 0, loop=False, soundFile=soundFile, initialFrames=initialFrames, fps=fps)
 		self.video.play()
 

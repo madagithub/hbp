@@ -6,6 +6,7 @@ import math
 
 from common.Scene import Scene
 from common.Button import Button
+from common.Log import Log 
 
 from common.Utilities import Utilities
 
@@ -47,21 +48,23 @@ class CountryScene(Scene):
 
 		self.createTexts()
 
-	def onCountryClick(self, countryKey):
-		self.map.transition('COUNTRY', countryKey)
-
 	def onNextInstitutionClick(self):
+		self.clearResetTimer()
 		self.institutionIndex = (self.institutionIndex + 1) % len(self.institutions)
+		self.logInstitution('NEXT_INSTITUTION')
 		self.loadInstitution()
 
 	def onPrevInstitutionClick(self):
+		self.clearResetTimer()
 		self.institutionIndex = (self.institutionIndex - 1) % len(self.institutions)
+		self.logInstitution('PREV_INSTITUTION')
 		self.loadInstitution()
 
 	def onCloseClick(self):
 		pass
 
 	def onPlayVideoClick(self):
+		self.clearResetTimer()
 		baseFile = 'assets/videos/opening/map/' + self.institutions[self.institutionIndex]['video'] + '-' + self.config.languagePrefix
 		self.game.transition('INST_VIDEO', {'countryData': self.countryKey ,'file': baseFile + '.mp4', 'soundFile': baseFile + '.ogg', 'fps': self.institutions[self.institutionIndex]['fps']})
 
@@ -100,8 +103,14 @@ class CountryScene(Scene):
 
 		return closestIndex
 
+	def logInstitution(self, message):
+		institution = self.institutions[self.institutionIndex]
+		Log.info(message, self.countryKey, institution['nameKey'])
+
 	def selectIndex(self, index):
+		self.clearResetTimer()
 		self.institutionIndex = index
+		self.logInstitution('SELECT_INSTITUTION')
 		self.loadInstitution()
 
 	def loadInstitution(self):

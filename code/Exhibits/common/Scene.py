@@ -5,6 +5,7 @@ from functools import partial
 
 from common.Button import Button
 from common.LanguageButton import LanguageButton
+from common.Log import Log
 
 from pyfribidi import *
 
@@ -17,6 +18,8 @@ LANGUAGE_TEXT_COLOR = [187, 187, 187]
 LANGUAGE_SELECTED_TEXT_COLOR = [249, 207, 71]
 
 BOTTOM_BAR_Y_OFFSET = 81
+
+TIME_TO_RESET = 5 * 60
 
 class Scene:
 	def __init__(self, game, isSmallScreen=False):
@@ -38,6 +41,7 @@ class Scene:
 
 		self.loadFonts()
 		self.createBottomBarButtons()
+		self.clearResetTimer()
 
 	def createBottomBarButtons(self):
 		homeNormal = pygame.image.load('assets/images/button-home-normal.png')
@@ -64,12 +68,17 @@ class Scene:
 			self.languageButtons.append(languageButton)
 
 	def onHomeTapped(self):
+		Log.info('HOME')
+		self.clearResetTimer() # For the current scene if it should return
 		self.game.gotoHome()
 
 	def onLanguageTapped(self, index):
+		lastLanguagePrefix = self.config.languagePrefix
 		self.config.changeLanguage(index)
+		Log.info('LANGUAGE', lastLanguagePrefix, self.config.languagePrefix)
 		self.loadFonts()
 		self.onLanguageChanged()
+		self.clearResetTimer()
 
 	def loadFonts(self):
 		languageData = self.config.getLanguage()
@@ -107,7 +116,15 @@ class Scene:
 	def onMouseMove(self, pos):
 		pass
 
+	def clearResetTimer(self):
+		self.timeToReset = TIME_TO_RESET
+
 	def draw(self, dt):
+		self.timeToReset -= dt
+		if self.timeToReset <= 0:
+			Log.info('TIME_RESET', str(TIME_TO_RESET))
+			self.onHomeTapped()
+
 		self.screen.blit(self.logo, (24, 24))
 
 		# Draw bottom bar

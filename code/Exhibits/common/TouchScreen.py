@@ -1,4 +1,6 @@
 import platform
+import sys
+import traceback
 from queue import Queue
 from threading import Thread
 
@@ -90,5 +92,7 @@ class TouchScreen:
 						currX = absEvent.event.value
 					elif absEvent.event.code == 1:
 						currY = absEvent.event.value
-		except e:
-			print(str(e))
+		except:
+			excType, excValue, excTraceback = sys.exc_info()
+			lines = traceback.format_exception(excType, excValue, excTraceback)
+			Log.error(lines.join('\n'))

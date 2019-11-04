@@ -1,0 +1,498 @@
+Key,en,pl
+RN_OPENING_SCREEN_HEADER,Neuron Under Construction,Neuron w budowie
+RN_OPENING_SCREEN_SUB_HEADER,You are invited to reconstruct your own neuron,Zapraszamy do rekonstrukcji własnego neuronu
+RN_OPENING_SCREEN_BUTTON_TEXT,Start,Start
+RN_CHOOSE_NEURON_INSTRUCTION,Select a neuron and reconstruct it as an active 3D model,Wybierz neuron i zrekonstruuj go jako aktywny model 3D
+RN_CHOOSE_NEURON_SELECT_BUTTON_TEXT,Select,Wybierz
+RN_CHOOSE_NEURON_PYRAMIDAL_NAME,Pyramidal Cell,Komórka piramidalna
+RN_CHOOSE_NEURON_BASKET_NAME,Basket Cell,Komórka koszykowa
+RN_CHOOSE_NEURON_MARTINOTTI_NAME,Martinotti Cell,Komórka Martinottiego
+RN_CHOOSE_NEURON_PYRAMIDAL_DESC,"Named after the pyramid shape of its body,
+the most common cell type in the cerebral
+cortex. The cell increases the activity of the
+cells it communicates with (Excitatory cell).","Jej nazwa pochodzi od piramidalnego kształtu. Jest najpowszechniej występującym typem komórki w korze mózgowej. Komórka ta zwiększa aktywność komórek, z którymi się komunikuje (komórka pobudzająca)."
+RN_CHOOSE_NEURON_BASKET_DESC,"Surrounds like a basket the body of the cells it
+communicates with and decreases their activity.
+(Inhibitory cell).","Niczym koszyk otacza komórki, z którymi się komunikuje, obniżając ich aktywność (komórka hamująca)."
+RN_CHOOSE_NEURON_MARTINOTTI_DESC,"A small cell with short branches. Named
+after the scientist who discovered it. The
+cell decreases the activity of the cells it
+communicates with (Inhibitory cell).","Niewielka komórka z krótkimi wypustkami. Nazwana nazwiskiem swojego odkrywcy. Komórka ta obniża aktywność komórek, z którymi się komunikuje (komórka hamująca)."
+RN_DRAWING_SCREEN_NEURON_INSTRUCTION,Follow the dotted line with your finger to reconstruct the neuron,"Prześledź palcem kropkowaną linię, aby zrekonstruować neuron."
+RN_DRAWING_SCREEN_LIGHTNING_INSTRUCTION,"Great, you reconstructed a 3D model of the cell structure.
+Press on the lightning and activate the cell","Brawo! Zrekonstruowałeś trójwymiarowy model budowy komórki. Naciśnij symbol błyskawicy, by aktywować komórkę."
+RN_DRAWING_SCREEN_3D_MODEL_EXPLANATION,"Reconstructing the cell structure:
+In this stage you marked a real neuron in a biological brain slice.
+Based on your marking, the
+computer created a digital structure of the neuron.",Rekonstrukcja budowy komórki: w tej części doświadczenia zaznaczyłeś prawdziwy neuron na preparacie mikroskopowym mózgu. Na podstawie twojego zaznaczenia komputer stworzył cyfrową strukturę neuronu. 
+RN_DRAWING_SCREEN_LIGHTNING_EXPLANATION,"Activating the cell:
+In this stage you added electricity to the structure of the digital cell and activated it.",Aktywacja komórki: w tej części doświadczenia doprowadziłeś do cyfrowej komórki impuls elektryczny i aktywowałeś ją.
+RN_DRAWING_SCREEN_CONTINUE_BUTTON_TEXT,Next,Dalej
+RN_SUMMARY_SCREEN_HEADER,Congratulations!,Gratulacje!
+RN_SUMMARY_SCREEN_SUB_HEADER,You have reconstructed an active 3D model of a nerve cell,Zrekonstruowałeś aktywny trójwymiarowy model komórki nerwowej.
+RN_SUMMARY_SCREEN_SUMMARY_HEADER,Why do we need to model a cell?,Po co modelujemy komórki?
+RN_SUMMARY_SCREEN_SUMMARY_TEXT,"The brain is composed by cells. After modeling many cells, we can create a whole digital brain, and perform experiments
+on it that cannot be done on humans. For instance, we can cause the digital brain to have the Alzheimer's disease, and then we can discover what the brain activity is during the disease. Hopefully, a digital model of the brain will provide the breakthrough to develop medication that will change the lives of many patients.","Mózg składa się z komórek. Po wymodelowaniu wielu komórek możemy stworzyć cały cyfrowy mózg i przeprowadzać eksperymenty, których nie możemy prowadzić na ludziach. Możemy na przykład sprawić, że nasz cyfrowy mózg zachoruje na chorobę Alzheimera, a potem badać jego aktywność w przebiegu choroby. Mamy nadzieję, że cyfrowy model mózgu pozwoli stworzyć przełomowy lek, który zmieni życie wielu pacjentów."
+RN_SUMMARY_SCREEN_DRAWING_TEXT,Brain cell tissue,Tkanka mózgowa
+RN_SUMMARY_SCREEN_MODELING_TEXT,Reconstructing the cell structure,Rekonstrukcja budowy komórki
+RN_SUMMARY_SCREEN_ELECTRIFY_TEXT,Activating the cell,Aktywacja komórki
+RN_SUMMARY_SCREEN_ANOTHER_NEURON_BUTTON_TEXT,Reconstruct another cell,Rekonstrukcja kolejnej komórki
+DFAM_OPENING_SCREEN_HEADER,Doctor for a moment,Zabawa w doktora
+DFAM_OPENING_SCREEN_SUB_HEADER,"You have an opportunity to be a doctor
+Tap the button and meet your new patient","Masz okazję być przez chwilę lekarzem. Naciśnij przycisk, by poznać swojego nowego pacjenta. "
+DFAM_OPENING_SCREEN_BUTTON_TEXT,Start,Start
+DFAM_EXP_SCREEN_BUTTON_TEXT,Continue,Dalej
+DFAM_EXP_SCREEN_HEADER_TEXT,Your new patient describes a state of confusion and forgetfulness.          Does he have Alzheimer's disease?,Twój nowy pacjent opisuje stan dezorientacji i zawodnej pamięci. Czy cierpi na chorobę Alzheimera?
+DFAM_EXP_SCREEN_INFO_TEXT,"To diagnose him, you need to carry out a number of tests.
+In Alzheimer's the neurons in the brain die gradually, causing damage to cognitive abilities such as memory, orientation, and more.","By go zdiagnozować, musisz przeprowadzić serię badań. W chorobie Alzheimera neurony w mózgu stopniowo obumierają, co pogarsza zdolności poznawcze, takie jak pamięć, orientacja itp."
+DFAM_CHOOSE_TEST_INSTRUCTION,Select the test you wish to conduct on the patiant,"Wybierz badanie, któremu chcesz poddać pacjenta."
+DFAM_CHOOSE_TEST_SELECT_BUTTON_TEXT,Run test,Rozpocznij badanie
+DFAM_COGNITIVE_TEST_NAME,Cognitive tests,Testy kognitywne
+DFAM_COGNITIVE_TEST_DESC,"Cognitive tests are a list of tasks testing the
+performance of various brain functions",Testy kognitywne to seria zadań sprawdzających działanie różnych funkcji mózgu
+DFAM_PET_TEST_NAME,PET test,Badanie PET
+DFAM_PET_TEST_DESC,"A PET (Positron Emission Tomography) test is a scan of the brain measuring the concentration of particular substances. For instance, a PET scan can search for beta-amyloid plaques, which are
+common only among Alzheimerג€™s patients.","Badanie PET (pozytonowa tomografia emisyjna) polega na skanowaniu mózgu pod kątem stężeń określonych substancji. Badanie PET może na przykład służyć do poszukiwania płytek beta-amyloidowych, których obecność jest typowa dla pacjentów z chorobą Alzheimera."
+DFAM_MRI_TEST_NAME,MRI test,Badanie MRI
+DFAM_MRI_TEST_DESC,"An MRI (Magnetic Resonance Imaging) test is a scan of the brain using radio waves and a strong magnetic field. The scan creates an
+image of the brain and the state it is in.",Badanie MRI (obrazowanie metodą rezonansu magnetycznego) polega na skanowaniu mózgu za pomocą fal radiowych i silnego pola magnetycznego. Skan tworzy obraz mózgu i jego stanu.
+DFAM_TEST_IN_PROGRESS_HEADER_MRI,An MRI scan is taking place,Trwa badanie MRI.
+DFAM_TEST_IN_PROGRESS_HEADER_PET,A PET scan is taking place,Trwa badanie PET.
+DFAM_TEST_IN_PROGRESS_HEADER_COGNITIVE,A cognitive test is taking place,Trwają testy kognitywne.
+DFAM_TEST_IN_PROGRESS_SUB_HEADER_MRI,Follow the process on the patient model,Śledź postęp na modelu pacjenta.
+DFAM_TEST_IN_PROGRESS_SUB_HEADER_PET,Follow the process on the patient model,Śledź postęp na modelu pacjenta.
+DFAM_TEST_RESULTS_HEADER_COGNITIVE,Cognitive test results,Wyniki testów kognitywnych
+DFAM_TEST_RESULTS_HEADER_PET,PET test results,Wyniki badania PET
+DFAM_TEST_RESULTS_HEADER_MRI,MRI test results,Wyniki badania MRI
+DFAM_TEST_RESULTS_DESC_COGNITIVE,"Drawing a clock requires mental abilities that are damaged by Alzheimer's, such as
+management, understanding numbers, knowledge retrieval and more.","Rysowanie zegara wymaga zdolności umysłowych, które choroba Alzheimera pogarsza, takich jak radzenie sobie, rozumienie liczb, przywoływanie wiedzy itd."
+DFAM_TEST_RESULTS_DESC_PET,"Brains of Alzheimer's patients show many plaques of beta-amyloid protein that are not found in the brains of healthy people. If we mark these plaques with radioactive materials and conduct a PET scan, we would expect to see many areas with high concentration (in red and yellow).","Mózgi pacjentów z chorobą Alzheimera wykazują obecność dużej ilości ilości płytek białka zwanego beta-amyloidem, które nie występuje w mózgach osób zdrowych. Jeśli oznaczymy te płytki markerem radioaktywnym i przeprowadzimy badanie PET, zobaczymy obszary z dużą ich koncentracją (czerwone i żółte)."
+DFAM_TEST_RESULTS_DESC_MRI,"In Alzheimer's disease, cells die throughout the brain and the brain tissue becomes thin, containing less and less cells (and more and more black fissures in the brain).","W chorobie Alzheimera komórki obumierają w całym mózgu, co powoduje, że tkanka mózgowa staje się cieńsza i zawiera coraz mniej komórek (a coraz więcej czarnych bruzd)."
+DFAM_TEST_RESULTS_MORE_TESTS_BUTTON_TEXT,Run more tests,Przeprowadź więcej badań
+DFAM_TEST_RESULTS_HEALTHY_HEADER,Healthy patient,Zdrowy pacjent
+DFAM_TEST_RESULTS_RESULTS_HEADER,Test result,Wynik badania
+DFAM_CHOOSE_TEST_DONE_SELECT_BUTTON_TEXT,See results,Sprawdź wyniki
+DFAM_DIAGNOSE_BUTTON_TEXT,Diagnose,Diagnoza
+DFAM_DIAGNOSE_YES_BUTTON_TEXT,Yes,Tak
+DFAM_DIAGNOSE_NO_BUTTON_TEXT,No,Nie
+DFAM_DIAGNOSE_QUESTION_TEXT,Does the patient have Alzheimer's?,Czy pacjent cierpi na chorobę Alzheimera?
+DFAM_EVALUATION_SCREEN_CORRECT_HEADER,The diagnosis is correct,Diagnoza jest prawidłowa.
+DFAM_EVALUATION_SCREEN_INCORRECT_HEADER,"The diagnosis is incorrect, please try again",Diagnoza jest nieprawidłowa. Spróbuj jeszcze raz.
+DFAM_EVALUATION_SCREEN_HEALTHY_HEADER,The patient does not have Alzheimer's,Pacjent nie cierpi na chorobę Alzheimera.
+DFAM_EVALUATION_SCREEN_NOT_HEALTHY_HEADER,The patient has Alzheimer's,Pacjent cierpi na chorobę Alzheimera.
+DFAM_EVALUATION_ANOTHER_PATIENT_TEXT,Accept the next patient,Przyjmij kolejnego pacjenta
+DFAM_EVALUATION_LEARN_MORE_TEXT,Learn more,Dowiedz się więcej
+DFAM_LEARN_MORE_BACK_BUTTON_TEXT,Back,Wstecz
+DFAM_LEARN_MORE_HEALTHY_DESC_TEXT,"The tests do not seem to indicate the patient
+has Alzheimer's.
+The MRI scan shows a normal brain. In Alzheimer's, cells die throughout the brain so that the brain tissue becomes thin, unlike the case of our patient.
+
+Many abilities related to drawing a clock, such as knowledge retrieval and management, are impaired in Alzheimer's patients. However, our patient was able to draw a clock properly.
+
+The PET scan indicating beta-amyloid plaques very common among Alzheimer's patients (but not in healthy
+brains) showed no red concentrations at all.
+Meaning, there are no beta-amyloid plaques in our patient's brain, as opposed to what we would expect to find in an Alzheimer's patient.","Badania nie wydają się potwierdzać, że pacjent ma chorobę Alzheimera. 
+
+Badanie MRI pokazuje normalny stan mózgu. W chorobie Alzheimera komórki obumierają w całym mózgu, prowadząc do zmniejszenia grubości tkanki mózgowej, co nie ma miejsca w przypadku naszego pacjenta. 
+
+Wiele zdolności wymaganych przy rysowaniu zegara, takich jak przywoływanie wiedzy i jej wykorzystywanie, ulega pogorszeniu u pacjentów z chorobą Alzheimera. Nasz pacjent jednak dobrze radził sobie z rysowaniem zegara.
+
+Badanie PET wykrywające płytki beta-amyloidowe, typowe dla chorych na chorobę Alzheimera (lecz nie dla zdrowego mózgu), nie wykazało żadnych czerwonych obszarów. Oznacza to, że w mózgu pacjenta nie ma płytek beta-amyloidowych, których spodziewalibyśmy się u pacjenta z chorobą Alzheimera.              "
+DFAM_LEARN_MORE_NOT_HEALTHY_DESC_TEXT,"Our patient does have Alzheimer's.
+The MRI scan showed that the brain tissue is very thin because of the extensive death of neuron cells that takes place in Alzheimer's disease.
+
+The death of the cells damages various brain abilities such as management and knowledge retrieval. For this reason the patient was unable to draw a clock properly.
+
+The PET scan marked plaques of beta-amyloid that are very common in Alzheimers patients (but not in
+healthy brains), showing many red and yellow concentrations. These areas show a high concentration of
+beta-amyloid.","Nasz pacjent rzeczywiście cierpi na chorobę Alzheimera.
+
+Badanie MRI wykazało, że tkanka mózgowa jest bardzo cienka za sprawą masowego obumierania neuronów, typowego dla choroby Alzheimera.
+
+Obumieranie komórek obniża różne zdolności mózgu, takie zarządzanie i przywoływanie wiedzy. Dlatego pacjent nie radził sobie z rysowaniem zegara.
+
+Badanie PET wykryło płytki beta-amyloidowe, bardzo typowe dla pacjentów z chorobą Alzheimera (lecz nie dla zdrowego mózgu). Na skanie pojawiły się liczne czerwone i żółte obszary, świadczące o wysokim stężeniu beta-amyloidu."
+OS_HBP_TEXT,About the Human Brain Project,O Human Brain Project
+OS_WHAT_IS_THE_QUESTION_TEXT,"What's the question?!
+Conversations of young researchers","Jak brzmi pytanie?!
+Rozmowy z młodymi badaczami"
+OS_CAJAL_TEXT,Santiago Ramón y Cajal,Santiago Ramón y Cajal
+OS_MAP_TEXT,"The Human Brain Project
+in Europe",Human Brain Project w Europie
+OS_BRAIN_STRUCTURES_MAP_TEXT,"Brain structures
+Laboratory findings","Struktury mózgu
+Ustalenia laboratoryjne"
+OS_10_QUESTIONS_TEXT,10 unanswered questions about the human brain,"10 pytań o ludzki mózg, które pozostają bez odpowiedzi"
+OS_DANCING_NEURON_TEXT,The Electrically Dancing Neuron,Elektryczny taniec neuronu
+OS_MTB_TEXT,Credits,Autorzy
+OS_MAP_SELECT_DOT_INSTRUCTIONS,Select any dot on the map to learn more,Wybierz dowolną kropkę na mapie i dowiedz się więcej
+OS_MAP_PLAY_VIDEO_BUTTON_TEXT,Play video,Odtwórz wideo
+OS_MAP_P1_NAME,The Federal Institute of Technology in Lausanne,Politechnika Federalna w Lozannie
+OS_MAP_P1_CITY,"Lausanne, Switzerland","Lozanna, Szwajcaria"
+OS_MAP_P2_NAME,Aalto University Foundation,Fundacja Uniwersytetu Aalto
+OS_MAP_P2_CITY,"Espoo, Finland","Espoo, Finlandia"
+OS_MAP_P3_NAME,University Hospital Leiden - Leiden University Medical Center,Szpital Uniwersytecki w Lejdzie – Centrum Medyczne Uniwersytetu w Lejdzie
+OS_MAP_P3_CITY,"Leiden, The Netherlands","Lejda, Holandia"
+OS_MAP_P4_NAME,Athens University of Economics and Business,Ateński Uniwersytet Ekonomiczno-Biznesowy (AUEB)
+OS_MAP_P4_CITY,"Athens, Greece","Ateny, Grecja"
+OS_MAP_P4_DESC,"The Data Science group at the AUEB conducts research on and builds services for aligning, cleaning, integrating, and enriching clinical data from participating hospitals so as to be imported to the Medical Informatics Platform of the HBP. The group also works on Big Data processing and Data Management for Machine Learning.","Zespół Data Science przy AUEB prowadzi badania i świadczy usługi w zakresie dostosowywania, oczyszczania, integrowania i wzbogacania danych klinicznych pochodzących ze współpracujących szpitali, które następnie zasilają Platformę Informatyki Medycznej HBP. Zespół ten pracuje również nad przetwarzaniem big data oraz zarządzaniem danymi na potrzeby uczenia maszynowego."
+OS_MAP_P5_NAME,National Supercomputing Center,Krajowe Centrum Superobliczeniowe (BSC)
+OS_MAP_P5_CITY,"Barcelona, Spain","Barcelona, Hiszpania"
+OS_MAP_P5_DESC,"BSC is the Spanish National facility for
+supercomputing, specializes in High Performance Computing and hosts MareNostrum, one of the most powerful supercomputers in Europe. BSC contributes
+towards the creation of the HPAC Platform,
+providing supercomputing capacities for the
+Neuroscience Community and developing the FENIX infrastructure for the benefit of HBP users.","BSC jest hiszpańską krajową jednostką superkomputerową. Specjalizuje się w obliczeniach wysokiej wydajności (HPC) i dysponuje MareNostrum, jednym z najpotężniejszych superkomputerów w Europie. BSC ma udział w tworzeniu platformy HPAC, zapewniającej moce superobliczeniowe na potrzeby społeczności neuronaukowej, a także tworzy infrastrukturę FENIX dla użytkowników HBP."
+OS_MAP_P6_NAME,"Bauhaus University, Weimar",Uniwersytet Bauhaus w Weimarze
+OS_MAP_P6_CITY,"Weimar, Germany","Weimar, Niemcy"
+OS_MAP_P7_NAME,The University of Wuppertal (BUW),Uniwersytet w Wuppertalu (BUW)
+OS_MAP_P7_CITY,"Wuppertal, Germany","Wuppertal, Niemcy"
+OS_MAP_P7_DESC,"The High Performance Computing group at the BUW works on the development and improvement of numerical methods used in the simulation engines that are developed in the HBP, such as the spiking neural network simulator NEST. Present achievements are the inclusion of gap junctions and rate models in the NEST simulator.","Zespół Obliczeń Wysokiej Wydajności przy Uniwersytecie w Wuppertalu zajmuje się opracowywaniem i usprawnianiem metod obliczeniowych stosowanych w silnikach symulacyjnych rozwijanych w ramach HBP, takich jak symulator wzbudzania sieci neuronowych NEST. Aktualne osiągnięcia to włączenie do symulatora NEST połączeń szczelinowych i modeli częstości aktywacji."
+OS_MAP_P8_NAME,The Bloomfield Science Museum Jerusalem (BSMJ),Bloomfield Science Museum w Jerozolimie (BSMJ)
+OS_MAP_P8_CITY,"Jerusalem, Israel","Jerozolima, Izrael"
+OS_MAP_P8_DESC,"BSMJ is an informal cultural and educational
+institution, serving all sectors of society. It
+develops and creates interactive exhibitions
+presenting science and technology, and integrates them into a range of activities. In HBP, BSMJ promotes ways to engage brain research to the public such as developing an interactive traveling exhibition.","BSMJ jest nieformalną instytucją kulturalną i edukacyjną, służącą wszystkim segmentom społeczeństwa. Opracowuje i tworzy interaktywne wystawy prezentujące naukę i technikę oraz włącza je do różnego rodzaju działań. W projekcie HBP BSMJ promuje metody przybliżania badań nad mózgiem szerszej publiczności, takie jak objazdowa ekspozycja interaktywna."
+OS_MAP_P9_NAME,Cardiff University,Uniwersytet w Cardiff
+OS_MAP_P9_CITY,"Cardiff, United Kingdom","Cardiff, Wielka Brytania"
+OS_MAP_P10_NAME,The Scientific Research National Center,Krajowe Centrum Badań Naukowych
+OS_MAP_P10_CITY,"Paris, France","Paryż, Francja"
+OS_MAP_P11_NAME,"The Office of Atomic Energy and
+Alternative Energies",Urząd ds. Energii Jądrowej i Energii Alternatywnych
+OS_MAP_P11_CITY,"Paris, France","Paryż, Francja"
+OS_MAP_P12_NAME,The National Research Council,Narodowa Rada ds. Badań
+OS_MAP_P12_CITY,"Palermo, Italy","Palermo, Włochy"
+OS_MAP_P12_DESC,"The Institute of Biophysics of the National
+Research Council is located in Palermo (Italy). In HBP we are deeply involved in the development of a detailed, data-driven, full scale 3D computational model of the rodent and human hippocampus, and in the implementation and management of the European Brain Research Infrastructure.","Instytut Biofizyki przy Narodowej Radzie ds. Badań ma siedzibę w Palermo we Włoszech. W projekcie HBP jesteśmy mocno zaangażowani w opracowanie szczegółowego, bazującego na danych, pełnowymiarowego modelu obliczeniowego hipokampu u gryzoni i ludzi, jak też we wdrażanie oraz zarządzanie Europejską Infrastrukturą Badań nad Mózgiem."
+OS_MAP_P13_NAME,The Italian Supercomputing Centre,Włoskie Centrum Superobliczeniowe
+OS_MAP_P13_CITY,"Bologna, Italy","Bolonia , Włochy"
+OS_MAP_P13_DESC,"The Italian supercomputing centre CINECA provides high performance computing and data services for the Italian and the European research community. For the Human Brain Project, it fosters the federation of data and scalable compute services to address the analytics needs of the neuroscience community.","Włoskie Centrum Superobliczeniowe (CINECA) zapewnia włoskiej i ogólnoeuropejskiej społeczności badaczy usługi obliczeniowe wysokiej wydajności oraz usługi przetwarzania danych. W projekcie Human Brain Project zajmuje się federacją danych i skalowalnymi usługami obliczeniowymi, wychodząc naprzeciw potrzebom analitycznym społeczności neuronaukowej."
+OS_MAP_P14_NAME,Technical University of Denmark,Duński Uniwersytet Techniczny
+OS_MAP_P14_CITY,"Kongens Lyngby, Denmark","Kongens Lyngby, Dania"
+OS_MAP_P15_NAME,University of Debrecen,Uniwersytet w Debreczynie
+OS_MAP_P15_CITY,"Debrecen, Hungary","Debreczyn, Węgry"
+OS_MAP_P16_NAME,De Montfort University,Uniwersytet De Montfort
+OS_MAP_P16_CITY,"Leicester, United Kingdom","Leicester, Wielka Brytania"
+OS_MAP_P17_NAME,École Normale Supérieure,École Normale Supérieure
+OS_MAP_P17_CITY,"Paris, France","Paryż, Francja"
+OS_MAP_P18_NAME,The Swiss Federal Institute of Technology,Politechnika Federalna w Zurychu (ETHZ)
+OS_MAP_P18_CITY,"Zürich, Switzerland","Zurych, Szwajcaria"
+OS_MAP_P18_DESC,"CSCS is an autonomous unit of the Swiss Federal Institute of Technology in Zurich. CSCS provides scientists with the computing infrastructure and
+ xpertise, from cutting-edge super-computers to a full range of services related to HPC. ETHZ is co-leading in HBP the High-Performance Analytics and Computing Platform and coordinates the
+ 'Integration and operation' WP.","CSCS jest autonomiczną jednostką Politechniki Federalnej w Zurychu. CSCS zapewnia naukowcom infrastrukturę obliczeniową, wiedzę i doświadczenie, superkomputery i pełny zakres usług związanych z HPC. W ramach HBP ETHZ współkieruje Platformą Analityki i Obliczeń Wysokiej Wydajności oraz koordynuje „integrację i działanie” WP."
+OS_MAP_P19_NAME,The Danish Board of Technology Foundation,Fundacja Duńskiej Rady ds. Technologii
+OS_MAP_P19_CITY,"Hvidovre, Denmark","Hvidovre, Dania"
+OS_MAP_P19_DESC,"The Danish Board of Technology Foundation is part of HBP's 'Ethics and Society' group, facilitating dialogue with publics, stakeholders and the HBP on
+social, ethical, legal issues related to HBP
+research. The Foundation's mission is to ensure that society's development is shaped by informed and forward-looking cooperation between citizens, experts, stakeholders, and decision-makers.","Fundacja Duńskiej Rady ds. Technologii jest częścią zespołu „Etyka i Społeczeństwo” w ramach HBP. Ułatwia dialog między opinią publiczną, interesariuszami oraz HBP w sprawach społecznych, etycznych i prawnych związanych z badaniami HBP. Misją Fundacji jest zapewnienie rozwoju społecznego w drodze świadomej i zorientowanej na przyszłość współpracy między obywatelami, ekspertami, interesariuszami i decydentami. "
+OS_MAP_P20_NAME,Forschungszentrum Jülich,Forschungszentrum Jülich
+OS_MAP_P20_CITY,"J?ֳ¼lich, Germany","Jülich, Niemcy"
+OS_MAP_P20_DESC,"Forschungszentrum Jülich is a multi-disciplinary research institution and member of the Helmholtz Association. It contributes to the HBP with its Institute of Neuroscience and Medicine and the Jülich Supercomputing Centre. Neuroscientists and technical experts work together to build an infrastructure that enables high-resolution brain atlases, multi-scale simulation and data analysisworkflows.","Forschungszentrum Jülich jest multidyscyplinarną instytucją badawczą i członkiem Stowarzyszenia Helmholtz. Wspiera HBP za pośrednictwem swoich jednostek: Instytutu Neuronauki i Medycyny oraz Centrum Superobliczeniowego Jülich. Neuronaukowcy i technicy współpracują ze sobą, budując infrastrukturę umożliwiającą tworzenie atlasów mózgu, wieloskalowych symulacji i analiz danych."
+OS_MAP_P21_NAME,Fortiss GmbH,Fortiss GmbH
+OS_MAP_P21_CITY,"Munich, Germany","Monachium, Niemcy"
+OS_MAP_P22_NAME,"Fraunhofer-Gesellschaft for the
+Promotion of Applied Research",Fraunhofer-Gesellschaft na rzecz Promocji Badań Stosowanych
+OS_MAP_P22_CITY,"Darmstadt, Germany","Darmstadt, Niemcy"
+OS_MAP_P23_NAME,"Foundation Anna Sommer Champalimaud
+and Dr Carlos Montez Champalimaud",Fundacja Anny Sommer Champalimaud i dr. Carlosa Monteza Champalimauda
+OS_MAP_P23_CITY,"Lisbon, Portugal","Lizbona, Portugalia"
+OS_MAP_P24_NAME,"Heinrich-Heine-University, Düsseldorf",Uniwersytet Heinricha Heinego w Düsseldorfie
+OS_MAP_P24_CITY,"Düsseldorf, Germany","Düsseldorf, Niemcy"
+OS_MAP_P25_NAME,University of Helsinki,Uniwersytet Helsiński
+OS_MAP_P25_CITY,"Helsinki, Finland","Helsinki, Finlandia"
+OS_MAP_P26_NAME,Heidelberg Institute for Theoretical Studies (HITS),Instytut Studiów Teoretycznych w Heidelbergu (HITS)
+OS_MAP_P26_CITY,"Heidelberg, Germany","Heidelberg, Niemcy"
+OS_MAP_P26_DESC,"HITS is a private, non-profit research institute carrying out basic multidisciplinary computational research in fields ranging from molecular biology to astrophysics. Rebecca Wade and her research
+group are developing multiscale molecular modeling and simulation tools in the HBP Brain Simulation Platform, facilitating the design of new medicinesfor brain diseases.","HITS jest prywatnym niekomercyjnym instytutem badawczym prowadzącym podstawowe multidyscyplinarne badania obliczeniowe w dziedzinach od biologii molekularnej po astrofizykę. Rebecca Wade wraz ze swoim zespołem badawczym tworzy narzędzia wieloskalowego molekularnego modelowania i symulacji w ramach Platformy Symulacji Mózgu HBP, pomagając w tworzeniu nowych leków przeciwko chorobom mózgu."
+OS_MAP_P27_NAME,University Hospital Vaudois,Szpital Uniwersytecki Kantonu Vaud
+OS_MAP_P27_CITY,"Lausanne, Switzerland","Lozanna, Szwajcaria"
+OS_MAP_P28_NAME,"Imperial College of Science, Technology and Medicine","Imperial College of Science, Technology and Medicine"
+OS_MAP_P28_CITY,"London, United Kingdom","Londyn, Wielka Brytania"
+OS_MAP_P29_NAME,Brain and Spinal Cord Institute,Instytut Mózgu i Rdzenia Kręgowego
+OS_MAP_P29_CITY,"Paris, France","Paryż, Francja"
+OS_MAP_P30_NAME,"Institute of Experimental Medicine,
+Hungarian Academy of Sciences","Instytut Medycyny Eksperymentalnej, Węgierska Akademia Nauk"
+OS_MAP_P30_CITY,"Budapest, Hungary","Budapeszt, Węgry"
+OS_MAP_P31_NAME,Institute of Science and Technology Austria (IST),Austriacki Instytut Nauki i Techniki (IST Austria)
+OS_MAP_P31_CITY,"Klosterneuburg, Austria","Klosterneuburg, Austria"
+OS_MAP_P31_DESC,"IST Austria located in Klosterneuburg is a young international institute dedicated to basic research including neuroscience. Prof. Shigemoto's task in HBP project is to provide quantitative data on number and distribution of key ion channels and neurotransmitter receptors in distinct membrane compartments of major principle
+neurons in the brain.","IST Austria z siedzibą w Klosterneuburgu jest młodym międzynarodowym instytutem zajmującym się badaniami podstawowymi, w tym neuronauką. Zadaniem prof. Shigemoto w ramach HBP jest dostarczanie danych ilościowych w zakresie liczby i rozkładu kanałów jonowych i receptorów neuroprzekaźnikowych w odrębnych komorach membranowych głównych neuronów mózgu."
+OS_MAP_P32_NAME,Jožef Stefan Institute,Instytut Jožefa Stefana
+OS_MAP_P32_CITY,"Ljubljana, Slovenia","Lublana, Słowenia"
+OS_MAP_P33_NAME,"National Institute of Research
+in Computer Science and Automation",Krajowy Instytut Badawczy Nauk Informatycznych i Automatyzacji (INRIA)
+OS_MAP_P33_CITY,"Sophia Antipolis, France","Sophia Antipolis, France"
+OS_MAP_P33_DESC,"Inria performs comprehensive analyses of brain functional organization based on exhaustive analyses of brain imaging dataset. Inria also contributes an openly available brain imaging dataset that provides a reference to study the functional architecture of the brain, and open-source software that make brain data analyses
+easy and reproducible.","INRIA prowadzi zaawansowane analizy organizacji funkcjonalnej mózgu na podstawie obszernych analiz zbiorów danych z obrazowania mózgu. INRIA zapewnia również ogólnie dostępny zbiór danych z obrazowania mózgu, stanowiący materiał badawczy do studiów nad architekturą funkcjonalną mózgu, a także oprogramowanie open-source ułatwiające analizy danych mózgowych i zapewniające ich powtarzalność."
+OS_MAP_P34_NAME,Pasteur Institute,Instytut Pasteura
+OS_MAP_P34_CITY,"Paris, France","Paryż, Francja"
+OS_MAP_P35_NAME,"Johann Wolfgang Goethe University
+Frankfurt-am-Main",Uniwersytet Johanna Wolfganga Goethego we Frankfurcie nad Menem
+OS_MAP_P35_CITY,"Frankfurt-am-Main, Germany","Frankfurt nad Menem, Niemcy"
+OS_MAP_P36_NAME,Karlsruher Institute for Technology,Instytut Technologiczny w Karlsruhe (KIT)
+OS_MAP_P36_CITY,"Karlsruhe, Germany","Karlsruhe, Niemcy"
+OS_MAP_P36_DESC,"With 9,000 employees and a budget of 800 million euros, the KIT has become one of the world's largest research and teaching institutions with the potential to occupy a leading position worldwide in selected research areas. The KIT's role in the HBP is providing and developing the project's computing infrastructure.","Dysponując 9 tysiącami pracowników i budżetem w wysokości 800 mln euro, KIT stał się jedną z największych w świecie instytucji badawczych i dydaktycznych, mającą potencjał, aby stać się globalnym liderem w wybranych obszarach badań. Rolą KIT w projekcie HBP jest zapewnianie i rozwój infrastruktury obliczeniowej."
+OS_MAP_P37_NAME,Karolinska Institutet,Karolinska Institutet
+OS_MAP_P37_CITY,"Stockholm, Sweden","Sztokholm, Szwecja"
+OS_MAP_P38_NAME,King's College London,King's College London
+OS_MAP_P38_CITY,"London, United Kingdom","Londyn, Wielka Brytania"
+OS_MAP_P39_NAME,The Royal Institute of Technology,Królewski Instytut Technologiczny w Sztokholmie
+OS_MAP_P39_CITY,"Stockholm, Sweden","Sztokholm, Szwecja"
+OS_MAP_P40_NAME,European Non Linear Spectroscopy Laboratory,Europejskie Laboratorium Spektroskopii Nieliniowej
+OS_MAP_P40_CITY,"Florence, Italy","Florencja, Włochy"
+OS_MAP_P41_NAME,Linnaeus University,Uniwersytet Linneusza
+OS_MAP_P41_CITY,"Kalmar, Sweden","Kalmar, Szwecja"
+OS_MAP_P41_DESC,"At Linnaeus University Shamim Patel (ACA)
+(Department of External Relations) and Dr Kim Håkansson (Faculty of Health Life Sciences) both work on the HBP as part of the Ethics Support team. Shamim manages the Ethics Advisory Board and Other Ethics Services and Kim is the HBP Animal Research Ethics Coordinator.","Reprezentujący Uniwersytet Linneusza Shamin Patel (ACA) (Departament Relacji Zewnętrznych) i dr Kim Håkansson (Wydział Nauk o Zdrowiu i Życiu) pracują wspólnie w projekcie HBP jako członkowie Zespołu Wsparcia ds. Etyki. Shamim kieruje Radą Konsultacyjną i Zespołem Obsługi Spraw z zakresu Etyki, zaś Kim jest Koordynatorem ds. Etyki Badań na Zwierzętach."
+OS_MAP_P42_NAME,The Medical University of Innsbruck,Uniwersytet Medyczny w Innsbrucku
+OS_MAP_P42_CITY,"Innsbruck, Austria","Innsbruck, Austria"
+OS_MAP_P42_DESC,"The Medical University of Innsbruck was one of the first faculties of the University of Innsbruck, Austria, and played an important role throughout its 340-year history. As an HBP partner, it hosts the interdisciplinary HBP Education Programme for
+early-career researchers, supports trainings on HBP infrastructure and coordinates HBP outreach and engagement activities.","Uniwersytet Medyczny w Innsbrucku był jednym z pierwszych wydziałów Uniwersytetu w Innsbrucku i odgrywał ważną rolę w jego 340-letniej historii. Jako partner HBP jest gospodarzem interdyscyplinarnego Programu Edukacyjnego HBP dla młodych naukowców, pomaga w organizacji szkoleń z zakresu infrastruktury HBP i koordynuje działania informacyjne i angażujące HBP."
+OS_MAP_P43_NAME,National and Kapodistrian University of Athens,Uniwersytet Narodowy im. Kapodistriasa w Atenach
+OS_MAP_P43_CITY,"Athens, Greece","Ateny, Grecja"
+OS_MAP_P44_NAME,The Norwegian University of Life Sciences,Norweski Uniwersytet Nauk o Życiu
+OS_MAP_P44_CITY,"Ås, Norway","Ås, Norwegia"
+OS_MAP_P44_DESC,"The Computational Neuroscience Group at the Norwegian University of Life Sciences (NMBU) develops simulation technology for brain-scale network simulations on supercomputers as well as methods and tools to compute brain signals such as
+EEG and MEG from simulations for direct comparison to experiments.","Zespół Neuronauki Obliczeniowej przy Norweskim Uniwersytecie Nauk o Życiu (NMBU) rozwija technologie symulacyjne na potrzeby superkomputerowych symulacji sieciowych w skali mózgu, jak również metody i narzędzia do komputacji sygnałów mózgowych (takich jak EEG i MEG) – od symulacji na potrzeby porównań bezpośrednich po eksperymenty."
+OS_MAP_P45_NAME,Austrian Research Society for Cybernetics,Austriackie Towarzystwo Naukowe Cybernetyki
+OS_MAP_P45_CITY,"Vienna, Austria","Wiedeń, Austria"
+OS_MAP_P46_NAME,"Rheinisch-Westfälische
+Technical University of Aachen",Reńsko-Westfalski Uniwersytet Techniczny w Akwizgranie
+OS_MAP_P46_CITY,"Aachen, Germany","Akwizgran, Niemcy"
+OS_MAP_P47_NAME,Ruprecht-Karls-University Heidelberg,Uniwersytet Ruprechta i Karola w Heidelbergu
+OS_MAP_P47_CITY,"Heidelberg, Germany","Heidelberg, Niemcy"
+OS_MAP_P47_DESC,"The UHEI group explores and implements novel concepts for information processing in massively parallel, mixed-signal VLSI technologies. The group led the EU project BrainScaleS, one of the foundations for the HBP and in that context pioneered the use of wafer-scale integration for physical neuromorphic systems, now continued in
+HBP.","Zespół UHEI bada i wdraża nowatorskie koncepcje na potrzeby przetwarzania informacji w masowo równoległych technologiach VLSI z mieszanym sygnałem. Zespół kierował projektem UE BrainScaleS, jednym z fundamentów HBP, i w tym kontekście był pionierem wykorzystania integracji w skali wafla dla fizycznych systemów neuromorficznych, kontynuowanej obecnie w ramach HBP."
+OS_MAP_P48_NAME,Sabanci University,Uniwersytet Sabanci
+OS_MAP_P48_CITY,"Istanbul, Turkey","Stambuł, Turcja"
+OS_MAP_P49_NAME,Sant'Anna School of Advanced Studies,Scuola Superiore di Sant’Anna
+OS_MAP_P49_CITY,"Pisa, Italy","Piza, Włochy"
+OS_MAP_P50_NAME,Center for Mathematics and Computer Science,Centrum Matematyki i Informatyki
+OS_MAP_P50_CITY,"Amsterdam, The Netherlands","Amsterdam, Holandia"
+OS_MAP_P51_NAME,The Catholic University Foundation,Fundacja Uniwersytetu Katolickiego
+OS_MAP_P51_CITY,"Nijmegen, The Nethterlands","Nijmegen, Holandia"
+OS_MAP_P52_NAME,"The FZI Research Center for
+Information Technology in Karlsruhe",Ośrodek Badawczy Informatyki FZI w Karlsruhe
+OS_MAP_P52_CITY,"Karlsruhe, Germany","Karlsruhe, Niemcy"
+OS_MAP_P52_DESC,"FZI is a non-profit institution for applied
+research in information technology and technology transfer. FZI is researching neuro-robotics and closed-loop experiments in the HBP with the goal to better understand the highly complex vision and motion systems of humans.","FZI jest niekomercyjną instytucją zajmującą się badaniami stosowanymi w obszarach informatyki i transferu technologii. W ramach HBP FZI prowadzi badania z zakresu neurorobotyki i eksperymenty w obiegu zamkniętym, których celem jest lepsze poznanie złożonych układów widzenia i ruchu u ludzi."
+OS_MAP_P53_NAME,Technical University of Crete,Kreteński Uniwersytet Techniczny
+OS_MAP_P53_CITY,"Crete, Greece","Kreta, Grecja"
+OS_MAP_P54_NAME,The Technical University Dresden,Uniwersytet Techniczny w Dreźnie
+OS_MAP_P54_CITY,"Dresden, Germany","Drezno, Niemcy"
+OS_MAP_P54_DESC,"The TU Dresden is one of eleven German
+Universities of Excellence. Within the HBP, the chair for Highly-Parallel VLSI Systems and Neuromorphic Circuits is responsible for the design and implementation of the SpiNNaker2 neuromorphic system, aiming at real-time human brain-size spiking neural network simulation on 10 million ARM processors.","Uniwersytet Techniczny w Dreźnie jest jedną z jedenastu niemieckich uczelni wyróżnionych w ramach Inicjatywy Doskonałości. W projekcie HBP, jako lider w dziedzinie Masowo Równoległych Układów VLSI i Obwodów Neuromorficznych, odpowiada za projekt i wdrożenie układu neuromorficznego SpinNNaker2, którego celem jest symulacja w czasie rzeczywistym aktywnej elektrycznie sieci neuronowej w skali ludzkiego mózgu w oparciu o 10 mln procesorów ARM."
+OS_MAP_P55_NAME,Graz University of Technology,Uniwersytet Technologiczny w Grazu
+OS_MAP_P55_CITY,"Graz, Austria","Graz, Austria"
+OS_MAP_P56_NAME,The Technical University of Munich,Monachijski Uniwersytet Techniczny (TUM)
+OS_MAP_P56_CITY,"Munich, Germany","Monachium, Niemcy"
+OS_MAP_P56_DESC,"The Technical University of Munich (TUM) is one of the highest ranked universities in Europe, and the Department of Informatics one of the largest computer science departments in Germany, with a long tradition of industry collaboration. In HBP, TUM leads development of the NeuroRobotics Platform, compliant neurorobotics, and behavioral architectures.","Monachijski Uniwersytet Techniczny jest jedną najwyżej notowanych uczelni w Europie, a jego Wydział Informatyczny należy do największych wydziałów informatycznych w Niemczech, mającym długą tradycję współpracy branżowej. W ramach HBP TUM kieruje rozwojem Platformy Neurorobotycznej, etycznej neurorobotyki oraz architektury behawioralnej."
+OS_MAP_P57_NAME,Tel Aviv University,Uniwersytet Telawiwski (TAU)
+OS_MAP_P57_CITY,"Tel Aviv, Israel","Tel Awiw, Izrael "
+OS_MAP_P57_DESC,"Tel Aviv University (TAU) is a leading,
+comprehensive academic institution that offers almost all areas of science on one campus. In HBP TAU holds the vice chairmanship for medical informatics and is responsible for the development of statistical methodology in the project, alongside its application in clinical research.","Uniwersytet Telawiwski (TAU) jest wiodącą multidyscyplinarną instytucją akademicką, oferującą niemal wszystkie dziedziny nauki w jednym kampusie. W ramach HBP TAU współprzewodniczy obszarowi informatyki medycznej i odpowiada w projekcie za rozwój metodyki statystycznej, jak również za jej wdrażanie w badaniach klinicznych."
+OS_MAP_P59_NAME,"The Chancellor, Masters and Scholars of the University of Oxford",Uniwersytet Oksfordzki
+OS_MAP_P59_CITY,"Oxford, United Kingdom","Oksford, Wielka Brytania"
+OS_MAP_P60_NAME,Hebrew University of Jerusalem,Uniwersytet Hebrajski w Jerozolimie
+OS_MAP_P60_CITY,"Jerusalem, Israel","Jerozolima, Izrael"
+OS_MAP_P60_DESC,"Idan Segev's team involved with the HBP is located at the new Edmond and Lily Safra Center for Brain Sciences (ELSC), at the Hebrew University of Jerusalem. ELSC encompasses a powerful computer cluster for large-scale simulations and the prestigious Ph.D. program in Neural Computation (100 multidisciplinary students).",Działający w projekcie HBP zespół Idana Segeva ulokowany jest w nowym Centrum Badań nad Mózgiem Edmonda i Lily Safrów (ELSC) przy Uniwersytecie Hebrajskim w Jerozolimie. ELSC posiada potężny klaster komputerowy służący wielkoskalowym symulacjom oraz prowadzi program doktorancki w dziedzinie Komputacji Neuronowej (100 multidyscyplinarnych doktorantów).
+OS_MAP_P61_NAME,University of Aberdeen,Uniwersytet w Aberdeen
+OS_MAP_P61_CITY,"Aberdeen, United Kingdom","Aberdeen, Wielka Brytania"
+OS_MAP_P62_NAME,University of Edinburgh,Uniwersytet Edynburski
+OS_MAP_P62_CITY,"Edinburgh, United Kingdom","Edynburg, Wielka Brytania"
+OS_MAP_P63_NAME,University of Manchester,Uniwersytet Manchesterski
+OS_MAP_P63_CITY,"Manchester, United Kingdom","Manchester, Wielka Brytania"
+OS_MAP_P63_DESC,"The University of Manchester, based in the world's first industrial city, has been host to 25 Nobel Laureates and Alan Turing, seen the atom split, the birth of the modern computer, and the discovery of graphene. Within the HBP it hosts SpiNNaker, the world's largest neuromorphic computing platform.","Uniwersytet Manchesterski, z siedzibą w pierwszym na świecie mieście przemysłowym, gościł 25 noblistów oraz Alana Turinga, był świadkiem rozszczepienia atomu, narodzin współczesnego komputera i odkrycia grafenu. W ramach HBP gości program SpiNNaker, największą na świecie platformę obliczeń neuromorficznych. "
+OS_MAP_P64_NAME,The Autonomous University of Madrid,Uniwersytet Autonomiczny w Madrycie
+OS_MAP_P64_CITY,"Madrid, Spain","Madryt, Hiszpania"
+OS_MAP_P65_NAME,Castilla-La Mancha university,Uniwersytet Castilla-La Mancha
+OS_MAP_P65_CITY,"Ciudad Real, Spain","Ciudad Real, Hiszpania"
+OS_MAP_P66_NAME,Granada University,Uniwersytet w Granadzie
+OS_MAP_P66_CITY,"Granada, Spain","Granada, Hiszpania"
+OS_MAP_P66_DESC,"The Applied Computational Neuroscience lab led by Prof. Eduardo Ros at Granada University builds models of neural systems as the cerebellum among others. We aim to better understand the computational principles of these neural centers and how they are supported by biophysical substrate (properties of cells, network and adaptation mechanisms).","Kierowane przez prof. Eduarda Rosa Laboratorium Stosowanej Neuronauki Obliczeniowej przy Uniwersytecie w Granadzie buduje modele układów neuronowych, między innymi móżdżku. Naszym celem jest lepsze zrozumienie, jakie zasady obliczeniowe rządzą tymi ośrodkami nerwowymi oraz jak są one wspierane przez substrat biofizyczny (właściwości komórek, sieć i mechanizmy adaptacyjne). "
+OS_MAP_P67_NAME,Minho university,Uniwersytet Minho
+OS_MAP_P67_CITY,"Braga, Portugal","Braga, Portugalia"
+OS_MAP_P68_NAME,The Technical University of Madrid,Uniwersytet Techniczny w Madrycie
+OS_MAP_P68_CITY,"Madrid, Spain","Madryt, Hiszpania"
+OS_MAP_P68_DESC,"Technical University of Madrid (UPM) is the
+largest Spanish technological university. With two recognitions as Campus of International Excellence, it is outstanding in its research activity. Five research UPM groups are participating in the project working on the fields of Neuroscience, Data Analysis, High-Performance Computing and Innovation.","Uniwersytet Techniczny w Madrycie (UPM) jest największą hiszpańską politechniką. Dwukrotnie wyróżniony tytułem Campus of International Excellence, szczyci się znakomitymi osiągnięciami naukowymi. W projekcie uczestniczy pięć zespołów badawczych UPM, działając w obszarach Neuronauki, Analizy Danych, Obliczeń Wysokiej Wydajności oraz Innowacji."
+OS_MAP_P69_NAME,The Universidad Rey Juan Carlos,Universidad Rey Juan Carlos
+OS_MAP_P69_CITY,"Madrid, Spain","Madryt, Hiszpania"
+OS_MAP_P69_DESC,"The role of the Universidad Rey Juan Carlos (URJC) in the HBP is, on one hand, to develop visualization tools that allow neuroscientists to do visual exploratory analysis of data, both morphological or simulation. On the other hand, URJC is also responsible of the development of the remote visualization backend.","W ramach HBP Uniwersytet Króla Jana Karola (URJC) z jednej strony rozwija narzędzia wizualizacji pozwalające neuronaukowcom prowadzić wzrokową analizę danych, zarówno morfologicznych, jak i symulacyjnych. Z drugiej strony URJC odpowiada za rozwój systemów wizualizacji na odległość."
+OS_MAP_P70_NAME,The University of Pavia,Uniwersytet w Pawii
+OS_MAP_P70_CITY,"Pavia, Italy","Pawia, Włochy"
+OS_MAP_P71_NAME,Universit?ֳ₪t Bern,Uniwersytet Berneński
+OS_MAP_P71_CITY,"Bern, Switzerland","Berno, Szwajcaria"
+OS_MAP_P71_DESC,"In the Computational Neuroscience group at the University of Bern we investigate the
+extraordinary learning capabilities of biological systems. Building mathematical models and computer simulations we explore how these processes could be organized in the central nervous system, and
+how the underlying computational principles can enhance the capabilities of biologically inspired artificial intelligence.","W zespole Neuronauki Obliczeniowej na Uniwersytecie Berneńskim badamy niezwykłe zdolności uczenia się układów biologicznych. Budując modele matematyczne i symulacje komputerowe, sprawdzamy, jak te procesy są zorganizowane w centralnym układzie nerwowym i jak leżące u ich podstaw zasady obliczeniowe mogą zwiększać możliwości inspirowanej biologią sztucznej inteligencji."
+OS_MAP_P72_NAME,Universität Bielefeld,Uniwersytet w Bielefeld
+OS_MAP_P72_CITY,"Bielefeld, Germany","Bielefeld, Niemcy"
+OS_MAP_P72_DESC,"Bielefeld University develops a modular, scalable benchmark framework which allows scientific end users to select the best neuromorphic hardware system and a matching platform-agnostic network
+architecture based on their specific requirements. We are also contributing to graphical software tools and accompanying libraries aimed at domain experts in neuro science.","Uniwersytet w Bielefeld opracowuje modułowe, skalowalne ramy referencyjne, które pozwalają naukowym użytkownikom końcowym dobierać optymalne hardware'owe systemy neuromorficzne i odpowiadającą im niezależną od platformy architekturę na podstawie konkretnych wymagań. Wnosimy również wkład w rozwój narzędzi oprogramowania graficznego i towarzyszących mu bibliotek adresowanych do specjalistów z obszaru neuronauki."
+OS_MAP_P73_NAME,Aachen University Hospital,Szpital Uniwersytecki w Akwizgranie
+OS_MAP_P73_CITY,"Aachen, Germany","Akwizgran, Niemcy"
+OS_MAP_P73_DESC,"Aachen University Hospital combines patient care, medical education and translational research. It is currently involved in two tasks of HBP. In collaboration with Jülich we intend to improve our understanding of receptor architecture. We also try to implement a federated database to enable
+Big Data analyses of psychiatric disorders.","Szpital Uniwersytecki w Akwizgranie łączy opiekę nad pacjentami, dydaktykę medyczną i międzynarodowe badania. Aktualnie zaangażowany jest w dwa zadania w ramach HBP. We współpracy z Jülich chcemy podnosić poziom wiedzy na temat architektury receptorów. Próbujemy również wdrażać zfederowaną bazę danych, co umożliwi analizy big data zaburzeń psychicznych."
+OS_MAP_P74_NAME,University Hospital Hamburg-Eppendorf,Szpital Uniwersytecki Hamburg-Eppendorf
+OS_MAP_P74_CITY,"Hamburg, Germany","Hamburg, Niemcy"
+OS_MAP_P75_NAME,University of Zurich,Uniwersytet Zuryski
+OS_MAP_P75_CITY,"Zürich, Switzerland","Zurych, Szwajcaria"
+OS_MAP_P76_NAME,University of Barcelona,Uniwersytet Barceloński
+OS_MAP_P76_CITY,"Barcelona, Spain","Barcelona, Hiszpania"
+OS_MAP_P77_NAME,Pompeu Fabra University,Uniwersytet Pompeu Fabra
+OS_MAP_P77_CITY,"Barcelona, Spain","Barcelona, Hiszpania"
+OS_MAP_P77_DESC,"Universitat Pompeu Fabra (UPF) Center for Brain and Cognition, PI: Gustavo Deco. UPF leads work package 4.4 'Models of Brain Activity and Function'. UPF participates in work package 4.5 'Linking Model Activity And Function To Experimental Data' and builds whole-brain network models for individuals that mimic pathologies
+including epilepsy.","Centrum Mózgu i Kognicji Uniwersytetu Pompeu Fabra (UPF), główny badacz: Gustavo Deco. UPF jest liderem pakietu 4.4. „Modele aktywności i funkcji mózgu”. UPF uczestniczy również w pracach nad pakietem 4.5. „Powiązanie modelowych aktywności i funkcji z danymi eksperymentalnymi” oraz buduje modele sieciowe całego mózgu imitujące patologie, między innymi epilepsję."
+OS_MAP_P78_NAME,University of Aix Marseille,Uniwersytet Aix-Marseille
+OS_MAP_P78_CITY,"Marseille, France","Marsylia, Francja"
+OS_MAP_P78_DESC,"Institut de Neurosciences des Systèmes (INS) in the University is a multidisciplinary research institute focused on understanding the complex dynamics of the brain. Within HBP, INS works on demonstrating the predictive value of large-scale brain network models, in particular for the individualized epileptic activity and for the impaired connectivity, and on building a multi-scale brain atlas.","Institut de Neurosciences des Systèmes (INS) przy Uniwersytecie Aix-Marseille jest multidyscyplinarną placówką badawczą, która skupia się na zrozumieniu złożoności dynamiki mózgu. W ramach HBP INS pracuje nad wykazaniem predykcyjnych zdolności modeli sieci mózgowych, w szczególności w indywidualnych przypadkach epilepsji i upośledzonych połączeń mózgowych, a także na budowie wieloskalowego atlasu mózgu."
+OS_MAP_P79_NAME,University of Bordeaux,Uniwersytet w Bordeaux
+OS_MAP_P79_CITY,"Bordeaux, France","Bordeaux, Francja"
+OS_MAP_P80_NAME,Antwerp University,Uniwersytet w Antwerpii
+OS_MAP_P80_CITY,"Antwerp, Belgium","Antwerpia, Belgia"
+OS_MAP_P80_DESC,"At Antwerp University, we study cortical function combining technological, experimental and theoretical approaches, ranging from arrays of microelectrodes to patch-clamp and from the micro- and nanotechnologies for to the computer
+simulation of neuron models. We lead in HBP the task on Input-Output Transfer function.","Na Uniwersytecie w Antwerpii badamy funkcję korową, łącząc technologiczne, eksperymentalne i teoretyczne podejścia badawcze, od zestawów mikroelektrod po metodę patch-clamp, od mikro- i nanotechnologii po komputerowe symulacje modeli neuronowych. W HBP jesteśmy liderem zadania dotyczącego funkcji Przejścia Wejście-Wyjście."
+OS_MAP_P81_NAME,University of Oslo,Uniwersytet w Oslo
+OS_MAP_P81_CITY,"Oslo, Norway","Oslo, Norwegia"
+OS_MAP_P82_NAME,University College London,University College London
+OS_MAP_P82_CITY,"London, United Kingdom","Londyn, Wielka Brytania"
+OS_MAP_P82_DESC,"University College London (UCL) is London's leading multidisciplinary university and is the top university in the United Kingdom for research strength. UCL contribution to SP6 is to provide correlated electrophysiological and anatomical
+data from hippocampal neurones for the generation of a data-driven model of the hippocampus.",University College London (UCL) jest wiodącą londyńską uczelnią multidyscyplinarną i najlepszym brytyjskim uniwersytetem pod względem potencjału badawczego. Wkładem UCL w SP6 jest dostarczanie skorelowanych danych elektrofizjologicznych i anatomicznych z neuronów hipokampu na potrzeby generowania bazujących na danych modeli hipokampu.
+OS_MAP_P83_NAME,Uppsala University,Uniwersytet w Uppsali
+OS_MAP_P83_CITY,"Uppsala, Sweden","Uppsala, Szwecja"
+OS_MAP_P83_DESC,"Uppsala University is part of the HBP through its Neuro-ethics and Philosophy Group in the Centre for Research Ethics and Bioethics. This group, led by Professor Kathinka Evers - director of the Subproject 'Ethics & Society'- carries out conceptual and philosophical analyses of
+theoretical and practical issues raised by
+neuroscience, ICT and applications.","Uniwersytet w Uppsali uczestniczy w HBP poprzez swój Zespół Neuroetyki i Filozofii przy Ośrodku Etyki Badań i Bioetyki. Zespół ten, kierowany przez prof. Kathinkę Evers – dyrektora podprojektu „Etyka i Społeczeństwo” – prowadzi konceptualne i filozoficzne analizy teoretycznych i praktycznych zagadnień wyłaniających się na tle neuronauki, informatyki i ich zastosowań."
+OS_MAP_P84_NAME,The Weizmann Institute of Science,Instytut Naukowy Weizmanna
+OS_MAP_P84_CITY,"Rehovot, Israel","Rehovot, Izrael"
+OS_MAP_P84_DESC,"The Weizmann Institute of Science is one of the world's top-ranking multidisciplinary research institutes that explore the natural and exact sciences. The Institute's involvement in HBP is in modeling visual system functional and circuit models, with applications to cognition and neuro-robotics; and in generating mathematical models of memory to better understand human cognition.","Instytut Naukowy Weizmanna jest jednym z najwyżej notowanych w świecie multidyscyplinarnych instytutów badawczych zajmujących się naukami przyrodniczymi i ścisłymi. Uczestnictwo Instytutu w HBP obejmuje modelowanie funkcjonalnych i obwodowych modeli układu wzrokowego, z zastosowaniami do kognicji i neurobotyki, a także na generowaniu modeli matematycznych pamięci w celu lepszego zrozumienia ludzkiego procesu poznawczego. "
+OS_MAP_P85_NAME,Technische Universität Darmstadt,Uniwersytet Techniczny w Darmstadt
+OS_MAP_P85_CITY,"Darmstadt, Germany","Darmstadt, Niemcy"
+OS_MAP_P85_DESC,"The Laboratory for Parallel Programming belongs to the Department of Computer Science at Technische Universität Darmstadt in Germany. We are working
+on methods that make data-intensive brain analyses run faster and on algorithms that help better understand how individual neurons connect to each other.","Laboratorium Paralelnego Programowania działa przy Wydziale Informatyki Uniwersytetu w Darmstadt. Pracujemy nad metodami przyspieszającymi analizy mózgu wykorzystujące duże ilości danych oraz nad algorytmami pomagającymi zrozumieć, jak pojedyncze neurony komunikują się ze sobą."
+OS_MAP_P86_NAME,University of Geneva,Uniwersytet Genewski
+OS_MAP_P86_CITY,"Geneva, Switzerland","Genewa, Szwajcaria"
+OS_MAP_P87_NAME,University of Glasgow,Uniwersytet w Glasgow
+OS_MAP_P87_CITY,"Glasgow, United Kingdom","Glasgow, Wielka Brytania"
+OS_MAP_P89_NAME,University of Hamburg,Uniwersytet Hamburski
+OS_MAP_P89_CITY,"Hamburg, Germany","Hamburg, Niemcy"
+OS_MAP_P90_NAME,Humboldt University of Berlin,Uniwersytet Humboldta w Berlinie
+OS_MAP_P90_CITY,"Berlin, Germany","Berlin, Niemcy"
+OS_MAP_P91_NAME,"The Royal Netherlands Academy
+of Arts and Sciences",Królewska Holenderska Akademia Sztuk i Nauk
+OS_MAP_P91_CITY,"Amsterdam, The Netherlands","Amsterdam, Holandia"
+OS_MAP_P92_NAME,The National Institute of Nuclear Physics,Narodowy Instytut Fizyki Nuklearnej
+OS_MAP_P92_CITY,"Rome, Italy","Rzym, Włochy"
+OS_MAP_P93_NAME,August Pi i Sunyer Biomedical Research Institute,Instytut Badań Biomedycznych Augusta Pi i Sunyer
+OS_MAP_P93_CITY,"Barcelona, Spain","Barcelona, Hiszpania"
+OS_MAP_P94_NAME,University of Milan,Uniwersytet Mediolański
+OS_MAP_P94_CITY,"Milan, Italy","Mediolan, Włochy"
+OS_MAP_P94_DESC,"Dr. Massimini's research group is located at the University of Milan and focuses on the neurophysiological factors supporting complex interactions within the human brain and their role for the fading and recovery of consciousness across brain states (sleep, anesthesia and brain lesions) through invasive and non-invasive techniques across different spatial scales.","Grupa dr. Massiminiego działa na Uniwersytecie Mediolańskim i skupia się na neurofizjologicznych czynnikach wspierających złożone interakcje w ludzkim mózgu oraz ich roli w zanikaniu i odzyskiwaniu świadomości w różnych stanach mózgu (sen, anestezja i uszkodzenia mózgu) za pomocą inwazyjnych i nieinwazyjnych technik w różnych skalach przestrzennych."
+OS_MAP_P95_NAME,Institute for Bioengineering of Catalonia,Kataloński Instytut Bioinżynierii
+OS_MAP_P95_CITY,"Barcelona, Spain","Barcelona, Hiszpania"
+OS_MAP_P96_NAME,National Institute of Health,Narodowy Instytut Zdrowia
+OS_MAP_P96_CITY,"Rome, Italy","Rzym, Włochy"
+OS_MAP_P97_NAME,University of Liège,Uniwersytet w Liège
+OS_MAP_P97_CITY,"Liège, Belgium","Liège, Belgia"
+OS_MAP_P97_DESC,"Our GIGA-Consciousness Unit is part of the GIGA research institute (University of Liège, Belgium). In the framework of HBP, our multidisciplinary team aims at studying human consciousness and its
+pathological, pharmacological and physiological modifications, notably using electrophysiology and neuroimaging tools, as well as investigating the ethical issues of such a research.","Nasza jednostka GIGA-Consciousness jest częścią instytutu badawczego GIGA (Uniwersytet w Liège). W ramach HBP nasz multidyscyplinarny zespół bada ludzką świadomość i jej patologiczne, farmakologiczne i fizjologiczne modyfikacje, szczególnie za pomocą narzędzi z obszaru elektrofizjologii i neuroobrazowania, jak również rozważa zagadnienia etyczne powstające na tle takich badań."
+OS_MAP_P98_NAME,The University of Amsterdam,Uniwersytet Amsterdamski
+OS_MAP_P98_CITY,"Amsterdam, The Netherlands","Amsterdam, Holandia"
+OS_MAP_P98_DESC,"The University of Amsterdam is included in
+investigating cognitive and system neuroscience phenomena in HBP, besides coordinating 5 teams of researchers from 17 institutions around Europe. Our main focus is to study perception, memory, sleep, consciousness and develop methods for integrating data from multiple scales into HBP ICT Platforms.","Uniwersytet Amsterdamski włącza się w HBP poprzez badania nad kognitywnymi i układowymi zjawiskami neuronaukowymi, koordynując pracę 5 zespołów badawczych z 17 instytucji z całej Europy. Skupiamy się głównie na badaniach nad percepcją, pamięcią, snem i świadomością oraz opracowujemy metody włączania danych z różnych poziomów do platform informatycznych HBP."
+OS_MAP_P99_NAME,The German Center for Neurodegenerative Diseases,Niemieckie Centrum Chorób Neurodegeneracyjnych
+OS_MAP_P99_CITY,"Bonn, Germany","Bonn, Niemcy"
+OS_MAP_P99_DESC,"The core objectives of the research are to
+understand causes and risk factors for
+neurodegenerative diseases & to develop new therapeutic and preventive strategies by
+translating fundamental discoveries into clinical and public health applications. Within the HBP we are focusing on deciphering the heterogeneity of neurons by single-cell RNA-sequencing.",Głównym celem badań jest zrozumienie przyczyn i czynników ryzyka towarzyszących chorobom neurodegeneracyjnym oraz opracowywanie strategii terapeutycznych i prewencyjnych poprzez przekładanie fundamentalnych odkryć na zastosowania kliniczne i publicznozdrowotne. W ramach HBP skupiamy się na rozszyfrowywaniu heterogeniczności neuronów w drodze sekwencjonowania RNA pojedynczych komórek.
+OS_MAP_P100_NAME,University of Sheffield,Uniwersytet w Sheffield
+OS_MAP_P100_CITY,"Sheffield, United Kingdom","Sheffield, Wielka Brytania"
+OS_MAP_P101_NAME,"University of the West of England, UWE Bristol",Uniwersytet Zachodnioangielski (UWE Bristol)
+OS_MAP_P101_CITY,"Bristol, United Kingdom","Bristol, Wielka Brytania"
+OS_MAP_P102_NAME,University of Surrey,Uniwersytet Surrey
+OS_MAP_P102_CITY,"Guildford, United Kingdom","Guildford, Wielka Brytania"
+OS_MAP_P103_NAME,Tampere University,Uniwersytet Tampere
+OS_MAP_P103_CITY,"Turku, Finland","Turku, Finlandia"
+OS_MAP_P104_NAME,University of Leeds,Uniwersytet w Leeds
+OS_MAP_P104_CITY,"Leeds, United Kingdom","Leeds, Wielka Brytania"
+OS_MAP_P105_NAME,Pierre and Marie Curie University,Uniwersytet Piotra i Marii Curie
+OS_MAP_P105_CITY,"Paris, France","Paryż, Francja"
+OS_MAP_P106_NAME,University of Sussex,Uniwersytet Sussex
+OS_MAP_P106_CITY,"Falmer, United Kingdom","Falmer, Wielka Brytania"
+OS_MAP_P107_NAME,Middlesex University,Uniwersytet Middlesex
+OS_MAP_P107_CITY,"Hendon, London, United Kingdom","Hendon (Londyn), Wielka Brytania"
+OS_MAP_P107_DESC,"Middlesex University is in London, and HBP
+research at Middlesex focuses on Neuromorphic Embodied Agents that Learn. Reusable software components are developed in PyNN using spiking neurons in Nest and neuromorphic hardware. These
+components are combined to implement agents in the Neurorobotics Platform, in other virtual environments or in robots.","Uniwersytet Middlesex ma siedzibę w Londynie. Jego badania w ramach HBP koncentrują się na Neuromorficznych Personifikowanych Agentach Uczących się. Komponenty programistyczne wielokrotnego wykorzystania tworzone są w PyNN za pomocą wzbudzania neuronów w NEST i maszynach neuromorficznych. Komponenty te łączy się ze sobą w celu implementacji agentów w Platformie Neurobotyki, innych środowiskach wirtualnych lub w robotach."
+OS_MAP_P108_NAME,University of Lyon,Uniwersytet w Lyonie
+OS_MAP_P108_CITY,"Lyon, France","Lyon, Francja"
+OS_MAP_P109_NAME,Polytechnic of Turin (Politecnico di Torino),Politechnika Turyńska (Politecnico di Torino)
+OS_MAP_P109_CITY,"Turin, Italy","Turyn, Włochy"
+OS_MAP_P109_DESC,"For over 150 years, Politecnico di Torino has been one of the most prestigious technical universities at national and international level. The EDA-group, being part of the HBP neuromorphic engineering team, is involved in the design of optimized algorithms for exploiting the innovative many-core architecture of the SpiNNaker neuromorphic platform.","Od ponad 150 lat Politecnico di Torino jest jedną z najbardziej prestiżowych uczelni technicznych w kraju i za granicą. Grupa EDA, będąca częścią zespołu inżynierii neuromorficznej, zaangażowana jest w projektowanie zoptymalizowanych algorytmów na potrzeby eksploatacji innowacyjnej wielordzeniowej architektury platformy neuromorficznej SpiNNaker."
+OS_MAP_P110_NAME,University of Ghent,Uniwersytet Gandawski
+OS_MAP_P110_CITY,"Ghent, Belgium","Gandawa, Belgia"
+OS_MAP_P111_NAME,The Catholic University of Leuven,Katolicki Uniwersytet Lowański
+OS_MAP_P111_CITY,"Leuven, Belgium","Leuven, Belgia"
+OS_MAP_P112_NAME,University of Basel,Uniwersytet Bazylejski
+OS_MAP_P112_CITY,"Basel, Switzerland","Bazylea, Szwajcaria"
+OS_MAP_P113_NAME,VU University Medical Center,Centrum Medyczne Wolnego Uniwersytetu w Amsterdamie
+OS_MAP_P113_CITY,"Amsterdam, The Netherlands","Amsterdam, Holandia"
+OS_MAP_P114_NAME,Swiss Institute of Bioinformatics ISB Foundation,Szwajcarski Instytut Bioinformatyki
+OS_MAP_P114_CITY,"Lausanne, Switzerland","Lozanna, Szwajcaria"
+OS_MAP_P115_NAME,"European Brain Research Institute
+Rita Levi-Montalcini Foundation",Europejski Instytut Badań nad Mózgiem Fundacji Rity Levi-Montalcini
+OS_MAP_P115_CITY,"Rome, Italy","Rzym, Włochy"
+OS_MAP_P116_NAME,Scuola Normale Superiore,Scuola Normale Superiore
+OS_MAP_P116_CITY,"Pisa, Italy","Piza, Włochy"
+OS_MAP_P117_NAME,University of Maastricht,Uniwersytet w Maastricht
+OS_MAP_P117_CITY,"Maastricht, The Netherlands","Maastricht, Holandia"
+OS_MAP_P118_NAME,University of Hertfordshire,Uniwersytet Hertfordshire
+OS_MAP_P118_CITY,"Hatfield, United Kingdom","Hatfield, Wielka Brytania"
+OS_MAP_P119_NAME,University Hospital Bonn,Szpital Uniwersytecki w Bonn
+OS_MAP_P119_CITY,"Bonn, Germany","Bonn, Niemcy"
+OS_MAP_P120_NAME,"Biomedical Research Foundation, Academy of Athens","Fundacja Badań Biomedycznych, Akademia Ateńska"
+OS_MAP_P120_CITY,"Athens, Greece","Ateny, Grecja"
+OS_MAP_P121_NAME,Convelop Cooperative Knowledge Design GmbH,Convelop Cooperative Knowledge Design GmbH
+OS_MAP_P121_CITY,"Graz, Austria","Graz, Austria"
+OS_MAP_P122_NAME,Charité - University Medicine Berlin,Charité – Szpital Uniwersytecki w Berlinie
+OS_MAP_P122_CITY,"Berlin, Germany","Berlin, Niemcy"
+OS_MAP_P122_DESC,"Charité Universit?ֳ₪tsmedizin Berlin is Europe´s largest University Hospital. More than half of the German Nobel laureates for medicine and physiology originate from it. Charité's Brain Simulation
+Section heads HBP's project TheVirtualBrain (TVB). TVB is a simulation platform for simulating patient brains to test virtual therapies. TVB has several thousand users.",Charité – Szpital Uniwersytecki w Berlinie jest największym europejskim szpitalem uniwersyteckim. Wywodzi się z niego więcej niż połowa niemieckich noblistów z dziedziny medycyny i fizjologii. Oddział Symulacji Mózgu szpitala Charité jest liderem projektu TheVirtualBrain (TVB). TVB jest platformą służącą symulowaniu mózgów pacjentów na potrzeby testowania wirtualnych terapii. TVB ma kilka tysięcy użytkowników.
+OS_MAP_P123_NAME,European Molecular Biology Laboratory (EMBL),Europejskie Laboratorium Biologii Molekularnej (EMBL)
+OS_MAP_P123_CITY,"Heidelberg, Germany","Heidelberg, Niemcy"
+OS_MAP_P123_DESC,"At EMBL in Heidelberg, the group of Anna Kreshuk specializes in developing machine learning algorithms and tools for automatic segmentation, classification and analysis of biological images. Within the Human Brain Project, her team develops special workflows for the ilastik image processing
+toolkit with the goal of neuroimaging analysis at scale.","Grupa Anny Kreshuk z EMBL w Heidelbergu specjalizuje się w opracowywaniu algorytmów uczenia maszynowego oraz narzędzi do automatycznej segmentacji, klasyfikacji i analizy obrazów biologicznych. W ramach Human Brain Project jej zespół rozwija specyficzne przepływy pracy dla zestawu narzędziowego ilastik do obróbki obrazu w celu wykonywania wielkoskalowych analiz neurobrazowania."
+OS_MAP_P124_NAME,Medical University Greifswald,Uniwersytet Medyczny w Greifswald
+OS_MAP_P124_CITY,"Greifswald, Germany","Greifswald, Niemcy"
+OS_MAP_P125_NAME,Swiss Integrative Center for Human Health,Swiss Integrative Center for Human Health
+OS_MAP_P125_CITY,"Fribourg, Switzerland","Fryburg, Szwajcaria"
+OS_MAP_P126_NAME,University Grenoble Alpes,Uniwersytet Grenoble Alpes
+OS_MAP_P126_CITY,"Grenoble, France","Grenoble, Francja"
+OS_MAP_P127_NAME,University Hospital Freiburg,Szpital Uniwersytecki we Fryburgu
+OS_MAP_P127_CITY,"Freiburg, Germany","Fryburg, Niemcy"
+OS_MAP_P128_NAME,"""Claudio Munari"" Center for Epilepsy Surgery",Centrum Chirurgicznego Leczenia Epilepsji „Claudio Munari”
+OS_MAP_P128_CITY,"Milan, Italy","Mediolan, Włochy"
+OS_MAP_P129_NAME,University Hospital Grenoble Alpes,Szpital Uniwersytecki Grenoble Alpes
+OS_MAP_P129_CITY,"Grenoble, France","Grenoble, Francja"
+OS_MAP_COUNTRY_SPAIN_NAME,Spain,Hiszpania
+OS_MAP_COUNTRY_FRANCE_NAME,France,Francja
+OS_MAP_COUNTRY_NORWAY_NAME,Norway,Norwegia
+OS_MAP_COUNTRY_TURKEY_NAME,Turkey,Turcja
+OS_MAP_COUNTRY_PORTUGAL_NAME,Portugal,Portugalia
+OS_MAP_COUNTRY_BELGIUM_NAME,Belgium,Belgia
+OS_MAP_COUNTRY_DENMARK_NAME,Denmark,Dania
+OS_MAP_COUNTRY_HUNGARY_NAME,Hungary,Węgry
+OS_MAP_COUNTRY_AUSTRIA_NAME,Austria,Austria
+OS_MAP_COUNTRY_SWITZERLAND_NAME,Switzerland,Szwajcaria
+OS_MAP_COUNTRY_SLOVENIA_NAME,Slovenia,Słowenia
+OS_MAP_COUNTRY_SWEDEN_NAME,Sweden,Szwecja
+OS_MAP_COUNTRY_ITALY_NAME,Italy,Włochy
+OS_MAP_COUNTRY_NETHERLANDS_NAME,Netherlands,Holandia
+OS_MAP_COUNTRY_FINLAND_NAME,Finalnd,Finlandia
+OS_MAP_COUNTRY_GREECE_NAME,Greece,Grecja
+OS_MAP_COUNTRY_GERMANY_NAME,Germany,Niemcy
+OS_MAP_COUNTRY_ISRAEL_NAME,Israel,Izrael
+OS_MAP_COUNTRY_UK_NAME,United Kingdom,Wielka Brytania

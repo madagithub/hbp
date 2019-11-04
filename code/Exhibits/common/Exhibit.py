@@ -14,6 +14,7 @@ if platform.system() == 'Linux':
 from common.Config import Config
 from common.VideoScene import VideoScene
 from common.TouchScreen import TouchScreen
+from common.Log import Log
 
 from threading import Thread
 
@@ -102,7 +103,10 @@ class Exhibit:
 		self.scene = OpeningScene(self)
 
 	def transition(self, transitionId, data=None):
-		pass
+		if data is not None:
+			Log.info('TRANSITION', transitionId, str(data))
+		else:
+			Log.info('TRANSITION', transitionId)
 
 	def loop(self):
 		isGameRunning = True

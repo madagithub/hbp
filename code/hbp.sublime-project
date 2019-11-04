@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+    {
+        "SublimeLinter.linters.pylint.disable": true,
+        "SublimeLinter.linters.pycodestyle.disable": true
+    }
+}

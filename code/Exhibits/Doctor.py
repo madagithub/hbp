@@ -4,6 +4,7 @@ import cv2
 import time
 import sys
 import glob
+import traceback
 
 from common.Exhibit import Exhibit
 from common.VideoScene import VideoScene
@@ -21,10 +22,11 @@ from doctor.LearnMoreScene import LearnMoreScene
 EXTRA_CONFIG_FILENAME = 'assets/config/config-doctor.json'
 EXTRA_CONFIG_MOUSE_FILENAME = 'assets/config/config-doctor-mouse.json'
 LOG_FILE_PATH = 'doctor.log'
+LOG_EXHIBIT_NAME = 'DOCTOR'
 
 class Doctor(Exhibit):
 	def __init__(self):
-		Log.init(LOG_FILE_PATH)
+		Log.init(LOG_FILE_PATH, LOG_EXHIBIT_NAME)
 		Log.info('INIT')
 
 		super().__init__()
@@ -52,9 +54,9 @@ class Doctor(Exhibit):
 		videoFilenames = [f for f in glob.glob('assets/videos/doctor/*.mp4', recursive=False)]
 
 		for filename in videoFilenames:
-			Log.info('PRELOADING_VIDEO_START,' + filename)
+			Log.info('PRELOADING_VIDEO_START', filename)
 			self.initialVideoFrames[filename] = VideoPlayer.preloadInitialFrames(filename)
-			Log.info('PRELOADING_VIDEO_DONE,' + filename)
+			Log.info('PRELOADING_VIDEO_DONE', filename)
 
 	def gotoHome(self):
 		self.chooseTestScene = ChooseTestScene(self, self.isHealthy)
@@ -64,6 +66,8 @@ class Doctor(Exhibit):
 		return self.chooseTestScene
 
 	def transition(self, transitionId, data=None):
+		super().transition(transitionId, data)
+		
 		if transitionId == 'EXPLANATION':
 			self.scene = ExplanationScene(self)
 		elif transitionId == 'OPENING_VIDEO':
@@ -72,6 +76,7 @@ class Doctor(Exhibit):
 		elif transitionId == 'CHOOSE':
 			self.chooseTestScene.onLanguageTapped(self.config.languageIndex)
 			self.scene = self.chooseTestScene
+			self.scene.clearResetTimer()
 		elif transitionId == 'RUN_TEST':
 			self.scene = TestInProgressScene(self, data)
 		elif transitionId == 'TEST_RESULTS':
@@ -86,4 +91,10 @@ class Doctor(Exhibit):
 			self.scene = OpeningScene(self)
 
 if __name__ == '__main__':
+	#while True:
+	#	try:
 	Doctor().start(EXTRA_CONFIG_MOUSE_FILENAME if len(sys.argv) == 2 and sys.argv[1] == '--mouse' else EXTRA_CONFIG_FILENAME)
+	#	except:
+	#		excType, excValue, excTraceback = sys.exc_info()
+	#		lines = traceback.format_exception(excType, excValue, excTraceback)
+	#		Log.error(lines.join('\n'))

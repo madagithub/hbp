@@ -4,6 +4,7 @@ import cv2
 import time
 import sys
 import glob
+import traceback
 
 from common.Exhibit import Exhibit
 from common.VideoScene import VideoScene
@@ -17,10 +18,11 @@ from neuron.SummaryScene import SummaryScene
 
 EXTRA_CONFIG_FILENAME = 'assets/config/config-neuron.json'
 LOG_FILE_PATH = 'neuron.log'
+LOG_EXHIBIT_NAME = 'NEURON'
 
 class Neuron(Exhibit):
 	def __init__(self):
-		Log.init(LOG_FILE_PATH)
+		Log.init(LOG_FILE_PATH, LOG_EXHIBIT_NAME)
 		Log.info('INIT')
 
 		super().__init__()
@@ -47,14 +49,16 @@ class Neuron(Exhibit):
 		videoFilenames = [f for f in glob.glob('assets/videos/neuron/*.mov', recursive=False)]
 
 		for filename in videoFilenames:
-			Log.info('PRELOADING_VIDEO_START,' + filename)
+			Log.info('PRELOADING_VIDEO_START', filename)
 			self.initialVideoFrames[filename] = VideoPlayer.preloadInitialFrames(filename)
-			Log.info('PRELOADING_VIDEO_DONE,' + filename)
+			Log.info('PRELOADING_VIDEO_DONE', filename)
 
 	def gotoHome(self):
 		self.scene = OpeningScene(self)
 
 	def transition(self, transitionId, data=None):
+		super().transition(transitionId, data)
+		
 		if transitionId == 'START':
 			videoFilename = 'assets/videos/neuron/brainzoom-short.mov'
 			self.scene = VideoScene(self, videoFilename, 'CHOOSE', initialFrames=self.initialVideoFrames[videoFilename])
@@ -63,8 +67,20 @@ class Neuron(Exhibit):
 		elif transitionId == 'DRAW':
 			self.drawingScenes[data].reset()
 			self.scene = self.drawingScenes[data]
+			self.scene.clearResetTimer()
 		elif transitionId == 'SUMMARY':
 			self.scene = SummaryScene(self, data)
 
 if __name__ == '__main__':
-	Neuron().start(None if len(sys.argv) == 2 and sys.argv[1] == '--mouse' else EXTRA_CONFIG_FILENAME)
+	#while True:
+	neuron = Neuron()
+		
+		#try:
+	neuron.start(None if len(sys.argv) == 2 and sys.argv[1] == '--mouse' else EXTRA_CONFIG_FILENAME)
+		#except:
+		#	excType, excValue, excTraceback = sys.exc_info()
+		#	lines = traceback.format_exception(excType, excValue, excTraceback)
+
+		#	Log.error('\n'.join(lines))
+
+		#time.sleep(10)

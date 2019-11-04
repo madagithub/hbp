@@ -10,6 +10,7 @@ from common.Utilities import Utilities
 from common.Timer import Timer
 from common.VideoPlayer import VideoPlayer
 from common.FrameAnimation import FrameAnimation
+from common.Log import Log
 
 from queue import Queue
 
@@ -113,6 +114,7 @@ class DrawNeuronScene(Scene):
 
 		self.animationIndex = 0
 		self.animationTime = None
+		self.animationDone = False
 		self.selectedPathIndex = 0
 
 		for path in self.animationPaths:
@@ -199,16 +201,22 @@ class DrawNeuronScene(Scene):
 		Utilities.drawTextOnCenterX(self.screen, self.instructionText, (self.screen.get_width() // 2, 820))
 
 		if (self.animationTime is None):
+			Log.info('DRAW_ANIMATION_START')
 			self.animationTime = 0
 
 		self.animationTime += dt
 		self.animationIndex = int(self.animationTime / 0.05)
 		self.drawAnimationPaths()
 
+		if not self.animationDone and len(self.animationPaths) == len(list(filter(lambda path: path['done'], self.animationPaths))):
+			self.animationDone = True
+			Log.info('DRAW_ANIMATION_DONE')
+
 		self.drawCurrPaths()
 
 		if not self.drawingDone:
 			if self.drawing and self.lastUpTime is not None and (pygame.time.get_ticks() - self.lastUpTime) / 1000 > MAX_NON_DRAWING_TIME_UNTIL_RESET:
+				Log.info('DRAW_WRONG', 'NO_DRAW')
 				self.resetCirclePos()
 
 			globalCirclePos = self.localNeuronPointToGlobalPoint(self.circlePos)
@@ -243,6 +251,8 @@ class DrawNeuronScene(Scene):
 		super().onMouseDown(pos)
 
 		if self.isInCircle(pos):
+			Log.info('DRAW_START')
+			self.clearResetTimer()
 			self.drawing = True
 			self.lastUpTime = None
 
@@ -250,6 +260,7 @@ class DrawNeuronScene(Scene):
 		super().onMouseUp(pos)
 
 		if self.isInCircle(pos):
+			self.clearResetTimer()
 			self.lastUpTime = pygame.time.get_ticks()
 
 	def onMouseMove(self, pos):
@@ -257,10 +268,13 @@ class DrawNeuronScene(Scene):
 
 		if not self.drawingDone:
 			if self.drawing and self.lastUpTime is None:
+				self.clearResetTimer()
+
 				newCirclePos = (pos[0] - int(self.screen.get_width() / 2 - self.drawOnNeuron.get_width() / 2), int(pos[1] - NEURON_IMAGE_Y))
 
 				(distanceFromPath, pointIndex) = self.getDistanceFromPath(newCirclePos)
 				if distanceFromPath >= MAX_DISTANCE_FROM_PATH:
+					Log.info('DRAW_WRONG', 'DIST')
 					self.resetCirclePos()
 				else:
 					self.circlePos = newCirclePos
@@ -270,7 +284,9 @@ class DrawNeuronScene(Scene):
 						self.onDrawingDone()
 
 	def onDrawingDone(self):
+		self.clearResetTimer()
 		self.selectedPathIndex += 1
+		Log.info('DRAW_CORRECT', self.selectedPathIndex)
 		if self.selectedPathIndex >= len(self.selectedPaths):
 			self.drawingDone = True
 			self.timer = Timer(2.0, self.onMoveToModelState)
@@ -278,12 +294,16 @@ class DrawNeuronScene(Scene):
 			self.resetCirclePos()
 
 	def onMoveToModelState(self):
+		Log.info('MODEL')
+		self.clearResetTimer()
 		self.timer = None
 		self.state = MODEL_STATE
 		self.createTexts()
 		self.lightningButton.visible = True
 
 	def onMoveToLightningState(self):
+		Log.info('LIGHTNING')
+		self.clearResetTimer()
 		self.state = LIGHTNING_STATE
 		self.createTexts()
 		self.lightningButton.visible = False
@@ -302,7 +322,6 @@ class DrawNeuronScene(Scene):
 				pygame.draw.line(self.screen, TRACE_PATH_COLOR if i == self.selectedPathIndex else DONE_PATH_COLOR, self.localNeuronPointToGlobalPoint((p1['x'] + OFFSET_X_FIX, p1['y'] + OFFSET_Y_FIX)), self.localNeuronPointToGlobalPoint((p2['x'] + OFFSET_X_FIX, p2['y'] + OFFSET_Y_FIX)), TRACE_LINE_WIDTH)
 
 	def drawAnimationPaths(self):
-		removePaths = []
 		newPaths = []
 
 		for path in self.animationPaths:
@@ -333,9 +352,6 @@ class DrawNeuronScene(Scene):
 					newPath['startAnimationIndex'] = len(pathDefinition) + path['startAnimationIndex']
 					newPaths.append(newPath)
 
-		for path in removePaths:
-			self.animationPaths.remove(path)
-
 		for path in newPaths:
 			self.animationPaths.append(path)
 
@@ -363,6 +379,7 @@ class DrawNeuronScene(Scene):
 		return math.hypot(x1 - globalCirclePos[0], y1 - globalCirclePos[1]) < CIRCLE_RADIUS
 
 	def resetCirclePos(self):
+		self.clearResetTimer()
 		self.drawing = False
 		self.circlePos = (self.getCurrPath()[0]['x'] + OFFSET_X_FIX, self.getCurrPath()[0]['y'] + OFFSET_Y_FIX)
 		self.currPointIndexReached = 0
