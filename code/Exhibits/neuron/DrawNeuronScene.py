@@ -286,7 +286,7 @@ class DrawNeuronScene(Scene):
 	def onDrawingDone(self):
 		self.clearResetTimer()
 		self.selectedPathIndex += 1
-		Log.info('DRAW_CORRECT', self.selectedPathIndex)
+		Log.info('DRAW_CORRECT', str(self.selectedPathIndex))
 		if self.selectedPathIndex >= len(self.selectedPaths):
 			self.drawingDone = True
 			self.timer = Timer(2.0, self.onMoveToModelState)
