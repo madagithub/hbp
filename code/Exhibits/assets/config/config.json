@@ -52,55 +52,55 @@
 			"buttonText": "polski",
 			"fonts": {
 				"bigHeaderFont": {
-					"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf",
+					"filename": "assets/fonts/NotoSans-Black.ttf",
 					"size": 144
 				},
 				"headerFont": {
-					"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf",
+					"filename": "assets/fonts/NotoSans-Black.ttf",
 					"size": 72
 				},
 				"smallScreenHeaderFont": {
-					"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf",
+					"filename": "assets/fonts/NotoSans-Black.ttf",
 					"size": 48
 				},
 				"subHeaderFont": {
-					"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf",
+					"filename": "assets/fonts/NotoSans-Bold.ttf",
 					"size": 40
 				},
 				"subSubHeaderFont": {
-					"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf",
+					"filename": "assets/fonts/NotoSans-Bold.ttf",
 					"size": 36
 				},
 				"smallScreenSubSubHeaderFont": {
-					"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf",
+					"filename": "assets/fonts/NotoSans-Bold.ttf",
 					"size": 32
 				},
 				"textFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 40
 				},
 				"smallTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 30
 				},
 				"smallerTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 26
 				},
 				"smallButtonTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 24
 				},
 				"almostExtraSmallTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 22
 				},
 				"extraSmallTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 20
 				},
 				"smallScreenExtraSmallTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 16
 				}
 			}
@@ -111,55 +111,55 @@
 			"buttonText": "English",
 			"fonts": {
 				"bigHeaderFont": {
-					"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf",
+					"filename": "assets/fonts/NotoSans-Black.ttf",
 					"size": 144
 				},
 				"headerFont": {
-					"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf",
+					"filename": "assets/fonts/NotoSans-Black.ttf",
 					"size": 72
 				},
 				"smallScreenHeaderFont": {
-					"filename": "assets/fonts/Linotype-DINNextLTArabic-Black.ttf",
+					"filename": "assets/fonts/NotoSans-Black.ttf",
 					"size": 48
 				},
 				"subHeaderFont": {
-					"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf",
+					"filename": "assets/fonts/NotoSans-Bold.ttf",
 					"size": 40
 				},
 				"subSubHeaderFont": {
-					"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf",
+					"filename": "assets/fonts/NotoSans-Bold.ttf",
 					"size": 36
 				},
 				"smallScreenSubSubHeaderFont": {
-					"filename": "assets/fonts/Monotype-DINNextLTPro-Bold.ttf",
+					"filename": "assets/fonts/NotoSans-Bold.ttf",
 					"size": 32
 				},
 				"textFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 40
 				},
 				"smallTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 30
 				},
 				"smallerTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 26
 				},
 				"smallButtonTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 24
 				},
 				"almostExtraSmallTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 22
 				},
 				"extraSmallTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 20
 				},
 				"smallScreenExtraSmallTextFont": {
-					"filename": "assets/fonts/SimplerPro_V3-Regular.ttf",
+					"filename": "assets/fonts/NotoSans-Regular.ttf",
 					"size": 16
 				}
 			}
