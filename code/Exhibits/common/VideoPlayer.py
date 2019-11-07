@@ -20,7 +20,7 @@ class VideoPlayer:
 		video = cv2.VideoCapture(filename)
 		video.set(cv2.CAP_PROP_POS_FRAMES, 0)
 
-		for i in range(QUEUE_MAX_SIZE):
+		for i in range(QUEUE_MAX_SIZE // 2):
 			(grabbed, frame) = video.read()
 			frames.append(VideoPlayer.processFrame(frame))
 
