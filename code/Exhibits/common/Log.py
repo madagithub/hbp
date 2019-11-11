@@ -19,7 +19,7 @@ class Log:
 
 		handler = RotatingFileHandler(logFilePath, maxBytes=37500, backupCount=100)
 		Log.logger = logging.getLogger("Rotating Log")
-		formatter = logging.Formatter('%(asctime)s.%(msecs)03d,%(message)s', '%Y-%m-%d %H:%M:%S')
+		formatter = logging.Formatter('%(asctime)s.%(msecs)03d|%(levelname)s|%(message)s', '%Y-%m-%d %H:%M:%S')
 		handler.setFormatter(formatter)
 		Log.logger.propagate = False
 		Log.logger.addHandler(handler)

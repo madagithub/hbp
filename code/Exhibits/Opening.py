@@ -78,10 +78,9 @@ class Opening(Exhibit):
 			self.scene = CreditsScene(self)
  
 if __name__ == '__main__':
-	#while True:
-		#try:
-			Opening().start(None if len(sys.argv) == 2 and sys.argv[1] == '--mouse' else EXTRA_CONFIG_FILENAME)
-		#except:
-		#	excType, excValue, excTraceback = sys.exc_info()
-		#	lines = traceback.format_exception(excType, excValue, excTraceback)
-		#	Log.error(lines.join('\n'))
+	try:
+		Opening().start(None if len(sys.argv) == 2 and sys.argv[1] == '--mouse' else EXTRA_CONFIG_FILENAME)
+	except:
+		excType, excValue, excTraceback = sys.exc_info()
+		lines = traceback.format_exception(excType, excValue, excTraceback)
+		Log.error('\n'.join(lines))
