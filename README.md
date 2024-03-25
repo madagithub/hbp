@@ -4,7 +4,7 @@
 This repository contains three separate exhibits for the HBP exhibition + translation scripts for another project, that does not need any software development.
 We will briefly descrbie each exhibit and the project, then provide more details about each one in relevant sections below.
 
-## Opening
+### Opening
 
 The opening exhibits is a big touch screen that provides language change support, and various buttons.
 The buttons show images, and a rotating caption to understand where each image leads to.
@@ -12,7 +12,7 @@ Most buttons show a video (most of them do) and allows to go back to the main sc
 One button shows a map, showing all countries in the HBP project, and then for each country, which universities and cities are part of the HBP project, allowing navigation between them.
 Finally, there is a credit button that shows credit texts.
 
-## Doctor for a Moment
+### Doctor for a Moment
 
 This exhibit allows the user to conduct three tests on a pateint, and estimate if they have Alzheimer's.
 The tests are a combination of either showing a video, or activating a physical model via serial port.
@@ -78,7 +78,7 @@ Following is a complete description of all options:
 
 Specifies the width and height in pixels of the screen (so that full screen will be configured correctly).
 
-### touch, touchDeviceName, touchMaxX, touchMaxY
+#### touch, touchDeviceName, touchMaxX, touchMaxY
 
 These 4 keys define the characteristics of the touch screen connected to the exhibit.
 touch should be set to true for the exhibit to use touch (otherwise a mouse is supported).
